@@ -11,95 +11,108 @@
             <div class="mx-auto max-w-7xl px-6 lg:px-8">
               <div class="mx-auto max-w-2xl lg:mx-0">
                 <h2 class="text-4xl font-bold tracking-tight text-white sm:text-6xl">Programs</h2>
-                <p class="mt-6 text-lg leading-8 text-gray-300">Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.</p>
+                <p class="mt-6 text-lg leading-8 text-gray-300"></p>
               </div>
             </div>
           </div>
           
-        <div class="bg-white py-32">
+          <div class="bg-white py-24 sm:py-32">
             <div class="mx-auto max-w-7xl px-6 lg:px-8">
-              <div class="mx-auto flex max-w-2xl flex-col items-end justify-between gap-16 lg:mx-0 lg:max-w-none lg:flex-row">
-                <div class="w-full lg:max-w-lg lg:flex-auto">
-                  <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">We’re always looking for awesome people to join us</h2>
-                  <p class="mt-6 text-xl leading-8 text-gray-600">Diam nunc lacus lacus aliquam turpis enim. Eget hac velit est euismod lacus. Est non placerat nam arcu. Cras purus nibh cursus sit eu in id.</p>
-                  <img src="https://images.unsplash.com/photo-1606857521015-7f9fcf423740?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1344&h=1104&q=80" alt="" class="mt-16 aspect-[6/5] w-full rounded-2xl bg-gray-50 object-cover lg:aspect-auto lg:h-[34.5rem]">
-                </div>
-                <div class="w-full lg:max-w-xl lg:flex-auto">
-                  <h3 class="sr-only">Job openings</h3>
-                  <ul class="-my-8 divide-y divide-gray-100">
-                    <li class="py-8">
-                      <dl class="relative flex flex-wrap gap-x-3">
-                        <dt class="sr-only">Role</dt>
-                        <dd class="w-full flex-none text-lg font-semibold tracking-tight text-gray-900">
+              <div class="mx-auto max-w-2xl lg:max-w-4xl">
+                <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">From the blog</h2>
+                <p class="mt-2 text-lg leading-8 text-gray-600">At MedLabConvo, we are dedicated to empowering and supporting medical laboratory professionals and students through a range of impactful programs. Whether you are looking to enhance your career, connect with mentors, or develop key skills, our initiatives are designed to guide you every step of the way. </p>
+                <div class="mt-16 space-y-20 lg:mt-20 lg:space-y-20">
+                  <article v-for="(item, idx) in programsList"  class="relative isolate flex flex-col gap-8 lg:flex-row">
+                    <div class="relative aspect-[16/9] sm:aspect-[2/1] lg:aspect-square lg:w-64 lg:shrink-0">
+                      <img src="https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80" alt="" class="absolute inset-0 h-full w-full rounded-2xl bg-gray-50 object-cover">
+                      <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
+                    </div>
+                    <div>
+                      <div class="group relative max-w-xl">
+                        <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
                           <a href="#">
-                            Full-time designer
-                            <span class="absolute inset-0" aria-hidden="true"></span>
+                            <span class="absolute inset-0"></span>
+                            {{item.title}}
                           </a>
-                        </dd>
-                        <dt class="sr-only">Description</dt>
-                        <dd class="mt-2 w-full flex-none text-base leading-7 text-gray-600">Quos sunt ad dolore ullam qui. Enim et quisquam dicta molestias. Corrupti quo voluptatum eligendi autem labore.</dd>
-                        <dt class="sr-only">Salary</dt>
-                        <dd class="mt-4 text-base font-semibold leading-7 text-gray-900">$75,000 USD</dd>
-                        <dt class="sr-only">Location</dt>
-                        <dd class="mt-4 flex items-center gap-x-3 text-base leading-7 text-gray-500">
-                          <svg viewBox="0 0 2 2" class="h-0.5 w-0.5 flex-none fill-gray-300" aria-hidden="true">
-                            <circle cx="1" cy="1" r="1" />
-                          </svg>
-                          San Francisco, CA
-                        </dd>
-                      </dl>
-                    </li>
-                    <li class="py-8">
-                      <dl class="relative flex flex-wrap gap-x-3">
-                        <dt class="sr-only">Role</dt>
-                        <dd class="w-full flex-none text-lg font-semibold tracking-tight text-gray-900">
-                          <a href="#">
-                            Laravel developer
-                            <span class="absolute inset-0" aria-hidden="true"></span>
-                          </a>
-                        </dd>
-                        <dt class="sr-only">Description</dt>
-                        <dd class="mt-2 w-full flex-none text-base leading-7 text-gray-600">Et veniam et officia dolorum rerum. Et voluptas consequatur magni sapiente amet voluptates dolorum. Ut porro aut eveniet.</dd>
-                        <dt class="sr-only">Salary</dt>
-                        <dd class="mt-4 text-base font-semibold leading-7 text-gray-900">$125,000 USD</dd>
-                        <dt class="sr-only">Location</dt>
-                        <dd class="mt-4 flex items-center gap-x-3 text-base leading-7 text-gray-500">
-                          <svg viewBox="0 0 2 2" class="h-0.5 w-0.5 flex-none fill-gray-300" aria-hidden="true">
-                            <circle cx="1" cy="1" r="1" />
-                          </svg>
-                          San Francisco, CA
-                        </dd>
-                      </dl>
-                    </li>
-                    <li class="py-8">
-                      <dl class="relative flex flex-wrap gap-x-3">
-                        <dt class="sr-only">Role</dt>
-                        <dd class="w-full flex-none text-lg font-semibold tracking-tight text-gray-900">
-                          <a href="#">
-                            React Native developer
-                            <span class="absolute inset-0" aria-hidden="true"></span>
-                          </a>
-                        </dd>
-                        <dt class="sr-only">Description</dt>
-                        <dd class="mt-2 w-full flex-none text-base leading-7 text-gray-600">Veniam ipsam nisi quas architecto eos non voluptatem in nemo. Est occaecati nihil omnis delectus illum est.</dd>
-                        <dt class="sr-only">Salary</dt>
-                        <dd class="mt-4 text-base font-semibold leading-7 text-gray-900">$105,000 USD</dd>
-                        <dt class="sr-only">Location</dt>
-                        <dd class="mt-4 flex items-center gap-x-3 text-base leading-7 text-gray-500">
-                          <svg viewBox="0 0 2 2" class="h-0.5 w-0.5 flex-none fill-gray-300" aria-hidden="true">
-                            <circle cx="1" cy="1" r="1" />
-                          </svg>
-                          San Francisco, CA
-                        </dd>
-                      </dl>
-                    </li>
-                  </ul>
-                  <div class="mt-8 flex border-t border-gray-100 pt-8">
-                    <a href="#" class="text-sm font-semibold leading-6 text-indigo-600 hover:text-indigo-500">View all openings <span aria-hidden="true">&rarr;</span></a>
-                  </div>
+                        </h3>
+                        <p class="mt-5 text-sm leading-6 text-gray-600">
+                          {{ item.firstPart }}
+                        </p>
+                        <p class="mt-5 text-sm leading-6 text-gray-600">
+                          {{ item.secondPart }}
+                        </p>
+                        <p class="mt-5 text-sm leading-6 text-gray-600">
+                          {{ item.thirdPart }}
+                        </p>
+                      </div>
+                     <div class="space-y-3 mt-6 w-full">
+                      <div class="w-full">
+                        <NuxtLink :to="item.previousEditionUrl" class="py-3 block text-center rounded-md w-full bg-black text-white ">Previous Edition</NuxtLink>
+                      </div>
+                      <div class="w-full">
+                        <NuxtLink :to="item.registerUrl" class="py-3 block text-center rounded-md w-full bg-black text-white ">Register for ORIGINS 2025</NuxtLink>
+                      </div>
+                     </div>
+                    </div>
+                  </article>
                 </div>
               </div>
             </div>
           </div>
     </main>      
 </template>
+
+<script setup lang="ts">
+const programsList = ref([
+  {
+    title: 'ORIGINS',
+    img: '',
+    firstPart: `ORIGINS is a program specifically designed for freshmen and sophomores, aimed at equipping them with the essential knowledge, skills, mindset, and network opportunities they need to excel academically and grow into top-tier professionals. By focusing on the foundational years of a student’s academic journey, ORIGINS provides the tools and support necessary to help participants develop the right attitudes and cultivate a strong professional identity early on.`,
+    secondPart: `Through a combination of workshops, mentorship, and networking events, the program empowers students to navigate the challenges of their academic life with confidence, while building a network of peers and industry experts that will support their future career goals. ORIGINS not only helps students excel in the classroom but also prepares them to transition smoothly into their professional lives as standout leaders in their chosen fields.`,
+    previousEditionUrl: '#',
+    registerUrl: '#'
+  },
+  {
+    title: 'FORGING A CAREER PATH',
+    img: '',
+    firstPart: `The FACP program is designed to broaden the horizons of young medical laboratory science professionals and students by introducing them to a wide range of alternative career opportunities beyond the traditional clinical laboratory bench work. With the evolving landscape of healthcare and science, this program aims to expose participants to the many diverse career paths available within and beyond the field of medical laboratory science.`,
+    secondPart: `Through engaging workshops, mentorship sessions, and networking opportunities, the FACP program encourages individuals to think outside the conventional career box. Whether it's roles in research, healthcare technology, public health, education, or industry innovation, participants are inspired to explore and pursue unique professional trajectories that align with their interests and strengths. This program serves as a launching pad for those looking to break new ground and redefine what a successful career in medical laboratory science can look like.`,
+    previousEditionUrl: '#',
+    registerUrl: '#'
+  },
+  {
+    title: '21ST CENTURY BIOMEDICAL SCIENCE CONFERENCE',
+    img: '',
+    firstPart: `Held annually during World Biomedical Scientist Week, the Biomedical Science Conference (BMSC) serves as a platform to educate and engage both emerging and seasoned medical laboratory scientists, as well as the broader healthcare community, on pressing global health challenges. The BMSC offers a unique opportunity to explore these critical issues while highlighting cutting-edge technological innovations and practical solutions aimed at addressing them.
+`,
+    secondPart: `Through a series of expert-led discussions, interactive workshops, and presentations from leading professionals, the conference fosters a collaborative environment where participants can gain valuable insights, exchange ideas, and contribute to the advancement of healthcare. Whether you're a young professional just starting out or a seasoned expert, the BMSC is committed to empowering the health community with the tools and knowledge needed to tackle today’s global health challenges effectively.`,
+    previousEditionUrl: '#',
+    registerUrl: '#'
+  },
+  {
+    title: 'EMERGING THOUGHT LEADERS IN HEALTH FELLOWSHIP',
+    img: '',
+    firstPart: `This fellowship is designed to empower students and young professionals who aspire to become future leaders in the health sector. Through this program, participants will be equipped with the knowledge, tools, and skills necessary to drive meaningful change within their specific areas of interest. `,
+    secondPart: `By offering a blend of expert-led workshops, hands-on training, mentorship, and networking opportunities, this program ensures that participants are prepared not only to excel in their careers but to actively lead transformative initiatives in their communities and beyond. Our aim is to develop well-rounded health professionals who are not only proficient in their fields but also capable of inspiring and leading innovation in healthcare.`,
+    thirdPart: `This fellowship serves as a launching pad for those eager to take on the challenges of modern healthcare and become catalysts for progress in their chosen specialties.`,
+    previousEditionUrl: '#',
+    registerUrl: '#'
+  },
+  {
+    title: 'MEDICS IN TECH',
+    img: '',
+    firstPart: `At the intersection of healthcare and technology, Medics in Tech is a program designed for medical professionals who want to explore and excel in the world of technology. Whether you’re curious about tech innovation, data science, or digital health solutions, our program equips you with the skills and knowledge to navigate this dynamic landscape. `,
+    secondPart: `Through comprehensive training, mentorship from industry experts, and exposure to cutting-edge technologies, Medics in Tech empowers healthcare professionals to bridge the gap between medicine and technology. Whether you're looking to integrate tech solutions into clinical practice, work in healthcare IT, or pursue a career in medical research with a technological focus, this program is your gateway to unlocking new opportunities and shaping the future of healthcare. `,
+    previousEditionUrl: '#',
+    registerUrl: '#'
+  }
+])
+</script>
+
+<style scoped>
+  header {
+    background-image: url('/path-to-background-image.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+</style>

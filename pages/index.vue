@@ -27,51 +27,58 @@
     </div>
   </div>
 
-  <div class="bg-white py-24 sm:py-32">
-    <div class="mx-auto max-w-7xl px-6 lg:px-8">
-      <div class="mx-auto max-w-2xl text-center">
-        <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">From the blog</h2>
-        <p class="mt-2 text-lg leading-8 text-gray-600">Learn how to grow your business with our expert advice.</p>
-      </div>
-      <div class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
-        <article class="flex flex-col items-start justify-between">
-          <div class="relative w-full">
-            <img src="https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80" alt="" class="aspect-[16/9] w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]">
-            <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
-          </div>
-          <div class="max-w-xl">
-            <div class="mt-8 flex items-center gap-x-4 text-xs">
-              <time datetime="2020-03-16" class="text-gray-500">Mar 16, 2020</time>
-              <a href="#" class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">Marketing</a>
-            </div>
-            <div class="group relative">
-              <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
-                <a href="#">
-                  <span class="absolute inset-0"></span>
-                  Boost your conversion rate
-                </a>
-              </h3>
-              <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.</p>
-            </div>
-            <div class="relative mt-8 flex items-center gap-x-4">
-              <img src="https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" class="h-10 w-10 rounded-full bg-gray-100">
-              <div class="text-sm leading-6">
-                <p class="font-semibold text-gray-900">
-                  <a href="#">
-                    <span class="absolute inset-0"></span>
-                    Michael Foster
-                  </a>
-                </p>
-                <p class="text-gray-600">Co-Founder / CTO</p>
-              </div>
-            </div>
-          </div>
-        </article>
-  
-        <!-- More posts... -->
+  <div class="youtube-video pt-20">
+    <h3 class="text-3xl font-semibold  text-gray-900 text-center pb-6">5 YEARS OF IMPACT (ANNIVERSARY VIDEO)</h3>
+    <iframe
+      :src="videoUrl"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+      class="w-full h-96"
+    ></iframe>
+  </div>
+
+  <div class="max-w-7xl mx-auto py-12">
+    <div class="grid grid-cols-1  lg:grid-cols-2 gap-8 px-4">
+      <div 
+        v-for="(image, index) in activitiesGrid" 
+        :key="index" 
+        class="relative group overflow-hidden rounded-lg shadow-lg cursor-pointer">
+        <h1 class="text-center text-base font-medium">{{ image.headerText }}</h1>
+        <img :src="dynamicImage(image.img)" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
+        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black via-transparent to-transparent px-4 py-3">
+          <button class="bg-black text- text-white py-3.5 w-full rounded-md">{{ image.actionText }}</button>
+        </div>
       </div>
     </div>
   </div>
+  <div class="bg-white py-24 sm:py-32">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+      <div class="mx-auto max-w-xl text-center">
+        <h2 class="text-lg font-semibold leading-8 tracking-tight text-indigo-600">Testimonials</h2>
+        <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">We have worked with thousands of amazing people</p>
+      </div>
+      <div class="mx-auto mt-16 flow-root max-w-2xl sm:mt-20 lg:mx-0 lg:max-w-none">
+        <div class="-mt-8 sm:-mx-4 sm:columns-2 sm:text-[0] lg:columns-3">
+          <div v-for="itm in 6" :key="itm" class="pt-8 sm:inline-block sm:w-full sm:px-4">
+            <figure class="rounded-2xl bg-gray-50 p-8 text-sm leading-6">
+              <blockquote class="text-gray-900">
+                <p>“Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam delectus nihil. Aut enim doloremque et ipsam.”</p>
+              </blockquote>
+              <figcaption class="mt-6 flex items-center gap-x-4">
+                <img class="h-10 w-10 rounded-full bg-gray-50" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+                <div>
+                  <div class="font-semibold text-gray-900">Leslie Alexander</div>
+                  <div class="text-gray-600">@lesliealexander</div>
+                </div>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
 <footer class="bg-gray-900" aria-labelledby="footer-heading">
   <h2 id="footer-heading" class="sr-only">Footer</h2>
   <div class="mx-auto max-w-7xl px-6 pb-8 pt-20 sm:pt-24 lg:px-8 lg:pt-32">
@@ -203,5 +210,63 @@
 </template>
 
 <script setup lang="ts">
+import { dynamicImage } from '@/utils/assets'
+import { useYoutubeVideo } from '@/composables/useYoutubeVideo';
 const isOpen = ref(false)
+
+const activitiesGrid = ref([
+  {
+    img: 'convo1.jpg',
+    actionText: 'Listen',
+    headerText: 'Latest on LabCast',
+    url: ''
+  },
+  {
+    img: 'convo2.jpg',
+    actionText: 'Read',
+    headerText: 'Latest on Journo',
+    url: ''
+  },
+  {
+    img: 'convo3.png',
+    actionText: 'Learn More',
+    headerText: 'Rent Our Virtual Space',
+    url: ''
+  },
+  {
+    img: 'convo4.jpg',
+    actionText: 'Book Now',
+    headerText: 'Upcoming Program',
+    url: ''
+  },
+  {
+    img: 'convo5.jpg',
+    actionText: 'Order',
+    headerText: 'Latest T-shirt Release',
+    url: ''
+  },
+  {
+    img: 'convo5.jpg',
+    actionText: 'Order',
+    headerText: 'Latest Book Release',
+    url: ''
+  },
+  // {
+  //   img: 'convo6.jpg',
+  //   actionText: 'Listen',
+  //   url: ''
+  // }
+])
+
+// Pass the video ID of the YouTube video you want to embed
+const { videoUrl } = useYoutubeVideo('rhVkU6HAbn0'); // Example video ID
 </script>
+
+<style scoped>
+.youtube-video {
+  max-width: 800px;
+  margin: 0 auto;
+}
+</style>
+
+https://youtu.be/rhVkU6HAbn0?si=0kmABvBiaFLqbTRD
