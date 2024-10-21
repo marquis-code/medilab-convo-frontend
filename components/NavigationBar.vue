@@ -21,6 +21,7 @@
             <NuxtLink to="/community" class="text-sm font-semibold leading-6 text-white">Community</NuxtLink>
             <NuxtLink to="/programs" class="text-sm font-semibold leading-6 text-white">Programs</NuxtLink>
             <NuxtLink to="/products" class="text-sm font-semibold leading-6 text-white">Products</NuxtLink>
+            <NuxtLink to="/teams" class="text-sm font-semibold leading-6 text-white">Teams</NuxtLink>
           </div>
           <div class="hidden lg:flex lg:flex-1 lg:justify-end">
             <NuxtLink to="/about" href="#" class="text-sm font-semibold leading-6 text-white">About <span aria-hidden="true">&rarr;</span></NuxtLink>
@@ -51,6 +52,7 @@
                   <NuxtLink @click="isOpen = false" to="/community" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-800">Community</NuxtLink>
                   <NuxtLink @click="isOpen = false" to="/programs" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-800">Programs</NuxtLink>
                   <NuxtLink @click="isOpen = false" to="/products" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-800">Products</NuxtLink>
+                  <NuxtLink @click="isOpen = false" to="/teams" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-800">Teams</NuxtLink>
                 </div>
                 <div class="py-6">
                   <NuxtLink @click="isOpen = false" to="/about" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-white hover:bg-gray-800">About</NuxtLink>
