@@ -62,8 +62,8 @@
               </div>
             </div>
           </div>
-          <div class="bg-white container mx-auto">
-            <div class="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
+          <div class="bg-white container mx-auto pt-16">
+            <div class="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
               <h2 class="text-xl font-bold text-gray-900">BOOKS</h2>
           
               <div class="mt-8 grid grid-cols-1 gap-y-12 sm:grid-cols-2 sm:gap-x-6 lg:grid-cols-4 xl:gap-x-8">
@@ -130,8 +130,8 @@
           </div>
 
 
-          <div class="bg-white container mx-auto">
-            <div class="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
+          <div class="bg-white container mx-auto pt-16">
+            <div class="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
               <h2 class="text-xl font-bold text-gray-900">COURSES</h2>
           
               <div class="mt-8 grid grid-cols-1 gap-y-12 sm:grid-cols-2 sm:gap-x-6 lg:grid-cols-4 xl:gap-x-8">
@@ -197,8 +197,8 @@
             </div>
           </div>
 
-          <div class="bg-white container mx-auto">
-            <div class="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
+          <div class="bg-white container mx-auto pt-16">
+            <div class="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
               <h2 class="text-xl font-bold text-gray-900">LABCOATS & SCRUBS</h2>
           
               <div class="mt-8 grid grid-cols-1 gap-y-12 sm:grid-cols-2 sm:gap-x-6 lg:grid-cols-4 xl:gap-x-8">
@@ -264,8 +264,8 @@
             </div>
           </div>
 
-          <div class="bg-white container mx-auto">
-            <div class="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
+          <div class="bg-white container mx-auto pt-16">
+            <div class="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
               <h2 class="text-xl font-bold text-gray-900">T-SHIRTS & OTHER ACCESSORIES</h2>
           
               <div class="mt-8 grid grid-cols-1 gap-y-12 sm:grid-cols-2 sm:gap-x-6 lg:grid-cols-4 xl:gap-x-8">
