@@ -75,39 +75,5 @@ const programsList = ref([
     previousEditionUrl: '#',
     registerUrl: '#'
   }
-//   {
-//     title: 'FORGING A CAREER PATH',
-//     img: '',
-//     firstPart: `The FACP program is designed to broaden the horizons of young medical laboratory science professionals and students by introducing them to a wide range of alternative career opportunities beyond the traditional clinical laboratory bench work. With the evolving landscape of healthcare and science, this program aims to expose participants to the many diverse career paths available within and beyond the field of medical laboratory science.`,
-//     secondPart: `Through engaging workshops, mentorship sessions, and networking opportunities, the FACP program encourages individuals to think outside the conventional career box. Whether it's roles in research, healthcare technology, public health, education, or industry innovation, participants are inspired to explore and pursue unique professional trajectories that align with their interests and strengths. This program serves as a launching pad for those looking to break new ground and redefine what a successful career in medical laboratory science can look like.`,
-//     previousEditionUrl: '#',
-//     registerUrl: '#'
-//   },
-//   {
-//     title: '21ST CENTURY BIOMEDICAL SCIENCE CONFERENCE',
-//     img: '',
-//     firstPart: `Held annually during World Biomedical Scientist Week, the Biomedical Science Conference (BMSC) serves as a platform to educate and engage both emerging and seasoned medical laboratory scientists, as well as the broader healthcare community, on pressing global health challenges. The BMSC offers a unique opportunity to explore these critical issues while highlighting cutting-edge technological innovations and practical solutions aimed at addressing them.
-// `,
-//     secondPart: `Through a series of expert-led discussions, interactive workshops, and presentations from leading professionals, the conference fosters a collaborative environment where participants can gain valuable insights, exchange ideas, and contribute to the advancement of healthcare. Whether you're a young professional just starting out or a seasoned expert, the BMSC is committed to empowering the health community with the tools and knowledge needed to tackle today’s global health challenges effectively.`,
-//     previousEditionUrl: '#',
-//     registerUrl: '#'
-//   },
-//   {
-//     title: 'EMERGING THOUGHT LEADERS IN HEALTH FELLOWSHIP',
-//     img: '',
-//     firstPart: `This fellowship is designed to empower students and young professionals who aspire to become future leaders in the health sector. Through this program, participants will be equipped with the knowledge, tools, and skills necessary to drive meaningful change within their specific areas of interest. `,
-//     secondPart: `By offering a blend of expert-led workshops, hands-on training, mentorship, and networking opportunities, this program ensures that participants are prepared not only to excel in their careers but to actively lead transformative initiatives in their communities and beyond. Our aim is to develop well-rounded health professionals who are not only proficient in their fields but also capable of inspiring and leading innovation in healthcare.`,
-//     thirdPart: `This fellowship serves as a launching pad for those eager to take on the challenges of modern healthcare and become catalysts for progress in their chosen specialties.`,
-//     previousEditionUrl: '#',
-//     registerUrl: '#'
-//   },
-//   {
-//     title: 'MEDICS IN TECH',
-//     img: '',
-//     firstPart: `At the intersection of healthcare and technology, Medics in Tech is a program designed for medical professionals who want to explore and excel in the world of technology. Whether you’re curious about tech innovation, data science, or digital health solutions, our program equips you with the skills and knowledge to navigate this dynamic landscape. `,
-//     secondPart: `Through comprehensive training, mentorship from industry experts, and exposure to cutting-edge technologies, Medics in Tech empowers healthcare professionals to bridge the gap between medicine and technology. Whether you're looking to integrate tech solutions into clinical practice, work in healthcare IT, or pursue a career in medical research with a technological focus, this program is your gateway to unlocking new opportunities and shaping the future of healthcare. `,
-//     previousEditionUrl: '#',
-//     registerUrl: '#'
-//   }
 ])
 </script>
