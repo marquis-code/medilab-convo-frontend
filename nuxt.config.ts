@@ -3,7 +3,7 @@ export default {
   target: "static",
   app: {
     head: {
-      title: "CodeRed | Home",
+      title: "MedLabConvo | Leading Change, Inspiring Action, Building Capacity",
       htmlAttrs: { lang: "en" },
       meta: [
         { charset: "utf-8" },
