@@ -21,8 +21,9 @@
             </div>
           </div>
           <div class="text-center">
-            <h1 class="text-balance text-5xl font-semibold tracking-tight text-white sm:text-7xl">Jordan B Peterson
+            <h1 class="text-balance text-5xl font-semibold tracking-tight text-white sm:text-7xl">MedLab Convo
               Podcast</h1>
+              <p class="mt-8 text-pretty text-lg font-medium text-gray-50 sm:text-xl/8">A podcast about the Medical Laboratory Science profession</p>
             <p class="mt-8 text-pretty text-lg font-medium text-gray-50 sm:text-xl/8">New Episodes Every Monday +
               Thursday</p>
     
