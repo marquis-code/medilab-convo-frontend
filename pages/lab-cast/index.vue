@@ -82,7 +82,7 @@
 
     <div class="container mx-auto px-4 mt-8">
       <div class="bg-white p-0 rounded-lg shadow-md flex">
-        <div class="flex items-center space-x-4 w-full p-6">
+        <div class="lg:flex space-y-6 items-center space-x-4 w-full p-6">
           <img
             src="@/assets/img/podcast.jpg"
             alt="Podcast cover"
@@ -94,13 +94,6 @@
             <div class="text-sm text-gray-500 mt-2">
               In this episode, we delve into the experiences and insights of medical laboratory scientists working abroad (United Kingdom)). Join us as we explore how practice and perspectives differ in this region.
             </div>
-            <!-- <audio controls class="mt-4">
-              <source
-                src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
-                type="audio/mpeg"
-              />
-              Your browser does not support the audio element.
-            </audio> -->
             <a
               href="https://open.spotify.com/episode/7EAuK4OO3nE4vBPsOvxh5M?si=UqM-4YQ7TXKDNH6X4KVDGw"
             >
@@ -115,13 +108,14 @@
       <div
         class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8"
       >
-        <div
+        <a
           v-for="(item, idx) in podcastList"
-          class="bg-white p-0 shadow-md bg-gray-900"
+          :key="idx"
+          class="bg-white p-0 shadow-md bg-gray-900 block"
+          :href="item.link"
         >
           <img
             src="@/assets/img/podcast.jpg"
-            @click="router.push(`/lab-cast/${idx}`)"
             alt="Podcast cover"
             class="w-full h-60 object-cover mb-4 cursor-pointer"
           />
@@ -134,11 +128,10 @@
                   : item.description
               }}
             </div>
-            <a :href="item.link"
-              ><img src="@/assets/icons/play.svg" class="h-10 w-10 mt-3"
-            /></a>
+            <img src="@/assets/icons/play.svg" class="h-10 w-10 mt-3"/>
+            <!-- <a :href="item.link"><img src="@/assets/icons/play.svg" class="h-10 w-10 mt-3"/></a> -->
           </div>
-        </div>
+        </a>
       </div>
       <a class="group relative mt-10 inline-block focus:outline-none focus:ring" href="https://open.spotify.com/show/04S2XZGd6gczoCXStIrh8e">
   <span
