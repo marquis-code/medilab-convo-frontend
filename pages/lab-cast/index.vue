@@ -78,10 +78,13 @@
         </div>
       </div>
     </div>
-    <h1 class="flex justify-center items-center text-2xl mt-6">Our Hosts</h1>
+    <h1 class="flex justify-center font-semibold items-center text-3xl mt-20">Our Hosts</h1>
+   <div class="container mx-auto py-10">
+    <FrameVideo />
+   </div>
     <!-- <VideoPlayer /> -->
     <!-- <ProfileCard /> -->
-    <div data-aos="fade-up" class="mt-16 flow-root">
+    <!-- <div data-aos="fade-up" class="mt-16 flow-root">
           <div class="-m-2 rounded-xl bg-gray-900/5 p-2 ring-1 ring-inset ring-gray-900/10">
             <div class="rounded-md shadow-2xl ring-1 ring-gray-900/10">
             <video
@@ -97,12 +100,11 @@
               Your browser does not support the video tag.
             </video>
           </div>
-            <!-- <img src="https://tailwindui.com/plus/img/component-images/project-app-screenshot.png" alt="App screenshot" width="2432" height="1442" class="rounded-md shadow-2xl ring-1 ring-gray-900/10"> -->
           </div>
-        </div>
+        </div> -->
 
 
-    <h1 class="flex justify-center items-center text-2xl mt-6">Latest Episode</h1>
+    <h1 class="flex justify-center items-center text-2xl mt-6">Latest Episodes</h1>
     <div class="container mx-auto px-4 mt-8">
       <div class="bg-white p-0 rounded-lg shadow-md flex">
         <div class="lg:flex space-y-6 items-center space-x-4 w-full p-6">
@@ -112,9 +114,9 @@
             class="w-72 h-60 rounded-lg object-cover"
           />
           <div class="flex flex-col w-full">
-            <div class="font-semibold text-xl">Medical Laboratory Science Practice: From MLS in Diaspora viewpoint</div>
+            <div class="font-semibold text-2xl">Medical Laboratory Science Practice: From MLS in Diaspora viewpoint</div>
             <!-- <div class="text-gray-600">Episode 1</div> -->
-            <div class="text-sm text-gray-500 mt-2">
+            <div class="text-gray-500 mt-2">
               In this episode, we delve into the experiences and insights of medical laboratory scientists working abroad (United Kingdom)). Join us as we explore how practice and perspectives differ in this region.
             </div>
             <div class="mt-3">
@@ -173,7 +175,7 @@
     </div>
 
 
-    <h1 class="flex text-xl justify-center items-center mt-10">Popular Episodes</h1>
+    <h1 class="flex justify-center items-center text-2xl mt-6">Popular Episodes</h1>
     <div class="container mx-auto px-4 mt-8">
       <div
         class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8"
@@ -190,7 +192,7 @@
             class="w-full h-60 object-cover mb-4 cursor-pointer"
           /> -->
           <div class="px-3 pb-3">
-            <div class="font-semibold text-">{{ item.name ?? "Nil" }}</div>
+            <div class="font-semibold text-lg">{{ item.name ?? "Nil" }}</div>
             <div class="text-gray-600 text-sm mt-2">
               {{
                 item.description.length > 20
