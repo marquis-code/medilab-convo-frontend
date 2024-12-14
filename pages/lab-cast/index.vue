@@ -78,15 +78,37 @@
         </div>
       </div>
     </div>
-    <ProfileCard />
+    <h1 class="flex justify-center items-center text-2xl mt-6">Our Hosts</h1>
+    <!-- <ProfileCard /> -->
+    <div data-aos="fade-up" class="mt-16 flow-root">
+          <div class="-m-2 rounded-xl bg-gray-900/5 p-2 ring-1 ring-inset ring-gray-900/10">
+            <div class="rounded-md shadow-2xl ring-1 ring-gray-900/10">
+            <video
+              class="rounded-md"
+              controls
+              autoplay
+              loop
+              muted
+              width="2432"
+              height="1442"
+            >
+              <source src="/hosts.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+            <!-- <img src="https://tailwindui.com/plus/img/component-images/project-app-screenshot.png" alt="App screenshot" width="2432" height="1442" class="rounded-md shadow-2xl ring-1 ring-gray-900/10"> -->
+          </div>
+        </div>
 
+
+    <h1 class="flex justify-center items-center text-2xl mt-6">Latest Episode</h1>
     <div class="container mx-auto px-4 mt-8">
       <div class="bg-white p-0 rounded-lg shadow-md flex">
         <div class="lg:flex space-y-6 items-center space-x-4 w-full p-6">
           <img
-            src="@/assets/img/podcast.jpg"
+            src="@/assets/img/impact.jpg"
             alt="Podcast cover"
-            class="w-32 h-32 rounded-lg"
+            class="w-72 h-60 rounded-lg object-cover"
           />
           <div class="flex flex-col w-full">
             <div class="font-semibold text-xl">Medical Laboratory Science Practice: From MLS in Diaspora viewpoint</div>
@@ -94,16 +116,63 @@
             <div class="text-sm text-gray-500 mt-2">
               In this episode, we delve into the experiences and insights of medical laboratory scientists working abroad (United Kingdom)). Join us as we explore how practice and perspectives differ in this region.
             </div>
-            <a
-              href="https://open.spotify.com/episode/7EAuK4OO3nE4vBPsOvxh5M?si=UqM-4YQ7TXKDNH6X4KVDGw"
-            >
-              <img src="@/assets/icons/play.svg" class="h-10 w-10 mt-3" />
-            </a>
+            <div class="mt-3">
+        <p class="text-gray-400 text-sm mb-2">Available On:</p>
+        <div class="flex flex-wrap gap-2">
+          <a
+            href="https://open.spotify.com/episode/0py3aUuw2hqN0StC6r1pbX?si=be21b341b2334e01"
+            class="inline-flex items-center px-4 py-1.5 rounded-full bg-[#1DB954] text-sm hover:opacity-90"
+          >
+            <span class="mr-2">
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"
+                />
+              </svg>
+            </span>
+            Spotify
+          </a>
+          <a
+            href="#"
+            class="inline-flex items-center px-4 py-1.5 rounded-full bg-white text-black text-sm hover:opacity-90"
+          >
+            <span class="mr-2">
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M11.977 0C5.361 0 0 5.361 0 11.977s5.361 11.977 11.977 11.977 11.977-5.361 11.977-11.977S18.593 0 11.977 0zm5.12 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02z"
+                />
+              </svg>
+            </span>
+            iTunes
+          </a>
+          <!-- <a
+            href="#"
+            class="inline-flex items-center px-4 py-1.5 rounded-full bg-[#FF0000] text-sm hover:opacity-90"
+          >
+            <span class="mr-2">
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
+                />
+              </svg>
+            </span>
+            YouTube
+          </a> -->
+          <!-- <a
+            href="#"
+            class="inline-flex items-center px-4 py-1.5 rounded-full bg-white text-black font-bold text-sm hover:opacity-90"
+          >
+            DAILYWIRE+
+          </a> -->
+        </div>
+      </div>
           </div>
         </div>
       </div>
     </div>
 
+
+    <h1 class="flex text-xl justify-center items-center mt-10">Popular Episodes</h1>
     <div class="container mx-auto px-4 mt-8">
       <div
         class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8"
@@ -111,14 +180,14 @@
         <a
           v-for="(item, idx) in podcastList"
           :key="idx"
-          class="bg-white p-0 shadow-md bg-gray-900 block"
+          class="bg-white p-0 shadow-md border-[0.5px] rounded-md pt-3 bg-gray-900 block"
           :href="item.link"
         >
-          <img
+          <!-- <img
             src="@/assets/img/podcast.jpg"
             alt="Podcast cover"
             class="w-full h-60 object-cover mb-4 cursor-pointer"
-          />
+          /> -->
           <div class="px-3 pb-3">
             <div class="font-semibold text-">{{ item.name ?? "Nil" }}</div>
             <div class="text-gray-600 text-sm mt-2">
@@ -128,8 +197,54 @@
                   : item.description
               }}
             </div>
-            <img src="@/assets/icons/play.svg" class="h-10 w-10 mt-3"/>
-            <!-- <a :href="item.link"><img src="@/assets/icons/play.svg" class="h-10 w-10 mt-3"/></a> -->
+            <!-- <img src="@/assets/icons/play.svg" class="h-10 w-10 mt-3"/> -->
+            <div class="flex flex-wrap gap-2 mt-5">
+          <a
+            :href="item.link"
+            class="inline-flex items-center px-4 py-1.5 rounded-full bg-[#1DB954] text-sm hover:opacity-90"
+          >
+            <span class="mr-2">
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"
+                />
+              </svg>
+            </span>
+            Spotify
+          </a>
+          <a
+            href="#"
+            class="inline-flex items-center px-4 py-1.5 rounded-full bg-white text-black text-sm hover:opacity-90"
+          >
+            <span class="mr-2">
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M11.977 0C5.361 0 0 5.361 0 11.977s5.361 11.977 11.977 11.977 11.977-5.361 11.977-11.977S18.593 0 11.977 0zm5.12 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02z"
+                />
+              </svg>
+            </span>
+            iTunes
+          </a>
+          <!-- <a
+            href="#"
+            class="inline-flex items-center px-4 py-1.5 rounded-full bg-[#FF0000] text-sm hover:opacity-90"
+          >
+            <span class="mr-2">
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
+                />
+              </svg>
+            </span>
+            YouTube
+          </a> -->
+          <!-- <a
+            href="#"
+            class="inline-flex items-center px-4 py-1.5 rounded-full bg-white text-black font-bold text-sm hover:opacity-90"
+          >
+            DAILYWIRE+
+          </a> -->
+        </div>
           </div>
         </a>
       </div>
@@ -138,21 +253,15 @@
     class="absolute inset-0 translate-x-1.5 translate-y-1.5 bg-yellow-300 transition-transform group-hover:translate-x-0 group-hover:translate-y-0"
   ></span>
 
-  <span
+  <!-- <span
     class="relative inline-block border-2 border-current px-8 py-3 text-sm font-bold uppercase tracking-widest text-black group-active:text-opacity-75"
   >
     Load More Episodes
-  </span>
+  </span> -->
 </a>
     </div>
 
-    <!-- Base -->
-
-
-<!-- Hover -->
-
-
-    <div class="bg-white py-16 sm:py-24">
+    <div class="bg-white py-16">
       <div class="mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div
           class="relative isolate overflow-hidden bg-gray-900 px-6 py-24 shadow-2xl sm:rounded-3xl sm:px-24 xl:py-32"
@@ -213,121 +322,6 @@
         </div>
       </div>
     </div>
-
-    <div class="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32">
-      <img
-        src="@/assets/img/group-photo.png"
-        alt=""
-        class="absolute inset-0 -z-10 size-full object-cover object-right md:object-center"
-      />
-
-      <!-- Dark background overlay -->
-      <div class="absolute inset-0 bg-black opacity-90 -z-10"></div>
-
-      <div
-        class="hidden sm:absolute sm:-top-10 sm:right-1/2 sm:-z-10 sm:mr-10 sm:block sm:transform-gpu sm:blur-3xl"
-        aria-hidden="true"
-      >
-        <div
-          class="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-[#ff4694] to-[#776fff] opacity-20"
-          style="
-            clip-path: polygon(
-              74.1% 44.1%,
-              100% 61.6%,
-              97.5% 26.9%,
-              85.5% 0.1%,
-              80.7% 2%,
-              72.5% 32.5%,
-              60.2% 62.4%,
-              52.4% 68.1%,
-              47.5% 58.3%,
-              45.2% 34.5%,
-              27.5% 76.7%,
-              0.1% 64.9%,
-              17.9% 100%,
-              27.6% 76.8%,
-              76.1% 97.7%,
-              74.1% 44.1%
-            );
-          "
-        ></div>
-      </div>
-      <div
-        class="absolute -top-52 left-1/2 -z-10 -translate-x-1/2 transform-gpu blur-3xl sm:top-[-28rem] sm:ml-16 sm:translate-x-0 sm:transform-gpu"
-        aria-hidden="true"
-      >
-        <div
-          class="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-[#ff4694] to-[#776fff] opacity-20"
-          style="
-            clip-path: polygon(
-              74.1% 44.1%,
-              100% 61.6%,
-              97.5% 26.9%,
-              85.5% 0.1%,
-              80.7% 2%,
-              72.5% 32.5%,
-              60.2% 62.4%,
-              52.4% 68.1%,
-              47.5% 58.3%,
-              45.2% 34.5%,
-              27.5% 76.7%,
-              0.1% 64.9%,
-              17.9% 100%,
-              27.6% 76.8%,
-              76.1% 97.7%,
-              74.1% 44.1%
-            );
-          "
-        ></div>
-      </div>
-
-      <!-- Main content -->
-      <div class="mx-auto max-w-7xl px-6 lg:px-8 relative z-10">
-        <div class="mx-auto max-w-2xl lg:mx-0">
-          <h2
-            class="text-5xl font-semibold tracking-tight text-white sm:text-7xl"
-          >
-            Work with us
-          </h2>
-          <p
-            class="mt-8 text-pretty text-lg font-medium text-gray-100 sm:text-xl/8"
-          >
-            Help us continue to reach millions with content that enlightens the
-            public about Medical Laboratory science..
-          </p>
-        </div>
-        <div class="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
-          <dl
-            class="mt-16 grid grid-cols-1 gap-8 sm:mt-20 sm:grid-cols-2 lg:grid-cols-4"
-          >
-            <div class="flex flex-col-reverse gap-1">
-              <dt class="text-base/7 text-gray-300">Offices worldwide</dt>
-              <dd class="text-4xl font-semibold tracking-tight text-white">
-                12
-              </dd>
-            </div>
-            <div class="flex flex-col-reverse gap-1">
-              <dt class="text-base/7 text-gray-300">Full-time colleagues</dt>
-              <dd class="text-4xl font-semibold tracking-tight text-white">
-                300+
-              </dd>
-            </div>
-            <div class="flex flex-col-reverse gap-1">
-              <dt class="text-base/7 text-gray-300">Hours per week</dt>
-              <dd class="text-4xl font-semibold tracking-tight text-white">
-                40
-              </dd>
-            </div>
-            <div class="flex flex-col-reverse gap-1">
-              <dt class="text-base/7 text-gray-300">Paid time off</dt>
-              <dd class="text-4xl font-semibold tracking-tight text-white">
-                Unlimited
-              </dd>
-            </div>
-          </dl>
-        </div>
-      </div>
-    </div>
   </main>
 </template>
 
@@ -366,31 +360,35 @@ import episode31 from "@/assets/img/lab-coast/lab31.png";
 
 const podcastList = ref([
   {
-    name: "The impact of artificial intelligence on Medical Laboratory Science",
-    description:
-      "On this episode, we explore how artificial intelligence is transforming medical laboratory science. From the basis of what artificial intelligence is to its impact in laboratory productivity, battling infectious disease and improving global health as well as practical tips to navigate this new world are put in details.",
-    image: "",
-    link: "https://open.spotify.com/episode/0py3aUuw2hqN0StC6r1pbX?si=fb2323a5ad3a4639",
-  },
-  {
     name: "The Doctor of MLS program: Lessons from Dr. Emmanuel Samani's journey",
     description:
       "In this episode of LabCast, your hosts Muyiwa and Samuel dive into the Doctorate of Medical Laboratory Science (DMLS) program, a pioneering degree that equips medical laboratory professionals with advanced skills for leadership in research, diagnostics, and healthcare. Joining them is Emmanuel Samani, a Medical Laboratory Scientist and award-winning journalist, who shares his journey through the DMLS program at the University for Development Studies, Ghana. The discussion explores the significance of the degree, its impact on the field, and how professionals can balance demanding careers while advancing their education. Tune in to learn why pursuing a DMLS could be your next big step!",
     image: "",
-    link: "https://open.spotify.com/episode/4cPj3jOPAPyuEmyMRuK0Y6?si=829e3958435c44a4",
+    link: "https://open.spotify.com/episode/4cPj3jOPAPyuEmyMRuK0Y6?si=0SwnMCbMQ1yXMBgAeZgKSw",
   },
   {
-    name: "Continuing Professional Development and The Medical Laboratory Scientist",
-    description: `This episode of Labcast is about the significance of Continuing Professional Development (CPD) for Medical Laboratory Scientists. We discussed the benefits of engaging in CPD activities and penalties for lack of engagement- wait until you know there\'s a fine attached!
-Our guest, Mr. Polit Umanka Yelpoji from the University of Jos, also shared his expertise on how ongoing education impacts both professional growth and patient care. We hope you enjoy listening.`,
+    name: "Must have sot skills for Medical Laboratory Scientist",
+    description: `Medical Laboratory Scientists (MLS) must develop soft skills that go beyond technical expertise to effectively collaborate with other healthcare professionals. This episode focuses on key skills that enhance teaching, research, and interdisciplinary teamwork. Attention to detail is vital for ensuring the precision of research data, while effective communication is crucial when instructing students and sharing findings with healthcare colleagues. Problem-solving skills allow MLS professionals to address research challenges, and time management is essential for juggling teaching, research, and administrative duties.`,
     image: "",
-    link: "https://open.spotify.com/episode/7tAIb3dMFUA6u1fUmSWMVu?si=6ef6869f7c4f4ded",
+    link: "https://open.spotify.com/episode/6C0jL2uNN68XrXK9Pfm6M7?si=VzdQo8_ZT3SeYivtW2EMcw",
   },
   {
-    name: "Renal Function Tests: insight into Kidney Health and Diseases",
-    description: `In this episode, we delve into renal function tests and their crucial role in assessing kidney health. We break down key tests, including serum creatinine, glomerular filtration rate (GFR), and urine analysis, explaining what each reveals about kidney function. We also discuss how these tests help diagnose conditions such as acute kidney injury, chronic kidney disease, and other renal disorders. Whether you're a healthcare professional, student, or just curious about kidney health, join us for a comprehensive look at how these tests provide insights into both normal function and disease states.`,
+    name: "From B.MLS to Ph.D (No M.Sc)",
+    description: `In this episode, we discuss with MLS Olaleye Olajuyin about how he successfully secured a fully-funded scholarship for a Ph.D. program in the US without having to do a Masters.`,
     image: "",
-    link: "https://open.spotify.com/episode/5I6pFS7FBMSeHnQ9MJ9GAp?si=3ce6775f87b9450e",
+    link: "https://open.spotify.com/episode/3mWOLlmVz26oEFQJRPbDJ9?si=8AmYJdeCR8GGzCfpFxm4sg",
+  },
+  {
+    name: "Venturing into tech as a Medical Laboratory Scientist",
+    description: 'In this episode, we discussed some vital information we as medical laboratory scientists or professionals should have when venturing into tech and how we can promote the profession using tech.',
+    image: "",
+    link: "https://open.spotify.com/episode/1ae2TQ8X9SiQvh07Qeguzj?si=Df9Jdo0rRWqrSGZWcA7b9w",
+  },
+  {
+    name: "Is Medical Lab Lucrative",
+    description: 'In this episode, Precious, Nmesoma and Favour converse with MLS Olusoji Billyrose on whether or not medical laboratory science is a lucrative profession into get into.',
+    image: "",
+    link: "https://open.spotify.com/episode/44K4mJirmfpmQoaBbnmJ60?si=kdVDhNo9RyeL5ftGRGkR6w",
   },
 ]);
 </script>

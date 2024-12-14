@@ -46,6 +46,9 @@ googleFonts: {
     // Axios options here
     timeout: 10000, // Example: set timeout to 10 seconds
   },
+  dir: {
+    static: 'public', // Ensure the  folder is treated as static
+  },
   // buildModules: [
   //   '@nuxtjs/moment'
   // ]
