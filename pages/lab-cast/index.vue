@@ -79,6 +79,7 @@
       </div>
     </div>
     <h1 class="flex justify-center items-center text-2xl mt-6">Our Hosts</h1>
+    <!-- <VideoPlayer /> -->
     <!-- <ProfileCard /> -->
     <div data-aos="fade-up" class="mt-16 flow-root">
           <div class="-m-2 rounded-xl bg-gray-900/5 p-2 ring-1 ring-inset ring-gray-900/10">

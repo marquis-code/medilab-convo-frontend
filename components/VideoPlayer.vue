@@ -25,7 +25,7 @@
   
   <style scoped>
   .video-container {
-    max-width: 800px; /* Set a max width for your container */
+    max-width: 5000px; /* Set a max width for your container */
     margin: 0 auto; /* Center the container */
   }
   </style>
