@@ -78,7 +78,7 @@
         </div>
       </div>
     </div>
-    <h1 class="flex justify-center font-semibold items-center text-3xl mt-20">Our Hosts</h1>
+    <!-- <h1 class="flex justify-center font-semibold items-center text-3xl mt-20">Our Hosts</h1> -->
    <div class="container mx-auto py-10">
     <FrameVideo />
    </div>
@@ -104,7 +104,7 @@
         </div> -->
 
 
-    <h1 class="flex justify-center items-center text-2xl mt-6">Latest Episodes</h1>
+    <h1 class="flex justify-center items-center text-2xl mt-6">Latest Episode</h1>
     <div class="container mx-auto px-4 mt-8">
       <div class="bg-white p-0 rounded-lg shadow-md flex">
         <div class="lg:flex space-y-6 items-center space-x-4 w-full p-6">
@@ -136,17 +136,13 @@
             Spotify
           </a>
           <a
-            href="#"
-            class="inline-flex items-center px-4 py-1.5 rounded-full bg-white text-black text-sm hover:opacity-90"
+            href="https://podcasts.apple.com/us/podcast/the-impact-of-artificial-intelligence-on/id1610877517?i=1000674465767"
+            class="inline-flex items-center border-[0.5px] border-gray-20 px-4 py-1.5 rounded-full bg-white text-black text-sm hover:opacity-90"
           >
             <span class="mr-2">
-              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
-                <path
-                  d="M11.977 0C5.361 0 0 5.361 0 11.977s5.361 11.977 11.977 11.977 11.977-5.361 11.977-11.977S18.593 0 11.977 0zm5.12 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02z"
-                />
-              </svg>
+              <svg fill="none" class="w-6 h-6" viewBox="0 0 92 92" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><linearGradient id="a" gradientUnits="userSpaceOnUse" x1="45.7809" x2="45.7809" y1="0" y2="91.5618"><stop offset="0" stop-color="#f452ff"/><stop offset="1" stop-color="#832bc1"/></linearGradient><rect fill="url(#a)" height="91.5618" rx="20" width="91.5618"/><g fill="#fff"><path d="m51.2102 53.6523c-.0891-.8028-.3565-1.3826-.8912-1.9178-1.0026-1.0481-2.7627-1.7394-4.8348-1.7394-2.072 0-3.8321.669-4.8347 1.7394-.5125.5575-.8021 1.115-.8912 1.9178-.1783 1.561-.0669 2.899.1114 5.0621.1782 2.0515.5124 4.7944.9357 7.5596.3119 1.9847.557 3.0551.7798 3.8133.3788 1.2488 1.7379 2.3192 3.899 2.3192 2.1612 0 3.5426-1.0927 3.899-2.3192.2228-.7582.4679-1.8286.7798-3.8133.4234-2.7875.7576-5.5081.9358-7.5596.2005-2.1631.2896-3.5011.1114-5.0621z"/><path d="m50.9618 42.2787c0 3.0328-2.4508 5.4858-5.4809 5.4858s-5.4809-2.453-5.4809-5.4858c0-3.0327 2.4508-5.4857 5.4809-5.4857s5.4809 2.4753 5.4809 5.4857z"/><path d="m45.4172 20.67c-12.7888.0446-23.2604 10.4363-23.4386 23.2364-.1337 10.3694 6.4834 19.2448 15.7297 22.5005.2228.0892.4456-.1115.4233-.3345-.1114-.8028-.2451-1.6056-.3342-2.4083-.0446-.2899-.2228-.5129-.4679-.6467-7.3079-3.1889-12.41-10.5256-12.3209-19.0218.1114-11.1499 9.2017-20.226 20.3194-20.3152 11.3851-.0892 20.6759 9.143 20.6759 20.5159 0 8.407-5.0798 15.6322-12.3208 18.8211-.2674.1115-.4457.3568-.4679.6467-.1114.8027-.2228 1.6055-.3342 2.4083-.0446.2453.2005.4237.4233.3345 9.1571-3.2111 15.7297-11.9527 15.7297-22.2106-.0446-12.9785-10.6276-23.5486-23.6168-23.5263z"/><path d="m44.8793 28.4746c-8.3327.3122-15.0167 7.2029-15.1281 15.543-.0668 5.4858 2.6736 10.3471 6.8845 13.2238.2005.1338.4902-.0223.4902-.2676-.0669-.9589-.0669-1.8063-.0223-2.6983.0223-.2899-.0891-.5575-.3119-.7582-2.5622-2.4083-4.1218-5.8425-4.0327-9.6335.1782-6.6899 5.5477-12.1311 12.2317-12.3987 7.2633-.2899 13.2344 5.5527 13.2344 12.7332 0 3.6572-1.5596 6.9576-4.0327 9.299-.2005.2007-.3119.4683-.3119.7582.0445.8697.0223 1.7171-.0223 2.676-.0223.2453.2674.4237.4902.2676 4.144-2.8321 6.8845-7.6265 6.8845-13.0231.0223-8.8753-7.397-16.0782-16.3536-15.7214z"/></g></svg>
             </span>
-            iTunes
+            Apple
           </a>
           <!-- <a
             href="#"
@@ -215,18 +211,23 @@
             </span>
             Spotify
           </a>
-          <a
-            href="#"
-            class="inline-flex items-center px-4 py-1.5 rounded-full bg-white text-black text-sm hover:opacity-90"
+          <!-- <a
+             :href="item.appleUrl"
+            class="inline-flex items-center px-4 py-1.5 rounded-full bg-[#1DB954] text-white text-sm hover:opacity-90"
           >
             <span class="mr-2">
-              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
-                <path
-                  d="M11.977 0C5.361 0 0 5.361 0 11.977s5.361 11.977 11.977 11.977 11.977-5.361 11.977-11.977S18.593 0 11.977 0zm5.12 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02z"
-                />
-              </svg>
+             <svg fill="none" class="w-4 h-4" viewBox="0 0 92 92" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><linearGradient id="a" gradientUnits="userSpaceOnUse" x1="45.7809" x2="45.7809" y1="0" y2="91.5618"><stop offset="0" stop-color="#f452ff"/><stop offset="1" stop-color="#832bc1"/></linearGradient><rect fill="url(#a)" height="91.5618" rx="20" width="91.5618"/><g fill="#fff"><path d="m51.2102 53.6523c-.0891-.8028-.3565-1.3826-.8912-1.9178-1.0026-1.0481-2.7627-1.7394-4.8348-1.7394-2.072 0-3.8321.669-4.8347 1.7394-.5125.5575-.8021 1.115-.8912 1.9178-.1783 1.561-.0669 2.899.1114 5.0621.1782 2.0515.5124 4.7944.9357 7.5596.3119 1.9847.557 3.0551.7798 3.8133.3788 1.2488 1.7379 2.3192 3.899 2.3192 2.1612 0 3.5426-1.0927 3.899-2.3192.2228-.7582.4679-1.8286.7798-3.8133.4234-2.7875.7576-5.5081.9358-7.5596.2005-2.1631.2896-3.5011.1114-5.0621z"/><path d="m50.9618 42.2787c0 3.0328-2.4508 5.4858-5.4809 5.4858s-5.4809-2.453-5.4809-5.4858c0-3.0327 2.4508-5.4857 5.4809-5.4857s5.4809 2.4753 5.4809 5.4857z"/><path d="m45.4172 20.67c-12.7888.0446-23.2604 10.4363-23.4386 23.2364-.1337 10.3694 6.4834 19.2448 15.7297 22.5005.2228.0892.4456-.1115.4233-.3345-.1114-.8028-.2451-1.6056-.3342-2.4083-.0446-.2899-.2228-.5129-.4679-.6467-7.3079-3.1889-12.41-10.5256-12.3209-19.0218.1114-11.1499 9.2017-20.226 20.3194-20.3152 11.3851-.0892 20.6759 9.143 20.6759 20.5159 0 8.407-5.0798 15.6322-12.3208 18.8211-.2674.1115-.4457.3568-.4679.6467-.1114.8027-.2228 1.6055-.3342 2.4083-.0446.2453.2005.4237.4233.3345 9.1571-3.2111 15.7297-11.9527 15.7297-22.2106-.0446-12.9785-10.6276-23.5486-23.6168-23.5263z"/><path d="m44.8793 28.4746c-8.3327.3122-15.0167 7.2029-15.1281 15.543-.0668 5.4858 2.6736 10.3471 6.8845 13.2238.2005.1338.4902-.0223.4902-.2676-.0669-.9589-.0669-1.8063-.0223-2.6983.0223-.2899-.0891-.5575-.3119-.7582-2.5622-2.4083-4.1218-5.8425-4.0327-9.6335.1782-6.6899 5.5477-12.1311 12.2317-12.3987 7.2633-.2899 13.2344 5.5527 13.2344 12.7332 0 3.6572-1.5596 6.9576-4.0327 9.299-.2005.2007-.3119.4683-.3119.7582.0445.8697.0223 1.7171-.0223 2.676-.0223.2453.2674.4237.4902.2676 4.144-2.8321 6.8845-7.6265 6.8845-13.0231.0223-8.8753-7.397-16.0782-16.3536-15.7214z"/></g></svg>
             </span>
-            iTunes
+           Apple
+          </a> -->
+          <a
+             :href="item.appleUrl"
+            class="inline-flex items-center border-[0.5px] border-gray-200 px-4 py-1.5 rounded-full bg-white text-black text-sm hover:opacity-90"
+          >
+            <span class="mr-2">
+              <svg fill="none" class="w-6 h-6" viewBox="0 0 92 92" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><linearGradient id="a" gradientUnits="userSpaceOnUse" x1="45.7809" x2="45.7809" y1="0" y2="91.5618"><stop offset="0" stop-color="#f452ff"/><stop offset="1" stop-color="#832bc1"/></linearGradient><rect fill="url(#a)" height="91.5618" rx="20" width="91.5618"/><g fill="#fff"><path d="m51.2102 53.6523c-.0891-.8028-.3565-1.3826-.8912-1.9178-1.0026-1.0481-2.7627-1.7394-4.8348-1.7394-2.072 0-3.8321.669-4.8347 1.7394-.5125.5575-.8021 1.115-.8912 1.9178-.1783 1.561-.0669 2.899.1114 5.0621.1782 2.0515.5124 4.7944.9357 7.5596.3119 1.9847.557 3.0551.7798 3.8133.3788 1.2488 1.7379 2.3192 3.899 2.3192 2.1612 0 3.5426-1.0927 3.899-2.3192.2228-.7582.4679-1.8286.7798-3.8133.4234-2.7875.7576-5.5081.9358-7.5596.2005-2.1631.2896-3.5011.1114-5.0621z"/><path d="m50.9618 42.2787c0 3.0328-2.4508 5.4858-5.4809 5.4858s-5.4809-2.453-5.4809-5.4858c0-3.0327 2.4508-5.4857 5.4809-5.4857s5.4809 2.4753 5.4809 5.4857z"/><path d="m45.4172 20.67c-12.7888.0446-23.2604 10.4363-23.4386 23.2364-.1337 10.3694 6.4834 19.2448 15.7297 22.5005.2228.0892.4456-.1115.4233-.3345-.1114-.8028-.2451-1.6056-.3342-2.4083-.0446-.2899-.2228-.5129-.4679-.6467-7.3079-3.1889-12.41-10.5256-12.3209-19.0218.1114-11.1499 9.2017-20.226 20.3194-20.3152 11.3851-.0892 20.6759 9.143 20.6759 20.5159 0 8.407-5.0798 15.6322-12.3208 18.8211-.2674.1115-.4457.3568-.4679.6467-.1114.8027-.2228 1.6055-.3342 2.4083-.0446.2453.2005.4237.4233.3345 9.1571-3.2111 15.7297-11.9527 15.7297-22.2106-.0446-12.9785-10.6276-23.5486-23.6168-23.5263z"/><path d="m44.8793 28.4746c-8.3327.3122-15.0167 7.2029-15.1281 15.543-.0668 5.4858 2.6736 10.3471 6.8845 13.2238.2005.1338.4902-.0223.4902-.2676-.0669-.9589-.0669-1.8063-.0223-2.6983.0223-.2899-.0891-.5575-.3119-.7582-2.5622-2.4083-4.1218-5.8425-4.0327-9.6335.1782-6.6899 5.5477-12.1311 12.2317-12.3987 7.2633-.2899 13.2344 5.5527 13.2344 12.7332 0 3.6572-1.5596 6.9576-4.0327 9.299-.2005.2007-.3119.4683-.3119.7582.0445.8697.0223 1.7171-.0223 2.676-.0223.2453.2674.4237.4902.2676 4.144-2.8321 6.8845-7.6265 6.8845-13.0231.0223-8.8753-7.397-16.0782-16.3536-15.7214z"/></g></svg>
+            </span>
+            Apple
           </a>
           <!-- <a
             href="#"
@@ -368,30 +369,35 @@ const podcastList = ref([
       "In this episode of LabCast, your hosts Muyiwa and Samuel dive into the Doctorate of Medical Laboratory Science (DMLS) program, a pioneering degree that equips medical laboratory professionals with advanced skills for leadership in research, diagnostics, and healthcare. Joining them is Emmanuel Samani, a Medical Laboratory Scientist and award-winning journalist, who shares his journey through the DMLS program at the University for Development Studies, Ghana. The discussion explores the significance of the degree, its impact on the field, and how professionals can balance demanding careers while advancing their education. Tune in to learn why pursuing a DMLS could be your next big step!",
     image: "",
     link: "https://open.spotify.com/episode/4cPj3jOPAPyuEmyMRuK0Y6?si=0SwnMCbMQ1yXMBgAeZgKSw",
+    appleUrl: "https://podcasts.apple.com/us/podcast/the-doctor-of-mls-program-lessons-from-dr/id1610877517?i=1000672718005"
   },
   {
     name: "Must have sot skills for Medical Laboratory Scientist",
     description: `Medical Laboratory Scientists (MLS) must develop soft skills that go beyond technical expertise to effectively collaborate with other healthcare professionals. This episode focuses on key skills that enhance teaching, research, and interdisciplinary teamwork. Attention to detail is vital for ensuring the precision of research data, while effective communication is crucial when instructing students and sharing findings with healthcare colleagues. Problem-solving skills allow MLS professionals to address research challenges, and time management is essential for juggling teaching, research, and administrative duties.`,
     image: "",
     link: "https://open.spotify.com/episode/6C0jL2uNN68XrXK9Pfm6M7?si=VzdQo8_ZT3SeYivtW2EMcw",
+     appleUrl: "https://podcasts.apple.com/us/podcast/must-have-soft-skills-for-medical-laboratory-scientists/id1610877517?i=1000652963851"
   },
   {
     name: "From B.MLS to Ph.D (No M.Sc)",
     description: `In this episode, we discuss with MLS Olaleye Olajuyin about how he successfully secured a fully-funded scholarship for a Ph.D. program in the US without having to do a Masters.`,
     image: "",
     link: "https://open.spotify.com/episode/3mWOLlmVz26oEFQJRPbDJ9?si=8AmYJdeCR8GGzCfpFxm4sg",
+     appleUrl: "https://podcasts.apple.com/us/podcast/from-b-mls-straight-to-ph-d-no-m-sc/id1610877517?i=1000576423593"
   },
   {
     name: "Venturing into tech as a Medical Laboratory Scientist",
     description: 'In this episode, we discussed some vital information we as medical laboratory scientists or professionals should have when venturing into tech and how we can promote the profession using tech.',
     image: "",
     link: "https://open.spotify.com/episode/1ae2TQ8X9SiQvh07Qeguzj?si=Df9Jdo0rRWqrSGZWcA7b9w",
+     appleUrl: "https://podcasts.apple.com/us/podcast/venturing-into-tech-as-a-medical-laboratory-scientist/id1610877517?i=1000622634861"
   },
   {
     name: "Is Medical Lab Lucrative",
     description: 'In this episode, Precious, Nmesoma and Favour converse with MLS Olusoji Billyrose on whether or not medical laboratory science is a lucrative profession into get into.',
     image: "",
     link: "https://open.spotify.com/episode/44K4mJirmfpmQoaBbnmJ60?si=kdVDhNo9RyeL5ftGRGkR6w",
+     appleUrl: "https://podcasts.apple.com/us/podcast/is-med-lab-lucrative/id1610877517?i=1000580458463"
   },
 ]);
 </script>

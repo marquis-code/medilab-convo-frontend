@@ -6,7 +6,7 @@ const videoUrl = '/hosts.mp4';
 <template>
   <div class="flex flex-col lg:flex-row w-full h-1/2">
     <!-- Video Section -->
-    <div class="flex-1 bg-gray-800 rounded-lg m-3 lg:m-0">
+    <div class="flex-1 bg-gray-800 rounded-lg m-3 lg:m-0 order-2 lg:order-1">
       <video
         :src="videoUrl"
         class="w-full h-full object-cover rounded-lg"
@@ -20,24 +20,24 @@ const videoUrl = '/hosts.mp4';
     </div>
 
     <!-- Content Section -->
-    <div class="flex-1 bg-white p-6 flex flex-col justify-center">
+    <div class="flex-1 bg-white p-6 flex flex-col justify-center order-1 lg:order-2">
       <h1 class="text-3xl font-bold text-gray-900 mb-4">
-        Welcome to the <span class="text-indigo-600">LabCast</span>
+        Meet the Voices Behind
+        <span class="text-indigo-600">LabCast</span>
       </h1>
       <p class="text-md text-lg text-gray-700 mb-4">
-        Dive into thought-provoking discussions on technology, innovation, and stories that shape our world. Join our hosts
-        and special guests for engaging episodes.
+        At LabCast, our hosts bring passion, insight, and expertise to every conversation, guiding you through the dynamic world of medical laboratory science. Each episode, they share stories, explore innovations, and discuss the challenges and opportunities that shape the profession. Dedicated to informing, inspiring, and connecting our community, our hosts ensure LabCast remains your go-to podcast for professional growth and thought-provoking dialogue.
       </p>
-      <ul class="list-disc text-lg list-inside text-gray-600 mb-4">
+      <!-- <ul class="list-disc text-lg list-inside text-gray-600 mb-4">
         <li>New episodes every Monday and Thursday</li>
         <li>Available on Spotify, Apple Podcasts, and Google Podcasts</li>
         <li>Featuring insights from industry leaders</li>
-      </ul>
-      <div>
-        <button class="px-6 py-3 bg-indigo-600 text-white font-medium rounded-lg hover:bg-indigo-700">
+      </ul> -->
+      <!-- <div>
+        <a href="" class="px-6 py-3 bg-indigo-600 text-white font-medium rounded-lg hover:bg-indigo-700">
           Listen Now
-        </button>
-      </div>
+        </a>
+      </div> -->
     </div>
   </div>
 </template>

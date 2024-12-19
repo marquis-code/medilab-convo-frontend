@@ -16,7 +16,7 @@
             </button>
           </div>
           <div class="hidden lg:flex lg:gap-x-12">
-            <NuxtLink to="/journals" class="text-sm font-semibold leading-6 text-white">Journals</NuxtLink>
+            <NuxtLink to="/journals" class="text-sm font-semibold leading-6 text-white">Journo</NuxtLink>
             <NuxtLink to="/lab-cast" class="text-sm font-semibold leading-6 text-white">LabCast</NuxtLink>
             <NuxtLink to="/community" class="text-sm font-semibold leading-6 text-white">Community</NuxtLink>
             <NuxtLink to="/programs" class="text-sm font-semibold leading-6 text-white">Programs</NuxtLink>
@@ -48,7 +48,7 @@
             <div class="mt-6 flow-root">
               <div class="-my-6 divide-y divide-gray-500/25">
                 <div class="space-y-2 py-6">
-                  <NuxtLink @click="isOpen = false" to="/journals" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-800">Journals</NuxtLink>
+                  <NuxtLink @click="isOpen = false" to="/journals" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-800">Journo</NuxtLink>
                   <NuxtLink @click="isOpen = false" to="/lab-cast" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-800">LabCast</NuxtLink>
                   <NuxtLink @click="isOpen = false" to="/community" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-800">Community</NuxtLink>
                   <NuxtLink @click="isOpen = false" to="/programs" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-800">Programs</NuxtLink>

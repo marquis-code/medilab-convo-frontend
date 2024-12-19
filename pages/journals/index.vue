@@ -15,14 +15,33 @@
           </div>
         </div>
       </div>
+
+      <h2 class="text-3xl pt-6 font-bold tracking-tight text-gray-900 sm:text-5xl text-center">LATEST PUBLICATION</h2>
+
+      <div class="relative bg-blue-800 lg:mt-10 pt-0">
+  <div class="relative h-80 overflow-hidden  md:absolute md:left-0 md:h-full mt-44 pb-[400px] lg:pb-0 md:w-1/3 lg:w-1/2">
+    <img class="size-full object-cover"  src="@/assets/img/latest.jpeg" alt="">
+  </div>
+  <div class="relative mx-auto max-w-7xl py-24 sm:py-32 px-10 lg:px-0 lg:px-8 lg:py-40">
+    <div class="md:ml-auto md:w-2/3 md:pl-16 lg:w-1/2">
+      <!-- <h2 class="text-base/7 font-semibold text-indigo-400">Award winning support</h2> -->
+      <p class="mt-2 text-4xl font-semibold tracking-tight text-white sm:text-5xl">FROM ‘MIRACLE MEDS’ TO MAYHEM: COMBATING ANTIMICROBIAL RESISTANCE</p>
+      <p class="mt-6 text-base/7 text-gray-300"> One day, Mamooo's son, Tega, returned home after national youth service but Mamooo couldn’t believe her eyes. Tega’s gaunt frame and sun-scorched skin sent his mother into a frenzy. His eyes, once bright and full of life, now seemed dull and sunken. She immediately provided him with her 'miracle meds': anti-malaria, amoxicillin, and multivitamins. With a knowing glint in her eye, she declared, “Nah those giant mosquitoes wey dey that camp wan suck my pikin blood dry, na why he con resemble toothpick!”</p>
+      <div class="mt-8">
+        <a href="https://mlcjourno.substack.com/" class="inline-flex rounded-md bg-white/10 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-white/20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">View all blog posts <span aria-hidden="true">&rarr;</span></a>
+      </div>
+    </div>
+  </div>
+</div>
+
       
-      <div class="bg-white py-32">
+      <!-- <div class="bg-white py-32">
         <div class="mx-auto max-w-7xl px-6 lg:px-8">
           <div class="mx-auto flex max-w-2xl flex-col items-end justify-between gap-16 lg:mx-0 lg:max-w-none lg:flex-row">
             <div class="w-full lg:max-w-lg lg:flex-auto">
-              <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">LATEST BLOGPOST</h2>
-              <p class="mt-6 text-xl leading-8 text-gray-600">Diam nunc lacus lacus aliquam turpis enim. Eget hac velit est euismod lacus. Est non placerat nam arcu. Cras purus nibh cursus sit eu in id.</p>
-              <img src="@/assets/img/breaking.jpg" alt="" class="mt-16 aspect-[6/5] w-full rounded-2xl bg-gray-50 object-cover lg:aspect-auto lg:h-[34.5rem]">
+              <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl text-center">LATEST PUBLICATION</h2>
+              <p class="mt-6 text-xl leading-8 text-gray-600">FROM ‘MIRACLE MEDS’ TO MAYHEM: COMBATING ANTIMICROBIAL RESISTANCE.</p>
+              <img src="@/assets/img/latest.jpeg" alt="" class="mt-16 aspect-[6/5] w-full rounded-2xl bg-gray-50 object-cover lg:aspect-auto lg:h-[34.5rem]">
             </div>
             <div class="w-full lg:max-w-xl lg:flex-auto">
               <h3 class="sr-only">Job openings</h3>
@@ -30,115 +49,78 @@
                 <li class="py-8">
                   <dl class="relative flex flex-wrap gap-x-3">
                     <dt class="sr-only">Role</dt>
-                    <dd class="w-full flex-none text-lg font-semibold tracking-tight text-gray-900">
-                      <a href="#">
-                        Another Pandemic Looming? The Mpox Saga
-                        <span class="absolute inset-0" aria-hidden="true"></span>
-                      </a>
-                    </dd>
                     <dt class="sr-only">Description</dt>
-                    <dd class="mt-2 w-full flex-none text-base leading-7 text-gray-600">Viral diseases have been one of the major global health crises that the world has been battling nonstop over the past decade. From Lassa fever to Ebola to COVID-19, humanity has lost countless souls, soldiers and civilians alike, in this seemingly unending battle with these “environmental” microbes. We have barely recovered from the devastation of the last viral outbreak, COVID-19, and already it looks like we are on the verge of another pandemic. </dd>
+                    <dd class="mt-2 w-full flex-none text-base leading-7 text-gray-600">
+                      One day, Mamooo's son, Tega, returned home after national youth service but Mamooo couldn’t believe her eyes. Tega’s gaunt frame and sun-scorched skin sent his mother into a frenzy. His eyes, once bright and full of life, now seemed dull and sunken. She immediately provided him with her 'miracle meds': anti-malaria, amoxicillin, and multivitamins. With a knowing glint in her eye, she declared, “Nah those giant mosquitoes wey dey that camp wan suck my pikin blood dry, na why he con resemble toothpick!”
+                    </dd>
                     <button class="bg-teal-600 w-full mt-5 text-white font-medium rounded-md px-8 py-3 hover:bg-teal-700 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-opacity-50">
                       Read more
                     </button>
-                    <!-- <dt class="sr-only">Salary</dt>
-                    <dd class="mt-4 text-base font-semibold leading-7 text-gray-900">$75,000 USD</dd>
-                    <dt class="sr-only">Location</dt>
-                    <dd class="mt-4 flex items-center gap-x-3 text-base leading-7 text-gray-500">
-                      <svg viewBox="0 0 2 2" class="h-0.5 w-0.5 flex-none fill-gray-300" aria-hidden="true">
-                        <circle cx="1" cy="1" r="1" />
-                      </svg>
-                      San Francisco, CA
-                    </dd> -->
                   </dl>
                 </li>
               </ul>
               <div class="mt-8 flex border-t border-gray-100 pt-8">
-                <a href="#" class="text-sm font-semibold leading-6 text-indigo-600 hover:text-indigo-500">View all blog posts <span aria-hidden="true">&rarr;</span></a>
+                <a href="https://mlcjourno.substack.com/" class="text-sm font-semibold leading-6 text-blue-600 hover:text-indigo-500">View all blog posts <span aria-hidden="true">&rarr;</span></a>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
 
-      <div class="bg-white py-32">
-        <div class="mx-auto max-w-7xl px-6 lg:px-8">
-          <div class="mx-auto flex max-w-2xl flex-col items-end justify-between gap-16 lg:mx-0 lg:max-w-none lg:flex-row">
-            <div class="w-full lg:max-w-lg lg:flex-auto">
-              <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">READ FROM OUR ARCHIVES</h2>
-              <p class="mt-6 text-xl leading-8 text-gray-600">Diam nunc lacus lacus aliquam turpis enim. Eget hac velit est euismod lacus. Est non placerat nam arcu. Cras purus nibh cursus sit eu in id.</p>
-              <img src="@/assets/img/pandemic.jpg" alt="" class="mt-16 aspect-[6/5] w-full rounded-2xl bg-gray-50 object-cover lg:aspect-auto lg:h-[34.5rem]">
-            </div>
-            <div class="w-full lg:max-w-xl lg:flex-auto">
-              <h3 class="sr-only">Job openings</h3>
-              <ul class="-my-8 divide-y divide-gray-100">
-                <li class="py-8">
-                  <dl class="relative flex flex-wrap gap-x-3">
-                    <dt class="sr-only">Role</dt>
-                    <dd class="w-full flex-none text-lg font-semibold tracking-tight text-gray-900">
-                      <a href="#">
-                        Another Pandemic Looming? The Mpox Saga
-                        <span class="absolute inset-0" aria-hidden="true"></span>
-                      </a>
-                    </dd>
-                    <dt class="sr-only">Description</dt>
-                    <dd class="mt-2 w-full flex-none text-base leading-7 text-gray-600">Viral diseases have been one of the major global health crises that the world has been battling nonstop over the past decade. From Lassa fever to Ebola to COVID-19, humanity has lost countless souls, soldiers and civilians alike, in this seemingly unending battle with these “environmental” microbes. We have barely recovered from the devastation of the last viral outbreak, COVID-19, and already it looks like we are on the verge of another pandemic. </dd>
-                    <button class="bg-teal-600 w-full mt-5 text-white font-medium rounded-md px-8 py-3 hover:bg-teal-700 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-opacity-50">
-                      Read more
-                    </button>
-                    <!-- <dt class="sr-only">Salary</dt>
-                    <dd class="mt-4 text-base font-semibold leading-7 text-gray-900">$75,000 USD</dd>
-                    <dt class="sr-only">Location</dt>
-                    <dd class="mt-4 flex items-center gap-x-3 text-base leading-7 text-gray-500">
-                      <svg viewBox="0 0 2 2" class="h-0.5 w-0.5 flex-none fill-gray-300" aria-hidden="true">
-                        <circle cx="1" cy="1" r="1" />
-                      </svg>
-                      San Francisco, CA
-                    </dd> -->
-                  </dl>
-                </li>
-
-                <li class="py-8">
-                  <dl class="relative flex flex-wrap gap-x-3">
-                    <dt class="sr-only">Role</dt>
-                    <dd class="w-full flex-none text-lg font-semibold tracking-tight text-gray-900">
-                      <a href="#">
-                        The Role of Medical Laboratory Science in the Entertainment Industry
-                        <span class="absolute inset-0" aria-hidden="true"></span>
-                      </a>
-                    </dd>
-                    <dt class="sr-only">Description</dt>
-                    <dd class="mt-2 w-full flex-none text-base leading-7 text-gray-600">A healthcare professional who deals with biological specimens at the junction of life and death has anything to do with a professional whose main job is to provide amusement and relaxation. If we were to be in an alternate universe where personal protective equipment is considered costumes and movies are recorded using microscopes, perhaps we might be able to draw some comparisons.   </dd>
-                    <button class="bg-teal-600 w-full mt-5 text-white font-medium rounded-md px-8 py-3 hover:bg-teal-700 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-opacity-50">
-                      Read more
-                    </button>
-                    <!-- <dt class="sr-only">Salary</dt>
-                    <dd class="mt-4 text-base font-semibold leading-7 text-gray-900">$75,000 USD</dd>
-                    <dt class="sr-only">Location</dt>
-                    <dd class="mt-4 flex items-center gap-x-3 text-base leading-7 text-gray-500">
-                      <svg viewBox="0 0 2 2" class="h-0.5 w-0.5 flex-none fill-gray-300" aria-hidden="true">
-                        <circle cx="1" cy="1" r="1" />
-                      </svg>
-                      San Francisco, CA
-                    </dd> -->
-                  </dl>
-                </li>
-              </ul>
-              <div class="mt-8 flex border-t border-gray-100 pt-8">
-                <a href="#" class="text-sm font-semibold leading-6 text-indigo-600 hover:text-indigo-500">View all archives <span aria-hidden="true">&rarr;</span></a>
-              </div>
+      <div class="bg-white py-24 sm:py-32">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="mx-auto max-w-2xl text-center">
+      <h2 class="text-balance text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">More From</h2>
+      <!-- <p class="mt-2 text-lg/8 text-gray-600">Learn how to grow your business with our expert advice.</p> -->
+    </div>
+    <div class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+      <a :href="item.url" v-for="(item, idx) in journosList" :key="idx" class="flex block flex-col items-start justify-between">
+        <div class="relative w-full">
+          <img :src="item.image" alt="" class="aspect-video w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]">
+          <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
+        </div>
+        <div class="max-w-xl">
+          <!-- <div class="mt-8 flex items-center gap-x-4 text-xs">
+            <time datetime="2020-03-16" class="text-gray-500">Mar 16, 2020</time>
+            <a href="#" class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">Marketing</a>
+          </div> -->
+          <div class="group relative">
+            <h3 class="mt-3 text-lg/6 font-semibold text-gray-900 group-hover:text-gray-600">
+              <a href="#">
+                <span class="absolute inset-0"></span>
+                {{ item?.title ?? 'Nil' }}
+              </a>
+            </h3>
+            <p class="mt-5 line-clamp-3 text-sm/6 text-gray-600">{{ item?.desc ?? 'Nil' }}</p>
+          </div>
+          <div class="relative mt-8 flex items-center gap-x-4">
+            <img src="@/assets/icons/avatar.svg" alt="" class="h-10 w-10 rounded-full bg-gray-100">
+            <div class="text-sm/6">
+              <p class="font-semibold text-gray-900">
+                <a href="#">
+                  <span class="absolute inset-0"></span>
+                 {{ item?.author ?? 'Nil' }}
+                </a>
+              </p>
+              <!-- <p class="text-gray-600">Co-Founder / CTO</p> -->
             </div>
           </div>
         </div>
-      </div>
+      </a>
+
+      <!-- More posts... -->
+    </div>
+  </div>
+</div>
+
 
 <div class="relative isolate overflow-hidden bg-teal-900 py-16 sm:py-24 lg:py-32">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-2">
       <div class="max-w-xl lg:max-w-lg">
-        <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">Subscribe to our newsletter.</h2>
-        <p class="mt-4 text-lg leading-8 text-gray-200">Nostrud amet eu ullamco nisi aute in ad minim nostrud adipisicing velit quis. Duis tempor incididunt dolore.</p>
-        <div class="mt-6 max-w-md gap-x-4 space-y-5">
+        <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl"> Be the first. Get Journo in your mail.</h2>
+        <p class="mt-4 text-lg leading-8 text-gray-200">If you would like to have early access to all articles published on Journo, sign up for our special mailing list for free..</p>
+        <!-- <div class="mt-6 max-w-md gap-x-4 space-y-5">
          <div class="w-full">
           <label for="email-address" class="sr-only">Email address *</label>
           <input id="email-address" name="email" type="email" autocomplete="email" required class="min-w-full flex-auto rounded-md border-0 bg-white/5 px-3.5 py-3 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6" placeholder="Email address *">
@@ -154,9 +136,10 @@
          <div class="w-full pt-3">
           <button type="submit" class="flex-none w-full rounded-md bg-teal-700 px-3.5 py-3 text-sm font-semibold text-white shadow-sm hover:bg-team-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-team-500">Subscribe</button>
          </div>
-        </div>
+        </div> -->
       </div>
-      <dl class="grid grid-cols-1 gap-x-8 gap-y-10 sm:grid-cols-2 lg:pt-2">
+      <iframe src="https://mlcjourno.substack.com/embed" width="480" height="320" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
+      <!-- <dl class="grid grid-cols-1 gap-x-8 gap-y-10 sm:grid-cols-2 lg:pt-2">
         <div class="flex flex-col items-start">
           <div class="rounded-md bg-white/5 p-2 ring-1 ring-white/10">
             <svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
@@ -175,7 +158,7 @@
           <dt class="mt-4 font-semibold text-white">No spam</dt>
           <dd class="mt-2 leading-7 text-gray-200">Officia excepteur ullamco ut sint duis proident non adipisicing. Voluptate incididunt anim.</dd>
         </div>
-      </dl>
+      </dl> -->
     </div>
   </div>
   <div class="absolute left-1/2 top-0 -z-10 -translate-x-1/2 blur-3xl xl:-top-6" aria-hidden="true">
@@ -258,3 +241,65 @@
 
   </main>
 </template>
+
+<script setup lang="ts">
+import journo1 from '@/assets/img/journo1.jpeg'
+import journo2 from '@/assets/img/journo2.jpeg'
+import journo3 from '@/assets/img/lab-coast/journo3.jpeg'
+import journo4 from '@/assets/img/lab-coast/journo4.jpeg'
+import journo5 from '@/assets/img/lab-coast/journo5.jpeg'
+import journo6 from '@/assets/img/lab-coast/journo6.jpeg'
+import journo7 from '@/assets/img/lab-coast/journo7.jpeg'
+
+ const journosList = ref([
+  {
+    image: journo1,
+    title: 'Sexism in STEM: A Farce or Fact',
+    desc: 'The story of Rosalind Franklin comes to mind when we begin to explore the reality of women that are in STEM. Before her early death due to ovarian cancer, she was a woman who made mind-blowing breakthroughs in the field of X-ray crystallography. She is known for her contribution towards the discovery of the DNA structure - a molecule that is fundamental to life.',
+    author: 'Bamidele Toluwase, and Williams Owoeye',
+    url: 'https://mlcjourno.substack.com/p/sexism-in-stem-a-farce-or-fact'
+  },
+  {
+    image: journo2,
+    title: 'Seeing is Believing',
+    desc: 'The World Health Organization (WHO) defines vaccine hesitancy as a delay in acceptance or refusal of safe vaccines despite the availability of vaccination services, and in 2019, it was declared as one of the ten global threats to public health. The trend of refusal of vaccines has increased over the years, and there are so many factors influencing this increasing trend.',
+    author: 'Precious Sylvanus',
+    url: 'https://mlcjourno.substack.com/p/seeing-is-believing'
+  },
+  {
+    image: journo3,
+    title: 'The Role of Medical Laboratory Science in the Entertainment Industry',
+    desc: 'Defining entertainment is one of those essay questions you\'d rather skip in an examination hall and look for easier ones. Although even secondary school students understand the concept of entertainment, putting words to it in a way that is academically cohesive and encompassing is a great hassle. This great dilemma lies in the reality that entertainment is intricately linked with human lifestyle. As a concept, it\'s ubiquitous but as a definition, it is ambiguous. ',
+    author: 'Williams Owoeye',
+    url: 'https://mlcjourno.substack.com/p/the-role-of-medical-laboratory-science'
+  },
+  {
+    image: journo4,
+    title: 'Another Pandemic Looming? The Mpox Saga',
+    desc: 'Viral diseases have been one of the major global health crises that the world has been battling nonstop over the past decade. From Lassa fever to Ebola to COVID-19, humanity has lost countless souls, soldiers and civilians alike, in this seemingly unending battle with these “environmental” microbes. We have barely recovered from the devastation of the last viral outbreak, COVID-19, and already it looks like we are on the verge of another pandemic',
+    author: 'Precious Sylvanus',
+    url: 'https://mlcjourno.substack.com/p/another-pandemic-looming-the-mpox'
+  },
+  {
+    image: journo5,
+    title: 'Lightbulb Moments: Zapping Out the Power from its Empowerment',
+    desc: 'Today, good health is important for man’s continued existence. As such, light bulb moments in health (education) are a key component for everyone. The ability to learn about healthier habits and disease prevention mechanisms for everyday people is key to reducing the incidence of chronic diseases, helping them make informed health decisions, and improving their health outcomes. ',
+    author: 'Williams Owoeye and Ernesto Dibia',
+    url: 'https://mlcjourno.substack.com/p/lightbulb-moments-zapping-out-the'
+  },
+  {
+    image: journo6,
+    title: 'MEDICAL LABORATORY SCIENCE INTERNSHIP: STATE OF ACCREDITED CENTERS',
+    desc: 'The medical laboratory science graduate internship is a professional learning experience that offers clinical work- experience for every young medical laboratory science graduate.  According to the Medical Laboratory Science Council of Nigeria, every graduate of the profession has to undergo this period of internship at an accredited centre. There are currently about 117 accredited centres including private hospitals and independent laboratories across the country.',
+    author: 'Ernesto Dibia, and Oluwaponmile',
+    url: 'https://mlcjourno.substack.com/p/medical-laboratory-science-internship'
+  },
+  {
+    image: journo7,
+    title: 'From Culture Plates to Culture Shifts: Cultivating Influence as Medical Laboratory Scientists',
+    desc: 'In the medical laboratory world, cultivating influence can be a bit like growing cultures on  a petri dish - one needs the right conditions, the proper mechanism and precise supervision of the organisms.',
+    author: 'Ubani Confidence and Bamidele Toluwase',
+    url: 'https://mlcjourno.substack.com/p/from-culture-plates-to-culture-shifts'
+  }
+ ])
+</script>
