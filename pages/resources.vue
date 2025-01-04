@@ -50,7 +50,7 @@
                       </div>
                      <div class="space-y-3 mt-6 w-full">
                       <div class="w-full">
-                        <NuxtLink :to="item.previousEditionUrl" class="py-3 block text-center rounded-md w-full bg-black text-white ">Book Now</NuxtLink>
+                        <a href="https://wa.link/ndw0et" class="py-3 block text-center rounded-md w-full bg-black text-white ">Book Now</a>
                       </div>
                       <div class="w-full">
                         <NuxtLink :to="item.registerUrl" class="py-3 block text-center rounded-md w-full bg-black text-white ">Terms and Conditions Apply</NuxtLink>
