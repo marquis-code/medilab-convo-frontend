@@ -146,7 +146,7 @@
                 <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Privacy</a>
               </li>
               <li>
-                <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Terms</a>
+                <a href="https://drive.google.com/file/d/1L-09LCBYTapA2mPUaTasafSvjs6yqE6I/view?usp=drivesdk" class="text-sm leading-6 text-gray-300 hover:text-white">Terms and Conditions</a>
               </li>
             </ul>
           </div>

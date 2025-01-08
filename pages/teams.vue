@@ -1,66 +1,26 @@
 <template>
 <main>
     <div class="bg-white">
-        <main>
-          <div class="relative isolate">
-            <svg class="absolute inset-x-0 top-0 -z-10 h-[64rem] w-full stroke-gray-200 [mask-image:radial-gradient(32rem_32rem_at_center,white,transparent)]" aria-hidden="true">
-              <defs>
-                <pattern id="1f932ae7-37de-4c0a-a8b0-a6e3b4d44b84" width="200" height="200" x="50%" y="-1" patternUnits="userSpaceOnUse">
-                  <path d="M.5 200V.5H200" fill="none" />
-                </pattern>
-              </defs>
-              <svg x="50%" y="-1" class="overflow-visible fill-gray-50">
-                <path d="M-200 0h201v201h-201Z M600 0h201v201h-201Z M-400 600h201v201h-201Z M200 800h201v201h-201Z" stroke-width="0" />
-              </svg>
-              <rect width="100%" height="100%" stroke-width="0" fill="url(#1f932ae7-37de-4c0a-a8b0-a6e3b4d44b84)" />
-            </svg>
-            <div class="absolute left-1/2 right-0 top-0 -z-10 -ml-24 transform-gpu overflow-hidden blur-3xl lg:ml-24 xl:ml-48" aria-hidden="true">
-              <div class="aspect-[801/1036] w-[50.0625rem] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30" style="clip-path: polygon(63.1% 29.5%, 100% 17.1%, 76.6% 3%, 48.4% 0%, 44.6% 4.7%, 54.5% 25.3%, 59.8% 49%, 55.2% 57.8%, 44.4% 57.2%, 27.8% 47.9%, 35.1% 81.5%, 0% 97.7%, 39.2% 100%, 35.2% 81.4%, 97.2% 52.8%, 63.1% 29.5%)"></div>
-            </div>
-            <div class="overflow-hidden">
-              <div class="mx-auto max-w-7xl px-6 pb-32 pt-36 sm:pt-60 lg:px-8 lg:pt-32">
-                <div class="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center">
-                  <div class="relative w-full max-w-xl lg:shrink-0 xl:max-w-2xl">
-                    <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">We are leading change, inspiring action and buidling the capacity of future world class Biomedical scientists</h1>
-                    <p class="mt-6 text-lg leading-8 text-gray-600 sm:max-w-md lg:max-w-none">At MedLabConvo, we are dedicated to leading change, inspiring action, and building the capacities of future generations of world-class professionals in medical laboratory science and the broader healthcare system. Our mission is to address critical gaps and empower individuals across five key areas: Knowledge, Mindset, Skill, Network, and Identity.</p>
-                    <!-- <div class="mt-10 flex items-center gap-x-6">
-                      <a href="#" class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Get started</a>
-                      <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Live demo <span aria-hidden="true">→</span></a>
-                    </div> -->
-                  </div>
-                  <div class="mt-14 flex justify-end gap-8 sm:-mt-44 sm:justify-start sm:pl-20 lg:mt-0 lg:pl-0">
-                    <div class="ml-auto w-44 flex-none space-y-8 pt-32 sm:ml-0 sm:pt-80 lg:order-last lg:pt-36 xl:order-none xl:pt-80">
-                      <div class="relative">
-                        <img src="@/assets/img/bonding1.jpg" alt="" class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg">
-                        <div class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10"></div>
-                      </div>
-                    </div>
-                    <div class="mr-auto w-44 flex-none space-y-8 sm:mr-0 sm:pt-52 lg:pt-36">
-                      <div class="relative">
-                        <img src="@/assets/img/bonding2.jpg" alt="" class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg">
-                        <div class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10"></div>
-                      </div>
-                      <div class="relative">
-                        <img  src="@/assets/img/bonding3.jpg" alt="" class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg">
-                        <div class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10"></div>
-                      </div>
-                    </div>
-                    <div class="w-44 flex-none space-y-8 pt-32 sm:pt-0">
-                      <div class="relative">
-                        <img  src="@/assets/img/bonding4.jpg" alt="" class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg">
-                        <div class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10"></div>
-                      </div>
-                      <div class="relative">
-                        <img  src="@/assets/img/bonding5.jpg" alt="" class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg">
-                        <div class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </main>
+        <div class="bg-white">
+  <div class="relative isolate overflow-hidden bg-gradient-to-b from-indigo-100/20 pt-14">
+    <div class="absolute inset-y-0 right-1/2 -z-10 -mr-96 w-[200%] origin-top-right skew-x-[-30deg] bg-white shadow-xl shadow-indigo-600/10 ring-1 ring-indigo-50 sm:-mr-80 lg:-mr-96" aria-hidden="true"></div>
+    <div class="mx-auto max-w-7xl px-6 py-32 sm:py-40 lg:px-8">
+      <div class="mx-auto max-w-2xl lg:mx-0 lg:grid lg:max-w-none lg:grid-cols-2 lg:gap-x-16 lg:gap-y-8 xl:grid-cols-1 xl:grid-rows-1 xl:gap-x-8">
+        <h1 class="max-w-2xl text-balance text-5xl font-semibold tracking-tight text-gray-900 sm:text-5xl lg:col-span-2 xl:col-auto">We are leading change, inspiring action and buidling the capacity of future world class Biomedical scientists</h1>
+        <div class="mt-6 max-w-xl lg:mt-0 xl:col-end-1 xl:row-start-1">
+          <p class="text-pretty text-lg font-medium text-gray-500 sm:text-xl/8">At MedLabConvo, we are dedicated to leading change, inspiring action, and building the capacities of future generations of world-class professionals in medical laboratory science and the broader healthcare system. Our mission is to address critical gaps and empower individuals across five key areas: Knowledge, Mindset, Skill, Network, and Identity.</p>
+          <!-- <div class="mt-10 flex items-center gap-x-6">
+            <a href="#" class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Get started</a>
+            <a href="#" class="text-sm/6 font-semibold text-gray-900">Learn more <span aria-hidden="true">→</span></a>
+          </div> -->
+        </div>
+        <img src="https://images.unsplash.com/photo-1567532900872-f4e906cbf06a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1280&q=80" alt="" class="mt-10 aspect-[6/5] w-full max-w-lg rounded-2xl object-cover sm:mt-16 lg:mt-0 lg:max-w-none xl:row-span-2 xl:row-end-2 xl:mt-36">
+      </div>
+    </div>
+    <div class="absolute inset-x-0 bottom-0 -z-10 h-24 bg-gradient-to-t from-white sm:h-32"></div>
+  </div>
+</div>
+
       </div>
       <div class="bg-white">
         <div class="mx-auto max-w-7xl px-6 lg:px-8">
@@ -68,7 +28,7 @@
             <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Stay on top of customer support</h2>
             <p class="mt-6 text-lg leading-8 text-gray-600">Lorem ipsum dolor sit amet consect adipisicing elit. Possimus magnam voluptatum cupiditate veritatis in accusamus quisquam.</p>
           </div> -->
-          <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
+          <div class="mx-auto mt-16 max-w-2xl sm:mt-4 lg:mt-24 lg:max-w-none">
             <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
               <div class="flex flex-col">
                 <dt class="text-base font-semibold leading-7 text-gray-900">
@@ -159,7 +119,7 @@
       
 
       <!-- <div class="bg-white">
-        <div class="mx-auto mt-16 max-w-7xl px-6 sm:mt-20 md:mt-24 lg:px-8">
+        <div class="mx-auto mt-16 max-w-7xl px-6 sm:mt-4 md:mt-24 lg:px-8">
           <dl class="mx-auto grid max-w-2xl grid-cols-1 gap-x-6 gap-y-10 text-base leading-7 text-gray-600 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-x-8 lg:gap-y-16">
             <div class="relative pl-9">
               <dt class="inline font-semibold text-gray-900">
@@ -215,11 +175,12 @@
 
       <div class="bg-white py-24 sm:py-32">
         <div class="mx-auto max-w-7xl px-6 lg:px-8">
+          <h1 class="text-center font-bold  pb-10">Our Team</h1>
           <div class="mx-auto max-w-2xl lg:mx-0">
-            <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">EXECUTIVE BOARD</h2>
-            <p class="mt-6 text-lg leading-8 text-gray-600">We’re a dynamic group of individuals who are passionate about what we do and dedicated to delivering the best results for our clients.</p>
+            <h2 class="font-bold tracking-tight text-gray-900 text-xl">EXECUTIVE BOARD</h2>
+            <!-- <p class="mt-6 text-lg leading-8 text-gray-600">We’re a dynamic group of individuals who are passionate about what we do and dedicated to delivering the best results for our clients.</p> -->
           </div>
-          <ul role="list" class="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+          <ul role="list" class="mx-auto mt-4 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
             <li>
               <img class="aspect-[3/4] w-full h-[500px] rounded-2xl object-cover" src="@/assets/img/executive-board1.jpg" alt="">
               <h3 class="mt-6 text-lg font-semibold leading-8 tracking-tight text-gray-900">Dr. Paul Olaiya</h3>
@@ -282,32 +243,14 @@
       <div class="bg-white">
         <div class="mx-auto max-w-7xl px-6 lg:px-8">
           <div class="mx-auto max-w-2xl lg:mx-0">
-            <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">ADVISORY BOARD</h2>
-            <p class="mt-6 text-lg leading-8 text-gray-600">We’re a dynamic group of individuals who are passionate about what we do and dedicated to delivering the best results for our clients.</p>
+            <h2 class="font-bold tracking-tight text-gray-900 text-xl">ADVISORY BOARD</h2>
+            <!-- <p class="mt-6 text-lg leading-8 text-gray-600">We’re a dynamic group of individuals who are passionate about what we do and dedicated to delivering the best results for our clients.</p> -->
           </div>
-          <ul role="list" class="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+          <ul role="list" class="mx-auto mt-4 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
             <li>
               <img class="aspect-[3/4] w-full rounded-2xl h-[500px] object-cover" src="@/assets/img/advisory1.jpg" alt="">
               <h3 class="mt-6 text-lg font-semibold leading-8 tracking-tight text-gray-900">Gabriel Oke</h3>
               <p class="text-base leading-7 text-gray-600">Advisory board</p>
-              <!-- <ul role="list" class="mt-6 flex gap-x-6">
-                <li>
-                  <a href="#" class="text-gray-400 hover:text-gray-500">
-                    <span class="sr-only">X</span>
-                    <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
-                      <path d="M11.4678 8.77491L17.2961 2H15.915L10.8543 7.88256L6.81232 2H2.15039L8.26263 10.8955L2.15039 18H3.53159L8.87581 11.7878L13.1444 18H17.8063L11.4675 8.77491H11.4678ZM9.57608 10.9738L8.95678 10.0881L4.02925 3.03974H6.15068L10.1273 8.72795L10.7466 9.61374L15.9156 17.0075H13.7942L9.57608 10.9742V10.9738Z" />
-                    </svg>
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="text-gray-400 hover:text-gray-500">
-                    <span class="sr-only">LinkedIn</span>
-                    <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
-                      <path fill-rule="evenodd" d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z" clip-rule="evenodd" />
-                    </svg>
-                  </a>
-                </li>
-              </ul> -->
             </li>
       
            
@@ -315,104 +258,48 @@
                 <img class="aspect-[3/4] w-full rounded-2xl h-[500px] object-cover" src="@/assets/img/advisory2.jpg" alt="">
                 <h3 class="mt-6 text-lg font-semibold leading-8 tracking-tight text-gray-900">Emmanuel Anya-Awa</h3>
                 <p class="text-base leading-7 text-gray-600">Advisory board</p>
-                <!-- <ul role="list" class="mt-6 flex gap-x-6">
-                  <li>
-                    <a href="#" class="text-gray-400 hover:text-gray-500">
-                      <span class="sr-only">X</span>
-                      <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
-                        <path d="M11.4678 8.77491L17.2961 2H15.915L10.8543 7.88256L6.81232 2H2.15039L8.26263 10.8955L2.15039 18H3.53159L8.87581 11.7878L13.1444 18H17.8063L11.4675 8.77491H11.4678ZM9.57608 10.9738L8.95678 10.0881L4.02925 3.03974H6.15068L10.1273 8.72795L10.7466 9.61374L15.9156 17.0075H13.7942L9.57608 10.9742V10.9738Z" />
-                      </svg>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="text-gray-400 hover:text-gray-500">
-                      <span class="sr-only">LinkedIn</span>
-                      <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
-                        <path fill-rule="evenodd" d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z" clip-rule="evenodd" />
-                      </svg>
-                    </a>
-                  </li>
-                </ul> -->
               </li>
 
               <li>
-                <img class="aspect-[3/4] w-full rounded-2xl h-[500px] object-cover" src="@/assets/img/advisory3.jpg" alt="">
+                <img class="aspect-[3/4] w-full rounded-2xl h-[500px] object-cover" src="@/assets/img/aisha.jpeg" alt="">
                 <h3 class="mt-6 text-lg font-semibold leading-8 tracking-tight text-gray-900">Aisha Adeola</h3>
                 <p class="text-base leading-7 text-gray-600">Advisory board</p>
-                <!-- <ul role="list" class="mt-6 flex gap-x-6">
-                  <li>
-                    <a href="#" class="text-gray-400 hover:text-gray-500">
-                      <span class="sr-only">X</span>
-                      <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
-                        <path d="M11.4678 8.77491L17.2961 2H15.915L10.8543 7.88256L6.81232 2H2.15039L8.26263 10.8955L2.15039 18H3.53159L8.87581 11.7878L13.1444 18H17.8063L11.4675 8.77491H11.4678ZM9.57608 10.9738L8.95678 10.0881L4.02925 3.03974H6.15068L10.1273 8.72795L10.7466 9.61374L15.9156 17.0075H13.7942L9.57608 10.9742V10.9738Z" />
-                      </svg>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="text-gray-400 hover:text-gray-500">
-                      <span class="sr-only">LinkedIn</span>
-                      <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
-                        <path fill-rule="evenodd" d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z" clip-rule="evenodd" />
-                      </svg>
-                    </a>
-                  </li>
-                </ul> -->
               </li>
 
               <li>
                 <img class="aspect-[3/4] w-full rounded-2xl h-[500px] object-cover" src="@/assets/img/advisory4.png" alt="">
                 <h3 class="mt-6 text-lg font-semibold leading-8 tracking-tight text-gray-900">Odinaka Kingsley Obeta</h3>
                 <p class="text-base leading-7 text-gray-600">Advisory board</p>
-                <!-- <ul role="list" class="mt-6 flex gap-x-6">
-                  <li>
-                    <a href="#" class="text-gray-400 hover:text-gray-500">
-                      <span class="sr-only">X</span>
-                      <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
-                        <path d="M11.4678 8.77491L17.2961 2H15.915L10.8543 7.88256L6.81232 2H2.15039L8.26263 10.8955L2.15039 18H3.53159L8.87581 11.7878L13.1444 18H17.8063L11.4675 8.77491H11.4678ZM9.57608 10.9738L8.95678 10.0881L4.02925 3.03974H6.15068L10.1273 8.72795L10.7466 9.61374L15.9156 17.0075H13.7942L9.57608 10.9742V10.9738Z" />
-                      </svg>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="text-gray-400 hover:text-gray-500">
-                      <span class="sr-only">LinkedIn</span>
-                      <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
-                        <path fill-rule="evenodd" d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z" clip-rule="evenodd" />
-                      </svg>
-                    </a>
-                  </li>
-                </ul> -->
+              </li>
+
+              <li>
+                <img class="aspect-[3/4] w-full rounded-2xl h-[500px] object-cover" src="@/assets/img/advisory.jpeg" alt="">
+                <h3 class="mt-6 text-lg font-semibold leading-8 tracking-tight text-gray-900">Olaleye Olajuyin</h3>
+                <p class="text-base leading-7 text-gray-600">Advisory board</p>
               </li>
           </ul>
         </div>
       </div>
       
-      <!-- <section>
-        <img src="@/assets/img/organogram.png" alt="" />
-      </section> -->
-    
-
-      <div class="bg-white mt-32">
-        <div class="mx-auto grid max-w-7xl grid-cols-1 gap-x-8 gap-y-20 px-6 lg:px-8 xl:grid-cols-3">
+      <div class="bg-white mt-16">
+        <div class="mx-auto max-w-7xl px-6 lg:px-8">
           <div class="mx-auto max-w-2xl lg:mx-0">
-            <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Our team</h2>
-            <p class="mt-6 text-lg leading-8 text-gray-600">MedLabConvo has evolved over the past five years of its existence. The team is primarily committed to the Medical Laboratory Science profession building the overall capacity of young Medical Laboratory Scientists through virtual and onsite training programmes. However its wider gaze is on the healthcare workforce as a whole. The bigger picture is to be involved in health promotion and strengthening of health systems by investing in emerging healthcare professionals.</p>
+            <h2 class="font-bold tracking-tight text-gray-900 text-xl">Executive Directors</h2>
+            <!-- <p class="mt-6 text-lg leading-8 text-gray-600">We’re a dynamic group of individuals who are passionate about what we do and dedicated to delivering the best results for our clients.</p> -->
           </div>
-          <ul role="list" class="mx-auto grid max-w-2xl grid-cols-1 gap-x-6 gap-y-20 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:gap-x-8 xl:col-span-2">
+          <ul role="list" class="mx-auto mt-4 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
             <li>
-              <img class="aspect-[3/2] w-full rounded-2xl h-[500px] object-cover" src="@/assets/img/executive-director.jpg" alt="">
-              <h3 class="mt-6 text-lg font-semibold leading-8 text-gray-900">Oluwamuyiwa Ogunkoya</h3>
+              <img class="aspect-[3/4] w-full rounded-2xl h-[500px] object-cover" src="@/assets/img/executive-director.jpg" alt="">
+              <h3 class="mt-6 text-lg font-semibold leading-8 tracking-tight text-gray-900">Oluwamuyiwa Ogunkoya</h3>
               <p class="text-base leading-7 text-gray-600">Executive Director</p>
-              <p class="mt-4 text-base leading-7 text-gray-600">In inventing the future we desire, MedLabConvo concentrates on five pivotal themes: refining the identity, bridging knowledge gaps, enhancing the skills, changing the mindsets, and building the networks of young medical laboratory professionals, and other healthcare professionals. .</p>
             </li>
-
+      
+           
             <li>
-                <img class="aspect-[3/2] w-full rounded-2xl h-[500px] object-cover" src="@/assets/img/assistant-executive-director.jpg" alt="">
-                <h3 class="mt-6 text-lg font-semibold leading-8 text-gray-900">Glory Ogunbodede</h3>
+                <img class="aspect-[3/4] w-full rounded-2xl h-[500px] object-cover"  src="@/assets/img/assistant-executive-director.jpg" alt="">
+                <h3 class="mt-6 text-lg font-semibold leading-8 tracking-tight text-gray-900">Glory Ogunbodede</h3>
                 <p class="text-base leading-7 text-gray-600">Asst. Executive Director</p>
-                <p class="mt-4 text-base leading-7 text-gray-600">If you're a healthcare student or professional, especially in the medical laboratory science field, looking to build capacity and make massive impact in the healthcare system, MedLabConvo is the community you need. </p>
-                <p class="mt-4 text-base leading-7 text-gray-600">We provide you with the access to a network of students and professionals across Africa and beyond, growth resources and mentorship opportunities.</p>
               </li>
-
           </ul>
         </div>
       </div>
@@ -424,51 +311,51 @@
             <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"></h2>
             <p class="mt-6 text-lg leading-8 text-gray-600">We’re a dynamic group of individuals who are passionate about what we do and dedicated to delivering the best results for our clients.</p>
           </div>
-          <ul role="list" class="mx-auto mt-20 grid max-w-2xl grid-cols-2 gap-x-8 gap-y-16 text-center sm:grid-cols-3 md:grid-cols-4 lg:mx-0 lg:max-w-none lg:grid-cols-5 xl:grid-cols-6">   
+          <ul role="list" class="mx-auto mt-4 grid max-w-2xl grid-cols-2 gap-x-8 gap-y-16 text-center sm:grid-cols-3 md:grid-cols-4 lg:mx-0 lg:max-w-none lg:grid-cols-5 xl:grid-cols-6">   
             <li>
-                <img class="mx-auto h-24 w-24 rounded-full" src="@/assets/img/sherifat.jpeg" alt="">
+                <img class="mx-auto h-44 w-44 rounded-full" src="@/assets/img/sherifat.jpeg" alt="">
                 <h3 class="mt-6 text-base font-semibold leading-7 tracking-tight text-gray-900">Operations Co-Lead</h3>
                 <p class="text-sm leading-6 text-gray-600">Sherifat Jimoh</p>
               </li>
 
               <li>
-                <img class="mx-auto h-24 w-24 rounded-full" src="@/assets/img/boluwatife.jpeg" alt="">
+                <img class="mx-auto h-44 w-44 rounded-full" src="@/assets/img/boluwatife.jpeg" alt="">
                 <h3 class="mt-6 text-base font-semibold leading-7 tracking-tight text-gray-900">Operations Co-Lead</h3>
                 <p class="text-sm leading-6 text-gray-600">Boluwatife Fatokun</p>
               </li>
 
               <li>
-                <img class="mx-auto h-24 w-24 rounded-full" src="@/assets/img/chinwendu.jpeg" alt="">
+                <img class="mx-auto h-44 w-44 rounded-full" src="@/assets/img/chinwendu.jpeg" alt="">
                 <h3 class="mt-6 text-base font-semibold leading-7 tracking-tight text-gray-900">Volunteer Mgt Co-Lead</h3>
                 <p class="text-sm leading-6 text-gray-600">Chinwendu Ezeagu</p>
               </li>
 
               <li>
-                <img class="mx-auto h-24 w-24 rounded-full" src="@/assets/img/opemipo.jpeg" alt="">
+                <img class="mx-auto h-44 w-44 rounded-full" src="@/assets/img/opemipo.jpeg" alt="">
                 <h3 class="mt-6 text-base font-semibold leading-7 tracking-tight text-gray-900">Volunteer Mgt Co-Lead</h3>
                 <p class="text-sm leading-6 text-gray-600">Opemipo Adetayo</p>
               </li>
 
               <li>
-                <img class="mx-auto h-24 w-24 rounded-full" src="@/assets/img/paul.jpeg" alt="">
+                <img class="mx-auto h-44 w-44 rounded-full" src="@/assets/img/paul.jpeg" alt="">
                 <h3 class="mt-6 text-base font-semibold leading-7 tracking-tight text-gray-900">Programs Co-Lead</h3>
                 <p class="text-sm leading-6 text-gray-600">Paul Yiran</p>
               </li>
 
               <li>
-                <img class="mx-auto h-24 w-24 rounded-full" src="@/assets/img/glory.jpeg" alt="">
+                <img class="mx-auto h-44 w-44 rounded-full" src="@/assets/img/glory.jpeg" alt="">
                 <h3 class="mt-6 text-base font-semibold leading-7 tracking-tight text-gray-900">Programs Co-Lead</h3>
                 <p class="text-sm leading-6 text-gray-600">Glory Ogunbodede</p>
               </li>
 
               <li>
-                <img class="mx-auto h-24 w-24 rounded-full" src="@/assets/img/joshua.jpeg" alt="">
+                <img class="mx-auto h-44 w-44 rounded-full" src="@/assets/img/joshua.jpeg" alt="">
                 <h3 class="mt-6 text-base font-semibold leading-7 tracking-tight text-gray-900">Fund. and Partners. Co-Lead</h3>
                 <p class="text-sm leading-6 text-gray-600">Emmanuel Anya-Awa</p>
               </li>
 
               <li>
-                <img class="mx-auto h-24 w-24 rounded-full" src="@/assets/img/oluwamuyiwa.jpeg" alt="">
+                <img class="mx-auto h-44 w-44 rounded-full" src="@/assets/img/oluwamuyiwa.jpeg" alt="">
                 <h3 class="mt-6 text-base font-semibold leading-7 tracking-tight text-gray-900">Fund. and Partners. Co-Lead</h3>
                 <p class="text-sm leading-6 text-gray-600">Oluwamuyiwa Ogunkoya</p>
               </li>
