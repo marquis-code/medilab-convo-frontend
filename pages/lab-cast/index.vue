@@ -2,7 +2,7 @@
   <main>
     <div class="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32">
       <img
-        src="@/assets/img/banner1.png"
+        src="@/assets/img/hero-background.jpeg"
         alt=""
         class="absolute inset-0 -z-10 h-full w-full object-cover"
       />
@@ -62,12 +62,12 @@
           "
         ></div>
       </div>
-      <div class="mx-auto max-w-7xl px-6 lg:px-8">
-        <div class="mx-auto max-w-2xl lg:mx-0">
-          <h2 class="text-4xl font-bold tracking-tight text-white sm:text-6xl">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8 flex justify-center items-center pt-16 w-full">
+        <div class="mx-auto max-w-2xl lg:mx-0 flex justify-center items-center w-full flex-col">
+          <h2 class="text-4xl font-black uppercase text-center tracking-tight text-white sm:text-6xl">
             LabCast
           </h2>
-          <p class="mt-6 text-lg leading-8 text-gray-100">
+          <p class="mt-6 text-lg leading-8 text-center text-gray-100">
             Labcast is the podcast dedicated to exploring the dynamic world of
             medical laboratory science, healthcare innovation, and the stories
             that shape the profession. Whether you're a seasoned professional, a
