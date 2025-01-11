@@ -1,15 +1,18 @@
 <template>
 <main>
-  <div class="bg-gray-900">  
+  <div class="bg-[#27628C]">  
     <div class="relative isolate overflow-hidden pt-14">
-      <img src="@/assets/img/hero-background.jpeg" alt="" class="absolute inset-0 -z-10 h-full w-full object-cover">
+      <img src="@/assets/img/hero-background.jpeg" alt="" class="absolute inset-0 -z-10 w-full object-cover">
       <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80" aria-hidden="true">
         <div class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-20 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
       </div>
-      <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
+      <div class="mx-auto max-w-2xl py-32 ">
         <div class="text-center">
-          <h1 class="text-4xl font-bold tracking-tight text-white sm:text-6xl">MedLabConvo</h1>
-          <p class="mt-6 text-lg leading-8 text-white">Inspiring and building the capacity of future generations of world class professionals in medical laboratory science and in the healthcare system at large</p>
+          <h1 data-aos="fade-up" class="text-4xl font-bold tracking-tight text-white sm:text-9xl">MedLabConvo</h1>
+          <p data-aos="fade-up" class="text-5xl leading-8 text-white italic">
+            Lead, Build, Inspire
+            <!-- Inspiring and building the capacity of future generations of world class professionals in medical laboratory science and in the healthcare system at large' -->
+          </p>
           <!-- <div class="mt-10 flex items-center justify-center gap-x-6">
             <a href="#" class="rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400">Get started</a>
             <a href="#" class="text-sm font-semibold leading-6 text-white">Learn more <span aria-hidden="true">→</span></a>
@@ -22,8 +25,9 @@
     </div>
   </div>
 
-  <div class="youtube-video pt-20">
-    <h3 class="text-3xl font-semibold  text-gray-900 text-center pb-6">We are leading change, inspiring action and buidling the capacity of future world class Biomedical scientists
+  <div class="youtube-video pt-20 px-3 lg:px-0">
+    <h3 data-aos="zoom-in-left" class="lg:text-3xl text-lg px-4 font-black  text-gray-900 text-center pb-6">We are leading change, inspiring action, and building the capacity of future generations of world-class professionals in medical laboratory science and in the healthcare
+      system at large.
     </h3>
     <iframe
       :src="videoUrl"
@@ -34,7 +38,7 @@
     ></iframe>
   </div>
 
-  <div class="max-w-7xl mx-auto py-12">
+  <!-- <div class="max-w-7xl mx-auto py-12">
     <div class="grid grid-cols-1  lg:grid-cols-2 gap-8 px-4">
       <div 
         v-for="(image, index) in activitiesGrid" 
@@ -47,12 +51,56 @@
         </div>
       </div>
     </div>
-  </div>
-
-  <div class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3 p-6">
+  </div> -->
+<div class="h-0.5 w-full bgh-red-100 border-[#27628C] border-[0.5px] mt-16"></div>
+  <h2 data-aos="zoom-in-left" class="text-center text-2xl font-bold pt-10">UPCOMING PROGRAMS</h2>
+  <!-- <div class="mx-auto grid max-w-2xl border-4 flex justify-center items-center grid-cols-1 gap-x-8 gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3 p-6"> -->
+     <div data-aos="zoom-in-left" class=" flex justify-center items-center mt-4 p-3 lg:p-0">
       <a :href="item.url" v-for="(item, idx) in journosList" :key="idx" class="flex block flex-col items-start justify-between">
         <div class="relative w-full">
-          <img :src="item.image" alt="" class="aspect-video w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]">
+          <img :src="item.image" alt="" class="rounded-2xl bg-gray-100 object-cover h-96 w-full">
+          <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
+        </div>
+        <div class="max-w-xl">
+          <!-- <div class="mt-8 flex items-center gap-x-4 text-xs">
+            <time datetime="2020-03-16" class="text-gray-500">Mar 16, 2020</time>
+            <a href="#" class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">Marketing</a>
+          </div> -->
+          <div class="group relative">
+            <h3 class="mt-3 text-lg/6 font-semibold flex justify-center items-center text-gray-900 group-hover:text-gray-600">
+              <p class="text-center">
+                <span class="text-center w-full inset-0"></span>
+                {{ item?.title ?? 'Nil' }}
+              </p>
+            </h3>
+            <p class="mt-5 line-clamp-3 text-sm/6 text-gray-600">{{ item?.desc ?? 'Nil' }}</p>
+          </div>
+          <div class="relative mt-8 flex items-center gap-x-4">
+            <NuxtLink :to="`/programs/${idx}`" v-if="item.status === 'latest'" class="bg-[#27628C] text-center text-white px-6 py-3 rounded-lg w-full">Learn More</NuxtLink>
+            <img v-if="item.status !== 'latest'" src="@/assets/icons/avatar.svg" alt="" class="h-10 w-10 rounded-full bg-gray-100">
+            <div v-if="item.status !== 'latest'"  class="text-sm/6">
+              <p class="font-semibold text-gray-900">
+                <a href="#">
+                  <span class="absolute inset-0"></span>
+                 {{ item?.author ?? 'Nil' }}
+                </a>
+              </p>
+              <!-- <p class="text-gray-600">Co-Founder / CTO</p> -->
+            </div>
+          </div>
+        </div>
+      </a>
+     </div>
+
+      <!-- More posts... -->
+    <!-- </div> -->
+
+    <h2 data-aos="zoom-in-left" class="text-center text-2xl font-bold pt-10">LATEST ON LABCAST</h2>
+    <!-- <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3 p-6"> -->
+      <div data-aos="zoom-in-left" class=" flex justify-center items-center mt-4 p-3 lg:p-0">
+      <a :href="item.url" v-for="(item, idx) in labcastLatest" :key="idx" class="flex block flex-col items-start justify-between">
+        <div class="relative w-full">
+          <img :src="item.image" alt="" class="rounded-2xl bg-gray-100 object-cover h-96 w-full">
           <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
         </div>
         <div class="max-w-xl">
@@ -70,41 +118,110 @@
             <p class="mt-5 line-clamp-3 text-sm/6 text-gray-600">{{ item?.desc ?? 'Nil' }}</p>
           </div>
           <div class="relative mt-8 flex items-center gap-x-4">
-            <img src="@/assets/icons/avatar.svg" alt="" class="h-10 w-10 rounded-full bg-gray-100">
-            <div class="text-sm/6">
-              <p class="font-semibold text-gray-900">
-                <a href="#">
-                  <span class="absolute inset-0"></span>
-                 {{ item?.author ?? 'Nil' }}
-                </a>
-              </p>
-              <!-- <p class="text-gray-600">Co-Founder / CTO</p> -->
-            </div>
+            <!-- <NuxtLink :to="`/programs/${idx}`" v-if="item.status === 'latest'" class="bg-[#27628C] text-center text-white px-6 py-3 rounded-lg w-full">Learn More</NuxtLink> -->
+            <div class="flex flex-wrap gap-2 flex justify-center items-center w-full">
+       <div>
+        <a
+            href="https://open.spotify.com/episode/0py3aUuw2hqN0StC6r1pbX?si=be21b341b2334e01"
+            class="inline-flex items-center px-4 py-1.5 rounded-full bg-[#1DB954] text-sm hover:opacity-90"
+          >
+            <span class="mr-2">
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"
+                />
+              </svg>
+            </span>
+            Spotify
+          </a>
+       </div>
+      <div>
+        <a
+                href="https://podcasts.apple.com/us/podcast/the-impact-of-artificial-intelligence-on/id1610877517?i=1000674465767"
+                class="inline-flex items-center border-[0.5px] border-gray-20 px-4 py-1.5 rounded-full bg-white text-black text-sm hover:opacity-90"
+              >
+                <span class="mr-2">
+                  <svg fill="none" class="w-6 h-6" viewBox="0 0 92 92" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><linearGradient id="a" gradientUnits="userSpaceOnUse" x1="45.7809" x2="45.7809" y1="0" y2="91.5618"><stop offset="0" stop-color="#f452ff"/><stop offset="1" stop-color="#832bc1"/></linearGradient><rect fill="url(#a)" height="91.5618" rx="20" width="91.5618"/><g fill="#fff"><path d="m51.2102 53.6523c-.0891-.8028-.3565-1.3826-.8912-1.9178-1.0026-1.0481-2.7627-1.7394-4.8348-1.7394-2.072 0-3.8321.669-4.8347 1.7394-.5125.5575-.8021 1.115-.8912 1.9178-.1783 1.561-.0669 2.899.1114 5.0621.1782 2.0515.5124 4.7944.9357 7.5596.3119 1.9847.557 3.0551.7798 3.8133.3788 1.2488 1.7379 2.3192 3.899 2.3192 2.1612 0 3.5426-1.0927 3.899-2.3192.2228-.7582.4679-1.8286.7798-3.8133.4234-2.7875.7576-5.5081.9358-7.5596.2005-2.1631.2896-3.5011.1114-5.0621z"/><path d="m50.9618 42.2787c0 3.0328-2.4508 5.4858-5.4809 5.4858s-5.4809-2.453-5.4809-5.4858c0-3.0327 2.4508-5.4857 5.4809-5.4857s5.4809 2.4753 5.4809 5.4857z"/><path d="m45.4172 20.67c-12.7888.0446-23.2604 10.4363-23.4386 23.2364-.1337 10.3694 6.4834 19.2448 15.7297 22.5005.2228.0892.4456-.1115.4233-.3345-.1114-.8028-.2451-1.6056-.3342-2.4083-.0446-.2899-.2228-.5129-.4679-.6467-7.3079-3.1889-12.41-10.5256-12.3209-19.0218.1114-11.1499 9.2017-20.226 20.3194-20.3152 11.3851-.0892 20.6759 9.143 20.6759 20.5159 0 8.407-5.0798 15.6322-12.3208 18.8211-.2674.1115-.4457.3568-.4679.6467-.1114.8027-.2228 1.6055-.3342 2.4083-.0446.2453.2005.4237.4233.3345 9.1571-3.2111 15.7297-11.9527 15.7297-22.2106-.0446-12.9785-10.6276-23.5486-23.6168-23.5263z"/><path d="m44.8793 28.4746c-8.3327.3122-15.0167 7.2029-15.1281 15.543-.0668 5.4858 2.6736 10.3471 6.8845 13.2238.2005.1338.4902-.0223.4902-.2676-.0669-.9589-.0669-1.8063-.0223-2.6983.0223-.2899-.0891-.5575-.3119-.7582-2.5622-2.4083-4.1218-5.8425-4.0327-9.6335.1782-6.6899 5.5477-12.1311 12.2317-12.3987 7.2633-.2899 13.2344 5.5527 13.2344 12.7332 0 3.6572-1.5596 6.9576-4.0327 9.299-.2005.2007-.3119.4683-.3119.7582.0445.8697.0223 1.7171-.0223 2.676-.0223.2453.2674.4237.4902.2676 4.144-2.8321 6.8845-7.6265 6.8845-13.0231.0223-8.8753-7.397-16.0782-16.3536-15.7214z"/></g></svg>
+                </span>
+                Apple
+              </a>
+      </div>
+          <!-- <a
+            href="#"
+            class="inline-flex items-center px-4 py-1.5 rounded-full bg-[#FF0000] text-sm hover:opacity-90"
+          >
+            <span class="mr-2">
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
+                />
+              </svg>
+            </span>
+            YouTube
+          </a> -->
+          <!-- <a
+            href="#"
+            class="inline-flex items-center px-4 py-1.5 rounded-full bg-white text-black font-bold text-sm hover:opacity-90"
+          >
+            DAILYWIRE+
+          </a> -->
+        </div>
           </div>
         </div>
       </a>
-
+</div>
       <!-- More posts... -->
-    </div>
+    <!-- </div> -->
 
-  <div class="bg-white py-24 sm:py-32">
+    <h2 data-aos="zoom-in-left" class="text-center text-2xl font-bold pt-10">LATEST ON JOURNO</h2>
+    <!-- <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3 p-6"> -->
+      <div data-aos="zoom-in-left" class=" flex justify-center items-center mt-4 p-3 lg:p-0">
+      <a :href="item.url" v-for="(item, idx) in journoLatest" :key="idx" class="flex block flex-col items-start justify-between">
+        <div class="relative w-full">
+          <img :src="item.image" alt="" class="rounded-2xl bg-gray-100 object-cover h-96 w-full">
+          <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
+        </div>
+        <div class="max-w-xl">
+          <!-- <div class="mt-8 flex items-center gap-x-4 text-xs">
+            <time datetime="2020-03-16" class="text-gray-500">Mar 16, 2020</time>
+            <a href="#" class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">Marketing</a>
+          </div> -->
+          <div class="group relative">
+            <h3 class="mt-3 text-lg/6 font-semibold text-gray-900 group-hover:text-gray-600">
+              <a href="#">
+                <span class="absolute inset-0"></span>
+                {{ item?.title ?? 'Nil' }}
+              </a>
+            </h3>
+            <p class="mt-5 line-clamp-3 text-sm/6 text-gray-600">{{ item?.desc ?? 'Nil' }}</p>
+          </div>
+          <div class="relative mt-8 flex items-center gap-x-4">
+            <a to="https://mlcjourno.substack.com/" v-if="item.status === 'latest'" class="bg-[#27628C] text-center text-white px-6 py-3 rounded-lg w-full">Read more</a>
+            <img v-if="item.status !== 'latest'" src="@/assets/icons/avatar.svg" alt="" class="h-10 w-10 rounded-full bg-gray-100">
+            
+          </div>
+        </div>
+      </a>
+</div>
+      <!-- More posts... -->
+    <!-- </div> -->
+  <!-- <div class="bg-white py-24 sm:py-32">
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
       <div class="mx-auto max-w-xl text-center">
-        <h2 class="text-lg font-semibold leading-8 tracking-tight text-indigo-600">Testimonials</h2>
+        <h2 class="text-lg font-semibold leading-8 tracking-tight text-indigo-600 uppercase">Testimonials</h2>
         <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">We have worked with thousands of amazing people</p>
       </div>
       <div class="mx-auto mt-16 flow-root max-w-2xl sm:mt-20 lg:mx-0 lg:max-w-none">
         <div class="-mt-8 sm:-mx-4 sm:columns-2 sm:text-[0] lg:columns-3">
-          <div v-for="itm in 6" :key="itm" class="pt-8 sm:inline-block sm:w-full sm:px-4">
+          <div v-for="itm in testimonials" :key="itm" class="pt-8 sm:inline-block sm:w-full sm:px-4">
             <figure class="rounded-2xl bg-gray-50 p-8 text-sm leading-6">
               <blockquote class="text-gray-900">
-                <p>“Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam delectus nihil. Aut enim doloremque et ipsam.”</p>
+                <p>“{{itm?.testimonial}}”</p>
               </blockquote>
               <figcaption class="mt-6 flex items-center gap-x-4">
                 <img class="h-10 w-10 rounded-full bg-gray-50" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
                 <div>
-                  <div class="font-semibold text-gray-900">Leslie Alexander</div>
-                  <div class="text-gray-600">@lesliealexander</div>
+                  <div class="font-semibold text-gray-900">{{ itm.name ?? 'Nil' }}</div>
                 </div>
               </figcaption>
             </figure>
@@ -112,19 +229,127 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 
-  <div class="bg-white py-24 sm:py-32">
+  <div class="h-0.5 w-full bgh-red-100 border-[#27628C] border-[0.5px] mt-16"></div>
+
+  <div class="relative isolate bg-white pb-32 pt-24 sm:pt-32">
+  <div class="absolute inset-x-0 top-1/2 -z-10 -translate-y-1/2 transform-gpu overflow-hidden opacity-30 blur-3xl" aria-hidden="true">
+    <div class="ml-[max(50%,38rem)] aspect-[1313/771] w-[82.0625rem] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+  </div>
+  <div class="absolute inset-x-0 top-0 -z-10 flex transform-gpu overflow-hidden pt-32 opacity-25 blur-3xl sm:pt-40 xl:justify-end" aria-hidden="true">
+    <div class="ml-[-22rem] aspect-[1313/771] w-[82.0625rem] flex-none origin-top-right rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] xl:ml-0 xl:mr-[calc(50%-12rem)]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+  </div>
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="mx-auto max-w-2xl text-center">
+      <h2 data-aos="fade-down-right" class="text-base/7 font-semibold uppercase text-[#27628C]">Testimonials</h2>
+      <p  data-aos="fade-down-right" class="mt-2 text-balance text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">We have impacted thousands of amazing people</p>
+    </div>
+    <div data-aos="fade-down-right" class="mx-auto mt-16 grid max-w-2xl grid-cols-1 grid-rows-1 gap-8 text-sm/6 text-gray-900 sm:mt-20 sm:grid-cols-2 xl:mx-0 xl:max-w-none xl:grid-flow-col xl:grid-cols-4">
+      <figure class="rounded-2xl bg-white shadow-lg ring-1 ring-gray-900/5 sm:col-span-2 xl:col-start-2 xl:row-end-1">
+        <blockquote class="p-6 text-lg font-semibold tracking-tight text-gray-900 sm:p-12 sm:text-xl/8">
+          <p>“MedLabConvo has been a game-changer for me. From knowledge gained through webinars to career mentorship, MedLabConvo has helped me grow professionally and personally. I now feel more confident about my future in medical laboratory science.
+            ”</p>
+        </blockquote>
+        <figcaption class="flex flex-wrap items-center gap-x-4 gap-y-4 border-t border-gray-900/10 px-6 py-4 sm:flex-nowrap">
+          <img class="h-10 w-10 flex-none rounded-full bg-gray-50" src="@/assets/img/avatar.jpeg" alt="">
+          <div class="flex-auto">
+            <div class="font-semibold">Daniel Adekunle</div>
+            <!-- <div class="text-gray-600">@brennagoyette</div> -->
+          </div>
+          <!-- <img class="h-10 w-auto flex-none" src="https://tailwindui.com/plus/img/logos/savvycal-logo-gray-900.svg" alt=""> -->
+        </figcaption>
+      </figure>
+      <div data-aos="fade-down-right" class="space-y-8 xl:contents xl:space-y-0">
+        <div class="space-y-8 xl:row-span-2">
+          <figure class="rounded-2xl bg-white p-6 shadow-lg ring-1 ring-gray-900/5">
+            <blockquote class="text-gray-900">
+              <p>“MedLabConvo gave me clarity about my career path. The mentorship and resources have transformed the way I approach learning and professional growth. I now feel equipped to excel in the health ecosystem.
+                ”</p>
+            </blockquote>
+            <figcaption class="mt-6 flex items-center gap-x-4">
+              <img class="h-10 w-10 rounded-full bg-gray-50" src="@/assets/img/avatar.jpeg" alt="">
+              <div>
+                <div class="font-semibold">Mabel Omoniwa</div>
+                <!-- <div class="text-gray-600">@lesliealexander</div> -->
+              </div>
+            </figcaption>
+          </figure>
+
+          <!-- More testimonials... -->
+        </div>
+        <div class="space-y-8 xl:row-start-1">
+          <figure class="rounded-2xl bg-white p-6 shadow-lg ring-1 ring-gray-900/5">
+            <blockquote class="text-gray-900 ">
+              <p>“MedLabConvo has redefined professional development in medical laboratory science. The discussions, networking, and mentorship opportunities have enriched my career..”</p>
+            </blockquote>
+            <figcaption class="mt-6 flex items-center gap-x-4">
+              <img class="h-10 w-10 rounded-full bg-gray-50" src="@/assets/img/avatar.jpeg" alt="">
+              <div>
+                <div class="font-semibold"></div>
+                <!-- <div class="text-gray-600">@lindsaywalton</div> -->
+              </div>
+            </figcaption>
+          </figure>
+
+          <!-- More testimonials... -->
+        </div>
+      </div>
+      <div data-aos="fade-down-right" class="space-y-8 xl:contents xl:space-y-0">
+        <!-- <div class="space-y-8 xl:row-start-1">
+          <figure class="rounded-2xl bg-white p-6 shadow-lg ring-1 ring-gray-900/5">
+            <blockquote class="text-gray-900">
+              <p>“MedLabConvo fosters collaboration among medical lab scientists worldwide. It’s a great place to connect, learn, and contribute to the advancement of our profession...
+
+.”</p>
+            </blockquote>
+            <figcaption class="mt-6 flex items-center gap-x-4">
+              <img class="h-10 w-10 rounded-full bg-gray-50" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+              <div>
+                <div class="font-semibold">Tom Cook</div>
+                <div class="text-gray-600">@tomcook</div>
+              </div>
+            </figcaption>
+          </figure>
+        </div> -->
+        <div data-aos="fade-down-right" class="space-y-8 xl:row-span-2">
+          <figure data-aos="fade-down-right" class="rounded-2xl bg-white p-6 shadow-lg ring-1 ring-gray-900/5">
+            <blockquote data-aos="fade-down-right" class="text-gray-900">
+              <p>“MedLabConvo fosters collaboration among medical lab scientists worldwide. It’s a great place to connect, learn, and contribute to the advancement of our profession..”</p>
+            </blockquote>
+            <figcaption class="mt-6 flex items-center gap-x-4">
+              <img class="h-10 w-10 rounded-full bg-gray-50" src="@/assets/img/avatar.jpeg" alt="">
+              <div>
+                <div class="font-semibold">Paul Odeh</div>
+                <!-- <div class="text-gray-600">@leonardkrasner</div> -->
+              </div>
+            </figcaption>
+          </figure>
+
+          <!-- More testimonials... -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <p data-aos="fade-down-right"  class="mt-2 text-balance text-xl lg:text-4xl pt-32 text-center font-semibold tracking-tight text-gray-900">Ensure we dont stop doing what we do.</p>
+  <p data-aos="fade-down-right"  class="text-sd text-center pt-3">Make a donation</p>
+ <div  data-aos="fade-down-right" class="flex justify-center items-center pt-10 w-full">
+  <button disabled class="bg-[#27628C] px-6 max-w-md w-full py-3 rounded-lg text-white disabled:cursor-not-allowed disabled:opacity-25">Donate</button>
+ </div>
+</div>
+
+
+  <div class="bg-white pb-32">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="mx-auto max-w-2xl lg:max-w-none">
-      <h2 class="text-lg/8 font-semibold text-gray-900 text-center">PARTNERSHIPS</h2>
+      <h2 data-aos="fade-down-right" class="text-lg/8 font-semibold text-gray-900 text-center">PARTNERSHIPS</h2>
       <div class="mx-auto mt-10 grid grid-cols-4 items-start gap-x-8 gap-y-10 sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:grid-cols-6">
-        <img class="col-span-2 max-h-12 w-full object-contain object-left lg:col-span-1"  src="@/assets/img/partner1.jpeg" alt="Transistor" width="158" height="48">
-        <img class="col-span-2 max-h-12 w-full object-contain object-left lg:col-span-1"  src="@/assets/img/partner2.jpeg" alt="Reform" width="158" height="48">
-        <img class="col-span-2 max-h-12 w-full object-contain object-left lg:col-span-1"  src="@/assets/img/partner3.jpeg" alt="Tuple" width="158" height="48">
-        <img class="col-span-2 max-h-12 w-full object-contain object-left lg:col-span-1"  src="@/assets/img/partner4.jpeg" alt="SavvyCal" width="158" height="48">
-        <img class="col-span-2 max-h-12 w-full object-contain object-left lg:col-span-1" src="@/assets/img/partner5.jpeg" alt="Statamic" width="158" height="48">
-        <img class="col-span-2 max-h-12 w-full object-contain object-left lg:col-span-1" src="@/assets/img/partner6.jpeg" alt="Statamic" width="158" height="48">
+        <img data-aos="fade-down-right" class="col-span-2 max-h-12 w-full object-contain object-left lg:col-span-1"  src="@/assets/img/partner1.jpeg" alt="Transistor" width="158" height="48">
+        <img data-aos="fade-down-right" class="col-span-2 max-h-12 w-full object-contain object-left lg:col-span-1"  src="@/assets/img/partner2.jpeg" alt="Reform" width="158" height="48">
+        <img data-aos="fade-down-right" class="col-span-2 max-h-12 w-full object-contain object-left lg:col-span-1"  src="@/assets/img/partner3.jpeg" alt="Tuple" width="158" height="48">
+        <img data-aos="fade-down-right" class="col-span-2 max-h-12 w-full object-contain object-left lg:col-span-1"  src="@/assets/img/partner4.jpeg" alt="SavvyCal" width="158" height="48">
+        <img data-aos="fade-down-right" class="col-span-2 max-h-12 w-full object-contain object-left lg:col-span-1" src="@/assets/img/partner5.jpeg" alt="Statamic" width="158" height="48">
+        <img data-aos="fade-down-right" class="col-span-2 max-h-12 w-full object-contain object-left lg:col-span-1" src="@/assets/img/partner6.jpeg" alt="Statamic" width="158" height="48">
       </div>
     </div>
   </div>
@@ -133,38 +358,47 @@
 
   <div class="bg-gray-100 py-10">
     <div class="max-w-4xl mx-auto text-center">
-      <h2 class="text-2xl font-bold text-green-800">STAY IN THE KNOW</h2>
-      <button
-        class="mt-4 bg-green-600 text-white px-6 py-2 rounded-lg hover:bg-green-700 focus:ring focus:ring-green-400"
+      <h2 data-aos="fade-down-right" class="text-2xl font-bold text-[#27628C] pb-6">STAY IN THE KNOW</h2>
+      <a  data-aos="fade-down-right" href="https://forms.gle/pg4UR6XQvZRLqK2NA"
+        class="mt-4 bg-[#27628C] text-white px-6 py-3 rounded-lg"
         aria-label="Subscribe to our newsletter"
       >
         Subscribe to our newsletter
-      </button>
+      </a>
       <div class="mt-8 text-gray-800">
-        <p class="font-semibold">Let's Talk Med Lab</p>
+        <p data-aos="fade-down-right" class="font-semibold">Let's Talk Med Lab</p>
         <div class="flex justify-center space-x-4 mt-4">
-          <a href="https://x.com/medlabconvo" class="text-gray-500 hover:text-black" aria-label="X">
-            <img src="@/assets/img/logo1.png" class="fab fa-x-twitter h-10 w-10"/>
+          <a data-aos="fade-down-right" href="https://x.com/medlabconvo" class="text-gray-500 hover:text-black" aria-label="X">
+            <img src="@/assets/img/logo1.png" class="fab fa-x-twitter h60 w-6"/>
           </a>
-          <a href="https://www.instagram.com/medlabconvo/" class="text-gray-500 hover:text-pink-500" aria-label="Instagram">
-            <img src="@/assets/img/logo4.svg" class="fab fa-instagram h-10 w-10"/>
+          <a data-aos="fade-down-right" href="https://www.instagram.com/medlabconvo/" class="text-gray-500 hover:text-pink-500" aria-label="Instagram">
+            <img src="@/assets/img/logo4.svg" class="fab fa-instagram h-6 w-6"/>
           </a>
-          <a href="https://web.facebook.com/medlabconvo?_rdc=1&_rdr" class="text-gray-500 hover:text-blue-600" aria-label="Facebook">
-            <img src="@/assets/img/logo3.svg" class="fab fa-facebook h-10 w-10"/>
+          <a data-aos="fade-down-right" href="https://web.facebook.com/medlabconvo?_rdc=1&_rdr" class="text-gray-500 hover:text-blue-600" aria-label="Facebook">
+            <img src="@/assets/img/logo3.svg" class="fab fa-facebook h-6 w-6"/>
           </a>
-          <a href="https://www.linkedin.com/company/medlabconvo/" class="text-gray-500 hover:text-blue-500" aria-label="LinkedIn">
-            <img src="@/assets/img/logo5.svg" class="fab fa-linkedin h-10 w-10"/>
+          <a data-aos="fade-down-right" href="https://www.linkedin.com/company/medlabconvo/" class="text-gray-500 hover:text-blue-500" aria-label="LinkedIn">
+            <img src="@/assets/img/logo5.svg" class="fab fa-linkedin h-6 w-6"/>
           </a>
-          <a href="https://mlcjourno.substack.com/" class="text-gray-500 hover:text-orange-400" aria-label="Substack">
-            <img src="@/assets/img/substack.png" class="fab fa-medium h-10 w-10"/>
+          <a data-aos="fade-down-right" href="https://mlcjourno.substack.com/" class="text-gray-500 hover:text-orange-400" aria-label="Substack">
+            <img src="@/assets/img/substack.png" class="fab fa-medium h-6 w-6"/>
           </a>
-          <a href="https://open.spotify.com/show/04S2XZGd6gczoCXStIrh8e" class="text-gray-500 hover:text-green-500" aria-label="Spotify">
-            <img src="@/assets/img/logo2.png" class="fab fa-spotify h-10 w-10"/>
+          <a data-aos="fade-down-right" href="https://open.spotify.com/show/04S2XZGd6gczoCXStIrh8e" class="text-gray-500 hover:text-green-500" aria-label="Spotify">
+            <img src="@/assets/img/logo2.png" class="fab fa-spotify h-6 w-6"/>
           </a>
         </div>
+        <div class="w-full flex justify-center items-center flex-col pt-10">
+    <p data-aos="fade-down-right"  class="mt-8 px-6 lg:px-0 text-center text-sm/6 text-gray-600 md:order-1 md:mt-0">MedLabConvo is a trademark of LabiHealth Ambassadors Initiative, a registered non-profit  organization,
+    </p>
+    <p  data-aos="fade-down-right" class="mt-8 text-sm/6 text-gray-600 md:order-1 md:mt-0">@LabiHealth Ambassadors Initiative 2025
+    </p>
+    <p data-aos="fade-down-right"  class="mt-8  text-sm/6 text-gray-600 md:order-1 md:mt-0">All Rights Reserved</p>
+   </div>
       </div>
     </div>
   </div>
+
+
   
 <!-- <footer class="bg-white">
   <div class="mx-auto max-w-7xl px-6 py-12 md:flex md:items-center md:justify-between lg:px-8">
@@ -217,7 +451,10 @@ import journo4 from '@/assets/img/lab-coast/journo4.jpeg'
 import journo5 from '@/assets/img/lab-coast/journo5.jpeg'
 import journo6 from '@/assets/img/lab-coast/journo6.jpeg'
 import journo7 from '@/assets/img/lab-coast/journo7.jpeg'
+import labcast from '@/assets/img/impact.jpg'
+import journo from '@/assets/img/latest.jpeg'
 const isOpen = ref(false)
+import img4 from '@/assets/img/origins.jpeg'
 
 const activitiesGrid = ref([
   {
@@ -258,60 +495,111 @@ const activitiesGrid = ref([
   }
 ])
 
+const labcastLatest = ref([
+{
+    title: 'Medical Laboratory Science Practice: From MLS in Diaspora viewpoint',
+    image: labcast,
+    desc: `In this episode, we delve into the experiences and insights of medical laboratory scientists working abroad (United Kingdom)). Join us as we explore how practice and perspectives differ in this region.`,
+    previousEditionUrl: '#',
+    status: 'latest',
+    registerUrl: '#'
+  },
+])
+
+const journoLatest = ref([
+{
+    title: 'FROM ‘MIRACLE MEDS’ TO MAYHEM: COMBATING ANTIMICROBIAL RESISTANCE',
+    image: journo,
+    desc: `One day, Mamooo's son, Tega, returned home after national youth service but Mamooo couldn’t believe her eyes. Tega’s gaunt frame and sun-scorched skin sent his mother into a frenzy. His eyes, once bright and full of life, now seemed dull and sunken. She immediately provided him with her 'miracle meds': anti-malaria, amoxicillin, and multivitamins. With a knowing glint in her eye, she declared, “Nah those giant mosquitoes wey dey that camp wan suck my pikin blood dry, na why he con resemble toothpick!”`,
+    previousEditionUrl: '#',
+    status: 'latest',
+    actionText: 'Read More',
+    registerUrl: '#'
+  },
+])
+
  const journosList = ref([
-  {
-    image: journo1,
-    title: 'Sexism in STEM: A Farce or Fact',
-    desc: 'The story of Rosalind Franklin comes to mind when we begin to explore the reality of women that are in STEM. Before her early death due to ovarian cancer, she was a woman who made mind-blowing breakthroughs in the field of X-ray crystallography. She is known for her contribution towards the discovery of the DNA structure - a molecule that is fundamental to life.',
-    author: 'Bamidele Toluwase, and Williams Owoeye',
-    url: 'https://mlcjourno.substack.com/p/sexism-in-stem-a-farce-or-fact'
+ {
+    title: 'ORIGINS',
+    image: img4,
+    desc: `ORIGINS is a program specifically designed for undergraduates, aimed at equipping them with the essential knowledge, skills, mindset, and network opportunities they need to excel academically and grow into top-tier professionals. By focusing on the foundational years of a student’s academic journey, ORIGINS provides the tools and support necessary to help participants develop the right attitudes and cultivate a strong professional identity early on.`,
+    secondPart: `Through a combination of workshops, mentorship, and networking events, the program empowers students to navigate the challenges of their academic life with confidence, while building a network of peers and industry experts that will support their future career goals. ORIGINS not only helps students excel in the classroom but also prepares them to transition smoothly into their professional lives as standout leaders in their chosen fields.`,
+    previousEditionUrl: '#',
+    status: 'latest',
+    registerUrl: '#'
   },
-  {
-    image: journo2,
-    title: 'Seeing is Believing',
-    desc: 'The World Health Organization (WHO) defines vaccine hesitancy as a delay in acceptance or refusal of safe vaccines despite the availability of vaccination services, and in 2019, it was declared as one of the ten global threats to public health. The trend of refusal of vaccines has increased over the years, and there are so many factors influencing this increasing trend.',
-    author: 'Precious Sylvanus',
-    url: 'https://mlcjourno.substack.com/p/seeing-is-believing'
-  },
-  {
-    image: journo3,
-    title: 'The Role of Medical Laboratory Science in the Entertainment Industry',
-    desc: 'Defining entertainment is one of those essay questions you\'d rather skip in an examination hall and look for easier ones. Although even secondary school students understand the concept of entertainment, putting words to it in a way that is academically cohesive and encompassing is a great hassle. This great dilemma lies in the reality that entertainment is intricately linked with human lifestyle. As a concept, it\'s ubiquitous but as a definition, it is ambiguous. ',
-    author: 'Williams Owoeye',
-    url: 'https://mlcjourno.substack.com/p/the-role-of-medical-laboratory-science'
-  },
-  {
-    image: journo4,
-    title: 'Another Pandemic Looming? The Mpox Saga',
-    desc: 'Viral diseases have been one of the major global health crises that the world has been battling nonstop over the past decade. From Lassa fever to Ebola to COVID-19, humanity has lost countless souls, soldiers and civilians alike, in this seemingly unending battle with these “environmental” microbes. We have barely recovered from the devastation of the last viral outbreak, COVID-19, and already it looks like we are on the verge of another pandemic',
-    author: 'Precious Sylvanus',
-    url: 'https://mlcjourno.substack.com/p/another-pandemic-looming-the-mpox'
-  },
-  {
-    image: journo5,
-    title: 'Lightbulb Moments: Zapping Out the Power from its Empowerment',
-    desc: 'Today, good health is important for man’s continued existence. As such, light bulb moments in health (education) are a key component for everyone. The ability to learn about healthier habits and disease prevention mechanisms for everyday people is key to reducing the incidence of chronic diseases, helping them make informed health decisions, and improving their health outcomes. ',
-    author: 'Williams Owoeye and Ernesto Dibia',
-    url: 'https://mlcjourno.substack.com/p/lightbulb-moments-zapping-out-the'
-  },
-  {
-    image: journo6,
-    title: 'MEDICAL LABORATORY SCIENCE INTERNSHIP: STATE OF ACCREDITED CENTERS',
-    desc: 'The medical laboratory science graduate internship is a professional learning experience that offers clinical work- experience for every young medical laboratory science graduate.  According to the Medical Laboratory Science Council of Nigeria, every graduate of the profession has to undergo this period of internship at an accredited centre. There are currently about 117 accredited centres including private hospitals and independent laboratories across the country.',
-    author: 'Ernesto Dibia, and Oluwaponmile',
-    url: 'https://mlcjourno.substack.com/p/medical-laboratory-science-internship'
-  },
-  {
-    image: journo7,
-    title: 'From Culture Plates to Culture Shifts: Cultivating Influence as Medical Laboratory Scientists',
-    desc: 'In the medical laboratory world, cultivating influence can be a bit like growing cultures on  a petri dish - one needs the right conditions, the proper mechanism and precise supervision of the organisms.',
-    author: 'Ubani Confidence and Bamidele Toluwase',
-    url: 'https://mlcjourno.substack.com/p/from-culture-plates-to-culture-shifts'
-  }
+  // {
+  //   image: journo1,
+  //   title: 'Sexism in STEM: A Farce or Fact',
+  //   desc: 'The story of Rosalind Franklin comes to mind when we begin to explore the reality of women that are in STEM. Before her early death due to ovarian cancer, she was a woman who made mind-blowing breakthroughs in the field of X-ray crystallography. She is known for her contribution towards the discovery of the DNA structure - a molecule that is fundamental to life.',
+  //   author: 'Bamidele Toluwase, and Williams Owoeye',
+  //   url: 'https://mlcjourno.substack.com/p/sexism-in-stem-a-farce-or-fact'
+  // },
+  // {
+  //   image: journo2,
+  //   title: 'Seeing is Believing',
+  //   desc: 'The World Health Organization (WHO) defines vaccine hesitancy as a delay in acceptance or refusal of safe vaccines despite the availability of vaccination services, and in 2019, it was declared as one of the ten global threats to public health. The trend of refusal of vaccines has increased over the years, and there are so many factors influencing this increasing trend.',
+  //   author: 'Precious Sylvanus',
+  //   url: 'https://mlcjourno.substack.com/p/seeing-is-believing'
+  // },
+  // {
+  //   image: journo3,
+  //   title: 'The Role of Medical Laboratory Science in the Entertainment Industry',
+  //   desc: 'Defining entertainment is one of those essay questions you\'d rather skip in an examination hall and look for easier ones. Although even secondary school students understand the concept of entertainment, putting words to it in a way that is academically cohesive and encompassing is a great hassle. This great dilemma lies in the reality that entertainment is intricately linked with human lifestyle. As a concept, it\'s ubiquitous but as a definition, it is ambiguous. ',
+  //   author: 'Williams Owoeye',
+  //   url: 'https://mlcjourno.substack.com/p/the-role-of-medical-laboratory-science'
+  // },
+  // {
+  //   image: journo4,
+  //   title: 'Another Pandemic Looming? The Mpox Saga',
+  //   desc: 'Viral diseases have been one of the major global health crises that the world has been battling nonstop over the past decade. From Lassa fever to Ebola to COVID-19, humanity has lost countless souls, soldiers and civilians alike, in this seemingly unending battle with these “environmental” microbes. We have barely recovered from the devastation of the last viral outbreak, COVID-19, and already it looks like we are on the verge of another pandemic',
+  //   author: 'Precious Sylvanus',
+  //   url: 'https://mlcjourno.substack.com/p/another-pandemic-looming-the-mpox'
+  // },
+  // {
+  //   image: journo5,
+  //   title: 'Lightbulb Moments: Zapping Out the Power from its Empowerment',
+  //   desc: 'Today, good health is important for man’s continued existence. As such, light bulb moments in health (education) are a key component for everyone. The ability to learn about healthier habits and disease prevention mechanisms for everyday people is key to reducing the incidence of chronic diseases, helping them make informed health decisions, and improving their health outcomes. ',
+  //   author: 'Williams Owoeye and Ernesto Dibia',
+  //   url: 'https://mlcjourno.substack.com/p/lightbulb-moments-zapping-out-the'
+  // },
+  // {
+  //   image: journo6,
+  //   title: 'MEDICAL LABORATORY SCIENCE INTERNSHIP: STATE OF ACCREDITED CENTERS',
+  //   desc: 'The medical laboratory science graduate internship is a professional learning experience that offers clinical work- experience for every young medical laboratory science graduate.  According to the Medical Laboratory Science Council of Nigeria, every graduate of the profession has to undergo this period of internship at an accredited centre. There are currently about 117 accredited centres including private hospitals and independent laboratories across the country.',
+  //   author: 'Ernesto Dibia, and Oluwaponmile',
+  //   url: 'https://mlcjourno.substack.com/p/medical-laboratory-science-internship'
+  // },
+  // {
+  //   image: journo7,
+  //   title: 'From Culture Plates to Culture Shifts: Cultivating Influence as Medical Laboratory Scientists',
+  //   desc: 'In the medical laboratory world, cultivating influence can be a bit like growing cultures on  a petri dish - one needs the right conditions, the proper mechanism and precise supervision of the organisms.',
+  //   author: 'Ubani Confidence and Bamidele Toluwase',
+  //   url: 'https://mlcjourno.substack.com/p/from-culture-plates-to-culture-shifts'
+  // }
  ])
 
 // Pass the video ID of the YouTube video you want to embed
 const { videoUrl } = useYoutubeVideo('rhVkU6HAbn0'); // Example video ID
+
+const testimonials = ref([
+  {
+    name: 'Daniel Adekunle',
+    testimonial: `MedLabConvo has been a game-changer for me. From knowledge gained through webinars to career mentorship, MedLabConvo has helped me grow professionally and personally. I now feel more confident about my future in medical laboratory science.`
+  },
+  {
+    name: 'Mabel Omoniwa',
+    testimonial: `MedLabConvo gave me clarity about my career path. The mentorship and resources have transformed the way I approach learning and professional growth. I now feel equipped to excel in the health ecosystem.`
+  },
+  {
+    name: 'Shedrack Etuk',
+    testimonial: `MedLabConvo has redefined professional development in medical laboratory science. The discussions, networking, and mentorship opportunities have enriched my career.`
+  },
+  {
+    name: 'Paul Odeh',
+    testimonial: `MedLabConvo fosters collaboration among medical lab scientists worldwide. It’s a great place to connect, learn, and contribute to the advancement of our profession.`
+  }
+])
 </script>
 
 <style scoped>
@@ -320,5 +608,3 @@ const { videoUrl } = useYoutubeVideo('rhVkU6HAbn0'); // Example video ID
   margin: 0 auto;
 }
 </style>
-
-https://youtu.be/rhVkU6HAbn0?si=0kmABvBiaFLqbTRD

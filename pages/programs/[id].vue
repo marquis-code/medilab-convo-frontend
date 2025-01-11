@@ -1,7 +1,7 @@
 <template>
     <div class="overflow-hidden bg-white mt-20">
         <div class="relative mx-auto max-w-7xl px-6 py-16 lg:px-8">
-            <div class="absolute bottom-0 left-3/4 top-0 hidden w-screen bg-gray-50 lg:block"></div>
+            <div class="absolute bottom-0 left-3/4 top-0 hidden w-screen bg-[#27628C] lg:block"></div>
             <div class="mx-auto max-w-prose text-base lg:grid lg:max-w-none lg:grid-cols-2 lg:gap-8">
                 <div>
                     <!-- <h2 class="text-lg font-semibold text-indigo-600">Case Study</h2> -->
@@ -11,11 +11,11 @@
             <div class="mt-8 lg:grid lg:grid-cols-2 lg:gap-8">
                 <div class="relative lg:col-start-2 lg:row-start-1">
                     <svg class="absolute right-0 top-0 -mr-20 -mt-20 hidden lg:block" width="404" height="384"
-                        fill="none" viewBox="0 0 404 384" aria-hidden="true">
+                        fill="#ffffff" viewBox="0 0 404 384" aria-hidden="true">
                         <defs>
                             <pattern id="de316486-4a29-4312-bdfc-fbce2132a2c1" x="0" y="0" width="20" height="20"
                                 patternUnits="userSpaceOnUse">
-                                <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor" />
+                                <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="#ffffff" />
                             </pattern>
                         </defs>
                         <rect width="404" height="384" fill="url(#de316486-4a29-4312-bdfc-fbce2132a2c1)" />
@@ -30,7 +30,7 @@
                 </div>
                 <div class="mt-8 lg:mt-0">
                     <div class="mx-auto text-base/7 text-gray-500">
-                        <p class="text-lg/7">ORIGINS is a program specifically designed for freshmen and sophomores,
+                        <p class="text-lg/7">ORIGINS is a program specifically designed for undergraduates,
                             aimed at equipping them with the essential knowledge, skills, mindset, and network
                             opportunities they need to excel academically and grow into top-tier professionals. By
                             focusing on the foundational years of a student’s academic journey, ORIGINS provides the
@@ -74,7 +74,7 @@
         <section class="grid lg:grid-cols-3 gap-6 mx-auto max-w-7xl pb-6 p-3 lg:p-0">
             <article v-for="item in schedules" class="flex bg-white border-[0.5px] border-gray-10 rounded-lg transition hover:shadow-xl">
 
-                <div class="sm:basis-56 border rounded-lg">
+                <div class="sm:basis-56 border-[0.5px] border-gray-50 rounded-lg">
                     <img alt=""
                         src="@/assets/img/avatar.jpeg"
                         class="aspect-square h-44 w-32 object-fit" />

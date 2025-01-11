@@ -11,6 +11,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['Rethink Sans', 'sans-serif'], // Set 'Rethink Sans' as default sans font
+      },
       colors: {
         gray: {
           25:  "#fafafa",

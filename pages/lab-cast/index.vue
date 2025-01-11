@@ -64,10 +64,10 @@
       </div>
       <div class="mx-auto max-w-7xl px-6 lg:px-8 flex justify-center items-center pt-16 w-full">
         <div class="mx-auto max-w-2xl lg:mx-0 flex justify-center items-center w-full flex-col">
-          <h2 class="text-4xl font-black uppercase text-center tracking-tight text-white sm:text-6xl">
+          <h2 data-aos="fade-up" class="text-4xl font-black uppercase text-center tracking-tight text-white sm:text-6xl">
             LabCast
           </h2>
-          <p class="mt-6 text-lg leading-8 text-center text-gray-100">
+          <p data-aos="fade-up" class="mt-6 text-lg leading-8 text-center text-gray-100">
             Labcast is the podcast dedicated to exploring the dynamic world of
             medical laboratory science, healthcare innovation, and the stories
             that shape the profession. Whether you're a seasoned professional, a
@@ -104,24 +104,24 @@
         </div> -->
 
 
-    <h1 class="flex justify-center items-center text-2xl mt-6">Latest Episode</h1>
+    <h1 data-aos="fade-up" class="flex justify-center text-[#27628C] items-center text-2xl mt-6">Latest Episode</h1>
     <div class="container mx-auto px-4 mt-8">
       <div class="bg-white p-0 rounded-lg shadow-md flex">
         <div class="lg:flex space-y-6 items-center space-x-4 w-full p-6">
-          <img
+          <img data-aos="fade-up"
             src="@/assets/img/impact.jpg"
             alt="Podcast cover"
             class="w-72 h-60 rounded-lg object-cover"
           />
-          <div class="flex flex-col w-full">
-            <div class="font-semibold text-2xl">Medical Laboratory Science Practice: From MLS in Diaspora viewpoint</div>
+          <div data-aos="fade-up" class="flex flex-col w-full">
+            <div data-aos="fade-up" class="font-semibold text-2xl">Medical Laboratory Science Practice: From MLS in Diaspora viewpoint</div>
             <!-- <div class="text-gray-600">Episode 1</div> -->
-            <div class="text-gray-500 mt-2">
+            <div data-aos="fade-up" class="text-gray-500 mt-2">
               In this episode, we delve into the experiences and insights of medical laboratory scientists working abroad (United Kingdom)). Join us as we explore how practice and perspectives differ in this region.
             </div>
             <div class="mt-3">
-        <p class="text-gray-400 text-sm mb-2">Available On:</p>
-        <div class="flex flex-wrap gap-2">
+        <p data-aos="fade-up" class="text-gray-400 text-sm mb-2">Available On:</p>
+        <div data-aos="fade-up" class="flex flex-wrap gap-2">
           <a
             href="https://open.spotify.com/episode/0py3aUuw2hqN0StC6r1pbX?si=be21b341b2334e01"
             class="inline-flex items-center px-4 py-1.5 rounded-full bg-[#1DB954] text-sm hover:opacity-90"
@@ -135,7 +135,7 @@
             </span>
             Spotify
           </a>
-          <a
+          <a data-aos="fade-up"
             href="https://podcasts.apple.com/us/podcast/the-impact-of-artificial-intelligence-on/id1610877517?i=1000674465767"
             class="inline-flex items-center border-[0.5px] border-gray-20 px-4 py-1.5 rounded-full bg-white text-black text-sm hover:opacity-90"
           >
@@ -171,12 +171,12 @@
     </div>
 
 
-    <h1 class="flex justify-center items-center text-2xl mt-6">Popular Episodes</h1>
-    <div class="container mx-auto px-4 mt-8">
-      <div
+    <h1 data-aos="fade-up" class="flex justify-center items-center text-[#27628C] text-2xl mt-6">Popular Episodes</h1>
+    <div data-aos="fade-up" class="container mx-auto px-4 mt-8">
+      <div data-aos="fade-up"
         class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8"
       >
-        <a
+        <a data-aos="fade-up"
           v-for="(item, idx) in podcastList"
           :key="idx"
           class="bg-white p-0 shadow-md border-[0.5px] rounded-md pt-3 bg-gray-900 block"
@@ -188,8 +188,8 @@
             class="w-full h-60 object-cover mb-4 cursor-pointer"
           /> -->
           <div class="px-3 pb-3">
-            <div class="font-semibold text-lg">{{ item.name ?? "Nil" }}</div>
-            <div class="text-gray-600 text-sm mt-2">
+            <div data-aos="fade-up" class="font-semibold text-lg">{{ item.name ?? "Nil" }}</div>
+            <div data-aos="fade-up" class="text-gray-600 text-sm mt-2">
               {{
                 item.description.length > 20
                   ? `${item.description.slice(0, 100)}...`
@@ -197,7 +197,7 @@
               }}
             </div>
             <!-- <img src="@/assets/icons/play.svg" class="h-10 w-10 mt-3"/> -->
-            <div class="flex flex-wrap gap-2 mt-5">
+            <div data-aos="fade-up" class="flex flex-wrap gap-2 mt-5">
           <a
             :href="item.link"
             class="inline-flex items-center px-4 py-1.5 rounded-full bg-[#1DB954] text-sm hover:opacity-90"
@@ -263,68 +263,6 @@
     Load More Episodes
   </span> -->
 </a>
-    </div>
-
-    <div class="bg-white py-16">
-      <div class="mx-auto max-w-7xl sm:px-6 lg:px-8">
-        <div
-          class="relative isolate overflow-hidden bg-gray-900 px-6 py-24 shadow-2xl sm:rounded-3xl sm:px-24 xl:py-32"
-        >
-          <h2
-            class="mx-auto max-w-3xl text-center text-4xl font-semibold tracking-tight text-white sm:text-5xl"
-          >
-            Sign up for our news letters
-          </h2>
-          <p class="mx-auto mt-6 max-w-lg text-center text-lg text-gray-300">
-            .Join 500,000+ people and receive short, powerful insights podcasts
-            from medlab convo.
-          </p>
-          <form class="mx-auto mt-10 flex max-w-md gap-x-4">
-            <label for="email-address" class="sr-only">Email address</label>
-            <input
-              id="email-address"
-              name="email"
-              type="email"
-              autocomplete="email"
-              required
-              class="min-w-0 flex-auto rounded-md bg-white/5 px-3.5 py-2 text-base text-white outline outline-1 -outline-offset-1 outline-white/10 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-white sm:text-sm/6"
-              placeholder="Enter your email"
-            />
-            <button
-              type="submit"
-              class="flex-none rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
-            >
-              Notify me
-            </button>
-          </form>
-          <svg
-            viewBox="0 0 1024 1024"
-            class="absolute left-1/2 top-1/2 -z-10 size-[64rem] -translate-x-1/2"
-            aria-hidden="true"
-          >
-            <circle
-              cx="512"
-              cy="512"
-              r="512"
-              fill="url(#759c1415-0410-454c-8f7c-9a820de03641)"
-              fill-opacity="0.7"
-            />
-            <defs>
-              <radialGradient
-                id="759c1415-0410-454c-8f7c-9a820de03641"
-                cx="0"
-                cy="0"
-                r="1"
-                gradientUnits="userSpaceOnUse"
-                gradientTransform="translate(512 512) rotate(90) scale(512)"
-              >
-                <stop stop-color="#7775D6" />
-                <stop offset="1" stop-color="#E935C1" stop-opacity="0" />
-              </radialGradient>
-            </defs>
-          </svg>
-        </div>
-      </div>
     </div>
   </main>
 </template>

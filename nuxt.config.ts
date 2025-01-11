@@ -10,7 +10,10 @@ export default {
         { name: "viewport", content: "width=device-width, initial-scale=1" },
         { name: "format-detection", content: "telephone=no" },
       ],
-      link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.svg" }],
+      link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.svg" },    {
+        rel: 'stylesheet',
+        href: 'https://fonts.googleapis.com/css2?family=Rethink+Sans:wght@400;500;700&display=swap',
+      },],
     },
   },
 //   modules: ["@nuxtjs/tailwindcss", ['@nuxtjs/google-fonts', {
@@ -30,13 +33,16 @@ export default {
 //       }
 //     }
 // }],],
-modules: ["@nuxtjs/tailwindcss", '@nuxtjs/google-fonts'],
 googleFonts: {
   families: {
-    Roboto: true, // Replace 'Roboto' with any available Google Font
+    'Rethink+Sans': [400, 500, 700], // Specify font weights as needed
   },
   display: 'swap', // Optional: Controls how the font is displayed
+  prefetch: true, // Optional: Prefetch the font for faster loading
+  preconnect: true, // Optional: Preconnect to the font server
+  preload: true, // Optional: Preload the font
 },
+modules: ["@nuxtjs/tailwindcss", '@nuxtjs/google-fonts'],
   plugins: ["~/plugins/aos.client.ts"],
   css: ["/assets/css/main.css", 'leaflet/dist/leaflet.css'],
   tailwindcss: {

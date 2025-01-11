@@ -10,8 +10,8 @@
           </div>
           <div class="mx-auto max-w-7xl px-6 lg:px-8 flex justify-center items-center w-full flex-col text-center pt-16">
             <div class="mx-auto max-w-2xl lg:mx-0 flex justify-center items-center w-full flex-col text-center">
-              <h2 class="text-4xl font-bold text-center tracking-tight uppercase text-white sm:text-6xl">Resources</h2>
-              <p class="mt-6 text-lg leading-8 text-center text-gray-100">Explore our comprehensive collection of resources designed to support your journey in medical laboratory science. Whether you’re seeking scholarship opportunities, job openings, internship placements, educational materials, or access to recorded webinars, our hub provides valuable tools and information to help you succeed in your career. </p>
+              <h2 data-aos="fade-up" class="text-4xl font-bold text-center tracking-tight uppercase text-white sm:text-6xl">Resources</h2>
+              <p data-aos="fade-up" class="mt-6 text-lg leading-8 text-center text-gray-100">Explore our comprehensive collection of resources designed to support your journey in medical laboratory science. Whether you’re seeking scholarship opportunities, job openings, internship placements, educational materials, or access to recorded webinars, our hub provides valuable tools and information to help you succeed in your career. </p>
             </div>
           </div>
         </div>
@@ -20,48 +20,6 @@
             <!-- <h1 class="text-center text-teal-700 text-2xl font-bold mb-8">Recorded Webinars</h1> -->
             <RecordedWebinars />
           </section>
-
-          <div class="bg-white pb-20">
-            <div class="mx-auto container px-6 lg:px-8">
-              <div class="mx-auto max-w-2xl lg:max-w-4xl">
-                <div class="mt-16 space-y-20 lg:mt-20 lg:space-y-20">
-                  <article v-for="(item, idx) in programsList"  class="relative isolate flex flex-col gap-8 lg:flex-row">
-                    <div class="relative aspect-[16/9] sm:aspect-[2/1] lg:aspect-square lg:w-96 lg:shrink-0">
-                      <img src="@/assets/img/slot.png" alt="" class="absolute inset-0 h-full w-full rounded-2xl bg-gray-50 object-cover">
-                      <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
-                    </div>
-                    <div>
-                      <div class="group relative max-w-xl">
-                        <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
-                          <a href="#">
-                            <span class="absolute inset-0"></span>
-                            {{item.title}}
-                          </a>
-                        </h3>
-                        <p class="mt-5 text-sm leading-6 text-gray-600">
-                          {{ item.firstPart }}
-                        </p>
-                        <p class="mt-5 text-sm leading-6 text-gray-600">
-                          {{ item.secondPart }}
-                        </p>
-                        <p class="mt-5 text-sm leading-6 text-gray-600">
-                          {{ item.thirdPart }}
-                        </p>
-                      </div>
-                     <div class="space-y-3 mt-6 w-full">
-                      <div class="w-full">
-                        <a href="https://wa.link/ndw0et" class="py-3 block text-center rounded-md w-full bg-black text-white ">Book Now</a>
-                      </div>
-                      <div class="w-full">
-                        <NuxtLink :to="item.registerUrl" class="py-3 block text-center rounded-md w-full bg-black text-white ">Terms and Conditions Apply</NuxtLink>
-                      </div>
-                     </div>
-                    </div>
-                  </article>
-                </div>
-              </div>
-            </div>
-          </div>
     </main>
   </template>
 

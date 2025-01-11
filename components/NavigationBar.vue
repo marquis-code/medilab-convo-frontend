@@ -1,6 +1,6 @@
 <template>
     <header class="absolute inset-x-0 top-0 z-50 bg-black text-white">
-        <nav class="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
+        <nav class="flex items-center justify-between px-6 lg:p-6 lg:px-8" aria-label="Global">
           <div class="flex lg:flex-1">
             <NuxtLink to="/" class="-m-1.5 p-1.5">
               <span class="sr-only">Your Company</span>
@@ -18,8 +18,8 @@
           <div class="hidden lg:flex lg:gap-x-12">
             <NuxtLink to="/journals" class="text-sm font-semibold leading-6 text-white">Journo</NuxtLink>
             <NuxtLink to="/lab-cast" class="text-sm font-semibold leading-6 text-white">LabCast</NuxtLink>
-            <NuxtLink to="/community" class="text-sm font-semibold leading-6 text-white">Community</NuxtLink>
             <NuxtLink to="/programs" class="text-sm font-semibold leading-6 text-white">Programs</NuxtLink>
+            <NuxtLink to="/community" class="text-sm font-semibold leading-6 text-white">Community</NuxtLink>
             <NuxtLink to="/products" class="text-sm font-semibold leading-6 text-white">Products</NuxtLink>
             <!-- <NuxtLink to="/teams" class="text-sm font-semibold leading-6 text-white">About</NuxtLink> -->
             <NuxtLink to="/resources" class="text-sm font-semibold leading-6 text-white">Resources</NuxtLink>
@@ -32,11 +32,11 @@
         <div v-if="isOpen" class="lg:hidden" role="dialog" aria-modal="true">
           <!-- Background backdrop, show/hide based on slide-over state. -->
           <div class="fixed inset-0 z-50"></div>
-          <div class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-gray-900 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-white/10">
+          <div class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-black px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-white/10">
             <div class="flex items-center justify-between">
               <a href="#" class="-m-1.5 p-1.5">
                 <span class="sr-only">Your Company</span>
-                <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500" alt="">
+                <img class="h-10 w-auto" src="@/assets/img/medlab-logo.jpeg" alt="">
               </a>
               <button @click="isOpen = false" type="button" class="-m-2.5 rounded-md p-2.5 text-gray-400">
                 <span class="sr-only">Close menu</span>
