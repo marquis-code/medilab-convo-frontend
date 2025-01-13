@@ -48,10 +48,11 @@
             <div class="mt-6 flow-root">
               <div class="-my-6 divide-y divide-gray-500/25">
                 <div class="space-y-2 py-6">
+                  <NuxtLink @click="isOpen = false" to="/" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-800">Home</NuxtLink>
                   <NuxtLink @click="isOpen = false" to="/journals" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-800">Journo</NuxtLink>
                   <NuxtLink @click="isOpen = false" to="/lab-cast" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-800">LabCast</NuxtLink>
-                  <NuxtLink @click="isOpen = false" to="/community" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-800">Community</NuxtLink>
                   <NuxtLink @click="isOpen = false" to="/programs" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-800">Programs</NuxtLink>
+                  <NuxtLink @click="isOpen = false" to="/community" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-800">Community</NuxtLink>
                   <NuxtLink @click="isOpen = false" to="/products" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-800">Products</NuxtLink>
                   <!-- <NuxtLink @click="isOpen = false" to="/teams" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-800">About</NuxtLink> -->
                   <NuxtLink @click="isOpen = false" to="/resources" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-800">Resources</NuxtLink>

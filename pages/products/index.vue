@@ -53,8 +53,8 @@
             <div class="mx-auto lg:max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
               <h2 data-aos="fade-up" class="text-xl font-bold text-gray-900 text-center">BOOKS</h2>
           
-           <div class="flex justify-center items-center w-full lg:flex justify-center items-center">
-            <div class="mt-8 lg:flex justify-center items-center space-y-10 lg:space-y-0 lg:gap-x-10">
+           <div class="flex justify-center items-center w-full lg:flex justify-center items-center pt-10">
+            <div class="grid grid-cols-3 gap-6">
                 <div class="">
                   <div class="relative">
                     <div class="relative h-72 w-full overflow-hidden rounded-lg">
@@ -62,7 +62,7 @@
                     </div>
                     <div class="relative mt-4">
                       <h3 data-aos="fade-up" class="text-sm font-medium text-gray-900">Lab Up</h3>
-                      <p data-aos="fade-up" class="mt-1 text-sm text-gray-500">by MLS Odinaka Obeta</p>
+                      <p data-aos="fade-up" class="mt-1 text-sm text-gray-500">by MLS Odinaka Kingsley Obeta</p>
                     </div>
                     <div class="absolute inset-x-0 top-0 flex h-72 items-end justify-end overflow-hidden rounded-lg p-4">
                       <div aria-hidden="true" class="absolute inset-x-0 bottom-0 h-36 bg-gradient-to-t from-black opacity-50"></div>
@@ -70,7 +70,7 @@
                     </div>
                   </div>
                   <div data-aos="fade-up" class="mt-6">
-                    <a href="#" class="relative flex items-center justify-center rounded-md border border-transparent bg-gray-100 px-8 py-2 text-sm font-medium text-gray-900 hover:bg-gray-200">Coming Soon</a>
+                    <a href="#" class="relative flex items-center justify-center rounded-md border border-transparent bg-gray-100 px-8 py-3.5 text-sm font-medium text-gray-900 hover:bg-gray-200">Coming Soon</a>
                   </div>
                 </div>
 
@@ -89,7 +89,7 @@
                     </div>
                   </div>
                   <div class="mt-6">
-                    <a href="#" class="relative flex items-center justify-center rounded-md border border-transparent bg-gray-100 px-8 py-2 text-sm font-medium text-gray-900 hover:bg-gray-200">Buy</a>
+                    <a href="https://selar.co/p/hxz8?affiliate=3g9cy1" class="relative flex items-center justify-center rounded-md border border-transparent bg-gray-100 px-8 py-3.5 text-sm font-medium text-gray-900 hover:bg-gray-200">Buy</a>
                   </div>
                 </div>
 
@@ -100,7 +100,7 @@
                     </div>
                     <div class="relative mt-4">
                       <h3 data-aos="fade-up" class="text-sm font-medium text-gray-900">Leadership For Newly Elected Leaders</h3>
-                      <p data-aos="fade-up" class="mt-1 text-sm text-gray-500">by MLS Elvis Umez</p>
+                      <p data-aos="fade-up" class="mt-1 text-sm text-gray-500">by MLS Onaoluwa Abimbola</p>
                     </div>
                     <div  data-aos="fade-up" class="absolute inset-x-0 top-0 flex h-72 items-end justify-end overflow-hidden rounded-lg p-4">
                       <div aria-hidden="true" class="absolute inset-x-0 bottom-0 h-36 bg-gradient-to-t from-black opacity-50"></div>
@@ -108,7 +108,45 @@
                     </div>
                   </div>
                   <div data-aos="fade-up" class="mt-6">
-                    <a href="#" class="relative flex items-center justify-center rounded-md border border-transparent bg-gray-100 px-8 py-2 text-sm font-medium text-gray-900 hover:bg-gray-200">Buy</a>
+                    <a href="https://selar.co/p/8j7941?affiliate=1726fv" class="relative flex items-center justify-center rounded-md border border-transparent bg-gray-100 px-8 py-3.5 text-sm font-medium text-gray-900 hover:bg-gray-200">Buy</a>
+                  </div>
+                </div>
+
+                <div>
+                  <div class="relative">
+                    <div data-aos="fade-up" class="relative h-72 w-full overflow-hidden rounded-lg">
+                      <img src="@/assets/img/book4.jpeg" alt="Front of zip tote bag with white canvas, black canvas straps and handle, and black zipper pulls." class="h-full w-full object-cover object-center">
+                    </div>
+                    <div class="relative mt-4">
+                      <h3 data-aos="fade-up" class="text-sm font-medium text-gray-900">Personal branding for professionals</h3>
+                      <p data-aos="fade-up" class="mt-1 text-sm text-gray-500">by MLS Onaoluwa Abimbola</p>
+                    </div>
+                    <div  data-aos="fade-up" class="absolute inset-x-0 top-0 flex h-72 items-end justify-end overflow-hidden rounded-lg p-4">
+                      <div aria-hidden="true" class="absolute inset-x-0 bottom-0 h-36 bg-gradient-to-t from-black opacity-50"></div>
+                      <p class="relative text-lg font-semibold text-white"></p>
+                    </div>
+                  </div>
+                  <div data-aos="fade-up" class="mt-6">
+                    <a href="https://selar.co/p/tj8e?affiliate=6c3x5t" class="relative flex items-center justify-center rounded-md border border-transparent bg-gray-100 px-8 py-3.5 text-sm font-medium text-gray-900 hover:bg-gray-200">Buy</a>
+                  </div>
+                </div>
+
+                <div>
+                  <div class="relative">
+                    <div data-aos="fade-up" class="relative h-72 w-full overflow-hidden rounded-lg">
+                      <img src="@/assets/img/book5.jpeg" alt="Front of zip tote bag with white canvas, black canvas straps and handle, and black zipper pulls." class="h-full w-full object-cover object-center">
+                    </div>
+                    <div class="relative mt-4">
+                      <h3 data-aos="fade-up" class="text-sm font-medium text-gray-900">The Astute Professional</h3>
+                      <p data-aos="fade-up" class="mt-1 text-sm text-gray-500">by MLS Onaoluwa Abimbola</p>
+                    </div>
+                    <div  data-aos="fade-up" class="absolute inset-x-0 top-0 flex h-72 items-end justify-end overflow-hidden rounded-lg p-4">
+                      <div aria-hidden="true" class="absolute inset-x-0 bottom-0 h-36 bg-gradient-to-t from-black opacity-50"></div>
+                      <p class="relative text-lg font-semibold text-white"></p>
+                    </div>
+                  </div>
+                  <div data-aos="fade-up" class="mt-6">
+                    <a href="https://selar.co/p/witu?affiliate=373671" class="relative flex items-center justify-center rounded-md border border-transparent bg-gray-100 px-8 py-3.5 text-sm font-medium text-gray-900 hover:bg-gray-200">Buy</a>
                   </div>
                 </div>
               </div>

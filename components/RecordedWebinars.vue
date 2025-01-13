@@ -4,7 +4,7 @@
     <div class="">
         <div class="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
           <!-- <h2 class="text-base/7 font-semibold text-indigo-400">Deploy faster</h2> -->
-          <p class="my-2 max-w-lg text-pretty text-2xl font-semibold tracking-tight text-gray-900 sm:text-3xl">Recorded Webinars</p>
+          <p class="my-2 max-w-lg text-pretty text-2xl font-semibold tracking-tight text-[#27628C] sm:text-3xl">Recorded Webinars</p>
           <!-- <div class="mt-10 grid grid-cols-1 gap-4 sm:mt-16 lg:grid-cols-6 lg:grid-rows-2">
             <div class="flex p-px lg:col-span-4">
               <div class="overflow-hidden w-full rounded-lg bg-gray-800 ring-1 ring-white/15 max-lg:rounded-t-[2rem] lg:rounded-tl-[2rem]">
@@ -41,8 +41,8 @@
           </div> -->
         </div>
         <!-- component -->
-        <div class="w-full mt-6 h-screen rounded-2xl" style="background-image: url('https://vojislavd.com/ta-template-demo/assets/img/coming-soon.jpg');">
-            <div class="w-full h-screen rounded-2xl flex flex-col items-center justify-between bg-black bg-opacity-70 py-8">
+        <div class="w-full mt-6  h-screen lg:rounded-2xl" style="background-image: url('https://vojislavd.com/ta-template-demo/assets/img/coming-soon.jpg');">
+            <div class="w-full h-screen lg:rounded-2xl flex flex-col items-center justify-between bg-black bg-opacity-70 py-8">
                 <div class="flex-1 flex flex-col items-center justify-center">
                     <h1 class="text-6xl lg:text-7xl xl:text-8xl text-gray-200 tracking-wider font-bold font-serif mt-12 text-center">Coming Soon</h1>
                     <!-- <div class="flex flex-col items-center space-y-4 mt-24">

@@ -42,9 +42,6 @@
                             goals. ORIGINS not only helps students excel in the classroom but also prepares them to
                             transition smoothly into their professional lives as standout leaders in their chosen
                             fields.</p>
-                        <p class="mt-5">Bibendum eu nulla feugiat justo, elit adipiscing. Ut tristique sit nisi lorem
-                            pulvinar. Urna, laoreet fusce nibh leo. Dictum et et et sit. Faucibus sed non gravida lectus
-                            dignissim imperdiet a.</p>
                         <p class="mt-5">Join us as we turn obstacles into stepping stones, unlocking a future of
                             excellence in medical laboratory science.</p>
                         <!-- <section>
@@ -76,8 +73,8 @@
 
                 <div class="sm:basis-56 border-[0.5px] border-gray-50 rounded-lg">
                     <img alt=""
-                        src="@/assets/img/avatar.jpeg"
-                        class="aspect-square h-44 w-32 object-fit" />
+                        :src="item.image"
+                        class="aspect-square h-full w-32 object-cover" />
                 </div>
 
                 <div class="w-full flex-col justify-between">
@@ -117,15 +114,23 @@
 
 
 <script setup lang="ts">
+import speaker1 from '@/assets/img/speaker1.jpeg'
+import speaker2 from '@/assets/img/speaker2.jpeg'
+import speaker3 from '@/assets/img/speaker3.jpeg'
+import speaker4 from '@/assets/img/speaker4.jpeg'
+import speaker5 from '@/assets/img/speaker5.jpeg'
+import speaker6 from '@/assets/img/speaker6.jpeg'
+import speaker7 from '@/assets/img/speaker7.jpeg'
+import speaker8 from '@/assets/img/speaker8.jpeg'
 import img4 from '@/assets/img/origins.jpeg'
 const schedules = ref([
-    {"date_and_time": "Friday, 31st January, 2025, 8 pm - 9 pm", "topic": "The Identity of the Medical Laboratory Scientist", "speaker": "Friday Odum"},
-    {"date_and_time": "Saturday, 1st February, 2025, 8 pm - 9 pm", "topic": "Building a professional network", "speaker": "Ridwan Agboola"},
-    {"date_and_time": "Sunday, 2nd February, 2024, 8 pm - 9 pm", "topic": "Time management", "speaker": "Glory Ogunbodede"},
-    {"date_and_time": "Friday, 7th February, 2025, 8 pm - 9 pm", "topic": "Research for undergraduates", "speaker": "Emmanuel Elebesunu"},
-    {"date_and_time": "Saturday, 8th February, 2025, 8 pm - 9 pm", "topic": "Mentorship for Undergraduates", "speaker": "Odinaka Obeta"},
-    {"date_and_time": "Sunday, 9th February, 2024, 8 pm - 9 pm", "topic": "Scholarship and Fellowship opportunities for undergraduates", "speaker": "Kamsi Muoka"},
-    {"date_and_time": "Saturday, 15th February, 2025", "topic": "Volunteering", "speaker": "Williams Owoeye"},
-    {"date_and_time": "Sunday, 16th February, 2025", "topic": "Leadership and Social Impact", "speaker": "Fatima Ibrahim"}
+    {image: speaker1, "date_and_time": "Friday, 31st January, 2025, 8 pm - 9 pm", "topic": "The Identity of the Medical Laboratory Scientist", "speaker": "Friday Odum"},
+    {image: speaker2, "date_and_time": "Saturday, 1st February, 2025, 8 pm - 9 pm", "topic": "Building a professional network", "speaker": "Ridwan Agboola"},
+    {image: speaker3, "date_and_time": "Sunday, 2nd February, 2024, 8 pm - 9 pm", "topic": "Time management", "speaker": "Glory Ogunbodede"},
+    {image: speaker4, "date_and_time": "Friday, 7th February, 2025, 8 pm - 9 pm", "topic": "Research for undergraduates", "speaker": "Emmanuel Elebesunu"},
+    {image: speaker5, "date_and_time": "Saturday, 8th February, 2025, 8 pm - 9 pm", "topic": "Mentorship for Undergraduates", "speaker": "Odinaka Obeta"},
+    {image: speaker6, "date_and_time": "Sunday, 9th February, 2024, 8 pm - 9 pm", "topic": "Scholarship and Fellowship opportunities for undergraduates", "speaker": "Kamsi Muoka"},
+    {image: speaker7, "date_and_time": "Saturday, 15th February, 2025", "topic": "Volunteering", "speaker": "Williams Owoeye"},
+    {image: speaker8, "date_and_time": "Sunday, 16th February, 2025", "topic": "Leadership and Social Impact", "speaker": "Fatima Ibrahim"}
 ])
 </script>

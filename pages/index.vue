@@ -7,9 +7,9 @@
         <div class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-20 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
       </div>
       <div class="mx-auto max-w-2xl py-32 ">
-        <div class="text-center">
-          <h1 data-aos="fade-up" class="text-4xl font-bold tracking-tight text-white sm:text-9xl">MedLabConvo</h1>
-          <p data-aos="fade-up" class="text-5xl leading-8 text-white italic">
+        <div class="text-center space-y-3">
+          <h1 data-aos="fade-up" class="font-bold tracking-tight text-white text-5xl">MedLabConvo</h1>
+          <p data-aos="fade-up" class="text-3xl leading-8 text-white italic">
             Lead, Build, Inspire
             <!-- Inspiring and building the capacity of future generations of world class professionals in medical laboratory science and in the healthcare system at large' -->
           </p>
@@ -196,7 +196,7 @@
             <p class="mt-5 line-clamp-3 text-sm/6 text-gray-600">{{ item?.desc ?? 'Nil' }}</p>
           </div>
           <div class="relative mt-8 flex items-center gap-x-4">
-            <a to="https://mlcjourno.substack.com/" v-if="item.status === 'latest'" class="bg-[#27628C] text-center text-white px-6 py-3 rounded-lg w-full">Read more</a>
+            <a href="https://mlcjourno.substack.com/" v-if="item.status === 'latest'" class="bg-[#27628C] text-center text-white px-6 py-3 rounded-lg w-full">Read more</a>
             <img v-if="item.status !== 'latest'" src="@/assets/icons/avatar.svg" alt="" class="h-10 w-10 rounded-full bg-gray-100">
             
           </div>
@@ -246,12 +246,12 @@
       <p  data-aos="fade-down-right" class="mt-2 text-balance text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">We have impacted thousands of amazing people</p>
     </div>
     <div data-aos="fade-down-right" class="mx-auto mt-16 grid max-w-2xl grid-cols-1 grid-rows-1 gap-8 text-sm/6 text-gray-900 sm:mt-20 sm:grid-cols-2 xl:mx-0 xl:max-w-none xl:grid-flow-col xl:grid-cols-4">
-      <figure class="rounded-2xl bg-white shadow-lg ring-1 ring-gray-900/5 sm:col-span-2 xl:col-start-2 xl:row-end-1">
-        <blockquote class="p-6 text-lg font-semibold tracking-tight text-gray-900 sm:p-12 sm:text-xl/8">
+      <figure class="rounded-2xl bg-white shadow-lg rounded-2xl bg-white p-6 shadow-lg ring-1 ring-gray-900/5 ring-1 ring-gray-900/5 sm:col-span-2 xl:col-start-2 xl:row-end-1">
+        <!-- <blockquote class="p-6 text-lg font-semibold tracking-tight text-gray-900 sm:p-12 sm:text-xl/8"> -->
           <p>“MedLabConvo has been a game-changer for me. From knowledge gained through webinars to career mentorship, MedLabConvo has helped me grow professionally and personally. I now feel more confident about my future in medical laboratory science.
             ”</p>
-        </blockquote>
-        <figcaption class="flex flex-wrap items-center gap-x-4 gap-y-4 border-t border-gray-900/10 px-6 py-4 sm:flex-nowrap">
+        <!-- </blockquote> -->
+        <figcaption class="mt-6 flex items-center gap-x-4">
           <img class="h-10 w-10 flex-none rounded-full bg-gray-50" src="@/assets/img/avatar.jpeg" alt="">
           <div class="flex-auto">
             <div class="font-semibold">Daniel Adekunle</div>
@@ -286,7 +286,7 @@
             <figcaption class="mt-6 flex items-center gap-x-4">
               <img class="h-10 w-10 rounded-full bg-gray-50" src="@/assets/img/avatar.jpeg" alt="">
               <div>
-                <div class="font-semibold"></div>
+                <div class="font-semibold">Isaac Tanimomo</div>
                 <!-- <div class="text-gray-600">@lindsaywalton</div> -->
               </div>
             </figcaption>
@@ -331,9 +331,9 @@
       </div>
     </div>
   </div>
-  <p data-aos="fade-down-right"  class="mt-2 text-balance text-xl lg:text-4xl pt-32 text-center font-semibold tracking-tight text-gray-900">Ensure we dont stop doing what we do.</p>
+  <p data-aos="fade-down-right"  class="mt-2 text-balance text-3xl px-3 lg:px-0 lg:text-4xl pt-32 text-center font-semibold tracking-tight text-gray-900">Ensure we don't stop doing what we do.</p>
   <p data-aos="fade-down-right"  class="text-sd text-center pt-3">Make a donation</p>
- <div  data-aos="fade-down-right" class="flex justify-center items-center pt-10 w-full">
+ <div  data-aos="fade-down-right" class="flex justify-center items-center pt-10 px-6 lg:px-0 w-full">
   <button disabled class="bg-[#27628C] px-6 max-w-md w-full py-3 rounded-lg text-white disabled:cursor-not-allowed disabled:opacity-25">Donate</button>
  </div>
 </div>
@@ -390,7 +390,7 @@
         <div class="w-full flex justify-center items-center flex-col pt-10">
     <p data-aos="fade-down-right"  class="mt-8 px-6 lg:px-0 text-center text-sm/6 text-gray-600 md:order-1 md:mt-0">MedLabConvo is a trademark of LabiHealth Ambassadors Initiative, a registered non-profit  organization,
     </p>
-    <p  data-aos="fade-down-right" class="mt-8 text-sm/6 text-gray-600 md:order-1 md:mt-0">@LabiHealth Ambassadors Initiative 2025
+    <p  class="mt-8 text-sm/6 text-gray-600 md:order-1 md:mt-0">©️ LabiHealth Ambassadors Initiative 2025. All Rights Reserved
     </p>
     <p data-aos="fade-down-right"  class="mt-8  text-sm/6 text-gray-600 md:order-1 md:mt-0">All Rights Reserved</p>
    </div>
@@ -514,7 +514,7 @@ const journoLatest = ref([
     previousEditionUrl: '#',
     status: 'latest',
     actionText: 'Read More',
-    registerUrl: '#'
+    registerUrl: 'https://mlcjourno.substack.com/'
   },
 ])
 
