@@ -6,12 +6,12 @@
     <div class="absolute inset-y-0 right-1/2 -z-10 -mr-96 w-[200%] origin-top-right skew-x-[-30deg] bg-white shadow-xl shadow-indigo-600/10 ring-1 ring-indigo-50 sm:-mr-80 lg:-mr-96" aria-hidden="true"></div>
     <div class="mx-auto max-w-7xl px-6 py-32 sm:py-40 lg:px-8">
       <div class="mx-auto max-w-2xl lg:mx-0 lg:grid lg:max-w-none lg:grid-cols-2 lg:gap-x-16 lg:gap-y-8 xl:grid-cols-1 xl:grid-rows-1 xl:gap-x-8">
-        <h1 data-aos="fade-up" class="max-w-2xl text-balance lg:text-5xl font-semibold tracking-tight text-gray-900 sm:text-5xl lg:col-span-2 xl:col-auto">
+        <h1  class="max-w-2xl text-balance lg:text-5xl font-semibold tracking-tight text-gray-900 sm:text-5xl lg:col-span-2 xl:col-auto">
           <!-- We are leading change, inspiring action and buidling the capacity of future world class Biomedical scientists -->
           We are leading change, inspiring action, and building the capacity of future generations of world-class professionals in medical laboratory science and in the healthcare system at large.
         </h1>
-        <div data-aos="fade-up" class="mt-6 max-w-xl lg:mt-0 xl:col-end-1 xl:row-start-1">
-          <p data-aos="fade-up" class="text-pretty text-lg font-medium text-gray-500 sm:text-xl/8">
+        <div  class="mt-6 max-w-xl lg:mt-0 xl:col-end-1 xl:row-start-1">
+          <p  class="text-pretty text-lg font-medium text-gray-500 sm:text-xl/8">
             MedLabConvo is more than a platform—it’s a movement dedicated to shaping the future of medical laboratory science and healthcare. We are committed to leading change, inspiring action, and equipping the next generation of professionals with the tools they need to excel. Through our work, we bridge critical gaps and empower individuals across five key dimensions: Knowledge, Mindset, Skills, Network, and Identity. By fostering growth in these areas, we prepare medical laboratory scientists to not only thrive in their careers but also drive meaningful advancements in global healthcare.
             <!-- We are leading change, inspiring action, and building the capacity of future generations of world-class professionals in medical laboratory science and in the healthcare system at large. -->
           </p>
@@ -20,7 +20,7 @@
             <a href="#" class="text-sm/6 font-semibold text-gray-900">Learn more <span aria-hidden="true">→</span></a>
           </div> -->
         </div>
-        <img data-aos="fade-up" src="@/assets/img/community.jpeg" alt="" class="mt-10 aspect-[6/5] w-full max-w-lg rounded-2xl object-cover sm:mt-16 lg:mt-0 lg:max-w-none xl:row-span-2 xl:row-end-2 xl:mt-36">
+        <img  src="@/assets/img/community.jpeg" alt="" class="mt-10 aspect-[6/5] w-full max-w-lg rounded-2xl object-cover sm:mt-16 lg:mt-0 lg:max-w-none xl:row-span-2 xl:row-end-2 xl:mt-36">
       </div>
     </div>
     <div class="absolute inset-x-0 bottom-0 -z-10 h-24 bg-gradient-to-t from-white sm:h-32"></div>
@@ -39,12 +39,12 @@
               <div class="flex flex-col">
                 <dt class="text-base font-semibold leading-7 text-gray-900">
                   <div class="mb-6 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
-                    <img  data-aos="fade-up" src="@/assets/img/goals1.jpeg" class="h-10 w-10" />
+                    <img   src="@/assets/img/goals1.jpeg" class="h-10 w-10" />
                   </div>
                   Knowledge:
                 </dt>
                 <dd class="mt-1 flex flex-auto flex-col text-base leading-7 text-gray-600">
-                  <p data-aos="fade-up" class="flex-auto text-justify">We bridge the gaps in medical laboratory science education by providing cutting-edge resources, comprehensive training, and up-to-date information. From detailed guides to interactive workshops, we ensure you have the knowledge needed to stay at the forefront of the field.</p>
+                  <p  class="flex-auto text-justify">We bridge the gaps in medical laboratory science education by providing cutting-edge resources, comprehensive training, and up-to-date information. From detailed guides to interactive workshops, we ensure you have the knowledge needed to stay at the forefront of the field.</p>
                   <!-- <p class="mt-6">
                     <a href="#" class="text-sm font-semibold leading-6 text-indigo-600">Learn more <span aria-hidden="true">→</span></a>
                   </p> -->
@@ -53,11 +53,11 @@
               <div class="flex flex-col">
                 <dt class="text-base font-semibold leading-7 text-gray-900">
                   <div class="mb-6 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
-                    <img data-aos="fade-up" src="@/assets/img/goals2.jpeg" class="h-10 w-10" />
+                    <img  src="@/assets/img/goals2.jpeg" class="h-10 w-10" />
                   </div>
                   Mindset:
                 </dt>
-                <dd data-aos="fade-up" class="mt-1 flex flex-auto flex-col text-base leading-7 text-gray-600">
+                <dd  class="mt-1 flex flex-auto flex-col text-base leading-7 text-gray-600">
                   <p class="flex-auto text-justify">Developing a growth mindset is essential for success in any profession. Our programs and resources are designed to foster resilience, adaptability, and a proactive approach to challenges. We help you cultivate the mindset needed to excel and lead in the dynamic world of healthcare.</p>
                   <!-- <p class="mt-6">
                     <a href="#" class="text-sm font-semibold leading-6 text-indigo-600">Learn more <span aria-hidden="true">→</span></a>
@@ -67,11 +67,11 @@
               <div class="flex flex-col">
                 <dt class="text-base font-semibold leading-7 text-gray-900">
                   <div class="mb-6 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
-                    <img data-aos="fade-up" src="@/assets/img/goals3.jpeg" class="h-10 w-10" />
+                    <img  src="@/assets/img/goals3.jpeg" class="h-10 w-10" />
                   </div>
                   Skill:
                 </dt>
-                <dd data-aos="fade-up" class="mt-1 flex flex-auto flex-col text-base leading-7 text-gray-600">
+                <dd  class="mt-1 flex flex-auto flex-col text-base leading-7 text-gray-600">
                   <p class="flex-auto text-justify">Building a strong professional network opens doors to new opportunities and collaborations. MedLabConvo connects you with industry leaders, peers, and mentors through events, forums, and networking opportunities. Our community is your gateway to expanding your professional connections and finding support throughout your career.</p>
                   <!-- <p class="mt-6">
                     <a href="#" class="text-sm font-semibold leading-6 text-indigo-600">Learn more <span aria-hidden="true">→</span></a>
@@ -81,13 +81,13 @@
 
               <div class="flex flex-col">
                 <dt class="text-base font-semibold leading-7 text-gray-900">
-                  <div data-aos="fade-up" class="mb-6 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
+                  <div  class="mb-6 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
                     <img src="@/assets/img/goals4.jpeg" class="h-10 w-10" />
                   </div>
                   Network:
                 </dt>
                 <dd class="mt-1 flex flex-auto flex-col text-base leading-7 text-gray-600">
-                  <p data-aos="fade-up" class="flex-auto text-justify">Building a strong professional network opens doors to new opportunities and collaborations. MedLabConvo connects you with industry leaders, peers, and mentors through events, forums, and networking opportunities. Our community is your gateway to expanding your professional connections and finding support throughout your career.</p>
+                  <p  class="flex-auto text-justify">Building a strong professional network opens doors to new opportunities and collaborations. MedLabConvo connects you with industry leaders, peers, and mentors through events, forums, and networking opportunities. Our community is your gateway to expanding your professional connections and finding support throughout your career.</p>
                   <!-- <p class="mt-6">
                     <a href="#" class="text-sm font-semibold leading-6 text-indigo-600">Learn more <span aria-hidden="true">→</span></a>
                   </p> -->
@@ -96,12 +96,12 @@
 
               <div class="flex flex-col">
                 <dt class="text-base font-semibold leading-7 text-gray-900">
-                  <div data-aos="fade-up" class="mb-6 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
+                  <div  class="mb-6 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
                     <img src="@/assets/img/goals5.jpeg" class="h-10 w-10" />
                   </div>
                   Identity:
                 </dt>
-                <dd data-aos="fade-up" class="mt-1 flex flex-auto flex-col text-base leading-7 text-gray-600">
+                <dd  class="mt-1 flex flex-auto flex-col text-base leading-7 text-gray-600">
                   <p class="flex-auto text-justify">Establishing a clear professional identity is key to standing out in the healthcare field. We provide guidance on personal branding, career development, and leadership, helping you define and communicate your unique value and purpose as a medical laboratory scientist</p>
                   <!-- <p class="mt-6">
                     <a href="#" class="text-sm font-semibold leading-6 text-indigo-600">Learn more <span aria-hidden="true">→</span></a>
@@ -172,13 +172,13 @@
       <div class="bg-white py-32">
   <div class="mx-auto max-w-7xl px-6 text-center lg:px-8">
     <div class="mx-auto max-w-2xl">
-      <h2 data-aos="fade-up" class="text-34l text-balance font-semibold tracking-tight text-gray-900 sm:text-3xl">EXECUTIVE BOARD</h2>
+      <h2  class="text-34l text-balance font-semibold tracking-tight text-gray-900 sm:text-3xl">EXECUTIVE BOARD</h2>
     </div>
     <ul role="list" class="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
-      <li data-aos="fade-up">
-        <img data-aos="fade-up" class="mx-auto h-56 w-56 rounded-full" src="@/assets/img/executive-board1.jpg" alt="">
-        <h3 data-aos="fade-up" class="mt-6 text-base/7 font-semibold tracking-tight text-gray-900">Dr. Paul Olaiya</h3>
-        <p  data-aos="fade-up" class="text-sm/6 text-gray-600">Executive Board</p>
+      <li >
+        <img  class="mx-auto h-56 w-56 rounded-full" src="@/assets/img/executive-board1.jpg" alt="">
+        <h3  class="mt-6 text-base/7 font-semibold tracking-tight text-gray-900">Dr. Paul Olaiya</h3>
+        <p   class="text-sm/6 text-gray-600">Executive Board</p>
         <ul role="list" class="mt-6 flex justify-center gap-x-6">
           <li>
             <a href="#" class="text-gray-400 hover:text-gray-500">
@@ -200,9 +200,9 @@
       </li>
 
       <li>
-        <img data-aos="fade-up" class="mx-auto h-56 w-56 rounded-full object-fill" src="@/assets/img/executive-board2.jpg" alt="">
-        <h3 data-aos="fade-up" class="mt-6 text-base/7 font-semibold tracking-tight text-gray-900">Chibuike Alagboso</h3>
-        <p data-aos="fade-up" class="text-sm/6 text-gray-600">Executive Board</p>
+        <img  class="mx-auto h-56 w-56 rounded-full object-fill" src="@/assets/img/executive-board2.jpg" alt="">
+        <h3  class="mt-6 text-base/7 font-semibold tracking-tight text-gray-900">Chibuike Alagboso</h3>
+        <p  class="text-sm/6 text-gray-600">Executive Board</p>
         <ul role="list" class="mt-6 flex justify-center gap-x-6">
           <li>
             <a href="#" class="text-gray-400 hover:text-gray-500">
@@ -224,9 +224,9 @@
       </li>
 
       <li>
-        <img data-aos="fade-up" class="mx-auto h-56 w-56 rounded-full" src="@/assets/img/executive-board3.jpg" alt="">
-        <h3 data-aos="fade-up" class="mt-6 text-base/7 font-semibold tracking-tight text-gray-900">Dr. Olumide Ajani</h3>
-        <p data-aos="fade-up" class="text-sm/6 text-gray-600">Executive Board</p>
+        <img  class="mx-auto h-56 w-56 rounded-full" src="@/assets/img/executive-board3.jpg" alt="">
+        <h3  class="mt-6 text-base/7 font-semibold tracking-tight text-gray-900">Dr. Olumide Ajani</h3>
+        <p  class="text-sm/6 text-gray-600">Executive Board</p>
         <ul role="list" class="mt-6 flex justify-center gap-x-6">
           <li>
             <a href="#" class="text-gray-400 hover:text-gray-500">
@@ -253,13 +253,13 @@
 
       <div class="mx-auto max-w-7xl px-6 text-center lg:px-8">
     <div class="mx-auto max-w-2xl">
-      <h2 data-aos="fade-up" class="text-34l text-balance font-semibold tracking-tight text-gray-900 sm:text-3xl">ADVISORY BOARD</h2>
+      <h2  class="text-34l text-balance font-semibold tracking-tight text-gray-900 sm:text-3xl">ADVISORY BOARD</h2>
     </div>
     <ul role="list" class="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
       <li>
-        <img data-aos="fade-up" class="mx-auto h-56 w-56 rounded-full" src="@/assets/img/advisory1.jpg" alt="">
-        <h3 data-aos="fade-up" class="mt-6 text-base/7 font-semibold tracking-tight text-gray-900">Gabriel Oke</h3>
-        <p data-aos="fade-up" class="text-sm/6 text-gray-600">Advisory board</p>
+        <img  class="mx-auto h-56 w-56 rounded-full" src="@/assets/img/advisory1.jpg" alt="">
+        <h3  class="mt-6 text-base/7 font-semibold tracking-tight text-gray-900">Gabriel Oke</h3>
+        <p  class="text-sm/6 text-gray-600">Advisory board</p>
         <ul role="list" class="mt-6 flex justify-center gap-x-6">
           <li>
             <a href="#" class="text-gray-400 hover:text-gray-500">
@@ -281,9 +281,9 @@
       </li>
 
       <li>
-        <img data-aos="fade-up" class="mx-auto h-56 w-56 rounded-full object-fill" src="@/assets/img/advisory2.jpg" alt="">
-        <h3 data-aos="fade-up" class="mt-6 text-base/7 font-semibold tracking-tight text-gray-900">Emmanuel Anya-Awa</h3>
-        <p data-aos="fade-up" class="text-sm/6 text-gray-600">Advisory board</p>
+        <img  class="mx-auto h-56 w-56 rounded-full object-fill" src="@/assets/img/advisory2.jpg" alt="">
+        <h3  class="mt-6 text-base/7 font-semibold tracking-tight text-gray-900">Emmanuel Anya-Awa</h3>
+        <p  class="text-sm/6 text-gray-600">Advisory board</p>
         <ul role="list" class="mt-6 flex justify-center gap-x-6">
           <li>
             <a href="#" class="text-gray-400 hover:text-gray-500">
@@ -305,34 +305,9 @@
       </li>
 
       <li>
-        <img data-aos="fade-up" class="mx-auto h-56 w-56 rounded-full object-cover" src="@/assets/img/aisha.jpeg" alt="">
-        <h3 data-aos="fade-up" class="mt-6 text-base/7 font-semibold tracking-tight text-gray-900">Aisha Adeola</h3>
-        <p data-aos="fade-up" class="text-sm/6 text-gray-600">Advisory board</p>
-        <ul role="list" class="mt-6 flex justify-center gap-x-6">
-          <li>
-            <a href="#" class="text-gray-400 hover:text-gray-500">
-              <span class="sr-only">X</span>
-              <svg class="size-5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
-                <path d="M11.4678 8.77491L17.2961 2H15.915L10.8543 7.88256L6.81232 2H2.15039L8.26263 10.8955L2.15039 18H3.53159L8.87581 11.7878L13.1444 18H17.8063L11.4675 8.77491H11.4678ZM9.57608 10.9738L8.95678 10.0881L4.02925 3.03974H6.15068L10.1273 8.72795L10.7466 9.61374L15.9156 17.0075H13.7942L9.57608 10.9742V10.9738Z" />
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="text-gray-400 hover:text-gray-500">
-              <span class="sr-only">LinkedIn</span>
-              <svg class="size-5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
-                <path fill-rule="evenodd" d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z" clip-rule="evenodd" />
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </li>
-
-
-      <li>
-        <img data-aos="fade-up" class="mx-auto h-56 w-56 rounded-full" src="@/assets/img/advisory4.png" alt="">
-        <h3 data-aos="fade-up" class="mt-6 text-base/7 font-semibold tracking-tight text-gray-900">Odinaka Kingsley Obeta</h3>
-        <p data-aos="fade-up" class="text-sm/6 text-gray-600">Advisory board</p>
+        <img  class="mx-auto h-56 w-56 rounded-full object-cover" src="@/assets/img/aisha.jpeg" alt="">
+        <h3  class="mt-6 text-base/7 font-semibold tracking-tight text-gray-900">Aisha Adeola</h3>
+        <p  class="text-sm/6 text-gray-600">Advisory board</p>
         <ul role="list" class="mt-6 flex justify-center gap-x-6">
           <li>
             <a href="#" class="text-gray-400 hover:text-gray-500">
@@ -355,9 +330,34 @@
 
 
       <li>
-        <img data-aos="fade-up" class="mx-auto h-56 w-56 rounded-full" src="@/assets/img/advisory.jpeg" alt="">
-        <h3 data-aos="fade-up" class="mt-6 text-base/7 font-semibold tracking-tight text-gray-900">Olaleye Olajuyin</h3>
-        <p data-aos="fade-up" class="text-sm/6 text-gray-600">Advisory board</p>
+        <img  class="mx-auto h-56 w-56 rounded-full" src="@/assets/img/advisory4.png" alt="">
+        <h3  class="mt-6 text-base/7 font-semibold tracking-tight text-gray-900">Odinaka Kingsley Obeta</h3>
+        <p  class="text-sm/6 text-gray-600">Advisory board</p>
+        <ul role="list" class="mt-6 flex justify-center gap-x-6">
+          <li>
+            <a href="#" class="text-gray-400 hover:text-gray-500">
+              <span class="sr-only">X</span>
+              <svg class="size-5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                <path d="M11.4678 8.77491L17.2961 2H15.915L10.8543 7.88256L6.81232 2H2.15039L8.26263 10.8955L2.15039 18H3.53159L8.87581 11.7878L13.1444 18H17.8063L11.4675 8.77491H11.4678ZM9.57608 10.9738L8.95678 10.0881L4.02925 3.03974H6.15068L10.1273 8.72795L10.7466 9.61374L15.9156 17.0075H13.7942L9.57608 10.9742V10.9738Z" />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="text-gray-400 hover:text-gray-500">
+              <span class="sr-only">LinkedIn</span>
+              <svg class="size-5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                <path fill-rule="evenodd" d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z" clip-rule="evenodd" />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </li>
+
+
+      <li>
+        <img  class="mx-auto h-56 w-56 rounded-full" src="@/assets/img/advisory.jpeg" alt="">
+        <h3  class="mt-6 text-base/7 font-semibold tracking-tight text-gray-900">Olaleye Olajuyin</h3>
+        <p  class="text-sm/6 text-gray-600">Advisory board</p>
         <ul role="list" class="mt-6 flex justify-center gap-x-6">
           <li>
             <a href="#" class="text-gray-400 hover:text-gray-500">
@@ -421,13 +421,13 @@
       </div> -->
       
       <div class="bg-white mt-16">
-       <h1 data-aos="fade-up" class="text-center text-xl uppercase"> Executive Directors</h1>
+       <h1  class="text-center text-xl uppercase"> Executive Directors</h1>
         <!-- <div class="mx-auto max-w-7xl px-6 lg:px-8 border-4"> -->
           <ul role="list" class="mx-auto mt-10 lg:pl-72 grid max-w-2xl  grid-cols-1 gap-x-8 gap-y-16 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
-              <li data-aos="fade-up" v-for="(item,idx) in executiveDirctors" :key="idx">
-                <img data-aos="fade-up" class="mx-auto h-56 w-56 rounded-full object-center" :src="item.image" alt="">
-                <h3 data-aos="fade-up" class="mt-6 text-base/7 text-center font-semibold tracking-tight text-gray-900">{{ item.name ?? 'Nil' }}</h3>
-                <p data-aos="fade-up" class="text-sm/6 text-gray-600 text-center">{{ item?.position ?? 'Nil' }}</p>
+              <li  v-for="(item,idx) in executiveDirctors" :key="idx">
+                <img  class="mx-auto h-56 w-56 rounded-full object-center" :src="item.image" alt="">
+                <h3  class="mt-6 text-base/7 text-center font-semibold tracking-tight text-gray-900">{{ item.name ?? 'Nil' }}</h3>
+                <p  class="text-sm/6 text-gray-600 text-center">{{ item?.position ?? 'Nil' }}</p>
               </li>     
             </ul>
         <!-- </div> -->
@@ -435,13 +435,13 @@
       
 
       <div class="bg-white py-16 sm:py-20">
-        <h1 data-aos="fade-up" class="text-center uppercase">TEAM LEADS</h1>
+        <h1  class="text-center uppercase">TEAM LEADS</h1>
           <div class="mx-auto max-w-7xl px-6 text-center lg:px-8">
           <ul role="list" class="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
-            <li data-aos="fade-up" v-for="(item,idx) in volunteers" :key="idx">
-              <img data-aos="fade-up" class="mx-auto h-56 w-56 rounded-full" :src="item.image" alt="">
-              <h3 data-aos="fade-up" class="mt-6 text-base/7 font-semibold tracking-tight text-gray-900">{{ item.name ?? 'Nil' }}</h3>
-              <p data-aos="fade-up" class="text-sm/6 text-gray-600">{{ item?.position ?? 'Nil' }}</p>
+            <li  v-for="(item,idx) in volunteers" :key="idx">
+              <img  class="mx-auto h-56 w-56 rounded-full" :src="item.image" alt="">
+              <h3  class="mt-6 text-base/7 font-semibold tracking-tight text-gray-900">{{ item.name ?? 'Nil' }}</h3>
+              <p  class="text-sm/6 text-gray-600">{{ item?.position ?? 'Nil' }}</p>
               <ul role="list" class="mt-6 flex justify-center gap-x-6">
                 <li>
                   <a href="#" class="text-gray-400 hover:text-gray-500">

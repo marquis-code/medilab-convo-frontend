@@ -127,7 +127,7 @@
         
         <!-- Buttons -->
         <div class="flex flex-col space-y-4 max-w-md mx-auto pt-4">
-          <button data-aos="fade-up" disabled class="bg-[#27628C] disabled:opacity-25 disabled:cursor-not-allowed text-white py-3 px-6 rounded transition-colors">
+          <button disabled class="bg-[#27628C] disabled:opacity-25 disabled:cursor-not-allowed text-white py-3 px-6 rounded transition-colors">
             Download our Handbook
           </button>
           <button disabled class="bg-[#27628C] disabled:opacity-25 disabled:cursor-not-allowed text-white py-3 px-6 rounded transition-colors">

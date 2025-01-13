@@ -10,7 +10,7 @@
             </div>
             <div class="mx-auto max-w-7xl px-6 lg:px-8 flex justify-center items-center w-full flex-col pt-16">
               <div class="mx-auto max-w-2xl lg:mx-0 flex justify-center items-center w-full flex-col">
-                <h2 data-aos="fade-up" class="text-4xl font-bold text-center text-uppercase tracking-tight text-white sm:text-6xl">Programs</h2>
+                <h2 data-aos="fade-up" class="text-4xl font-bold text-center text-uppercase tracking-tight text-white uppercase sm:text-6xl">Programs</h2>
                  <p data-aos="fade-up" class="mt-2 text-lg leading-8 text-white mt-3 text-center">At MedLabConvo, we are dedicated to empowering and supporting medical laboratory professionals and students through a range of impactful programs. Whether you are looking to enhance your career, connect with mentors, or develop key skills, our initiatives are designed to guide you every step of the way. </p>
               </div>
             </div>

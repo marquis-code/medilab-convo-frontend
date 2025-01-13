@@ -54,7 +54,7 @@
               <h2 data-aos="fade-up" class="text-xl font-bold text-gray-900 text-center">BOOKS</h2>
           
            <div class="flex justify-center items-center w-full lg:flex justify-center items-center pt-10">
-            <div class="grid grid-cols-3 gap-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
                 <div class="">
                   <div class="relative">
                     <div class="relative h-72 w-full overflow-hidden rounded-lg">
