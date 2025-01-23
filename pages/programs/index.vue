@@ -16,11 +16,11 @@
             </div>
           </div>
 
-          <div class="container mx-auto px-4 mt-10 pb-10">
+          <div class="container mx-auto px-4 grid lg:grid-cols-2 gap-6 mt-10 pb-10">
     
             <div data-aos="fade-up" v-for="(item, idx) in programsList" :key="idx" :class="[item.status === 'latest' ? 'border-8 border-[#27628C]' : '']" class="bg-gray-100 rounded-lg overflow-hidden mb-16">
               <div class="relative">
-                <img data-aos="fade-up" :src="item.img" class="w-full lg:h-96 object-fill" />
+                <img data-aos="fade-up" :src="item.img" class="w-full lg:h-96 object-cover" />
               </div>
               
               <!-- Content -->
