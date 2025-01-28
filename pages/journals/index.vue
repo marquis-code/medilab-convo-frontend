@@ -31,23 +31,22 @@
     <h2 data-aos="fade-up" class="text-2xl pt-20 font-bold tracking-tight text-[#27628C] text-center">LATEST
       PUBLICATION</h2>
 
-    <div class="relative bg-[#27628C] lg:mt-10 pt-0">
+    <div class="relative bg-[#27628C] lg:mt-10 pt-0 lg:pb-72">
       <div
         class="relative h-80 overflow-hidden  md:absolute md:left-0 md:h-full mt-44 pb-[400px] lg:pb-0 md:w-1/3 lg:w-1/2">
-        <img data-aos="fade-up" class="size-full object-cover" src="@/assets/img/latest.jpeg" alt="">
+        <img data-aos="fade-up" class="size-full object-cover" src="@/assets/img/updates3.jpeg" alt="">
       </div>
       <div class="relative mx-auto max-w-7xl py-24 sm:py-32 px-10 lg:px-0 lg:px-8 lg:py-40">
         <div class="md:ml-auto md:w-2/3 md:pl-16 lg:w-1/2">
-          <p data-aos="fade-up" class="mt-2 text-4xl font-semibold tracking-tight text-white sm:text-5xl">FROM
-            ‘MIRACLE MEDS’ TO MAYHEM: COMBATING ANTIMICROBIAL RESISTANCE</p>
-          <p data-aos="fade-up" class="mt-6 text-base/7 text-white"> One day, Mamooo's son, Tega, returned home after
+          <p data-aos="fade-up" class="mt-2 text-4xl font-semibold tracking-tight text-white sm:text-5xl">How Systemic Deficiencies Fuel the "Japa Jets"</p>
+          <p data-aos="fade-up" class="mt-6 text-base/7 text-white sr-only"> One day, Mamooo's son, Tega, returned home after
             national youth service but Mamooo couldn’t believe her eyes. Tega’s gaunt frame and sun-scorched skin sent
             his mother into a frenzy. His eyes, once bright and full of life, now seemed dull and sunken. She
             immediately provided him with her 'miracle meds': anti-malaria, amoxicillin, and multivitamins. With a
             knowing glint in her eye, she declared, “Nah those giant mosquitoes wey dey that camp wan suck my pikin
             blood dry, na why he con resemble toothpick!”</p>
           <div data-aos="fade-up" class="mt-8">
-            <a href="https://mlcjourno.substack.com/"
+            <a href="https://mlcjourno.substack.com//"
               class="inline-flex rounded-md bg-white/10 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-white/20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">View
               publications <span aria-hidden="true">&rarr;</span></a>
           </div>
@@ -125,6 +124,7 @@
 
 <script setup lang="ts">
 import journo1 from '@/assets/img/journo1.jpeg'
+import updates2 from '@/assets/img/updates2.jpeg'
 import journo2 from '@/assets/img/journo2.jpeg'
 import journo3 from '@/assets/img/lab-coast/journo3.jpeg'
 import journo4 from '@/assets/img/lab-coast/journo4.jpeg'
@@ -133,6 +133,13 @@ import journo6 from '@/assets/img/lab-coast/journo6.jpeg'
 import journo7 from '@/assets/img/lab-coast/journo7.jpeg'
 
 const journosList = ref([
+{
+    image: updates2,
+    title: 'FROM ‘MIRACLE MEDS’ TO MAYHEM: COMBATING ANTIMICROBIAL RESISTANCE',
+    desc: `One day, Mamooo's son, Tega, returned home after national youth service but Mamooo couldn’t believe her eyes. Tega’s gaunt frame and sun-scorched skin sent his mother into a frenzy. His eyes, once bright and full of life, now seemed dull and sunken. She immediately provided him with her 'miracle meds': anti-malaria, amoxicillin, and multivitamins. With a knowing glint in her eye, she declared, “Nah those giant mosquitoes wey dey that camp wan suck my pikin blood dry, na why he con resemble toothpick!”`,
+    author: '',
+    url: 'https://mlcjourno.substack.com/p/from-miracle-meds-to-mayhem-combating'
+  },
   {
     image: journo1,
     title: 'Sexism in STEM: A Farce or Fact',

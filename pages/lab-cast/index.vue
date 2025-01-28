@@ -109,12 +109,13 @@
       <div class="bg-white p-0 rounded-lg shadow-md flex">
         <div class="lg:flex space-y-6 items-center space-x-4 w-full p-6">
           <img data-aos="fade-up"
-            src="@/assets/img/impact.jpg"
+            src="@/assets/img/updates4.jpeg"
             alt="Podcast cover"
             class="w-72 h-60 rounded-lg object-cover"
           />
           <div data-aos="fade-up" class="flex flex-col w-full">
-            <div data-aos="fade-up" class="font-semibold text-2xl">Medical Laboratory Science Practice: From MLS in Diaspora viewpoint</div>
+            <div data-aos="fade-up" class="font-semibold text-2xl">The Thrills and Terros of Bench Work.</div>
+            <!-- <div data-aos="fade-up" class="font-semibold text-2xl">The Trills and Terros of Bench Work</div> -->
             <!-- <div class="text-gray-600">Episode 1</div> -->
             <div data-aos="fade-up" class="text-gray-500 mt-2">
               In this episode, we delve into the experiences and insights of medical laboratory scientists working abroad (United Kingdom)). Join us as we explore how practice and perspectives differ in this region.
@@ -123,7 +124,7 @@
         <p data-aos="fade-up" class="text-gray-400 text-sm mb-2">Available On:</p>
         <div data-aos="fade-up" class="flex flex-wrap gap-2">
           <a
-            href="https://open.spotify.com/episode/0py3aUuw2hqN0StC6r1pbX?si=be21b341b2334e01"
+            href="https://open.spotify.com/show/04S2XZGd6gczoCXStIrh8e"
             class="inline-flex items-center px-4 py-1.5 rounded-full bg-[#1DB954] text-sm hover:opacity-90"
           >
             <span class="mr-2">
@@ -136,7 +137,7 @@
             Spotify
           </a>
           <a data-aos="fade-up"
-            href="https://podcasts.apple.com/us/podcast/the-impact-of-artificial-intelligence-on/id1610877517?i=1000674465767"
+            href=""
             class="inline-flex items-center border-[0.5px] border-gray-20 px-4 py-1.5 rounded-full bg-white text-black text-sm hover:opacity-90"
           >
             <span class="mr-2">
@@ -301,6 +302,14 @@ import episode30 from "@/assets/img/lab-coast/lab30.png";
 import episode31 from "@/assets/img/lab-coast/lab31.png";
 
 const podcastList = ref([
+{
+    name: "Medical Laboratory Science Practice: From MLS in Diaspora viewpoint",
+    description:
+      "In this episode, we delve into the experiences and insights of medical laboratory scientists working abroad (United Kingdom)). Join us as we explore how practice and perspectives differ in this region.",
+    image: "",
+    link: "https://open.spotify.com/episode/0py3aUuw2hqN0StC6r1pbX?si=be21b341b2334e01",
+    appleUrl: "https://podcasts.apple.com/us/podcast/the-impact-of-artificial-intelligence-on/id1610877517?i=1000674465767"
+  },
   {
     name: "The Doctor of MLS program: Lessons from Dr. Emmanuel Samani's journey",
     description:

@@ -454,7 +454,7 @@ import journo7 from '@/assets/img/lab-coast/journo7.jpeg'
 import labcast from '@/assets/img/impact.jpg'
 import journo from '@/assets/img/latest.jpeg'
 const isOpen = ref(false)
-import img4 from '@/assets/img/origins.jpeg'
+import img4 from '@/assets/img/updates1.jpeg'
 
 const activitiesGrid = ref([
   {
@@ -514,7 +514,7 @@ const journoLatest = ref([
     previousEditionUrl: '#',
     status: 'latest',
     actionText: 'Read More',
-    registerUrl: 'https://mlcjourno.substack.com/'
+    registerUrl: 'https://mlcjourno.substack.com/p/from-miracle-meds-to-mayhem-combating'
   },
 ])
 

@@ -105,7 +105,7 @@
 import img1 from '@/assets/img/medics.jpg'
 import img2 from '@/assets/img/forging-a-path.jpg'
 import img3 from '@/assets/img/happenings.jpg'
-import img4 from '@/assets/img/origins.jpeg'
+import img4 from '@/assets/img/updates1.jpeg'
 const router = useRouter()
 const programsList = ref([
   {

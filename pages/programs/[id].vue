@@ -23,7 +23,7 @@
                     <div class="relative mx-auto max-w-prose text-base lg:max-w-none">
                         <figure>
                             <img class="aspect-[12/7] w-full rounded-lg object-cover shadow-lg lg:aspect-auto"
-                                src="@/assets/img/origins.jpeg"
+                                src="@/assets/img/updates1.jpeg"
                                 alt="Whitney leaning against a railing on a downtown street" width="1184" height="1376">
                         </figure>
                     </div>
@@ -92,6 +92,8 @@
                         <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-700">
                             {{ item.date_and_time }}
                         </p>
+
+                        <p class="text-xs font-bold pt-5">CLICK TO SEE SPEAKER'S PROFILE</p>
                     </div>
 <!-- 
                     <div class="sm:flex sm:items-end sm:justify-end">
@@ -191,12 +193,11 @@ const schedules = ref([
         "topic": "Research for undergraduates",
         "speaker": "Emmanuel Elebesunu",
         "bio": `
-        Emmanuel Elebesunu is a Medical Laboratory Scientist with a passion for research in infectious disease epidemiology, monitoring, and response. As an Early Career Researcher, he has actively contributed to scientific discourse through his research works, including 22 research publications, 2 book chapters, and several citations on topics spanning the areas of public health, infectious diseases, and antimicrobial resistance.
+        Emmanuel Elebesunu is a Medical Laboratory Scientist with a passion for research in infectious disease epidemiology, surveillance, and response. As an Early Career Researcher, he has actively contributed to scientific discourse through his research works, including 22 research publications, 2 book chapters, and several citations on topics spanning the areas of public health, infectious diseases, and antimicrobial resistance..
 
         He is currently a Medical Journalist with the Society for Disease Prevention (SFDP), where he promotes awareness on prevalent infectious diseases in Africa and beyond. He also functions as a Project Assistant for public health research and advocacy in the Africa and Middle Eastern Region (AfMe).
 
-        His research works have been presented in scientific conferences, including the International Festival of Public Health (IFPH) hosted by the University of Manchester, the 2021 Scientific Conference of the African Society for Laboratory Medicine (ASLM), and the 5th HIV Research for Prevention (HIVR4P) Conference in South America. He is also a Journalism Fellowship Award recipient from the International AIDS Society (IAS). In addition, he is a Molecular Laboratory Trainee in AMR Genotypic/Phenotypic Characterisation, funded by the Society for Applied Microbiology (SFAM).
-
+        His research works have been presented in scientific conferences, including the International Festival of Public Health (IFPH) hosted by the University of Manchester, the 2021 Scientific Conference of the African Society for Laboratory Medicine (ASLM), and the 5th HIV Research for Prevention (HIVR4P) Conference in South America. He is also a Journalism Fellowship Award recipient from the International AIDS Society (IAS). In addition, he is a Molecular Laboratory Trainee in AMR Genotypic/Phenotypic Characterisation, funded by the Society for Applied Microbiology (SFAM)..
         `
     },
     {
@@ -243,7 +244,18 @@ const schedules = ref([
         "date_and_time": "Saturday, 15th February, 2025",
         "topic": "Volunteering",
         "speaker": "Williams Owoeye",
-        "bio": "Bio information not provided in the input."
+        "bio": 
+        `
+        Williams Owoeye is a Biomedical Laboratory Science graduate of the University of Ibadan with a rich background in marketing, communications, and social impact. With over five years of professional and volunteering experience, Williams has consistently demonstrated his commitment to community development and meaningful engagement. With a strong belief that effective communication can solve all world problems.
+
+        He is a College of Medicine Provost Award winner owing to his exemplary devotion to improving his community. This is a testament of his engagement in extracurricular activities as early as his freshman year. As the Public Relations Officer for Friends of Damien Foundation, he has actively driven awareness campaigns targeting tuberculosis and leprosy, contributing to the organization’s growth and impact. His work as Director of Programs as well as Director of Media and Publicity for the Asido Campus Network reflects his dedication to mental health advocacy, organizing events to reduce stigma and foster open dialogue about mental health.
+
+
+        Williams has also excelled in campus journalism, earning accolades such as "Most Promising Campus Journalist" and "Best Satirical Writer." during his undergraduate years. His leadership roles within various organizations have facilitated strategic partnerships, boosted brand visibility, and created opportunities for knowledge sharing.
+
+
+        With expertise in marketing, content creation, and public relations, Williams has spearheaded impactful campaigns and mentored aspiring leaders, empowering them to address complex challenges. Passionate about community advancement, he remains focused on leveraging his communication skills to inspire positive change and drive social progress especially in the digital space.
+        `
     },
     {
         image: speaker8,

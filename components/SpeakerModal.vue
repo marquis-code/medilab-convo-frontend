@@ -45,6 +45,36 @@
   </script>
   
   <style scoped>
-  /* Custom animations */
+  /* Animation keyframes */
+  @keyframes modalShow {
+    0% {
+      transform: scale(0.9);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes modalHide {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(0.9);
+      opacity: 0;
+    }
+  }
+  
+  /* Animation classes */
+  .animate-show {
+    animation: modalShow 0.3s ease-out forwards;
+  }
+  
+  .animate-hide {
+    animation: modalHide 0.3s ease-in forwards;
+  }
   </style>
   
