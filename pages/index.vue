@@ -451,8 +451,8 @@ import journo4 from '@/assets/img/lab-coast/journo4.jpeg'
 import journo5 from '@/assets/img/lab-coast/journo5.jpeg'
 import journo6 from '@/assets/img/lab-coast/journo6.jpeg'
 import journo7 from '@/assets/img/lab-coast/journo7.jpeg'
-import labcast from '@/assets/img/impact.jpg'
-import journo from '@/assets/img/latest.jpeg'
+import labcast from '@/assets/img/updates4.jpeg'
+import journo from '@/assets/img/updates3.jpeg'
 const isOpen = ref(false)
 import img4 from '@/assets/img/updates1.jpeg'
 
@@ -497,24 +497,24 @@ const activitiesGrid = ref([
 
 const labcastLatest = ref([
 {
-    title: 'Medical Laboratory Science Practice: From MLS in Diaspora viewpoint',
+    title: 'The Thrills and  Terrors of Bench Work',
     image: labcast,
-    desc: `In this episode, we delve into the experiences and insights of medical laboratory scientists working abroad (United Kingdom)). Join us as we explore how practice and perspectives differ in this region.`,
+    desc: `In this episode, we delve into the experiences and insights of medical laboratory scientists into the trills and terrors of bench work. Join us as we explore how practice and perspectives differ in this region.`,
     previousEditionUrl: '#',
     status: 'latest',
-    registerUrl: '#'
+    registerUrl: 'https://open.spotify.com/show/04S2XZGd6gczoCXStIrh8e'
   },
 ])
 
 const journoLatest = ref([
 {
-    title: 'FROM ‘MIRACLE MEDS’ TO MAYHEM: COMBATING ANTIMICROBIAL RESISTANCE',
+    title: 'How Sysytemic Deficiencies Fuel the "Japa Jets"',
     image: journo,
-    desc: `One day, Mamooo's son, Tega, returned home after national youth service but Mamooo couldn’t believe her eyes. Tega’s gaunt frame and sun-scorched skin sent his mother into a frenzy. His eyes, once bright and full of life, now seemed dull and sunken. She immediately provided him with her 'miracle meds': anti-malaria, amoxicillin, and multivitamins. With a knowing glint in her eye, she declared, “Nah those giant mosquitoes wey dey that camp wan suck my pikin blood dry, na why he con resemble toothpick!”`,
+    desc: `In this episode, we delve into the experiences and insights of medical laboratory scientists into how systemic defficiencies fuel Japa Jets. Join us as we explore how practice and perspectives differ in this region”`,
     previousEditionUrl: '#',
     status: 'latest',
     actionText: 'Read More',
-    registerUrl: 'https://mlcjourno.substack.com/p/from-miracle-meds-to-mayhem-combating'
+    registerUrl: 'https://mlcjourno.substack.com/'
   },
 ])
 
