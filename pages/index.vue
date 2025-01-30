@@ -8,8 +8,8 @@
       </div>
       <div class="mx-auto max-w-2xl py-32 ">
         <div class="text-center space-y-3">
-          <h1 data-aos="fade-up" class="font-bold tracking-tight text-white text-5xl">MedLabConvo</h1>
-          <p data-aos="fade-up" class="text-3xl leading-8 text-white italic">
+          <h1  class="font-bold tracking-tight text-white text-5xl">MedLabConvo</h1>
+          <p  class="text-3xl leading-8 text-white italic">
             Lead, Build, Inspire
             <!-- Inspiring and building the capacity of future generations of world class professionals in medical laboratory science and in the healthcare system at large' -->
           </p>
@@ -26,7 +26,7 @@
   </div>
 
   <div class="youtube-video pt-20 px-3 lg:px-0">
-    <h3 data-aos="zoom-in-left" class="lg:text-3xl text-lg px-4 font-black  text-gray-900 text-center pb-6">We are leading change, inspiring action, and building the capacity of future generations of world-class professionals in medical laboratory science and in the healthcare
+    <h3  class="px-4 font-black sm:text-5xl text-4xl  text-gray-900 text-center pb-6">We are leading change, inspiring action, and building the capacity of future generations of world-class professionals in medical laboratory science and in the healthcare
       system at large.
     </h3>
     <iframe
@@ -53,9 +53,9 @@
     </div>
   </div> -->
 <div class="h-0.5 w-full bgh-red-100 border-[#27628C] border-[0.5px] mt-16"></div>
-  <h2 data-aos="zoom-in-left" class="text-center text-2xl font-bold pt-10">UPCOMING PROGRAMS</h2>
+  <h2  class="text-center text-2xl font-bold pt-10">UPCOMING PROGRAMS</h2>
   <!-- <div class="mx-auto grid max-w-2xl border-4 flex justify-center items-center grid-cols-1 gap-x-8 gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3 p-6"> -->
-     <div data-aos="zoom-in-left" class=" flex justify-center items-center mt-4 p-3 lg:p-0">
+     <div  class=" flex justify-center items-center mt-4 p-3 lg:p-0">
       <a :href="item.url" v-for="(item, idx) in journosList" :key="idx" class="flex block flex-col items-start justify-between">
         <div class="relative w-full">
           <img :src="item.image" alt="" class="rounded-2xl bg-gray-100 object-cover h-96 w-full">
@@ -95,9 +95,9 @@
       <!-- More posts... -->
     <!-- </div> -->
 
-    <h2 data-aos="zoom-in-left" class="text-center text-2xl font-bold pt-10">LATEST ON LABCAST</h2>
+    <h2  class="text-center text-2xl font-bold pt-10">LATEST ON LABCAST</h2>
     <!-- <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3 p-6"> -->
-      <div data-aos="zoom-in-left" class=" flex justify-center items-center mt-4 p-3 lg:p-0">
+      <div  class=" flex justify-center items-center mt-4 p-3 lg:p-0">
       <a :href="item.url" v-for="(item, idx) in labcastLatest" :key="idx" class="flex block flex-col items-start justify-between">
         <div class="relative w-full">
           <img :src="item.image" alt="" class="rounded-2xl bg-gray-100 object-cover h-96 w-full">
@@ -173,9 +173,9 @@
       <!-- More posts... -->
     <!-- </div> -->
 
-    <h2 data-aos="zoom-in-left" class="text-center text-2xl font-bold pt-10">LATEST ON JOURNO</h2>
+    <h2  class="text-center text-2xl font-bold pt-10">LATEST ON JOURNO</h2>
     <!-- <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3 p-6"> -->
-      <div data-aos="zoom-in-left" class=" flex justify-center items-center mt-4 p-3 lg:p-0">
+      <div  class=" flex justify-center items-center mt-4 p-3 lg:p-0">
       <a :href="item.url" v-for="(item, idx) in journoLatest" :key="idx" class="flex block flex-col items-start justify-between">
         <div class="relative w-full">
           <img :src="item.image" alt="" class="rounded-2xl bg-gray-100 object-cover h-96 w-full">
@@ -242,10 +242,10 @@
   </div>
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="mx-auto max-w-2xl text-center">
-      <h2 data-aos="fade-down-right" class="text-base/7 font-semibold uppercase text-[#27628C]">Testimonials</h2>
-      <p  data-aos="fade-down-right" class="mt-2 text-balance text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">We have impacted thousands of amazing people</p>
+      <h2  class="text-base/7 font-semibold uppercase text-[#27628C]">Testimonials</h2>
+      <p   class="mt-2 text-balance text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">We have impacted thousands of amazing people</p>
     </div>
-    <div data-aos="fade-down-right" class="mx-auto mt-16 grid max-w-2xl grid-cols-1 grid-rows-1 gap-8 text-sm/6 text-gray-900 sm:mt-20 sm:grid-cols-2 xl:mx-0 xl:max-w-none xl:grid-flow-col xl:grid-cols-4">
+    <div  class="mx-auto mt-16 grid max-w-2xl grid-cols-1 grid-rows-1 gap-8 text-sm/6 text-gray-900 sm:mt-20 sm:grid-cols-2 xl:mx-0 xl:max-w-none xl:grid-flow-col xl:grid-cols-4">
       <figure class="rounded-2xl bg-white shadow-lg rounded-2xl bg-white p-6 shadow-lg ring-1 ring-gray-900/5 ring-1 ring-gray-900/5 sm:col-span-2 xl:col-start-2 xl:row-end-1">
         <!-- <blockquote class="p-6 text-lg font-semibold tracking-tight text-gray-900 sm:p-12 sm:text-xl/8"> -->
           <p>“MedLabConvo has been a game-changer for me. From knowledge gained through webinars to career mentorship, MedLabConvo has helped me grow professionally and personally. I now feel more confident about my future in medical laboratory science.
@@ -260,7 +260,7 @@
           <!-- <img class="h-10 w-auto flex-none" src="https://tailwindui.com/plus/img/logos/savvycal-logo-gray-900.svg" alt=""> -->
         </figcaption>
       </figure>
-      <div data-aos="fade-down-right" class="space-y-8 xl:contents xl:space-y-0">
+      <div  class="space-y-8 xl:contents xl:space-y-0">
         <div class="space-y-8 xl:row-span-2">
           <figure class="rounded-2xl bg-white p-6 shadow-lg ring-1 ring-gray-900/5">
             <blockquote class="text-gray-900">
@@ -295,7 +295,7 @@
           <!-- More testimonials... -->
         </div>
       </div>
-      <div data-aos="fade-down-right" class="space-y-8 xl:contents xl:space-y-0">
+      <div  class="space-y-8 xl:contents xl:space-y-0">
         <!-- <div class="space-y-8 xl:row-start-1">
           <figure class="rounded-2xl bg-white p-6 shadow-lg ring-1 ring-gray-900/5">
             <blockquote class="text-gray-900">
@@ -312,9 +312,9 @@
             </figcaption>
           </figure>
         </div> -->
-        <div data-aos="fade-down-right" class="space-y-8 xl:row-span-2">
-          <figure data-aos="fade-down-right" class="rounded-2xl bg-white p-6 shadow-lg ring-1 ring-gray-900/5">
-            <blockquote data-aos="fade-down-right" class="text-gray-900">
+        <div  class="space-y-8 xl:row-span-2">
+          <figure  class="rounded-2xl bg-white p-6 shadow-lg ring-1 ring-gray-900/5">
+            <blockquote  class="text-gray-900">
               <p>“MedLabConvo fosters collaboration among medical lab scientists worldwide. It’s a great place to connect, learn, and contribute to the advancement of our profession..”</p>
             </blockquote>
             <figcaption class="mt-6 flex items-center gap-x-4">
@@ -331,9 +331,9 @@
       </div>
     </div>
   </div>
-  <p data-aos="fade-down-right"  class="mt-2 text-balance text-3xl px-3 lg:px-0 lg:text-4xl pt-32 text-center font-semibold tracking-tight text-gray-900">Ensure we don't stop doing what we do.</p>
-  <p data-aos="fade-down-right"  class="text-sd text-center pt-3">Make a donation</p>
- <div  data-aos="fade-down-right" class="flex justify-center items-center pt-10 px-6 lg:px-0 w-full">
+  <p   class="mt-2 text-balance text-3xl px-3 lg:px-0 lg:text-4xl pt-32 text-center font-semibold tracking-tight text-gray-900">Ensure we don't stop doing what we do.</p>
+  <p   class="text-sd text-center pt-3">Make a donation</p>
+ <div   class="flex justify-center items-center pt-10 px-6 lg:px-0 w-full">
   <button disabled class="bg-[#27628C] px-6 max-w-md w-full py-3 rounded-lg text-white disabled:cursor-not-allowed disabled:opacity-25">Donate</button>
  </div>
 </div>
@@ -342,14 +342,14 @@
   <div class="bg-white pb-32">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="mx-auto max-w-2xl lg:max-w-none">
-      <h2 data-aos="fade-down-right" class="text-lg/8 font-semibold text-gray-900 text-center">PARTNERSHIPS</h2>
+      <h2  class="text-lg/8 font-semibold text-gray-900 text-center">PARTNERSHIPS</h2>
       <div class="mx-auto mt-10 grid grid-cols-4 items-start gap-x-8 gap-y-10 sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:grid-cols-6">
-        <img data-aos="fade-down-right" class="col-span-2 max-h-12 w-full object-contain object-left lg:col-span-1"  src="@/assets/img/partner1.jpeg" alt="Transistor" width="158" height="48">
-        <img data-aos="fade-down-right" class="col-span-2 max-h-12 w-full object-contain object-left lg:col-span-1"  src="@/assets/img/partner2.jpeg" alt="Reform" width="158" height="48">
-        <img data-aos="fade-down-right" class="col-span-2 max-h-12 w-full object-contain object-left lg:col-span-1"  src="@/assets/img/partner3.jpeg" alt="Tuple" width="158" height="48">
-        <img data-aos="fade-down-right" class="col-span-2 max-h-12 w-full object-contain object-left lg:col-span-1"  src="@/assets/img/partner4.jpeg" alt="SavvyCal" width="158" height="48">
-        <img data-aos="fade-down-right" class="col-span-2 max-h-12 w-full object-contain object-left lg:col-span-1" src="@/assets/img/partner5.jpeg" alt="Statamic" width="158" height="48">
-        <img data-aos="fade-down-right" class="col-span-2 max-h-12 w-full object-contain object-left lg:col-span-1" src="@/assets/img/partner6.jpeg" alt="Statamic" width="158" height="48">
+        <img  class="col-span-2 max-h-12 w-full object-contain object-left lg:col-span-1"  src="@/assets/img/partner1.jpeg" alt="Transistor" width="158" height="48">
+        <img  class="col-span-2 max-h-12 w-full object-contain object-left lg:col-span-1"  src="@/assets/img/partner2.jpeg" alt="Reform" width="158" height="48">
+        <img  class="col-span-2 max-h-12 w-full object-contain object-left lg:col-span-1"  src="@/assets/img/partner3.jpeg" alt="Tuple" width="158" height="48">
+        <img  class="col-span-2 max-h-12 w-full object-contain object-left lg:col-span-1"  src="@/assets/img/partner4.jpeg" alt="SavvyCal" width="158" height="48">
+        <img  class="col-span-2 max-h-12 w-full object-contain object-left lg:col-span-1" src="@/assets/img/partner5.jpeg" alt="Statamic" width="158" height="48">
+        <img  class="col-span-2 max-h-12 w-full object-contain object-left lg:col-span-1" src="@/assets/img/partner6.jpeg" alt="Statamic" width="158" height="48">
       </div>
     </div>
   </div>
@@ -358,41 +358,41 @@
 
   <div class="bg-gray-100 py-10">
     <div class="max-w-4xl mx-auto text-center">
-      <h2 data-aos="fade-down-right" class="text-2xl font-bold text-[#27628C] pb-6">STAY IN THE KNOW</h2>
-      <a  data-aos="fade-down-right" href="https://forms.gle/pg4UR6XQvZRLqK2NA"
+      <h2  class="text-2xl font-bold text-[#27628C] pb-6">STAY IN THE KNOW</h2>
+      <a   href="https://forms.gle/pg4UR6XQvZRLqK2NA"
         class="mt-4 bg-[#27628C] text-white px-6 py-3 rounded-lg"
         aria-label="Subscribe to our newsletter"
       >
         Subscribe to our newsletter
       </a>
       <div class="mt-8 text-gray-800">
-        <p data-aos="fade-down-right" class="font-semibold">Let's Talk Med Lab</p>
+        <p  class="font-semibold">Let's Talk Med Lab</p>
         <div class="flex justify-center space-x-4 mt-4">
-          <a data-aos="fade-down-right" href="https://x.com/medlabconvo" class="text-gray-500 hover:text-black" aria-label="X">
+          <a  href="https://x.com/medlabconvo" class="text-gray-500 hover:text-black" aria-label="X">
             <img src="@/assets/img/logo1.png" class="fab fa-x-twitter h60 w-6"/>
           </a>
-          <a data-aos="fade-down-right" href="https://www.instagram.com/medlabconvo/" class="text-gray-500 hover:text-pink-500" aria-label="Instagram">
+          <a  href="https://www.instagram.com/medlabconvo/" class="text-gray-500 hover:text-pink-500" aria-label="Instagram">
             <img src="@/assets/img/logo4.svg" class="fab fa-instagram h-6 w-6"/>
           </a>
-          <a data-aos="fade-down-right" href="https://web.facebook.com/medlabconvo?_rdc=1&_rdr" class="text-gray-500 hover:text-blue-600" aria-label="Facebook">
+          <a  href="https://web.facebook.com/medlabconvo?_rdc=1&_rdr" class="text-gray-500 hover:text-blue-600" aria-label="Facebook">
             <img src="@/assets/img/logo3.svg" class="fab fa-facebook h-6 w-6"/>
           </a>
-          <a data-aos="fade-down-right" href="https://www.linkedin.com/company/medlabconvo/" class="text-gray-500 hover:text-blue-500" aria-label="LinkedIn">
+          <a  href="https://www.linkedin.com/company/medlabconvo/" class="text-gray-500 hover:text-blue-500" aria-label="LinkedIn">
             <img src="@/assets/img/logo5.svg" class="fab fa-linkedin h-6 w-6"/>
           </a>
-          <a data-aos="fade-down-right" href="https://mlcjourno.substack.com/" class="text-gray-500 hover:text-orange-400" aria-label="Substack">
+          <a  href="https://mlcjourno.substack.com/" class="text-gray-500 hover:text-orange-400" aria-label="Substack">
             <img src="@/assets/img/substack.png" class="fab fa-medium h-6 w-6"/>
           </a>
-          <a data-aos="fade-down-right" href="https://open.spotify.com/show/04S2XZGd6gczoCXStIrh8e" class="text-gray-500 hover:text-green-500" aria-label="Spotify">
+          <a  href="https://open.spotify.com/show/04S2XZGd6gczoCXStIrh8e" class="text-gray-500 hover:text-green-500" aria-label="Spotify">
             <img src="@/assets/img/logo2.png" class="fab fa-spotify h-6 w-6"/>
           </a>
         </div>
         <div class="w-full flex justify-center items-center flex-col pt-10">
-    <p data-aos="fade-down-right"  class="mt-8 px-6 lg:px-0 text-center text-sm/6 text-gray-600 md:order-1 md:mt-0">MedLabConvo is a trademark of LabiHealth Ambassadors Initiative, a registered non-profit  organization,
+    <p   class="mt-8 px-6 lg:px-0 text-center text-sm/6 text-gray-600 md:order-1 md:mt-0">MedLabConvo is a trademark of LabiHealth Ambassadors Initiative, a registered non-profit  organization,
     </p>
     <p  class="mt-8 text-sm/6 text-gray-600 md:order-1 md:mt-0">©️ LabiHealth Ambassadors Initiative 2025. All Rights Reserved
     </p>
-    <p data-aos="fade-down-right"  class="mt-8  text-sm/6 text-gray-600 md:order-1 md:mt-0">All Rights Reserved</p>
+    <p   class="mt-8  text-sm/6 text-gray-600 md:order-1 md:mt-0">All Rights Reserved</p>
    </div>
       </div>
     </div>

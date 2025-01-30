@@ -64,10 +64,10 @@
       </div>
       <div class="mx-auto max-w-7xl px-6 lg:px-8 flex justify-center items-center pt-16 w-full">
         <div class="mx-auto max-w-2xl lg:mx-0 flex justify-center items-center w-full flex-col">
-          <h2 data-aos="fade-up" class="text-4xl font-black uppercase text-center tracking-tight text-white sm:text-6xl">
+          <h2  class="text-4xl font-black uppercase text-center tracking-tight text-white sm:text-6xl">
             LabCast
           </h2>
-          <p data-aos="fade-up" class="mt-6 text-lg leading-8 text-center text-gray-100">
+          <p  class="mt-6 text-lg leading-8 text-center text-gray-100">
             Labcast is the podcast dedicated to exploring the dynamic world of
             medical laboratory science, healthcare innovation, and the stories
             that shape the profession. Whether you're a seasoned professional, a
@@ -84,7 +84,7 @@
    </div>
     <!-- <VideoPlayer /> -->
     <!-- <ProfileCard /> -->
-    <!-- <div data-aos="fade-up" class="mt-16 flow-root">
+    <!-- <div  class="mt-16 flow-root">
           <div class="-m-2 rounded-xl bg-gray-900/5 p-2 ring-1 ring-inset ring-gray-900/10">
             <div class="rounded-md shadow-2xl ring-1 ring-gray-900/10">
             <video
@@ -104,27 +104,27 @@
         </div> -->
 
 
-    <h1 data-aos="fade-up" class="flex justify-center text-[#27628C] items-center text-2xl mt-6">Latest Episode</h1>
+    <h1  class="flex justify-center text-[#27628C] items-center text-2xl mt-6">Latest Episode</h1>
     <div class="container mx-auto px-4 mt-8">
       <div class="bg-white p-0 rounded-lg shadow-md flex">
         <div class="lg:flex space-y-6 items-center space-x-4 w-full p-6">
-          <img data-aos="fade-up"
+          <img 
             src="@/assets/img/updates4.jpeg"
             alt="Podcast cover"
             class="w-72 h-60 rounded-lg object-cover"
           />
-          <div data-aos="fade-up" class="flex flex-col w-full">
-            <div data-aos="fade-up" class="font-semibold text-2xl">The Thrills and Terros of Bench Work.</div>
-            <!-- <div data-aos="fade-up" class="font-semibold text-2xl">The Trills and Terros of Bench Work</div> -->
+          <div  class="flex flex-col w-full">
+            <div  class="font-semibold text-2xl">The Thrills and Terros of Bench Work.</div>
+            <!-- <div  class="font-semibold text-2xl">The Trills and Terros of Bench Work</div> -->
             <!-- <div class="text-gray-600">Episode 1</div> -->
-            <div data-aos="fade-up" class="text-gray-500 mt-2">
+            <div  class="text-gray-500 mt-2">
               In this episode, we delve into the experiences and insights of medical laboratory scientists working abroad (United Kingdom)). Join us as we explore how practice and perspectives differ in this region.
             </div>
             <div class="mt-3">
-        <p data-aos="fade-up" class="text-gray-400 text-sm mb-2">Available On:</p>
-        <div data-aos="fade-up" class="flex flex-wrap gap-2">
+        <p  class="text-gray-400 text-sm mb-2">Available On:</p>
+        <div  class="flex flex-wrap gap-2">
           <a
-            href="https://open.spotify.com/show/04S2XZGd6gczoCXStIrh8e"
+            href="https://open.spotify.com/episode/2vt0Albx3ehcFTyrgl55xi?si=RdhtkOPvTlKTC0_Hx2p3kQ"
             class="inline-flex items-center px-4 py-1.5 rounded-full bg-[#1DB954] text-sm hover:opacity-90"
           >
             <span class="mr-2">
@@ -136,8 +136,8 @@
             </span>
             Spotify
           </a>
-          <a data-aos="fade-up"
-            href=""
+          <a 
+            href="https://podcasts.apple.com/us/podcast/thrills-and-terrors-of-bench-work/id1610877517?i=1000685322948"
             class="inline-flex items-center border-[0.5px] border-gray-20 px-4 py-1.5 rounded-full bg-white text-black text-sm hover:opacity-90"
           >
             <span class="mr-2">
@@ -172,12 +172,12 @@
     </div>
 
 
-    <h1 data-aos="fade-up" class="flex justify-center items-center text-[#27628C] text-2xl mt-6">Popular Episodes</h1>
-    <div data-aos="fade-up" class="container mx-auto px-4 mt-8">
-      <div data-aos="fade-up"
+    <h1  class="flex justify-center items-center text-[#27628C] text-2xl mt-6">Popular Episodes</h1>
+    <div  class="container mx-auto px-4 mt-8">
+      <div 
         class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8"
       >
-        <a data-aos="fade-up"
+        <a 
           v-for="(item, idx) in podcastList"
           :key="idx"
           class="bg-white p-0 shadow-md border-[0.5px] rounded-md pt-3 bg-gray-900 block"
@@ -189,8 +189,8 @@
             class="w-full h-60 object-cover mb-4 cursor-pointer"
           /> -->
           <div class="px-3 pb-3">
-            <div data-aos="fade-up" class="font-semibold text-lg">{{ item.name ?? "Nil" }}</div>
-            <div data-aos="fade-up" class="text-gray-600 text-sm mt-2">
+            <div  class="font-semibold text-lg">{{ item.name ?? "Nil" }}</div>
+            <div  class="text-gray-600 text-sm mt-2">
               {{
                 item.description.length > 20
                   ? `${item.description.slice(0, 100)}...`
@@ -198,7 +198,7 @@
               }}
             </div>
             <!-- <img src="@/assets/icons/play.svg" class="h-10 w-10 mt-3"/> -->
-            <div data-aos="fade-up" class="flex flex-wrap gap-2 mt-5">
+            <div  class="flex flex-wrap gap-2 mt-5">
           <a
             :href="item.link"
             class="inline-flex items-center px-4 py-1.5 rounded-full bg-[#1DB954] text-sm hover:opacity-90"

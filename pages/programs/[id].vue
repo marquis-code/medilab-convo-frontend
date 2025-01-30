@@ -22,7 +22,7 @@
                     </svg>
                     <div class="relative mx-auto max-w-prose text-base lg:max-w-none">
                         <figure>
-                            <img class="aspect-[12/7] w-full rounded-lg object-cover shadow-lg lg:aspect-auto"
+                            <img class="w-full rounded-lg object-cover shadow-lg lg:aspect-auto"
                                 src="@/assets/img/updates1.jpeg"
                                 alt="Whitney leaning against a railing on a downtown street" width="1184" height="1376">
                         </figure>
@@ -148,7 +148,7 @@ const schedules = ref([
     {
         image: speaker3,
         "date_and_time": "Friday, 31st January, 2025, 8 pm - 9 pm",
-        "topic": "The Identity of the Medical Laboratory Scientist",
+        "topic": "To Thyself be True - Developing an Identity as a Medical Laboratory Scientist",
         "speaker": "Friday Odum",
         "bio":  `
            ODUM, Acho Friday Is a Biomedical Scientist with over seven years working experience, He holds an MPH (Field Epidemiology) degree from the university of Ibadan, he had his undergraduate study from the university of Calabar where he obtained his BMLS in 2017.
@@ -163,7 +163,7 @@ const schedules = ref([
     {
         image: speaker2,
         "date_and_time": "Saturday, 1st February, 2025, 8 pm - 9 pm",
-        "topic": "Building a professional network",
+        "topic": "Building and Optimizing Professional Networks for the Present and Future",
         "speaker": "Ridwan Agboola",
         "bio": `
         Ridwan Agboola is a final-year Medical Laboratory Science student at the University of Ibadan, specializing in Clinical Biochemistry. He is an eStudent member of the Institute of Biomedical Science (IBMS) where he participates in the IBMS mentorship scheme. He is also an International Lab Student member of the American Society for Clinical Pathology (ASCP).
@@ -177,7 +177,7 @@ const schedules = ref([
     {
         image: speaker4,
         "date_and_time": "Sunday, 2nd February, 2024, 8 pm - 9 pm",
-        "topic": "Time management",
+        "topic": "Mastering Time Management: A Guide to Productivity",
         "speaker": "Glory Ogunbodede",
         "bio": `
         Glory Ayobami Ogunbodede is the co-founder of Impact Training Room (ITR), the assistant executive director of Medlabconvo, a content writing specialist, and a 5th-year student in medical laboratory science.
@@ -190,7 +190,7 @@ const schedules = ref([
     {
         image: speaker1,
         "date_and_time": "Friday, 7th February, 2025, 8 pm - 9 pm",
-        "topic": "Research for undergraduates",
+        "topic": "Tapping into Research as an Undergraduate",
         "speaker": "Emmanuel Elebesunu",
         "bio": `
         Emmanuel Elebesunu is a Medical Laboratory Scientist with a passion for research in infectious disease epidemiology, surveillance, and response. As an Early Career Researcher, he has actively contributed to scientific discourse through his research works, including 22 research publications, 2 book chapters, and several citations on topics spanning the areas of public health, infectious diseases, and antimicrobial resistance..
@@ -203,7 +203,7 @@ const schedules = ref([
     {
         image: speaker5,
         "date_and_time": "Saturday, 8th February, 2025, 8 pm - 9 pm",
-        "topic": "Mentorship for Undergraduates",
+        "topic": "Beyond the Buzz; Capitalizing on Mentor-Mentee Relationships as an Undergraduate ",
         "speaker": "Odinaka Obeta",
         "bio": `
         Odinaka is an award-winning Biomedical Scientist and Public Health Practitioner with interests in Malaria & Climate Change Programming, Health Communications, and Policy & Advocacy in Global Health. He is Founder of Impact Training Room (ITR), a youth-led and youth-focused organisation committed to raising Africa's finest generation of young leaders.
@@ -223,7 +223,7 @@ const schedules = ref([
     {
         image: speaker6,
         "date_and_time": "Sunday, 9th February, 2024, 8 pm - 9 pm",
-        "topic": "Scholarship and Fellowship opportunities for undergraduates",
+        "topic": "Navigating the Gold Mine of Scholarships and Fellowships as an Undergraduate",
         "speaker": "Kamsi Muoka",
         "bio": `
         Olivia Kamsi Muoka is a first-class graduate of Medical Laboratory Science from the University of Calabar, where she earned recognition as the university's Best Graduating Student in 2023. During her undergraduate studies, she demonstrated a profound dedication to research, investigating lung function and biomarkers of oxidative DNA damage and inflammation in woodworkers exposed to wood dust. This pivotal work sparked her passion for exploring the intricate relationship between the immune system and cancer.
@@ -242,7 +242,7 @@ const schedules = ref([
     {
         image: speaker7,
         "date_and_time": "Saturday, 15th February, 2025",
-        "topic": "Volunteering",
+        "topic": "⁠Building your future through Volunteering",
         "speaker": "Williams Owoeye",
         "bio": 
         `
@@ -260,7 +260,7 @@ const schedules = ref([
     {
         image: speaker8,
         "date_and_time": "Sunday, 16th February, 2025",
-        "topic": "Leadership and Social Impact",
+        "topic": "⁠Young and Strong; Becoming a Social Impact Leader",
         "speaker": "Fatima Ibrahim",
         "bio": `
         Fatimah Ibrahim Opeyemi is a dedicated Medical Laboratory Scientist with a passion for improving quality health, promoting sustainable development goals, and impacting public health. Her academic journey began at Kwara State University, Malete, where she pursued a degree in Medical Laboratory Science.

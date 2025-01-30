@@ -10,8 +10,8 @@
             </div>
             <div class="mx-auto max-w-7xl px-6 lg:px-8 flex justify-center items-center flex-col pt-16">
               <div class="mx-auto max-w-2xl lg:mx-0 flex justify-center items-center flex-col">
-                <h2 data-aos="fade-up" class="text-4xl font-bold tracking-tight uppercase text-white sm:text-6xl">Products</h2>
-                <p data-aos="fade-up" class="mt-6 text-lg leading-8 text-white text-center">Welcome to the MedLabConvo Products page, where we offer a diverse range of high-quality items designed to support your journey in medical laboratory science and beyond. Whether you're looking to enhance your knowledge, gear up for the lab, or show off your professional pride, we have something for everyone. </p>
+                <h2  class="text-4xl font-bold tracking-tight uppercase text-white sm:text-6xl">Products</h2>
+                <p  class="mt-6 text-lg leading-8 text-white text-center">Welcome to the MedLabConvo Products page, where we offer a diverse range of high-quality items designed to support your journey in medical laboratory science and beyond. Whether you're looking to enhance your knowledge, gear up for the lab, or show off your professional pride, we have something for everyone. </p>
               </div>
             </div>
           </div>
@@ -51,25 +51,25 @@
           </div> -->
           <div class="bg-white container mx-auto pt-16">
             <div class="mx-auto lg:max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
-              <h2 data-aos="fade-up" class="text-xl font-bold text-gray-900 text-center">BOOKS</h2>
+              <h2  class="text-xl font-bold text-gray-900 text-center">BOOKS</h2>
           
            <div class="flex justify-center items-center w-full lg:flex justify-center items-center pt-10">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
                 <div class="">
                   <div class="relative">
                     <div class="relative h-72 w-full overflow-hidden rounded-lg">
-                      <img data-aos="fade-up" src="@/assets/img/book.jpg" alt="Front of zip tote bag with white canvas, black canvas straps and handle, and black zipper pulls." class="h-full w-full object-cover object-center">
+                      <img  src="@/assets/img/book.jpg" alt="Front of zip tote bag with white canvas, black canvas straps and handle, and black zipper pulls." class="h-full w-full object-cover object-center">
                     </div>
                     <div class="relative mt-4">
-                      <h3 data-aos="fade-up" class="text-sm font-medium text-gray-900">Lab Up</h3>
-                      <p data-aos="fade-up" class="mt-1 text-sm text-gray-500">by MLS Odinaka Kingsley Obeta</p>
+                      <h3  class="text-sm font-medium text-gray-900">Lab Up</h3>
+                      <p  class="mt-1 text-sm text-gray-500">by MLS Odinaka Kingsley Obeta</p>
                     </div>
                     <div class="absolute inset-x-0 top-0 flex h-72 items-end justify-end overflow-hidden rounded-lg p-4">
                       <div aria-hidden="true" class="absolute inset-x-0 bottom-0 h-36 bg-gradient-to-t from-black opacity-50"></div>
                       <p class="relative text-lg font-semibold text-white"></p>
                     </div>
                   </div>
-                  <div data-aos="fade-up" class="mt-6">
+                  <div  class="mt-6">
                     <a href="#" class="relative flex items-center justify-center rounded-md border border-transparent bg-gray-100 px-8 py-3.5 text-sm font-medium text-gray-900 hover:bg-gray-200">Coming Soon</a>
                   </div>
                 </div>
@@ -77,13 +77,13 @@
                  <div>
                   <div class="relative">
                     <div class="relative h-72 w-full overflow-hidden rounded-lg">
-                      <img data-aos="fade-up" src="@/assets/img/book1.jpeg" alt="Front of zip tote bag with white canvas, black canvas straps and handle, and black zipper pulls." class="h-full w-full object-cover object-center">
+                      <img  src="@/assets/img/book1.jpeg" alt="Front of zip tote bag with white canvas, black canvas straps and handle, and black zipper pulls." class="h-full w-full object-cover object-center">
                     </div>
                     <div class="relative mt-4">
-                      <h3 data-aos="fade-up" class="text-sm font-medium text-gray-900">From a Fellow Wayfarer</h3>
-                      <p data-aos="fade-up" class="mt-1 text-sm text-gray-500">by MLS Onaoluwa Abimbola</p>
+                      <h3  class="text-sm font-medium text-gray-900">From a Fellow Wayfarer</h3>
+                      <p  class="mt-1 text-sm text-gray-500">by MLS Onaoluwa Abimbola</p>
                     </div>
-                    <div data-aos="fade-up" class="absolute inset-x-0 top-0 flex h-72 items-end justify-end overflow-hidden rounded-lg p-4">
+                    <div  class="absolute inset-x-0 top-0 flex h-72 items-end justify-end overflow-hidden rounded-lg p-4">
                       <div aria-hidden="true" class="absolute inset-x-0 bottom-0 h-36 bg-gradient-to-t from-black opacity-50"></div>
                       <p class="relative text-lg font-semibold text-white"></p>
                     </div>
@@ -95,57 +95,57 @@
 
                 <div>
                   <div class="relative">
-                    <div data-aos="fade-up" class="relative h-72 w-full overflow-hidden rounded-lg">
+                    <div  class="relative h-72 w-full overflow-hidden rounded-lg">
                       <img src="@/assets/img/book2.jpeg" alt="Front of zip tote bag with white canvas, black canvas straps and handle, and black zipper pulls." class="h-full w-full object-cover object-center">
                     </div>
                     <div class="relative mt-4">
-                      <h3 data-aos="fade-up" class="text-sm font-medium text-gray-900">Leadership For Newly Elected Leaders</h3>
-                      <p data-aos="fade-up" class="mt-1 text-sm text-gray-500">by MLS Onaoluwa Abimbola</p>
+                      <h3  class="text-sm font-medium text-gray-900">Leadership For Newly Elected Leaders</h3>
+                      <p  class="mt-1 text-sm text-gray-500">by MLS Onaoluwa Abimbola</p>
                     </div>
-                    <div  data-aos="fade-up" class="absolute inset-x-0 top-0 flex h-72 items-end justify-end overflow-hidden rounded-lg p-4">
+                    <div   class="absolute inset-x-0 top-0 flex h-72 items-end justify-end overflow-hidden rounded-lg p-4">
                       <div aria-hidden="true" class="absolute inset-x-0 bottom-0 h-36 bg-gradient-to-t from-black opacity-50"></div>
                       <p class="relative text-lg font-semibold text-white"></p>
                     </div>
                   </div>
-                  <div data-aos="fade-up" class="mt-6">
+                  <div  class="mt-6">
                     <a href="https://selar.co/p/8j7941?affiliate=1726fv" class="relative flex items-center justify-center rounded-md border border-transparent bg-gray-100 px-8 py-3.5 text-sm font-medium text-gray-900 hover:bg-gray-200">Buy</a>
                   </div>
                 </div>
 
                 <div>
                   <div class="relative">
-                    <div data-aos="fade-up" class="relative h-72 w-full overflow-hidden rounded-lg">
+                    <div  class="relative h-72 w-full overflow-hidden rounded-lg">
                       <img src="@/assets/img/book4.jpeg" alt="Front of zip tote bag with white canvas, black canvas straps and handle, and black zipper pulls." class="h-full w-full object-cover object-center">
                     </div>
                     <div class="relative mt-4">
-                      <h3 data-aos="fade-up" class="text-sm font-medium text-gray-900">Personal branding for professionals</h3>
-                      <p data-aos="fade-up" class="mt-1 text-sm text-gray-500">by MLS Onaoluwa Abimbola</p>
+                      <h3  class="text-sm font-medium text-gray-900">Personal branding for professionals</h3>
+                      <p  class="mt-1 text-sm text-gray-500">by MLS Onaoluwa Abimbola</p>
                     </div>
-                    <div  data-aos="fade-up" class="absolute inset-x-0 top-0 flex h-72 items-end justify-end overflow-hidden rounded-lg p-4">
+                    <div   class="absolute inset-x-0 top-0 flex h-72 items-end justify-end overflow-hidden rounded-lg p-4">
                       <div aria-hidden="true" class="absolute inset-x-0 bottom-0 h-36 bg-gradient-to-t from-black opacity-50"></div>
                       <p class="relative text-lg font-semibold text-white"></p>
                     </div>
                   </div>
-                  <div data-aos="fade-up" class="mt-6">
+                  <div  class="mt-6">
                     <a href="https://selar.co/p/tj8e?affiliate=6c3x5t" class="relative flex items-center justify-center rounded-md border border-transparent bg-gray-100 px-8 py-3.5 text-sm font-medium text-gray-900 hover:bg-gray-200">Buy</a>
                   </div>
                 </div>
 
                 <div>
                   <div class="relative">
-                    <div data-aos="fade-up" class="relative h-72 w-full overflow-hidden rounded-lg">
+                    <div  class="relative h-72 w-full overflow-hidden rounded-lg">
                       <img src="@/assets/img/book5.jpeg" alt="Front of zip tote bag with white canvas, black canvas straps and handle, and black zipper pulls." class="h-full w-full object-cover object-center">
                     </div>
                     <div class="relative mt-4">
-                      <h3 data-aos="fade-up" class="text-sm font-medium text-gray-900">The Astute Professional</h3>
-                      <p data-aos="fade-up" class="mt-1 text-sm text-gray-500">by MLS Onaoluwa Abimbola</p>
+                      <h3  class="text-sm font-medium text-gray-900">The Astute Professional</h3>
+                      <p  class="mt-1 text-sm text-gray-500">by MLS Onaoluwa Abimbola</p>
                     </div>
-                    <div  data-aos="fade-up" class="absolute inset-x-0 top-0 flex h-72 items-end justify-end overflow-hidden rounded-lg p-4">
+                    <div   class="absolute inset-x-0 top-0 flex h-72 items-end justify-end overflow-hidden rounded-lg p-4">
                       <div aria-hidden="true" class="absolute inset-x-0 bottom-0 h-36 bg-gradient-to-t from-black opacity-50"></div>
                       <p class="relative text-lg font-semibold text-white"></p>
                     </div>
                   </div>
-                  <div data-aos="fade-up" class="mt-6">
+                  <div  class="mt-6">
                     <a href="https://selar.co/p/witu?affiliate=373671" class="relative flex items-center justify-center rounded-md border border-transparent bg-gray-100 px-8 py-3.5 text-sm font-medium text-gray-900 hover:bg-gray-200">Buy</a>
                   </div>
                 </div>
@@ -157,9 +157,9 @@
 
           <div class="bg-white container mx-auto pt-16">
             <div class="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl space-y-3 lg:px-8">
-              <h2 data-aos="fade-up" class="text-xl font-bold text-gray-900 text-center">COURSES</h2>
+              <h2  class="text-xl font-bold text-gray-900 text-center">COURSES</h2>
               
-              <div data-aos="fade-up" class="border text-gray-400 rounded-lg border-[0.5px] py-20 text-center flex justify-center items-center">
+              <div  class="border text-gray-400 rounded-lg border-[0.5px] py-20 text-center flex justify-center items-center">
                 COMING SOON
               </div>
           
@@ -227,8 +227,8 @@
 
           <div class="bg-white container mx-auto pt-16">
             <div class="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl space-y-3 lg:px-8">
-              <h2 data-aos="fade-up" class="text-xl font-bold text-gray-900 text-center">LABCOATS & SCRUBS</h2>
-              <div data-aos="fade-up" class="border text-gray-400 rounded-lg border-[0.5px] py-20 text-center flex justify-center items-center">
+              <h2  class="text-xl font-bold text-gray-900 text-center">LABCOATS & SCRUBS</h2>
+              <div  class="border text-gray-400 rounded-lg border-[0.5px] py-20 text-center flex justify-center items-center">
                 COMING SOON
               </div>
 
@@ -236,8 +236,8 @@
               <div class="px-6 sm:px-6 lg:px-8">
                 <div class="mx-auto max-w-2xl text-center">
                   <!-- <h2 class="text-balance text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">Boost your productivity. Start using our app today.</h2> -->
-                  <p data-aos="fade-up" class="mx-auto mt-6 max-w-xl text-pretty text-lg/8 text-gray-600">Become a vendor</p>
-                  <div data-aos="fade-up" class="mt-10 flex items-center justify-center gap-x-6">
+                  <p  class="mx-auto mt-6 max-w-xl text-pretty text-lg/8 text-gray-600">Become a vendor</p>
+                  <div  class="mt-10 flex items-center justify-center gap-x-6">
                     <a href="https://wa.link/bub9dk" class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Contact Us</a>
                     <!-- <a href="#" class="text-sm/6 font-semibold text-gray-900">Learn more <span aria-hidden="true">→</span></a> -->
                   </div>
@@ -307,8 +307,8 @@
 
           <div class="bg-white container mx-auto pt-16">
             <div class="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl space-y-3 lg:px-8">
-              <h2 data-aos="fade-up" class="text-xl font-bold text-gray-900 text-center">T-SHIRTS & OTHER ACCESSORIES</h2>
-              <div data-aos="fade-up" class="border text-gray-400 rounded-lg border-[0.5px] py-20 text-center flex justify-center items-center">
+              <h2  class="text-xl font-bold text-gray-900 text-center">T-SHIRTS & OTHER ACCESSORIES</h2>
+              <div  class="border text-gray-400 rounded-lg border-[0.5px] py-20 text-center flex justify-center items-center">
                 COMING SOON
               </div>
               <!-- <div class="mt-8 grid grid-cols-1 gap-y-12 sm:grid-cols-2 sm:gap-x-6 lg:grid-cols-4 xl:gap-x-8">
@@ -369,39 +369,39 @@
             </div>
           </div>
 
-          <div class="pt-20">
-            <h2 data-aos="fade-up" class="text-xl font-bold text-gray-900 text-center">SERVICES</h2>
+          <div class="py-20">
+            <h2  class="text-xl font-bold text-gray-900 text-center">SERVICES</h2>
             <div class="mx-auto container px-6 lg:px-8">
               <div class="mx-auto max-w-2xl lg:max-w-4xl">
-                <div data-aos="fade-up" class="mt-16 space-y-20 lg:mt-20 lg:space-y-20">
-                  <article data-aos="fade-up" v-for="(item, idx) in programsList"  class="relative isolate flex flex-col gap-8 lg:flex-row">
+                <div  class="mt-16 space-y-20 lg:mt-20 lg:space-y-20">
+                  <article  v-for="(item, idx) in programsList"  class="relative isolate flex flex-col gap-8 lg:flex-row">
                     <div class="relative aspect-[16/9] sm:aspect-[2/1] lg:aspect-square lg:w-96 lg:shrink-0">
                       <img src="@/assets/img/slot.png" alt="" class="absolute inset-0 h-full w-full rounded-2xl bg-gray-50 object-cover">
                       <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
                     </div>
                     <div>
                       <div class="group relative max-w-xl">
-                        <h3 data-aos="fade-up" class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+                        <h3  class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
                           <a href="#">
                             <span class="absolute inset-0"></span>
                             {{item.title}}
                           </a>
                         </h3>
-                        <p data-aos="fade-up" class="mt-5 text-sm leading-6 text-gray-600">
+                        <p  class="mt-5 text-sm leading-6 text-gray-600">
                           {{ item.firstPart }}
                         </p>
-                        <p data-aos="fade-up" class="mt-5 text-sm leading-6 text-gray-600">
+                        <p  class="mt-5 text-sm leading-6 text-gray-600">
                           {{ item.secondPart }}
                         </p>
-                        <p data-aos="fade-up" class="mt-5 text-sm leading-6 text-gray-600">
+                        <p  class="mt-5 text-sm leading-6 text-gray-600">
                           {{ item.thirdPart }}
                         </p>
                       </div>
                      <div class="space-y-3 mt-6 w-full">
-                      <div data-aos="fade-up" class="w-full">
+                      <div  class="w-full">
                         <a href="https://wa.link/ndw0et" class="py-3 block text-center rounded-md w-full bg-black text-white ">Book Now</a>
                       </div>
-                      <div data-aos="fade-up" class="w-full">
+                      <div  class="w-full">
                         <a href="https://drive.google.com/file/d/1L-09LCBYTapA2mPUaTasafSvjs6yqE6I/view?usp=drivesdk" class="py-3 block text-center rounded-md w-full bg-black text-white ">Terms and Conditions Apply</a>
                       </div>
                      </div>

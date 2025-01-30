@@ -6,7 +6,7 @@
     <div class="absolute inset-y-0 right-1/2 -z-10 -mr-96 w-[200%] origin-top-right skew-x-[-30deg] bg-white shadow-xl shadow-indigo-600/10 ring-1 ring-indigo-50 sm:-mr-80 lg:-mr-96" aria-hidden="true"></div>
     <div class="mx-auto max-w-7xl px-6 py-32 sm:py-40 lg:px-8">
       <div class="mx-auto max-w-2xl lg:mx-0 lg:grid lg:max-w-none lg:grid-cols-2 lg:gap-x-16 lg:gap-y-8 xl:grid-cols-1 xl:grid-rows-1 xl:gap-x-8">
-        <h1  class="max-w-2xl text-balance lg:text-5xl font-semibold tracking-tight text-gray-900 sm:text-5xl lg:col-span-2 xl:col-auto">
+        <h1  class="max-w-2xl text-balance sm:text-5xl font-semibold tracking-tight text-gray-900 text-4xl lg:col-span-2 xl:col-auto">
           <!-- We are leading change, inspiring action and buidling the capacity of future world class Biomedical scientists -->
           We are leading change, inspiring action, and building the capacity of future generations of world-class professionals in medical laboratory science and in the healthcare system at large.
         </h1>

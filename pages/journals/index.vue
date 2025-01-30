@@ -17,9 +17,9 @@
       </div>
       <div class="mx-auto max-w-7xl px-6 lg:px-8 flex justify-center items-center w-full pt-16 flex-col">
         <div class="mx-auto max-w-2xl lg:mx-0 flex justify-center items-center w-full flex-col">
-          <h2 data-aos="fade-up"
+          <h2 
             class="text-4xl font-bold text-center tracking-tight uppercase text-white sm:text-6xl">Journo</h2>
-          <p data-aos="fade-up" class="mt-6 text-lg leading-8 text-center text-gray-100">Journo is the go-to platform
+          <p  class="mt-6 text-lg leading-8 text-center text-gray-100">Journo is the go-to platform
             for insightful stories, expert perspectives, and in-depth analysis on all things related to medical
             laboratory science and healthcare. Whether you’re a student, a professional, or just passionate about
             healthcare, Journo delivers content that informs, educates, and sparks conversation within the medical
@@ -28,25 +28,20 @@
       </div>
     </div>
 
-    <h2 data-aos="fade-up" class="text-2xl pt-20 font-bold tracking-tight text-[#27628C] text-center">LATEST
+    <h2  class="text-2xl pt-20 font-bold tracking-tight text-[#27628C] text-center">LATEST
       PUBLICATION</h2>
 
-    <div class="relative bg-[#27628C] lg:mt-10 pt-0 lg:pb-72">
+    <div class="relative bg-[#27628C] lg:mt-10 pt-0 ">
       <div
         class="relative h-80 overflow-hidden  md:absolute md:left-0 md:h-full mt-44 pb-[400px] lg:pb-0 md:w-1/3 lg:w-1/2">
-        <img data-aos="fade-up" class="size-full object-cover" src="@/assets/img/updates3.jpeg" alt="">
+        <img  class="size-full object-cover" src="@/assets/img/carving.jpeg" alt="">
       </div>
       <div class="relative mx-auto max-w-7xl py-24 sm:py-32 px-10 lg:px-0 lg:px-8 lg:py-40">
         <div class="md:ml-auto md:w-2/3 md:pl-16 lg:w-1/2">
-          <p data-aos="fade-up" class="mt-2 text-4xl font-semibold tracking-tight text-white sm:text-5xl">How Systemic Deficiencies Fuel the "Japa Jets"</p>
-          <p data-aos="fade-up" class="mt-6 text-base/7 text-white sr-only"> One day, Mamooo's son, Tega, returned home after
-            national youth service but Mamooo couldn’t believe her eyes. Tega’s gaunt frame and sun-scorched skin sent
-            his mother into a frenzy. His eyes, once bright and full of life, now seemed dull and sunken. She
-            immediately provided him with her 'miracle meds': anti-malaria, amoxicillin, and multivitamins. With a
-            knowing glint in her eye, she declared, “Nah those giant mosquitoes wey dey that camp wan suck my pikin
-            blood dry, na why he con resemble toothpick!”</p>
-          <div data-aos="fade-up" class="mt-8">
-            <a href="https://mlcjourno.substack.com//"
+          <p  class="mt-2 text-4xl font-semibold tracking-tight text-white sm:text-5xl">Carving Your Professional Identity As A Young Medical Laboratory Scienticarbving</p>
+          <p  class="mt-6 text-base/7 text-white">"Having a professional identity as a medical laboratory scientist is almost as important as sitting for professional exams for your licensure. We have established that generally professional identity is the internalized sense of being part of a profession, including its standards, ethics, and culture. For medical laboratory scientists, this identity is shaped by technical expertise, commitment to patient safety, and collaboration with other healthcare professionals. Studies suggest that a well-defined professional identity not only enhances job satisfaction but also improves overall performance and confidence in professional roles."</p>
+          <div  class="mt-8">
+            <a href="https://mlcjourno.substack.com/p/carving-your-professional-identity?utm_source=post-banner&utm_medium=web&utm_campaign=posts-open-in-app&triedRedirect=true"
               class="inline-flex rounded-md bg-white/10 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-white/20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">View
               publications <span aria-hidden="true">&rarr;</span></a>
           </div>
@@ -58,12 +53,12 @@
     <div class="bg-white py-24 sm:py-32">
       <div class="mx-auto max-w-7xl px-6 lg:px-8">
         <div class="mx-auto max-w-2xl text-center">
-          <h2 data-aos="fade-up" class="text-balance text-3xl font-semibold tracking-tight text-gray-900 uppercase ">
+          <h2  class="text-balance text-3xl font-semibold tracking-tight text-gray-900 uppercase ">
             More From JOURNO</h2>
         </div>
-        <div data-aos="fade-up"
+        <div 
           class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
-          <a data-aos="fade-up" :href="item.url" v-for="(item, idx) in journosList" :key="idx"
+          <a  :href="item.url" v-for="(item, idx) in journosList" :key="idx"
             class="flex block flex-col items-start justify-between">
             <div class="relative w-full">
               <img :src="item.image" alt=""
@@ -102,9 +97,9 @@
       <div class="mx-auto max-w-7xl px-6 lg:px-8">
         <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-2">
           <div class="max-w-xl lg:max-w-lg">
-            <h2 data-aos="fade-up" class="text-3xl font-bold tracking-tight text-center text-white sm:text-4xl"> Be
+            <h2  class="text-3xl font-bold tracking-tight text-center text-white sm:text-4xl"> Be
               the first. Get Journo in your mail.</h2>
-            <p data-aos="fade-up" class="mt-4 text-lg leading-8 text-center text-gray-200">If you would like to have
+            <p  class="mt-4 text-lg leading-8 text-center text-gray-200">If you would like to have
               early access to all articles published on Journo, sign up for our special mailing list for free..</p>
           </div>
           <iframe src="https://mlcjourno.substack.com/embed" width="480" height="320"
@@ -131,13 +126,21 @@ import journo4 from '@/assets/img/lab-coast/journo4.jpeg'
 import journo5 from '@/assets/img/lab-coast/journo5.jpeg'
 import journo6 from '@/assets/img/lab-coast/journo6.jpeg'
 import journo7 from '@/assets/img/lab-coast/journo7.jpeg'
+import uuuuu from '@/assets/img/updates3.jpeg'
 
 const journosList = ref([
+{
+    image: uuuuu,
+    title: 'How Systemic Deficiencies Fuel the "Japa Jets"',
+    desc: `Health workforce migration describes the movement of healthcare professionals - medical laboratory scientists, doctors,  nurses, pharmacists and other allied health workers - from one country to another, often in search of better working conditions, career growth opportunities, or improved quality of life. Globally, this trend has been influenced by disparities in healthcare systems, economic conditions, and policies. When these professionals move from their country of origin to another, the movement is more precisely referred to as emigration. In Nigeria, emigration has reached alarming levels, as thousands of healthcare workers leave annually for developed countries like the United Kingdom, Canada, Switzerland and the United States. As the 2025 work and graduate school cycle begins, yet another significant wave of migration is expected.`,
+    author: 'Ubani Confidence',
+    url: 'https://mlcjourno.substack.com/p/healthcare-emigration-how-systemic?utm_source=post-banner&utm_medium=web&utm_campaign=posts-open-in-app&triedRedirect=true'
+  },
 {
     image: updates2,
     title: 'FROM ‘MIRACLE MEDS’ TO MAYHEM: COMBATING ANTIMICROBIAL RESISTANCE',
     desc: `One day, Mamooo's son, Tega, returned home after national youth service but Mamooo couldn’t believe her eyes. Tega’s gaunt frame and sun-scorched skin sent his mother into a frenzy. His eyes, once bright and full of life, now seemed dull and sunken. She immediately provided him with her 'miracle meds': anti-malaria, amoxicillin, and multivitamins. With a knowing glint in her eye, she declared, “Nah those giant mosquitoes wey dey that camp wan suck my pikin blood dry, na why he con resemble toothpick!”`,
-    author: '',
+    author: 'Ahoua Victory Eniola',
     url: 'https://mlcjourno.substack.com/p/from-miracle-meds-to-mayhem-combating'
   },
   {

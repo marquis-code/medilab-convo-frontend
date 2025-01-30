@@ -10,8 +10,8 @@
           </div>
           <div class="mx-auto max-w-7xl px-6 lg:px-8 flex justify-center items-center w-full flex-col text-center pt-16">
             <div class="mx-auto max-w-2xl lg:mx-0 flex justify-center items-center w-full flex-col text-center">
-              <h2 data-aos="fade-up" class="text-4xl font-bold text-center tracking-tight uppercase text-white sm:text-6xl">Resources</h2>
-              <p data-aos="fade-up" class="mt-6 text-lg leading-8 text-center text-gray-100">Explore our comprehensive collection of resources designed to support your journey in medical laboratory science. Whether you’re seeking scholarship opportunities, job openings, internship placements, educational materials, or access to recorded webinars, our hub provides valuable tools and information to help you succeed in your career. </p>
+              <h2  class="text-4xl font-bold text-center tracking-tight uppercase text-white sm:text-6xl">Resources</h2>
+              <p  class="mt-6 text-lg leading-8 text-center text-gray-100">Explore our comprehensive collection of resources designed to support your journey in medical laboratory science. Whether you’re seeking scholarship opportunities, job openings, internship placements, educational materials, or access to recorded webinars, our hub provides valuable tools and information to help you succeed in your career. </p>
             </div>
           </div>
         </div>

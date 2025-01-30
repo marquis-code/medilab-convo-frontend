@@ -10,34 +10,34 @@
             </div>
             <div class="mx-auto max-w-7xl px-6 lg:px-8 flex justify-center items-center w-full flex-col pt-16">
               <div class="mx-auto max-w-2xl lg:mx-0 flex justify-center items-center w-full flex-col">
-                <h2 data-aos="fade-up" class="text-4xl font-bold text-center text-uppercase tracking-tight text-white uppercase sm:text-6xl">Programs</h2>
-                 <p data-aos="fade-up" class="mt-2 text-lg leading-8 text-white mt-3 text-center">At MedLabConvo, we are dedicated to empowering and supporting medical laboratory professionals and students through a range of impactful programs. Whether you are looking to enhance your career, connect with mentors, or develop key skills, our initiatives are designed to guide you every step of the way. </p>
+                <h2  class="text-4xl font-bold text-center text-uppercase tracking-tight text-white uppercase sm:text-6xl">Programs</h2>
+                 <p  class="mt-2 text-lg leading-8 text-white mt-3 text-center">At MedLabConvo, we are dedicated to empowering and supporting medical laboratory professionals and students through a range of impactful programs. Whether you are looking to enhance your career, connect with mentors, or develop key skills, our initiatives are designed to guide you every step of the way. </p>
               </div>
             </div>
           </div>
 
           <div class="container mx-auto px-4 grid lg:grid-cols-2 gap-6 mt-10 pb-10">
     
-            <div data-aos="fade-up" v-for="(item, idx) in programsList" :key="idx" :class="[item.status === 'latest' ? 'border-8 border-[#27628C]' : '']" class="bg-gray-100 rounded-lg overflow-hidden mb-16">
+            <div  v-for="(item, idx) in programsList" :key="idx" :class="[item.status === 'latest' ? 'border-8 border-[#27628C]' : '']" class="bg-gray-100 rounded-lg overflow-hidden mb-16">
               <div class="relative">
-                <img data-aos="fade-up" :src="item.img" class="w-full lg:h-96 object-cover" />
+                <img  :src="item.img" class="w-full lg:h-96 object-cover" />
               </div>
               
               <!-- Content -->
               <div class="p-6 md:p-8 space-y-6">
-                <p data-aos="fade-up" class="text-gray-700 leading-relaxed">
+                <p  class="text-gray-700 leading-relaxed">
                   {{ item.firstPart }}
                   <!-- The internship year is a crucial milestone for every Medical Laboratory Science (MLS) graduate—a period filled with opportunities but also significant challenges. Many interns struggle with navigating career growth, skill development, and systemic barriers, often missing out on the full potential of this transformative phase. -->
 
                   <!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. -->
                 </p>
-                <p data-aos="fade-up" class="text-gray-700 leading-relaxed">
+                <p  class="text-gray-700 leading-relaxed">
                   {{ item.secondPart }}
                   <!-- Interntional is a dynamic community built to bridge these gaps. Through mentorship, professional development, networking, and resource access, we empower MLS interns to thrive—not just survive—during their internship year. -->
                   <!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. -->
                 </p>
 
-                <p data-aos="fade-up" class="text-gray-700 leading-relaxed">
+                <p  class="text-gray-700 leading-relaxed">
                   Join us as we turn obstacles into stepping stones, unlocking a future of excellence in medical laboratory science.
                 </p>
 
@@ -45,7 +45,7 @@
                 
                 <!-- Buttons -->
                 <div class="flex flex-col space-y-4 max-w-md mx-auto pt-4">
-                  <button data-aos="fade-up" @click="router.push(`/programs/${idx}`)" v-if="item.status === 'latest'" class="bg-[#27628C] text-white py-3 px-6 rounded  transition-colors">
+                  <button  @click="router.push(`/programs/${idx}`)" v-if="item.status === 'latest'" class="bg-[#27628C] text-white py-3 px-6 rounded  transition-colors">
                   Learn  More
                   </button>
                   <!-- <button class="bg-teal-600 text-white py-3 px-6 rounded hover:bg-teal-700 transition-colors">
