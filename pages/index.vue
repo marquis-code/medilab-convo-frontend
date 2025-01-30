@@ -26,7 +26,7 @@
   </div>
 
   <div class="youtube-video pt-20 px-3 lg:px-0">
-    <h3  class="px-4 font-black sm:text-5xl text-4xl  text-gray-900 text-center pb-6">We are leading change, inspiring action, and building the capacity of future generations of world-class professionals in medical laboratory science and in the healthcare
+    <h3  class="mt-2 text-balance text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl text-center mb-16">We are leading change, inspiring action, and building the capacity of future generations of world-class professionals in medical laboratory science and in the healthcare
       system at large.
     </h3>
     <iframe
@@ -392,7 +392,7 @@
     </p>
     <p  class="mt-8 text-sm/6 text-gray-600 md:order-1 md:mt-0">©️ LabiHealth Ambassadors Initiative 2025. All Rights Reserved
     </p>
-    <p   class="mt-8  text-sm/6 text-gray-600 md:order-1 md:mt-0">All Rights Reserved</p>
+    <!-- <p   class="mt-8  text-sm/6 text-gray-600 md:order-1 md:mt-0">All Rights Reserved</p> -->
    </div>
       </div>
     </div>
