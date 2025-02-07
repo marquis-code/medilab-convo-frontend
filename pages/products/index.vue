@@ -369,7 +369,7 @@
             </div>
           </div>
 
-          <div class="py-20">
+          <!-- <div class="py-20">
             <h2  class="text-xl font-bold text-gray-900 text-center">SERVICES</h2>
             <div class="mx-auto container px-6 lg:px-8">
               <div class="mx-auto max-w-2xl lg:max-w-4xl">
@@ -410,7 +410,7 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
     </main>    
 </template>
 
