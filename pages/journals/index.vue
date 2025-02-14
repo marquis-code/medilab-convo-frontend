@@ -34,14 +34,14 @@
     <div class="relative bg-[#27628C] lg:mt-10 pt-0 ">
       <div
         class="relative h-80 overflow-hidden  md:absolute md:left-0 md:h-full mt-44 pb-[400px] lg:pb-0 md:w-1/3 lg:w-1/2">
-        <img  class="size-full object-cover" src="@/assets/img/carving.jpeg" alt="">
+        <img  class="w-full h-[400px] object-cover" src="@/assets/img/paradox.jpeg" alt="">
       </div>
       <div class="relative mx-auto max-w-7xl py-24 sm:py-32 px-10 lg:px-0 lg:px-8 lg:py-40">
         <div class="md:ml-auto md:w-2/3 md:pl-16 lg:w-1/2">
-          <p  class="mt-2 text-4xl font-semibold tracking-tight text-white sm:text-5xl">Carving Your Professional Identity As A Young Medical Laboratory Scienticarbving</p>
-          <p  class="mt-6 text-base/7 text-white">"Having a professional identity as a medical laboratory scientist is almost as important as sitting for professional exams for your licensure. We have established that generally professional identity is the internalized sense of being part of a profession, including its standards, ethics, and culture. For medical laboratory scientists, this identity is shaped by technical expertise, commitment to patient safety, and collaboration with other healthcare professionals. Studies suggest that a well-defined professional identity not only enhances job satisfaction but also improves overall performance and confidence in professional roles."</p>
+          <p  class="mt-2 text-4xl font-semibold tracking-tight text-white sm:text-5xl">All or One: The Paradox of Identity</p>
+          <p  class="mt-6 text-base/7 text-white">"Many centuries ago, Theseus and the youths of Athens embarked on a journey to fight a beast on an island called Crete. Along their journey, they had to wrestle with wild winds yet they persevered. The tempest sea also proved an obstacle but they endured and kept rowing"</p>
           <div  class="mt-8">
-            <a href="https://mlcjourno.substack.com/p/carving-your-professional-identity?utm_source=post-banner&utm_medium=web&utm_campaign=posts-open-in-app&triedRedirect=true"
+            <a href="https://mlcjourno.substack.com/p/all-or-one-the-paradox-of-identity?r=45bm0j&utm_campaign=post&utm_medium=web&triedRedirect=tru"
               class="inline-flex rounded-md bg-white/10 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-white/20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">View
               publications <span aria-hidden="true">&rarr;</span></a>
           </div>
@@ -127,8 +127,16 @@ import journo5 from '@/assets/img/lab-coast/journo5.jpeg'
 import journo6 from '@/assets/img/lab-coast/journo6.jpeg'
 import journo7 from '@/assets/img/lab-coast/journo7.jpeg'
 import uuuuu from '@/assets/img/updates3.jpeg'
+import latest from '@/assets/img/paradox.jpeg'
 
 const journosList = ref([
+{
+    image: latest,
+    title: 'All or One: The Paradox of Identity',
+    desc: `Many centuries ago, Theseus and the youths of Athens embarked on a journey to fight a beast on an island called Crete. Along their journey, they had to wrestle with wild winds yet they persevered. The tempest sea also proved an obstacle but they endured and kept rowing. `,
+    author: 'Williams Owoeye',
+    url: 'https://mlcjourno.substack.com/p/all-or-one-the-paradox-of-identity?r=45bm0j&utm_campaign=post&utm_medium=web&triedRedirect=true'
+  },
 {
     image: uuuuu,
     title: 'How Systemic Deficiencies Fuel the "Japa Jets"',

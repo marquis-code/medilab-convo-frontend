@@ -452,7 +452,7 @@ import journo5 from '@/assets/img/lab-coast/journo5.jpeg'
 import journo6 from '@/assets/img/lab-coast/journo6.jpeg'
 import journo7 from '@/assets/img/lab-coast/journo7.jpeg'
 import labcast from '@/assets/img/updates4.jpeg'
-import journo from '@/assets/img/updates3.jpeg'
+import journo from '@/assets/img/paradox.jpeg'
 const isOpen = ref(false)
 import img4 from '@/assets/img/updates1.jpeg'
 
@@ -508,9 +508,9 @@ const labcastLatest = ref([
 
 const journoLatest = ref([
 {
-    title: 'How Sysytemic Deficiencies Fuel the "Japa Jets"',
+    title: 'All or One: The Paradox of Identity',
     image: journo,
-    desc: `In this episode, we delve into the experiences and insights of medical laboratory scientists into how systemic defficiencies fuel Japa Jets. Join us as we explore how practice and perspectives differ in this region”`,
+    desc: `Many centuries ago, Theseus and the youths of Athens embarked on a journey to fight a beast on an island called Crete. Along their journey, they had to wrestle with wild winds yet they persevered. The tempest sea also proved an obstacle but they endured and kept rowing.”`,
     previousEditionUrl: '#',
     status: 'latest',
     actionText: 'Read More',
