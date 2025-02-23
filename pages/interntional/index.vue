@@ -1,0 +1,451 @@
+<template>
+  <main>
+    <div class="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32">
+      <img
+        src="@/assets/img/hero-background.jpeg"
+        alt=""
+        class="absolute inset-0 -z-10 h-full w-full object-cover"
+      />
+      <div
+        class="hidden sm:absolute sm:-top-10 sm:right-1/2 sm:-z-10 sm:mr-10 sm:block sm:transform-gpu sm:blur-3xl"
+        aria-hidden="true"
+      >
+        <div
+          class="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-[#ff4694] to-[#776fff] opacity-20"
+          style="
+            clip-path: polygon(
+              74.1% 44.1%,
+              100% 61.6%,
+              97.5% 26.9%,
+              85.5% 0.1%,
+              80.7% 2%,
+              72.5% 32.5%,
+              60.2% 62.4%,
+              52.4% 68.1%,
+              47.5% 58.3%,
+              45.2% 34.5%,
+              27.5% 76.7%,
+              0.1% 64.9%,
+              17.9% 100%,
+              27.6% 76.8%,
+              76.1% 97.7%,
+              74.1% 44.1%
+            );
+          "
+        ></div>
+      </div>
+      <div
+        class="absolute -top-52 left-1/2 -z-10 -translate-x-1/2 transform-gpu blur-3xl sm:top-[-28rem] sm:ml-16 sm:translate-x-0 sm:transform-gpu"
+        aria-hidden="true"
+      >
+        <div
+          class="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-[#ff4694] to-[#776fff] opacity-20"
+          style="
+            clip-path: polygon(
+              74.1% 44.1%,
+              100% 61.6%,
+              97.5% 26.9%,
+              85.5% 0.1%,
+              80.7% 2%,
+              72.5% 32.5%,
+              60.2% 62.4%,
+              52.4% 68.1%,
+              47.5% 58.3%,
+              45.2% 34.5%,
+              27.5% 76.7%,
+              0.1% 64.9%,
+              17.9% 100%,
+              27.6% 76.8%,
+              76.1% 97.7%,
+              74.1% 44.1%
+            );
+          "
+        ></div>
+      </div>
+      <div
+        class="mx-auto max-w-7xl px-6 lg:px-8 flex justify-center items-center w-full flex-col pt-16"
+      >
+        <div
+          class="mx-auto max-w-2xl lg:mx-0 flex justify-center items-center w-full flex-col"
+        >
+          <h2
+            class="text-4xl font-bold text-center text-uppercase tracking-tight text-white uppercase sm:text-6xl mt-20"
+          >
+            Interntional
+          </h2>
+          <p class="mt-3 text-lg leading-8 text-white text-center">
+            We are transforming how Medical Laboratory Science Interns are
+            learning, growing, communicating and making impact across the
+            country.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-white container mx-auto pt-20">
+      <div class="mx-auto lg:max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
+        <h2 class="text-2xl font-bold text-gray-900 text-center uppercase">
+          Cadres of Change
+        </h2>
+
+        <div class="flex justify-center items-center w-full lg:flex pt-10">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+            <div
+              class="max-w-md lg:w-[350px] w-[300px] mx-auto bg-white rounded-lg border-2 border-gray-200 shadow-sm hover:shadow-md transition-shadow overflow-hidden p-6"
+            >
+              <div class="mb-6 p-2 bg-indigo-100 rounded-lg w-max">
+                <img
+                  src="@/assets/img/goals1.jpeg"
+                  class="w-8 h-8 object-contain"
+                  alt="Personal Growth Icon"
+                />
+              </div>
+
+              <div class="space-y-4">
+                <h1
+                  class="text-xs font-semibold text-gray-500 uppercase tracking-wider"
+                >
+                  Personal
+                </h1>
+                <h2
+                  class="text-xl font-bold text-gray-900 uppercase tracking-tighter mb-2"
+                >
+                  Growth & Development
+                </h2>
+
+                <div class="divide-y divide-gray-100">
+                  <p class="py-3 text-gray-700">Soft Skills Development</p>
+                  <p class="py-3 text-gray-700">Financial Wholeness</p>
+                  <p class="py-3 text-gray-700">Emotional Well-being</p>
+                  <p class="py-3 text-gray-700">Confidence Building</p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="max-w-md lg:w-[350px] w-[300px] mx-auto bg-white rounded-lg border-2 border-gray-200 shadow-sm hover:shadow-md transition-shadow overflow-hidden p-6"
+            >
+              <div class="mb-6 p-2 bg-indigo-100 rounded-lg w-max">
+                <img
+                  src="@/assets/img/goals1.jpeg"
+                  class="w-8 h-8 object-contain"
+                  alt="Personal Growth Icon"
+                />
+              </div>
+
+              <div class="space-y-4">
+                <h1
+                  class="text-xs font-semibold text-gray-500 uppercase tracking-wider"
+                >
+                  Professional
+                </h1>
+                <h2
+                  class="text-xl font-bold text-gray-900 uppercase tracking-tighter mb-2"
+                >
+                  Career Advancement & Opportunities
+                </h2>
+
+                <div class="divide-y divide-gray-100">
+                  <p class="py-3 text-gray-700">Mentorship & Guidance</p>
+                  <p class="py-3 text-gray-700">Network</p>
+                  <p class="py-3 text-gray-700">Resource Access</p>
+                  <p class="py-3 text-gray-700">
+                    Job & Scholarship Opportunities
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="max-w-md lg:w-[350px] w-[300px] mx-auto bg-white rounded-lg border-2 border-gray-200 shadow-sm hover:shadow-md transition-shadow overflow-hidden p-6"
+            >
+              <div class="mb-6 p-2 bg-indigo-100 rounded-lg w-max">
+                <img
+                  src="@/assets/img/goals1.jpeg"
+                  class="w-8 h-8 object-contain"
+                  alt="Personal Growth Icon"
+                />
+              </div>
+
+              <div class="space-y-4">
+                <h1
+                  class="text-xs font-semibold text-gray-500 uppercase tracking-wider"
+                >
+                  Relational
+                </h1>
+                <h2
+                  class="text-xl font-bold text-gray-900 uppercase tracking-tighter mb-2"
+                >
+                  Building Strong Connections
+                </h2>
+
+                <div class="divide-y divide-gray-100">
+                  <p class="py-3 text-gray-700">Community Bonding</p>
+                  <p class="py-3 text-gray-700">Collaboration</p>
+                  <p class="py-3 text-gray-700">Peer Support</p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="max-w-md lg:w-[350px] w-[300px] mx-auto bg-white rounded-lg border-2 border-gray-200 shadow-sm hover:shadow-md transition-shadow overflow-hidden p-6"
+            >
+              <div class="mb-6 p-2 bg-indigo-100 rounded-lg w-max">
+                <img
+                  src="@/assets/img/goals1.jpeg"
+                  class="w-8 h-8 object-contain"
+                  alt="Personal Growth Icon"
+                />
+              </div>
+
+              <div class="space-y-4">
+                <h1
+                  class="text-xs font-semibold text-gray-500 uppercase tracking-wider"
+                >
+                  Domestic
+                </h1>
+                <h2
+                  class="text-xl font-bold text-gray-900 uppercase tracking-tighter mb-2"
+                >
+                  Local Impact & Influence
+                </h2>
+
+                <div class="divide-y divide-gray-100">
+                  <p class="py-3 text-gray-700">Facility Contributions</p>
+                  <p class="py-3 text-gray-700">University Engagement</p>
+                  <p class="py-3 text-gray-700">Community Outreach</p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="max-w-md lg:w-[350px] w-[300px] mx-auto bg-white rounded-lg border-2 border-gray-200 shadow-sm hover:shadow-md transition-shadow overflow-hidden p-6"
+            >
+              <div class="mb-6 p-2 bg-indigo-100 rounded-lg w-max">
+                <img
+                  src="@/assets/img/goals1.jpeg"
+                  class="w-8 h-8 object-contain"
+                  alt="Personal Growth Icon"
+                />
+              </div>
+
+              <div class="space-y-4">
+                <h1
+                  class="text-xs font-semibold text-gray-500 uppercase tracking-wider"
+                >
+                  Systemic
+                </h1>
+                <h2
+                  class="text-xl font-bold text-gray-900 uppercase tracking-tighter mb-2"
+                >
+                  Broad Professional Influence
+                </h2>
+
+                <div class="divide-y divide-gray-100">
+                  <p class="py-3 text-gray-700">Policy & Advocacy</p>
+                  <p class="py-3 text-gray-700">
+                    Standardization and Best Practices
+                  </p>
+                  <p class="py-3 text-gray-700">Social Impact in Health</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col space-y-4 max-w-md mx-auto pt-4 mt-10">
+          <a
+            href="https://drive.google.com/file/d/1QKA319CWsyT81-snU33UNjBRmITWIp-H/view?usp=drivesdk"
+            target="_blank"
+            class="bg-[#27628C] text-center text-white py-3 px-6 rounded transition-colors"
+          >
+            Download our Handbook
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-white container mx-auto pt-20">
+      <div class="mx-auto lg:max-w-2xl px-4 sm:px-6 lg:px-8">
+        <h2 class="text-2xl font-bold text-gray-900 text-center uppercase">
+          Our Programs
+        </h2>
+      </div>
+      <div class="container mx-auto px-4 grid lg:grid-cols-2 gap-6 mt-10 pb-10">
+  <div
+    v-for="(item, idx) in programsList"
+    :key="idx"
+    class="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow overflow-hidden mb-6 flex flex-col h-full"
+  >
+    <div class="relative">
+      <img
+        :src="item.img"
+        class="w-full lg:h-96 object-cover"
+        :alt="item.title"
+      />
+
+      <div
+        v-if="item.registerURL === '#'"
+        class="absolute inset-0 bg-black/70 flex items-center justify-center text-white text-xl font-bold"
+      >
+        COMING SOON...
+      </div>
+    </div>
+
+    <div class="p-6 md:p-8 space-y-6 flex flex-col flex-grow">
+      <h2 class="text-2xl font-bold text-gray-800 mb-4">
+        {{ item.title }}
+      </h2>
+
+      <div class="space-y-4 text-gray-600 leading-relaxed flex-grow">
+        <p class="mb-4">{{ item.firstPart }}</p>
+        <p class="mb-4">{{ item.secondPart }}</p>
+      </div>
+
+      <div class="pt-4">
+        <a
+          :href="item.registerURL"
+          target="_blank"
+          :class="{
+            'bg-gray-400 cursor-not-allowed': item.registerURL === '#',
+            'bg-[#27628C] hover:bg-[#1a4665]': item.registerURL !== '#'
+          }"
+          class="text-white py-3 px-6 rounded transition-colors text-center block w-full"
+          :disabled="item.registerURL === '#'"
+        >
+          Learn More
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+      <div class="flex flex-col space-y-4 max-w-md mx-auto pt-4 mt-10 px-4">
+        <p class="text-2xl font-bold text-[#27628C] text-center uppercase">
+          Join Us Today!
+        </p>
+        <a href="#" target="_blank" class="">
+          <button
+            disabled
+            class="bg-[#27628C] px-6 max-w-md w-full py-3 rounded text-white disabled:cursor-not-allowed disabled:opacity-25"
+          >
+            Interntional
+          </button>
+        </a>
+      </div>
+    </div>
+
+    <div class="bg-white py-16 sm:py-20">
+      <h2 class="text-2xl font-bold text-gray-900 text-center uppercase">
+        TEAM LEADS
+      </h2>
+      <div class="mx-auto max-w-7xl px-6 text-center lg:px-8">
+        <ul
+          role="list"
+          class="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 items-center"
+        >
+          <li v-for="(item, idx) in teamLeads" :key="idx">
+            <img
+              class="mx-auto h-56 w-56 rounded-full"
+              :src="item.image"
+              alt=""
+            />
+            <h3
+              class="mt-6 text-base/7 font-semibold tracking-tight text-gray-900"
+            >
+              {{ item.name ?? "Nil" }}
+            </h3>
+            <p class="text-sm/6 text-gray-600">{{ item?.position ?? "Nil" }}</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </main>
+</template>
+
+<script setup lang="ts">
+import img1 from "@/assets/img/scholarship.jpeg";
+import image1 from "@/assets/img/oluwamuyiwa.jpeg";
+import image2 from "@/assets/img/precious.jpeg";
+import image3 from "@/assets/img/yahdiogo.jpeg";
+import image4 from "@/assets/img/isaac.jpeg";
+import image5 from "@/assets/img/john.jpeg";
+import image6 from "@/assets/img/yusuf.jpeg";
+import image7 from "@/assets/img/nana.jpeg";
+
+const programsList = ref([
+  {
+    title: "SCHOLARSHIP APPLICATION MASTER CLASS",
+    img: img1,
+    firstPart: `This masterclass is designed exclusively for medical laboratory science interns to equip them with
+the tools and strategies necessary to secure academic scholarships and funding opportunities. It
+will guide participants through every step of the application process, from identifying
+opportunities to submitting winning applications, whether for postgraduate studies, international
+conferences, or advanced training.`,
+    secondPart: `The program addresses the unique demands and career pathways of medical laboratory
+professionals, providing interactive sessions, real-life examples, and expert guidance. By focusing
+on the specific needs of medical laboratory science interns, the masterclass ensures participants
+leave with actionable materials and enhanced confidence to pursue their academic and career
+goals.`,
+    registerURL: "https://forms.gle/7Fqgm5BRvD96fPNx7",
+  },
+  {
+    title: "FINANCIAL LITERACY FOR INTERNS",
+    // img: img2,
+    firstPart: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.`,
+    secondPart: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.`,
+    registerURL: "#",
+  },
+  {
+    title: "INTERNTIONAL MENTORNET",
+    // img: img3,
+    firstPart: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.`,
+    secondPart: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.`,
+    registerURL: "#",
+  },
+  {
+    title: "MENTAL HEALTH FOR INTERNS",
+    // img: img4,
+    firstPart: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.`,
+    secondPart: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.`,
+    registerURL: "#",
+  },
+]);
+
+const teamLeads = ref([
+  {
+    name: "Oluwamuyiwa Ogunkoya",
+    position: "Interntonal Co-Lead",
+    image: image1,
+  },
+  {
+    name: "Precious Sylvanus",
+    position: "Interntonal Co-Lead",
+    image: image2,
+  },
+  {
+    name: "Yahdiogo Agbo",
+    position: "Mental Health Advocacy Lead",
+    image: image3,
+  },
+  {
+    name: "Isaac Babalola",
+    position: "Interntional Mentornet Lead",
+    image: image4,
+  },
+  {
+    name: "John Paul Mpiriju",
+    position: "Financial Literacy Lead",
+    image: image5,
+  },
+  {
+    name: "Yusuf Yakubu",
+    position: "AMR Advocacy Lead",
+    image: image6,
+  },
+  {
+    name: "Nana Solomon",
+    position: "Blood Donation Advocacy Lead",
+    image: image7,
+  },
+]);
+</script>
