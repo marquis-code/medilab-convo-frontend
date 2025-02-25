@@ -352,7 +352,7 @@
             <img
               class="mx-auto h-56 w-56 rounded-full"
               :src="item.image"
-              alt=""
+              :alt="item.name"
             />
             <h3
               class="mt-6 text-base/7 font-semibold tracking-tight text-gray-900"

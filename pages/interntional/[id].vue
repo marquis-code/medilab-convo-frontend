@@ -93,8 +93,9 @@ goals.
             <article  @click="openModal(item)"  v-for="item in schedules" class="flex bg-white border-[0.5px] border-gray-10 rounded-lg transition hover:shadow-xl">
 
                 <div class="sm:basis-56 border-[0.5px] border-gray-50 rounded-lg">
-                    <img alt=""
+                    <img
                         :src="item.image"
+                        :alt="item.speaker"
                         class="aspect-square h-full w-32 object-cover" />
                 </div>
 
