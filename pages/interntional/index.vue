@@ -255,7 +255,7 @@
           <a
             href="https://drive.google.com/file/d/1QKA319CWsyT81-snU33UNjBRmITWIp-H/view?usp=drivesdk"
             target="_blank"
-            class="bg-[#27628C] text-center text-white py-3 px-6 rounded transition-colors"
+            class="bg-[#27628C] text-center text-white py-3 px-6 rounded transition-colors hover:bg-[#1a4665]"
           >
             Download our Handbook
           </a>
@@ -300,7 +300,12 @@
         <p class="mb-4">{{ item.secondPart }}</p>
       </div>
 
-      <div class="pt-4">
+      <div class="flex flex-col space-y-4 pt-4">
+                  <button  @click="router.push(`/interntional/${idx}`)" v-if="item.status === 'latest'" class="bg-[#27628C] text-white py-3 px-6 rounded  transition-colors text-center block w-full hover:bg-[#1a4665]">
+                  Learn  More
+                  </button>
+                </div>
+      <!-- <div class="pt-4">
         <a
           :href="item.registerURL"
           target="_blank"
@@ -313,7 +318,7 @@
         >
           Learn More
         </a>
-      </div>
+      </div> -->
     </div>
   </div>
 </div>
@@ -326,7 +331,7 @@
         <a href="#" target="_blank" class="">
           <button
             disabled
-            class="bg-[#27628C] px-6 max-w-md w-full py-3 rounded text-white disabled:cursor-not-allowed disabled:opacity-25"
+            class="bg-[#27628C] px-6 max-w-md w-full py-3 rounded text-white disabled:cursor-not-allowed disabled:opacity-25 hover:bg-[#1a4665]"
           >
             Interntional
           </button>
@@ -364,13 +369,14 @@
 
 <script setup lang="ts">
 import img1 from "@/assets/img/scholarship.jpeg";
-import image1 from "@/assets/img/oluwamuyiwa.jpeg";
+import image1 from "@/assets/img/oluwamuyiwa(2).jpeg";
 import image2 from "@/assets/img/precious.jpeg";
 import image3 from "@/assets/img/yahdiogo.jpeg";
 import image4 from "@/assets/img/isaac.jpeg";
 import image5 from "@/assets/img/john.jpeg";
 import image6 from "@/assets/img/yusuf.jpeg";
 import image7 from "@/assets/img/nana.jpeg";
+const router = useRouter()
 
 const programsList = ref([
   {
@@ -386,6 +392,7 @@ professionals, providing interactive sessions, real-life examples, and expert gu
 on the specific needs of medical laboratory science interns, the masterclass ensures participants
 leave with actionable materials and enhanced confidence to pursue their academic and career
 goals.`,
+status: 'latest',
     registerURL: "https://forms.gle/7Fqgm5BRvD96fPNx7",
   },
   {
