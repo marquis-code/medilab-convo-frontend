@@ -91,11 +91,11 @@
         <!-- Buttons -->
         <div  class="flex flex-col space-y-4 max-w-md mx-auto pt-4">
           <a  href="https://drive.google.com/file/d/1QKA319CWsyT81-snU33UNjBRmITWIp-H/view?usp=drivesdk" class="bg-[#27628C] text-center text-white py-3 px-6 rounded transition-colors">
-            Download our Handbook
+            Learn more about Interntional
           </a>
-          <button disabled class="bg-[#27628C] disabled:opacity-25 disabled:cursor-not-allowed text-white py-3 px-6 rounded  transition-colors">
+          <!-- <button disabled class="bg-[#27628C] disabled:opacity-25 disabled:cursor-not-allowed text-white py-3 px-6 rounded  transition-colors">
             Join International (Community would be open soon)
-          </button>
+          </button> -->
         </div>
       </div>
     </div>

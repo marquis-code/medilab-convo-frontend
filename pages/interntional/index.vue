@@ -74,15 +74,26 @@
             Interntional
           </h2>
           <p class="mt-3 text-lg leading-8 text-white text-center">
-            We are transforming how Medical Laboratory Science Interns are
-            learning, growing, communicating and making impact across the
-            country.
+            Maximize Opportunities | Attain Full Potential | Lead Impact
           </p>
         </div>
       </div>
     </div>
 
+    <div class="mt-20 flex justify-center items-center">
+  <div class="w-[900px] flex flex-col justify-center items-center">
+    <h2 class="text-6xl text-center w-[900px] font-extrabold text-gray-900">
+      Transform Your Internship Experience, Transform Your Future!
+    </h2>
+    <div class="h-[600px]"></div>
+    <p class="text-2xl w-[800px] font-bold text-gray-900 text-center">Don't let your internship be just another year. Make it the stepping stone to a thriving career!</p>
+    <p class="text-2xl w-[800px] font-bold text-gray-900 text-center">If you are a medical laboratory science intern looking to navigate your internship with confidence, skill, and purpose? Interntional, a dedicated community by MedLabConvo, is here to help you turn this crucial year into a transformative journey.</p>
+  </div>
+</div>
+
+
     <div class="bg-white container mx-auto pt-20">
+      
       <div class="mx-auto lg:max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
         <h2 class="text-2xl font-bold text-gray-900 text-center uppercase">
           Cadres of Change
@@ -412,13 +423,13 @@ status: 'latest',
     thirdPart: `Beyond mentorship, participants become part of a thriving global community, building strong professional networks and engaging with like-minded individuals who are equally committed to advancing the field.`,
     registerURL: "#",
   },
-  {
-    title: "MENTAL HEALTH FOR INTERNS",
-    // img: img4,
-    firstPart: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.`,
-    secondPart: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.`,
-    registerURL: "#",
-  },
+  // {
+  //   title: "MENTAL HEALTH FOR INTERNS",
+  //   // img: img4,
+  //   firstPart: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.`,
+  //   secondPart: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.`,
+  //   registerURL: "#",
+  // },
   {
     title: "BLOOD DONATION ADVOCACY",
     // img: img5,

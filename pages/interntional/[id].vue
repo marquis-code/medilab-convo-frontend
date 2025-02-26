@@ -1,82 +1,51 @@
 <template>
   <div class="overflow-hidden bg-white mt-20">
     <div class="relative mx-auto max-w-7xl px-6 py-16 lg:px-8">
-      <div
-        class="absolute bottom-0 left-3/4 top-0 hidden w-screen bg-[#27628C] lg:block"
-      ></div>
-      <div
-        class="mx-auto max-w-prose text-base lg:grid lg:max-w-none lg:grid-cols-2 lg:gap-8"
-      >
+      <div class="absolute bottom-0 left-3/4 top-0 hidden w-screen bg-[#27628C] lg:block"></div>
+      <div class="mx-auto max-w-prose text-base lg:grid lg:max-w-none lg:grid-cols-2 lg:gap-8">
         <div>
           <h3
-            class="mt-2 text-3xl/8 font-bold tracking-tight sm:text-4xl text-[#27628C] uppercase text-center lg:text-start"
-          >
+            class="mt-2 text-3xl/8 font-bold tracking-tight sm:text-4xl text-[#27628C] uppercase text-center lg:text-start">
             Scholarship Application Masterclass
           </h3>
         </div>
       </div>
       <div class="mt-8 lg:grid lg:grid-cols-2 lg:gap-8">
         <div class="relative lg:col-start-2 lg:row-start-1">
-          <svg
-            class="absolute right-0 top-0 -mr-20 -mt-20 hidden lg:block"
-            width="404"
-            height="384"
-            fill="#ffffff"
-            viewBox="0 0 404 384"
-            aria-hidden="true"
-          >
+          <svg class="absolute right-0 top-0 -mr-20 -mt-20 hidden lg:block" width="404" height="384" fill="#ffffff"
+            viewBox="0 0 404 384" aria-hidden="true">
             <defs>
-              <pattern
-                id="de316486-4a29-4312-bdfc-fbce2132a2c1"
-                x="0"
-                y="0"
-                width="20"
-                height="20"
-                patternUnits="userSpaceOnUse"
-              >
-                <rect
-                  x="0"
-                  y="0"
-                  width="4"
-                  height="4"
-                  class="text-gray-200"
-                  fill="#ffffff"
-                />
+              <pattern id="de316486-4a29-4312-bdfc-fbce2132a2c1" x="0" y="0" width="20" height="20"
+                patternUnits="userSpaceOnUse">
+                <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="#ffffff" />
               </pattern>
             </defs>
-            <rect
-              width="404"
-              height="384"
-              fill="url(#de316486-4a29-4312-bdfc-fbce2132a2c1)"
-            />
+            <rect width="404" height="384" fill="url(#de316486-4a29-4312-bdfc-fbce2132a2c1)" />
           </svg>
           <div class="relative mx-auto max-w-prose text-base lg:max-w-none">
             <figure>
-              <img
-                class="w-full rounded-lg object-cover shadow-lg lg:aspect-auto"
-                src="@/assets/img/scholarship.jpeg"
-                alt="Scholarship Masterclass Flier"
-                width="1184"
-                height="1376"
-              />
+              <img class="w-full rounded-lg object-cover shadow-lg lg:aspect-auto" src="@/assets/img/scholarship.jpeg"
+                alt="Scholarship Masterclass Flier" width="1184" height="1376" />
             </figure>
           </div>
         </div>
         <div class="mt-8 lg:mt-0">
           <div class="mx-auto text-base/7 text-gray-500">
             <p class="text-lg/7">
-                This masterclass is designed exclusively for medical laboratory science interns to equip them with
-the tools and strategies necessary to secure academic scholarships and funding opportunities. It
-will guide participants through every step of the application process, from identifying
-opportunities to submitting winning applications, whether for postgraduate studies, international
-conferences, or advanced training.
+              This masterclass is designed exclusively for medical laboratory science graduates, interns and corp
+              members, to equip them with
+              the tools and strategies necessary to secure academic scholarships and funding opportunities. It
+              will guide participants through every step of the application process, from identifying
+              opportunities to submitting winning applications, whether for postgraduate studies, international
+              conferences, or advanced training.
             </p>
             <p class="mt-5">
-                The program addresses the unique demands and career pathways of medical laboratory
-professionals, providing interactive sessions, real-life examples, and expert guidance. By focusing
-on the specific needs of medical laboratory science interns, the masterclass ensures participants
-leave with actionable materials and enhanced confidence to pursue their academic and career
-goals.
+              The program addresses the unique demands and career pathways of medical laboratory
+              professionals, providing interactive sessions, real-life examples, and expert guidance. By focusing
+              on the specific needs of young medical laboratory science professionals, the masterclass ensures
+              participants
+              leave with actionable materials and enhanced confidence to pursue their academic and career
+              goals.
             </p>
             <!-- <p class="mt-5">
               Join us as we turn obstacles into stepping stones, unlocking a
@@ -87,44 +56,61 @@ goals.
       </div>
     </div>
 
+    <div class="flex justify-center items-center min-h-screen">
+    <div class="overflow-x-auto w-full max-w-[900px]">
+      <h1 class="text-center text-gray-800 uppercase text-2xl md:text-3xl">Project Schedule</h1>
+      <table class="w-full border-collapse border-8 border-white mt-10 mx-auto">
+        <thead>
+          <tr class="bg-[#2788b2]">
+            <th class="border-4 border-white text-gray-50 px-2 py-3 text-center text-sm md:text-base uppercase font">S/N</th>
+            <th class="border-4 border-white text-gray-50 px-4 py-2 text-left text-sm md:text-base uppercase">Session Topic</th>
+            <th class="border-4 border-white text-gray-50 px-2 py-2 text-center text-sm md:text-base">Date</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-gray-200 bg-[#27628C]">
+          <tr v-for="(topic, index) in topics" :key="index">
+            <td class="px-4 py-2 text-gray-50 border-4 border-white text-center text-sm md:text-base whitespace-nowrap">{{ topic.sn }}</td>
+            <td class="px-4 py-2 text-gray-50 border-4 border-white text-left text-sm md:text-base whitespace-nowrap">{{ topic.topic }}</td>
+            <td class="px-4 py-2 text-gray-50 border-4 border-white text-center text-sm md:text-base whitespace-nowrap uppercase">{{ topic.date }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
     <div>
-      <h1 class="text-center text-[#27628C] uppercase text-2xl">Speakers</h1>
-        <section class="grid lg:grid-cols-3 gap-6 mx-auto max-w-7xl pb-6 p-3 lg:p-0">
-            <article  @click="openModal(item)"  v-for="item in schedules" class="flex bg-white border-[0.5px] border-gray-10 rounded-lg transition hover:shadow-xl">
+      <h1 class="text-center text-[#27628C] uppercase text-2xl mt-20">Faculty</h1>
+      <section class="grid lg:grid-cols-3 gap-6 mt-10 mx-auto max-w-7xl pb-6 p-3 lg:p-0">
+        <article @click="openModal(item)" v-for="item in schedules"
+          class="flex bg-white border-[0.5px] border-gray-10 rounded-lg transition hover:shadow-xl">
 
-                <div class="sm:basis-56 border-[0.5px] border-gray-50 rounded-lg">
-                    <img
-                        :src="item.image"
-                        :alt="item.speaker"
-                        class="aspect-square h-full w-32 object-cover" />
-                </div>
+          <div class="sm:basis-56 border-[0.5px] border-gray-50 rounded-lg">
+            <img :src="item.image" :alt="item.speaker" class="aspect-square h-full w-32 object-cover" />
+          </div>
 
-                <div class="w-full flex-col justify-between">
-                    <div class="border-s border-gray-900/10 p-4 sm:border-l-transparent sm:p-6">
-                      
-                        <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-700">
-                            {{ item.speaker }}
-                        </p>
+          <div class="w-full flex-col justify-between">
+            <div class="border-s border-gray-900/10 p-4 sm:border-l-transparent sm:p-6">
 
-                        
+              <p class="mt-2 font-bold line-clamp-3 text-lg/relaxed text-gray-700">
+                {{ item.speaker }}
+              </p>
+              <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-700">
+                {{ item.position }}
+              </p>
 
-                        <p class="text-xs font-bold pt-5">CLICK TO SEE SPEAKER'S PROFILE</p>
-                    </div>
-                </div>
-            </article>
-        </section>
+
+              <p class="text-xs font-bold pt-5">CLICK TO SEE SPEAKER'S PROFILE</p>
+            </div>
+          </div>
+        </article>
+      </section>
     </div>
     <div class="flex justify-center items-center my-10 p-3 lg:p-0">
-        <a href="https://forms.gle/7Fqgm5BRvD96fPNx7" class="text-white text-center bg-[#27628C] rounded-lg w-full px-6 py-3.5 max-w-lg hover:bg-[#1a4665]">Register</a>
-       </div>
+      <a href="https://forms.gle/7Fqgm5BRvD96fPNx7"
+        class="text-white text-center bg-[#27628C] rounded-lg w-full px-6 py-3.5 max-w-lg hover:bg-[#1a4665]">Register</a>
+    </div>
   </div>
 
-  <SpeakerModal
-  v-if="selectedSpeaker"
-  :speaker="selectedSpeaker"
-  :is-visible="isModalVisible"
-  @close="closeModal"
-  />
+  <SpeakerModal v-if="selectedSpeaker" :speaker="selectedSpeaker" :is-visible="isModalVisible" @close="closeModal" />
 </template>
 
 <script setup lang="ts">
@@ -140,6 +126,78 @@ import speaker9 from '@/assets/img/olaleye-olajuyin.jpeg'
 import speaker10 from '@/assets/img/paul-yiran.jpeg'
 import speaker11 from '@/assets/img/andra-umoru.jpeg'
 
+const topics = ref([
+  {
+    "sn": "01",
+    "topic": "Welcome and Introduction",
+    "date": "03 Mar",
+  },
+  {
+    "sn": "02",
+    "topic": "Introduction to Scholarship",
+    "date": "07 Mar",
+  },
+  {
+    "sn": "03",
+    "topic": "Identifying Suitable Scholarships",
+    "date": "08 Mar",
+  },
+  {
+    "sn": "04",
+    "topic": "Crafting a Winning Personal Statement",
+    "date": "09 Mar",
+  },
+  {
+    "sn": "05",
+    "topic": "Building an Outstanding CV/Resume",
+    "date": "14 Mar",
+  },
+  {
+    "sn": "06",
+    "topic": "Obtaining Strong Recommendation Letters",
+    "date": "15 Mar",
+  },
+  {
+    "sn": "07",
+    "topic": "Writing Research Proposals",
+    "date": "16 Mar",
+  },
+  {
+    "sn": "08",
+    "topic": "Exploring AI and Data Science in Biomed Research",
+    "date": "21 Mar",
+  },
+  {
+    "sn": "09",
+    "topic": "Scholarship Interviews: Preparation and Practice",
+    "date": "22 Mar",
+  },
+  {
+    "sn": "10",
+    "topic": "Reaching Out to Principal Investigators",
+    "date": "23 Mar",
+  },
+  {
+    "sn": "11",
+    "topic": "Managing Rejections and Resilience",
+    "date": "28 Mar",
+  },
+  {
+    "sn": "12",
+    "topic": "Networking and Real-Life Success Stories",
+    "date": "29 Mar",
+  },
+  {
+    "sn": "13",
+    "topic": "Final Practical Exercises [breakout]",
+    "date": "30 Mar",
+  },
+  {
+    "sn": "14",
+    "topic": "Closing SESSION and NEXT STEPS",
+    "date": "30 Mar",
+  },
+]);
 
 const schedules = ref([
     {
@@ -147,6 +205,7 @@ const schedules = ref([
         // "date_and_time": "Friday, 31st January, 2025, 8 pm - 9 pm",
         // "topic": "To Thyself be True - Developing an Identity as a Medical Laboratory Scientist",
         "speaker": "Feranmi Obe",
+        "position": "Masters Student, University of Texas.",
         "bio":  `
            Obe Feranmi Emmanuel is currently  a Graduate Research and Teaching Assistant in the Biology Department at the University of Texas at Tyler where he is pursuing  a master's degree in Biology. His research focuses on host-pathogen interactions, particularly investigating pneumolysin induced tight junction disruption and recovery in pulmonary epithelial cells. He holds a Bachelor's degree in Medical Laboratory Science From Ladoke Akintola University of Technology, Nigeria (BMLS, AMLSCN, Ogbomoso, 2021).
 
@@ -156,13 +215,15 @@ His dedication to scientific research and education has earned him several award
 
 Feranmi is passionate about translational research in infectious diseases, and immune response regulation, thus aiming to bridge the gap between laboratory research and clinical application.
 
-        `
+        `,
+
     },
     {
         image: speaker2,
-        "speaker": "Shamsuddeen Yusuf Ma’aruf",
+        "speaker": "Shamsuddeen Ma’aruf",
+        "position": "PhD student, University of Saskatchewan.",
         "bio": `
-        Shamsuddeen Yusuf Ma’aruf holds a Bachelor of Medical Laboratory Science from UDUS Nigeria (first to graduate with a First Class Honour as a Histopathology major in the University), a Postgraduate Diploma in Education from ABU Nigeria, and MSc in Molecular Biology from SU South Africa. He is currently a Doctoral Philosophy - Vaccinology and Immunotherapeutics student at the Vaccine and Infectious Diseases Organization (VIDO), and School of Public Health, University of Saskatchewan (USask), Canada.
+        Shamsuddeen Ma’aruf holds a Bachelor of Medical Laboratory Science from UDUS Nigeria (first to graduate with a First Class Honour as a Histopathology major in the University), a Postgraduate Diploma in Education from ABU Nigeria, and MSc in Molecular Biology from SU South Africa. He is currently a Doctoral Philosophy - Vaccinology and Immunotherapeutics student at the Vaccine and Infectious Diseases Organization (VIDO), and School of Public Health, University of Saskatchewan (USask), Canada.
 He is a DAAD Scholarship Alumni, Commonwealth Scholarship Awardee, USask's Dean's Doctoral International Scholarship Awardee, and NSERC-CREATE OHAP Doctoral Fellow. He has also won various awards, sponsorships, and grants; recent ones are the Tony Elumelu Foundation Entrepreneurship Seed Grant, Bill and Melinda Gates foundation Global Health Travel Award, BactiVac Catalyst Training Award.
 Mr. Shamsuddeen is a Lecturer with the Department of Medical Laboratory Science, Kaduna State University, Nigeria. He is also the co-founder of D’ Health Rides Synergy Nigeria Ltd., a start-up maximizing medical laboratory services in Nigeria. Additionally, he is currently the Director - Digital Health R&D Team at InnovateHealth Africa. Mr. Shamsuddeen is a strong advocate of universal health coverage and quality education. His research work focuses on the cellular pathology of airborne disease and development of therapeutic interventions to tackle airborne pathogens.
 
@@ -172,6 +233,7 @@ Mr. Shamsuddeen is a Lecturer with the Department of Medical Laboratory Science,
     {
         image: speaker3,
         "speaker": "Theodora Khofi",
+        "position": "Pre-PhD Intern, Malawi Liverpool Wellcome Programme.",
         "bio": `
        Theodora is a results-oriented researcher with a background in psychology and global health, with strong interests in global mental health and health equity. She holds a BSc in Psychology from the University of Warwick and a Master of Science in Global Health Delivery with a specialisation in health management from the University of Global Health Equity.
 
@@ -184,6 +246,7 @@ Her research interests include youth mental health, substance use, developmental
     {
         image: speaker4,
         "speaker": "Gaius Bala",
+        "position": "Master's student, Nazarbayev University, Kazakhstan.",
         "bio": `
         Gaius Bala is a graduate of Usmanu Danfodiyo University Sokoto-Nigeria, where he had his
 bachelor's program in medical laboratory science, specialising in histopathology.
@@ -213,6 +276,7 @@ has little interest in cinema.`
     {
         image: speaker5,
         "speaker": "Kamsi Muoka",
+        "position": "MPhil student, University of Cambridge.",
         "bio": `
         Olivia Kamsi Muoka is a first-class graduate of Medical Laboratory Science from the University of Calabar, where she earned recognition as the university's Best Graduating Student in 2023. During her undergraduate studies, she demonstrated a profound dedication to research, investigating lung function and biomarkers of oxidative DNA damage and inflammation in woodworkers exposed to wood dust. This pivotal work sparked her passion for exploring the intricate relationship between the immune system and cancer.
 
@@ -230,6 +294,7 @@ has little interest in cinema.`
     {
         image: speaker6,
         "speaker": "Femi Ayeotan",
+        "position": "PhD student, Temple University.",
         "bio": `
         
 Olorunfemi Ayeotan earned a bachelor's degree in Medical Laboratory Science from Ladoke Akintola University of Technology in 2020. During his undergraduate studies, he investigated Beta-2 microglobulin as a potential marker for monitoring treatment response in chronic leukemia patients across multiple tertiary hospitals in southwestern Nigeria. 
@@ -240,6 +305,7 @@ After graduating, he gained a year of clinical experience at the University Coll
     {
         image: speaker7,
         "speaker": "Femi Egbeleke",
+        "position": "PhD student and Graduate Research Assistant, Augusta University.",
         "bio": 
         `
         Femi Egbeleke is a Ph.D. student and a Graduate Research Assistant at Augusta University. He holds a master's degree in Biology from Western Illinois University and a bachelor's degree in Medical Laboratory Science from Ladoke Akintola University of Technology, Ogbomoso, Nigeria.
@@ -250,6 +316,7 @@ He has a strong passion for academics and research. His current research focuses
     {
         image: speaker8,
         "speaker": "Wasiu Omoniyi",
+        "position": "MSc student, University of Leicester.",
         "bio": `
    Wasiu Omoniyi is a passionate biomedical scientist with a Bachelor’s degree in Medical Laboratory Science (Biomedical Science), majoring in Medical Microbiology from Ladoke Akintola University of Technology, Nigeria. His final-year project, “Significant Bacteriuria among Apparently Healthy Individuals,” not only deepened his understanding of infectious diseases but also earned him recognition with the project abstract being accepted for a poster presentation at ASM Microbe 2022 in the United States.
 
@@ -263,9 +330,10 @@ Beyond the lab, Wasiu Omoniyi remains driven by a vision of making meaningful co
     },
     {
         image: speaker9,
-        "speaker": "Olaleye E. Olajuyin",
+        "speaker": "Olaleye Olajuyin",
+        "position": "PhD student, Graduate School of Biomedical Science and Engineering, University of Maine.",
         "bio": `
-        *Olaleye E. Olajuyin, B.MLS*
+        *Olaleye Olajuyin, B.MLS*
 
 Olaleye E. Olajuyin is a PhD student in the Graduate School of Biomedical Science and Engineering at the University of Maine, where he conducts research under the mentorship of Dr. Iain Drummond. His work focuses on understanding the role of inflammatory signaling in zebrafish kidney regeneration, with broader implications for kidney disease treatment and regenerative medicine.
 
@@ -277,6 +345,7 @@ Beyond research, Olajuyin is committed to mentorship and education. He has train
     {
         image: speaker10,
         "speaker": "Paul Yiran",
+        "position": "PhD student, University of Iowa.",
         "bio": `
         
 Paul Yiran Ntasin completed his Bachelor’s degree in Medical Laboratory Science at Usmanu Danfodio University Sokoto. He undertook a one-year internship program at Federal Medical Center, Birnin Kebbi and subsequently worked for a year at the Police clinic in Bauchi as a Medical Laboratory Scientist. 
@@ -287,6 +356,7 @@ He is currently a PhD graduate student in Immunology at the University of Iowa, 
     {
         image: speaker11,
         "speaker": "Andra Umoru",
+        "position": "PhD student and Graduate Research Assistant, Augusta University.",
         "bio": `
         
 Andra Umoru is a Senior IT Manager—AI Engineer/Data Architect at Procter & Gamble in Poland. He earned his B.Tech in Computer Science from Mautech Yola, Adamawa State, Nigeria, and later completed his MSc in Computer Science and Information Systems (specializing in AI) at the Warsaw University of Technology in Poland.
