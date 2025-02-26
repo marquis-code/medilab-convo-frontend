@@ -138,7 +138,7 @@ import speaker7 from '@/assets/img/femi-egbeleke.jpeg'
 import speaker8 from '@/assets/img/wasiu-omoniyi.jpeg'
 import speaker9 from '@/assets/img/olaleye-olajuyin.jpeg'
 import speaker10 from '@/assets/img/paul-yiran.jpeg'
-
+import speaker11 from '@/assets/img/andra-umoru.jpeg'
 
 
 const schedules = ref([
@@ -283,6 +283,15 @@ Paul Yiran Ntasin completed his Bachelor’s degree in Medical Laboratory Scienc
 
 He is currently a PhD graduate student in Immunology at the University of Iowa, where his research work has focused on multiple sclerosis and fatty acid metabolism in immune cells at one point. He enjoys playing football, productive discussions and loves beautiful/creative photos.
         `
+    },
+    {
+        image: speaker11,
+        "speaker": "Andra Umoru",
+        "bio": `
+        
+Andra Umoru is a Senior IT Manager—AI Engineer/Data Architect at Procter & Gamble in Poland. He earned his B.Tech in Computer Science from Mautech Yola, Adamawa State, Nigeria, and later completed his MSc in Computer Science and Information Systems (specializing in AI) at the Warsaw University of Technology in Poland.
+
+Driven by a passion for cutting-edge innovation, Andra leverages his deep expertise to build artificial intelligence tools and design the underlying data architectures that power business growth and operational efficiency. Additionally, he enjoys exploring AI’s broad applicability across various sectors of human endeavor. Andra currently resides in Warsaw, Poland, with his wife and two sons.`
     }
 ]);
 

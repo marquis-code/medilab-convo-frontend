@@ -420,7 +420,7 @@ status: 'latest',
     registerURL: "#",
   },
   {
-    title: "BLOOD DONATION ADVOCACY FOR INTERNS",
+    title: "BLOOD DONATION ADVOCACY",
     // img: img5,
     firstPart: `As Medical Laboratory Science interns, we stand at a vantage point in the blood donation ecosystem—we are directly involved in the collection, processing, and issuing of blood. This unique position not only gives us firsthand insight into the urgent need for blood but also the ability to coordinate awareness and drive donor inflow effectively.`,
     secondPart: `Leveraging our expertise and our expansive campus network, UniVerse, we hope to create a sustainable donor system. By engaging students, educating communities, and building strategic partnerships, we aim to make voluntary, regular blood donation the norm, ultimately pushing toward a 100% voluntary blood donation system.`,
