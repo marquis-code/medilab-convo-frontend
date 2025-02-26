@@ -298,6 +298,7 @@
       <div class="space-y-4 text-gray-600 leading-relaxed flex-grow">
         <p class="mb-4">{{ item.firstPart }}</p>
         <p class="mb-4">{{ item.secondPart }}</p>
+        <p class="mb-4">{{ item.thirdPart }}</p>
       </div>
 
       <div class="flex flex-col space-y-4 pt-4">
@@ -398,15 +399,17 @@ status: 'latest',
   {
     title: "FINANCIAL LITERACY FOR INTERNS",
     // img: img2,
-    firstPart: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.`,
-    secondPart: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.`,
+    firstPart: `As young healthcare professionals, mastering financial literacy is essential for achieving financial stability and security. Whether you're planning for internship expenses, professional certifications, or future career goals, effective financial management will help you navigate these responsibilities with confidence.`,
+    secondPart: `In Nigeria’s economic landscape, understanding personal finance is more important than ever. From dealing with inflation and currency fluctuations to covering registration fees with the Medical Laboratory Science Council of Nigeria and other professional costs, financial planning is a crucial skill.`,
+    thirdPart: `This session will equip you with practical knowledge and strategies to manage your finances wisely, make informed decisions about savings and investments, and build a strong foundation for long-term financial stability. Let’s take charge of our financial future together!`,
     registerURL: "#",
   },
   {
     title: "INTERNTIONAL MENTORNET",
     // img: img3,
-    firstPart: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.`,
-    secondPart: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.`,
+    firstPart: `The International Mentornet Program is designed to equip the next generation of Medical Laboratory Scientists with the knowledge, skills, and guidance needed to excel in their careers. Our goal is to connect 100 experienced mentors with 100 interns, fostering meaningful mentorship that shapes professional growth.`,
+    secondPart: `Through this initiative, interns gain invaluable exposure to diverse career pathways in Medical Laboratory Science, including biomedical research, public health, health technology, entrepreneurship, data science, academia, and more. The program employs a mentor-peer approach, allowing interns to learn directly from industry experts, gain practical insights, and refine their career trajectory.`,
+    thirdPart: `Beyond mentorship, participants become part of a thriving global community, building strong professional networks and engaging with like-minded individuals who are equally committed to advancing the field.`,
     registerURL: "#",
   },
   {
@@ -414,6 +417,22 @@ status: 'latest',
     // img: img4,
     firstPart: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.`,
     secondPart: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.`,
+    registerURL: "#",
+  },
+  {
+    title: "BLOOD DONATION ADVOCACY FOR INTERNS",
+    // img: img5,
+    firstPart: `As Medical Laboratory Science interns, we stand at a vantage point in the blood donation ecosystem—we are directly involved in the collection, processing, and issuing of blood. This unique position not only gives us firsthand insight into the urgent need for blood but also the ability to coordinate awareness and drive donor inflow effectively.`,
+    secondPart: `Leveraging our expertise and our expansive campus network, UniVerse, we hope to create a sustainable donor system. By engaging students, educating communities, and building strategic partnerships, we aim to make voluntary, regular blood donation the norm, ultimately pushing toward a 100% voluntary blood donation system.`,
+    thirdPart:`With the right awareness, structured advocacy, and a strong network, we can ensure that no life is lost due to a shortage of blood.`,
+    registerURL: "#",
+  },
+  {
+    title: "ANTIMICROBIAL RESISTANCE(AMR) ADVOCACY",
+    // img: img6,
+    firstPart: `Antimicrobial Resistance (AMR) has emerged as a silent pandemic, threatening to push us back to an era where common infections were untreatable, and minor wounds could turn fatal. History warns us—bacteria like Yersinia pestis wiped out nearly 50 million people in the 14th century, long before antimicrobials existed. Today, the unchecked misuse and overuse of these lifesaving drugs are accelerating resistance, making once-treatable infections increasingly deadly.`,
+    secondPart: `As Medical Laboratory Scientists, we are at the forefront of the fight against AMR. Through diagnostic stewardship, we play a critical role in ensuring accurate, timely, and evidence-based diagnosis, which helps prevent the unnecessary and inappropriate use of antimicrobials. By advocating for proper testing, responsible prescribing, and heightened awareness, we can curb the spread of resistant infections before they become untreatable.`,
+    thirdPart:`This advocacy, especially during AMR Awareness Week (18th - 24th November), seeks to educate, mobilize, and empower young professionals to take decisive action. With our collective expertise, we want to create a culture where antimicrobial use is guided by precision, responsibility, and a commitment to global health security.`,
     registerURL: "#",
   },
 ]);
