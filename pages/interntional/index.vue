@@ -80,14 +80,18 @@
       </div>
     </div>
 
-    <div class="mt-20 flex justify-center items-center">
-  <div class="w-[900px] flex flex-col justify-center items-center">
-    <h2 class="text-6xl text-center w-[900px] font-extrabold text-gray-900">
+    <div class="mt-20 flex justify-center items-center px-4">
+  <div class="max-w-[900px] w-full flex flex-col justify-center items-center">
+    <h2 class="text-4xl md:text-6xl text-center font-extrabold text-gray-900">
       Transform Your Internship Experience, Transform Your Future!
     </h2>
     <div class="h-[600px]"></div>
-    <p class="text-2xl w-[800px] font-bold text-gray-900 text-center">Don't let your internship be just another year. Make it the stepping stone to a thriving career!</p>
-    <p class="text-2xl w-[800px] font-bold text-gray-900 text-center">If you are a medical laboratory science intern looking to navigate your internship with confidence, skill, and purpose? Interntional, a dedicated community by MedLabConvo, is here to help you turn this crucial year into a transformative journey.</p>
+    <p class="text-xl md:text-2xl max-w-[800px] w-full font-bold text-gray-900 text-center mt-">
+      Don't let your internship be just another year. Make it the stepping stone to a thriving career!
+    </p>
+    <p class="text-xl md:text-2xl max-w-[800px] w-full font-bold text-gray-900 text-center mt-4">
+      If you are a medical laboratory science intern looking to navigate your internship with confidence, skill, and purpose, Interntional, a dedicated community by MedLabConvo, is here to help you turn this crucial year into a transformative journey.
+    </p>
   </div>
 </div>
 
@@ -281,11 +285,17 @@
         </h2>
       </div>
       <div class="container mx-auto px-4 grid lg:grid-cols-2 gap-6 mt-10 pb-10">
-  <div
-    v-for="(item, idx) in programsList"
-    :key="idx"
-    class="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow overflow-hidden mb-6 flex flex-col h-full"
-  >
+        <div
+  v-for="(item, idx) in programsList"
+  :key="idx"
+  class="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow overflow-hidden mb-6 flex flex-col h-full"
+  :class="{
+    'border-4 border-[#27628C]': item.status === 'latest',
+    'border-4 border-gray-300': item.status === 'old',
+    'border-4 border-gray-400': item.status === 'upcoming'
+  }"
+>
+
     <div class="relative">
       <img
         :src="item.img"
@@ -313,24 +323,14 @@
       </div>
 
       <div class="flex flex-col space-y-4 pt-4">
-                  <button  @click="router.push(`/interntional/${idx}`)" v-if="item.status === 'latest'" class="bg-[#27628C] text-white py-3 px-6 rounded  transition-colors text-center block w-full hover:bg-[#1a4665]">
-                  Learn  More
-                  </button>
+        <button  
+  @click="router.push(item.title === 'SCHOLARSHIP APPLICATION MASTER CLASS' ? '/interntional/scholarship-masterclass' : `/interntional/${idx}`)" 
+  v-if="item.status === 'latest'" 
+  class="bg-[#27628C] text-white py-3 px-6 rounded transition-colors text-center block w-full hover:bg-[#1a4665]">
+  Learn More
+</button>
+
                 </div>
-      <!-- <div class="pt-4">
-        <a
-          :href="item.registerURL"
-          target="_blank"
-          :class="{
-            'bg-gray-400 cursor-not-allowed': item.registerURL === '#',
-            'bg-[#27628C] hover:bg-[#1a4665]': item.registerURL !== '#'
-          }"
-          class="text-white py-3 px-6 rounded transition-colors text-center block w-full"
-          :disabled="item.registerURL === '#'"
-        >
-          Learn More
-        </a>
-      </div> -->
     </div>
   </div>
 </div>
@@ -404,7 +404,7 @@ professionals, providing interactive sessions, real-life examples, and expert gu
 on the specific needs of medical laboratory science interns, the masterclass ensures participants
 leave with actionable materials and enhanced confidence to pursue their academic and career
 goals.`,
-status: 'latest',
+    status: 'latest',
     registerURL: "https://forms.gle/7Fqgm5BRvD96fPNx7",
   },
   {
@@ -435,7 +435,7 @@ status: 'latest',
     // img: img5,
     firstPart: `As Medical Laboratory Science interns, we stand at a vantage point in the blood donation ecosystem—we are directly involved in the collection, processing, and issuing of blood. This unique position not only gives us firsthand insight into the urgent need for blood but also the ability to coordinate awareness and drive donor inflow effectively.`,
     secondPart: `Leveraging our expertise and our expansive campus network, UniVerse, we hope to create a sustainable donor system. By engaging students, educating communities, and building strategic partnerships, we aim to make voluntary, regular blood donation the norm, ultimately pushing toward a 100% voluntary blood donation system.`,
-    thirdPart:`With the right awareness, structured advocacy, and a strong network, we can ensure that no life is lost due to a shortage of blood.`,
+    thirdPart: `With the right awareness, structured advocacy, and a strong network, we can ensure that no life is lost due to a shortage of blood.`,
     registerURL: "#",
   },
   {
@@ -443,7 +443,7 @@ status: 'latest',
     // img: img6,
     firstPart: `Antimicrobial Resistance (AMR) has emerged as a silent pandemic, threatening to push us back to an era where common infections were untreatable, and minor wounds could turn fatal. History warns us—bacteria like Yersinia pestis wiped out nearly 50 million people in the 14th century, long before antimicrobials existed. Today, the unchecked misuse and overuse of these lifesaving drugs are accelerating resistance, making once-treatable infections increasingly deadly.`,
     secondPart: `As Medical Laboratory Scientists, we are at the forefront of the fight against AMR. Through diagnostic stewardship, we play a critical role in ensuring accurate, timely, and evidence-based diagnosis, which helps prevent the unnecessary and inappropriate use of antimicrobials. By advocating for proper testing, responsible prescribing, and heightened awareness, we can curb the spread of resistant infections before they become untreatable.`,
-    thirdPart:`This advocacy, especially during AMR Awareness Week (18th - 24th November), seeks to educate, mobilize, and empower young professionals to take decisive action. With our collective expertise, we want to create a culture where antimicrobial use is guided by precision, responsibility, and a commitment to global health security.`,
+    thirdPart: `This advocacy, especially during AMR Awareness Week (18th - 24th November), seeks to educate, mobilize, and empower young professionals to take decisive action. With our collective expertise, we want to create a culture where antimicrobial use is guided by precision, responsibility, and a commitment to global health security.`,
     registerURL: "#",
   },
 ]);

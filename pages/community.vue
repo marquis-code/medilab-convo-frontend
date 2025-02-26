@@ -89,14 +89,15 @@
         </p>
         
         <!-- Buttons -->
-        <div  class="flex flex-col space-y-4 max-w-md mx-auto pt-4">
-          <a  href="https://drive.google.com/file/d/1QKA319CWsyT81-snU33UNjBRmITWIp-H/view?usp=drivesdk" class="bg-[#27628C] text-center text-white py-3 px-6 rounded transition-colors">
-            Learn more about Interntional
-          </a>
-          <!-- <button disabled class="bg-[#27628C] disabled:opacity-25 disabled:cursor-not-allowed text-white py-3 px-6 rounded  transition-colors">
-            Join International (Community would be open soon)
-          </button> -->
-        </div>
+        <div class="flex flex-col space-y-4 max-w-md mx-auto pt-4">
+  <NuxtLink 
+    to="/interntional" 
+    class="bg-[#27628C] text-center text-white py-3 px-6 rounded transition-colors hover:bg-[#1a4665]"
+  >
+    Learn more about Interntional
+  </NuxtLink>
+</div>
+
       </div>
     </div>
 

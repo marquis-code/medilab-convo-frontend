@@ -56,9 +56,11 @@
       </div>
     </div>
 
-    <div class="flex justify-center items-center min-h-screen">
-    <div class="overflow-x-auto w-full max-w-[900px]">
+    <div class="flex flex-col justify-center items-center min-h-screen">
       <h1 class="text-center text-gray-800 uppercase text-2xl md:text-3xl">Project Schedule</h1>
+
+    <div class="overflow-x-auto w-full max-w-[900px]">
+      <!-- <h1 class="text-center text-gray-800 uppercase text-2xl md:text-3xl">Project Schedule</h1> -->
       <table class="w-full border-collapse border-8 border-white mt-10 mx-auto">
         <thead>
           <tr class="bg-[#2788b2]">
@@ -114,6 +116,15 @@
 </template>
 
 <script setup lang="ts">
+definePageMeta({
+  alias: [
+    '/interntional/scholarship-masterclass' // Maps "0" to this
+  ]
+});
+
+const route = useRoute();
+const id = route.params.id;
+
 import speaker1 from '@/assets/img/feranmi-obe.jpeg'
 import speaker2 from '@/assets/img/shamsuddeen.jpeg'
 import speaker3 from '@/assets/img/theodora-khofi.jpeg'
