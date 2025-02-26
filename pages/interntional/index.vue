@@ -312,9 +312,9 @@
     </div>
 
     <div class="p-6 md:p-8 space-y-6 flex flex-col flex-grow">
-      <h2 class="text-2xl font-bold text-gray-800 mb-4">
+      <!-- <h2 class="text-2xl font-bold text-gray-800 mb-4">
         {{ item.title }}
-      </h2>
+      </h2> -->
 
       <div class="space-y-4 text-gray-600 leading-relaxed flex-grow">
         <p class="mb-4">{{ item.firstPart }}</p>
@@ -394,7 +394,7 @@ const programsList = ref([
   {
     title: "SCHOLARSHIP APPLICATION MASTER CLASS",
     img: img1,
-    firstPart: `This masterclass is designed exclusively for medical laboratory science interns to equip them with
+    firstPart: `This scholarship application masterclass is designed exclusively for medical laboratory science interns to equip them with
 the tools and strategies necessary to secure academic scholarships and funding opportunities. It
 will guide participants through every step of the application process, from identifying
 opportunities to submitting winning applications, whether for postgraduate studies, international
