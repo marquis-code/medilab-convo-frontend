@@ -57,10 +57,9 @@
     </div>
 
     <div class="flex flex-col justify-center items-center min-h-screen">
-      <h1 class="text-center text-gray-800 uppercase text-2xl md:text-3xl">Project Schedule</h1>
+      <h1 class="text-center text-gray-800 uppercase text-2xl font-bold">Project Modules & Schedule</h1>
 
     <div class="overflow-x-auto w-full max-w-[900px]">
-      <!-- <h1 class="text-center text-gray-800 uppercase text-2xl md:text-3xl">Project Schedule</h1> -->
       <table class="w-full border-collapse border-8 border-white mt-10 mx-auto">
         <thead>
           <tr class="bg-[#2788b2]">
@@ -80,7 +79,7 @@
     </div>
   </div>
     <div>
-      <h1 class="text-center text-[#27628C] uppercase text-2xl mt-20">Faculty</h1>
+      <h1 class="text-center text-[#27628C] uppercase font-bold text-2xl mt-20">Facilitators</h1>
       <section class="grid lg:grid-cols-3 gap-6 mt-10 mx-auto max-w-7xl pb-6 p-3 lg:p-0">
         <article @click="openModal(item)" v-for="item in schedules"
           class="flex bg-white border-[0.5px] border-gray-10 rounded-lg transition hover:shadow-xl">
@@ -367,7 +366,7 @@ He is currently a PhD graduate student in Immunology at the University of Iowa, 
     {
         image: speaker11,
         "speaker": "Andra Umoru",
-        "position": "PhD student and Graduate Research Assistant, Augusta University.",
+        "position": "AI Engineer/Data Architect at Procter & Gamble, Poland.",
         "bio": `
         
 Andra Umoru is a Senior IT Manager—AI Engineer/Data Architect at Procter & Gamble in Poland. He earned his B.Tech in Computer Science from Mautech Yola, Adamawa State, Nigeria, and later completed his MSc in Computer Science and Information Systems (specializing in AI) at the Warsaw University of Technology in Poland.
