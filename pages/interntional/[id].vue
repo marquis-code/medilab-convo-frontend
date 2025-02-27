@@ -57,7 +57,7 @@
     </div>
 
     <div class="flex flex-col justify-center items-center min-h-screen">
-      <h1 class="text-center text-gray-800 uppercase text-2xl font-bold">Project Modules & Schedule</h1>
+      <h1 class="text-center text-[#27628C] uppercase text-2xl font-bold">Modules & Schedule</h1>
 
     <div class="overflow-x-auto w-full max-w-[900px]">
       <table class="w-full border-collapse border-8 border-white mt-10 mx-auto">
