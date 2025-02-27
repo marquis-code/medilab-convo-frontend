@@ -98,8 +98,7 @@
                 {{ item.position }}
               </p>
 
-
-              <p class="text-xs font-bold pt-5">CLICK TO SEE SPEAKER'S PROFILE</p>
+              <p class="text-xs font-bold pt-5">CLICK TO SEE FACILITATOR'S PROFILE</p>
             </div>
           </div>
         </article>
