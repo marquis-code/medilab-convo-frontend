@@ -34,14 +34,14 @@
     <div class="relative bg-[#27628C] lg:mt-10 pt-0 ">
       <div
         class="relative h-80 overflow-hidden  md:absolute md:left-0 md:h-full mt-44 pb-[400px] lg:pb-0 md:w-1/3 lg:w-1/2">
-        <img  class="w-full h-[400px] object-cover" src="@/assets/img/paradox.jpeg" alt="">
+        <img  class="w-full h-[400px] object-cover" src="@/assets/img/burnout.jpeg" alt="">
       </div>
       <div class="relative mx-auto max-w-7xl py-24 sm:py-32 px-10 lg:px-0 lg:px-8 lg:py-40">
         <div class="md:ml-auto md:w-2/3 md:pl-16 lg:w-1/2">
-          <p  class="mt-2 text-4xl font-semibold tracking-tight text-white sm:text-5xl">All or One: The Paradox of Identity</p>
-          <p  class="mt-6 text-base/7 text-white">"Many centuries ago, Theseus and the youths of Athens embarked on a journey to fight a beast on an island called Crete. Along their journey, they had to wrestle with wild winds yet they persevered. The tempest sea also proved an obstacle but they endured and kept rowing"</p>
+          <p  class="mt-2 text-4xl font-semibold tracking-tight text-white sm:text-5xl">Burning the Midnight Scientist          </p>
+          <p  class="mt-6 text-base/7 text-white">"For months, Faith prayed, fasted, and hoped against hope for the one thing that stood in her way of professional progress as a Medical Laboratory Scientist — internship placement. Soon enough she got a place and while to her mother it was a case of "What God cannot do doesn’t exist”, it was slowly beginning to feel like a blessing and a curse."</p>
           <div  class="mt-8">
-            <a href="https://mlcjourno.substack.com/p/all-or-one-the-paradox-of-identity?r=45bm0j&utm_campaign=post&utm_medium=web&triedRedirect=tru"
+            <a target="_blank" href="https://mlcjourno.substack.com/p/burning-the-midnight-scientist?r=37evr2&utm_campaign=post&utm_medium=web&triedRedirect=true"
               class="inline-flex rounded-md bg-white/10 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-white/20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">View
               publications <span aria-hidden="true">&rarr;</span></a>
           </div>
@@ -127,11 +127,19 @@ import journo5 from '@/assets/img/lab-coast/journo5.jpeg'
 import journo6 from '@/assets/img/lab-coast/journo6.jpeg'
 import journo7 from '@/assets/img/lab-coast/journo7.jpeg'
 import uuuuu from '@/assets/img/updates3.jpeg'
-import latest from '@/assets/img/paradox.jpeg'
+import updates3 from '@/assets/img/paradox.jpeg'
+import latest from '@/assets/img/burnout.jpeg'
 
 const journosList = ref([
 {
     image: latest,
+    title: 'Burning the Midnight Scientist',
+    desc: `For months, Faith prayed, fasted, and hoped against hope for the one thing that stood in her way of professional progress as a Medical Laboratory Scientist — internship placement. Soon enough she got a place and while to her mother it was a case of "What God cannot do doesn’t exist”, it was slowly beginning to feel like a blessing and a curse. `,
+    author: 'Precious Sylvanus',
+    url: 'https://mlcjourno.substack.com/p/burning-the-midnight-scientist?r=37evr2&utm_campaign=post&utm_medium=web&triedRedirect=true'
+  },
+{
+    image: updates3,
     title: 'All or One: The Paradox of Identity',
     desc: `Many centuries ago, Theseus and the youths of Athens embarked on a journey to fight a beast on an island called Crete. Along their journey, they had to wrestle with wild winds yet they persevered. The tempest sea also proved an obstacle but they endured and kept rowing. `,
     author: 'Williams Owoeye',

@@ -452,7 +452,7 @@ import journo5 from '@/assets/img/lab-coast/journo5.jpeg'
 import journo6 from '@/assets/img/lab-coast/journo6.jpeg'
 import journo7 from '@/assets/img/lab-coast/journo7.jpeg'
 import labcast from '@/assets/img/updates4.jpeg'
-import journo from '@/assets/img/paradox.jpeg'
+import journo from '@/assets/img/burnout.jpeg'
 const isOpen = ref(false)
 import img4 from '@/assets/img/updates1.jpeg'
 
@@ -508,9 +508,9 @@ const labcastLatest = ref([
 
 const journoLatest = ref([
 {
-    title: 'All or One: The Paradox of Identity',
+    title: 'Burning the Midnight Scientist',
     image: journo,
-    desc: `Many centuries ago, Theseus and the youths of Athens embarked on a journey to fight a beast on an island called Crete. Along their journey, they had to wrestle with wild winds yet they persevered. The tempest sea also proved an obstacle but they endured and kept rowing.”`,
+    desc: `For months, Faith prayed, fasted, and hoped against hope for the one thing that stood in her way of professional progress as a Medical Laboratory Scientist — internship placement. Soon enough she got a place and while to her mother it was a case of "What God cannot do doesn’t exist”, it was slowly beginning to feel like a blessing and a curse.`,
     previousEditionUrl: '#',
     status: 'latest',
     actionText: 'Read More',
