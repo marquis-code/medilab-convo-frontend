@@ -34,15 +34,15 @@
     <div class="relative bg-[#27628C] lg:mt-10 pt-0 ">
       <div
         class="relative h-80 overflow-hidden  md:absolute md:left-0 md:h-full mt-44 pb-[400px] lg:pb-0 md:w-1/3 lg:w-1/2">
-        <img  class="w-full h-[400px] object-cover" src="@/assets/img/carving-professional.jpeg" alt="">
+        <img  class="w-full h-[400px] object-cover" src="@/assets/img/burnout.jpeg" alt="">
       </div>
       <div class="relative mx-auto max-w-7xl py-24 sm:py-32 px-10 lg:px-0 lg:py-40">
         <div class="md:ml-auto md:w-2/3 md:pl-16 lg:w-1/2">
-          <p  class="mt-2 text-4xl font-semibold tracking-tight text-white sm:text-5xl">CARVING YOUR PROFESSIONAL IDENTITY AS A YOUNG MEDICAL LABORATORY SCIENTIST
+          <p  class="mt-2 text-4xl font-semibold tracking-tight text-white sm:text-5xl">BURNING THE MIDNIGHT SCIENTIST
           </p>
-          <p  class="mt-6 text-base/7 text-white">"Many centuries ago, Theseus and the youths of Athens embarked on a journey to fight a beast on an island called Crete. Along their journey, they had to wrestle with wild winds yet they persevered. The tempest sea also proved an obstacle but they endured and kept rowing"</p>
+          <p  class="mt-6 text-base/7 text-white">"For months, Faith prayed, fasted, and hoped against hope for the one thing that stood in her way of professional progress as a Medical Laboratory Scientist — internship placement. Soon enough she got a place and while to her mother it was a case of "What God cannot do doesn’t exist”, it was slowly beginning to feel like a blessing and a curse."</p>
           <div  class="mt-8">
-            <a href="https://mlcjourno.substack.com/p/carving-your-professional-identity?r=45bm0j&utm_campaign=post&utm_medium=web&triedRedirect=true"
+            <a href="https://mlcjourno.substack.com/p/burning-the-midnight-scientist?r=37evr2&utm_campaign=post&utm_medium=web&triedRedirect=true"
               class="inline-flex rounded-md bg-white/10 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-white/20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">View
               publications <span aria-hidden="true">&rarr;</span></a>
           </div>
@@ -134,20 +134,20 @@ import carvingProfessional from '@/assets/img/carving-professional.jpeg'
 
 const journosList = ref([
 {
+    image: uuuuu,
+    title: 'How Systemic Deficiencies Fuel the "Japa Jets"',
+    desc: `Health workforce migration describes the movement of healthcare professionals - medical laboratory scientists, doctors,  nurses, pharmacists and other allied health workers - from one country to another, often in search of better working conditions, career growth opportunities, or improved quality of life. Globally, this trend has been influenced by disparities in healthcare systems, economic conditions, and policies. When these professionals move from their country of origin to another, the movement is more precisely referred to as emigration. In Nigeria, emigration has reached alarming levels, as thousands of healthcare workers leave annually for developed countries like the United Kingdom, Canada, Switzerland and the United States. As the 2025 work and graduate school cycle begins, yet another significant wave of migration is expected.`,
+    author: 'Ubani Confidence',
+    url: 'https://mlcjourno.substack.com/p/healthcare-emigration-how-systemic?utm_source=post-banner&utm_medium=web&utm_campaign=posts-open-in-app&triedRedirect=true'
+  },
+  {
     image: carvingProfessional,
     title: 'CARVING YOUR PROFESSIONAL IDENTITY AS A YOUNG MEDICAL LABORATORY SCIENTIST',
     desc: `Getting to a place of “belonging” is quite the journey, one that I have personal experiences with. As an undergraduate, I felt like a log in the sea swaying with the waves. I wasn't grounded and had no idea what I wanted to do with my degree. This changed when I became part of MedLabConvo and belonged. From belonging, I saw the diverse opportunities available to me and I began to form my identity.`,
     author: 'Oluwaponmile',
     url: 'https://mlcjourno.substack.com/p/carving-your-professional-identity?r=45bm0j&utm_campaign=post&utm_medium=web&triedRedirect=true'
   },
-{
-    image: latest,
-    title: 'Burning the Midnight Scientist',
-    desc: `For months, Faith prayed, fasted, and hoped against hope for the one thing that stood in her way of professional progress as a Medical Laboratory Scientist — internship placement. Soon enough she got a place and while to her mother it was a case of "What God cannot do doesn’t exist”, it was slowly beginning to feel like a blessing and a curse. `,
-    author: 'Precious Sylvanus',
-    url: 'https://mlcjourno.substack.com/p/burning-the-midnight-scientist?r=37evr2&utm_campaign=post&utm_medium=web&triedRedirect=true'
-  },
-{
+  {
     image: updates3,
     title: 'All or One: The Paradox of Identity',
     desc: `Many centuries ago, Theseus and the youths of Athens embarked on a journey to fight a beast on an island called Crete. Along their journey, they had to wrestle with wild winds yet they persevered. The tempest sea also proved an obstacle but they endured and kept rowing. `,
@@ -155,11 +155,11 @@ const journosList = ref([
     url: 'https://mlcjourno.substack.com/p/all-or-one-the-paradox-of-identity?r=45bm0j&utm_campaign=post&utm_medium=web&triedRedirect=true'
   },
 {
-    image: uuuuu,
-    title: 'How Systemic Deficiencies Fuel the "Japa Jets"',
-    desc: `Health workforce migration describes the movement of healthcare professionals - medical laboratory scientists, doctors,  nurses, pharmacists and other allied health workers - from one country to another, often in search of better working conditions, career growth opportunities, or improved quality of life. Globally, this trend has been influenced by disparities in healthcare systems, economic conditions, and policies. When these professionals move from their country of origin to another, the movement is more precisely referred to as emigration. In Nigeria, emigration has reached alarming levels, as thousands of healthcare workers leave annually for developed countries like the United Kingdom, Canada, Switzerland and the United States. As the 2025 work and graduate school cycle begins, yet another significant wave of migration is expected.`,
-    author: 'Ubani Confidence',
-    url: 'https://mlcjourno.substack.com/p/healthcare-emigration-how-systemic?utm_source=post-banner&utm_medium=web&utm_campaign=posts-open-in-app&triedRedirect=true'
+    image: latest,
+    title: 'Burning the Midnight Scientist',
+    desc: `For months, Faith prayed, fasted, and hoped against hope for the one thing that stood in her way of professional progress as a Medical Laboratory Scientist — internship placement. Soon enough she got a place and while to her mother it was a case of "What God cannot do doesn’t exist”, it was slowly beginning to feel like a blessing and a curse. `,
+    author: 'Precious Sylvanus',
+    url: 'https://mlcjourno.substack.com/p/burning-the-midnight-scientist?r=37evr2&utm_campaign=post&utm_medium=web&triedRedirect=true'
   },
 {
     image: updates2,
