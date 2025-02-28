@@ -134,11 +134,18 @@ import carvingProfessional from '@/assets/img/carving-professional.jpeg'
 
 const journosList = ref([
 {
-    image: uuuuu,
-    title: 'How Systemic Deficiencies Fuel the "Japa Jets"',
-    desc: `Health workforce migration describes the movement of healthcare professionals - medical laboratory scientists, doctors,  nurses, pharmacists and other allied health workers - from one country to another, often in search of better working conditions, career growth opportunities, or improved quality of life. Globally, this trend has been influenced by disparities in healthcare systems, economic conditions, and policies. When these professionals move from their country of origin to another, the movement is more precisely referred to as emigration. In Nigeria, emigration has reached alarming levels, as thousands of healthcare workers leave annually for developed countries like the United Kingdom, Canada, Switzerland and the United States. As the 2025 work and graduate school cycle begins, yet another significant wave of migration is expected.`,
-    author: 'Ubani Confidence',
-    url: 'https://mlcjourno.substack.com/p/healthcare-emigration-how-systemic?utm_source=post-banner&utm_medium=web&utm_campaign=posts-open-in-app&triedRedirect=true'
+    image: latest,
+    title: 'Burning the Midnight Scientist',
+    desc: `For months, Faith prayed, fasted, and hoped against hope for the one thing that stood in her way of professional progress as a Medical Laboratory Scientist — internship placement. Soon enough she got a place and while to her mother it was a case of "What God cannot do doesn’t exist”, it was slowly beginning to feel like a blessing and a curse. `,
+    author: 'Precious Sylvanus',
+    url: 'https://mlcjourno.substack.com/p/burning-the-midnight-scientist?r=37evr2&utm_campaign=post&utm_medium=web&triedRedirect=true'
+  },
+  {
+    image: updates3,
+    title: 'All or One: The Paradox of Identity',
+    desc: `Many centuries ago, Theseus and the youths of Athens embarked on a journey to fight a beast on an island called Crete. Along their journey, they had to wrestle with wild winds yet they persevered. The tempest sea also proved an obstacle but they endured and kept rowing. `,
+    author: 'Williams Owoeye',
+    url: 'https://mlcjourno.substack.com/p/all-or-one-the-paradox-of-identity?r=45bm0j&utm_campaign=post&utm_medium=web&triedRedirect=true'
   },
   {
     image: carvingProfessional,
@@ -148,20 +155,13 @@ const journosList = ref([
     url: 'https://mlcjourno.substack.com/p/carving-your-professional-identity?r=45bm0j&utm_campaign=post&utm_medium=web&triedRedirect=true'
   },
   {
-    image: updates3,
-    title: 'All or One: The Paradox of Identity',
-    desc: `Many centuries ago, Theseus and the youths of Athens embarked on a journey to fight a beast on an island called Crete. Along their journey, they had to wrestle with wild winds yet they persevered. The tempest sea also proved an obstacle but they endured and kept rowing. `,
-    author: 'Williams Owoeye',
-    url: 'https://mlcjourno.substack.com/p/all-or-one-the-paradox-of-identity?r=45bm0j&utm_campaign=post&utm_medium=web&triedRedirect=true'
+    image: uuuuu,
+    title: 'How Systemic Deficiencies Fuel the "Japa Jets"',
+    desc: `Health workforce migration describes the movement of healthcare professionals - medical laboratory scientists, doctors,  nurses, pharmacists and other allied health workers - from one country to another, often in search of better working conditions, career growth opportunities, or improved quality of life. Globally, this trend has been influenced by disparities in healthcare systems, economic conditions, and policies. When these professionals move from their country of origin to another, the movement is more precisely referred to as emigration. In Nigeria, emigration has reached alarming levels, as thousands of healthcare workers leave annually for developed countries like the United Kingdom, Canada, Switzerland and the United States. As the 2025 work and graduate school cycle begins, yet another significant wave of migration is expected.`,
+    author: 'Ubani Confidence',
+    url: 'https://mlcjourno.substack.com/p/healthcare-emigration-how-systemic?utm_source=post-banner&utm_medium=web&utm_campaign=posts-open-in-app&triedRedirect=true'
   },
-{
-    image: latest,
-    title: 'Burning the Midnight Scientist',
-    desc: `For months, Faith prayed, fasted, and hoped against hope for the one thing that stood in her way of professional progress as a Medical Laboratory Scientist — internship placement. Soon enough she got a place and while to her mother it was a case of "What God cannot do doesn’t exist”, it was slowly beginning to feel like a blessing and a curse. `,
-    author: 'Precious Sylvanus',
-    url: 'https://mlcjourno.substack.com/p/burning-the-midnight-scientist?r=37evr2&utm_campaign=post&utm_medium=web&triedRedirect=true'
-  },
-{
+  {
     image: updates2,
     title: 'FROM ‘MIRACLE MEDS’ TO MAYHEM: COMBATING ANTIMICROBIAL RESISTANCE',
     desc: `One day, Mamooo's son, Tega, returned home after national youth service but Mamooo couldn’t believe her eyes. Tega’s gaunt frame and sun-scorched skin sent his mother into a frenzy. His eyes, once bright and full of life, now seemed dull and sunken. She immediately provided him with her 'miracle meds': anti-malaria, amoxicillin, and multivitamins. With a knowing glint in her eye, she declared, “Nah those giant mosquitoes wey dey that camp wan suck my pikin blood dry, na why he con resemble toothpick!”`,
