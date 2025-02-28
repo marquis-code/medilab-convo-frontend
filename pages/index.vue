@@ -452,7 +452,8 @@ import journo5 from '@/assets/img/lab-coast/journo5.jpeg'
 import journo6 from '@/assets/img/lab-coast/journo6.jpeg'
 import journo7 from '@/assets/img/lab-coast/journo7.jpeg'
 import labcast from '@/assets/img/updates4.jpeg'
-import journo from '@/assets/img/burnout.jpeg'
+import journo from '@/assets/img/paradox.jpeg'
+import carvingProfessional from '@/assets/img/carving-professional.jpeg'
 const isOpen = ref(false)
 import img4 from '@/assets/img/updates1.jpeg'
 
@@ -508,9 +509,9 @@ const labcastLatest = ref([
 
 const journoLatest = ref([
 {
-    title: 'Burning the Midnight Scientist',
-    image: journo,
-    desc: `For months, Faith prayed, fasted, and hoped against hope for the one thing that stood in her way of professional progress as a Medical Laboratory Scientist — internship placement. Soon enough she got a place and while to her mother it was a case of "What God cannot do doesn’t exist”, it was slowly beginning to feel like a blessing and a curse.`,
+    title: 'CARVING YOUR PROFESSIONAL IDENTITY AS A YOUNG MEDICAL LABORATORY SCIENTIST',
+    image: carvingProfessional,
+    desc: `Getting to a place of “belonging” is quite the journey, one that I have personal experiences with. As an undergraduate, I felt like a log in the sea swaying with the waves. I wasn't grounded and had no idea what I wanted to do with my degree. This changed when I became part of MedLabConvo and belonged. From belonging, I saw the diverse opportunities available to me and I began to form my identity.`,
     previousEditionUrl: '#',
     status: 'latest',
     actionText: 'Read More',
