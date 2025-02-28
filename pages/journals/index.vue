@@ -130,6 +130,7 @@ import journo7 from '@/assets/img/lab-coast/journo7.jpeg'
 import uuuuu from '@/assets/img/updates3.jpeg'
 import updates3 from '@/assets/img/paradox.jpeg'
 import latest from '@/assets/img/burnout.jpeg'
+import carvingProfessional from '@/assets/img/carving-professional.jpeg'
 
 const journosList = ref([
 {
@@ -146,13 +147,13 @@ const journosList = ref([
     author: 'Precious Sylvanus',
     url: 'https://mlcjourno.substack.com/p/burning-the-midnight-scientist?r=37evr2&utm_campaign=post&utm_medium=web&triedRedirect=true'
   },
-// {
-//     image: updates3,
-//     title: 'All or One: The Paradox of Identity',
-//     desc: `Many centuries ago, Theseus and the youths of Athens embarked on a journey to fight a beast on an island called Crete. Along their journey, they had to wrestle with wild winds yet they persevered. The tempest sea also proved an obstacle but they endured and kept rowing. `,
-//     author: 'Williams Owoeye',
-//     url: 'https://mlcjourno.substack.com/p/all-or-one-the-paradox-of-identity?r=45bm0j&utm_campaign=post&utm_medium=web&triedRedirect=true'
-//   },
+{
+    image: updates3,
+    title: 'All or One: The Paradox of Identity',
+    desc: `Many centuries ago, Theseus and the youths of Athens embarked on a journey to fight a beast on an island called Crete. Along their journey, they had to wrestle with wild winds yet they persevered. The tempest sea also proved an obstacle but they endured and kept rowing. `,
+    author: 'Williams Owoeye',
+    url: 'https://mlcjourno.substack.com/p/all-or-one-the-paradox-of-identity?r=45bm0j&utm_campaign=post&utm_medium=web&triedRedirect=true'
+  },
 {
     image: uuuuu,
     title: 'How Systemic Deficiencies Fuel the "Japa Jets"',
