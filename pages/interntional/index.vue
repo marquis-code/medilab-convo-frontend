@@ -1,18 +1,10 @@
 <template>
   <main>
     <div class="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32">
-      <img
-        src="@/assets/img/hero-background.jpeg"
-        alt=""
-        class="absolute inset-0 -z-10 h-full w-full object-cover"
-      />
-      <div
-        class="hidden sm:absolute sm:-top-10 sm:right-1/2 sm:-z-10 sm:mr-10 sm:block sm:transform-gpu sm:blur-3xl"
-        aria-hidden="true"
-      >
-        <div
-          class="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-[#ff4694] to-[#776fff] opacity-20"
-          style="
+      <img src="@/assets/img/hero-background.jpeg" alt="" class="absolute inset-0 -z-10 h-full w-full object-cover" />
+      <div class="hidden sm:absolute sm:-top-10 sm:right-1/2 sm:-z-10 sm:mr-10 sm:block sm:transform-gpu sm:blur-3xl"
+        aria-hidden="true">
+        <div class="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-[#ff4694] to-[#776fff] opacity-20" style="
             clip-path: polygon(
               74.1% 44.1%,
               100% 61.6%,
@@ -31,16 +23,12 @@
               76.1% 97.7%,
               74.1% 44.1%
             );
-          "
-        ></div>
+          "></div>
       </div>
       <div
         class="absolute -top-52 left-1/2 -z-10 -translate-x-1/2 transform-gpu blur-3xl sm:top-[-28rem] sm:ml-16 sm:translate-x-0 sm:transform-gpu"
-        aria-hidden="true"
-      >
-        <div
-          class="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-[#ff4694] to-[#776fff] opacity-20"
-          style="
+        aria-hidden="true">
+        <div class="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-[#ff4694] to-[#776fff] opacity-20" style="
             clip-path: polygon(
               74.1% 44.1%,
               100% 61.6%,
@@ -59,18 +47,12 @@
               76.1% 97.7%,
               74.1% 44.1%
             );
-          "
-        ></div>
+          "></div>
       </div>
-      <div
-        class="mx-auto max-w-7xl px-6 lg:px-8 flex justify-center items-center w-full flex-col pt-16"
-      >
-        <div
-          class="mx-auto max-w-2xl lg:mx-0 flex justify-center items-center w-full flex-col"
-        >
+      <div class="mx-auto max-w-7xl px-6 lg:px-8 flex justify-center items-center w-full flex-col pt-16">
+        <div class="mx-auto max-w-2xl lg:mx-0 flex justify-center items-center w-full flex-col">
           <h2
-            class="text-4xl font-bold text-center text-uppercase tracking-tight text-white uppercase sm:text-6xl mt-20"
-          >
+            class="text-4xl font-bold text-center text-uppercase tracking-tight text-white uppercase sm:text-6xl mt-20">
             Interntional
           </h2>
           <p class="mt-3 text-lg leading-8 text-white text-center">
@@ -81,23 +63,112 @@
     </div>
 
     <div class="mt-20 flex justify-center items-center px-4">
-  <div class="max-w-[900px] w-full flex flex-col justify-center items-center">
-    <h2 class="text-4xl md:text-6xl text-center font-extrabold text-gray-900">
-      Transform Your Internship Experience, Transform Your Future!
-    </h2>
-    <div class="h-[600px]"></div>
-    <p class="text-xl md:text-2xl max-w-[800px] w-full font-bold text-gray-900 text-center mt-">
-      Don't let your internship be just another year. Make it the stepping stone to a thriving career!
-    </p>
-    <p class="text-xl md:text-2xl max-w-[800px] w-full font-bold text-gray-900 text-center mt-4">
-      If you are a medical laboratory science intern looking to navigate your internship with confidence, skill, and purpose, Interntional, a dedicated community by MedLabConvo, is here to help you turn this crucial year into a transformative journey.
-    </p>
-  </div>
-</div>
+      <div class="max-w-[900px] w-full flex flex-col justify-center items-center">
+        <h2 class="text-4xl md:text-6xl text-center font-extrabold text-gray-900">
+          Transform Your Internship Experience, Transform Your Future!
+        </h2>
+        <div class="overflow-hidden">
+          <div class="mx-auto max-w-7xl px-6 pb-32 pt-36 sm:pt-60 lg:px-8 lg:pt-32 -mt-48 lg:-mt-0 md:-mt-0 sm:-mt-0">
+            <div class="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center">
+              <div class="mt-14 flex justify-end gap-8 sm:-mt-44 sm:justify-start sm:pl-0 lg:mt-0 lg:pl-0">
+               <!-- 1 -->
+               <div class="w-44 flex-none space-y-8 pt-32 sm:pt-0">
+                <div class="relative">
+                    <img src="@/assets/img/lab-coats3.jpg" alt=""
+                      class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg">
+                    <div class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10">
+                    </div>
+                  </div>
+                  <div class="relative">
+                    <img src="@/assets/img/lab-coats9.jpg" alt=""
+                      class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg">
+                    <div class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10">
+                    </div>
+                  </div>
+                  <div class="relative">
+                    <img src="@/assets/img/lab-coats2.jpg" alt=""
+                      class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg">
+                    <div class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10">
+                    </div>
+                  </div>
+                </div>
+                <!-- 2 -->
+                <div class="mr-auto w-44 flex-none space-y-8 sm:mr-0 sm:pt-52 lg:pt-36 hidden sm:block lg:block">
+                  <div class="relative">
+                    <img src="@/assets/img/lab-coats5.jpg" alt=""
+                      class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg">
+                    <div class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10">
+                    </div>
+                  </div>
+                  <div class="relative">
+                    <img src="@/assets/img/lab-coats7.jpg" alt=""
+                      class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg">
+                    <div class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10">
+                    </div>
+                  </div>
+                </div>
+                <!-- 3 -->
+                <div class="mr-auto w-44 flex-none space-y-8 sm:mr-0 sm:pt-52 lg:pt-36 hidden sm:hidden lg:block">
+                  <div class="relative">
+                    <img src="@/assets/img/lab-coats6.jpg" alt=""
+                      class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg">
+                    <div class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10">
+                    </div>
+                  </div>
+                  <div class="relative">
+                    <img src="@/assets/img/lab-coats8.jpg" alt=""
+                      class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg">
+                    <div class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10">
+                    </div>
+                  </div>
+                </div>
+                <!-- 4 -->
+                <div class="w-44 flex-none space-y-8 pt-32 sm:pt-0">
+                  <div class="relative">
+                    <img src="@/assets/img/lab-coats1.jpg" alt=""
+                      class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg">
+                    <div class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10">
+                    </div>
+                  </div>
+                  <div class="relative">
+                    <img src="@/assets/img/lab-coats4.jpg" alt=""
+                      class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg">
+                    <div class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10">
+                    </div>
+                  </div>
+                  <div class="relative">
+                    <img src="@/assets/img/lab-coats10.jpg" alt=""
+                      class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg">
+                    <div class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10">
+                    </div>
+                  </div>
+                  <!-- <div class="relative">
+                    <img src="@/assets/img/lab-coats8.jpg" alt=""
+                      class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg">
+                    <div class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10">
+                    </div>
+                  </div> -->
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <p class="text-xl md:text-2xl max-w-[800px] w-full font-bold text-gray-900 text-center mt-">
+          Don't let your internship be just another year. Make it the stepping stone to a thriving career!
+        </p>
+        <p class="text-xl md:text-2xl max-w-[800px] w-full font-bold text-gray-900 text-center mt-4">
+          If you are a medical laboratory science intern looking to navigate your internship with confidence, skill, and
+          purpose, Interntional, a dedicated community by MedLabConvo, is here to help you turn this crucial year into a
+          transformative journey.
+        </p>
+      </div>
+    </div>
 
 
     <div class="bg-white container mx-auto pt-20">
-      
+
       <div class="mx-auto lg:max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
         <h2 class="text-2xl font-bold text-gray-900 text-center uppercase">
           Cadres of Change
@@ -106,25 +177,16 @@
         <div class="flex justify-center items-center w-full lg:flex pt-10">
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
             <div
-              class="max-w-md lg:w-[350px] w-[300px] mx-auto bg-white rounded-lg border-2 border-gray-200 shadow-sm hover:shadow-md transition-shadow overflow-hidden p-6"
-            >
+              class="max-w-md lg:w-[350px] w-[300px] mx-auto bg-white rounded-lg border-2 border-gray-200 shadow-sm hover:shadow-md transition-shadow overflow-hidden p-6">
               <div class="mb-6 p-2 bg-indigo-100 rounded-lg w-max">
-                <img
-                  src="@/assets/img/goals1.jpeg"
-                  class="w-8 h-8 object-contain"
-                  alt="Personal Growth Icon"
-                />
+                <img src="@/assets/img/goals1.jpeg" class="w-8 h-8 object-contain" alt="Personal Growth Icon" />
               </div>
 
               <div class="space-y-4">
-                <h1
-                  class="text-xs font-semibold text-gray-500 uppercase tracking-wider"
-                >
+                <h1 class="text-xs font-semibold text-gray-500 uppercase tracking-wider">
                   Personal
                 </h1>
-                <h2
-                  class="text-xl font-bold text-gray-900 uppercase tracking-tighter mb-2"
-                >
+                <h2 class="text-xl font-bold text-gray-900 uppercase tracking-tighter mb-2">
                   Growth & Development
                 </h2>
 
@@ -138,25 +200,16 @@
             </div>
 
             <div
-              class="max-w-md lg:w-[350px] w-[300px] mx-auto bg-white rounded-lg border-2 border-gray-200 shadow-sm hover:shadow-md transition-shadow overflow-hidden p-6"
-            >
+              class="max-w-md lg:w-[350px] w-[300px] mx-auto bg-white rounded-lg border-2 border-gray-200 shadow-sm hover:shadow-md transition-shadow overflow-hidden p-6">
               <div class="mb-6 p-2 bg-indigo-100 rounded-lg w-max">
-                <img
-                  src="@/assets/img/goals1.jpeg"
-                  class="w-8 h-8 object-contain"
-                  alt="Personal Growth Icon"
-                />
+                <img src="@/assets/img/goals1.jpeg" class="w-8 h-8 object-contain" alt="Personal Growth Icon" />
               </div>
 
               <div class="space-y-4">
-                <h1
-                  class="text-xs font-semibold text-gray-500 uppercase tracking-wider"
-                >
+                <h1 class="text-xs font-semibold text-gray-500 uppercase tracking-wider">
                   Professional
                 </h1>
-                <h2
-                  class="text-xl font-bold text-gray-900 uppercase tracking-tighter mb-2"
-                >
+                <h2 class="text-xl font-bold text-gray-900 uppercase tracking-tighter mb-2">
                   Career Advancement & Opportunities
                 </h2>
 
@@ -172,25 +225,16 @@
             </div>
 
             <div
-              class="max-w-md lg:w-[350px] w-[300px] mx-auto bg-white rounded-lg border-2 border-gray-200 shadow-sm hover:shadow-md transition-shadow overflow-hidden p-6"
-            >
+              class="max-w-md lg:w-[350px] w-[300px] mx-auto bg-white rounded-lg border-2 border-gray-200 shadow-sm hover:shadow-md transition-shadow overflow-hidden p-6">
               <div class="mb-6 p-2 bg-indigo-100 rounded-lg w-max">
-                <img
-                  src="@/assets/img/goals1.jpeg"
-                  class="w-8 h-8 object-contain"
-                  alt="Personal Growth Icon"
-                />
+                <img src="@/assets/img/goals1.jpeg" class="w-8 h-8 object-contain" alt="Personal Growth Icon" />
               </div>
 
               <div class="space-y-4">
-                <h1
-                  class="text-xs font-semibold text-gray-500 uppercase tracking-wider"
-                >
+                <h1 class="text-xs font-semibold text-gray-500 uppercase tracking-wider">
                   Relational
                 </h1>
-                <h2
-                  class="text-xl font-bold text-gray-900 uppercase tracking-tighter mb-2"
-                >
+                <h2 class="text-xl font-bold text-gray-900 uppercase tracking-tighter mb-2">
                   Building Strong Connections
                 </h2>
 
@@ -202,25 +246,16 @@
               </div>
             </div>
             <div
-              class="max-w-md lg:w-[350px] w-[300px] mx-auto bg-white rounded-lg border-2 border-gray-200 shadow-sm hover:shadow-md transition-shadow overflow-hidden p-6"
-            >
+              class="max-w-md lg:w-[350px] w-[300px] mx-auto bg-white rounded-lg border-2 border-gray-200 shadow-sm hover:shadow-md transition-shadow overflow-hidden p-6">
               <div class="mb-6 p-2 bg-indigo-100 rounded-lg w-max">
-                <img
-                  src="@/assets/img/goals1.jpeg"
-                  class="w-8 h-8 object-contain"
-                  alt="Personal Growth Icon"
-                />
+                <img src="@/assets/img/goals1.jpeg" class="w-8 h-8 object-contain" alt="Personal Growth Icon" />
               </div>
 
               <div class="space-y-4">
-                <h1
-                  class="text-xs font-semibold text-gray-500 uppercase tracking-wider"
-                >
+                <h1 class="text-xs font-semibold text-gray-500 uppercase tracking-wider">
                   Domestic
                 </h1>
-                <h2
-                  class="text-xl font-bold text-gray-900 uppercase tracking-tighter mb-2"
-                >
+                <h2 class="text-xl font-bold text-gray-900 uppercase tracking-tighter mb-2">
                   Local Impact & Influence
                 </h2>
 
@@ -233,25 +268,16 @@
             </div>
 
             <div
-              class="max-w-md lg:w-[350px] w-[300px] mx-auto bg-white rounded-lg border-2 border-gray-200 shadow-sm hover:shadow-md transition-shadow overflow-hidden p-6"
-            >
+              class="max-w-md lg:w-[350px] w-[300px] mx-auto bg-white rounded-lg border-2 border-gray-200 shadow-sm hover:shadow-md transition-shadow overflow-hidden p-6">
               <div class="mb-6 p-2 bg-indigo-100 rounded-lg w-max">
-                <img
-                  src="@/assets/img/goals1.jpeg"
-                  class="w-8 h-8 object-contain"
-                  alt="Personal Growth Icon"
-                />
+                <img src="@/assets/img/goals1.jpeg" class="w-8 h-8 object-contain" alt="Personal Growth Icon" />
               </div>
 
               <div class="space-y-4">
-                <h1
-                  class="text-xs font-semibold text-gray-500 uppercase tracking-wider"
-                >
+                <h1 class="text-xs font-semibold text-gray-500 uppercase tracking-wider">
                   Systemic
                 </h1>
-                <h2
-                  class="text-xl font-bold text-gray-900 uppercase tracking-tighter mb-2"
-                >
+                <h2 class="text-xl font-bold text-gray-900 uppercase tracking-tighter mb-2">
                   Broad Professional Influence
                 </h2>
 
@@ -267,11 +293,8 @@
           </div>
         </div>
         <div class="flex flex-col space-y-4 max-w-md mx-auto pt-4 mt-10">
-          <a
-            href="https://drive.google.com/file/d/1QKA319CWsyT81-snU33UNjBRmITWIp-H/view?usp=drivesdk"
-            target="_blank"
-            class="bg-[#27628C] text-center text-white py-3 px-6 rounded transition-colors hover:bg-[#1a4665]"
-          >
+          <a href="https://drive.google.com/file/d/1QKA319CWsyT81-snU33UNjBRmITWIp-H/view?usp=drivesdk" target="_blank"
+            class="bg-[#27628C] text-center text-white py-3 px-6 rounded transition-colors hover:bg-[#1a4665]">
             Download our Handbook
           </a>
         </div>
@@ -285,55 +308,46 @@
         </h2>
       </div>
       <div class="container mx-auto px-4 grid lg:grid-cols-2 gap-6 mt-10 pb-10">
-        <div
-  v-for="(item, idx) in programsList"
-  :key="idx"
-  class="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow overflow-hidden mb-6 flex flex-col h-full"
-  :class="{
-    'border-4 border-[#27628C]': item.status === 'latest',
-    'border-4 border-gray-300': item.status === 'old',
-    'border-4 border-gray-400': item.status === 'upcoming'
-  }"
->
+        <div v-for="(item, idx) in programsList" :key="idx"
+          class="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow overflow-hidden mb-6 flex flex-col h-full"
+          :class="{
+            'border-4 border-[#27628C]': item.status === 'latest',
+            'border-4 border-gray-300': item.status === 'old',
+            'border-4 border-gray-400': item.status === 'upcoming'
+          }">
 
-    <div class="relative">
-      <img
-        :src="item.img"
-        class="w-full lg:h-96 object-cover"
-        :alt="item.title"
-      />
+          <div class="relative">
+            <img :src="item.img" class="w-full lg:h-96 object-cover" :alt="item.title" />
 
-      <div
-        v-if="item.registerURL === '#'"
-        class="absolute inset-0 bg-black/70 flex items-center justify-center text-white text-xl font-bold"
-      >
-        COMING SOON...
-      </div>
-    </div>
+            <div v-if="item.registerURL === '#'"
+              class="absolute inset-0 bg-black/70 flex items-center justify-center text-white text-xl font-bold">
+              COMING SOON...
+            </div>
+          </div>
 
-    <div class="p-6 md:p-8 space-y-6 flex flex-col flex-grow">
-      <!-- <h2 class="text-2xl font-bold text-gray-800 mb-4">
+          <div class="p-6 md:p-8 space-y-6 flex flex-col flex-grow">
+            <!-- <h2 class="text-2xl font-bold text-gray-800 mb-4">
         {{ item.title }}
       </h2> -->
 
-      <div class="space-y-4 text-gray-600 leading-relaxed flex-grow">
-        <p class="mb-4">{{ item.firstPart }}</p>
-        <p class="mb-4">{{ item.secondPart }}</p>
-        <p class="mb-4">{{ item.thirdPart }}</p>
+            <div class="space-y-4 text-gray-600 leading-relaxed flex-grow">
+              <p class="mb-4">{{ item.firstPart }}</p>
+              <p class="mb-4">{{ item.secondPart }}</p>
+              <p class="mb-4">{{ item.thirdPart }}</p>
+            </div>
+
+            <div class="flex flex-col space-y-4 pt-4">
+              <button
+                @click="router.push(item.title === 'SCHOLARSHIP APPLICATION MASTER CLASS' ? '/interntional/scholarship-masterclass' : `/interntional/${idx}`)"
+                v-if="item.status === 'latest'"
+                class="bg-[#27628C] text-white py-3 px-6 rounded transition-colors text-center block w-full hover:bg-[#1a4665]">
+                Learn More
+              </button>
+
+            </div>
+          </div>
+        </div>
       </div>
-
-      <div class="flex flex-col space-y-4 pt-4">
-        <button  
-  @click="router.push(item.title === 'SCHOLARSHIP APPLICATION MASTER CLASS' ? '/interntional/scholarship-masterclass' : `/interntional/${idx}`)" 
-  v-if="item.status === 'latest'" 
-  class="bg-[#27628C] text-white py-3 px-6 rounded transition-colors text-center block w-full hover:bg-[#1a4665]">
-  Learn More
-</button>
-
-                </div>
-    </div>
-  </div>
-</div>
 
 
       <div class="flex flex-col space-y-4 max-w-md mx-auto pt-4 mt-10 px-4">
@@ -341,10 +355,8 @@
           Join Us Today!
         </p>
         <a href="#" target="_blank" class="">
-          <button
-            disabled
-            class="bg-[#27628C] px-6 max-w-md w-full py-3 rounded text-white disabled:cursor-not-allowed disabled:opacity-25 hover:bg-[#1a4665]"
-          >
+          <button disabled
+            class="bg-[#27628C] px-6 max-w-md w-full py-3 rounded text-white disabled:cursor-not-allowed disabled:opacity-25 hover:bg-[#1a4665]">
             Interntional
           </button>
         </a>
@@ -356,19 +368,11 @@
         TEAM LEADS
       </h2>
       <div class="mx-auto max-w-7xl px-6 text-center lg:px-8">
-        <ul
-          role="list"
-          class="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 items-center"
-        >
+        <ul role="list"
+          class="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 items-center">
           <li v-for="(item, idx) in teamLeads" :key="idx">
-            <img
-              class="mx-auto h-56 w-56 rounded-full"
-              :src="item.image"
-              :alt="item.name"
-            />
-            <h3
-              class="mt-6 text-base/7 font-semibold tracking-tight text-gray-900"
-            >
+            <img class="mx-auto h-56 w-56 rounded-full" :src="item.image" :alt="item.name" />
+            <h3 class="mt-6 text-base/7 font-semibold tracking-tight text-gray-900">
               {{ item.name ?? "Nil" }}
             </h3>
             <p class="text-sm/6 text-gray-600">{{ item?.position ?? "Nil" }}</p>
