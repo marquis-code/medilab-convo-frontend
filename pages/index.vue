@@ -76,7 +76,7 @@
             <p class="mt-5 line-clamp-3 text-sm/6 text-gray-600">{{ item?.desc ?? 'Nil' }}</p>
           </div>
           <div class="relative mt-8 flex items-center gap-x-4">
-            <NuxtLink :to="`/programs/${idx}`" v-if="item.status === 'latest'" class="bg-[#27628C] text-center text-white px-6 py-3 rounded-lg w-full">Learn More</NuxtLink>
+            <NuxtLink :to="'/interntional/scholarship-masterclass'" v-if="item.status === 'latest'" class="bg-[#27628C] text-center text-white px-6 py-3 rounded-lg w-full">Learn More</NuxtLink>
             <img v-if="item.status !== 'latest'" src="@/assets/icons/avatar.svg" alt="" class="h-10 w-10 rounded-full bg-gray-100">
             <div v-if="item.status !== 'latest'"  class="text-sm/6">
               <p class="font-semibold text-gray-900">
