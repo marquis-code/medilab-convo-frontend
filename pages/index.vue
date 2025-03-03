@@ -455,7 +455,7 @@ import labcast from '@/assets/img/updates4.jpeg'
 import journo from '@/assets/img/paradox.jpeg'
 import burnOut from '@/assets/img/burnout.jpeg'
 const isOpen = ref(false)
-import img4 from '@/assets/img/updates1.jpeg'
+import img4 from '@/assets/img/scholarship.jpeg'
 
 const activitiesGrid = ref([
   {
@@ -521,10 +521,18 @@ const journoLatest = ref([
 
  const journosList = ref([
  {
-    title: 'ORIGINS',
+    title: 'SCHOLARSHIP APPLICATION MASTERCLASS',
     image: img4,
-    desc: `ORIGINS is a program specifically designed for undergraduates, aimed at equipping them with the essential knowledge, skills, mindset, and network opportunities they need to excel academically and grow into top-tier professionals. By focusing on the foundational years of a student’s academic journey, ORIGINS provides the tools and support necessary to help participants develop the right attitudes and cultivate a strong professional identity early on.`,
-    secondPart: `Through a combination of workshops, mentorship, and networking events, the program empowers students to navigate the challenges of their academic life with confidence, while building a network of peers and industry experts that will support their future career goals. ORIGINS not only helps students excel in the classroom but also prepares them to transition smoothly into their professional lives as standout leaders in their chosen fields.`,
+    desc: `This scholarship application masterclass is designed exclusively for medical laboratory science interns to equip them with
+the tools and strategies necessary to secure academic scholarships and funding opportunities. It
+will guide participants through every step of the application process, from identifying
+opportunities to submitting winning applications, whether for postgraduate studies, international
+conferences, or advanced training.`,
+    secondPart: `The program addresses the unique demands and career pathways of medical laboratory
+professionals, providing interactive sessions, real-life examples, and expert guidance. By focusing
+on the specific needs of medical laboratory science interns, the masterclass ensures participants
+leave with actionable materials and enhanced confidence to pursue their academic and career
+goals.`,
     previousEditionUrl: '#',
     status: 'latest',
     registerUrl: '#'

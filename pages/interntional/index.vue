@@ -396,7 +396,7 @@ const router = useRouter()
 
 const programsList = ref([
   {
-    title: "SCHOLARSHIP APPLICATION MASTER CLASS",
+    title: "SCHOLARSHIP APPLICATION MASTERCLASS",
     img: img1,
     firstPart: `This scholarship application masterclass is designed exclusively for medical laboratory science interns to equip them with
 the tools and strategies necessary to secure academic scholarships and funding opportunities. It
