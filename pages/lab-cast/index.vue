@@ -109,14 +109,59 @@
       <div class="bg-white p-0 rounded-lg shadow-md flex">
         <div class="lg:flex space-y-6 items-center space-x-4 w-full p-6">
           <img 
+            src="@/assets/img/graduate-school.jpeg"
+            alt="Podcast cover"
+            class="w-72 h-60 rounded-lg object-cover"
+          />
+          <div  class="flex flex-col w-full">
+            <div  class="font-semibold text-2xl">Navigating And Coping With Graduate School.</div>
+            <div  class="text-gray-500 mt-2">
+              Graduate school presents unique challenges, from balancing coursework and research to managing time effectively.
+In this episode of LabCast, hosts Better and Precious engage with two remarkable scholars; Gaius Bala, a master's student in molecular medicine at Nazarbayev University, Kazakhstan, and Samuel Gana, pursuing a master's in immunology at Usmanu Danfodiyo University, Nigeria.
+They share insights on building strong relationships with professors, overcoming imposter syndrome, and handling burnout. Whether you're considering graduate school or currently enrolled, this episode offers practical strategies and real experiences to help you thrive.
+Tune in for invaluable lessons on academic success and personal growth!
+            </div>
+            <div class="mt-3">
+        <p  class="text-gray-400 text-sm mb-2">Available On:</p>
+        <div  class="flex flex-wrap gap-2">
+          <a
+            href="https://open.spotify.com/episode/6UCcjv7H5lHH5nP9ZJjpAj"
+            class="inline-flex items-center px-4 py-1.5 rounded-full bg-[#1DB954] text-sm hover:opacity-90"
+          >
+            <span class="mr-2">
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"
+                />
+              </svg>
+            </span>
+            Spotify
+          </a>
+          <a 
+            href="https://podcasts.apple.com/us/podcast/thrills-and-terrors-of-bench-work/id1610877517?i=1000685322948"
+            class="inline-flex items-center border-[0.5px] border-gray-20 px-4 py-1.5 rounded-full bg-white text-black text-sm hover:opacity-90"
+          >
+            <span class="mr-2">
+              <svg fill="none" class="w-6 h-6" viewBox="0 0 92 92" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><linearGradient id="a" gradientUnits="userSpaceOnUse" x1="45.7809" x2="45.7809" y1="0" y2="91.5618"><stop offset="0" stop-color="#f452ff"/><stop offset="1" stop-color="#832bc1"/></linearGradient><rect fill="url(#a)" height="91.5618" rx="20" width="91.5618"/><g fill="#fff"><path d="m51.2102 53.6523c-.0891-.8028-.3565-1.3826-.8912-1.9178-1.0026-1.0481-2.7627-1.7394-4.8348-1.7394-2.072 0-3.8321.669-4.8347 1.7394-.5125.5575-.8021 1.115-.8912 1.9178-.1783 1.561-.0669 2.899.1114 5.0621.1782 2.0515.5124 4.7944.9357 7.5596.3119 1.9847.557 3.0551.7798 3.8133.3788 1.2488 1.7379 2.3192 3.899 2.3192 2.1612 0 3.5426-1.0927 3.899-2.3192.2228-.7582.4679-1.8286.7798-3.8133.4234-2.7875.7576-5.5081.9358-7.5596.2005-2.1631.2896-3.5011.1114-5.0621z"/><path d="m50.9618 42.2787c0 3.0328-2.4508 5.4858-5.4809 5.4858s-5.4809-2.453-5.4809-5.4858c0-3.0327 2.4508-5.4857 5.4809-5.4857s5.4809 2.4753 5.4809 5.4857z"/><path d="m45.4172 20.67c-12.7888.0446-23.2604 10.4363-23.4386 23.2364-.1337 10.3694 6.4834 19.2448 15.7297 22.5005.2228.0892.4456-.1115.4233-.3345-.1114-.8028-.2451-1.6056-.3342-2.4083-.0446-.2899-.2228-.5129-.4679-.6467-7.3079-3.1889-12.41-10.5256-12.3209-19.0218.1114-11.1499 9.2017-20.226 20.3194-20.3152 11.3851-.0892 20.6759 9.143 20.6759 20.5159 0 8.407-5.0798 15.6322-12.3208 18.8211-.2674.1115-.4457.3568-.4679.6467-.1114.8027-.2228 1.6055-.3342 2.4083-.0446.2453.2005.4237.4233.3345 9.1571-3.2111 15.7297-11.9527 15.7297-22.2106-.0446-12.9785-10.6276-23.5486-23.6168-23.5263z"/><path d="m44.8793 28.4746c-8.3327.3122-15.0167 7.2029-15.1281 15.543-.0668 5.4858 2.6736 10.3471 6.8845 13.2238.2005.1338.4902-.0223.4902-.2676-.0669-.9589-.0669-1.8063-.0223-2.6983.0223-.2899-.0891-.5575-.3119-.7582-2.5622-2.4083-4.1218-5.8425-4.0327-9.6335.1782-6.6899 5.5477-12.1311 12.2317-12.3987 7.2633-.2899 13.2344 5.5527 13.2344 12.7332 0 3.6572-1.5596 6.9576-4.0327 9.299-.2005.2007-.3119.4683-.3119.7582.0445.8697.0223 1.7171-.0223 2.676-.0223.2453.2674.4237.4902.2676 4.144-2.8321 6.8845-7.6265 6.8845-13.0231.0223-8.8753-7.397-16.0782-16.3536-15.7214z"/></g></svg>
+            </span>
+            Apple
+          </a>
+        </div>
+      </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="container mx-auto px-4 mt-8">
+      <div class="bg-white p-0 rounded-lg shadow-md flex">
+        <div class="lg:flex space-y-6 items-center space-x-4 w-full p-6">
+          <img 
             src="@/assets/img/updates4.jpeg"
             alt="Podcast cover"
             class="w-72 h-60 rounded-lg object-cover"
           />
           <div  class="flex flex-col w-full">
             <div  class="font-semibold text-2xl">The Thrills and Terros of Bench Work.</div>
-            <!-- <div  class="font-semibold text-2xl">The Trills and Terros of Bench Work</div> -->
-            <!-- <div class="text-gray-600">Episode 1</div> -->
             <div  class="text-gray-500 mt-2">
               In this episode, we delve into the experiences and insights of medical laboratory scientists working abroad (United Kingdom)). Join us as we explore how practice and perspectives differ in this region.
             </div>
@@ -145,31 +190,12 @@
             </span>
             Apple
           </a>
-          <!-- <a
-            href="#"
-            class="inline-flex items-center px-4 py-1.5 rounded-full bg-[#FF0000] text-sm hover:opacity-90"
-          >
-            <span class="mr-2">
-              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
-                <path
-                  d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
-                />
-              </svg>
-            </span>
-            YouTube
-          </a> -->
-          <!-- <a
-            href="#"
-            class="inline-flex items-center px-4 py-1.5 rounded-full bg-white text-black font-bold text-sm hover:opacity-90"
-          >
-            DAILYWIRE+
-          </a> -->
         </div>
       </div>
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
 
     <h1  class="flex justify-center items-center text-[#27628C] text-2xl mt-6">Popular Episodes</h1>
@@ -302,6 +328,33 @@ import episode30 from "@/assets/img/lab-coast/lab30.png";
 import episode31 from "@/assets/img/lab-coast/lab31.png";
 
 const podcastList = ref([
+{
+    name: "MLS CERTIFICATIONS: A Step By Step Guide For ASCPI",
+    description:
+      `In this episode, your hosts Jesutomisin and Confidence engage Mr. Samuel Oyebade on the essential steps to prepare for and succeed in the ASCPi certification exam.
+Our guest shared valuable insights on effective study strategies, key content areas to focus on, and practical tips to enhance your chances of success. We also discussed the career opportunities that the ASCPi certification can unlock for Medical Laboratory Scientists. Don't miss out on this episode! We hope to see you in the next one too. 💙
+You can connect with Mr. Samuel on LinkedIn @ https://www.linkedin.com/in/samoyebade`,
+    image: "",
+    link: "https://open.spotify.com/episode/1SYhGLTx61I1kCcCLLMMKs",
+    appleUrl: "https://podcasts.apple.com/us/podcast/the-impact-of-artificial-intelligence-on/id1610877517?i=1000674465767"
+  },
+  {
+    name: "Mental Health And Laboratory Diagnostics",
+    description:
+      `When you hear mental health, you think therapy and counseling alongside psychotherapist and psychologist. You never guessed medical laboratory scientists are on the forefront of diagnosing mental health.
+In this episode of Labcast, our hosts engage with Mr Praise-Jah Ewa, a Mental Health Professional/Laboratory Scientist, to explore the connection between mental health and laboratory diagnostics. They discuss how lab tests assist in diagnosing mental health conditions, the types of tests involved, and the future of personalized mental health care. Tune in to discover the science behind the mind and how lab tests contribute to mental well-being..`,
+    image: "",
+    link: "https://open.spotify.com/episode/19SvzEMUQFK6sGXK8ETK5c",
+    appleUrl: "https://podcasts.apple.com/us/podcast/the-impact-of-artificial-intelligence-on/id1610877517?i=1000674465767"
+  },
+{
+    name: "The Thrills and Terros of Bench Work",
+    description:
+      " In this episode, we delve into the experiences and insights of medical laboratory scientists working abroad (United Kingdom)). Join us as we explore how practice and perspectives differ in this region.",
+    image: "",
+    link: "https://open.spotify.com/episode/2vt0Albx3ehcFTyrgl55xi?si=RdhtkOPvTlKTC0_Hx2p3kQ",
+    appleUrl: "https://podcasts.apple.com/us/podcast/the-impact-of-artificial-intelligence-on/id1610877517?i=1000674465767"
+  },
 {
     name: "Medical Laboratory Science Practice: From MLS in Diaspora viewpoint",
     description:

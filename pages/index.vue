@@ -451,7 +451,7 @@ import journo4 from '@/assets/img/lab-coast/journo4.jpeg'
 import journo5 from '@/assets/img/lab-coast/journo5.jpeg'
 import journo6 from '@/assets/img/lab-coast/journo6.jpeg'
 import journo7 from '@/assets/img/lab-coast/journo7.jpeg'
-import labcast from '@/assets/img/updates4.jpeg'
+import labcast from '@/assets/img/graduate-school.jpeg'
 import journo from '@/assets/img/paradox.jpeg'
 import burnOut from '@/assets/img/burnout.jpeg'
 const isOpen = ref(false)
@@ -498,12 +498,15 @@ const activitiesGrid = ref([
 
 const labcastLatest = ref([
 {
-    title: 'The Thrills and  Terrors of Bench Work',
+    title: 'Navigating And Coping With Graduate School',
     image: labcast,
-    desc: `In this episode, we delve into the experiences and insights of medical laboratory scientists into the trills and terrors of bench work. Join us as we explore how practice and perspectives differ in this region.`,
+    desc: `  Graduate school presents unique challenges, from balancing coursework and research to managing time effectively.
+In this episode of LabCast, hosts Better and Precious engage with two remarkable scholars; Gaius Bala, a master's student in molecular medicine at Nazarbayev University, Kazakhstan, and Samuel Gana, pursuing a master's in immunology at Usmanu Danfodiyo University, Nigeria.
+They share insights on building strong relationships with professors, overcoming imposter syndrome, and handling burnout. Whether you're considering graduate school or currently enrolled, this episode offers practical strategies and real experiences to help you thrive.
+Tune in for invaluable lessons on academic success and personal growth!`,
     previousEditionUrl: '#',
     status: 'latest',
-    registerUrl: 'https://open.spotify.com/show/04S2XZGd6gczoCXStIrh8e'
+    registerUrl: 'https://open.spotify.com/episode/6UCcjv7H5lHH5nP9ZJjpAj'
   },
 ])
 
