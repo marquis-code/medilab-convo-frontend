@@ -48,7 +48,7 @@
               Start Quiz
             </button>
           </div>
-          <div class="grid grid-cols-2 md:grid-cols-4 gap-4 w-full">
+          <div class="grid hidden grid-cols-2 md:grid-cols-4 gap-4 w-full">
             <div v-for="(part, index) in nephronParts" :key="index" class="bg-white rounded-lg p-4 shadow-md hover:shadow-lg transition-shadow">
               <div class="w-12 h-12 rounded-full bg-teal-100 flex items-center justify-center mx-auto mb-2">
                 <span class="text-teal-800 font-bold text-lg">{{ part.letter }}</span>
@@ -85,7 +85,7 @@
                 >
                   <span class="font-bold text-teal-800 mr-2">{{ option.label }})</span>
                   <span>{{ option.text }}</span>
-                  <span class="text-gray-500 ml-1">({{ nephronParts.find(p => p.value === option.value)?.name }})</span>
+                  <span class="text-gray-500 hidden ml-1">({{ nephronParts.find(p => p.value === option.value)?.name }})</span>
                 </button>
               </div>
             </div>
