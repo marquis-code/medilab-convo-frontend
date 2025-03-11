@@ -114,61 +114,70 @@
   
         <!-- Results screen -->
         <div v-else-if="currentState === 'results'" class="flex-1 flex flex-col items-center justify-center max-w-3xl mx-auto">
-          <div class="bg-white rounded-xl shadow-lg p-6 mb-8 w-full text-center">
-            <div class="mb-6">
-              <div class="w-24 h-24 rounded-full bg-teal-100 flex items-center justify-center mx-auto mb-4">
+        <div class="bg-white rounded-xl shadow-lg p-6 mb-8 w-full text-center">
+          <div class="mb-6">
+            <div class="flex justify-center items-center mb-4">
+              <div class="w-16 h-16 rounded-full bg-teal-100 flex items-center justify-center mr-3">
                 <span class="text-teal-800 font-bold text-3xl">{{ result.letter }}</span>
               </div>
-              <h2 class="text-2xl md:text-3xl font-bold text-teal-800 mb-2">You are a {{ result.name }}!</h2>
-              <p class="text-gray-600">{{ result.description }}</p>
+              <h2 class="text-2xl md:text-3xl font-bold text-teal-800">
+                {{ getResultTitle() }}
+              </h2>
             </div>
             
             <div class="mb-6">
-              <h3 class="font-bold text-gray-800 mb-2">Your Answer Breakdown:</h3>
-              <div class="flex justify-center space-x-4">
-                <div v-for="(count, letter) in answerCounts" :key="letter" class="text-center">
-                  <div class="w-10 h-10 rounded-full bg-teal-100 flex items-center justify-center mx-auto mb-1">
-                    <span class="font-bold">{{ letter }}</span>
-                  </div>
-                  <div class="text-sm">{{ count }}</div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="flex flex-col sm:flex-row justify-center space-y-3 sm:space-y-0 sm:space-x-3">
-              <button @click="resetQuiz" class="px-4 py-2 bg-teal-600 text-white rounded-lg hover:bg-teal-700 transition-colors">
-                Take Quiz Again
-              </button>
-              <button @click="shareResults" class="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors">
-                Share Results
-              </button>
+              <img :src="getResultImage()" :alt="result.name" class="mx-auto rounded-lg max-h-64 object-cover mb-4" />
+              <p class="text-gray-600">{{ getResultDescription() }}</p>
             </div>
           </div>
           
-          <div class="bg-white rounded-xl shadow-lg p-6 w-full">
-            <h3 class="font-bold text-gray-800 mb-4">About Your Nephron Part:</h3>
-            <div class="flex flex-col md:flex-row">
-              <div class="md:w-1/3 mb-4 md:mb-0 md:mr-6">
-                <div class="bg-teal-50 rounded-lg p-4 h-full">
-                  <div class="nephron-animation">
-                    <!-- This would be replaced with an actual animation in a real app -->
-                    <div class="w-full h-40 bg-teal-100 rounded-lg flex items-center justify-center">
-                      <span class="text-teal-800 font-bold">{{ result.name }} Animation</span>
-                    </div>
-                  </div>
+          <div class="mb-6">
+            <h3 class="font-bold text-gray-800 mb-2">Your Answer Breakdown:</h3>
+            <div class="flex justify-center space-x-4">
+              <div v-for="(count, letter) in answerCounts" :key="letter" class="text-center">
+                <div class="w-10 h-10 rounded-full bg-teal-100 flex items-center justify-center mx-auto mb-1">
+                  <span class="font-bold">{{ letter }}</span>
                 </div>
-              </div>
-              <div class="md:w-2/3">
-                <h4 class="font-bold text-teal-800 mb-2">{{ result.name }} Function:</h4>
-                <p class="text-gray-600 mb-4">{{ result.function }}</p>
-                <h4 class="font-bold text-teal-800 mb-2">Personality Traits:</h4>
-                <ul class="list-disc list-inside text-gray-600">
-                  <li v-for="(trait, index) in result.traits" :key="index">{{ trait }}</li>
-                </ul>
+                <div class="text-sm">{{ count }}</div>
               </div>
             </div>
           </div>
+          
+          <div class="flex flex-col sm:flex-row justify-center space-y-3 sm:space-y-0 sm:space-x-3">
+            <button @click="resetQuiz" class="px-4 py-2 bg-teal-600 text-white rounded-lg hover:bg-teal-700 transition-colors">
+              Take Quiz Again
+            </button>
+            <button @click="shareResults" class="px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors flex items-center justify-center">
+              <Icon name="mdi:whatsapp" class="mr-2" />
+              Share on WhatsApp
+            </button>
+          </div>
         </div>
+        
+        <div class="bg-white rounded-xl shadow-lg p-6 w-full">
+          <h3 class="font-bold text-gray-800 mb-4">About Your Nephron Part:</h3>
+          <div class="flex flex-col md:flex-row">
+            <div class="md:w-1/3 mb-4 md:mb-0 md:mr-6">
+              <div class="bg-teal-50 rounded-lg p-4 h-full">
+                <div class="nephron-animation">
+                  <!-- This would be replaced with an actual animation in a real app -->
+                  <div class="w-full h-40 bg-teal-100 rounded-lg flex items-center justify-center">
+                    <span class="text-teal-800 font-bold">{{ result.name }} Animation</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="md:w-2/3">
+              <h4 class="font-bold text-teal-800 mb-2">{{ result.name }} Function:</h4>
+              <p class="text-gray-600 mb-4">{{ result.function }}</p>
+              <h4 class="font-bold text-teal-800 mb-2">Personality Traits:</h4>
+              <ul class="list-disc list-inside text-gray-600">
+                <li v-for="(trait, index) in result.traits" :key="index">{{ trait }}</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
       </div>
     </div>
   </template>
@@ -459,10 +468,6 @@
     showLeaveModal.value = true
   }
   
-  const shareResults = () => {
-    // In a real app, this would implement social sharing
-    showToast('Sharing functionality would be implemented here!', 'share')
-  }
   
   const showToast = (message: string, icon: string = 'info') => {
     toast.value = {
@@ -475,6 +480,50 @@
       toast.value.show = false
     }, 3000)
   }
+
+  // Get result image, title and description from the updated nephron parts
+const getResultImage = () => {
+  return result.value.image || '/placeholder.svg?height=300&width=400'
+}
+
+const getResultTitle = () => {
+  return result.value.title || `You are a ${result.value.name}!`
+}
+
+const getResultDescription = () => {
+  return result.value.fullDescription || result.value.description
+}
+
+// Share results via Web Share API with WhatsApp as target
+const shareResults = async () => {
+  const resultText = `${getResultTitle()}\n\n${getResultDescription()}\n\nTake the Nephron Quiz to find out which part of the kidney you are!`
+  
+  if (navigator.share) {
+    try {
+      await navigator.share({
+        title: 'My Nephron Quiz Result',
+        text: resultText,
+        url: window.location.href
+      })
+      showToast('Shared successfully!', 'check-circle')
+    } catch (error) {
+      // If user cancels or sharing fails, try WhatsApp directly
+      shareToWhatsApp()
+    }
+  } else {
+    // Fallback for browsers that don't support Web Share API
+    shareToWhatsApp()
+  }
+}
+
+// Fallback method to share directly to WhatsApp
+const shareToWhatsApp = () => {
+  const resultText = `${getResultTitle()}\n\n${getResultDescription()}\n\nTake the Nephron Quiz to find out which part of the kidney you are!`
+  const encodedText = encodeURIComponent(resultText)
+  const whatsappUrl = `https://wa.me/?text=${encodedText}`
+  window.open(whatsappUrl, '_blank')
+  showToast('Opening WhatsApp to share', 'share')
+}
   
   // Session storage
   const saveToSessionStorage = () => {
