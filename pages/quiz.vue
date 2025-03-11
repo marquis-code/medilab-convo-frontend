@@ -126,7 +126,7 @@
             </div>
             
             <div class="mb-6">
-              <img :src="getResultImage()" :alt="result.name" class="mx-auto rounded-lg max-h-64 object-cover mb-4" />
+              <!-- <img :src="getResultImage()" :alt="result.name" class="mx-auto rounded-lg max-h-64 object-cover mb-4" /> -->
               <p class="text-gray-600">{{ getResultDescription() }}</p>
             </div>
           </div>
@@ -158,14 +158,14 @@
           <h3 class="font-bold text-gray-800 mb-4">About Your Nephron Part:</h3>
           <div class="flex flex-col md:flex-row">
             <div class="md:w-1/3 mb-4 md:mb-0 md:mr-6">
-              <div class="bg-teal-50 rounded-lg p-4 h-full">
+              <img :src="result.image" class="rounded-xl" />
+              <!-- <div class="bg-teal-50 rounded-lg p-4 h-full">
                 <div class="nephron-animation">
-                  <!-- This would be replaced with an actual animation in a real app -->
                   <div class="w-full h-40 bg-teal-100 rounded-lg flex items-center justify-center">
                     <span class="text-teal-800 font-bold">{{ result.name }} Animation</span>
                   </div>
                 </div>
-              </div>
+              </div> -->
             </div>
             <div class="md:w-2/3">
               <h4 class="font-bold text-teal-800 mb-2">{{ result.name }} Function:</h4>
@@ -183,6 +183,10 @@
   </template>
   
   <script setup lang="ts">
+  import imagea from '@/assets/img/a.jpeg'
+  import imageb from '@/assets/img/b.jpeg'
+  import imagec from '@/assets/img/c.jpeg'
+  import imaged from '@/assets/img/d.jpeg'
   import { ref, computed, onMounted, onBeforeUnmount, watch } from 'vue'
   import { useRouter } from 'nuxt/app'
 
@@ -197,6 +201,9 @@
     name: string
     description: string
     function: string
+    image: string
+    title: string
+    desc: string
     traits: string[]
   }
   
@@ -217,7 +224,10 @@
     {
       value: 'glomerulus',
       letter: 'A',
+      image: imagea,
       name: 'Glomerulus',
+      title: ' You are the Glomerulus (The Gatekeeper)!',
+      desc: `You are selective, strategic, and precise. You filter out what isn't useful and focus only on what matters. People rely on your strong judgment and ability to remove distractions.`,
       description: 'You are selective and efficient, focusing on what truly matters.',
       function: 'The glomerulus filters blood to create filtrate, selectively allowing small molecules to pass through while keeping larger ones in the bloodstream.',
       traits: [
@@ -230,7 +240,10 @@
     {
       value: 'bowmans',
       letter: 'B',
+      image: imageb,
       name: 'Bowman\'s Capsule',
+      title: 'You are Bowman`s Capsule (The Collector)!',
+      desc: `You love absorbing information, gathering ideas, and keeping your options open. Even if you don't use everything you take in, you ensure you have plenty to work with.`,
       description: 'You collect and gather information, creating a foundation for future actions.',
       function: 'Bowman\'s capsule collects the filtrate from the glomerulus and directs it to the proximal convoluted tubule.',
       traits: [
@@ -244,6 +257,9 @@
       value: 'pct',
       letter: 'C',
       name: 'PCT',
+      image: imagec,
+      title: 'You are the Proximal Convoluted Tubule (The Efficient Utilizer)!',
+      desc: `You are a resourceful problem-solver who makes the most of every opportunity. You refine, prioritize, and ensure everything is used efficiently.`,
       description: 'You are resourceful and efficient, making the most of what you have.',
       function: 'The Proximal Convoluted Tubule (PCT) reabsorbs valuable substances from the filtrate back into the bloodstream.',
       traits: [
@@ -256,7 +272,10 @@
     {
       value: 'loop',
       letter: 'D',
+      image: imaged,
       name: 'Loop of Henle',
+      title: 'You are the Loop of Henle (The Resilient Survivor)!',
+      desc: `You are strong, adaptable, and able to endure even the toughest challenges. You find ways to thrive under pressure and always push forward.`,
       description: 'You are adaptable and resilient, able to thrive under pressure and changing conditions.',
       function: 'The Loop of Henle creates a concentration gradient that allows the kidney to concentrate or dilute urine as needed.',
       traits: [
