@@ -454,6 +454,7 @@ import journo7 from '@/assets/img/lab-coast/journo7.jpeg'
 import labcast from '@/assets/img/graduate-school.jpeg'
 import journo from '@/assets/img/paradox.jpeg'
 import burnOut from '@/assets/img/burnout.jpeg'
+import latest1 from '@/assets/img/kidney.jpeg'
 const isOpen = ref(false)
 import img4 from '@/assets/img/scholarship.jpeg'
 
@@ -512,9 +513,9 @@ Tune in for invaluable lessons on academic success and personal growth!`,
 
 const journoLatest = ref([
 {
-    title: 'BURNING THE MIDNIGHT SCIENTIST',
-    image: burnOut,
-    desc: `For months, Faith prayed, fasted, and hoped against hope for the one thing that stood in her way of professional progress as a Medical Laboratory Scientist — internship placement. Soon enough she got a place and while to her mother it was a case of "What God cannot do doesn’t exist”, it was slowly beginning to feel like a blessing and a curse. `,
+    title: 'Maintaining The Silent Engine',
+    image: latest1,
+    desc: `The heart may carry the beats, but your bean-shaped organ carries the rhythm of life. Your kidneys are the silent engines your body can't function without. The kidneys help filter your blood of wastes passed down as urine, balancing your body fluids and electrolytes. Without your kidneys, your toilet visits will be almost non-existent, and your overall health may come crashing down.`,
     previousEditionUrl: '#',
     status: 'latest',
     actionText: 'Read More',
