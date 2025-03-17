@@ -333,9 +333,14 @@
   </div>
   <p   class="mt-2 text-balance text-3xl px-3 lg:px-0 lg:text-4xl pt-32 text-center font-semibold tracking-tight text-gray-900">Ensure we don't stop doing what we do.</p>
   <p   class="text-sd text-center pt-3">Make a donation</p>
- <div   class="flex justify-center items-center pt-10 px-6 lg:px-0 w-full">
-  <button disabled class="bg-[#27628C] px-6 max-w-md w-full py-3 rounded-lg text-white disabled:cursor-not-allowed disabled:opacity-25">Donate</button>
- </div>
+  <div class="flex justify-center items-center pt-10 px-6 lg:px-0 w-full">
+  <router-link 
+    to="/donate" 
+    class="bg-[#27628C] px-6 max-w-md w-full py-3 rounded-lg text-white text-center">
+    Donate
+  </router-link>
+</div>
+
 </div>
 
 
