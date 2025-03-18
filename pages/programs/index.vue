@@ -106,17 +106,27 @@ import img1 from '@/assets/img/medics.jpg'
 import img2 from '@/assets/img/forging-a-path.jpg'
 import img3 from '@/assets/img/happenings.jpg'
 import img4 from '@/assets/img/updates1.jpeg'
+import convo from "@/assets/img/convo.jpeg"
 const router = useRouter()
 const programsList = ref([
-  {
-    title: 'ORIGINS',
-    img: img4,
-    firstPart: `ORIGINS is a program specifically designed for undergraduates, aimed at equipping them with the essential knowledge, skills, mindset, and network opportunities they need to excel academically and grow into top-tier professionals. By focusing on the foundational years of a student’s academic journey, ORIGINS provides the tools and support necessary to help participants develop the right attitudes and cultivate a strong professional identity early on.`,
-    secondPart: `Through a combination of workshops, mentorship, and networking events, the program empowers students to navigate the challenges of their academic life with confidence, while building a network of peers and industry experts that will support their future career goals. ORIGINS not only helps students excel in the classroom but also prepares them to transition smoothly into their professional lives as standout leaders in their chosen fields.`,
+{
+    title: 'MEDLABCONVO 21ST CENTURY BIOMEDICAL SCIENCE CONFERENCE 2025',
+    img: convo,
+    firstPart: `Are you ready to explore the latest innovations and research shaping the future of biomedical science? Join us for an exciting virtual Biomedical Science Conference, bringing together experts, researchers, and professionals to discuss on the topic:`,
+    secondPart: `Strengthening laboratory systems for a sustainable future: Global and Local Perspective...`,
     previousEditionUrl: '#',
     status: 'latest',
     registerUrl: '#'
   },
+  // {
+  //   title: 'ORIGINS',
+  //   img: img4,
+  //   firstPart: `ORIGINS is a program specifically designed for undergraduates, aimed at equipping them with the essential knowledge, skills, mindset, and network opportunities they need to excel academically and grow into top-tier professionals. By focusing on the foundational years of a student’s academic journey, ORIGINS provides the tools and support necessary to help participants develop the right attitudes and cultivate a strong professional identity early on.`,
+  //   secondPart: `Through a combination of workshops, mentorship, and networking events, the program empowers students to navigate the challenges of their academic life with confidence, while building a network of peers and industry experts that will support their future career goals. ORIGINS not only helps students excel in the classroom but also prepares them to transition smoothly into their professional lives as standout leaders in their chosen fields.`,
+  //   previousEditionUrl: '#',
+  //   status: 'latest',
+  //   registerUrl: '#'
+  // },
   {
     title: 'FORGING A CAREER PATH',
     img: img2,
