@@ -45,7 +45,7 @@
                 
                 <!-- Buttons -->
                 <div class="flex flex-col space-y-4 max-w-md mx-auto pt-4">
-                  <button  @click="router.push(`/programs/${idx}`)" v-if="item.status === 'latest'" class="bg-[#27628C] text-white py-3 px-6 rounded  transition-colors">
+                  <button  @click="router.push('/programs/biomedical-science-conference')" v-if="item.status === 'latest'" class="bg-[#27628C] text-white py-3 px-6 rounded  transition-colors">
                   Learn  More
                   </button>
                   <!-- <button class="bg-teal-600 text-white py-3 px-6 rounded hover:bg-teal-700 transition-colors">

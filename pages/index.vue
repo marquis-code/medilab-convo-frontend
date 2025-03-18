@@ -76,7 +76,7 @@
             <p class="mt-5 line-clamp-3 text-sm/6 text-gray-600">{{ item?.desc ?? 'Nil' }}</p>
           </div>
           <div class="relative mt-8 flex items-center gap-x-4">
-            <NuxtLink :to="'/interntional/scholarship-masterclass'" v-if="item.status === 'latest'" class="bg-[#27628C] text-center text-white px-6 py-3 rounded-lg w-full">Learn More</NuxtLink>
+            <NuxtLink :to="'/programs/biomedical-science-conference'" v-if="item.status === 'latest'" class="bg-[#27628C] text-center text-white px-6 py-3 rounded-lg w-full">Learn More</NuxtLink>
             <img v-if="item.status !== 'latest'" src="@/assets/icons/avatar.svg" alt="" class="h-10 w-10 rounded-full bg-gray-100">
             <div v-if="item.status !== 'latest'"  class="text-sm/6">
               <p class="font-semibold text-gray-900">
@@ -462,6 +462,7 @@ import burnOut from '@/assets/img/burnout.jpeg'
 import latest1 from '@/assets/img/kidney.jpeg'
 const isOpen = ref(false)
 import img4 from '@/assets/img/scholarship.jpeg'
+import convo from "@/assets/img/convo.jpeg"
 
 const activitiesGrid = ref([
   {
@@ -530,22 +531,39 @@ const journoLatest = ref([
 
  const journosList = ref([
  {
-    title: 'SCHOLARSHIP APPLICATION MASTERCLASS',
-    image: img4,
-    desc: `This scholarship application masterclass is designed exclusively for medical laboratory science interns to equip them with
-the tools and strategies necessary to secure academic scholarships and funding opportunities. It
-will guide participants through every step of the application process, from identifying
-opportunities to submitting winning applications, whether for postgraduate studies, international
-conferences, or advanced training.`,
-    secondPart: `The program addresses the unique demands and career pathways of medical laboratory
-professionals, providing interactive sessions, real-life examples, and expert guidance. By focusing
-on the specific needs of medical laboratory science interns, the masterclass ensures participants
-leave with actionable materials and enhanced confidence to pursue their academic and career
-goals.`,
+    title: 'MEDLABCONVO 21ST CENTURY BIOMEDICAL SCIENCE CONFERENCE 2025',
+    image: convo,
+    desc: `Are you ready to explore the latest innovations and research shaping the future of biomedical science? Join us for an exciting virtual Biomedical Science Conference, bringing together experts, researchers, and professionals to discuss on the topic: Strengthening laboratory systems for a sustainable future: Global and Local Perspective`,
+    secondPart: `
+    What to Expect?
+
+    Expert-Led Sessions on Cutting-Edge Biomedical Research
+
+    Discussions on Emerging Technologies & Trends
+
+    Interactive Networking with Global Professionals
+    `,
     previousEditionUrl: '#',
     status: 'latest',
     registerUrl: '#'
   },
+//  {
+//     title: 'SCHOLARSHIP APPLICATION MASTERCLASS',
+//     image: img4,
+//     desc: `This scholarship application masterclass is designed exclusively for medical laboratory science interns to equip them with
+// the tools and strategies necessary to secure academic scholarships and funding opportunities. It
+// will guide participants through every step of the application process, from identifying
+// opportunities to submitting winning applications, whether for postgraduate studies, international
+// conferences, or advanced training.`,
+//     secondPart: `The program addresses the unique demands and career pathways of medical laboratory
+// professionals, providing interactive sessions, real-life examples, and expert guidance. By focusing
+// on the specific needs of medical laboratory science interns, the masterclass ensures participants
+// leave with actionable materials and enhanced confidence to pursue their academic and career
+// goals.`,
+//     previousEditionUrl: '#',
+//     status: 'latest',
+//     registerUrl: '#'
+//   },
   // {
   //   image: journo1,
   //   title: 'Sexism in STEM: A Farce or Fact',
