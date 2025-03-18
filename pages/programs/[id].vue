@@ -272,7 +272,182 @@ function closeModal() {
 </script> -->
 
 <template>
-    <div class="overflow-hidden bg-white mt-20">
+     <div class="overflow-hidden bg-white mt-20">
+    <div class="relative mx-auto max-w-7xl px-6 py-16 lg:px-8">
+      <!-- Background elements -->
+      <div class="absolute bottom-0 left-3/4 top-0 hidden w-screen bg-[#27628C] lg:block"></div>
+      
+      <!-- Animated DNA helix decoration -->
+      <div class="absolute top-10 right-10 opacity-20 animate-pulse hidden lg:block">
+        <DnaHelix />
+      </div>
+      
+      <!-- Animated dots pattern -->
+      <div class="absolute left-0 top-20 -ml-20 hidden lg:block">
+        <svg width="404" height="384" fill="none" viewBox="0 0 404 384" aria-hidden="true" class="animate-float">
+          <defs>
+            <pattern id="de316486-4a29-4312-bdfc-fbce2132a2c1" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+              <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="#27628C" opacity="0.2" />
+            </pattern>
+          </defs>
+          <rect width="404" height="384" fill="url(#de316486-4a29-4312-bdfc-fbce2132a2c1)" />
+        </svg>
+      </div>
+      
+      <div class="mx-auto max-w-prose text-base lg:grid lg:max-w-none lg:grid-cols-2 lg:gap-8">
+        <div>
+          <h3 
+            class="mt-2 text-3xl/8 font-bold tracking-tight sm:text-4xl text-[#27628C] uppercase text-center lg:text-start animate-fade-in"
+          >
+            MEDLABCONVO 21ST CENTURY BIOMEDICAL SCIENCE CONFERENCE 2025
+          </h3>
+        </div>
+      </div>
+      
+      <div class="mt-8 lg:grid lg:grid-cols-2 lg:gap-8">
+        <div class="relative lg:col-start-2 lg:row-start-1">
+          <svg 
+            class="absolute right-0 top-0 -mr-20 -mt-20 hidden lg:block animate-float" 
+            width="404" 
+            height="384"
+            fill="#ffffff" 
+            viewBox="0 0 404 384" 
+            aria-hidden="true"
+          >
+            <defs>
+              <pattern id="de316486-4a29-4312-bdfc-fbce2132a2c1" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+                <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="#ffffff" />
+              </pattern>
+            </defs>
+            <rect width="404" height="384" fill="url(#de316486-4a29-4312-bdfc-fbce2132a2c1)" />
+          </svg>
+          
+          <div class="relative mx-auto max-w-prose text-base lg:max-w-none">
+            <figure class="overflow-hidden rounded-lg shadow-lg transform transition-all duration-500 hover:scale-105">
+              <img 
+                class="w-full rounded-lg object-cover shadow-lg lg:aspect-auto animate-fade-in"
+                src="@/assets/img/convo.jpeg"
+                alt="Conference image showing biomedical science professionals" 
+                width="1184" 
+                height="1376"
+              >
+              <!-- Microscope decoration overlay -->
+              <div class="absolute -bottom-10 -right-10 opacity-20 rotate-12 transform scale-75">
+                <MicroscopeIcon />
+              </div>
+            </figure>
+          </div>
+        </div>
+        
+        <div class="mt-8 lg:mt-0">
+          <div class="mx-auto text-base/7 text-gray-500">
+            <p class="text-lg/7 animate-slide-up">
+              Are you ready to explore the latest innovations and research shaping the future of biomedical science? Join us for an exciting virtual Biomedical Science Conference, bringing together experts, researchers, and professionals to discuss on the topic:
+            </p>
+            <p class="mt-4 text-xl font-bold text-[#27628C] animate-pulse">
+              Strengthening laboratory systems for a sustainable future: Global and Local Perspective
+            </p>
+            
+            <section class="mt-8 animate-slide-up delay-100">
+              <p class="font-bold text-xl text-[#27628C]">
+                What to Expect?
+              </p>
+              <div class="mt-5 space-y-3">
+                <div class="flex items-center gap-3 transform transition-all duration-300 hover:translate-x-2">
+                  <div class="flex-shrink-0 text-2xl">🔬</div>
+                  <p>Expert-Led Sessions on Cutting-Edge Biomedical Research</p>
+                </div>
+                <div class="flex items-center gap-3 transform transition-all duration-300 hover:translate-x-2">
+                  <div class="flex-shrink-0 text-2xl">📊</div>
+                  <p>Discussions on Emerging Technologies & Trends</p>
+                </div>
+                <div class="flex items-center gap-3 transform transition-all duration-300 hover:translate-x-2">
+                  <div class="flex-shrink-0 text-2xl">🤝</div>
+                  <p>Interactive Networking with Global Professionals</p>
+                </div>
+              </div>
+            </section>
+
+            <section class="mt-8 animate-slide-up delay-200">
+              <h4 class="font-bold text-xl text-[#27628C]">Who Should Attend?</h4>
+              <div class="mt-3 space-y-3">
+                <div class="flex items-center gap-3 transform transition-all duration-300 hover:translate-x-2">
+                  <div class="flex-shrink-0 text-[#27628C]">🔹</div>
+                  <p>Biomedical Scientists & Medical Laboratory Professionals</p>
+                </div>
+                <div class="flex items-center gap-3 transform transition-all duration-300 hover:translate-x-2">
+                  <div class="flex-shrink-0 text-[#27628C]">🔹</div>
+                  <p>Researchers, Academics & Healthcare Practitioners</p>
+                </div>
+                <div class="flex items-center gap-3 transform transition-all duration-300 hover:translate-x-2">
+                  <div class="flex-shrink-0 text-[#27628C]">🔹</div>
+                  <p>Students & Enthusiasts in Life Sciences</p>
+                </div>
+              </div>
+            </section>
+
+            <section class="mt-8 animate-slide-up delay-300">
+              <div class="bg-gradient-to-r from-[#27628C]/10 to-transparent p-4 rounded-lg">
+                <div class="flex items-center gap-3 mb-2">
+                  <div class="flex-shrink-0 text-2xl animate-pulse">📅</div>
+                  <p class="font-semibold">Date: 21st and 22nd April 2025</p>
+                </div>
+                <div class="flex items-center gap-3">
+                  <div class="flex-shrink-0 text-2xl animate-pulse">🌍</div>
+                  <p class="font-semibold">Location: Online (Link will be shared after registration)</p>
+                </div>
+              </div>
+            </section>
+
+            <section class="mt-8 animate-slide-up delay-400">
+              <p class="font-bold text-lg">
+                Don't miss this chance to connect, learn, and contribute to the future of biomedical science! Secure your spot today!
+              </p>
+              <div class="mt-4 relative group">
+                <a 
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSd7ImrP3P53HkGKGMLvJom20LuwoH6EXCsujSSQw0bJ1NcSOA/viewform?usp=header"
+                  class="inline-flex items-center text-[#27628C] font-bold group-hover:underline"
+                >
+                  <span>To Register</span>
+                  <ArrowRightIcon class="ml-2 h-5 w-5 transform transition-transform group-hover:translate-x-1" />
+                </a>
+              </div>
+            </section>
+
+            <section class="mt-8 animate-slide-up delay-500">
+              <p class="font-semibold">For more details, reach out to:</p>
+              <div class="mt-2 space-y-2">
+                <div class="flex items-center gap-2">
+                  <PhoneIcon class="h-5 w-5 text-[#27628C]" />
+                  <p>Nelson Ebode: +2348131369101</p>
+                </div>
+                <div class="flex items-center gap-2">
+                  <PhoneIcon class="h-5 w-5 text-[#27628C]" />
+                  <p>Ekenedilichukwu Anyabolo: +2347082810985</p>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex justify-center items-center my-10 p-3 lg:p-0 animate-bounce-slow">
+      <a 
+        href="https://forms.gle/gnmMNvg4VZo66EdF7" 
+        class="text-white text-center bg-[#27628C] rounded-lg w-full px-6 py-3.5 max-w-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl flex items-center justify-center gap-2"
+      >
+        <span>Register Now</span>
+        <ArrowRightIcon class="h-5 w-5" />
+      </a>
+    </div>
+    
+    <!-- Floating molecules decoration -->
+    <div class="fixed -z-10 bottom-0 left-0 w-full h-64 opacity-10 pointer-events-none">
+      <MoleculePattern />
+    </div>
+  </div>
+    <!-- <div class="overflow-hidden bg-white mt-20">
         <div class="relative mx-auto max-w-7xl px-6 py-16 lg:px-8">
             <div class="absolute bottom-0 left-3/4 top-0 hidden w-screen bg-[#27628C] lg:block"></div>
             <div class="mx-auto max-w-prose text-base lg:grid lg:max-w-none lg:grid-cols-2 lg:gap-8">
@@ -352,42 +527,11 @@ Strengthening laboratory systems for a sustainable future: Global and Local Pers
                 </div>
             </div>
         </div>
-        <h1 class="text-center text-[#27628C] uppercase">Speakers</h1>
-        <section class="grid lg:grid-cols-3 gap-6 mx-auto max-w-7xl pb-6 p-3 lg:p-0">
-            <article  @click="openModal(item)"  v-for="item in schedules" class="flex bg-white border-[0.5px] border-gray-10 rounded-lg transition hover:shadow-xl">
-
-                <div class="sm:basis-56 border-[0.5px] border-gray-50 rounded-lg">
-                    <img alt=""
-                        :src="item.image"
-                        class="aspect-square h-full w-32 object-cover" />
-                </div>
-
-                <div class="w-full flex-col justify-between">
-                    <div class="border-s border-gray-900/10 p-4 sm:border-l-transparent sm:p-6">
-                        <a href="#">
-                            <h3 class="font-bold uppercase text-gray-900">
-                               {{ item.topic }}
-                            </h3>
-                        </a>
-
-                        <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-700">
-                            {{ item.speaker }}
-                        </p>
-
-                        <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-700">
-                            {{ item.date_and_time }}
-                        </p>
-
-                        <p class="text-xs font-bold pt-5">CLICK TO SEE SPEAKER'S PROFILE</p>
-                    </div>
-                </div>
-            </article>
-        </section>
 
        <div class="flex justify-center items-center my-10 p-3 lg:p-0">
         <a href="https://forms.gle/gnmMNvg4VZo66EdF7" class="text-white text-center bg-[#27628C] rounded-lg w-full px-6 py-3.5 max-w-lg">Register</a>
        </div>
-    </div>
+    </div> -->
 
     <SpeakerModal
       v-if="selectedSpeaker"
@@ -410,17 +554,8 @@ import speaker6 from '@/assets/img/speaker6.jpeg'
 import speaker7 from '@/assets/img/speaker7.jpeg'
 import speaker8 from '@/assets/img/speaker8.jpeg'
 import img4 from '@/assets/img/origins.jpeg'
-// const schedules = ref([
-//     {image: speaker3, "date_and_time": "Friday, 31st January, 2025, 8 pm - 9 pm", "topic": "The Identity of the Medical Laboratory Scientist", "speaker": "Friday Odum"},
-//     {image: speaker2, "date_and_time": "Saturday, 1st February, 2025, 8 pm - 9 pm", "topic": "Building a professional network", "speaker": "Ridwan Agboola"},
-//     {image: speaker4, "date_and_time": "Sunday, 2nd February, 2024, 8 pm - 9 pm", "topic": "Time management", "speaker": "Glory Ogunbodede"},
-//     {image: speaker1, "date_and_time": "Friday, 7th February, 2025, 8 pm - 9 pm", "topic": "Research for undergraduates", "speaker": "Emmanuel Elebesunu"},
-//     {image: speaker5, "date_and_time": "Saturday, 8th February, 2025, 8 pm - 9 pm", "topic": "Mentorship for Undergraduates", "speaker": "Odinaka Obeta"},
-//     {image: speaker6, "date_and_time": "Sunday, 9th February, 2024, 8 pm - 9 pm", "topic": "Scholarship and Fellowship opportunities for undergraduates", "speaker": "Kamsi Muoka"},
-//     {image: speaker7, "date_and_time": "Saturday, 15th February, 2025", "topic": "Volunteering", "speaker": "Williams Owoeye"},
-//     {image: speaker8, "date_and_time": "Sunday, 16th February, 2025", "topic": "Leadership and Social Impact", "speaker": "Fatima Ibrahim"}
-// ])
 
+import { ArrowRightIcon, PhoneIcon } from 'lucide-vue-next';
 
 const schedules = ref([
     {
@@ -575,3 +710,86 @@ function closeModal() {
   isModalVisible.value = false;
 }
 </script>
+
+
+<style>
+/* Custom animations */
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounceSlow {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-fade-in {
+  animation: fadeIn 1s ease-out forwards;
+}
+
+.animate-slide-up {
+  animation: slideUp 0.8s ease-out forwards;
+  opacity: 0;
+}
+
+.animate-bounce-slow {
+  animation: bounceSlow 3s ease-in-out infinite;
+}
+
+.delay-100 {
+  animation-delay: 0.1s;
+}
+
+.delay-200 {
+  animation-delay: 0.2s;
+}
+
+.delay-300 {
+  animation-delay: 0.3s;
+}
+
+.delay-400 {
+  animation-delay: 0.4s;
+}
+
+.delay-500 {
+  animation-delay: 0.5s;
+}
+</style>
+

@@ -16,13 +16,6 @@
 .dark .bg-custom {
   background-color: #1a202c; /* Dark mode background */
 }
-/* Apply the font globally */
-body {
-  font-family: "Rethink Sans", serif;
-}
-
-body {
-}
 
 .btn {
   @apply px-4 py-2 rounded-lg transition-colors;
@@ -35,4 +28,45 @@ body {
 .btn-secondary {
   @apply bg-gray-200 hover:bg-gray-300 text-gray-800;
 } */
+
+
+/* Page transitions */
+.page-enter-active,
+.page-leave-active {
+  transition: all 0.3s;
+}
+.page-enter-from,
+.page-leave-to {
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #27628c;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #1d4a6a;
+}
+
+/* Base styles */
+body {
+  @apply bg-white text-gray-800;
+  font-family: "Inter", sans-serif;
+}
 
