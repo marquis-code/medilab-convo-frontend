@@ -337,7 +337,7 @@
   <router-link 
     to="/donate" 
     class="bg-[#27628C] px-6 max-w-md w-full py-3 rounded-lg text-white text-center">
-    Donate
+    Learn More
   </router-link>
 </div>
 
