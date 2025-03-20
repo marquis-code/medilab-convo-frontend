@@ -188,7 +188,7 @@
 <script setup lang="ts">
 import { ref } from 'vue';
 
-const textToCopy = ref('0897402175');
+const textToCopy = ref('0*********');
 const copied = ref(false);
 
 const copyText = async () => {
