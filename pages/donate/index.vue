@@ -55,8 +55,9 @@
             <div class="relative p-6 rounded-2xl w-[280px] min-h-[120px] flex flex-col justify-start"
               style="background: linear-gradient(235deg, #814285, #7b1fd2);">
               <img src="@/assets/img/mastercard.jpg" alt="Mastercard logo" class="absolute top-2 right-2 w-10" />
+              <p class="text-lg text-white">MedLabConvo</p>
               <p class="text-2xl font-extrabold text-white">{{ textToCopy }}</p>
-              <p class="text-lg text-white">Guaranty Trust Bank</p>
+              <p class="text-lg text-white">UBA</p>
             </div>
 
             <div class="flex flex-col justify-center items-center min-h-[120px]">
@@ -188,7 +189,7 @@
 <script setup lang="ts">
 import { ref } from 'vue';
 
-const textToCopy = ref('0*********');
+const textToCopy = ref('2226584232');
 const copied = ref(false);
 
 const copyText = async () => {
