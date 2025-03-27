@@ -134,7 +134,7 @@
 <script setup lang="ts">
 definePageMeta({
   alias: [
-    '/interntional/scholarship-masterclass' // Maps "0" to this
+    '/interntional/scholarshipmasterclasscourse' // Maps "0" to this
   ]
 });
 
