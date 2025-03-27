@@ -555,7 +555,6 @@ import speaker7 from '@/assets/img/speaker7.jpeg'
 import speaker8 from '@/assets/img/speaker8.jpeg'
 import img4 from '@/assets/img/origins.jpeg'
 
-import { ArrowRightIcon, PhoneIcon } from 'lucide-vue-next';
 
 const schedules = ref([
     {

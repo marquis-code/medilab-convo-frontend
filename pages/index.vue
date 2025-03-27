@@ -459,7 +459,7 @@ import journo7 from '@/assets/img/lab-coast/journo7.jpeg'
 import labcast from '@/assets/img/graduate-school.jpeg'
 import journo from '@/assets/img/paradox.jpeg'
 import burnOut from '@/assets/img/burnout.jpeg'
-import latest1 from '@/assets/img/kidney.jpeg'
+import latest1 from '@/assets/img/graduate.jpeg'
 const isOpen = ref(false)
 import img4 from '@/assets/img/scholarship.jpeg'
 import convo from "@/assets/img/convo.jpeg"
@@ -519,9 +519,9 @@ Tune in for invaluable lessons on academic success and personal growth!`,
 
 const journoLatest = ref([
 {
-    title: 'Maintaining The Silent Engine',
+    title: 'The Journey of a Graduate School applicant: Prepping for Applications and Dealing with Rejections',
     image: latest1,
-    desc: `The heart may carry the beats, but your bean-shaped organ carries the rhythm of life. Your kidneys are the silent engines your body can't function without. The kidneys help filter your blood of wastes passed down as urine, balancing your body fluids and electrolytes. Without your kidneys, your toilet visits will be almost non-existent, and your overall health may come crashing down.`,
+    desc: `The story of many applicants goes thus: they set out to apply for graduate school, send missiles of applications and only get misses in return. But like a child who is learning to walk, who falls down several times but gets up, so is the journey of an applicant who seeks to improve his/her life.`,
     previousEditionUrl: '#',
     status: 'latest',
     actionText: 'Read More',
