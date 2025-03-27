@@ -34,21 +34,16 @@
     <div class="relative bg-[#27628C] lg:mt-10 pt-0 ">
       <div
         class="relative h-80 overflow-hidden  md:absolute md:left-0 md:h-full mt-44 pb-[400px] lg:pb-0 md:w-1/3 lg:w-1/2">
-        <img  class="w-full h-[500px] object-cover" src="@/assets/img/kidney.jpeg" alt="">
+        <img  class="w-full h-[500px] object-cover" src="@/assets/img/graduate.jpeg" alt="">
       </div>
       <div class="relative mx-auto max-w-7xl py-24 sm:py-32 px-10 lg:px-0 lg:py-40">
         <div class="md:ml-auto md:w-2/3 md:pl-16 lg:w-1/2">
-          <p  class="mt-2 text-4xl font-semibold tracking-tight text-white sm:text-5xl">Maintaining The Silent Engine
-          </p>
+          <p  class="mt-2 text-4xl font-semibold tracking-tight text-white sm:text-5xl">
+            The Journey of a Graduate School applicant: Prepping for Applications and Dealing with Rejections          </p>
           <p  class="mt-6 text-base/7 text-white">"
-            The heart may carry the beats, but your bean-shaped organ carries the rhythm of life. Your kidneys are the silent engines your body can't function without.
-
-The kidneys help filter your blood of wastes passed down as urine, balancing your body fluids and electrolytes. Without your kidneys, your toilet visits will be almost non-existent, and your overall health may come crashing down.
-
-
-            "</p>
+            The story of many applicants goes thus: they set out to apply for graduate school, send missiles of applications and only get misses in return. But like a child who is learning to walk, who falls down several times but gets up, so is the journey of an applicant who seeks to improve his/her life."</p>
           <div  class="mt-8">
-            <a href="https://mlcjourno.substack.com/p/maintaining-the-silent-engine?r=4c6jz4&utm_campaign=post&utm_medium=web&triedRedirect=true"
+            <a href="https://mlcjourno.substack.com/p/the-journey-of-a-graduate-school?r=45bm0j&utm_medium=ios&triedRedirect=true"
               class="inline-flex rounded-md bg-white/10 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-white/20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">View
               publications <span aria-hidden="true">&rarr;</span></a>
           </div>
@@ -136,12 +131,20 @@ import journo7 from '@/assets/img/lab-coast/journo7.jpeg'
 import uuuuu from '@/assets/img/updates3.jpeg'
 import updates3 from '@/assets/img/paradox.jpeg'
 import latest from '@/assets/img/burnout.jpeg'
-import latest1 from '@/assets/img/kidney.jpeg'
+import latest1 from '@/assets/img/graduate.jpeg'
+import latest2 from '@/assets/img/kidney.jpeg'
 import carvingProfessional from '@/assets/img/carving-professional.jpeg'
 
 const journosList = ref([
 {
     image: latest1,
+    title: 'The Journey of a Graduate School applicant: Prepping for Applications and Dealing with Rejections',
+    desc: `The story of many applicants goes thus: they set out to apply for graduate school, send missiles of applications and only get misses in return. But like a child who is learning to walk, who falls down several times but gets up, so is the journey of an applicant who seeks to improve his/her life.`,
+    author: 'Bamidele Toluwase',
+    url: 'https://mlcjourno.substack.com/p/the-journey-of-a-graduate-school?r=45bm0j&utm_medium=ios&triedRedirect=true'
+  },
+{
+    image: latest2,
     title: 'Maintaining The Silent Engine',
     desc: `The heart may carry the beats, but your bean-shaped organ carries the rhythm of life. Your kidneys are the silent engines your body can't function without. The kidneys help filter your blood of wastes passed down as urine, balancing your body fluids and electrolytes. Without your kidneys, your toilet visits will be almost non-existent, and your overall health may come crashing down.`,
     author: 'The Royal Health Chronicles',
