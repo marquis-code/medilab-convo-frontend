@@ -33,7 +33,7 @@
           <div class="mx-auto text-base/7 text-gray-500">
             <p class="text-lg/7">
               The Scholarship Application Masterclass ends on 31st March, 2025 and will be converted to a self-paced
-              course. To have early access to this self-paced course at a discounted rate, you can preorder now.
+              course. To have early access to this self-paced course at a discounted rate, you can pre-order now.
             </p>
             <!-- <p class="mt-5">
               Join us as we turn obstacles into stepping stones, unlocking a
@@ -55,7 +55,7 @@
         </p>
 
         <p class="text-lg/7 max-w-[800px] w-full text-gray-900 text-center mt-2">
-          This course is designed to give you the winning edge-from mastering application strategies to impressing
+          This course is designed to give you the winning edge—from mastering application strategies to impressing
           selection committees. Learn directly from scholarship recipients and experts who have successfully navigated
           the process. </p>
         <p class="mt-2 text-balance px-3 lg:px-0 text-lg/7 pt-6 text-center font-semibold tracking-tight text-gray-900">
@@ -156,58 +156,54 @@ import speaker11 from '@/assets/img/andra-umoru.jpeg'
 const topics = ref([
   {
     "sn": "01",
-    "topic": "Welcome and Introduction",
-  },
-  {
-    "sn": "02",
     "topic": "Introduction to Scholarship",
   },
   {
-    "sn": "03",
+    "sn": "02",
     "topic": "Identifying Suitable Scholarships",
   },
   {
-    "sn": "04",
+    "sn": "03",
     "topic": "Crafting a Winning Personal Statement",
   },
   {
-    "sn": "05",
+    "sn": "04",
     "topic": "Building an Outstanding CV/Resume",
   },
   {
-    "sn": "06",
+    "sn": "05",
     "topic": "Obtaining Strong Recommendation Letters",
   },
   {
-    "sn": "07",
+    "sn": "06",
     "topic": "Writing Research Proposals",
   },
   {
-    "sn": "08",
+    "sn": "07",
     "topic": "Exploring AI and Data Science in Biomed Research",
   },
   {
-    "sn": "09",
+    "sn": "08",
     "topic": "Scholarship Interviews: Preparation and Practice",
   },
   {
-    "sn": "10",
+    "sn": "09",
     "topic": "Reaching Out to Principal Investigators",
   },
   {
-    "sn": "11",
+    "sn": "10",
     "topic": "Managing Rejections and Resilience",
   },
   {
-    "sn": "12",
+    "sn": "11",
     "topic": "Networking and Real-Life Success Stories",
   },
   {
-    "sn": "13",
+    "sn": "12",
     "topic": "Final Practical Exercises [breakout]",
   },
   {
-    "sn": "14",
+    "sn": "13",
     "topic": "Closing SESSION and NEXT STEPS",
   },
 ]);
