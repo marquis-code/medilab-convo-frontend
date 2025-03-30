@@ -110,25 +110,6 @@
                 </div>
               </div>
   
-              <!-- <div class="p-5 bg-gradient-to-r from-gray-50 to-blue-50 border-b border-gray-100 flex items-center text-sm">
-                <div class="flex items-center space-x-2">
-                  <div class="w-8 h-8 rounded-full bg-gradient-to-r from-blue-400 to-blue-600 flex items-center justify-center text-white font-bold">
-                    {{ userEmail.charAt(0).toUpperCase() }}
-                  </div>
-                  <span class="text-gray-700 font-medium">{{ userEmail }}</span>
-                </div>
-                <button @click="switchAccount" class="ml-3 text-blue-600 hover:text-blue-800 font-medium hover:underline transition-colors">
-                  Switch account
-                </button>
-                <div class="ml-auto">
-                  <div class="w-8 h-8 rounded-full bg-gray-100 hover:bg-gray-200 flex items-center justify-center transition-colors cursor-pointer">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16l2.879-2.879m0 0a3 3 0 104.243-4.242 3 3 0 00-4.243 4.242zM21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                    </svg>
-                  </div>
-                </div>
-              </div> -->
-  
               <!-- Form with Floating Labels and Animations -->
               <form @submit.prevent="submitForm" class="p-8 space-y-8">
                 <!-- Name Input with Floating Label -->
@@ -254,7 +235,8 @@
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
                     </svg>
-                    Never submit passwords through Google Forms.
+                    <!-- Never submit passwords through Google Forms. -->
+                    Powered by MEDLABCONVO
                   </p>
                   
                   <p class="text-center">
@@ -383,13 +365,11 @@
         }
 
     //   await new Promise(resolve => setTimeout(resolve, 1800))
-       await createAnonymous(payloadObj).then((res) => {
-        console.log(res, 'tes here')
-    // Show success message
-        showSuccessModal.value = true
-        
-        // Clear form
-        clearForm()
+       await createAnonymous(payloadObj).then((res: any) => {
+        if(res.type !== 'ERROR'){
+          showSuccessModal.value = true
+          clearForm()
+        }
        })
       
     } catch (error) {
