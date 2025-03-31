@@ -65,10 +65,12 @@
     </div>
 
     <div class="flex justify-center items-center my-10 p-3 lg:p-0">
-      <a href="https://paystack.com/pay/scholarshipappmasterclasscourse"
-        class="text-white text-center bg-[#27628C] rounded-lg lg:w-full px-6 py-3.5 max-w-lg hover:bg-[#1a4665]">Pre-order
-        Now</a>
-    </div>
+  <a href="https://paystack.com/pay/scholarshipappmasterclasscourse"
+    class="text-white text-center bg-[#27628C] rounded-lg lg:w-full px-6 py-3.5 max-w-lg opacity-50 pointer-events-none">
+    Pre-order Now
+  </a>
+</div>
+
 
     <div class="flex flex-col justify-center items-center min-h-screen mt-24">
       <h1 class="text-center text-[#27628C] uppercase text-2xl font-bold">Course Outline</h1>
@@ -122,10 +124,12 @@
       </section>
     </div>
     <div class="flex justify-center items-center my-10 p-3 lg:p-0">
-      <a href="https://paystack.com/pay/scholarshipappmasterclasscourse"
-        class="text-white text-center bg-[#27628C] rounded-lg lg:w-full px-6 py-3.5 max-w-lg hover:bg-[#1a4665]">Pre-order
-        Now</a>
-    </div>
+  <a href="https://paystack.com/pay/scholarshipappmasterclasscourse"
+    class="text-white text-center bg-[#27628C] rounded-lg lg:w-full px-6 py-3.5 max-w-lg opacity-50 pointer-events-none">
+    Pre-order Now
+  </a>
+</div>
+
   </div>
 
   <SpeakerModal v-if="selectedSpeaker" :speaker="selectedSpeaker" :is-visible="isModalVisible" @close="closeModal" />
