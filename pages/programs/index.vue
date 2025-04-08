@@ -20,7 +20,7 @@
     
             <div  v-for="(item, idx) in programsList" :key="idx" :class="[item.status === 'latest' ? 'border-8 border-[#27628C]' : '']" class="bg-gray-100 rounded-lg overflow-hidden mb-16">
               <div class="relative">
-                <img  :src="item.img" class="w-full lg:h-96 object-cover" />
+                <img  :src="item.img" class="w-full  object-cover" />
               </div>
               
               <!-- Content -->
@@ -106,7 +106,7 @@ import img1 from '@/assets/img/medics.jpg'
 import img2 from '@/assets/img/forging-a-path.jpg'
 import img3 from '@/assets/img/happenings.jpg'
 import img4 from '@/assets/img/updates1.jpeg'
-import convo from "@/assets/img/convo.jpeg"
+import convo from "@/assets/img/conference.jpeg"
 const router = useRouter()
 const programsList = ref([
 {

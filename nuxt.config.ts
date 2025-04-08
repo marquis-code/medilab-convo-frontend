@@ -55,6 +55,12 @@ modules: ["@nuxtjs/tailwindcss", '@nuxtjs/google-fonts'],
   dir: {
     static: 'public', // Ensure the  folder is treated as static
   },
+  runtimeConfig: {
+    public: {
+        GOOGLE_API_KEY: process.env.GOOGLE_API_KEY,
+        SPREAD_SHEET_ID: process.env.SPREAD_SHEET_ID
+    }
+}
   // buildModules: [
   //   '@nuxtjs/moment'
   // ]
