@@ -403,15 +403,7 @@ function closeModal() {
               <p class="font-bold text-lg">
                 Don't miss this chance to connect, learn, and contribute to the future of biomedical science! Secure your spot today!
               </p>
-              <div class="mt-4 relative group">
-                <a 
-                  href="https://docs.google.com/forms/d/e/1FAIpQLSd7ImrP3P53HkGKGMLvJom20LuwoH6EXCsujSSQw0bJ1NcSOA/viewform?usp=header"
-                  class="inline-flex items-center text-[#27628C] font-bold group-hover:underline"
-                >
-                  <span>To Register</span>
-                  <ArrowRightIcon class="ml-2 h-5 w-5 transform transition-transform group-hover:translate-x-1" />
-                </a>
-              </div>
+
             </section>
 
             <section class="mt-8 animate-slide-up delay-500">
@@ -472,7 +464,7 @@ function closeModal() {
 
         <div class="flex justify-center items-center my-10 p-3 lg:p-0 animate-bounce-slow">
       <a 
-        href="https://forms.gle/gnmMNvg4VZo66EdF7" 
+        href="https://docs.google.com/forms/d/e/1FAIpQLSd7ImrP3P53HkGKGMLvJom20LuwoH6EXCsujSSQw0bJ1NcSOA/viewform?usp=header" 
         class="text-white text-center bg-[#27628C] rounded-lg w-full px-6 py-3.5 max-w-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl flex items-center justify-center gap-2"
       >
         <span>Register Now</span>
@@ -501,7 +493,7 @@ import speaker4 from '@/assets/img/lab-coast/bio-speaker4.jpeg'
 const schedules = ref([
     {
         image: speaker1,
-        "date_and_time": "Friday, 31st January, 2025, 8 pm - 9 pm",
+        // "date_and_time": "Friday, 31st January, 2025, 8 pm - 9 pm",
         "topic": "Laboratory Leadership and Management training the next generation of medical laboratory scientist",
         "speaker": "Dr. Godswill Okara",
         "bio":  `
@@ -512,7 +504,7 @@ const schedules = ref([
     },
     {
         image: speaker2,
-        "date_and_time": "Sunday, 2nd February, 2024, 8 pm - 9 pm",
+        // "date_and_time": "Sunday, 2nd February, 2024, 8 pm - 9 pm",
         "topic": "Innovation in diagnostic technology: Integration of emerging technologies (AI, molecular medicine and bioinformatics) for sustainable clinical disgnostics.",
         "speaker": "Dr. Muyideen Harun",
         "bio": `
@@ -525,7 +517,7 @@ const schedules = ref([
     },
     {
         image: speaker3,
-        "date_and_time": "Saturday, 1st February, 2025, 8 pm - 9 pm",
+        // "date_and_time": "Saturday, 1st February, 2025, 8 pm - 9 pm",
         "topic": "Policy and Governance in Strenghtening laboratory: A roadmap for Sustainable Development",
         "speaker": "OLUSOJI M. A BILLYROSE ABRIDGED",
         "bio": `
@@ -552,7 +544,7 @@ const schedules = ref([
     },
     {
         image: speaker4,
-        "date_and_time": "Friday, 7th February, 2025, 8 pm - 9 pm",
+        // "date_and_time": "Friday, 7th February, 2025, 8 pm - 9 pm",
         "topic": "Strenghtening the laboratory workforce: Capacity building for sustainable healthcaree.",
         "speaker": "Mr. Jubril Kareem",
         "bio": `
