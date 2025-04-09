@@ -68,7 +68,7 @@
             LabCast
           </h2>
           <p  class="mt-6 text-lg leading-8 text-center text-gray-100">
-            Labcast is the podcast dedicated to exploring the dynamic world of
+            LabCast is the podcast dedicated to exploring the dynamic world of
             medical laboratory science, healthcare innovation, and the stories
             that shape the profession. Whether you're a seasoned professional, a
             student, or someone interested in the impact of medical science,
@@ -109,23 +109,22 @@
       <div class="bg-white p-0 rounded-lg shadow-md flex">
         <div class="lg:flex space-y-6 items-center space-x-4 w-full p-6">
           <img 
-            src="@/assets/img/graduate-school.jpeg"
+            src="@/assets/img/latest-convo.jpeg"
             alt="Podcast cover"
             class="w-72 h-60 rounded-lg object-cover"
           />
           <div  class="flex flex-col w-full">
-            <div  class="font-semibold text-2xl">Navigating And Coping With Graduate School.</div>
+            <div  class="font-semibold text-2xl">Sheathe Your Swords: Building interdisciplinary Teams for Better Health Outcomes.</div>
             <div  class="text-gray-500 mt-2">
-              Graduate school presents unique challenges, from balancing coursework and research to managing time effectively.
-In this episode of LabCast, hosts Better and Precious engage with two remarkable scholars; Gaius Bala, a master's student in molecular medicine at Nazarbayev University, Kazakhstan, and Samuel Gana, pursuing a master's in immunology at Usmanu Danfodiyo University, Nigeria.
-They share insights on building strong relationships with professors, overcoming imposter syndrome, and handling burnout. Whether you're considering graduate school or currently enrolled, this episode offers practical strategies and real experiences to help you thrive.
-Tune in for invaluable lessons on academic success and personal growth!
+              The hierarchical struggles in healthcare systems are a serious, persisting challenge. In this episode of LabCast Nmesoma and Oluwadamilola are joined by Dr. Charlene and Pharm. Success to explore the power of interdisciplinary collaboration in healthcare.
+We discussed how integrating diverse professional perspectives enhances patient care, sharing real-world examples of successful teamwork, and addressing challenges faced in collaborative environments.
+Tune in to gain insights into building effective healthcare teams that lead to improved health outcomes! 🥳
             </div>
             <div class="mt-3">
         <p  class="text-gray-400 text-sm mb-2">Available On:</p>
         <div  class="flex flex-wrap gap-2">
           <a
-            href="https://open.spotify.com/episode/6UCcjv7H5lHH5nP9ZJjpAj"
+            href="https://open.spotify.com/episode/0rR6JIG94pRl7j1VZn5xfS"
             class="inline-flex items-center px-4 py-1.5 rounded-full bg-[#1DB954] text-sm hover:opacity-90"
           >
             <span class="mr-2">
@@ -138,7 +137,7 @@ Tune in for invaluable lessons on academic success and personal growth!
             Spotify
           </a>
           <a 
-            href="https://podcasts.apple.com/us/podcast/thrills-and-terrors-of-bench-work/id1610877517?i=1000685322948"
+            href="https://open.spotify.com/episode/0rR6JIG94pRl7j1VZn5xfS"
             class="inline-flex items-center border-[0.5px] border-gray-20 px-4 py-1.5 rounded-full bg-white text-black text-sm hover:opacity-90"
           >
             <span class="mr-2">
@@ -161,7 +160,7 @@ Tune in for invaluable lessons on academic success and personal growth!
             class="w-72 h-60 rounded-lg object-cover"
           />
           <div  class="flex flex-col w-full">
-            <div  class="font-semibold text-2xl">The Thrills and Terros of Bench Work.</div>
+            <div  class="font-semibold text-2xl">The Thrills and Terrors of Bench Work.</div>
             <div  class="text-gray-500 mt-2">
               In this episode, we delve into the experiences and insights of medical laboratory scientists working abroad (United Kingdom)). Join us as we explore how practice and perspectives differ in this region.
             </div>
@@ -329,6 +328,22 @@ import episode31 from "@/assets/img/lab-coast/lab31.png";
 
 const podcastList = ref([
 {
+    name: "Misdiagnosis in the Medical Laboratory and Ethical Challenges.",
+    description:
+      `In this episode, Iheoma and Samuel explore misdiagnosis and the ethical challenges surrounding it in the medical laboratory profession. Joining them is Oluwagbogo Oluwaseyi Olabode who is a medical laboratory scientist with a sturdy bench experience who shares her experiences, pitfalls around the lab, and the way to go about certain ethical challenges. The discussion explores the challenges people face in the laboratory, friction between patients and health professionals due to misdiagnosis and proper communications channels involved. Tune in to learn more about misdiagnosis and how to handle it the right way!`,
+    image: "",
+    link: "https://open.spotify.com/episode/6pT2YoQ8ND48cts5oK84Mk",
+    appleUrl: "https://open.spotify.com/episode/6pT2YoQ8ND48cts5oK84Mk"
+  },
+{
+    name: "Navigating And Coping With Graduate School.",
+    description:
+      `Graduate school presents unique challenges, from balancing coursework and research to managing time effectively. In this episode of LabCast, hosts Better and Precious engage with two remarkable scholars; Gaius Bala, a master's student in molecular medicine at Nazarbayev University, Kazakhstan, and Samuel Gana, pursuing a master's in immunology at Usmanu Danfodiyo University, Nigeria. They share insights on building strong relationships with professors, overcoming imposter syndrome, and handling burnout. Whether you're considering graduate school or currently enrolled, this episode offers practical strategies and real experiences to help you thrive. Tune in for invaluable lessons on academic success and personal growth!`,
+    image: "",
+    link: "https://open.spotify.com/episode/6UCcjv7H5lHH5nP9ZJjpAj",
+    appleUrl: "https://open.spotify.com/episode/6UCcjv7H5lHH5nP9ZJjpAj"
+  },
+{
     name: "MLS CERTIFICATIONS: A Step By Step Guide For ASCPI",
     description:
       `In this episode, your hosts Jesutomisin and Confidence engage Mr. Samuel Oyebade on the essential steps to prepare for and succeed in the ASCPi certification exam.
@@ -348,7 +363,7 @@ In this episode of Labcast, our hosts engage with Mr Praise-Jah Ewa, a Mental He
     appleUrl: "https://podcasts.apple.com/us/podcast/the-impact-of-artificial-intelligence-on/id1610877517?i=1000674465767"
   },
 {
-    name: "The Thrills and Terros of Bench Work",
+    name: "The Thrills and Terrors of Bench Work",
     description:
       " In this episode, we delve into the experiences and insights of medical laboratory scientists working abroad (United Kingdom)). Join us as we explore how practice and perspectives differ in this region.",
     image: "",

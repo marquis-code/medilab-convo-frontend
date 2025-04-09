@@ -456,13 +456,13 @@ import journo4 from '@/assets/img/lab-coast/journo4.jpeg'
 import journo5 from '@/assets/img/lab-coast/journo5.jpeg'
 import journo6 from '@/assets/img/lab-coast/journo6.jpeg'
 import journo7 from '@/assets/img/lab-coast/journo7.jpeg'
-import labcast from '@/assets/img/graduate-school.jpeg'
+import labcast from '@/assets/img/latest-convo.jpeg'
 import journo from '@/assets/img/paradox.jpeg'
 import burnOut from '@/assets/img/burnout.jpeg'
 import latest1 from '@/assets/img/graduate.jpeg'
 const isOpen = ref(false)
 import img4 from '@/assets/img/scholarship.jpeg'
-import convo from "@/assets/img/convo.jpeg"
+import convo from "@/assets/img/conference.jpeg"
 
 const activitiesGrid = ref([
   {
@@ -505,15 +505,14 @@ const activitiesGrid = ref([
 
 const labcastLatest = ref([
 {
-    title: 'Navigating And Coping With Graduate School',
+    title: 'Sheathe Your Swords: Building interdisciplinary Teams for Better Health Outcomes',
     image: labcast,
-    desc: `  Graduate school presents unique challenges, from balancing coursework and research to managing time effectively.
-In this episode of LabCast, hosts Better and Precious engage with two remarkable scholars; Gaius Bala, a master's student in molecular medicine at Nazarbayev University, Kazakhstan, and Samuel Gana, pursuing a master's in immunology at Usmanu Danfodiyo University, Nigeria.
-They share insights on building strong relationships with professors, overcoming imposter syndrome, and handling burnout. Whether you're considering graduate school or currently enrolled, this episode offers practical strategies and real experiences to help you thrive.
-Tune in for invaluable lessons on academic success and personal growth!`,
+    desc: `The hierarchical struggles in healthcare systems are a serious, persisting challenge. In this episode of LabCast Nmesoma and Oluwadamilola are joined by Dr. Charlene and Pharm. Success to explore the power of interdisciplinary collaboration in healthcare.
+We discussed how integrating diverse professional perspectives enhances patient care, sharing real-world examples of successful teamwork, and addressing challenges faced in collaborative environments.
+Tune in to gain insights into building effective healthcare teams that lead to improved health outcomes! 🥳`,
     previousEditionUrl: '#',
     status: 'latest',
-    registerUrl: 'https://open.spotify.com/episode/6UCcjv7H5lHH5nP9ZJjpAj'
+    registerUrl: 'https://open.spotify.com/episode/0rR6JIG94pRl7j1VZn5xfS'
   },
 ])
 
