@@ -463,6 +463,7 @@ import latest1 from '@/assets/img/graduate.jpeg'
 const isOpen = ref(false)
 import img4 from '@/assets/img/scholarship.jpeg'
 import convo from "@/assets/img/conference.jpeg"
+import latestJourno from '@/assets/img/latest-journo.jpeg'
 
 const activitiesGrid = ref([
   {
@@ -518,9 +519,10 @@ Tune in to gain insights into building effective healthcare teams that lead to i
 
 const journoLatest = ref([
 {
-    title: 'The Journey of a Graduate School applicant: Prepping for Applications and Dealing with Rejections',
-    image: latest1,
-    desc: `The story of many applicants goes thus: they set out to apply for graduate school, send missiles of applications and only get misses in return. But like a child who is learning to walk, who falls down several times but gets up, so is the journey of an applicant who seeks to improve his/her life.`,
+    title: `CAREER DAY LIED—BUT MLS TOLD THE TRUTH.
+Amplifying The Medical Laboratory Science Story with Better Career Days`,
+    image: latestJourno,
+    desc: `Unlike many science students who adored medicine, I knew from the start it wasn’t for me. I had courtroom dreams. Big words. Big wins. A gavel in my hand and drama in the air; not because I was in love with law, but because I figured it’d fit my personality. However, life had other plans—and by “life”, I mean my sweet, loving Mother. She had her heart set on Medicine and Surgery for her first child. And honestly? I don’t blame her. It was the classic, respectable choice. So, science class it was. `,
     previousEditionUrl: '#',
     status: 'latest',
     actionText: 'Read More',
