@@ -31,19 +31,20 @@
     <h2  class="text-2xl pt-20 font-bold tracking-tight text-[#27628C] text-center">LATEST
       PUBLICATION</h2>
 
-    <div class="relative bg-[#27628C] lg:mt-10 pt-0 ">
+      <div class="relative bg-[#27628C] lg:mt-10 pt-0 ">
       <div
         class="relative h-80 overflow-hidden  md:absolute md:left-0 md:h-full mt-44 pb-[400px] lg:pb-0 md:w-1/3 lg:w-1/2">
-        <img  class="w-full h-[500px]" src="@/assets/img/graduate.jpeg" alt="">
+        <img  class="w-full h-[500px]" src="@/assets/img/latest-journo.jpeg" alt="">
       </div>
       <div class="relative mx-auto max-w-7xl py-24 sm:py-32 px-10 lg:px-0 lg:py-40">
         <div class="md:ml-auto md:w-2/3 md:pl-16 lg:w-1/2">
           <p  class="mt-2 text-4xl font-semibold tracking-tight text-white sm:text-5xl">
-            The Journey of a Graduate School applicant: Prepping for Applications and Dealing with Rejections          </p>
+            CAREER DAY LIED—BUT MLS TOLD THE TRUTH.     </p>
           <p  class="mt-6 text-base/7 text-white">"
-            The story of many applicants goes thus: they set out to apply for graduate school, send missiles of applications and only get misses in return. But like a child who is learning to walk, who falls down several times but gets up, so is the journey of an applicant who seeks to improve his/her life."</p>
+            Unlike many science students who adored medicine, I knew from the start it wasn’t for me. I had courtroom dreams. Big words. Big wins. A gavel in my hand and drama in the air; not because I was in love with law, but because I figured it’d fit my personality. However, life had other plans—and by “life”, I mean my sweet, loving Mother. She had her heart set on Medicine and Surgery for her first child. And honestly? I don’t blame her. It was the classic, respectable choice. So, science class it was. 
+           </p>
           <div  class="mt-8">
-            <a href="https://mlcjourno.substack.com/p/the-journey-of-a-graduate-school?r=45bm0j&utm_medium=ios&triedRedirect=true"
+            <a href="https://mlcjourno.substack.com/p/career-day-liedbut-mls-told-the-truth?r=45bm0j&utm_campaign=post&utm_medium=web&triedRedirect=true"
               class="inline-flex rounded-md bg-white/10 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-white/20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">View
               publications <span aria-hidden="true">&rarr;</span></a>
           </div>
@@ -133,9 +134,18 @@ import updates3 from '@/assets/img/paradox.jpeg'
 import latest from '@/assets/img/burnout.jpeg'
 import latest1 from '@/assets/img/graduate.jpeg'
 import latest2 from '@/assets/img/kidney.jpeg'
+import latestJourno from '@/assets/img/latest-journo.jpeg'
 import carvingProfessional from '@/assets/img/carving-professional.jpeg'
 
 const journosList = ref([
+{
+    image: latestJourno,
+    title: `CAREER DAY LIED—BUT MLS TOLD THE TRUTH.
+Amplifying The Medical Laboratory Science Story with Better Career Days`,
+    desc: `Unlike many science students who adored medicine, I knew from the start it wasn’t for me. I had courtroom dreams. Big words. Big wins. A gavel in my hand and drama in the air; not because I was in love with law, but because I figured it’d fit my personality. However, life had other plans—and by “life”, I mean my sweet, loving Mother. She had her heart set on Medicine and Surgery for her first child. And honestly? I don’t blame her. It was the classic, respectable choice. So, science class it was.`,
+    author: 'Ahoua Victory Eniola',
+    url: 'https://mlcjourno.substack.com/p/career-day-liedbut-mls-told-the-truth?r=45bm0j&utm_campaign=post&utm_medium=web&triedRedirect=true'
+  },
 {
     image: latest1,
     title: 'The Journey of a Graduate School applicant: Prepping for Applications and Dealing with Rejections',
