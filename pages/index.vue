@@ -178,7 +178,7 @@
       <div  class=" flex justify-center items-center mt-4 p-3 lg:p-0">
       <a :href="item.url" v-for="(item, idx) in journoLatest" :key="idx" class="flex block flex-col items-start justify-between">
         <div class="relative w-full">
-          <img :src="item.image" alt="" class="rounded-2xl bg-gray-100 object-cover h-96 w-full">
+          <img :src="item.image" alt="" class="rounded-2xl bg-gray-100 object-cover md:h-[550px] w-full">
           <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
         </div>
         <div class="max-w-xl">
@@ -519,10 +519,9 @@ Tune in to gain insights into building effective healthcare teams that lead to i
 
 const journoLatest = ref([
 {
-    title: `CAREER DAY LIED—BUT MLS TOLD THE TRUTH.
-Amplifying The Medical Laboratory Science Story with Better Career Days`,
+    title: `ATTAINING UTOPIA AMONG HEALTHCARE WORKERS: A Pipe Dream?`,
     image: latestJourno,
-    desc: `Unlike many science students who adored medicine, I knew from the start it wasn’t for me. I had courtroom dreams. Big words. Big wins. A gavel in my hand and drama in the air; not because I was in love with law, but because I figured it’d fit my personality. However, life had other plans—and by “life”, I mean my sweet, loving Mother. She had her heart set on Medicine and Surgery for her first child. And honestly? I don’t blame her. It was the classic, respectable choice. So, science class it was. `,
+    desc: `Months into his internship at a top Nigerian hospital, Aliu* was fed up. He had spent years training to become a medical laboratory scientist, but in just a few months of working, he felt his professional identity being questioned at every turn. He watched, often helplessly, as physicians interfered with his work—subtly questioning lab results, requesting re-runs without clear justification, and in many cases, having to revert to the Head of Department (a doctor) before any result could be deemed “authentic enough to release.”`,
     previousEditionUrl: '#',
     status: 'latest',
     actionText: 'Read More',

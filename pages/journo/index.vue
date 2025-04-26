@@ -39,12 +39,12 @@
       <div class="relative mx-auto max-w-7xl py-24 sm:py-32 px-10 lg:px-0 lg:py-40">
         <div class="md:ml-auto md:w-2/3 md:pl-16 lg:w-1/2">
           <p  class="mt-2 text-4xl font-semibold tracking-tight text-white sm:text-5xl">
-            CAREER DAY LIED—BUT MLS TOLD THE TRUTH.     </p>
+            ATTAINING UTOPIA AMONG HEALTHCARE WORKERS</p>
           <p  class="mt-6 text-base/7 text-white">"
-            Unlike many science students who adored medicine, I knew from the start it wasn’t for me. I had courtroom dreams. Big words. Big wins. A gavel in my hand and drama in the air; not because I was in love with law, but because I figured it’d fit my personality. However, life had other plans—and by “life”, I mean my sweet, loving Mother. She had her heart set on Medicine and Surgery for her first child. And honestly? I don’t blame her. It was the classic, respectable choice. So, science class it was. 
+            Months into his internship at a top Nigerian hospital, Aliu* was fed up. He had spent years training to become a medical laboratory scientist, but in just a few months of working, he felt his professional identity being questioned at every turn. He watched, often helplessly, as physicians interfered with his work—subtly questioning lab results, requesting re-runs without clear justification, and in many cases, having to revert to the Head of Department (a doctor) before any result could be deemed “authentic enough to release.”
            </p>
           <div  class="mt-8">
-            <a href="https://mlcjourno.substack.com/p/career-day-liedbut-mls-told-the-truth?r=45bm0j&utm_campaign=post&utm_medium=web&triedRedirect=true"
+            <a href="https://mlcjourno.substack.com/p/attaining-utopia-among-healthcare?r=37evr2"
               class="inline-flex rounded-md bg-white/10 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-white/20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">View
               publications <span aria-hidden="true">&rarr;</span></a>
           </div>
@@ -63,11 +63,12 @@
           class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
           <a  :href="item.url" v-for="(item, idx) in journosList" :key="idx"
             class="flex flex-col items-start justify-between">
-            <div class="relative w-full">
-              <img :src="item.image" alt=""
-                class="aspect-video w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]">
-              <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
-            </div>
+            <div class="relative w-full h-96">
+  <img :src="item.image" alt=""
+    class="h-full w-full object-contain rounded-2xl bg-gray-100">
+  <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
+</div>
+
             <div class="max-w-xl">
               <div class="group relative">
                 <h3 class="mt-3 text-lg/6 font-semibold text-gray-900 group-hover:text-gray-600">
@@ -132,14 +133,23 @@ import journo7 from '@/assets/img/lab-coast/journo7.jpeg'
 import uuuuu from '@/assets/img/updates3.jpeg'
 import updates3 from '@/assets/img/paradox.jpeg'
 import latest from '@/assets/img/burnout.jpeg'
-import latest1 from '@/assets/img/graduate.jpeg'
-import latest2 from '@/assets/img/kidney.jpeg'
+import latest1 from '@/assets/img/career-day.jpeg'
+import latest2 from '@/assets/img/graduate.jpeg'
+import latest3 from '@/assets/img/kidney.jpeg'
 import latestJourno from '@/assets/img/latest-journo.jpeg'
 import carvingProfessional from '@/assets/img/carving-professional.jpeg'
 
 const journosList = ref([
 {
     image: latestJourno,
+    title: `ATTAINING UTOPIA AMONG HEALTHCARE WORKERS:
+    A Pipe Dream?`,
+    desc: `Months into his internship at a top Nigerian hospital, Aliu* was fed up. He had spent years training to become a medical laboratory scientist, but in just a few months of working, he felt his professional identity being questioned at every turn. He watched, often helplessly, as physicians interfered with his work—subtly questioning lab results, requesting re-runs without clear justification, and in many cases, having to revert to the Head of Department (a doctor) before any result could be deemed “authentic enough to release.”`,
+    author: 'Precious Sylvanus and Williams Owoeye',
+    url: 'https://mlcjourno.substack.com/p/attaining-utopia-among-healthcare?r=37evr2'
+  },
+{
+    image: latest1,
     title: `CAREER DAY LIED—BUT MLS TOLD THE TRUTH.
 Amplifying The Medical Laboratory Science Story with Better Career Days`,
     desc: `Unlike many science students who adored medicine, I knew from the start it wasn’t for me. I had courtroom dreams. Big words. Big wins. A gavel in my hand and drama in the air; not because I was in love with law, but because I figured it’d fit my personality. However, life had other plans—and by “life”, I mean my sweet, loving Mother. She had her heart set on Medicine and Surgery for her first child. And honestly? I don’t blame her. It was the classic, respectable choice. So, science class it was.`,
@@ -147,14 +157,14 @@ Amplifying The Medical Laboratory Science Story with Better Career Days`,
     url: 'https://mlcjourno.substack.com/p/career-day-liedbut-mls-told-the-truth?r=45bm0j&utm_campaign=post&utm_medium=web&triedRedirect=true'
   },
 {
-    image: latest1,
+    image: latest2,
     title: 'The Journey of a Graduate School applicant: Prepping for Applications and Dealing with Rejections',
     desc: `The story of many applicants goes thus: they set out to apply for graduate school, send missiles of applications and only get misses in return. But like a child who is learning to walk, who falls down several times but gets up, so is the journey of an applicant who seeks to improve his/her life.`,
     author: 'Bamidele Toluwase',
     url: 'https://mlcjourno.substack.com/p/the-journey-of-a-graduate-school?r=45bm0j&utm_medium=ios&triedRedirect=true'
   },
 {
-    image: latest2,
+    image: latest3,
     title: 'Maintaining The Silent Engine',
     desc: `The heart may carry the beats, but your bean-shaped organ carries the rhythm of life. Your kidneys are the silent engines your body can't function without. The kidneys help filter your blood of wastes passed down as urine, balancing your body fluids and electrolytes. Without your kidneys, your toilet visits will be almost non-existent, and your overall health may come crashing down.`,
     author: 'The Royal Health Chronicles',
