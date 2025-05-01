@@ -59,7 +59,7 @@
             medical laboratory science, healthcare innovation, and the stories
             that shape the profession. Whether you're a seasoned professional, a
             student, or someone interested in the impact of medical science,
-            Labcast brings you conversations that inspire, inform, and challenge
+            LabCast brings you conversations that inspire, inform, and challenge
             the way we think about healthcare.
           </p>
         </div>
@@ -97,27 +97,21 @@
         <div class="lg:flex space-y-6 items-center space-x-4 w-full p-6">
           <img src="@/assets/img/latest-labcast.jpg" alt="Podcast cover" class="w-72 h-60 rounded-lg object-cover" />
           <div class="flex flex-col w-full">
-            <div class="font-semibold text-2xl">Redeeming the Time: Navigating the Pre-internship Phase.</div>
+            <div class="font-semibold text-2xl">Advances in Prenatal and Neonatal Diagnostics</div>
             <div class="text-gray-500 mt-2">
-
-              You’ve been inducted, but the internship call isn’t coming - now what? In this episode of LabCast, Ubani
-              C. Nmesoma and co-host Folaranmi Precious unpack the frustrating, uncertain, and all-too-common “wait
-              period” many medical laboratory science graduates in Nigeria face before securing internship placements.
-
-              They’re joined by Oluwamuyiwa Ogunkoya David and Gimbiya Precious, two MLS graduates who’ve completed
-              internships. The conversation focuses on the reasons behind the delays, how to make the most of the
-              waiting period, and what changes the system really needs.
-
-              Whether you're waiting, worrying, or wondering what’s next, this episode offers real talk, practical tips,
-              and the encouragement you need to keep going.
-
-              Tune in, share with a friend, and don’t forget to check out our previous episodes on internship
-              struggles.🤗
+              What if you could meet your baby before they’re even born—not just through an ultrasound, but through the
+              lens of the laboratory? In this episode of LabCast, join our hosts and guest Medical Laboratory Scientist
+              Isaac Godspower as they dive into the latest advances in prenatal and neonatal diagnostics.
+              This conversation covers innovations like genetic screening and advanced imaging techniques, and how
+              they’re reshaping early care for both mothers and newborns.
+              You’ll discover how these technologies are helping detect conditions earlier, guide clinical decisions,
+              and ultimately improve outcomes for families. Whether you’re a healthcare professional or simply curious,
+              this episode is for you.🤗
             </div>
             <div class="mt-3">
               <p class="text-gray-400 text-sm mb-2">Available On:</p>
               <div class="flex flex-wrap gap-2">
-                <a href="https://open.spotify.com/episode/5D6cMrufqwIkJMr16BDH28?si=62pzB1M4SzCjNKxTlH--nQ"
+                <a href=" https://open.spotify.com/episode/0JcJMe91MLZEOA3qmq04ur?si=UsINzwx0RmG-IreZFAad6Q"
                   class="inline-flex items-center px-4 py-1.5 rounded-full bg-[#1DB954] text-sm hover:opacity-90">
                   <span class="mr-2">
                     <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
@@ -127,7 +121,7 @@
                   </span>
                   Spotify
                 </a>
-                <a href="https://open.spotify.com/episode/5D6cMrufqwIkJMr16BDH28?si=62pzB1M4SzCjNKxTlH--nQ"
+                <a href=" https://open.spotify.com/episode/0JcJMe91MLZEOA3qmq04ur?si=UsINzwx0RmG-IreZFAad6Q"
                   class="inline-flex items-center border-[0.5px] border-gray-20 px-4 py-1.5 rounded-full bg-white text-black text-sm hover:opacity-90">
                   <span class="mr-2">
                     <svg fill="none" class="w-6 h-6" viewBox="0 0 92 92" xmlns="http://www.w3.org/2000/svg"
@@ -218,9 +212,9 @@
             <div class="font-semibold text-lg">{{ item.name ?? "Nil" }}</div>
             <div class="text-gray-600 text-sm mt-2">
               {{
-              item.description.length > 20
-              ? `${item.description.slice(0, 100)}...`
-              : item.description
+                item.description.length > 20
+                  ? `${item.description.slice(0, 100)}...`
+                  : item.description
               }}
             </div>
             <!-- <img src="@/assets/icons/play.svg" class="h-10 w-10 mt-3"/> -->
@@ -340,23 +334,43 @@ import episode30 from "@/assets/img/lab-coast/lab30.png";
 import episode31 from "@/assets/img/lab-coast/lab31.png";
 
 const podcastList = ref([
-{
-    name: "Misdiagnosis in the Medical Laboratory and Ethical Challenges.",
+  {
+    name: "Redeeming the Time: Navigating the Pre-internship Phase",
+    description:
+      `You’ve been inducted, but the internship call isn’t coming - now what? In this episode of LabCast, Ubani
+              C. Nmesoma and co-host Folaranmi Precious unpack the frustrating, uncertain, and all-too-common “wait
+              period” many medical laboratory science graduates in Nigeria face before securing internship placements.
+
+              They’re joined by Oluwamuyiwa Ogunkoya David and Gimbiya Precious, two MLS graduates who’ve completed
+              internships. The conversation focuses on the reasons behind the delays, how to make the most of the
+              waiting period, and what changes the system really needs.
+
+              Whether you're waiting, worrying, or wondering what’s next, this episode offers real talk, practical tips,
+              and the encouragement you need to keep going.
+
+              Tune in, share with a friend, and don’t forget to check out our previous episodes on internship
+              struggles.🤗`,
+    image: "",
+    link: "https://open.spotify.com/episode/5D6cMrufqwIkJMr16BDH28?si=62pzB1M4SzCjNKxTlH--nQ",
+    appleUrl: "https://open.spotify.com/episode/5D6cMrufqwIkJMr16BDH28?si=62pzB1M4SzCjNKxTlH--nQ"
+  },
+  {
+    name: "Misdiagnosis in the Medical Laboratory and Ethical Challenges",
     description:
       `In this episode, Iheoma and Samuel explore misdiagnosis and the ethical challenges surrounding it in the medical laboratory profession. Joining them is Oluwagbogo Oluwaseyi Olabode who is a medical laboratory scientist with a sturdy bench experience who shares her experiences, pitfalls around the lab, and the way to go about certain ethical challenges. The discussion explores the challenges people face in the laboratory, friction between patients and health professionals due to misdiagnosis and proper communications channels involved. Tune in to learn more about misdiagnosis and how to handle it the right way!`,
     image: "",
     link: "https://open.spotify.com/episode/6pT2YoQ8ND48cts5oK84Mk",
     appleUrl: "https://open.spotify.com/episode/6pT2YoQ8ND48cts5oK84Mk"
   },
-{
-    name: "Navigating And Coping With Graduate School.",
+  {
+    name: "Navigating And Coping With Graduate School",
     description:
       `Graduate school presents unique challenges, from balancing coursework and research to managing time effectively. In this episode of LabCast, hosts Better and Precious engage with two remarkable scholars; Gaius Bala, a master's student in molecular medicine at Nazarbayev University, Kazakhstan, and Samuel Gana, pursuing a master's in immunology at Usmanu Danfodiyo University, Nigeria. They share insights on building strong relationships with professors, overcoming imposter syndrome, and handling burnout. Whether you're considering graduate school or currently enrolled, this episode offers practical strategies and real experiences to help you thrive. Tune in for invaluable lessons on academic success and personal growth!`,
     image: "",
     link: "https://open.spotify.com/episode/6UCcjv7H5lHH5nP9ZJjpAj",
     appleUrl: "https://open.spotify.com/episode/6UCcjv7H5lHH5nP9ZJjpAj"
   },
-{
+  {
     name: "MLS CERTIFICATIONS: A Step By Step Guide For ASCPI",
     description:
       `In this episode, your hosts Jesutomisin and Confidence engage Mr. Samuel Oyebade on the essential steps to prepare for and succeed in the ASCPi certification exam.
@@ -375,7 +389,7 @@ In this episode of Labcast, our hosts engage with Mr Praise-Jah Ewa, a Mental He
     link: "https://open.spotify.com/episode/19SvzEMUQFK6sGXK8ETK5c",
     appleUrl: "https://podcasts.apple.com/us/podcast/the-impact-of-artificial-intelligence-on/id1610877517?i=1000674465767"
   },
-{
+  {
     name: "The Thrills and Terrors of Bench Work",
     description:
       " In this episode, we delve into the experiences and insights of medical laboratory scientists working abroad (United Kingdom)). Join us as we explore how practice and perspectives differ in this region.",
@@ -383,7 +397,7 @@ In this episode of Labcast, our hosts engage with Mr Praise-Jah Ewa, a Mental He
     link: "https://open.spotify.com/episode/2vt0Albx3ehcFTyrgl55xi?si=RdhtkOPvTlKTC0_Hx2p3kQ",
     appleUrl: "https://podcasts.apple.com/us/podcast/the-impact-of-artificial-intelligence-on/id1610877517?i=1000674465767"
   },
-{
+  {
     name: "Medical Laboratory Science Practice: From MLS in Diaspora viewpoint",
     description:
       "In this episode, we delve into the experiences and insights of medical laboratory scientists working abroad (United Kingdom)). Join us as we explore how practice and perspectives differ in this region.",
@@ -400,32 +414,32 @@ In this episode of Labcast, our hosts engage with Mr Praise-Jah Ewa, a Mental He
     appleUrl: "https://podcasts.apple.com/us/podcast/the-doctor-of-mls-program-lessons-from-dr/id1610877517?i=1000672718005"
   },
   {
-    name: "Must have sot skills for Medical Laboratory Scientist",
+    name: "Must have soft skills for Medical Laboratory Scientist",
     description: `Medical Laboratory Scientists (MLS) must develop soft skills that go beyond technical expertise to effectively collaborate with other healthcare professionals. This episode focuses on key skills that enhance teaching, research, and interdisciplinary teamwork. Attention to detail is vital for ensuring the precision of research data, while effective communication is crucial when instructing students and sharing findings with healthcare colleagues. Problem-solving skills allow MLS professionals to address research challenges, and time management is essential for juggling teaching, research, and administrative duties.`,
     image: "",
     link: "https://open.spotify.com/episode/6C0jL2uNN68XrXK9Pfm6M7?si=VzdQo8_ZT3SeYivtW2EMcw",
-     appleUrl: "https://podcasts.apple.com/us/podcast/must-have-soft-skills-for-medical-laboratory-scientists/id1610877517?i=1000652963851"
+    appleUrl: "https://podcasts.apple.com/us/podcast/must-have-soft-skills-for-medical-laboratory-scientists/id1610877517?i=1000652963851"
   },
   {
     name: "From B.MLS to Ph.D (No M.Sc)",
     description: `In this episode, we discuss with MLS Olaleye Olajuyin about how he successfully secured a fully-funded scholarship for a Ph.D. program in the US without having to do a Masters.`,
     image: "",
     link: "https://open.spotify.com/episode/3mWOLlmVz26oEFQJRPbDJ9?si=8AmYJdeCR8GGzCfpFxm4sg",
-     appleUrl: "https://podcasts.apple.com/us/podcast/from-b-mls-straight-to-ph-d-no-m-sc/id1610877517?i=1000576423593"
+    appleUrl: "https://podcasts.apple.com/us/podcast/from-b-mls-straight-to-ph-d-no-m-sc/id1610877517?i=1000576423593"
   },
   {
     name: "Venturing into tech as a Medical Laboratory Scientist",
     description: 'In this episode, we discussed some vital information we as medical laboratory scientists or professionals should have when venturing into tech and how we can promote the profession using tech.',
     image: "",
     link: "https://open.spotify.com/episode/1ae2TQ8X9SiQvh07Qeguzj?si=Df9Jdo0rRWqrSGZWcA7b9w",
-     appleUrl: "https://podcasts.apple.com/us/podcast/venturing-into-tech-as-a-medical-laboratory-scientist/id1610877517?i=1000622634861"
+    appleUrl: "https://podcasts.apple.com/us/podcast/venturing-into-tech-as-a-medical-laboratory-scientist/id1610877517?i=1000622634861"
   },
   {
     name: "Is Medical Lab Lucrative",
     description: 'In this episode, Precious, Nmesoma and Favour converse with MLS Olusoji Billyrose on whether or not medical laboratory science is a lucrative profession into get into.',
     image: "",
     link: "https://open.spotify.com/episode/44K4mJirmfpmQoaBbnmJ60?si=kdVDhNo9RyeL5ftGRGkR6w",
-     appleUrl: "https://podcasts.apple.com/us/podcast/is-med-lab-lucrative/id1610877517?i=1000580458463"
+    appleUrl: "https://podcasts.apple.com/us/podcast/is-med-lab-lucrative/id1610877517?i=1000580458463"
   },
 ]);
 </script>
