@@ -122,7 +122,7 @@
             <div class="flex flex-wrap gap-2 flex justify-center items-center w-full">
        <div>
         <a
-            href="https://open.spotify.com/episode/0py3aUuw2hqN0StC6r1pbX?si=be21b341b2334e01"
+            href="https://open.spotify.com/episode/5D6cMrufqwIkJMr16BDH28?si=62pzB1M4SzCjNKxTlH--nQ"
             class="inline-flex items-center px-4 py-1.5 rounded-full bg-[#1DB954] text-sm hover:opacity-90"
           >
             <span class="mr-2">
@@ -137,7 +137,7 @@
        </div>
       <div>
         <a
-                href="https://podcasts.apple.com/us/podcast/the-impact-of-artificial-intelligence-on/id1610877517?i=1000674465767"
+                href="https://open.spotify.com/episode/5D6cMrufqwIkJMr16BDH28?si=62pzB1M4SzCjNKxTlH--nQ"
                 class="inline-flex items-center border-[0.5px] border-gray-20 px-4 py-1.5 rounded-full bg-white text-black text-sm hover:opacity-90"
               >
                 <span class="mr-2">
@@ -456,7 +456,7 @@ import journo4 from '@/assets/img/lab-coast/journo4.jpeg'
 import journo5 from '@/assets/img/lab-coast/journo5.jpeg'
 import journo6 from '@/assets/img/lab-coast/journo6.jpeg'
 import journo7 from '@/assets/img/lab-coast/journo7.jpeg'
-import labcast from '@/assets/img/latest-convo.jpeg'
+import labcast from '@/assets/img/latest-labcast.jpg'
 import journo from '@/assets/img/paradox.jpeg'
 import burnOut from '@/assets/img/burnout.jpeg'
 import latest1 from '@/assets/img/graduate.jpeg'
@@ -506,14 +506,24 @@ const activitiesGrid = ref([
 
 const labcastLatest = ref([
 {
-    title: 'Sheathe Your Swords: Building interdisciplinary Teams for Better Health Outcomes',
+    title: 'Redeeming the Time: Navigating the Pre-internship Phase',
     image: labcast,
-    desc: `The hierarchical struggles in healthcare systems are a serious, persisting challenge. In this episode of LabCast Nmesoma and Oluwadamilola are joined by Dr. Charlene and Pharm. Success to explore the power of interdisciplinary collaboration in healthcare.
-We discussed how integrating diverse professional perspectives enhances patient care, sharing real-world examples of successful teamwork, and addressing challenges faced in collaborative environments.
-Tune in to gain insights into building effective healthcare teams that lead to improved health outcomes! 🥳`,
+    desc: `You’ve been inducted, but the internship call isn’t coming - now what? In this episode of LabCast, Ubani
+              C. Nmesoma and co-host Folaranmi Precious unpack the frustrating, uncertain, and all-too-common “wait
+              period” many medical laboratory science graduates in Nigeria face before securing internship placements.
+
+              They’re joined by Oluwamuyiwa Ogunkoya David and Gimbiya Precious, two MLS graduates who’ve completed
+              internships. The conversation focuses on the reasons behind the delays, how to make the most of the
+              waiting period, and what changes the system really needs.
+
+              Whether you're waiting, worrying, or wondering what’s next, this episode offers real talk, practical tips,
+              and the encouragement you need to keep going.
+
+              Tune in, share with a friend, and don’t forget to check out our previous episodes on internship
+              struggles.🤗`,
     previousEditionUrl: '#',
     status: 'latest',
-    registerUrl: 'https://open.spotify.com/episode/0rR6JIG94pRl7j1VZn5xfS'
+    registerUrl: 'https://open.spotify.com/episode/5D6cMrufqwIkJMr16BDH28?si=62pzB1M4SzCjNKxTlH--nQ'
   },
 ])
 
