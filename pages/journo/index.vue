@@ -39,12 +39,11 @@
       <div class="relative mx-auto max-w-7xl py-24 sm:py-32 px-10 lg:px-0 lg:py-40">
         <div class="md:ml-auto md:w-2/3 md:pl-16 lg:w-1/2">
           <p  class="mt-2 text-4xl font-semibold tracking-tight text-white sm:text-5xl">
-            ATTAINING UTOPIA AMONG HEALTHCARE WORKERS</p>
-          <p  class="mt-6 text-base/7 text-white">"
-            Months into his internship at a top Nigerian hospital, Aliu* was fed up. He had spent years training to become a medical laboratory scientist, but in just a few months of working, he felt his professional identity being questioned at every turn. He watched, often helplessly, as physicians interfered with his work—subtly questioning lab results, requesting re-runs without clear justification, and in many cases, having to revert to the Head of Department (a doctor) before any result could be deemed “authentic enough to release.”
-           </p>
+            Access Denied: Health Insurance and Diagnostic Inequity in Nigeria’s Healthcare System</p>
+          <p  class="mt-6 text-base/7 text-white">
+            “20, 21, 22…” Ezekiel* muttered, brow furrowed, as he paced the floor of the hospital’s waiting room. He had been waiting for his Health Maintenance Organization (HMO) to confirm with the receptionist what was covered by his plan for over two hours now. “What even is the point?” He said to himself as he plopped down on the uncomfortable bench. He tried to play a game of colors – how many people wore red out of 10 patients? but he soon got bored. His mind wandered to the day he got the confirmation of his HMO plan.</p>
           <div  class="mt-8">
-            <a href="https://mlcjourno.substack.com/p/attaining-utopia-among-healthcare?r=37evr2"
+            <a href="https://mlcjourno.substack.com/p/access-denied-health-insurance-and?r=45bm0j&utm_campaign=post&utm_medium=web&triedRedirect=true"
               class="inline-flex rounded-md bg-white/10 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-white/20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">View
               publications <span aria-hidden="true">&rarr;</span></a>
           </div>
@@ -136,12 +135,21 @@ import latest from '@/assets/img/burnout.jpeg'
 import latest1 from '@/assets/img/career-day.jpeg'
 import latest2 from '@/assets/img/graduate.jpeg'
 import latest3 from '@/assets/img/kidney.jpeg'
-import latestJourno from '@/assets/img/latest-journo.jpeg'
+import utopia from '@/assets/img/utopia.jpeg'
 import carvingProfessional from '@/assets/img/carving-professional.jpeg'
+import latestJourno from '@/assets/img/latest-journo.jpeg'
+
 
 const journosList = ref([
 {
     image: latestJourno,
+    title: `Access Denied: Health Insurance and Diagnostic Inequity in Nigeria’s Healthcare System`,
+    desc: `“20, 21, 22…” Ezekiel* muttered, brow furrowed, as he paced the floor of the hospital’s waiting room. He had been waiting for his Health Maintenance Organization (HMO) to confirm with the receptionist what was covered by his plan for over two hours now. “What even is the point?” He said to himself as he plopped down on the uncomfortable bench. He tried to play a game of colors – how many people wore red out of 10 patients? but he soon got bored. His mind wandered to the day he got the confirmation of his HMO plan.”`,
+    author: 'Oluwaponmile',
+    url: 'https://mlcjourno.substack.com/p/access-denied-health-insurance-and?r=45bm0j&utm_campaign=post&utm_medium=web&triedRedirect=true'
+  },
+{
+    image: utopia,
     title: `ATTAINING UTOPIA AMONG HEALTHCARE WORKERS:
     A Pipe Dream?`,
     desc: `Months into his internship at a top Nigerian hospital, Aliu* was fed up. He had spent years training to become a medical laboratory scientist, but in just a few months of working, he felt his professional identity being questioned at every turn. He watched, often helplessly, as physicians interfered with his work—subtly questioning lab results, requesting re-runs without clear justification, and in many cases, having to revert to the Head of Department (a doctor) before any result could be deemed “authentic enough to release.”`,

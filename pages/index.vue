@@ -519,9 +519,9 @@ You’ll discover how these technologies are helping detect conditions earlier, 
 
 const journoLatest = ref([
 {
-    title: `ATTAINING UTOPIA AMONG HEALTHCARE WORKERS: A Pipe Dream?`,
+    title: `Access Denied: Health Insurance and Diagnostic Inequity in Nigeria’s Healthcare System`,
     image: latestJourno,
-    desc: `Months into his internship at a top Nigerian hospital, Aliu* was fed up. He had spent years training to become a medical laboratory scientist, but in just a few months of working, he felt his professional identity being questioned at every turn. He watched, often helplessly, as physicians interfered with his work—subtly questioning lab results, requesting re-runs without clear justification, and in many cases, having to revert to the Head of Department (a doctor) before any result could be deemed “authentic enough to release.”`,
+    desc: `"20, 21, 22…” Ezekiel* muttered, brow furrowed, as he paced the floor of the hospital’s waiting room. He had been waiting for his Health Maintenance Organization (HMO) to confirm with the receptionist what was covered by his plan for over two hours now. “What even is the point?” He said to himself as he plopped down on the uncomfortable bench. He tried to play a game of colors – how many people wore red out of 10 patients? but he soon got bored. His mind wandered to the day he got the confirmation of his HMO plan. He had just gotten the job as a Center Manager at his company and the plan came as part of the benefits of the role.”`,
     previousEditionUrl: '#',
     status: 'latest',
     actionText: 'Read More',
