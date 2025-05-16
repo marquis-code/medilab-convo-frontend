@@ -122,7 +122,7 @@
             <div class="flex flex-wrap gap-2 flex justify-center items-center w-full">
        <div>
         <a
-            href=" https://open.spotify.com/episode/0JcJMe91MLZEOA3qmq04ur?si=UsINzwx0RmG-IreZFAad6Q"
+            href="https://open.spotify.com/episode/1btcW1Xe60zADkJtCeFK0f?si=Ix7VLqlQSPigVYfM1H_ZbQ%0A"
             class="inline-flex items-center px-4 py-1.5 rounded-full bg-[#1DB954] text-sm hover:opacity-90"
           >
             <span class="mr-2">
@@ -137,7 +137,7 @@
        </div>
       <div>
         <a
-                href=" https://open.spotify.com/episode/0JcJMe91MLZEOA3qmq04ur?si=UsINzwx0RmG-IreZFAad6Q"
+                href="https://open.spotify.com/episode/1btcW1Xe60zADkJtCeFK0f?si=Ix7VLqlQSPigVYfM1H_ZbQ%0A"
                 class="inline-flex items-center border-[0.5px] border-gray-20 px-4 py-1.5 rounded-full bg-white text-black text-sm hover:opacity-90"
               >
                 <span class="mr-2">
@@ -506,11 +506,9 @@ const activitiesGrid = ref([
 
 const labcastLatest = ref([
 {
-    title: 'Advances in Prenatal and Neonatal Diagnostics',
+    title: 'Addressing Inconsistencies in Blood Genotype Testing',
     image: labcast,
-    desc: ` What if you could meet your baby before they’re even born—not just through an ultrasound, but through the lens of the laboratory? In this episode of LabCast, join our hosts and guest Medical Laboratory Scientist Isaac Godspower as they dive into the latest advances in prenatal and neonatal diagnostics.
-This conversation covers innovations like genetic screening and advanced imaging techniques, and how they’re reshaping early care for both mothers and newborns.
-You’ll discover how these technologies are helping detect conditions earlier, guide clinical decisions, and ultimately improve outcomes for families. Whether you’re a healthcare professional or simply curious, this episode is for you.🤗`,
+    desc: `In this episode of Labcast, we discussed with MLS Daniel Adewuyi to explore a critical issue in medical laboratory practice — inconsistencies in blood genotype testing. Drawing from his diverse experience, Daniel discusses how and why genotype testing errors happen, the real-life implications for patients, and what laboratory professionals can do to minimize mistakes. Whether it's a lack of standard procedures, inadequate training, or misinterpretation of results, this episode highlights the importance of accuracy and ethical responsibility in genotype testing. If you're a medical laboratory scientist, student, or healthcare professional, this conversation will challenge you to rethink your role in delivering trustworthy results.`,
     previousEditionUrl: '#',
     status: 'latest',
     registerUrl: ''

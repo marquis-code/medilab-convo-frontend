@@ -97,21 +97,14 @@
         <div class="lg:flex space-y-6 items-center space-x-4 w-full p-6">
           <img src="@/assets/img/latest-labcast.jpg" alt="Podcast cover" class="w-72 h-60 rounded-lg object-cover" />
           <div class="flex flex-col w-full">
-            <div class="font-semibold text-2xl">Advances in Prenatal and Neonatal Diagnostics</div>
+            <div class="font-semibold text-2xl">Addressing Inconsistencies in Blood Genotype Testing</div>
             <div class="text-gray-500 mt-2">
-              What if you could meet your baby before they’re even born—not just through an ultrasound, but through the
-              lens of the laboratory? In this episode of LabCast, join our hosts and guest Medical Laboratory Scientist
-              Isaac Godspower as they dive into the latest advances in prenatal and neonatal diagnostics.
-              This conversation covers innovations like genetic screening and advanced imaging techniques, and how
-              they’re reshaping early care for both mothers and newborns.
-              You’ll discover how these technologies are helping detect conditions earlier, guide clinical decisions,
-              and ultimately improve outcomes for families. Whether you’re a healthcare professional or simply curious,
-              this episode is for you.🤗
+              In this episode of Labcast, we discussed with MLS Daniel Adewuyi to explore a critical issue in medical laboratory practice — inconsistencies in blood genotype testing. Drawing from his diverse experience, Daniel discusses how and why genotype testing errors happen, the real-life implications for patients, and what laboratory professionals can do to minimize mistakes. Whether it's a lack of standard procedures, inadequate training, or misinterpretation of results, this episode highlights the importance of accuracy and ethical responsibility in genotype testing. If you're a medical laboratory scientist, student, or healthcare professional, this conversation will challenge you to rethink your role in delivering trustworthy results.
             </div>
             <div class="mt-3">
               <p class="text-gray-400 text-sm mb-2">Available On:</p>
               <div class="flex flex-wrap gap-2">
-                <a href=" https://open.spotify.com/episode/0JcJMe91MLZEOA3qmq04ur?si=UsINzwx0RmG-IreZFAad6Q"
+                <a href=" https://open.spotify.com/episode/1btcW1Xe60zADkJtCeFK0f?si=Ix7VLqlQSPigVYfM1H_ZbQ%0A"
                   class="inline-flex items-center px-4 py-1.5 rounded-full bg-[#1DB954] text-sm hover:opacity-90">
                   <span class="mr-2">
                     <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
@@ -121,7 +114,7 @@
                   </span>
                   Spotify
                 </a>
-                <a href=" https://open.spotify.com/episode/0JcJMe91MLZEOA3qmq04ur?si=UsINzwx0RmG-IreZFAad6Q"
+                <a href=" https://open.spotify.com/episode/1btcW1Xe60zADkJtCeFK0f?si=Ix7VLqlQSPigVYfM1H_ZbQ%0A"
                   class="inline-flex items-center border-[0.5px] border-gray-20 px-4 py-1.5 rounded-full bg-white text-black text-sm hover:opacity-90">
                   <span class="mr-2">
                     <svg fill="none" class="w-6 h-6" viewBox="0 0 92 92" xmlns="http://www.w3.org/2000/svg"
@@ -334,21 +327,23 @@ import episode30 from "@/assets/img/lab-coast/lab30.png";
 import episode31 from "@/assets/img/lab-coast/lab31.png";
 
 const podcastList = ref([
-  {
+{
+    name: "Addressing Inconsistencies in Blood Genotype Testing",
+    description:
+      `In this episode of Labcast, we discussed with MLS Daniel Adewuyi to explore a critical issue in medical laboratory practice — inconsistencies in blood genotype testing. Drawing from his diverse experience, Daniel discusses how and why genotype testing errors happen, the real-life implications for patients, and what laboratory professionals can do to minimize mistakes. Whether it's a lack of standard procedures, inadequate training, or misinterpretation of results, this episode highlights the importance of accuracy and ethical responsibility in genotype testing. If you're a medical laboratory scientist, student, or healthcare professional, this conversation will challenge you to rethink your role in delivering trustworthy results.`,
+    image: "",
+    link: "https://open.spotify.com/episode/1btcW1Xe60zADkJtCeFK0f?si=Ix7VLqlQSPigVYfM1H_ZbQ%0A",
+    appleUrl: "https://open.spotify.com/episode/1btcW1Xe60zADkJtCeFK0f?si=Ix7VLqlQSPigVYfM1H_ZbQ%0A"
+  },
+   {
     name: "Redeeming the Time: Navigating the Pre-internship Phase",
     description:
       `You’ve been inducted, but the internship call isn’t coming - now what? In this episode of LabCast, Ubani
               C. Nmesoma and co-host Folaranmi Precious unpack the frustrating, uncertain, and all-too-common “wait
-              period” many medical laboratory science graduates in Nigeria face before securing internship placements.
-
-              They’re joined by Oluwamuyiwa Ogunkoya David and Gimbiya Precious, two MLS graduates who’ve completed
+              period” many medical laboratory science graduates in Nigeria face before securing internship placements. They’re joined by Oluwamuyiwa Ogunkoya David and Gimbiya Precious, two MLS graduates who’ve completed
               internships. The conversation focuses on the reasons behind the delays, how to make the most of the
-              waiting period, and what changes the system really needs.
-
-              Whether you're waiting, worrying, or wondering what’s next, this episode offers real talk, practical tips,
-              and the encouragement you need to keep going.
-
-              Tune in, share with a friend, and don’t forget to check out our previous episodes on internship
+              waiting period, and what changes the system really needs. Whether you're waiting, worrying, or wondering what’s next, this episode offers real talk, practical tips,
+              and the encouragement you need to keep going. Tune in, share with a friend, and don’t forget to check out our previous episodes on internship
               struggles.🤗`,
     image: "",
     link: "https://open.spotify.com/episode/5D6cMrufqwIkJMr16BDH28?si=62pzB1M4SzCjNKxTlH--nQ",
