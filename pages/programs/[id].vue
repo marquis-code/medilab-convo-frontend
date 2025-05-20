@@ -271,18 +271,20 @@ function closeModal() {
 }
 </script> -->
 
-<template>
+
+<!-- BIOMEDICAL CONFERENCE -->
+ <!-- <template>
      <div class="overflow-hidden bg-white mt-20">
     <div class="relative mx-auto max-w-7xl px-6 py-16 lg:px-8">
-      <!-- Background elements -->
+      Background elements
       <div class="absolute bottom-0 left-3/4 top-0 hidden w-screen bg-[#27628C] lg:block"></div>
       
-      <!-- Animated DNA helix decoration -->
+      Animated DNA helix decoration
       <div class="absolute top-10 right-10 opacity-20 animate-pulse hidden lg:block">
         <DnaHelix />
       </div>
       
-      <!-- Animated dots pattern -->
+      Animated dots pattern
       <div class="absolute left-0 top-20 -ml-20 hidden lg:block">
         <svg width="404" height="384" fill="none" viewBox="0 0 404 384" aria-hidden="true" class="animate-float">
           <defs>
@@ -331,7 +333,7 @@ function closeModal() {
                 width="1184" 
                 height="1376"
               >
-              <!-- Microscope decoration overlay -->
+              Microscope decoration overlay
               <div class="absolute -bottom-10 -right-10 opacity-20 rotate-12 transform scale-75">
                 <MicroscopeIcon />
               </div>
@@ -424,7 +426,7 @@ function closeModal() {
       </div>
     </div>
     
-    <!-- Floating molecules decoration -->
+    Floating molecules decoration
     <div class="fixed -z-10 bottom-0 left-0 w-full h-64 opacity-10 pointer-events-none">
       <MoleculePattern />
     </div>
@@ -479,11 +481,11 @@ function closeModal() {
       @close="closeModal"
     />
 
-</template>
+</template> -->
 
 
 
-<script setup lang="ts">
+<!-- <script setup lang="ts">
 import speaker1 from '@/assets/img/lab-coast/bio-speaker1.jpeg'
 import speaker2 from '@/assets/img/lab-coast/bio-speaker3.jpeg'
 import speaker3 from '@/assets/img/lab-coast/bio-speaker2.jpeg'
@@ -591,8 +593,107 @@ function openModal(speaker: any) {
 function closeModal() {
   isModalVisible.value = false;
 }
-</script>
+</script> -->
 
+
+
+
+
+<template>
+  <div class="overflow-hidden bg-white mt-20">
+ <div class="relative mx-auto max-w-7xl px-6 py-16 lg:px-8">
+<!-- Background elements -->
+<div class="absolute bottom-0 left-3/4 top-0 hidden w-screen bg-[#27628C] lg:block"></div>
+      
+      <!-- Animated DNA helix decoration -->
+      <div class="absolute top-10 right-10 opacity-20 animate-pulse hidden lg:block">
+        <DnaHelix />
+      </div>
+      
+      <!-- Animated dots pattern -->
+      <div class="absolute left-0 top-20 -ml-20 hidden lg:block">
+        <svg width="404" height="384" fill="none" viewBox="0 0 404 384" aria-hidden="true" class="animate-float">
+          <defs>
+            <pattern id="de316486-4a29-4312-bdfc-fbce2132a2c1" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+              <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="#27628C" opacity="0.2" />
+            </pattern>
+          </defs>
+          <rect width="404" height="384" fill="url(#de316486-4a29-4312-bdfc-fbce2132a2c1)" />
+        </svg>
+      </div>
+      
+      <div class="mx-auto max-w-prose text-base lg:grid lg:max-w-none lg:grid-cols-2 lg:gap-8">
+        <div>
+          <h3 
+            class="mt-2 text-3xl/8 font-bold tracking-tight sm:text-4xl text-[#27628C] uppercase text-center lg:text-start animate-fade-in"
+          >
+            FORGING A CAREER PATH 4.0
+          </h3>
+        </div>
+      </div>
+
+      <div class="mt-8 lg:grid lg:grid-cols-2 lg:gap-8">
+        <div class="relative lg:col-start-2 lg:row-start-1">
+          <svg 
+            class="absolute right-0 top-0 -mr-20 -mt-20 hidden lg:block animate-float" 
+            width="404" 
+            height="384"
+            fill="#ffffff" 
+            viewBox="0 0 404 384" 
+            aria-hidden="true"
+          >
+            <defs>
+              <pattern id="de316486-4a29-4312-bdfc-fbce2132a2c1" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+                <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="#ffffff" />
+              </pattern>
+            </defs>
+            <rect width="404" height="384" fill="url(#de316486-4a29-4312-bdfc-fbce2132a2c1)" />
+          </svg>
+          
+          <div class="relative mx-auto max-w-prose text-base lg:max-w-none">
+            <figure class="overflow-hidden rounded-lg shadow-lg transform transition-all duration-500 hover:scale-105">
+              <img 
+                class="w-full rounded-lg object-cover shadow-lg lg:aspect-auto animate-fade-in"
+                src="@/assets/img/forging-a-career-path.jpg"
+                alt="Conference image showing biomedical science professionals" 
+                width="1184" 
+                height="1376"
+              >
+              <!-- Microscope decoration overlay -->
+              <div class="absolute -bottom-10 -right-10 opacity-20 rotate-12 transform scale-75">
+                <MicroscopeIcon />
+              </div>
+            </figure>
+          </div>
+        </div>
+        
+        <div class="mt-8 lg:mt-0">
+          <div class="mx-auto text-base/7 text-gray-500">
+            <p class="text-lg/7 animate-slide-up">
+              The FACP program aims to expand the career horizons of young professionals and students in medical laboratory science by showcasing diverse opportunities beyond traditional clinical roles. In response to the evollving healthcare landscape. the program highlights various career paths within and outside the medical laboratory field, encouraging participants to explore their potential.
+            </p>
+            <p class="mt-10 text-xl">
+              Through interactive workshops, mentorship sessions, and networking events, the FACP program fosters an environment that promotes innovative thinking and professional development. Participants are inspired to consider careers in research, healthcare technology, public health, education, and industry innovation, ultimately redefining what success looks like in medical laboratory science. By transforming challenges into opportunities, the program seeks to empower individuals to forge their unique paths in this dynamic field.
+           </p>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+ </div>
+
+
+<div class="flex justify-center items-center my-10 p-3 lg:p-0 animate-bounce-slow">
+      <a 
+        href="https://forms.gle/aEGfwH4P6FPbHUAX6" 
+        class="text-white text-center bg-[#27628C] rounded-lg w-full px-6 py-3.5 max-w-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl flex items-center justify-center gap-2"
+      >
+        <span>Register Now</span>
+        <ArrowRightIcon class="h-5 w-5" />
+      </a>
+    </div>
+</template>
 
 <style>
 /* Custom animations */
@@ -674,4 +775,3 @@ function closeModal() {
   animation-delay: 0.5s;
 }
 </style>
-

@@ -45,59 +45,15 @@
                 
                 <!-- Buttons -->
                 <div class="flex flex-col space-y-4 max-w-md mx-auto pt-4">
-                  <button  @click="router.push('/programs/biomedical-science-conference')" v-if="item.status === 'latest'" class="bg-[#27628C] text-white py-3 px-6 rounded  transition-colors">
+                  <button  @click="router.push('/programs/forging-a-career-path')" v-if="item.status === 'latest'" class="bg-[#27628C] text-white py-3 px-6 rounded  transition-colors">
                   Learn  More
                   </button>
-                  <!-- <button class="bg-teal-600 text-white py-3 px-6 rounded hover:bg-teal-700 transition-colors">
-                    Join International
-                  </button> -->
+
                 </div>
               </div>
             </div>
 
           </div>
-          
-          <!-- <div class="bg-white pb-10">
-            <div class="mx-auto max-w-7xl px-6 lg:px-8">
-              <div class="mx-auto max-w-2xl lg:max-w-4xl">
-                <div class="mt-16 space-y-20 lg:mt-20 lg:space-y-20">
-                  <article v-for="(item, idx) in programsList"  class="relative isolate flex flex-col gap-8 lg:flex-row">
-                    <div class="relative aspect-[16/9] sm:aspect-[2/1] lg:aspect-square lg:w-64 lg:shrink-0">
-                      <img :src="item.img" alt="" class="absolute inset-0 h-full w-full rounded-2xl bg-gray-50 object-cover">
-                      <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
-                    </div>
-                    <div>
-                      <div class="group relative max-w-xl">
-                        <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
-                          <a href="#">
-                            <span class="absolute inset-0"></span>
-                            {{item.title}}
-                          </a>
-                        </h3>
-                        <p class="mt-5 text-sm leading-6 text-gray-600">
-                          {{ item.firstPart }}
-                        </p>
-                        <p class="mt-5 text-sm leading-6 text-gray-600">
-                          {{ item.secondPart }}
-                        </p>
-                        <p class="mt-5 text-sm leading-6 text-gray-600">
-                          {{ item.thirdPart }}
-                        </p>
-                      </div>
-                     <div class="space-y-3 mt-6 w-full">
-                      <div class="w-full">
-                        <NuxtLink :to="item.previousEditionUrl" class="py-3 block text-center rounded-md w-full bg-black text-white ">Previous Edition</NuxtLink>
-                      </div>
-                      <div class="w-full">
-                        <NuxtLink :to="item.registerUrl" class="py-3 block text-center rounded-md w-full bg-black text-white ">Register for ORIGINS 2025</NuxtLink>
-                      </div>
-                     </div>
-                    </div>
-                  </article>
-                </div>
-              </div>
-            </div>
-          </div> -->
     </main>      
 </template>
 
@@ -105,19 +61,19 @@
 import img1 from '@/assets/img/medics.jpg'
 import img2 from '@/assets/img/forging-a-path.jpg'
 import img3 from '@/assets/img/happenings.jpg'
-import img4 from '@/assets/img/updates1.jpeg'
-import convo from "@/assets/img/conference.jpeg"
+// import img4 from '@/assets/img/updates1.jpeg'
+// import convo from "@/assets/img/conference.jpeg"
 const router = useRouter()
 const programsList = ref([
-{
-    title: 'MEDLABCONVO 21ST CENTURY BIOMEDICAL SCIENCE CONFERENCE 2025',
-    img: convo,
-    firstPart: `Are you ready to explore the latest innovations and research shaping the future of biomedical science? Join us for an exciting virtual Biomedical Science Conference, bringing together experts, researchers, and professionals to discuss on the topic:`,
-    secondPart: `Strengthening laboratory systems for a sustainable future: Global and Local Perspective...`,
-    previousEditionUrl: '#',
-    status: 'latest',
-    registerUrl: '#'
-  },
+// {
+//     title: 'MEDLABCONVO 21ST CENTURY BIOMEDICAL SCIENCE CONFERENCE 2025',
+//     img: convo,
+//     firstPart: `Are you ready to explore the latest innovations and research shaping the future of biomedical science? Join us for an exciting virtual Biomedical Science Conference, bringing together experts, researchers, and professionals to discuss on the topic:`,
+//     secondPart: `Strengthening laboratory systems for a sustainable future: Global and Local Perspective...`,
+//     previousEditionUrl: '#',
+//     status: 'latest',
+//     registerUrl: '#'
+//   },
   // {
   //   title: 'ORIGINS',
   //   img: img4,
@@ -133,7 +89,7 @@ const programsList = ref([
     firstPart: `The FACP program is designed to broaden the horizons of young medical laboratory science professionals and students by introducing them to a wide range of alternative career opportunities beyond the traditional clinical laboratory bench work. With the evolving landscape of healthcare and science, this program aims to expose participants to the many diverse career paths available within and beyond the field of medical laboratory science.`,
     secondPart: `Through engaging workshops, mentorship sessions, and networking opportunities, the FACP program encourages individuals to think outside the conventional career box. Whether it's roles in research, healthcare technology, public health, education, or industry innovation, participants are inspired to explore and pursue unique professional trajectories that align with their interests and strengths. This program serves as a launching pad for those looking to break new ground and redefine what a successful career in medical laboratory science can look like.`,
     previousEditionUrl: '#',
-    status: 'old',
+    status: 'latest',
     registerUrl: '#'
   },
   {

@@ -76,7 +76,7 @@
             <p class="mt-5 line-clamp-3 text-sm/6 text-gray-600">{{ item?.desc ?? 'Nil' }}</p>
           </div>
           <div class="relative mt-8 flex items-center gap-x-4">
-            <NuxtLink :to="'/programs/biomedical-science-conference'" v-if="item.status === 'latest'" class="bg-[#27628C] text-center text-white px-6 py-3 rounded-lg w-full">Learn More</NuxtLink>
+            <NuxtLink :to="'/programs/forging-a-career-path'" v-if="item.status === 'latest'" class="bg-[#27628C] text-center text-white px-6 py-3 rounded-lg w-full">Learn More</NuxtLink>
             <img v-if="item.status !== 'latest'" src="@/assets/icons/avatar.svg" alt="" class="h-10 w-10 rounded-full bg-gray-100">
             <div v-if="item.status !== 'latest'"  class="text-sm/6">
               <p class="font-semibold text-gray-900">
@@ -462,7 +462,7 @@ import burnOut from '@/assets/img/burnout.jpeg'
 import latest1 from '@/assets/img/graduate.jpeg'
 const isOpen = ref(false)
 import img4 from '@/assets/img/scholarship.jpeg'
-import convo from "@/assets/img/conference.jpeg"
+import convo from "@/assets/img/forging-a-career-path.jpg"
 import latestJourno from '@/assets/img/latest-journo.jpeg'
 
 const activitiesGrid = ref([
@@ -529,18 +529,10 @@ const journoLatest = ref([
 
  const journosList = ref([
  {
-    title: 'MEDLABCONVO 21ST CENTURY BIOMEDICAL SCIENCE CONFERENCE 2025',
+    title: 'FORGING A CAREER PATH 4.0',
     image: convo,
-    desc: `Are you ready to explore the latest innovations and research shaping the future of biomedical science? Join us for an exciting virtual Biomedical Science Conference, bringing together experts, researchers, and professionals to discuss on the topic: Strengthening laboratory systems for a sustainable future: Global and Local Perspective`,
-    secondPart: `
-    What to Expect?
-
-    Expert-Led Sessions on Cutting-Edge Biomedical Research
-
-    Discussions on Emerging Technologies & Trends
-
-    Interactive Networking with Global Professionals
-    `,
+    desc: `The FACP program aims to expand the career horizons of young professionals and students in medical laboratory science by showcasing diverse opportunities beyond traditional clinical roles. In response to the evollving healthcare landscape. the program highlights various career paths within and outside the medical laboratory field, encouraging participants to explore their potential.`,
+    secondPart: `Through interactive workshops, mentorship sessions, and networking events, the FACP program fosters an environment that promotes innovative thinking and professional development. Participants are inspired to consider careers in research, healthcare technology, public health, education, and industry innovation, ultimately redefining what success looks like in medical laboratory science. By transforming challenges into opportunities, the program seeks to empower individuals to forge their unique paths in this dynamic field.`,
     previousEditionUrl: '#',
     status: 'latest',
     registerUrl: '#'
