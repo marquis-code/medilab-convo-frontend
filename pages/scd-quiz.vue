@@ -396,7 +396,7 @@ const resetQuiz = () => {
 
 function getResultTitle() {
   if (score.value === questions.value.length) {
-    return "🎉 Perfect Score! You're a Sickle Cell Expert!";
+    return "🎉 Perfect Score! You're an Expert!";
   } else if (score.value >= questions.value.length / 2) {
     return "👏 Great Job! You know a lot about Sickle Cell Disease!";
   } else {
