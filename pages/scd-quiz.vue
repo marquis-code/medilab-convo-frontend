@@ -127,12 +127,15 @@
           <h2 class="text-2xl md:text-3xl font-bold text-teal-800 mb-2">
             Quiz Completed!
           </h2>
+          <p class="text-lg font-semibold">So, how well did you do?</p>
           <p class="text-gray-700 text-lg mb-6">
             You got <span class="text-teal-600 font-bold">{{ score }}</span> out
             of {{ questions.length }} questions correct.
           </p>
+          <p>Do you know your genotype?</p>
+          <p>Share this quiz. Tag someone who needs to take it.</p>
 
-          <div class="flex flex-col sm:flex-row justify-center space-y-3 sm:space-y-0 sm:space-x-3 mb-6">
+          <div class="flex flex-col sm:flex-row justify-center space-y-3 sm:space-y-0 sm:space-x-3 mb-6 mt-6">
             <button @click="resetQuiz" class="px-4 py-2 bg-teal-600 text-white rounded-lg hover:bg-teal-700">
               Take Quiz Again
             </button>
@@ -145,9 +148,6 @@
 
           <!-- Outro Section -->
           <div class="text-gray-800 mt-4 space-y-2">
-            <p class="text-lg font-semibold">So, how well did you do?</p>
-            <p>Do you know your genotype?</p>
-            <p>Share this quiz. Tag someone who needs to take it.</p>
             <p class="text-red-700 font-medium">Let’s raise awareness together!</p>
           </div>
         </div>
