@@ -122,7 +122,7 @@
             <div class="flex flex-wrap gap-2 flex justify-center items-center w-full">
        <div>
         <a
-            href="https://open.spotify.com/episode/1btcW1Xe60zADkJtCeFK0f?si=Ix7VLqlQSPigVYfM1H_ZbQ%0A"
+            href="https://open.spotify.com/episode/4Xv5dJD9bG6jufJaHo9uVn"
             class="inline-flex items-center px-4 py-1.5 rounded-full bg-[#1DB954] text-sm hover:opacity-90"
           >
             <span class="mr-2">
@@ -137,7 +137,7 @@
        </div>
       <div>
         <a
-                href="https://open.spotify.com/episode/1btcW1Xe60zADkJtCeFK0f?si=Ix7VLqlQSPigVYfM1H_ZbQ%0A"
+                href="https://open.spotify.com/episode/4Xv5dJD9bG6jufJaHo9uVn"
                 class="inline-flex items-center border-[0.5px] border-gray-20 px-4 py-1.5 rounded-full bg-white text-black text-sm hover:opacity-90"
               >
                 <span class="mr-2">
@@ -506,9 +506,9 @@ const activitiesGrid = ref([
 
 const labcastLatest = ref([
 {
-    title: 'Addressing Inconsistencies in Blood Genotype Testing',
+    title: 'Thriving with Sickle Cell Disease: The Amblest Story',
     image: labcast,
-    desc: `In this episode of Labcast, we discussed with MLS Daniel Adewuyi to explore a critical issue in medical laboratory practice — inconsistencies in blood genotype testing. Drawing from his diverse experience, Daniel discusses how and why genotype testing errors happen, the real-life implications for patients, and what laboratory professionals can do to minimize mistakes. Whether it's a lack of standard procedures, inadequate training, or misinterpretation of results, this episode highlights the importance of accuracy and ethical responsibility in genotype testing. If you're a medical laboratory scientist, student, or healthcare professional, this conversation will challenge you to rethink your role in delivering trustworthy results.`,
+    desc: `In this episode of LabCast, we speak with Amblest Kanu, a First-Class graduate who lives with sickle cell disease. Despite health challenges, he earned five perfect GPAs and 74 As in school. Amblest shares how he stayed focused, managed pain, and led others—all while battling a chronic condition. Hosted by Nmesoma and Iheoma, this episode is filled with lessons on resilience, hope, and the power of mindset. Whether you live with sickle cell or know someone who does, this story will inspire you. We also recommend our episode on blood genotype testing for more insights.😊`,
     previousEditionUrl: '#',
     status: 'latest',
     registerUrl: ''

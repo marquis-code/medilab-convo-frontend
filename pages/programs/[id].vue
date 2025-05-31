@@ -684,14 +684,26 @@ function closeModal() {
  </div>
 
 
-<div class="flex justify-center items-center my-10 p-3 lg:p-0 animate-bounce-slow">
+<div class="flex justify-center flex-col md:flex-row items-center gap-10 my-10 p-3 lg:p-0 animate-bounce-slow">
+ <div> 
+  <a 
+        href="https://paystack.shop/pay/414967xrt1" 
+        class="text-white text-center bg-[#27628C] rounded-lg w-full px-6 py-3.5 max-w-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl flex items-center justify-center gap-2"
+      >
+        <span>Click to pay</span>
+        <ArrowRightIcon class="h-5 w-5" />
+      </a>
+    </div>
+
+     <div> 
       <a 
         href="https://forms.gle/aEGfwH4P6FPbHUAX6" 
         class="text-white text-center bg-[#27628C] rounded-lg w-full px-6 py-3.5 max-w-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl flex items-center justify-center gap-2"
       >
-        <span>Register Now</span>
+        <span>Fill the registration form</span>
         <ArrowRightIcon class="h-5 w-5" />
       </a>
+    </div>
     </div>
 </template>
 

@@ -97,14 +97,13 @@
         <div class="lg:flex space-y-6 items-center space-x-4 w-full p-6">
           <img src="@/assets/img/latest-labcast.jpg" alt="Podcast cover" class="w-72 h-60 rounded-lg object-cover" />
           <div class="flex flex-col w-full">
-            <div class="font-semibold text-2xl">Addressing Inconsistencies in Blood Genotype Testing</div>
+            <div class="font-semibold text-2xl">Thriving with Sickle Cell Disease: The Amblest Story</div>
             <div class="text-gray-500 mt-2">
-              In this episode of Labcast, we discussed with MLS Daniel Adewuyi to explore a critical issue in medical laboratory practice — inconsistencies in blood genotype testing. Drawing from his diverse experience, Daniel discusses how and why genotype testing errors happen, the real-life implications for patients, and what laboratory professionals can do to minimize mistakes. Whether it's a lack of standard procedures, inadequate training, or misinterpretation of results, this episode highlights the importance of accuracy and ethical responsibility in genotype testing. If you're a medical laboratory scientist, student, or healthcare professional, this conversation will challenge you to rethink your role in delivering trustworthy results.
-            </div>
+              In this episode of LabCast, we speak with Amblest Kanu, a First-Class graduate who lives with sickle cell disease. Despite health challenges, he earned five perfect GPAs and 74 As in school. Amblest shares how he stayed focused, managed pain, and led others—all while battling a chronic condition. Hosted by Nmesoma and Iheoma, this episode is filled with lessons on resilience, hope, and the power of mindset. Whether you live with sickle cell or know someone who does, this story will inspire you. We also recommend our episode on blood genotype testing for more insights.😊            </div>
             <div class="mt-3">
               <p class="text-gray-400 text-sm mb-2">Available On:</p>
               <div class="flex flex-wrap gap-2">
-                <a href=" https://open.spotify.com/episode/1btcW1Xe60zADkJtCeFK0f?si=Ix7VLqlQSPigVYfM1H_ZbQ%0A"
+                <a href=" https://open.spotify.com/episode/4Xv5dJD9bG6jufJaHo9uVn"
                   class="inline-flex items-center px-4 py-1.5 rounded-full bg-[#1DB954] text-sm hover:opacity-90">
                   <span class="mr-2">
                     <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
@@ -114,7 +113,7 @@
                   </span>
                   Spotify
                 </a>
-                <a href=" https://open.spotify.com/episode/1btcW1Xe60zADkJtCeFK0f?si=Ix7VLqlQSPigVYfM1H_ZbQ%0A"
+                <a href=" https://open.spotify.com/episode/4Xv5dJD9bG6jufJaHo9uVn"
                   class="inline-flex items-center border-[0.5px] border-gray-20 px-4 py-1.5 rounded-full bg-white text-black text-sm hover:opacity-90">
                   <span class="mr-2">
                     <svg fill="none" class="w-6 h-6" viewBox="0 0 92 92" xmlns="http://www.w3.org/2000/svg"
@@ -327,6 +326,15 @@ import episode30 from "@/assets/img/lab-coast/lab30.png";
 import episode31 from "@/assets/img/lab-coast/lab31.png";
 
 const podcastList = ref([
+  //  https://open.spotify.com/episode/4Xv5dJD9bG6jufJaHo9uVn
+  {
+    name: "Thriving with Sickle Cell Disease: The Amblest Story",
+    description:
+      `In this episode of LabCast, we speak with Amblest Kanu, a First-Class graduate who lives with sickle cell disease. Despite health challenges, he earned five perfect GPAs and 74 As in school. Amblest shares how he stayed focused, managed pain, and led others—all while battling a chronic condition. Hosted by Nmesoma and Iheoma, this episode is filled with lessons on resilience, hope, and the power of mindset. Whether you live with sickle cell or know someone who does, this story will inspire you. We also recommend our episode on blood genotype testing for more insights.😊`,
+    image: "",
+    link: "https://open.spotify.com/episode/4Xv5dJD9bG6jufJaHo9uVn",
+    appleUrl: "https://open.spotify.com/episode/4Xv5dJD9bG6jufJaHo9uVn"
+  },
 {
     name: "Addressing Inconsistencies in Blood Genotype Testing",
     description:
