@@ -684,28 +684,98 @@ function closeModal() {
  </div>
 
 
-<div class="flex justify-center flex-col md:flex-row items-center gap-10 my-10 p-3 lg:p-0 animate-bounce-slow">
- <div> 
-  <a 
-        href="https://paystack.shop/pay/414967xrt1" 
-        class="text-white text-center bg-[#27628C] rounded-lg w-full px-6 py-3.5 max-w-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl flex items-center justify-center gap-2"
-      >
-        <span>Click to pay</span>
-        <ArrowRightIcon class="h-5 w-5" />
-      </a>
+ <div class="flex justify-center flex-col md:flex-row items-center gap-6 my-10 p-3 lg:p-0 animate-bounce-slow">
+  <div>
+    <a 
+      href="https://paystack.shop/pay/414967xrt1" 
+      class="text-white text-center bg-[#27628C] rounded-lg px-6 py-3.5 w-64 transform transition-all duration-300 hover:scale-105 hover:shadow-xl flex items-center justify-center gap-2"
+    >
+      <span>Make Payment</span>
+      <ArrowRightIcon class="h-5 w-5" />
+    </a>
+  </div>
+
+  <div>
+    <a 
+      href="https://forms.gle/aEGfwH4P6FPbHUAX6" 
+      class="text-white text-center bg-[#27628C] rounded-lg px-6 py-3.5 w-64 transform transition-all duration-300 hover:scale-105 hover:shadow-xl flex items-center justify-center gap-2"
+    >
+      <span>Complete Registration</span>
+      <ArrowRightIcon class="h-5 w-5" />
+    </a>
+  </div>
+</div>
+
+<div class="flex flex-col justify-center items-center mt-28 mb-28">
+      <h1 class="text-center text-[#27628C] uppercase text-2xl font-bold">Course Outline</h1>
+
+      <div class="overflow-x-auto w-full max-w-[900px]">
+        <table class="w-full border-collapse border-8 border-white mt-10 mx-auto">
+          <thead>
+            <tr class="bg-[#2788b2]">
+              <th class="border-4 border-white text-gray-50 px-2 py-3 text-center text-sm md:text-base uppercase font">
+                S/N</th>
+              <th class="border-4 border-white text-gray-50 px-4 py-2 text-left text-sm md:text-base uppercase">Session
+                Topic</th>
+                <th class="border-4 border-white text-gray-50 px-4 py-2 text-left text-sm md:text-base uppercase">Session
+                  Date</th>  
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-gray-200 bg-[#27628C]">
+            <tr v-for="(topic, index) in topics" :key="index">
+              <td
+                class="px-4 py-2 text-gray-50 border-4 border-white text-center text-sm md:text-base whitespace-nowrap">
+                {{ topic.sn }}</td>
+              <td class="px-4 py-2 text-gray-50 border-4 border-white text-left text-sm md:text-base whitespace-nowrap">
+                {{ topic.topic }}</td>
+                <td class="px-4 py-2 text-gray-50 border-4 border-white text-left text-sm md:text-base whitespace-nowrap">
+                  {{ topic.date }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
 
-     <div> 
-      <a 
-        href="https://forms.gle/aEGfwH4P6FPbHUAX6" 
-        class="text-white text-center bg-[#27628C] rounded-lg w-full px-6 py-3.5 max-w-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl flex items-center justify-center gap-2"
-      >
-        <span>Fill the registration form</span>
-        <ArrowRightIcon class="h-5 w-5" />
-      </a>
-    </div>
-    </div>
 </template>
+
+<script setup lang="ts">
+
+// const route = useRoute();
+// const id = route.params.id;
+
+const topics = ref([
+  {
+    "sn": "01",
+    "topic": "Forging A Career Path in Biomedical Engineering",
+    "date": "Thursday, 17th July, 2025",
+  },
+  {
+    "sn": "02",
+    "topic": "Forging A Career Path in Biotechnology",
+    "date": "Friday, 18th July, 2025",
+  },
+  {
+    "sn": "03",
+    "topic": "Forging Into Politics: The Role of Health Policies and Regulations in Shaping Medical Laboratory Practices",
+    "date": "Saturday, 19th July, 2025",
+  },
+  {
+    "sn": "04",
+    "topic": "Forging a Career Path in Medical Communication and Public Awareness",
+    "date": "Thursday, 24th July, 2025",
+  },
+  {
+    "sn": "05",
+    "topic": "Marketing and Laboratory Supply Chain; Optimizing Career Opportunities in Laboratory Management and Supply Chain",
+    "date": "Friday, 25th July, 2025",
+  },
+  {
+    "sn": "06",
+    "topic": "Essential Skills for Forging a Career Path",
+    "date": "Saturday, 26th July, 2025",
+  },
+]);
+</script>
 
 <style>
 /* Custom animations */
