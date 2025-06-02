@@ -695,7 +695,7 @@ function closeModal() {
     </a>
   </div>
 
-  <div>
+  <!-- <div>
     <a 
       href="https://forms.gle/aEGfwH4P6FPbHUAX6" 
       class="text-white text-center bg-[#27628C] rounded-lg px-6 py-3.5 w-64 transform transition-all duration-300 hover:scale-105 hover:shadow-xl flex items-center justify-center gap-2"
@@ -703,7 +703,7 @@ function closeModal() {
       <span>Complete Registration</span>
       <ArrowRightIcon class="h-5 w-5" />
     </a>
-  </div>
+  </div> -->
 </div>
 
 <div class="flex flex-col justify-center items-center mt-28 mb-28">
