@@ -694,16 +694,6 @@ function closeModal() {
       <ArrowRightIcon class="h-5 w-5" />
     </a>
   </div>
-
-  <!-- <div>
-    <a 
-      href="https://forms.gle/aEGfwH4P6FPbHUAX6" 
-      class="text-white text-center bg-[#27628C] rounded-lg px-6 py-3.5 w-64 transform transition-all duration-300 hover:scale-105 hover:shadow-xl flex items-center justify-center gap-2"
-    >
-      <span>Complete Registration</span>
-      <ArrowRightIcon class="h-5 w-5" />
-    </a>
-  </div> -->
 </div>
 
 <div class="flex flex-col justify-center items-center mt-28 mb-28">
@@ -736,12 +726,46 @@ function closeModal() {
       </div>
     </div>
 
+    <div>
+      <h1 class="text-center text-[#27628C] uppercase font-bold text-2xl mt-20">Facilitators</h1>
+      <section class="grid lg:grid-cols-3 gap-6 mt-10 mx-auto max-w-7xl pb-6 p-3 lg:p-0">
+        <article @click="openModal(item)" v-for="item in schedules"
+          class="flex bg-white border-[0.5px] border-gray-10 rounded-lg transition hover:shadow-xl">
+
+          <div class="sm:basis-56 border-[0.5px] border-gray-50 rounded-lg">
+            <img :src="item.image" :alt="item.speaker" class="aspect-square h-full w-32 object-cover" />
+          </div>
+
+          <div class="w-full flex-col justify-between">
+            <div class="border-s border-gray-900/10 p-4 sm:border-l-transparent sm:p-6">
+
+              <p class="mt-2 font-bold line-clamp-3 text-lg/relaxed text-gray-700">
+                {{ item.speaker }}
+              </p>
+
+              <p class="text-xs font-bold pt-5">CLICK TO SEE FACILITATOR'S PROFILE</p>
+            </div>
+          </div>
+        </article>
+      </section>
+    </div>
+
+<SpeakerModal v-if="selectedSpeaker" :speaker="selectedSpeaker" :is-visible="isModalVisible" @close="closeModal" />
+
 </template>
 
 <script setup lang="ts">
 
 // const route = useRoute();
 // const id = route.params.id;
+
+import speaker1 from '@/assets/img/nancy-facp4.jpg'
+import speaker2 from '@/assets/img/oyeniyi-facp4.jpg'
+import speaker3 from '@/assets/img/yusuf-facp4.jpg'
+import speaker4 from '@/assets/img/precious-facp4.jpg'
+import speaker5 from '@/assets/img/ayodele-facp4.jpg'
+import speaker6 from '@/assets/img/joshua-facp4.jpg'
+import speaker7 from '@/assets/img/honsimon-facp4.jpg'
 
 const topics = ref([
   {
@@ -775,6 +799,89 @@ const topics = ref([
     "date": "Saturday, 26th July, 2025",
   },
 ]);
+
+const schedules = ref([
+  {
+    image: speaker1,
+    "speaker": "Nancy Njoku-Attah",
+    "bio": `
+Nancy Njoku-Attah is a Commercial Life Science Manager at Market Access Africa, where she helps global health organizations and diagnostic companies unlock opportunities across Sub-Saharan Africa. With a strong foundation in Medical Laboratory Science, Nancy began her career at the bench before transitioning into business and strategic roles that span diagnostics, public health, and commercial consulting.
+She holds a Bachelor’s degree in Medical Laboratory Science and an MBA in Business Administration, and is currently completing a Master’s in International Public Health at Liverpool John Moores University in the UK. This unique blend of clinical, business, and public health expertise positions Nancy at the intersection of diagnostics, healthcare strategy, and health systems strengthening.
+A passionate advocate for diagnostics and diagnostic professionals, Nancy is the author of Insights Beyond Bloodwork, a newsletter platform focused on helping lab scientists explore opportunities beyond the bench. Through this platform, she’s building a growing community (#BenchToBusinessFellows) to mentor and empower young professionals to thrive in alternative and emerging roles across the life sciences sector.
+Nancy brings not just knowledge, but also inspiration,encouraging lab professionals to embrace their potential, adapt to industry changes, and contribute meaningfully to Africa’s healthcare ecosystem.`
+  },
+  {
+    image: speaker2,
+    "speaker": "MLS Oyeniyi, Gbadebo Maroof",
+    "bio": `
+MLS Oyeniyi Gbadebo Maroof is a Nigerian Medical Laboratory Scientist and an academic with over 10 years of experience in both private and governmental establishments. 
+He bagged his B.MLS from the prestigious LAUTECH, Ogbomoso, in 2011 and was inducted as an associate of the Medical Laboratory Science Council of Nigeria (AMLSCN) in 2012. He obtained an M.Sc in public health biotechnology from the premiere university, the University of Ibadan, in 2021. In 2024, he bagged an M.Phil in Medical Laboratory Science specializing in Haematology and Blood Transfusion Science from Edo State University Iyamo. He has worked in several places as a medical laboratory scientist and has acquired both bench and administrative skills. 
+MLS Oyeniyi has undergone training on HIV/AIDS opportunistic infections (OIs) diagnosis and screening, panel preparation for HIV proficiency testing, Genexpert for TB, and basic and advanced malaria microscopy diagnosis. 
+He was the laboratory person for malaria, TB, and HIV at the General Hospital Offa, Kwara State. He is a member of the quality assurance team inaugurated/commissioned by the commissioner for health, Kwara State, in 2022.
+
+MLS Oyeniyi has obtained certificates in monitoring and evaluation,  epidemiology, leadership and management in health, and clinical management of HIV all from the University of Washington, USA.
+Before joining academics in 2023, he was the head of the Medical Laboratory Department of General Hospital Offa,  Kwara State. He has published several papers in academic journals. He joined the service of the University of Ilorin in 2023.`
+  },
+  {
+    image: speaker3,
+    "speaker": "MLS Yusuf Danasabe Jobbi",
+    "bio": `
+MLS Yusuf Danasabe Jobbi (FMLSCN, BMLS, MSc, MSc GCH). Yusuf Danasabe Jobbi is a Medical Laboratory Scientist, a Haematologist, with expertise in Sickle Cell Disease Genomics, Bioinformatics, Immunohaematology, HPLC, and Leadership training skills with more than 17 years of working experience at the Department of Haematology Aminu Kano Teaching Hospital, and private clinical laboratories in Kano State. He is interested in impacting leadership knowledge and skills, genomics studies, teaching different laboratory techniques, and mentoring young ones to achieve their dreams and goals. Yusuf Danasabe Jobbi graduated from the School of Medical Laboratory Sciences of the prestigious Usmanu Danfodiyo University Sokoto, he did his Master's at Bayero University Kano and St Jude Graduate School of Biomedical Sciences, Memphis, Tennessee, USA. He just finished his Special Fellowship program (FMLSCN) at the School of Medical Laboratory Science, Ahmadu Bello Teaching Hospital, Zaria. Yusuf Danasabe Jobbi loves genomics studies more than food, researching and has more than 30 publications, and teaching leadership skills to improve leadership qualities as he was taught by his leadership instructors/mentors from Harvard University, John F. Kennedy School of Government Executive Leadership Institute, USA.`
+  },
+  {
+    image: speaker4,
+    "speaker": "MLS Precious Oha",
+    "bio": `
+Mr Precious Oha is a distinguished Medical Laboratory Scientist based in Australia, holding a Master's degree in Public Health from a reputable Australian university, a bonafide member of the Australian Institute of Medical and Clinical Science (AIMS), Association of Medical Laboratory Scientists of Nigeria (AMLSN), and Medical Laboratory Science Council of Nigeria (MLSCN). He is also a certified user of Laboratory Quality Management System (LQMS) software. As the founder of the Live2Inspire Community, Mr. Precious has made a significant impact by hosting numerous conferences during the pandemic, providing a platform for emerging leaders and fostering mentorship through various initiatives. His dedication to uplifting young people has inspired countless individuals to pursue their dreams and develop their leadership skills.
+
+In addition to his contributions to the medical field and community development, Mr. Precious has successfully ventured into various business sectors, including real estate, where he has demonstrated a remarkable talent for sales and entrepreneurship. He is also the creator of a popular social media brand, where he shares insights on migration and lifestyle, coining the term "expensive sense," which reflects his unique perspective on navigating life’s challenges.
+
+As a rising star and sought-after speaker, Mr. Precious continues to inspire audiences with his engaging presentations and thought-provoking discussions. His commitment to making a difference extends beyond his professional endeavors; alongside his wife, he runs a foundation dedicated to meeting the needs of the homeless, showcasing his compassionate nature and commitment to social responsibility.
+
+In his personal life, Mr. Precious enjoys reading and cherishes quality time with his family. Known for his kindness and generosity, he embodies the spirit of service, making a lasting impact on both his community and the lives of those around him. Mr. Precious Oha’s legacy is one of inspiration, leadership, and unwavering dedication to bettering the world.`
+  },
+  {
+    image: speaker5,
+    "speaker": "MLS Ayodele Isaac",
+    "bio": `
+Ayodele Isaac Adedokun is a medical laboratory scientist, educator, data analyst and public health advocate with experience in laboratory automation, medical diagnostics, infectious disease surveillance, and quality control testing. With a strong foundation in Medical Laboratory Science, Ayodele holds a first-class BMLS degree from Usmanu Danfodiyo University, Sokoto, Nigeria, being the overall best graduating student of his set.
+Currently, Ayodele works as a sales and biomedical engineer with one of the leading ISO9001:2015 accredited invitro diagnostics (IVD) and healthcare solutions company in West Africa. In this role, he has travelled to 3 African countries where he is making significant contributions to effective healthcare service delivery. He has done several certification programs in the field of biomedical engineering which cuts across diagnostics, medical imaging/radiological solutions, quality assurance, calibration procedures etc., from top IVD industries globally.
+He is passionate about non-communicable diseases and tuberculosis research with focus on novel diagnostics and therapeutics in the African setting. He is also a member of the British Society for Antimicrobial Chemotherapy, global contributing-outreach member for American Society for Microbiology and DEKEMP. In his leisure time, he loves surfing the internet, watching football and medical-related movies.`
+  },
+  {
+    image: speaker6,
+    "speaker": "Joshua Miluyi",
+    "bio": `
+Joshua Ademiluyi also known as "Joshh Miluyi" is a trailblazing Nigerian Biomedical Scientist, digital media enthusiast, and brand strategist who has masterfully merged his scientific acumen with a flair for digital content creation. With a solid academic foundation in Biomedical Science from Babcock University, Nigeria, and invaluable hands-on experience as a Medical Laboratory Scientist at the esteemed Olabisi Onabanjo Teaching Hospital, Joshua has cultivated a distinctive expertise that seamlessly integrates scientific knowledge with digital innovation.
+
+As a prolific content creator and adept social media strategist, he skillfully harnesses the power of various digital platforms to engage with his audience, build his personal brand, and disseminate insightful content to a broader community. Through his creative endeavors, Joshua has demonstrated a profound understanding of the digital landscape, leveraging his expertise to craft compelling narratives, foster meaningful connections, and inspire a new generation of thought leaders.
+
+With his unique blend of scientific rigor and digital creativity, Joshh Miluyi has established himself as a respected voice in his field, renowned for his innovative approach, creative vision, and commitment to excellence.`
+  },
+  {
+    image: speaker7,
+    "speaker": "Hon. Simon Gabo",
+    "bio": `Hon. Simon Gabo, a distinguished medical laboratory scientist and humanitarian, serves as a member of the 10th Benue State House of Assembly, representing the Mata State Constituency and chairing the House Committee on ICT and Digital Economy. Born on December 18, 1978, in Mbagba Council Ward, Ushongo Local Government Area, Benue State, he is the son of Mr. and Mrs. Gabo Ihomon.
+Hon. Gabo is married to Dr. Mrs. Shanpepe Uchenna Gabo, and together they are blessed with four children. His educational journey began at Chanchanji Primary School and continued at Government Army Secondary School in Takum. He earned a Bachelor’s degree in Medical Laboratory Sciences from Ambrose Alli University, followed by a Postgraduate Diploma and Master’s degree in Public Health, as well as a PhD, from Nasarawa State University, Keffi.
+In his professional career, Hon. Gabo has held various roles, including at the Nigeria Centre for Disease Control and Federal Medical Centres in Keffi and Makurdi. He is the founder of Tor-Gabo Diagnostic Center Limited and the Tor-Gabo Foundation, which focuses on empowering individuals through initiatives such as scholarships, free medical outreach programs, and essential donations to vulnerable populations.
+Hon. Gabo has received numerous awards for his service, including the Best Staff Award from FMC Keffi and recognition from the Association of Medical Laboratory Scientists of Nigeria for his commitment to healthcare and community development.
+Before his current role, he demonstrated his leadership capabilities through various positions, including Chairman of the APC Benue State Assembly Aspirant Forum. His election to the Benue State House of Assembly underscores his dedication to effecting positive change.
+As a representative, Hon. Gabo has facilitated agricultural empowerment initiatives, introduced welfare programs, and overseen vital infrastructural developments, all aimed at improving the lives of his constituents. His commitment to human capital development is evident through job placements and support for skills acquisition programs.
+Hon. Simon Gabo stands as a beacon of excellence, dedication, and selflessness, making a significant impact on the health sector and the lives of many in his community.`,
+  }
+])
+
+const isModalVisible = ref(false);
+const selectedSpeaker = ref(null);
+
+function openModal(speaker: any) {
+  selectedSpeaker.value = speaker;
+  isModalVisible.value = true;
+}
+
+function closeModal() {
+  isModalVisible.value = false;
+}
 </script>
 
 <style>
