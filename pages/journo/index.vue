@@ -39,11 +39,12 @@
       <div class="relative mx-auto max-w-7xl py-24 sm:py-32 px-10 lg:px-0 lg:py-40">
         <div class="md:ml-auto md:w-2/3 md:pl-16 lg:w-1/2">
           <p  class="mt-2 text-4xl font-semibold tracking-tight text-white sm:text-5xl">
-            Access Denied: Health Insurance and Diagnostic Inequity in Nigeria’s Healthcare System</p>
+            Choose your Champion: Healthcare Optics vs Healthcare Ethics</p>
           <p  class="mt-6 text-base/7 text-white">
-            “20, 21, 22…” Ezekiel* muttered, brow furrowed, as he paced the floor of the hospital’s waiting room. He had been waiting for his Health Maintenance Organization (HMO) to confirm with the receptionist what was covered by his plan for over two hours now. “What even is the point?” He said to himself as he plopped down on the uncomfortable bench. He tried to play a game of colors – how many people wore red out of 10 patients? but he soon got bored. His mind wandered to the day he got the confirmation of his HMO plan.</p>
+            Fatai rolled to his belly as his body adjusted to his waking sequence at 3 AM. Waking up at wee hours has been his routine for several weeks now since he disrupted his circadian rhythm in the bid to prepare for his last examination. But there was something about that particular night that was different; to begin with, he woke up by 3 AM instead of the statutory 2 AM. There was something that just kept sucking him in his bed that made getting up harder than usual. As his ears picked up the whirring of his old fan, the pieces of the puzzle started to come together. It’s been 6 weeks since that fan moved its blade out of its volition. It wasn’t one of those nights he woke to beads of sweat gathering in a stampede across the groove of his back. The fan has also kept his winged bloodsucking co-inhabitants at bay. He plugged his devices and went back to sleep with a determination to savour this moment – perhaps it was a dream.
+</p>
           <div  class="mt-8">
-            <a href="https://mlcjourno.substack.com/p/access-denied-health-insurance-and?r=45bm0j&utm_campaign=post&utm_medium=web&triedRedirect=true"
+            <a href="https://open.substack.com/pub/mlcjourno/p/choose-your-champion-healthcare-optics?r=45bm0j&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true"
               class="inline-flex rounded-md bg-white/10 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-white/20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">View
               publications <span aria-hidden="true">&rarr;</span></a>
           </div>
@@ -137,12 +138,20 @@ import latest2 from '@/assets/img/graduate.jpeg'
 import latest3 from '@/assets/img/kidney.jpeg'
 import utopia from '@/assets/img/utopia.jpeg'
 import carvingProfessional from '@/assets/img/carving-professional.jpeg'
+import accessDenied from '@/assets/img/journo-access-denied.jpeg'
 import latestJourno from '@/assets/img/latest-journo.jpeg'
 
 
 const journosList = ref([
 {
     image: latestJourno,
+    title: `Choose your Champion: Healthcare Optics vs Healthcare Ethics`,
+    desc: `Fatai rolled to his belly as his body adjusted to his waking sequence at 3 AM. Waking up at wee hours has been his routine for several weeks now since he disrupted his circadian rhythm in the bid to prepare for his last examination. But there was something about that particular night that was different; to begin with, he woke up by 3 AM instead of the statutory 2 AM. There was something that just kept sucking him in his bed that made getting up harder than usual. As his ears picked up the whirring of his old fan, the pieces of the puzzle started to come together. It’s been 6 weeks since that fan moved its blade out of its volition. It wasn’t one of those nights he woke to beads of sweat gathering in a stampede across the groove of his back. The fan has also kept his winged bloodsucking co-inhabitants at bay. He plugged his devices and went back to sleep with a determination to savour this moment – perhaps it was a dream.`,
+    author: 'Williams Owoeye',
+    url: 'https://open.substack.com/pub/mlcjourno/p/choose-your-champion-healthcare-optics?r=45bm0j&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true'
+  },
+{
+    image: accessDenied,
     title: `Access Denied: Health Insurance and Diagnostic Inequity in Nigeria’s Healthcare System`,
     desc: `“20, 21, 22…” Ezekiel* muttered, brow furrowed, as he paced the floor of the hospital’s waiting room. He had been waiting for his Health Maintenance Organization (HMO) to confirm with the receptionist what was covered by his plan for over two hours now. “What even is the point?” He said to himself as he plopped down on the uncomfortable bench. He tried to play a game of colors – how many people wore red out of 10 patients? but he soon got bored. His mind wandered to the day he got the confirmation of his HMO plan.”`,
     author: 'Oluwaponmile',
