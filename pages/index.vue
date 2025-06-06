@@ -464,6 +464,7 @@ const isOpen = ref(false)
 import img4 from '@/assets/img/scholarship.jpeg'
 import convo from "@/assets/img/forging-a-career-path.jpg"
 import latestJourno from '@/assets/img/latest-journo.jpeg'
+import latestJourno6 from '@/assets/img/latest-journo-6.jpeg'
 
 const activitiesGrid = ref([
   {
@@ -516,6 +517,16 @@ const labcastLatest = ref([
 ])
 
 const journoLatest = ref([
+// {
+//     title: `CAREER DAY LIED—BUT MLS TOLD THE TRUTH.
+// Amplifying The Medical Laboratory Science Story with Better Career Days`,
+//     image: latestJourno,
+//     desc: `Unlike many science students who adored medicine, I knew from the start it wasn’t for me. I had courtroom dreams. Big words. Big wins. A gavel in my hand and drama in the air; not because I was in love with law, but because I figured it’d fit my personality. However, life had other plans—and by “life”, I mean my sweet, loving Mother. She had her heart set on Medicine and Surgery for her first child. And honestly? I don’t blame her. It was the classic, respectable choice. So, science class it was. `,
+//     previousEditionUrl: '#',
+//     status: 'latest',
+//     actionText: 'Read More',
+//     registerUrl: 'https://mlcjourno.substack.com/'
+//   },
 {
     title: `Choose your Champion: Healthcare Optics vs Healthcare Ethics`,
     image: latestJourno,
