@@ -40,7 +40,7 @@
         <div class="md:ml-auto md:w-2/3 md:pl-16 lg:w-1/2">
           <p  class="mt-2 text-4xl font-semibold tracking-tight text-white sm:text-5xl">
             Choose your Champion: Healthcare Optics vs Healthcare Ethics   </p>
-          <p  class="mt-6 text-base/7 text-white">"
+          <p  class="mt-6 text-base/7 text-white">
             Fatai rolled to his belly as his body adjusted to his waking sequence at 3 AM. Waking up at wee hours has been his routine for several weeks now since he disrupted his circadian rhythm in the bid to prepare for his last examination. But there was something about that particular night that was different; to begin with, he woke up by 3 AM instead of the statutory 2 AM. There was something that just kept sucking him in his bed that made getting up harder than usual. As his ears picked up the whirring of his old fan, the pieces of the puzzle started to come together. It’s been 6 weeks since that fan moved its blade out of its volition. It wasn’t one of those nights he woke to beads of sweat gathering in a stampede across the groove of his back. The fan has also kept his winged bloodsucking co-inhabitants at bay. He plugged his devices and went back to sleep with a determination to savour this moment – perhaps it was a dream.
            </p>
           <div  class="mt-8">
