@@ -44,7 +44,7 @@
             Fatai rolled to his belly as his body adjusted to his waking sequence at 3 AM. Waking up at wee hours has been his routine for several weeks now since he disrupted his circadian rhythm in the bid to prepare for his last examination. But there was something about that particular night that was different; to begin with, he woke up by 3 AM instead of the statutory 2 AM. There was something that just kept sucking him in his bed that made getting up harder than usual. As his ears picked up the whirring of his old fan, the pieces of the puzzle started to come together. It’s been 6 weeks since that fan moved its blade out of its volition. It wasn’t one of those nights he woke to beads of sweat gathering in a stampede across the groove of his back. The fan has also kept his winged bloodsucking co-inhabitants at bay. He plugged his devices and went back to sleep with a determination to savour this moment – perhaps it was a dream.
            </p>
           <div  class="mt-8">
-            <a href="https://mlcjourno.substack.com/p/career-day-liedbut-mls-told-the-truth?r=45bm0j&utm_campaign=post&utm_medium=web&triedRedirect=true"
+            <a href="https://open.substack.com/pub/mlcjourno/p/choose-your-champion-healthcare-optics?r=45bm0j&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true"
               class="inline-flex rounded-md bg-white/10 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-white/20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">View
               publications <span aria-hidden="true">&rarr;</span></a>
           </div>
