@@ -338,7 +338,7 @@
 
             <div class="flex flex-col space-y-4 pt-4">
               <button
-                @click="router.push(item.title === 'SCHOLARSHIP APPLICATION MASTER CLASS' ? '/interntional/scholarship-masterclass' : `/interntional/${idx}`)"
+                @click="router.push(item.title === 'FINANCIAL LITERACY FOR INTERNS AND YOUNG PROFESSIONALS' ? '/interntional/financial-literacy' : `/interntional/${idx}`)"
                 v-if="item.status === 'latest'"
                 class="bg-[#27628C] text-white py-3 px-6 rounded transition-colors text-center block w-full hover:bg-[#1a4665]">
                 Learn More
@@ -385,6 +385,7 @@
 
 <script setup lang="ts">
 import img1 from "@/assets/img/scholarship.jpeg";
+import img2 from "@/assets/img/financial-literacy.jpeg";
 import image1 from "@/assets/img/oluwamuyiwa(2).jpeg";
 import image2 from "@/assets/img/precious.jpeg";
 import image3 from "@/assets/img/yahdiogo.jpeg";
@@ -395,29 +396,14 @@ import image7 from "@/assets/img/nana.jpeg";
 const router = useRouter()
 
 const programsList = ref([
-  {
-    title: "SCHOLARSHIP APPLICATION MASTERCLASS",
-    img: img1,
-    firstPart: `This scholarship application masterclass is designed exclusively for medical laboratory science interns to equip them with
-the tools and strategies necessary to secure academic scholarships and funding opportunities. It
-will guide participants through every step of the application process, from identifying
-opportunities to submitting winning applications, whether for postgraduate studies, international
-conferences, or advanced training.`,
-    secondPart: `The program addresses the unique demands and career pathways of medical laboratory
-professionals, providing interactive sessions, real-life examples, and expert guidance. By focusing
-on the specific needs of medical laboratory science interns, the masterclass ensures participants
-leave with actionable materials and enhanced confidence to pursue their academic and career
-goals.`,
-    status: 'latest',
-    registerURL: "https://forms.gle/7Fqgm5BRvD96fPNx7",
-  },
-  {
-    title: "FINANCIAL LITERACY FOR INTERNS",
-    // img: img2,
+{
+    title: "FINANCIAL LITERACY FOR INTERNS AND YOUNG PROFESSIONALS",
+    img: img2,
     firstPart: `As young healthcare professionals, mastering financial literacy is essential for achieving financial stability and security. Whether you're planning for internship expenses, professional certifications, or future career goals, effective financial management will help you navigate these responsibilities with confidence.`,
     secondPart: `In Nigeria’s economic landscape, understanding personal finance is more important than ever. From dealing with inflation and currency fluctuations to covering registration fees with the Medical Laboratory Science Council of Nigeria and other professional costs, financial planning is a crucial skill.`,
     thirdPart: `This session will equip you with practical knowledge and strategies to manage your finances wisely, make informed decisions about savings and investments, and build a strong foundation for long-term financial stability. Let’s take charge of our financial future together!`,
-    registerURL: "#",
+    status: 'latest',
+    registerURL: ".",
   },
   {
     title: "INTERNTIONAL MENTORNET",
@@ -450,6 +436,22 @@ goals.`,
     secondPart: `As Medical Laboratory Scientists, we are at the forefront of the fight against AMR. Through diagnostic stewardship, we play a critical role in ensuring accurate, timely, and evidence-based diagnosis, which helps prevent the unnecessary and inappropriate use of antimicrobials. By advocating for proper testing, responsible prescribing, and heightened awareness, we can curb the spread of resistant infections before they become untreatable.`,
     thirdPart: `This advocacy, especially during AMR Awareness Week (18th - 24th November), seeks to educate, mobilize, and empower young professionals to take decisive action. With our collective expertise, we want to create a culture where antimicrobial use is guided by precision, responsibility, and a commitment to global health security.`,
     registerURL: "#",
+  },
+  {
+    title: "SCHOLARSHIP APPLICATION MASTERCLASS",
+    img: img1,
+    firstPart: `This scholarship application masterclass is designed exclusively for medical laboratory science interns to equip them with
+the tools and strategies necessary to secure academic scholarships and funding opportunities. It
+will guide participants through every step of the application process, from identifying
+opportunities to submitting winning applications, whether for postgraduate studies, international
+conferences, or advanced training.`,
+    secondPart: `The program addresses the unique demands and career pathways of medical laboratory
+professionals, providing interactive sessions, real-life examples, and expert guidance. By focusing
+on the specific needs of medical laboratory science interns, the masterclass ensures participants
+leave with actionable materials and enhanced confidence to pursue their academic and career
+goals.`,
+    status: 'old',
+    registerURL: "https://forms.gle/7Fqgm5BRvD96fPNx7",
   },
 ]);
 
