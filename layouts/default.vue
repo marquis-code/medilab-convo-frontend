@@ -1,8 +1,6 @@
 <template>
         <div >
-                <NuxtPage />
-                <!-- <AppFooter /> -->
-                 <UpdatedFooter />
+            <NuxtPage />
         </div>
 </template>
 

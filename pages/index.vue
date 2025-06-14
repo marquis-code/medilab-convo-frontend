@@ -1,160 +1,526 @@
 <template>
-  <main>
-    <div class="">
-      <LandingHero />
-    </div>
-    <div class="pt-10">
-      <!-- <ImageMarquee /> -->
-      <CurrencyMarquee />
-    </div>
-    <div class="platform-container space-y-10 mt-32">
-      <div class="flex justify-center space-y-2 items-center flex-col">
-        <h2 class="text-[#1A1A1B] font-medium uppercase text-[20px]">Our Platform</h2>
-        <p class="text-[#1A1A1B] mx-3 lg:px-0 text-[28px] lg:text-6xl max-w-xs lg:max-w-6xl text-center">Gain seamless access to top-tier global payment solutions with a single contract and API integration.</p>
-      </div>
-
-      <div class="flex justify-center items-center">
-        <img src="@/assets/img/plattform.png" class="w-auto lg:h-[920px]" />
-      </div>
-    </div>
-    <PaymentTabs class="" />
-    <AboutUs class="pt-60 lg:pt-0" />
-    <GlobalTransferCard class="my-20" />
-    <CurrencyExchange />
-    <PlatformBenefits />
-     <section>
-      <div 
-          class="my-20 lg:my-44 text-center font-light leading-tight text-[#1A1A1B] max-w-5xl mx-auto transform translate-y-4"
-        >
-         <p class="font-medium py-4 text-[16px] lg:text-[20px] tracking-wider uppercase">INDUSTRY SOLUTIONS</p>
-         <h3 class="text-[28px] md:text-5xl p-3 text-[#1A1A1B] font-medium lg:text-6xl"> Capera unifies every essential tool for seamless global payments operations. Whether you're sending funds or collecting them, we streamline every step to simplify cross-border transactions.</h3>
+  <div class="min-h-screen bg-white">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 bg-black/20 backdrop-blur-sm">
+      <div
+        class="container mx-auto px-4 py-4 flex justify-between items-center"
+      >
+        <div class="flex items-center space-x-2">
+          <img src="@/assets/img/capera-logo.svg" />
+          <!-- <div class="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center">
+            <div class="w-4 h-4 bg-white rounded-full"></div>
+          </div>
+          <div class="text-white">
+            <div class="font-bold text-lg">Capera</div>
+            <div class="text-xs opacity-80">OIL & GAS</div>
+          </div> -->
         </div>
-     </section>
+        <div class="hidden md:flex space-x-8">
+          <a
+            href="#who-we-are"
+            class="text-white hover:text-green-400 transition-colors"
+            >Who we are</a
+          >
+          <a
+            href="#what-we-do"
+            class="text-white hover:text-green-400 transition-colors"
+            >What we do</a
+          >
+          <a
+            href="#contact"
+            class="text-white hover:text-green-400 transition-colors"
+            >Contact Us</a
+          >
+        </div>
+        <button @click="toggleMobileMenu" class="md:hidden text-white">
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            ></path>
+          </svg>
+        </button>
+      </div>
+      <!-- Mobile Menu -->
+      <div v-if="mobileMenuOpen" class="md:hidden bg-black/90 backdrop-blur-sm">
+        <div class="px-4 py-2 space-y-2">
+          <a
+            href="#who-we-are"
+            class="block text-white hover:text-green-400 py-2"
+            >Who we are</a
+          >
+          <a
+            href="#what-we-do"
+            class="block text-white hover:text-green-400 py-2"
+            >What we do</a
+          >
+          <a href="#contact" class="block text-white hover:text-green-400 py-2"
+            >Contact Us</a
+          >
+        </div>
+      </div>
+    </nav>
 
-    <IndustryCarousel class="my-16" />
-    <TestimonialCarousel />
-    <SecuritySection />
-    <PaymentFooter 
-      title="Ready to start your CAPERA journey?" 
-      description="Join other business users today.
-Contact our professional service team to learn more or open an account online for free."
-      :actions="[
-        { text: 'Get started', onClick: () => console.log('Start clicked') },
-        { text: 'Contact Sales', onClick: () => console.log('Docs clicked') }
-      ]"
-    />
-  </main>
+    <!-- Hero Section -->
+     <HeroSection />
+
+    <!-- Who We Are Section -->
+    <WhoWeAre id="who-we-are" />
+
+    <!-- Mission Statement -->
+    <section class="py-20 bg-[#1C5310]">
+      <div class="container mx-auto px-4">
+        <div
+          class="max-w-4xl mx-auto text-center"
+          :class="{ 'animate-fade-in-up': isVisible.mission }"
+        >
+          <p class="text-white text-4xl md:text-6xl leading-relaxed">
+            We believe that humanity can solve any challenge, that our greatest
+            resource is our people, and that responsibility, trust and integrity
+            will help us drive a prosperous future.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Purpose -->
+     <!-- <OurPurpose /> -->
+    <section class="py-20 bg-[#1C5310]">
+      <div class="container px-4 lg:px-0 mx-auto">
+        <div class="">
+          <div
+            class="rounded-3xl overflow-hidden shadow-2xl"
+            :class="{ 'animate-fade-in-up': isVisible.purpose }"
+          >
+            <div class="grid md:grid-cols-2 min-h-[400px]">
+              <!-- Left side - Dark green with text -->
+              <div
+                class="bg-[#032E00] py-16 lg:py-0 px-6 flex flex-col justify-center"
+              >
+                <h2 class="text-5xl lg:text-8xl font-bold text-white mb-6">
+                  Our purpose
+                </h2>
+                <p class="text-white text-lg lg:text-2xl font-medium leading-relaxed">
+                  Capera's purpose is to provide affordable, reliable, energy
+                  solution to enable human progress. This is at the heart of who
+                  we are.
+                </p>
+              </div>
+              <!-- Right side - Industrial facility image -->
+              <div class="relative">
+                <img
+                  src="@/assets/img/card-image2.png"
+                  alt="Industrial facility with gradient sky"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Culture -->
+    <section class="py-20 bg-[#1C5310]">
+      <div class="container mx-auto px-4 lg:px-0">
+        <div class="">
+          <div
+            class="bg-[#3BAB22] rounded-3xl overflow-hidden shadow-2xl"
+            :class="{ 'animate-fade-in-up': isVisible.culture }"
+          >
+            <div class="grid md:grid-cols-2 min-h-[400px]">
+              <!-- Left side - Worker image -->
+              <div class="relative">
+                <img
+                  src="@/assets/img/card-image5.png"
+                  alt="Worker in industrial setting with hard hat"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <!-- Right side - Bright green with text -->
+              <div
+                class="bg-[#3BAB22] py-16 lg:py-0 px-6 flex flex-col justify-center"
+              >
+                <h2 class="text-5xl lg:text-8xl font-bold text-white mb-6">
+                  Our Culture
+                </h2>
+                <p class="text-white font-medium text-lg lg:text-2xl leading-relaxed">
+                  We're a global team dedicated to working with people from all
+                  walks of life. We believe human ingenuity has the power to
+                  solve any challenge and we work towards living this belief
+                  every day.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <ServiceSection />
+
+    <!-- Services Overview -->
+    <!-- <section class="py-20 bg-[#1C5310]">
+      <div class="container mx-auto px-4">
+        <div
+          class=""
+          :class="{ 'animate-fade-in-up': isVisible.services }"
+        >
+          <div class="grid md:grid-cols-2 gap-12 mb-16">
+            <p class="text-white font-medium text-[40px] leading-relaxed">
+              We serve the energy industry by providing high-quality,
+              single-source solutions tailored to meet the needs of our
+              customers.
+            </p>
+            <p class="text-white font-medium text-[40px] leading-relaxed">
+              Our technology and system design allow us to provide a custom
+              solution to our customers and keep projects on time, on goals, on
+              budgets, always.
+            </p>
+          </div>
+
+          <div class="grid md:grid-cols-3 gap-8">
+            <div class="text-white">
+              <div class="w-8 h-8 bg-[#3BAB22] rounded mb-4"></div>
+              <h3 class="text-6xl font-medium mb-2">Drilling Services</h3>
+            </div>
+            <div class="text-white">
+              <div class="w-8 h-8 bg-[#3BAB22] rounded mb-4"></div>
+              <h3 class="text-6xl font-medium mb-2">Procurement Services</h3>
+            </div>
+            <div class="text-white">
+              <div class="w-8 h-8 bg-[#3BAB22] rounded mb-4"></div>
+              <h3 class="text-6xl font-medium mb-2">
+                Supply of Refined Products
+              </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- What We Do -->
+    <section id="what-we-do" class="py-20 bg-white">
+      <div class="container mx-auto px-4">
+        <div
+          class="text-center mb-16"
+          :class="{ 'animate-fade-in-up': isVisible.whatWeDo }"
+        >
+          <p class="text-[#1C5310] font-bold text-[24px] text-sm uppercase tracking-wider mb-4">
+            WHAT WE DO
+          </p>
+          <h2
+            class="text-5xl md:text-6xl lg:text-[140px] font-bold text-[#3BAB22] mb-8 leading-tight"
+          >
+            ENERGY THAT<br />FUELS THE<br />WORLD
+          </h2>
+          <p class="text-[#1A1A1B] font-[400] max-w-2xl mx-auto text-lg">
+            We're working to deliver the energy needed today. To lower the
+            carbon intensity of our operations. And to build the lower carbon
+            energy system of tomorrow.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Service Cards -->
+    <section class="lg:py-20">
+      <div class="container mx-auto px-4 lg:px-0 space-y-16">
+        <!-- Exploration Drilling -->
+        <div class="">
+          <div
+            class="bg-white rounded-3xl overflow-hidden shadow-2xl"
+            :class="{ 'animate-fade-in-up': isVisible.drilling }"
+          >
+            <div class="grid md:grid-cols-2 min-h-[400px]">
+              <!-- Left side - Dark green with text -->
+              <div
+                class="bg-[#032E00] py-16 lg:py-0 px-6 flex flex-col justify-center"
+              >
+                <h3 class="text-5xl lg:text-8xl font-bold text-white mb-6">
+                  Exploration Drilling
+                </h3>
+                <p class="text-white text-lg lg:text-2xl font-medium leading-relaxed">
+                  Conducting geological surveys and drilling exploratory wells
+                  to locate oil and gas reserves.
+                </p>
+              </div>
+              <!-- Right side - Drilling equipment image -->
+              <div class="relative">
+                <img
+                  src="@/assets/img/card-image4.png"
+                  alt="Oil drilling equipment with reflection"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Procurement -->
+        <div class="">
+          <div
+            class="bg-white rounded-3xl overflow-hidden shadow-2xl"
+            :class="{ 'animate-fade-in-up': isVisible.procurement }"
+          >
+            <div class="grid md:grid-cols-2 min-h-[400px]">
+              <!-- Left side - Person working image -->
+              <div class="relative">
+                <img
+                  src="@/assets/img/card-image6.png"
+                  alt="Person working at desk with documents"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <!-- Right side - Bright green with text -->
+              <div
+                class="bg-[#3BAB22] py-16 lg:py-0 px-6 flex flex-col justify-center"
+              >
+                <!-- <h3 class="text-4xl lg:text-7xl font-bold text-white mb-6">
+                  Procurement
+                </h3> -->
+                <h2 class="text-5xl lg:text-8xl font-bold text-white mb-6">
+                  Procurement
+                </h2>
+                <p class="text-white text-lg lg:text-2xl font-medium leading-relaxed">
+                  End-to-end management of procurement processes, ensuring
+                  timely delivery of materials and equipment.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Supply of Refined Products -->
+        <div class="">
+          <div
+            class="bg-white rounded-3xl overflow-hidden shadow-2xl"
+            :class="{ 'animate-fade-in-up': isVisible.supply }"
+          >
+            <div class="grid md:grid-cols-2 min-h-[400px]">
+              <!-- Left side - Dark green with text -->
+              <div
+                class="bg-[#097A01] py-16 lg:py-0 px-6 flex flex-col justify-center"
+              >
+                <h3 class="text-5xl lg:text-8xl font-bold text-white mb-6">
+                  Supply of Refined Products
+                </h3>
+                <p class="text-white text-lg lg:text-2xl font-medium leading-relaxed">
+                  Supply of premium base oils for industrial applications, along
+                  with Diesel (AGO) and Petrol (PMS), delivered to industrial
+                  facilities, filling stations, and commercial customers.
+                </p>
+              </div>
+              <!-- Right side - Metal pipes image -->
+              <div class="relative">
+                <img
+                  src="@/assets/img/card-image3.png"
+                  alt="Industrial metal pipes and cylinders"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-[#1C5310] relative overflow-hidden">
+      <!-- Large Background Text -->
+      <div
+        class="absolute inset-0 flex items-center justify-center pointer-events-none"
+      >
+        <!-- <div
+          class="text-green-700/20 font-bold text-[20rem] md:text-[30rem] lg:text-[40rem] leading-none select-none"
+        >
+          CAPERA
+        </div> -->
+        <img src="@/assets/img/large-capera-bg.svg" />
+      </div>
+
+      <!-- <img src="@/assets/img/large-capera-bg.svg" /> -->
+      <ContactUs />
+
+    </section>
+  </div>
 </template>
 
 <script setup lang="ts">
-// import { useHead, useSeoMeta } from '#head'
-import { useHead } from '#app' // or 'nuxt/app'
-import { useSeoMeta } from '#imports' // or directly from 'nuxt/head'
-import GlobalPayments from '~/components/GlobalPayments.vue';
-import GlobalPayouts from '~/components/GlobalPayouts.vue';
-import IndustryCarousel from '../components/IndustryCarousel.vue';
+import { ref, onMounted, onUnmounted } from "vue";
+import ServiceSection from "../components/ServiceSection.vue";
 
-// Basic page metadata
-definePageMeta({
-  title: 'CAPERA - Move Money Globally',
-  description: 'Access top-tier global payment solutions with a single contract and API integration. Simplify cross-border transactions, currency exchange, and international payments.'
-})
+// Mobile menu state
+const mobileMenuOpen = ref(false);
 
-// Enhanced SEO with useHead for basic head elements
-useHead({
-  title: 'CAPERA - Move Money Globally',
-  titleTemplate: '%s | Simplify Cross-Border Transactions',
-  link: [
-    {
-      rel: 'canonical',
-      href: 'https://yourdomain.com'
-    }
-  ],
-  meta: [
-    { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-    { charset: 'utf-8' }
-  ]
-})
+// Visibility tracking for animations
+const isVisible = ref({
+  hero: false,
+  whoWeAre: false,
+  mission: false,
+  purpose: false,
+  culture: false,
+  services: false,
+  whatWeDo: false,
+  drilling: false,
+  procurement: false,
+  supply: false,
+  contact: false,
+});
 
-// Comprehensive SEO meta tags with useSeoMeta
-useSeoMeta({
-  title: 'CAPERA - Move Money Globally',
-  description: 'Access top-tier global payment solutions with a single contract and API integration. Simplify cross-border transactions, currency exchange, and international payments with CAPERA.',
-  
-  // OpenGraph meta tags for social sharing
-  ogTitle: 'CAPERA - Move Money Globally',
-  ogDescription: 'Access top-tier global payment solutions with a single contract and API integration. Join other businesses using CAPERA for seamless cross-border transactions.',
-  ogImage: 'https://yourdomain.com/images/capera-homepage-og.jpg',
-  ogUrl: 'https://yourdomain.com',
-  ogType: 'website',
-  ogSiteName: 'CAPERA',
-  
-  // Twitter Card meta tags
-  twitterCard: 'summary_large_image',
-  twitterTitle: 'CAPERA - Move Money Globally',
-  twitterDescription: 'Access top-tier global payment solutions with a single contract and API integration. Join other businesses using CAPERA for seamless cross-border transactions.',
-  twitterImage: 'https://yourdomain.com/images/capera-homepage-og.jpg',
-  
-  // Additional SEO meta tags
-  keywords: 'CAPERA, global payments, currency exchange, cross-border transactions, international payments, payment platform, financial services, USD, CNY, RMB, NGN',
-  robots: 'index, follow',
-  author: 'CAPERA',
-  applicationName: 'CAPERA Payment Platform',
-})
+// Toggle mobile menu
+const toggleMobileMenu = () => {
+  mobileMenuOpen.value = !mobileMenuOpen.value;
+};
 
-// Structured data for rich search results - using Organization and WebSite schema
-const jsonLd = [
-  {
-    '@context': 'https://schema.org',
-    '@type': 'Organization',
-    name: 'CAPERA',
-    url: 'https://yourdomain.com',
-    logo: 'https://yourdomain.com/images/logo.png',
-    description: 'CAPERA provides global payment solutions and currency exchange services for businesses worldwide.',
-    sameAs: [
-      'https://twitter.com/capera',
-      'https://www.linkedin.com/company/capera',
-      'https://www.facebook.com/capera'
-    ],
-    contactPoint: [
-      {
-        '@type': 'ContactPoint',
-        telephone: '+1-123-456-7890',
-        contactType: 'customer service',
-        areaServed: 'Worldwide',
-        availableLanguage: ['English', 'Spanish', 'French']
-      },
-      {
-        '@type': 'ContactPoint',
-        telephone: '+1-123-456-7891',
-        contactType: 'sales',
-        areaServed: 'Worldwide',
-        availableLanguage: ['English', 'Spanish', 'French']
-      }
-    ]
-  },
-  {
-    '@context': 'https://schema.org',
-    '@type': 'WebSite',
-    name: 'CAPERA',
-    url: 'https://yourdomain.com',
-    potentialAction: {
-      '@type': 'SearchAction',
-      target: 'https://yourdomain.com/search?q={search_term_string}',
-      'query-input': 'required name=search_term_string'
-    }
-  },
-  {
-    '@context': 'https://schema.org',
-    '@type': 'BreadcrumbList',
-    itemListElement: [
-      {
-        '@type': 'ListItem',
-        position: 1,
-        name: 'Home',
-        item: 'https://yourdomain.com'
-      }
-    ]
+// Intersection Observer for animations
+let observer: IntersectionObserver;
+
+onMounted(() => {
+  // Trigger hero animation immediately
+  setTimeout(() => {
+    isVisible.value.hero = true;
+  }, 500);
+
+  // Set up intersection observer for other sections
+  observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const target = entry.target as HTMLElement;
+          const section = target.id || target.dataset.section;
+          if (section && section in isVisible.value) {
+            isVisible.value[section as keyof typeof isVisible.value] = true;
+          }
+        }
+      });
+    },
+    { threshold: 0.1 }
+  );
+
+  // Observe sections
+  setTimeout(() => {
+    const sections = document.querySelectorAll("section[id], [data-section]");
+    sections.forEach((section) => observer.observe(section));
+  }, 100);
+});
+
+onUnmounted(() => {
+  if (observer) {
+    observer.disconnect();
   }
-]
+});
+
+// Smooth scrolling for navigation links
+const handleNavClick = (event: Event) => {
+  const target = event.target as HTMLAnchorElement;
+  if (target.href.includes("#")) {
+    event.preventDefault();
+    const id = target.href.split("#")[1];
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+      mobileMenuOpen.value = false;
+    }
+  }
+};
+
+// Add click listeners to navigation links
+onMounted(() => {
+  const navLinks = document.querySelectorAll('a[href^="#"]');
+  navLinks.forEach((link) => {
+    link.addEventListener("click", handleNavClick);
+  });
+});
 </script>
+
+<style scoped>
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.animate-slide-in-left {
+  animation: slideInLeft 0.8s ease-out forwards;
+}
+
+.animate-slide-in-right {
+  animation: slideInRight 0.8s ease-out forwards;
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #22c55e;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #16a34a;
+}
+</style>
