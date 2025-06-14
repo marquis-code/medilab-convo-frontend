@@ -22,13 +22,6 @@
                         </defs>
                         <rect width="404" height="384" fill="url(#de316486-4a29-4312-bdfc-fbce2132a2c1)" />
                     </svg>
-                    <div class="relative mx-auto max-w-prose text-base lg:max-w-none">
-                        <figure>
-                            <img class="w-full rounded-lg object-cover shadow-lg lg:aspect-auto"
-                                src="@/assets/img/financial-literacy.jpeg" alt="Financial Literacy Flier" width="1184"
-                                height="1376" />
-                        </figure>
-                    </div>
                 </div>
                 <div class="mt-8 lg:mt-0">
                     <div class="mx-auto text-base/7 text-gray-500">
@@ -54,80 +47,74 @@
         </div>
 
         <div class="flex justify-center items-center my-10 p-3 lg:p-0">
-            <a href="#"
-                class="text-white text-center bg-[#27628C] rounded-lg lg:w-full px-6 py-3.5 max-w-lg opacity-50 pointer-events-none">
+            <a href="https://forms.gle/b4fJCpWn4iJ7A4j77"
+                class="text-white text-center bg-[#27628C] rounded-lg lg:w-full px-6 py-3.5 max-w-lg">
                 Register Now
             </a>
         </div>
 
+        <div class="mt-32 grid gap-20 lg:grid-cols-2 lg:gap-10 px-4 lg:px-16">
 
-        <div class="flex flex-col justify-center items-center mt-24">
-            <h1 class="text-center text-[#27628C] uppercase text-2xl font-bold">Schedule</h1>
+            <!-- Session 1 -->
+            <div class="space-y-6">
+                <h2 class="text-[#27628C] text-xl font-bold uppercase">Session 1</h2>
+                <img class="w-full rounded-lg object-cover shadow-lg" src="@/assets/img/financial-literacy.jpeg"
+                    alt="Financial Literacy Flier" />
 
-            <div class="overflow-x-auto w-full max-w-[900px]">
-                <table class="w-full border-collapse border-8 border-white mt-10 mx-auto">
-                    <thead>
-                        <tr class="bg-[#2788b2]">
-                            <th
-                                class="border-4 border-white text-gray-50 px-2 py-3 text-center text-sm md:text-base uppercase font">
-                                S/N</th>
-                            <th
-                                class="border-4 border-white text-gray-50 px-4 py-2 text-left text-sm md:text-base uppercase">
-                                Session
-                                Topic</th>
-                            <th class="border-4 border-white text-gray-50 px-4 py-2 text-left text-sm md:text-base uppercase">
-                                Date</th>  
-                             <th class="border-4 border-white text-gray-50 px-4 py-2 text-left text-sm md:text-base uppercase">
-                                Time</th>   
-                        </tr>
-                    </thead>
-                    <tbody class="divide-y divide-gray-200 bg-[#27628C]">
-                        <tr v-for="(topic, index) in topics" :key="index">
-                            <td
-                                class="px-4 py-2 text-gray-50 border-4 border-white text-center text-sm md:text-base whitespace-nowrap">
-                                {{ topic.sn }}</td>
-                            <td
-                                class="px-4 py-2 text-gray-50 border-4 border-white text-left text-sm md:text-base whitespace-nowrap">
-                                {{ topic.topic }}</td>
-                            <td class="px-4 py-2 text-gray-50 border-4 border-white text-left text-sm md:text-base whitespace-nowrap">
-                                {{ topic.date }}</td>
-                            <td class="px-4 py-2 text-gray-50 border-4 border-white text-left text-sm md:text-base whitespace-nowrap">
-                                {{ topic.time }}</td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div class="bg-white border p-4 rounded-lg shadow-sm">
+                    <p class="text-sm font-semibold text-gray-700">Topic:</p>
+                    <p class="text-lg font-medium text-gray-900">Personal Finance for Interns and Young Professionals
+                    </p>
+                    <p class="mt-2 text-sm text-gray-600">Date: Friday, 20th June, 2025</p>
+                    <p class="text-sm text-gray-600">Time: 8:00 PM</p>
+                </div>
+
+                <article @click="openModal(schedules[0])"
+                    class="flex cursor-pointer bg-white border rounded-lg transition hover:shadow-lg">
+                    <div class="w-32 h-32 border-r rounded-l-lg overflow-hidden">
+                        <img :src="schedules[0].image" alt="Ogochukwu Okolocha" class="object-cover w-full h-full" />
+                    </div>
+                    <div class="flex flex-col justify-between p-4">
+                        <p class="font-bold text-gray-800">{{ schedules[0].speaker }}</p>
+                        <p class="text-xs font-semibold text-[#27628C] pt-4">CLICK TO SEE FACILITATOR'S PROFILE</p>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Session 2 -->
+            <div class="space-y-6">
+                <h2 class="text-[#27628C] text-xl font-bold uppercase">Session 2</h2>
+                <img class="w-full rounded-lg object-cover shadow-lg" src="@/assets/img/financial-literacy2.jpeg"
+                    alt="Financial Literacy 2 Flier" />
+
+                <div class="bg-white border p-4 rounded-lg shadow-sm">
+                    <p class="text-sm font-semibold text-gray-700">Topic:</p>
+                    <p class="text-lg font-medium text-gray-900">The Millionaire Blue Print</p>
+                    <p class="mt-2 text-sm text-gray-600">Date: Saturday, 28th June, 2025</p>
+                    <p class="text-sm text-gray-600">Time: 8:00 PM</p>
+                </div>
+
+                <article @click="openModal(schedules[1])"
+                    class="flex cursor-pointer bg-white border rounded-lg transition hover:shadow-lg">
+                    <div class="w-32 h-32 border-r rounded-l-lg overflow-hidden">
+                        <img :src="schedules[1].image" alt="Bala Francis" class="object-cover w-full h-full" />
+                    </div>
+                    <div class="flex flex-col justify-between p-4">
+                        <p class="font-bold text-gray-800">{{ schedules[1].speaker }}</p>
+                        <p class="text-xs font-semibold text-[#27628C] pt-4">CLICK TO SEE FACILITATOR'S PROFILE</p>
+                    </div>
+                </article>
             </div>
         </div>
 
-        <div>
-        <h1 class="text-center text-[#27628C] uppercase font-bold text-2xl mt-32">Facilitators</h1>
-        <section class="flex flex-wrap justify-center gap-6 mt-14 mx-auto max-w-7xl pb-6 p-3 lg:p-0">
-            <article v-for="item in schedules" :key="item.speaker" @click="openModal(item)"
-                class="w-full sm:w-[45%] flex bg-white border-[0.5px] border-gray-10 rounded-lg transition hover:shadow-xl">
-                <div class="sm:basis-56 border-[0.5px] border-gray-50 rounded-lg">
-                    <img :src="item.image" :alt="item.speaker" class="aspect-square h-full w-32 object-cover" />
-                </div>
-
-                <div class="w-full flex-col justify-between">
-                    <div class="border-s border-gray-900/10 p-4 sm:border-l-transparent sm:p-6">
-                        <p class="mt-2 font-bold line-clamp-3 text-lg/relaxed text-gray-700">
-                            {{ item.speaker }}
-                        </p>
-                        <p class="text-xs font-bold pt-5">CLICK TO SEE FACILITATOR'S PROFILE</p>
-                    </div>
-                </div>
-            </article>
-        </section>
-        </div>
-
-        <div class="flex justify-center items-center my-10 p-3 lg:p-0">
-            <a href="#"
-                class="text-white text-center bg-[#27628C] rounded-lg lg:w-full px-6 py-3.5 max-w-lg opacity-50 pointer-events-none">
+        <div class="flex justify-center items-center mb-16 mt-32 p-3 lg:p-0">
+            <a href="https://forms.gle/b4fJCpWn4iJ7A4j77"
+                class="text-white text-center bg-[#27628C] rounded-lg lg:w-full px-6 py-3.5 max-w-lg">
                 Register Now
             </a>
         </div>
-
     </div>
+
 
     <SpeakerModal v-if="selectedSpeaker" :speaker="selectedSpeaker" :is-visible="isModalVisible" @close="closeModal" />
 </template>
@@ -144,22 +131,6 @@ const id = route.params.id;
 
 import speaker1 from '@/assets/img/ogochukwu-okolocha.jpeg'
 import speaker2 from '@/assets/img/bala-francis.jpeg'
-
-
-const topics = ref([
-    {
-        "sn": "01",
-        "topic": "Personal Finance for Interns and Young Professionals",
-        "date": "Friday, 20th June, 2025",
-        "time": "8:00 PM",
-    },
-    {
-        "sn": "02",
-        "topic": "Finance",
-        "date": " June, 2025",
-        "time": "8:00 PM",
-    },
-]);
 
 const schedules = ref([
     {

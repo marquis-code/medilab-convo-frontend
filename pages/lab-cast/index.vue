@@ -95,7 +95,7 @@
     <div class="container mx-auto px-4 mt-8">
       <div class="bg-white p-0 rounded-lg shadow-md flex">
         <div class="lg:flex space-y-6 items-center space-x-4 w-full p-6">
-          <img src="@/assets/img/latest-labcast.jpg" alt="Podcast cover" class="w-72 h-60 rounded-lg object-cover" />
+          <img src="@/assets/img/latest-labcast.jpg" alt="Podcast cover" class="w-72 lg:h-60 rounded-lg object-cover" />
           <div class="flex flex-col w-full">
             <div class="font-semibold text-2xl">Thriving with Sickle Cell Disease: The Amblest Story</div>
             <div class="text-gray-500 mt-2">
