@@ -136,7 +136,10 @@ const schedules = ref([
     {
         image: speaker1,
         "speaker": "Ogochukwu Okolocha",
-        "bio": `Ogochukwu Okolocha, popularly known as The Personal Finance Evangelist, is an entrepreneur and automation engineer with a deep passion for empowering individuals to take control of their finances. He helps people manage money wisely, invest profitably, build lasting wealth, and retire comfortably. He is the founder of Money Lessons, a financial literacy community that has impacted over 1,000 individuals and counting.`,
+        "bio": `Ogochukwu Okolocha is a personal finance evangelist on a mission to empower individuals like you with the financial sense they need to break free from generational poverty and build lasting transgenerational wealth.
+Entrepreneur, seasoned investor, business consultant, and finance teacher, Ogochukwu brings years of practical experience and insight to the world of personal finance and wealth building.
+He is the founder of ML Community; a vibrant and growing tribe of finance titans from all walks of life.
+ML Community is dedicated to improving financial literacy and creating a safe, engaging platform for people to learn, share, and implement smart money decisions.`,
 
     },
     {
