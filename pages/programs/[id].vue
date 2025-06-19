@@ -687,11 +687,18 @@ function closeModal() {
  <div class="flex justify-center flex-col md:flex-row items-center gap-6 my-10 p-3 lg:p-0 animate-bounce-slow">
   <div>
     <a 
+      href="https://chat.whatsapp.com/BfWreyeFjnAFC5cryHWPnU" 
+      class="text-white text-center bg-green-600 rounded-lg px-6 py-3.5 w-64 transform transition-all duration-300 hover:scale-105 hover:shadow-xl flex items-center justify-center gap-2"
+    >
+      <span>Join the Waitlist</span>
+    </a>
+  </div> 
+  <div>
+    <a 
       href="https://paystack.shop/pay/414967xrt1" 
       class="text-white text-center bg-[#27628C] rounded-lg px-6 py-3.5 w-64 transform transition-all duration-300 hover:scale-105 hover:shadow-xl flex items-center justify-center gap-2"
     >
       <span>Make Payment</span>
-      <ArrowRightIcon class="h-5 w-5" />
     </a>
   </div>
 </div>
