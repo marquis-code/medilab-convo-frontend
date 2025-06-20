@@ -34,17 +34,19 @@
       <div class="relative bg-[#27628C] lg:mt-10 pt-0 ">
       <div
         class="relative h-80 overflow-hidden  md:absolute md:left-0 md:h-full mt-44 pb-[400px] lg:pb-0 md:w-1/3 lg:w-1/2">
-        <img  class="w-full h-[500px]" src="@/assets/img/latest-journo-6.jpeg" alt="">
+        <img  class="w-full h-[500px]" src="@/assets/img/literacy.jpeg" alt="">
       </div>
       <div class="relative mx-auto max-w-7xl py-24 sm:py-32 px-10 lg:px-0 lg:py-40">
         <div class="md:ml-auto md:w-2/3 md:pl-16 lg:w-1/2">
           <p  class="mt-2 text-4xl font-semibold tracking-tight text-white sm:text-5xl">
-            Choose your Champion: Healthcare Optics vs Healthcare Ethics   </p>
+            Financial Literacy: Securing the Bag as a Young Medical Laboratory Scientist | How to Buy a House and a Car with your Internship Salary   </p>
           <p  class="mt-6 text-base/7 text-white">
-            Fatai rolled to his belly as his body adjusted to his waking sequence at 3 AM. Waking up at wee hours has been his routine for several weeks now since he disrupted his circadian rhythm in the bid to prepare for his last examination. But there was something about that particular night that was different; to begin with, he woke up by 3 AM instead of the statutory 2 AM. There was something that just kept sucking him in his bed that made getting up harder than usual. As his ears picked up the whirring of his old fan, the pieces of the puzzle started to come together. It’s been 6 weeks since that fan moved its blade out of its volition. It wasn’t one of those nights he woke to beads of sweat gathering in a stampede across the groove of his back. The fan has also kept his winged bloodsucking co-inhabitants at bay. He plugged his devices and went back to sleep with a determination to savour this moment – perhaps it was a dream.
+You’re a Medical Laboratory Scientist in your internship year. You're clocking into the lab early, staining slides, running tests, dodging passive-aggressive patient relatives, and literally trying to make it to the next week. As if that is not enough, the monetary reward for all your effort is barely enough to keep up with the constant expenses - and to make matters worse, it often shows up fashionably late. Can you relate?
+
+Internship in Nigeria is a financial reality check. For many, it’s the first time earning a steady (albeit small) income and as such, a crash course in adulting. Between transportation, data, daily feeding, and the occasional craving to enjoy a bit of “soft life,” many interns find themselves living from alert to alert.
            </p>
           <div  class="mt-8">
-            <a href="https://open.substack.com/pub/mlcjourno/p/choose-your-champion-healthcare-optics?r=45bm0j&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true"
+            <a href="https://mlcjourno.substack.com/p/financial-literacy-securing-the-bag?r=45bm0j&utm_campaign=post&utm_medium=web&triedRedirect=true"
               class="inline-flex rounded-md bg-white/10 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-white/20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">View
               publications <span aria-hidden="true">&rarr;</span></a>
           </div>
@@ -137,8 +139,17 @@ import latest2 from '@/assets/img/kidney.jpeg'
 import latestJourno from '@/assets/img/latest-journo-updated.jpeg'
 import latestJourno6 from '@/assets/img/latest-journo-6.jpeg'
 import carvingProfessional from '@/assets/img/carving-professional.jpeg'
+import financialLiteracy from '@/assets/img/literacy.jpeg'
 
 const journosList = ref([
+  {
+    image: financialLiteracy,
+    title: `Financial Literacy: Securing the Bag as a Young Medical Laboratory Scientist`,
+    desc: `You’re a Medical Laboratory Scientist in your internship year. You're clocking into the lab early, staining slides, running tests, dodging passive-aggressive patient relatives, and literally trying to make it to the next week. As if that is not enough, the monetary reward for all your effort is barely enough to keep up with the constant expenses - and to make matters worse, it often shows up fashionably late. Can you relate?
+Internship in Nigeria is a financial reality check. For many, it’s the first time earning a steady (albeit small) income and as such, a crash course in adulting. Between transportation, data, daily feeding, and the occasional craving to enjoy a bit of “soft life,” many interns find themselves living from alert to alert.`,
+    author: 'Ubani Confidence',
+    url: 'https://mlcjourno.substack.com/p/financial-literacy-securing-the-bag?r=45bm0j&utm_campaign=post&utm_medium=web&triedRedirect=true'
+  },
 {
     image: latestJourno6,
     title: `Choose your Champion: Healthcare Optics vs Healthcare Ethics`,
