@@ -465,6 +465,7 @@ import img4 from '@/assets/img/scholarship.jpeg'
 import convo from "@/assets/img/forging-a-career-path.jpg"
 import latestJourno from '@/assets/img/latest-journo.jpeg'
 import latestJourno6 from '@/assets/img/latest-journo-6.jpeg'
+import financialLiteracy from '@/assets/img/literacy.jpeg'
 
 const activitiesGrid = ref([
   {
@@ -528,9 +529,10 @@ const journoLatest = ref([
 //     registerUrl: 'https://mlcjourno.substack.com/'
 //   },
 {
-    title: `Choose your Champion: Healthcare Optics vs Healthcare Ethics`,
-    image: latestJourno,
-    desc: `Fatai rolled to his belly as his body adjusted to his waking sequence at 3 AM. Waking up at wee hours has been his routine for several weeks now since he disrupted his circadian rhythm in the bid to prepare for his last examination. But there was something about that particular night that was different; to begin with, he woke up by 3 AM instead of the statutory 2 AM. There was something that just kept sucking him in his bed that made getting up harder than usual. As his ears picked up the whirring of his old fan, the pieces of the puzzle started to come together. It’s been 6 weeks since that fan moved its blade out of its volition. It wasn’t one of those nights he woke to beads of sweat gathering in a stampede across the groove of his back. The fan has also kept his winged bloodsucking co-inhabitants at bay. He plugged his devices and went back to sleep with a determination to savour this moment – perhaps it was a dream.`,
+    title: `Financial Literacy: Securing the Bag as a Young Medical Laboratory Scientist`,
+    image: financialLiteracy,
+    desc: `You’re a Medical Laboratory Scientist in your internship year. You're clocking into the lab early, staining slides, running tests, dodging passive-aggressive patient relatives, and literally trying to make it to the next week. As if that is not enough, the monetary reward for all your effort is barely enough to keep up with the constant expenses - and to make matters worse, it often shows up fashionably late. Can you relate?
+Internship in Nigeria is a financial reality check. For many, it’s the first time earning a steady (albeit small) income and as such, a crash course in adulting. Between transportation, data, daily feeding, and the occasional craving to enjoy a bit of “soft life,” many interns find themselves living from alert to alert.`,
     previousEditionUrl: '#',
     status: 'latest',
     actionText: 'Read More',
