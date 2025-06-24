@@ -21,10 +21,10 @@
           class="text-center mb-16 lg:mb-20"
           :class="{ 'animate-fade-in-up': isVisible.contact }"
         >
-          <p class="text-white text-lg sm:text-xl lg:text-2xl font-bold uppercase tracking-wider mb-6">
+          <p class="text-[#F7F7F7] text-lg sm:text-xl lg:text-2xl font-bold uppercase tracking-wider mb-6">
             GET IN TOUCH
           </p>
-          <h2 class="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-black text-[#3BAB22] mb-12 leading-none">
+          <h2 class="text-5xl sm:text-6xl md:text-7xl lg:text-[140px] font-black text-[#3BAB22] mb-12 leading-none">
             CONTACT US
           </h2>
         </div>
@@ -36,7 +36,7 @@
         >
           <!-- Left Column - Company Name -->
           <div class="text-white">
-            <h3 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-12 leading-tight">
+            <h3 class="text-3xl sm:text-4xl max-w-xl md:text-5xl lg:text-7xl font-bold mb-12 leading-tight">
               Capera Oil and Gas limited
             </h3>
           </div>
@@ -44,25 +44,67 @@
           <!-- Right Column - Contact Info -->
           <div class="text-white space-y-8 lg:space-y-12">
             <div>
-              <h4 class="text-lg lg:text-xl font-semibold mb-3">Address</h4>
-              <p class="text-white/80 text-base lg:text-lg">42 Local, Airport Rd, Ikeja</p>
+              <h4 class="text-lg lg:text-[20px] font-medium mb-3">Address</h4>
+              <p class="text-white/80 text-[20px] font-medium lg:text-lg">42 Local, Airport Rd, Ikeja</p>
             </div>
   
             <div>
-              <h4 class="text-lg lg:text-xl font-semibold mb-3">Email</h4>
+              <h4 class="text-lg lg:text-[20px] font-medium mb-3">Email</h4>
               <a
                 href="mailto:hello@withcapera.com"
-                class="text-white/80 hover:text-white transition-colors underline text-base lg:text-lg"
+                class="text-white/80 hover:text-white font-medium transition-colors underline text-base lg:text-[20px]"
               >
                 hello@withcapera.com
               </a>
             </div>
           </div>
         </div>
+        <div
+          class="grid lg:grid-cols-2 gap-12 lg:gap-16 mb-20"
+          :class="{ 'animate-fade-in-up': isVisible.contact }"
+        >
+          <!-- Left Column - Company Name -->
+          <div class="text-white">
+              <img 
+                src="@/assets/img/capera-logo.svg" 
+                alt="Capera Logo"
+                class="h-10"
+              />
+            <h3 class="text-xl pt-[32px] lg:text-[40px] mb-8 font-medium max-w-sm leading-snug">
+              Reliable energy, limitless potential
+            </h3>
+          </div>
+  
+          <!-- Right Column - Contact Info -->
+          <div class="text-white space-y-8 lg:space-y-12">
+            <div>
+                <h4 class="text-lg lg:text-xl font-semibold mb-4 uppercase tracking-wide">EXPLORE</h4>
+                <div class="space-y-3">
+                  <a
+                    href="#who-we-are"
+                    class="block text-white/80 hover:text-white transition-colors text-base lg:text-lg"
+                  >
+                    WHO WE ARE
+                  </a>
+                  <a
+                    href="#what-we-do"
+                    class="block text-white/80 hover:text-white transition-colors text-base lg:text-lg"
+                  >
+                    WHAT WE DO
+                  </a>
+                  <a
+                    href="#contact"
+                    class="block text-white/80 hover:text-white transition-colors text-base lg:text-lg"
+                  >
+                    CONTACT US
+                  </a>
+                </div>
+              </div>
+          </div>
+        </div>
   
         <!-- Footer Section -->
-        <div class="lg:grid-cols-2 gap-12 lg:gap-16 items-end">
-          <!-- Left Column - Logo and Tagline -->
+        <!-- <div class="lg:grid-cols-2 gap-12 lg:gap-16 items-end">
           <div class="text-white">
            <section class="lg:flex max-w-3xl justify-between w-full">
             <section class="order-0">
@@ -74,10 +116,10 @@
               />
             </div>
   
-            <p class="text-xl lg:text-2xl mb-8 font-medium">Reliable energy, limitless potential</p>
+            <p class="text-xl lg:text-[40px] mb-8 font-medium max-w-sm leading-snug">Reliable energy, limitless potential</p>
             </section>
   
-            <div class="space-y-6 order-1">
+            <div class="space-y-6 order-1 ">
               <div>
                 <h4 class="text-lg lg:text-xl font-semibold mb-4 uppercase tracking-wide">EXPLORE</h4>
                 <div class="space-y-3">
@@ -109,10 +151,9 @@
             </p>
           </div>
   
-          <!-- Right Column - Social Media Icons -->
+
           <div class="flex justify-start mt-6 lg:justify-end">
             <div class="flex space-x-4">
-              <!-- Twitter -->
               <a
                 href="#"
                 class="text-white/60 hover:text-white transition-colors"
@@ -132,7 +173,6 @@
                 </svg>
               </a>
   
-              <!-- LinkedIn -->
               <a
                 href="#"
                 class="text-white/60 hover:text-white transition-colors"
@@ -159,7 +199,6 @@
                 </svg>
               </a>
   
-              <!-- Facebook -->
               <a
                 href="#"
                 class="text-white/60 hover:text-white transition-colors"
@@ -186,7 +225,6 @@
                 </svg>
               </a>
   
-              <!-- GitHub -->
               <a
                 href="#"
                 class="text-white/60 hover:text-white transition-colors"
@@ -215,7 +253,6 @@
                 </svg>
               </a>
   
-              <!-- Dribbble -->
               <a
                 href="#"
                 class="text-white/60 hover:text-white transition-colors"
@@ -238,7 +275,7 @@
               </a>
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
     </section>
   </template>

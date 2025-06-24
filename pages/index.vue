@@ -73,6 +73,7 @@
 
     <!-- Who We Are Section -->
     <WhoWeAre id="who-we-are" />
+    <!-- <ParallaxSection id="who-we-are" /> -->
 
     <!-- Mission Statement -->
     <section class="py-20 bg-[#1C5310]">
@@ -92,17 +93,18 @@
 
     <!-- Our Purpose -->
      <!-- <OurPurpose /> -->
-    <section class="py-20 bg-[#1C5310]">
-      <div class="container px-4 lg:px-0 mx-auto">
+  <section class="space-y-[96px] bg-[#1C5310]">
+    <section class="bg-[#1C5310]">
+      <div class="px-[54px] mx-auto">
         <div class="">
           <div
-            class="rounded-3xl overflow-hidden shadow-2xl"
+            class="rounded-3xl overflow-hidden "
             :class="{ 'animate-fade-in-up': isVisible.purpose }"
           >
             <div class="grid md:grid-cols-2 min-h-[400px]">
               <!-- Left side - Dark green with text -->
               <div
-                class="bg-[#032E00] py-16 lg:py-0 px-6 flex flex-col justify-center"
+                class="bg-[#032E00] py-16 space-y-[20px] lg:py-0 px-[48px] flex flex-col justify-center"
               >
                 <h2 class="text-5xl lg:text-8xl font-bold text-white mb-6">
                   Our purpose
@@ -128,11 +130,11 @@
     </section>
 
     <!-- Our Culture -->
-    <section class="py-20 bg-[#1C5310]">
-      <div class="container mx-auto px-4 lg:px-0">
+    <section class="bg-[#1C5310]">
+      <div class="px-[54px] mx-auto">
         <div class="">
           <div
-            class="bg-[#3BAB22] rounded-3xl overflow-hidden shadow-2xl"
+            class="bg-[#3BAB22] rounded-3xl overflow-hidden "
             :class="{ 'animate-fade-in-up': isVisible.culture }"
           >
             <div class="grid md:grid-cols-2 min-h-[400px]">
@@ -146,12 +148,12 @@
               </div>
               <!-- Right side - Bright green with text -->
               <div
-                class="bg-[#3BAB22] py-16 lg:py-0 px-6 flex flex-col justify-center"
+                class="bg-[#3BAB22] py-16 space-y-[20px] lg:py-0 px-[48px] flex flex-col justify-center"
               >
                 <h2 class="text-5xl lg:text-8xl font-bold text-white mb-6">
                   Our Culture
                 </h2>
-                <p class="text-white font-medium text-lg lg:text-2xl leading-relaxed">
+                <p class="text-white text-lg lg:text-2xl font-medium leading-relaxed">
                   We're a global team dedicated to working with people from all
                   walks of life. We believe human ingenuity has the power to
                   solve any challenge and we work towards living this belief
@@ -163,48 +165,9 @@
         </div>
       </div>
     </section>
+  </section>
 
-    <ServiceSection />
-
-    <!-- Services Overview -->
-    <!-- <section class="py-20 bg-[#1C5310]">
-      <div class="container mx-auto px-4">
-        <div
-          class=""
-          :class="{ 'animate-fade-in-up': isVisible.services }"
-        >
-          <div class="grid md:grid-cols-2 gap-12 mb-16">
-            <p class="text-white font-medium text-[40px] leading-relaxed">
-              We serve the energy industry by providing high-quality,
-              single-source solutions tailored to meet the needs of our
-              customers.
-            </p>
-            <p class="text-white font-medium text-[40px] leading-relaxed">
-              Our technology and system design allow us to provide a custom
-              solution to our customers and keep projects on time, on goals, on
-              budgets, always.
-            </p>
-          </div>
-
-          <div class="grid md:grid-cols-3 gap-8">
-            <div class="text-white">
-              <div class="w-8 h-8 bg-[#3BAB22] rounded mb-4"></div>
-              <h3 class="text-6xl font-medium mb-2">Drilling Services</h3>
-            </div>
-            <div class="text-white">
-              <div class="w-8 h-8 bg-[#3BAB22] rounded mb-4"></div>
-              <h3 class="text-6xl font-medium mb-2">Procurement Services</h3>
-            </div>
-            <div class="text-white">
-              <div class="w-8 h-8 bg-[#3BAB22] rounded mb-4"></div>
-              <h3 class="text-6xl font-medium mb-2">
-                Supply of Refined Products
-              </h3>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> -->
+    <ServiceSection class="bg-[#1C5310]" />
 
     <!-- What We Do -->
     <section id="what-we-do" class="py-20 bg-white">
@@ -216,12 +179,15 @@
           <p class="text-[#1C5310] font-bold text-[24px] text-sm uppercase tracking-wider mb-4">
             WHAT WE DO
           </p>
-          <h2
-            class="text-5xl md:text-6xl lg:text-[140px] font-bold text-[#3BAB22] mb-8 leading-tight"
+          <!-- text-5xl md:text-6xl lg:text-[140px] font-bold text-[#3BAB22] mb-8 leading-tight -->
+     <div class="flex justify-center items-center">
+      <h2
+            class="text-5xl md:text-6xl max-w-5xl text-center  lg:text-[140px] font-bold text-[#3BAB22] mb-8 leading-tight"
           >
-            ENERGY THAT<br />FUELS THE<br />WORLD
+            ENERGY THAT FUELS THE WORLD
           </h2>
-          <p class="text-[#1A1A1B] font-[400] max-w-2xl mx-auto text-lg">
+     </div>
+          <p class="text-[#1A1A1B] font-[400] leading-relaxed max-w-3xl mx-auto text-[20px]">
             We're working to deliver the energy needed today. To lower the
             carbon intensity of our operations. And to build the lower carbon
             energy system of tomorrow.
@@ -231,18 +197,18 @@
     </section>
 
     <!-- Service Cards -->
-    <section class="lg:py-20">
+    <section class="mt-[128px] mb-[120px]">
       <div class="container mx-auto px-4 lg:px-0 space-y-16">
         <!-- Exploration Drilling -->
         <div class="">
           <div
-            class="bg-white rounded-3xl overflow-hidden shadow-2xl"
+            class="bg-white rounded-3xl overflow-hidden "
             :class="{ 'animate-fade-in-up': isVisible.drilling }"
           >
             <div class="grid md:grid-cols-2 min-h-[400px]">
               <!-- Left side - Dark green with text -->
               <div
-                class="bg-[#032E00] py-16 lg:py-0 px-6 flex flex-col justify-center"
+                class="bg-[#032E00] py-16 space-y-[20px] lg:py-0 px-[48px] flex flex-col justify-center"
               >
                 <h3 class="text-5xl lg:text-8xl font-bold text-white mb-6">
                   Exploration Drilling
@@ -267,7 +233,7 @@
         <!-- Procurement -->
         <div class="">
           <div
-            class="bg-white rounded-3xl overflow-hidden shadow-2xl"
+            class="bg-white rounded-3xl overflow-hidden "
             :class="{ 'animate-fade-in-up': isVisible.procurement }"
           >
             <div class="grid md:grid-cols-2 min-h-[400px]">
@@ -281,7 +247,7 @@
               </div>
               <!-- Right side - Bright green with text -->
               <div
-                class="bg-[#3BAB22] py-16 lg:py-0 px-6 flex flex-col justify-center"
+                class="bg-[#3BAB22] py-16 lg:py-0 px-[48px] flex flex-col justify-center"
               >
                 <!-- <h3 class="text-4xl lg:text-7xl font-bold text-white mb-6">
                   Procurement
@@ -289,7 +255,7 @@
                 <h2 class="text-5xl lg:text-8xl font-bold text-white mb-6">
                   Procurement
                 </h2>
-                <p class="text-white text-lg lg:text-2xl font-medium leading-relaxed">
+                <p class="text-white text-lg lg:text-2xl font-medium leading-loose">
                   End-to-end management of procurement processes, ensuring
                   timely delivery of materials and equipment.
                 </p>
@@ -301,18 +267,18 @@
         <!-- Supply of Refined Products -->
         <div class="">
           <div
-            class="bg-white rounded-3xl overflow-hidden shadow-2xl"
+            class="bg-white rounded-3xl overflow-hidden "
             :class="{ 'animate-fade-in-up': isVisible.supply }"
           >
             <div class="grid md:grid-cols-2 min-h-[400px]">
               <!-- Left side - Dark green with text -->
               <div
-                class="bg-[#097A01] py-16 lg:py-0 px-6 flex flex-col justify-center"
+                class="bg-[#097A01] py-16 px-[48px] lg:py-0 flex flex-col justify-center"
               >
                 <h3 class="text-5xl lg:text-8xl font-bold text-white mb-6">
                   Supply of Refined Products
                 </h3>
-                <p class="text-white text-lg lg:text-2xl font-medium leading-relaxed">
+                <p class="text-white text-lg lg:text-2xl font-medium leading-loose">
                   Supply of premium base oils for industrial applications, along
                   with Diesel (AGO) and Petrol (PMS), delivered to industrial
                   facilities, filling stations, and commercial customers.

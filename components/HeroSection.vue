@@ -12,11 +12,11 @@
       
       <!-- Content -->
       <div
-        class="relative z-20 text-center text-white px-4 max-w-6xl mx-auto"
+        class="relative z-20 leading-loose text-center text-white px-4 max-w-6xl mx-auto"
         :class="{ 'animate-fade-in-up': isVisible.hero }"
       >
         <!-- Main heading -->
-        <h1 class="text-6xl sm:text-7xl md:text-8xl lg:text-9xl xl:text-[10rem] font-black mb-8 leading-[0.85] tracking-tight">
+        <h1 class="text-6xl sm:text-7xl md:text-8xl lg:text-9xl xl:text-[10rem] font-black mb-8 tracking-tight">
           POWERING<br />THE FUTURE
         </h1>
         
