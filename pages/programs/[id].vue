@@ -605,7 +605,6 @@ function closeModal() {
 <!-- Background elements -->
 <div class="absolute bottom-0 left-3/4 top-0 hidden w-screen bg-[#27628C] lg:block"></div>
       
-      <!-- Animated DNA helix decoration -->
       <div class="absolute top-10 right-10 opacity-20 animate-pulse hidden lg:block">
         <DnaHelix />
       </div>
@@ -659,10 +658,6 @@ function closeModal() {
                 width="1184" 
                 height="1376"
               >
-              <!-- Microscope decoration overlay -->
-              <div class="absolute -bottom-10 -right-10 opacity-20 rotate-12 transform scale-75">
-                <MicroscopeIcon />
-              </div>
             </figure>
           </div>
         </div>

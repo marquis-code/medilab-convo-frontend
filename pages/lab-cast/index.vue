@@ -97,13 +97,14 @@
         <div class="lg:flex space-y-6 items-center space-x-4 w-full p-6">
           <img src="@/assets/img/latest-labcast.jpg" alt="Podcast cover" class="w-72 lg:h-60 rounded-lg object-cover" />
           <div class="flex flex-col w-full">
-            <div class="font-semibold text-2xl">Thriving with Sickle Cell Disease: The Amblest Story</div>
+            <div class="font-semibold text-2xl">Next-Generation Sequencing in MLS Practice</div>
             <div class="text-gray-500 mt-2">
-              In this episode of LabCast, we speak with Amblest Kanu, a First-Class graduate who lives with sickle cell disease. Despite health challenges, he earned five perfect GPAs and 74 As in school. Amblest shares how he stayed focused, managed pain, and led others—all while battling a chronic condition. Hosted by Nmesoma and Iheoma, this episode is filled with lessons on resilience, hope, and the power of mindset. Whether you live with sickle cell or know someone who does, this story will inspire you. We also recommend our episode on blood genotype testing for more insights.😊            </div>
+              Next Generation Sequencing (NGS) is revolutionizing the way we understand and diagnose diseases. From detecting rare genetic disorders to guiding personalized treatment plans, NGS is now a vital tool in the hands of modern Medical Laboratory Scientists.
+In this episode of LabCast, your co-hosts Jesutomisin and Daniel are joined by Emmanuel Owoeye, a seasoned molecular biologist, to explore the relationship between NGS and biomedical science, and why every MLS professional should know about it. Whether you’re just hearing about NGS or looking to deepen your understanding, this episode is your guide into the future of lab medicine.</div>
             <div class="mt-3">
               <p class="text-gray-400 text-sm mb-2">Available On:</p>
               <div class="flex flex-wrap gap-2">
-                <a href=" https://open.spotify.com/episode/4Xv5dJD9bG6jufJaHo9uVn"
+                <a href=" https://open.spotify.com/episode/5009NpR5WMrvTE3LyCBmZr"
                   class="inline-flex items-center px-4 py-1.5 rounded-full bg-[#1DB954] text-sm hover:opacity-90">
                   <span class="mr-2">
                     <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
@@ -113,7 +114,7 @@
                   </span>
                   Spotify
                 </a>
-                <a href=" https://open.spotify.com/episode/4Xv5dJD9bG6jufJaHo9uVn"
+                <a href="https://open.spotify.com/episode/5009NpR5WMrvTE3LyCBmZr"
                   class="inline-flex items-center border-[0.5px] border-gray-20 px-4 py-1.5 rounded-full bg-white text-black text-sm hover:opacity-90">
                   <span class="mr-2">
                     <svg fill="none" class="w-6 h-6" viewBox="0 0 92 92" xmlns="http://www.w3.org/2000/svg"
@@ -326,7 +327,15 @@ import episode30 from "@/assets/img/lab-coast/lab30.png";
 import episode31 from "@/assets/img/lab-coast/lab31.png";
 
 const podcastList = ref([
-  //  https://open.spotify.com/episode/4Xv5dJD9bG6jufJaHo9uVn
+  {
+    name: "Next-Generation Sequencing in MLS Practice",
+    description:
+      `Next Generation Sequencing (NGS) is revolutionizing the way we understand and diagnose diseases. From detecting rare genetic disorders to guiding personalized treatment plans, NGS is now a vital tool in the hands of modern Medical Laboratory Scientists.
+In this episode of LabCast, your co-hosts Jesutomisin and Daniel are joined by Emmanuel Owoeye, a seasoned molecular biologist, to explore the relationship between NGS and biomedical science, and why every MLS professional should know about it. Whether you’re just hearing about NGS or looking to deepen your understanding, this episode is your guide into the future of lab medicine.`,
+    image: "",
+    link: "https://open.spotify.com/episode/5009NpR5WMrvTE3LyCBmZr",
+    appleUrl: "https://open.spotify.com/episode/5009NpR5WMrvTE3LyCBmZr"
+  },
   {
     name: "Thriving with Sickle Cell Disease: The Amblest Story",
     description:

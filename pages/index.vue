@@ -122,7 +122,7 @@
             <div class="flex flex-wrap gap-2 flex justify-center items-center w-full">
        <div>
         <a
-            href="https://open.spotify.com/episode/4Xv5dJD9bG6jufJaHo9uVn"
+            href="https://open.spotify.com/episode/5009NpR5WMrvTE3LyCBmZr"
             class="inline-flex items-center px-4 py-1.5 rounded-full bg-[#1DB954] text-sm hover:opacity-90"
           >
             <span class="mr-2">
@@ -137,7 +137,7 @@
        </div>
       <div>
         <a
-                href="https://open.spotify.com/episode/4Xv5dJD9bG6jufJaHo9uVn"
+                href="https://open.spotify.com/episode/5009NpR5WMrvTE3LyCBmZr"
                 class="inline-flex items-center border-[0.5px] border-gray-20 px-4 py-1.5 rounded-full bg-white text-black text-sm hover:opacity-90"
               >
                 <span class="mr-2">
@@ -508,9 +508,10 @@ const activitiesGrid = ref([
 
 const labcastLatest = ref([
 {
-    title: 'Thriving with Sickle Cell Disease: The Amblest Story',
+    title: 'Next-Generation Sequencing in MLS Practice',
     image: labcast,
-    desc: `In this episode of LabCast, we speak with Amblest Kanu, a First-Class graduate who lives with sickle cell disease. Despite health challenges, he earned five perfect GPAs and 74 As in school. Amblest shares how he stayed focused, managed pain, and led others—all while battling a chronic condition. Hosted by Nmesoma and Iheoma, this episode is filled with lessons on resilience, hope, and the power of mindset. Whether you live with sickle cell or know someone who does, this story will inspire you. We also recommend our episode on blood genotype testing for more insights.😊`,
+    desc: `Next Generation Sequencing (NGS) is revolutionizing the way we understand and diagnose diseases. From detecting rare genetic disorders to guiding personalized treatment plans, NGS is now a vital tool in the hands of modern Medical Laboratory Scientists.
+In this episode of LabCast, your co-hosts Jesutomisin and Daniel are joined by Emmanuel Owoeye, a seasoned molecular biologist, to explore the relationship between NGS and biomedical science, and why every MLS professional should know about it. Whether you’re just hearing about NGS or looking to deepen your understanding, this episode is your guide into the future of lab medicine.`,
     previousEditionUrl: '#',
     status: 'latest',
     registerUrl: ''
