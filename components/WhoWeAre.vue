@@ -13,12 +13,12 @@
         </h2>
       </div>
 
-      <!-- Main Content - Full Width -->
+
       <div class="w-full">
         
-        <!-- CRITICAL THINKERS Row -->
+
         <div class="relative mb-4 sm:mb-6 lg:mb-8 px-4 sm:px-6 lg:px-8">
-          <!-- Mobile Stack Layout -->
+
           <div class="block sm:hidden">
             <div class="relative mb-4">
               <img 
@@ -33,12 +33,12 @@
             </div>
           </div>
           
-          <!-- Desktop Overlay Layout - Full Width -->
+   
           <div class="hidden sm:block w-full">
             <div class="relative flex items-center justify-start w-full overflow-hidden">
-              <!-- CRIT with image behind text -->
+
               <div class="relative inline-block">
-                <!-- Image positioned behind CRIT text - ENLARGED -->
+          
                 <div class="absolute top-1/2 left-[8%] transform -translate-y-1/2 w-32 h-24 sm:w-40 sm:h-28 md:w-48 md:h-32 lg:w-56 lg:h-36 xl:w-64 xl:h-40 2xl:w-72 2xl:h-44 z-10">
                   <img 
                     src="@/assets/img/section-images3.png"
@@ -46,12 +46,12 @@
                     class="w-full h-full object-cover rounded-xl shadow-2xl"
                   />
                 </div>
-                <!-- Text on top of image -->
+
                 <h1 class="relative z-20 text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl 2xl:text-[10rem] font-black text-[#3BAB22] leading-[0.85] tracking-tight whitespace-nowrap">
                   CRIT
                 </h1>
               </div>
-              <!-- ICAL THINKERS -->
+
               <h1 class="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl 2xl:text-[10rem] font-black text-[#3BAB22] leading-[0.85] tracking-tight whitespace-nowrap">
                 ICAL THINKERS
               </h1>

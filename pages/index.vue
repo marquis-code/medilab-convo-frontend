@@ -69,14 +69,19 @@
     </nav>
 
     <!-- Hero Section -->
-     <HeroSection />
+
+    <HeroSectionUpdated />
+     <!-- <HeroSection /> -->
 
     <!-- Who We Are Section -->
-    <WhoWeAre id="who-we-are" />
+     <!-- <div class="relative h-screen bg-[#1C5310] overflow-hidden sticky top-0" > -->
+      <WhoWeAre5 />
+     <!-- </div> -->
+    <!-- <WhoWeAre id="who-we-are" /> -->
     <!-- <ParallaxSection id="who-we-are" /> -->
 
     <!-- Mission Statement -->
-    <section class="py-20 bg-[#1C5310]">
+    <section class="py-44 bg-[#1C5310]">
       <div class="container mx-auto px-4">
         <div
           class="max-w-4xl mx-auto text-center"

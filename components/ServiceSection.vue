@@ -39,7 +39,7 @@
             <!-- Supply of Refined Products -->
             <div class="text-white md:col-span-2 lg:col-span-1">
               <div class="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 bg-[#3BAB22] rounded mb-4 sm:mb-5 md:mb-6"></div>
-              <h3 class="text-2xl max-w-xs sm:text-3xl md:text-4xl lg:text-[64px] font-normal leading-tight">
+              <h3 class="text-2xl max-w-lg sm:text-3xl md:text-4xl lg:text-[64px] font-normal leading-tight">
                 Supply of Refined Products
               </h3>
             </div>
