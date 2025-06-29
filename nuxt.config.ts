@@ -14,19 +14,19 @@ export default defineNuxtConfig({
 
   app: {
     head: {
-      title: "Capera - Move Money Globally",
+      title: "Capera - Powering The Future",
       htmlAttrs: { lang: "en" },
       meta: [
         { charset: "utf-8" },
         { name: "viewport", content: "width=device-width, initial-scale=1" },
-        { name: "description", content: "Move Money Globally" },
+        { name: "description", content: "Powering The Future" },
         { name: "format-detection", content: "telephone=no" },
-        { name: "keywords", content: "Capera, Fintech, Finance, Global Payments, Money Transfer" },
+        { name: "keywords", content: "Capera, Oil & Gas, Powering The Future Payments, Drilling Services, Procurement Services,Supply of Refined Products, Energy That Fuels The World, Exploration Drilling, Capera Oil and Gas limited" },
         { name: "robots", content: "index, follow" },
 
         // Open Graph Meta Tags
-        { property: "og:title", content: "Capera - Move Money Globally" },
-        { property: "og:description", content: "Move Money Globally." },
+        { property: "og:title", content: "Capera - Powering The Future" },
+        { property: "og:description", content: "Powering The Future." },
         { property: "og:image", content: "/images/capera-og-image.jpg" },
         { property: "og:url", content: "https://www.capera.com" },
         { property: "og:type", content: "website" },
@@ -34,8 +34,8 @@ export default defineNuxtConfig({
       
         // Twitter Cards
         { name: "twitter:card", content: "summary_large_image" },
-        { name: "twitter:title", content: "Capera - Move Money Globally" },
-        { name: "twitter:description", content: "Move Money Globally." },
+        { name: "twitter:title", content: "Capera - Powering The Future" },
+        { name: "twitter:description", content: "Powering The Future." },
         { name: "twitter:image", content: "/images/capera-twitter-image.jpg" },
         { name: "twitter:site", content: "@capera" },
       ],

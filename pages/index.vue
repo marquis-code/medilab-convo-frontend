@@ -203,7 +203,7 @@
 
     <!-- Service Cards -->
     <section class="mt-[128px] mb-[120px]">
-      <div class="container mx-auto px-4 lg:px-0 space-y-16">
+      <div class="px-[54px] mx-auto space-y-16">
         <!-- Exploration Drilling -->
         <div class="">
           <div

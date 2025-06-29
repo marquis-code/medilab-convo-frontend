@@ -5,7 +5,7 @@
       
       <!-- Background image -->
       <img
-        src="@/assets/img/oil-colllection.png"
+        src="@/assets/img/hero-section.webp"
         alt="Aerial view of industrial oil facility with storage tanks"
         class="absolute inset-0 w-full h-full object-cover"
       />
