@@ -100,7 +100,7 @@
      <!-- <OurPurpose /> -->
   <section class="space-y-[96px] bg-[#1C5310]">
     <section class="bg-[#1C5310]">
-      <div class="px-[54px] mx-auto">
+      <div class="px-4 md:px-[54px] mx-auto">
         <div class="">
           <div
             class="rounded-3xl overflow-hidden "
@@ -109,7 +109,7 @@
             <div class="grid md:grid-cols-2 min-h-[400px]">
               <!-- Left side - Dark green with text -->
               <div
-                class="bg-[#032E00] py-16 space-y-[20px] lg:py-0 px-[48px] flex flex-col justify-center"
+                class="bg-[#032E00] py-16 space-y-[20px] lg:py-0 px-6 lg:px-[48px] flex flex-col justify-center"
               >
                 <h2 class="text-5xl lg:text-8xl font-bold text-white mb-6">
                   Our purpose
@@ -136,7 +136,7 @@
 
     <!-- Our Culture -->
     <section class="bg-[#1C5310]">
-      <div class="px-[54px] mx-auto">
+      <div class="px-4 md:px-[54px] mx-auto">
         <div class="">
           <div
             class="bg-[#3BAB22] rounded-3xl overflow-hidden "
@@ -153,7 +153,7 @@
               </div>
               <!-- Right side - Bright green with text -->
               <div
-                class="bg-[#3BAB22] py-16 space-y-[20px] lg:py-0 px-[48px] flex flex-col justify-center"
+                class="bg-[#3BAB22] py-16 space-y-[20px] lg:py-0 px-6 lg:px-[48px] flex flex-col justify-center"
               >
                 <h2 class="text-5xl lg:text-8xl font-bold text-white mb-6">
                   Our Culture
@@ -175,7 +175,7 @@
     <ServiceSection class="bg-[#1C5310]" />
 
     <!-- What We Do -->
-    <section id="what-we-do" class="py-20 bg-white">
+    <section id="what-we-do" class="py-16 lg:py-20 bg-white">
       <div class="container mx-auto px-4">
         <div
           class="text-center mb-16"
@@ -202,8 +202,8 @@
     </section>
 
     <!-- Service Cards -->
-    <section class="mt-[128px] mb-[120px]">
-      <div class="px-[54px] mx-auto space-y-16">
+    <section class="lg:mt-[128px] mb-[120px]">
+      <div class="px-4 md:px-[54px] mx-auto space-y-16">
         <!-- Exploration Drilling -->
         <div class="">
           <div
@@ -213,7 +213,7 @@
             <div class="grid md:grid-cols-2 min-h-[400px]">
               <!-- Left side - Dark green with text -->
               <div
-                class="bg-[#032E00] py-16 space-y-[20px] lg:py-0 px-[48px] flex flex-col justify-center"
+                class="bg-[#032E00] py-16 space-y-[20px] lg:py-0 px-6 lg:px-[48px] flex flex-col justify-center"
               >
                 <h3 class="text-5xl lg:text-8xl font-bold text-white mb-6">
                   Exploration Drilling
@@ -252,7 +252,7 @@
               </div>
               <!-- Right side - Bright green with text -->
               <div
-                class="bg-[#3BAB22] py-16 lg:py-0 px-[48px] flex flex-col justify-center"
+                class="bg-[#3BAB22] py-16 lg:py-0 px-6 lg:px-[48px] flex flex-col justify-center"
               >
                 <!-- <h3 class="text-4xl lg:text-7xl font-bold text-white mb-6">
                   Procurement
@@ -278,7 +278,7 @@
             <div class="grid md:grid-cols-2 min-h-[400px]">
               <!-- Left side - Dark green with text -->
               <div
-                class="bg-[#097A01] py-16 px-[48px] lg:py-0 flex flex-col justify-center"
+                class="bg-[#097A01] py-16 px-6 lg:px-[48px] lg:py-0 flex flex-col justify-center"
               >
                 <h3 class="text-5xl lg:text-8xl font-bold text-white mb-6">
                   Supply of Refined Products

@@ -57,6 +57,32 @@
                 hello@withcapera.com
               </a>
             </div>
+
+            <div class="text-white lg:hidden block space-y-8 lg:space-y-12">
+            <div>
+                <h4 class="text-lg lg:text-xl font-semibold mb-4 uppercase tracking-wide">EXPLORE</h4>
+                <div class="space-y-3">
+                  <a
+                    href="#who-we-are"
+                    class="block text-white/80 hover:text-white transition-colors text-base lg:text-lg"
+                  >
+                    WHO WE ARE
+                  </a>
+                  <a
+                    href="#what-we-do"
+                    class="block text-white/80 hover:text-white transition-colors text-base lg:text-lg"
+                  >
+                    WHAT WE DO
+                  </a>
+                  <a
+                    href="#contact"
+                    class="block text-white/80 hover:text-white transition-colors text-base lg:text-lg"
+                  >
+                    CONTACT US
+                  </a>
+                </div>
+              </div>
+          </div>
           </div>
         </div>
         <div
@@ -76,7 +102,7 @@
           </div>
   
           <!-- Right Column - Contact Info -->
-          <div class="text-white space-y-8 lg:space-y-12">
+          <div class="text-white hidden lg:block space-y-8 lg:space-y-12">
             <div>
                 <h4 class="text-lg lg:text-xl font-semibold mb-4 uppercase tracking-wide">EXPLORE</h4>
                 <div class="space-y-3">

@@ -1,5 +1,5 @@
 <template>
-    <section class="pt-[360px] bg-[#1C5310]">
+    <section class="pt-20 lg:pt-[360px] bg-[#1C5310]">
       <div class="container mx-auto px-4 sm:px-6 lg:px-8">
         <div class="">
           
@@ -18,7 +18,7 @@
           </div>
   
           <!-- Services Grid Section -->
-          <div class="flex justify-between pb-[220px]">
+          <div class="lg:flex justify-between pb-20 space-y-10 lg:space-y-0 lg:pb-[220px]">
             
             <!-- Drilling Services -->
             <div class="text-white">
