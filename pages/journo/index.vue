@@ -34,19 +34,18 @@
       <div class="relative bg-[#27628C] lg:mt-10 pt-0 ">
       <div
         class="relative h-80 overflow-hidden  md:absolute md:left-0 md:h-full mt-44 pb-[400px] lg:pb-0 md:w-1/3 lg:w-1/2">
-        <img  class="w-full h-[500px]" src="@/assets/img/literacy.jpeg" alt="">
+        <img  class="w-full h-[500px]" src="@/assets/img/journals-dust.jpg" alt="">
       </div>
       <div class="relative mx-auto max-w-7xl py-24 sm:py-32 px-10 lg:px-0 lg:py-40">
         <div class="md:ml-auto md:w-2/3 md:pl-16 lg:w-1/2">
           <p  class="mt-2 text-4xl font-semibold tracking-tight text-white sm:text-5xl">
-            Financial Literacy: Securing the Bag as a Young Medical Laboratory Scientist | How to Buy a House and a Car with your Internship Salary   </p>
+            From Journals to Dust: Why MLS Research Barely Has An Impact On Real Practice of MLS and Education of MLS Students
+          </p>
           <p  class="mt-6 text-base/7 text-white">
-You’re a Medical Laboratory Scientist in your internship year. You're clocking into the lab early, staining slides, running tests, dodging passive-aggressive patient relatives, and literally trying to make it to the next week. As if that is not enough, the monetary reward for all your effort is barely enough to keep up with the constant expenses - and to make matters worse, it often shows up fashionably late. Can you relate?
-
-Internship in Nigeria is a financial reality check. For many, it’s the first time earning a steady (albeit small) income and as such, a crash course in adulting. Between transportation, data, daily feeding, and the occasional craving to enjoy a bit of “soft life,” many interns find themselves living from alert to alert.
+            “Last days at the University of Nigeria! Let the countdown begin!” shouted the final year students of the Medical Laboratory Science department as they converged for their first class of the session, ready to take on every task and challenge ahead. Their sky that has been gloomy is about to be laced with silver linings of success...
            </p>
           <div  class="mt-8">
-            <a href="https://mlcjourno.substack.com/p/financial-literacy-securing-the-bag?r=45bm0j&utm_campaign=post&utm_medium=web&triedRedirect=true"
+            <a href="https://open.substack.com/pub/mlcjourno/p/from-journals-to-dust?r=4c6jz4&utm_campaign=post&utm_medium=web"
               class="inline-flex rounded-md bg-white/10 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-white/20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">View
               publications <span aria-hidden="true">&rarr;</span></a>
           </div>
@@ -140,8 +139,17 @@ import latestJourno from '@/assets/img/latest-journo-updated.jpeg'
 import latestJourno6 from '@/assets/img/latest-journo-6.jpeg'
 import carvingProfessional from '@/assets/img/carving-professional.jpeg'
 import financialLiteracy from '@/assets/img/literacy.jpeg'
+import journalsToDust from '@/assets/img/journals-dust.jpg'
 
 const journosList = ref([
+{
+    image: journalsToDust,
+    title: `From Journals to Dust: Why MLS Research Barely Has An Impact On Real Practice of MLS and Education of MLS Students`,
+    desc: `“Last days at the University of Nigeria! Let the countdown begin!” shouted the final year students of the Medical Laboratory Science department as they converged for their first class of the session, ready to take on every task and challenge ahead. Their sky that has been gloomy is about to be laced with silver linings of success.
+Adaeze was more excited about the research methodology and statistics classes because she prided herself on being a revolutionary young MLS, about to change the narrative and trajectory of bench practice and laboratory medicine in Nigeria, one publication at a time. Attending classes meant she got to understand the basics of being a researcher. How quaint!`,
+    author: 'The Royal Health Chronicles',
+    url: 'https://open.substack.com/pub/mlcjourno/p/from-journals-to-dust?r=4c6jz4&utm_campaign=post&utm_medium=web'
+  },
   {
     image: financialLiteracy,
     title: `Financial Literacy: Securing the Bag as a Young Medical Laboratory Scientist`,

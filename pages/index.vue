@@ -463,9 +463,8 @@ import latest1 from '@/assets/img/graduate.jpeg'
 const isOpen = ref(false)
 import img4 from '@/assets/img/scholarship.jpeg'
 import convo from "@/assets/img/forging-a-career-path.jpg"
-import latestJourno from '@/assets/img/latest-journo.jpeg'
 import latestJourno6 from '@/assets/img/latest-journo-6.jpeg'
-import financialLiteracy from '@/assets/img/literacy.jpeg'
+import latestJourno from '@/assets/img/journals-dust.jpg'
 
 const activitiesGrid = ref([
   {
@@ -519,21 +518,11 @@ In this episode of LabCast, your co-hosts Jesutomisin and Daniel are joined by E
 ])
 
 const journoLatest = ref([
-// {
-//     title: `CAREER DAY LIED—BUT MLS TOLD THE TRUTH.
-// Amplifying The Medical Laboratory Science Story with Better Career Days`,
-//     image: latestJourno,
-//     desc: `Unlike many science students who adored medicine, I knew from the start it wasn’t for me. I had courtroom dreams. Big words. Big wins. A gavel in my hand and drama in the air; not because I was in love with law, but because I figured it’d fit my personality. However, life had other plans—and by “life”, I mean my sweet, loving Mother. She had her heart set on Medicine and Surgery for her first child. And honestly? I don’t blame her. It was the classic, respectable choice. So, science class it was. `,
-//     previousEditionUrl: '#',
-//     status: 'latest',
-//     actionText: 'Read More',
-//     registerUrl: 'https://mlcjourno.substack.com/'
-//   },
 {
-    title: `Financial Literacy: Securing the Bag as a Young Medical Laboratory Scientist`,
-    image: financialLiteracy,
-    desc: `You’re a Medical Laboratory Scientist in your internship year. You're clocking into the lab early, staining slides, running tests, dodging passive-aggressive patient relatives, and literally trying to make it to the next week. As if that is not enough, the monetary reward for all your effort is barely enough to keep up with the constant expenses - and to make matters worse, it often shows up fashionably late. Can you relate?
-Internship in Nigeria is a financial reality check. For many, it’s the first time earning a steady (albeit small) income and as such, a crash course in adulting. Between transportation, data, daily feeding, and the occasional craving to enjoy a bit of “soft life,” many interns find themselves living from alert to alert.`,
+    title: `From Journals to Dust: Why MLS Research Barely Has An Impact On Real Practice of MLS and Education of MLS Students`,
+    image: latestJourno,
+    desc: `“Last days at the University of Nigeria! Let the countdown begin!” shouted the final year students of the Medical Laboratory Science department as they converged for their first class of the session, ready to take on every task and challenge ahead. Their sky that has been gloomy is about to be laced with silver linings of success.
+Adaeze was more excited about the research methodology and statistics classes because she prided herself on being a revolutionary young MLS, about to change the narrative and trajectory of bench practice and laboratory medicine in Nigeria, one publication at a time. Attending classes meant she got to understand the basics of being a researcher. How quaint!`,
     previousEditionUrl: '#',
     status: 'latest',
     actionText: 'Read More',
