@@ -653,7 +653,7 @@ function closeModal() {
             <figure class="overflow-hidden rounded-lg shadow-lg transform transition-all duration-500 hover:scale-105">
               <img 
                 class="w-full rounded-lg object-cover shadow-lg lg:aspect-auto animate-fade-in"
-                src="@/assets/img/forging-a-career-path.jpg"
+                src="@/assets/img/forging-a-career-path4.0.jpg"
                 alt="Conference image showing biomedical science professionals" 
                 width="1184" 
                 height="1376"
@@ -693,7 +693,7 @@ function closeModal() {
       href="https://paystack.shop/pay/414967xrt1" 
       class="text-white text-center bg-[#27628C] rounded-lg px-6 py-3.5 w-64 transform transition-all duration-300 hover:scale-105 hover:shadow-xl flex items-center justify-center gap-2"
     >
-      <span>Make Payment</span>
+      <span>Register</span>
     </a>
   </div>
 </div>

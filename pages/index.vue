@@ -462,7 +462,7 @@ import burnOut from '@/assets/img/burnout.jpeg'
 import latest1 from '@/assets/img/graduate.jpeg'
 const isOpen = ref(false)
 import img4 from '@/assets/img/scholarship.jpeg'
-import convo from "@/assets/img/forging-a-career-path.jpg"
+import convo from "@/assets/img/forging-a-career-path4.0.jpg"
 import latestJourno6 from '@/assets/img/latest-journo-6.jpeg'
 import latestJourno from '@/assets/img/journals-dust.jpg'
 
