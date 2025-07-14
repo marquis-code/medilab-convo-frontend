@@ -14,30 +14,30 @@ export default defineNuxtConfig({
 
   app: {
     head: {
-      title: "Capera - Powering The Future",
+      title: "MedLabConvo - We are leading change, inspiring action, and building the capacity of future generations of world-class professionals in medical laboratory science and in the healthcare system at large.",
       htmlAttrs: { lang: "en" },
       meta: [
         { charset: "utf-8" },
         { name: "viewport", content: "width=device-width, initial-scale=1" },
-        { name: "description", content: "Powering The Future" },
+        { name: "description", content: "We are leading change, inspiring action, and building the capacity of future generations of world-class professionals in medical laboratory science and in the healthcare system at large. " },
         { name: "format-detection", content: "telephone=no" },
-        { name: "keywords", content: "Capera, Oil & Gas, Powering The Future Payments, Drilling Services, Procurement Services,Supply of Refined Products, Energy That Fuels The World, Exploration Drilling, Capera Oil and Gas limited" },
+        { name: "keywords", content: "We are leading change, inspiring action, and building the capacity of future generations of world-class professionals in medical laboratory science and in the healthcare system at large. Transforming Healthcare One Lab Professional at a Time" },
         { name: "robots", content: "index, follow" },
 
         // Open Graph Meta Tags
-        { property: "og:title", content: "Capera - Powering The Future" },
-        { property: "og:description", content: "Powering The Future." },
-        { property: "og:image", content: "/images/capera-og-image.jpg" },
-        { property: "og:url", content: "https://www.capera.com" },
+        { property: "og:title", content:  "MedLabConvo - We are leading change, inspiring action, and building the capacity of future generations of world-class professionals in medical laboratory science and in the healthcare system at large." },
+        { property: "og:description", content:  "MedLabConvo - We are leading change, inspiring action, and building the capacity of future generations of world-class professionals in medical laboratory science and in the healthcare system at large." },
+        { property: "og:image", content: "/images/medlabconvo-og-image.jpg" },
+        { property: "og:url", content: "https://www.medlabconvo.com" },
         { property: "og:type", content: "website" },
-        { property: "og:site_name", content: "Capera" },
+        { property: "og:site_name", content: "medlabconvo" },
       
         // Twitter Cards
         { name: "twitter:card", content: "summary_large_image" },
-        { name: "twitter:title", content: "Capera - Powering The Future" },
-        { name: "twitter:description", content: "Powering The Future." },
-        { name: "twitter:image", content: "/images/capera-twitter-image.jpg" },
-        { name: "twitter:site", content: "@capera" },
+        { name: "twitter:title", content:  "MedLabConvo - We are leading change, inspiring action, and building the capacity of future generations of world-class professionals in medical laboratory science and in the healthcare system at large." },
+        { name: "twitter:description", content:  "MedLabConvo - We are leading change, inspiring action, and building the capacity of future generations of world-class professionals in medical laboratory science and in the healthcare system at large." },
+        { name: "twitter:image", content: "/images/medlabconvo-twitter-image.jpg" },
+        { name: "twitter:site", content: "@medlabconvo" },
       ],
       link: [
         { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },

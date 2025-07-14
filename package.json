@@ -1,9 +1,9 @@
 {
   "private": true,
-  "homepage": "https://www.capera.netlify.app",
+  "homepage": "https://www.medlabconvo.com/",
   "repository": {
     "type": "git",
-    "url": "https://github.com/withcapera"
+    "url": "https://github.com/marquis-code/medilab-convo-frontend"
   },
   "scripts": {
     "dev": "nuxt dev",
