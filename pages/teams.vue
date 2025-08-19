@@ -1,120 +1,288 @@
 <template>
-<main>
+  <main>
     <div class="bg-white">
-        <div class="bg-white">
-  <div class="relative isolate overflow-hidden bg-gradient-to-b from-indigo-100/20 pt-14">
-    <div class="absolute inset-y-0 right-1/2 -z-10 -mr-96 w-[200%] origin-top-right skew-x-[-30deg] bg-white shadow-xl shadow-indigo-600/10 ring-1 ring-indigo-50 sm:-mr-80 lg:-mr-96" aria-hidden="true"></div>
-    <div class="mx-auto max-w-7xl px-6 py-32 sm:py-40 lg:px-8">
-      <div class="mx-auto max-w-2xl lg:mx-0 lg:grid lg:max-w-none lg:grid-cols-2 lg:gap-x-16 lg:gap-y-8 xl:grid-cols-1 xl:grid-rows-1 xl:gap-x-8">
-        <h1  class="max-w-2xl text-balance sm:text-5xl font-semibold tracking-tight text-gray-900 text-4xl lg:col-span-2 xl:col-auto">
-          <!-- We are leading change, inspiring action and buidling the capacity of future world class Biomedical scientists -->
-          We are leading change, inspiring action, and building the capacity of future generations of world-class professionals in medical laboratory science and in the healthcare system at large.
-        </h1>
-        <div  class="mt-6 max-w-xl lg:mt-0 xl:col-end-1 xl:row-start-1">
-          <p  class="text-pretty text-lg font-medium text-gray-500 sm:text-xl/8">
-            MedLabConvo is more than a platform—it’s a movement dedicated to shaping the future of medical laboratory science and healthcare. We are committed to leading change, inspiring action, and equipping the next generation of professionals with the tools they need to excel. Through our work, we bridge critical gaps and empower individuals across five key dimensions: Knowledge, Mindset, Skills, Network, and Identity. By fostering growth in these areas, we prepare medical laboratory scientists to not only thrive in their careers but also drive meaningful advancements in global healthcare.
-            <!-- We are leading change, inspiring action, and building the capacity of future generations of world-class professionals in medical laboratory science and in the healthcare system at large. -->
-          </p>
-          <!-- <div class="mt-10 flex items-center gap-x-6">
+      <div class="bg-white">
+        <div class="relative isolate overflow-hidden bg-gradient-to-b from-indigo-100/20 pt-14">
+          <div
+            class="absolute inset-y-0 right-1/2 -z-10 -mr-96 w-[200%] origin-top-right skew-x-[-30deg] bg-white shadow-xl shadow-indigo-600/10 ring-1 ring-indigo-50 sm:-mr-80 lg:-mr-96"
+            aria-hidden="true"></div>
+          <div class="mx-auto max-w-7xl px-6 py-32 sm:py-40 lg:px-8">
+            <div
+              class="mx-auto max-w-2xl lg:mx-0 lg:grid lg:max-w-none lg:grid-cols-2 lg:gap-x-16 lg:gap-y-8 xl:grid-cols-1 xl:grid-rows-1 xl:gap-x-8">
+              <h1
+                class="max-w-2xl text-balance sm:text-5xl font-semibold tracking-tight text-gray-900 text-4xl lg:col-span-2 xl:col-auto">
+                <!-- We are leading change, inspiring action and buidling the capacity of future world class Biomedical scientists -->
+                We are leading change, inspiring action, and building the capacity of future generations of world-class
+                professionals in medical laboratory science and in the healthcare system at large.
+              </h1>
+              <div class="mt-6 max-w-xl lg:mt-0 xl:col-end-1 xl:row-start-1">
+                <p class="text-pretty text-lg font-medium text-gray-500 sm:text-xl/8">
+                  MedLabConvo is more than a platform—it’s a movement dedicated to shaping the future of medical
+                  laboratory science and healthcare. We are committed to leading change, inspiring action, and equipping
+                  the next generation of professionals with the tools they need to excel. Through our work, we bridge
+                  critical gaps and empower individuals across five key dimensions: Knowledge, Mindset, Skills, Network,
+                  and Identity. By fostering growth in these areas, we prepare medical laboratory scientists to not only
+                  thrive in their careers but also drive meaningful advancements in global healthcare.
+                  <!-- We are leading change, inspiring action, and building the capacity of future generations of world-class professionals in medical laboratory science and in the healthcare system at large. -->
+                </p>
+                <!-- <div class="mt-10 flex items-center gap-x-6">
             <a href="#" class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Get started</a>
             <a href="#" class="text-sm/6 font-semibold text-gray-900">Learn more <span aria-hidden="true">→</span></a>
           </div> -->
+              </div>
+              <img src="@/assets/img/community.jpeg" alt=""
+                class="mt-10 aspect-[6/5] w-full max-w-lg rounded-2xl object-cover sm:mt-16 lg:mt-0 lg:max-w-none xl:row-span-2 xl:row-end-2 xl:mt-36">
+            </div>
+          </div>
+          <div class="absolute inset-x-0 bottom-0 -z-10 h-24 bg-gradient-to-t from-white sm:h-32"></div>
         </div>
-        <img  src="@/assets/img/community.jpeg" alt="" class="mt-10 aspect-[6/5] w-full max-w-lg rounded-2xl object-cover sm:mt-16 lg:mt-0 lg:max-w-none xl:row-span-2 xl:row-end-2 xl:mt-36">
       </div>
-    </div>
-    <div class="absolute inset-x-0 bottom-0 -z-10 h-24 bg-gradient-to-t from-white sm:h-32"></div>
-  </div>
-</div>
 
-      </div>
-      <div class="bg-white">
-        <div class="mx-auto max-w-7xl px-6 lg:px-8">
-          <!-- <div class="mx-auto max-w-2xl lg:mx-0">
+    </div>
+    <div class="bg-white">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <!-- <div class="mx-auto max-w-2xl lg:mx-0">
             <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Stay on top of customer support</h2>
             <p class="mt-6 text-lg leading-8 text-gray-600">Lorem ipsum dolor sit amet consect adipisicing elit. Possimus magnam voluptatum cupiditate veritatis in accusamus quisquam.</p>
           </div> -->
-          <div class="mx-auto mt-16 max-w-2xl sm:mt-4  lg:max-w-none">
-            <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
-              <div class="flex flex-col">
-                <dt class="text-base font-semibold leading-7 text-gray-900">
-                  <div class="mb-6 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
-                    <img   src="@/assets/img/goals1.jpeg" class="h-10 w-10" />
-                  </div>
-                  Knowledge:
-                </dt>
-                <dd class="mt-1 flex flex-auto flex-col text-base leading-7 text-gray-600">
-                  <p  class="flex-auto text-justify">We bridge the gaps in medical laboratory science education by providing cutting-edge resources, comprehensive training, and up-to-date information. From detailed guides to interactive workshops, we ensure you have the knowledge needed to stay at the forefront of the field.</p>
-                  <!-- <p class="mt-6">
+        <div class="mx-auto mt-16 max-w-2xl sm:mt-4  lg:max-w-none">
+          <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
+            <div class="flex flex-col">
+              <dt class="text-base font-semibold leading-7 text-gray-900">
+                <div class="mb-6 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
+                  <img src="@/assets/img/goals1.jpeg" class="h-10 w-10" />
+                </div>
+                Knowledge:
+              </dt>
+              <dd class="mt-1 flex flex-auto flex-col text-base leading-7 text-gray-600">
+                <p class="flex-auto text-justify">We bridge the gaps in medical laboratory science education by
+                  providing cutting-edge resources, comprehensive training, and up-to-date information. From detailed
+                  guides to interactive workshops, we ensure you have the knowledge needed to stay at the forefront of
+                  the field.</p>
+                <!-- <p class="mt-6">
                     <a href="#" class="text-sm font-semibold leading-6 text-indigo-600">Learn more <span aria-hidden="true">→</span></a>
                   </p> -->
-                </dd>
-              </div>
-              <div class="flex flex-col">
-                <dt class="text-base font-semibold leading-7 text-gray-900">
-                  <div class="mb-6 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
-                    <img  src="@/assets/img/goals2.jpeg" class="h-10 w-10" />
-                  </div>
-                  Mindset:
-                </dt>
-                <dd  class="mt-1 flex flex-auto flex-col text-base leading-7 text-gray-600">
-                  <p class="flex-auto text-justify">Developing a growth mindset is essential for success in any profession. Our programs and resources are designed to foster resilience, adaptability, and a proactive approach to challenges. We help you cultivate the mindset needed to excel and lead in the dynamic world of healthcare.</p>
-                  <!-- <p class="mt-6">
+              </dd>
+            </div>
+            <div class="flex flex-col">
+              <dt class="text-base font-semibold leading-7 text-gray-900">
+                <div class="mb-6 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
+                  <img src="@/assets/img/goals2.jpeg" class="h-10 w-10" />
+                </div>
+                Mindset:
+              </dt>
+              <dd class="mt-1 flex flex-auto flex-col text-base leading-7 text-gray-600">
+                <p class="flex-auto text-justify">Developing a growth mindset is essential for success in any
+                  profession. Our programs and resources are designed to foster resilience, adaptability, and a
+                  proactive approach to challenges. We help you cultivate the mindset needed to excel and lead in the
+                  dynamic world of healthcare.</p>
+                <!-- <p class="mt-6">
                     <a href="#" class="text-sm font-semibold leading-6 text-indigo-600">Learn more <span aria-hidden="true">→</span></a>
                   </p> -->
-                </dd>
-              </div>
-              <div class="flex flex-col">
-                <dt class="text-base font-semibold leading-7 text-gray-900">
-                  <div class="mb-6 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
-                    <img  src="@/assets/img/goals3.jpeg" class="h-10 w-10" />
-                  </div>
-                  Skill:
-                </dt>
-                <dd  class="mt-1 flex flex-auto flex-col text-base leading-7 text-gray-600">
-                  <p class="flex-auto text-justify">Building a strong professional network opens doors to new opportunities and collaborations. MedLabConvo connects you with industry leaders, peers, and mentors through events, forums, and networking opportunities. Our community is your gateway to expanding your professional connections and finding support throughout your career.</p>
-                  <!-- <p class="mt-6">
+              </dd>
+            </div>
+            <div class="flex flex-col">
+              <dt class="text-base font-semibold leading-7 text-gray-900">
+                <div class="mb-6 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
+                  <img src="@/assets/img/goals3.jpeg" class="h-10 w-10" />
+                </div>
+                Skill:
+              </dt>
+              <dd class="mt-1 flex flex-auto flex-col text-base leading-7 text-gray-600">
+                <p class="flex-auto text-justify">Building a strong professional network opens doors to new
+                  opportunities and collaborations. MedLabConvo connects you with industry leaders, peers, and mentors
+                  through events, forums, and networking opportunities. Our community is your gateway to expanding your
+                  professional connections and finding support throughout your career.</p>
+                <!-- <p class="mt-6">
                     <a href="#" class="text-sm font-semibold leading-6 text-indigo-600">Learn more <span aria-hidden="true">→</span></a>
                   </p> -->
-                </dd>
-              </div>
+              </dd>
+            </div>
 
-              <div class="flex flex-col">
-                <dt class="text-base font-semibold leading-7 text-gray-900">
-                  <div  class="mb-6 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
-                    <img src="@/assets/img/goals4.jpeg" class="h-10 w-10" />
-                  </div>
-                  Network:
-                </dt>
-                <dd class="mt-1 flex flex-auto flex-col text-base leading-7 text-gray-600">
-                  <p  class="flex-auto text-justify">Building a strong professional network opens doors to new opportunities and collaborations. MedLabConvo connects you with industry leaders, peers, and mentors through events, forums, and networking opportunities. Our community is your gateway to expanding your professional connections and finding support throughout your career.</p>
-                  <!-- <p class="mt-6">
+            <div class="flex flex-col">
+              <dt class="text-base font-semibold leading-7 text-gray-900">
+                <div class="mb-6 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
+                  <img src="@/assets/img/goals4.jpeg" class="h-10 w-10" />
+                </div>
+                Network:
+              </dt>
+              <dd class="mt-1 flex flex-auto flex-col text-base leading-7 text-gray-600">
+                <p class="flex-auto text-justify">Building a strong professional network opens doors to new
+                  opportunities and collaborations. MedLabConvo connects you with industry leaders, peers, and mentors
+                  through events, forums, and networking opportunities. Our community is your gateway to expanding your
+                  professional connections and finding support throughout your career.</p>
+                <!-- <p class="mt-6">
                     <a href="#" class="text-sm font-semibold leading-6 text-indigo-600">Learn more <span aria-hidden="true">→</span></a>
                   </p> -->
-                </dd>
-              </div>
+              </dd>
+            </div>
 
-              <div class="flex flex-col">
-                <dt class="text-base font-semibold leading-7 text-gray-900">
-                  <div  class="mb-6 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
-                    <img src="@/assets/img/goals5.jpeg" class="h-10 w-10" />
-                  </div>
-                  Identity:
-                </dt>
-                <dd  class="mt-1 flex flex-auto flex-col text-base leading-7 text-gray-600">
-                  <p class="flex-auto text-justify">Establishing a clear professional identity is key to standing out in the healthcare field. We provide guidance on personal branding, career development, and leadership, helping you define and communicate your unique value and purpose as a medical laboratory scientist</p>
-                  <!-- <p class="mt-6">
+            <div class="flex flex-col">
+              <dt class="text-base font-semibold leading-7 text-gray-900">
+                <div class="mb-6 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
+                  <img src="@/assets/img/goals5.jpeg" class="h-10 w-10" />
+                </div>
+                Identity:
+              </dt>
+              <dd class="mt-1 flex flex-auto flex-col text-base leading-7 text-gray-600">
+                <p class="flex-auto text-justify">Establishing a clear professional identity is key to standing out in
+                  the healthcare field. We provide guidance on personal branding, career development, and leadership,
+                  helping you define and communicate your unique value and purpose as a medical laboratory scientist</p>
+                <!-- <p class="mt-6">
                     <a href="#" class="text-sm font-semibold leading-6 text-indigo-600">Learn more <span aria-hidden="true">→</span></a>
                   </p> -->
-                </dd>
-              </div>
-            </dl>
-          </div>
+              </dd>
+            </div>
+          </dl>
         </div>
       </div>
-      
+    </div>
 
-      <!-- <div class="bg-white">
+    <div class="bg-white py-16">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8 mt-16">
+        <div class="mx-auto max-w-2xl lg:max-w-none">
+
+          <!-- Mission & Vision Section -->
+          <dl class="grid max-w-xl grid-cols-1 gap-x-12 gap-y-16 lg:max-w-none lg:grid-cols-2">
+
+            <div class="flex flex-col">
+              <dt class="flex items-center text-lg font-semibold leading-7 text-gray-900">
+                <div class="mr-4 flex h-12 w-12 items-center justify-center rounded-full bg-[#27628C] text-white">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                      d="M3 3v18M6 3h11l-2 5h6l-2 5h-6l2 5H6V3z" />
+                  </svg>
+                </div>
+                MISSION STATEMENT
+              </dt>
+              <dd class="mt-3 text-base leading-7 text-gray-600 text-justify">
+                To lead positive change in the mindset, attitude, and identity of stakeholders within medical laboratory
+                science, while contributing to transformation across the broader healthcare system; build the capacity
+                of future generations of world-class professionals in medical laboratory science and other health
+                professions; and inspire action through purposeful engagement, education, and advocacy.
+              </dd>
+            </div>
+
+            <div class="flex flex-col">
+              <dt class="flex items-center text-lg font-semibold leading-7 text-gray-900">
+                <div class="mr-4 flex h-12 w-12 items-center justify-center rounded-full bg-[#27628C] text-white">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                      d="M2.458 12C3.732 7.943 7.522 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.478 0-8.268-2.943-9.542-7z" />
+                    <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.5" />
+                  </svg>
+                </div>
+                VISION STATEMENT
+              </dt>
+              <dd class="mt-3 text-base leading-7 text-gray-600 text-justify">
+                To become the household name of medical laboratory science in Africa and beyond — known, followed, and
+                trusted by professionals, students, and the public through our media, programs, and impact.
+              </dd>
+            </div>
+
+          </dl>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="bg-white py-16">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="mx-auto max-w-2xl lg:max-w-none">
+
+          <h3 class="text-center text-2xl text-balance font-semibold tracking-tight text-gray-900 sm:text-3xl">
+            CORE VALUES
+          </h3>
+
+          <dl class="mt-12 grid max-w-xl grid-cols-1 gap-x-12 gap-y-16 lg:max-w-none lg:grid-cols-2">
+
+            <div class="flex flex-col">
+              <dt class="text-lg font-semibold leading-7 text-gray-900">
+                <div
+                  class="mb-4 flex h-10 w-10 items-center justify-center rounded-lg bg-[#27628C] text-white font-bold">
+                  1
+                </div>
+                Empowerment & Capacity
+              </dt>
+              <dd class="mt-2 text-base leading-7 text-gray-600 text-justify">
+                Investing in educating and training students and early-career professionals.
+              </dd>
+            </div>
+
+            <div class="flex flex-col">
+              <dt class="text-lg font-semibold leading-7 text-gray-900">
+                <div
+                  class="mb-4 flex h-10 w-10 items-center justify-center rounded-lg bg-[#27628C] text-white font-bold">
+                  2
+                </div>
+                Advocacy & Awareness
+              </dt>
+              <dd class="mt-2 text-base leading-7 text-gray-600 text-justify">
+                Championing the laboratory profession and public health promotion.
+              </dd>
+            </div>
+
+            <div class="flex flex-col">
+              <dt class="text-lg font-semibold leading-7 text-gray-900">
+                <div
+                  class="mb-4 flex h-10 w-10 items-center justify-center rounded-lg bg-[#27628C] text-white font-bold">
+                  3
+                </div>
+                Collaboration
+              </dt>
+              <dd class="mt-2 text-base leading-7 text-gray-600 text-justify">
+                Building partnerships across countries, institutions, and disciplines.
+              </dd>
+            </div>
+
+            <div class="flex flex-col">
+              <dt class="text-lg font-semibold leading-7 text-gray-900">
+                <div
+                  class="mb-4 flex h-10 w-10 items-center justify-center rounded-lg bg-[#27628C] text-white font-bold">
+                  4
+                </div>
+                Excellence & Quality
+              </dt>
+              <dd class="mt-2 text-base leading-7 text-gray-600 text-justify">
+                Maintaining a standard of world-class professionalism in programming and content.
+              </dd>
+            </div>
+
+            <div class="flex flex-col">
+              <dt class="text-lg font-semibold leading-7 text-gray-900">
+                <div
+                  class="mb-4 flex h-10 w-10 items-center justify-center rounded-lg bg-[#27628C] text-white font-bold">
+                  5
+                </div>
+                Innovation & Tech-Focus
+              </dt>
+              <dd class="mt-2 text-base leading-7 text-gray-600 text-justify">
+                Integrating technology in communications and education (e.g., Labcast, digital editorial).
+              </dd>
+            </div>
+
+            <div class="flex flex-col">
+              <dt class="text-lg font-semibold leading-7 text-gray-900">
+                <div
+                  class="mb-4 flex h-10 w-10 items-center justify-center rounded-lg bg-[#27628C] text-white font-bold">
+                  6
+                </div>
+                Community & Mentorship
+              </dt>
+              <dd class="mt-2 text-base leading-7 text-gray-600 text-justify">
+                Creating supportive networks that bridge early-career individuals and experienced professionals.
+              </dd>
+            </div>
+
+          </dl>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="bg-white">
         <div class="mx-auto mt-16 max-w-7xl px-6 sm:mt-4 md:mt-24 lg:px-8">
           <dl class="mx-auto grid max-w-2xl grid-cols-1 gap-x-6 gap-y-10 text-base leading-7 text-gray-600 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-x-8 lg:gap-y-16">
             <div class="relative pl-9">
@@ -167,220 +335,246 @@
           </dl>
         </div>
       </div> -->
-      
-
-      <div class="bg-white py-32">
-  <div class="mx-auto max-w-7xl px-6 text-center lg:px-8">
-    <div class="mx-auto max-w-2xl">
-      <h2  class="text-34l text-balance font-semibold tracking-tight text-gray-900 sm:text-3xl">EXECUTIVE BOARD</h2>
-    </div>
-    <ul role="list" class="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
-      <li >
-        <img  class="mx-auto h-56 w-56 rounded-full" src="@/assets/img/executive-board1.jpg" alt="">
-        <h3  class="mt-6 text-base/7 font-semibold tracking-tight text-gray-900">Dr. Paul Olaiya</h3>
-        <p   class="text-sm/6 text-gray-600">Executive Board</p>
-        <ul role="list" class="mt-6 flex justify-center gap-x-6">
-          <li>
-            <a href="#" class="text-gray-400 hover:text-gray-500">
-              <span class="sr-only">X</span>
-              <svg class="size-5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
-                <path d="M11.4678 8.77491L17.2961 2H15.915L10.8543 7.88256L6.81232 2H2.15039L8.26263 10.8955L2.15039 18H3.53159L8.87581 11.7878L13.1444 18H17.8063L11.4675 8.77491H11.4678ZM9.57608 10.9738L8.95678 10.0881L4.02925 3.03974H6.15068L10.1273 8.72795L10.7466 9.61374L15.9156 17.0075H13.7942L9.57608 10.9742V10.9738Z" />
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="text-gray-400 hover:text-gray-500">
-              <span class="sr-only">LinkedIn</span>
-              <svg class="size-5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
-                <path fill-rule="evenodd" d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z" clip-rule="evenodd" />
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </li>
-
-      <li>
-        <img  class="mx-auto h-56 w-56 rounded-full object-fill" src="@/assets/img/executive-board2.jpg" alt="">
-        <h3  class="mt-6 text-base/7 font-semibold tracking-tight text-gray-900">Chibuike Alagboso</h3>
-        <p  class="text-sm/6 text-gray-600">Executive Board</p>
-        <ul role="list" class="mt-6 flex justify-center gap-x-6">
-          <li>
-            <a href="#" class="text-gray-400 hover:text-gray-500">
-              <span class="sr-only">X</span>
-              <svg class="size-5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
-                <path d="M11.4678 8.77491L17.2961 2H15.915L10.8543 7.88256L6.81232 2H2.15039L8.26263 10.8955L2.15039 18H3.53159L8.87581 11.7878L13.1444 18H17.8063L11.4675 8.77491H11.4678ZM9.57608 10.9738L8.95678 10.0881L4.02925 3.03974H6.15068L10.1273 8.72795L10.7466 9.61374L15.9156 17.0075H13.7942L9.57608 10.9742V10.9738Z" />
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="text-gray-400 hover:text-gray-500">
-              <span class="sr-only">LinkedIn</span>
-              <svg class="size-5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
-                <path fill-rule="evenodd" d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z" clip-rule="evenodd" />
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </li>
-
-      <li>
-        <img  class="mx-auto h-56 w-56 rounded-full" src="@/assets/img/executive-board3.jpg" alt="">
-        <h3  class="mt-6 text-base/7 font-semibold tracking-tight text-gray-900">Dr. Olumide Ajani</h3>
-        <p  class="text-sm/6 text-gray-600">Executive Board</p>
-        <ul role="list" class="mt-6 flex justify-center gap-x-6">
-          <li>
-            <a href="#" class="text-gray-400 hover:text-gray-500">
-              <span class="sr-only">X</span>
-              <svg class="size-5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
-                <path d="M11.4678 8.77491L17.2961 2H15.915L10.8543 7.88256L6.81232 2H2.15039L8.26263 10.8955L2.15039 18H3.53159L8.87581 11.7878L13.1444 18H17.8063L11.4675 8.77491H11.4678ZM9.57608 10.9738L8.95678 10.0881L4.02925 3.03974H6.15068L10.1273 8.72795L10.7466 9.61374L15.9156 17.0075H13.7942L9.57608 10.9742V10.9738Z" />
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="text-gray-400 hover:text-gray-500">
-              <span class="sr-only">LinkedIn</span>
-              <svg class="size-5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
-                <path fill-rule="evenodd" d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z" clip-rule="evenodd" />
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </li>
-    </ul>
-  </div>
-</div>
 
 
+    <div class="bg-white py-32">
       <div class="mx-auto max-w-7xl px-6 text-center lg:px-8">
-    <div class="mx-auto max-w-2xl">
-      <h2  class="text-34l text-balance font-semibold tracking-tight text-gray-900 sm:text-3xl">ADVISORY BOARD</h2>
+        <div class="mx-auto max-w-2xl">
+          <h2 class="text-3xl text-balance font-semibold tracking-tight text-gray-900 sm:text-3xl">EXECUTIVE BOARD</h2>
+        </div>
+        <ul role="list"
+          class="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+          <li>
+            <img class="mx-auto h-56 w-56 rounded-full" src="@/assets/img/executive-board1.jpg" alt="">
+            <h3 class="mt-6 text-base/7 font-semibold tracking-tight text-gray-900">Dr. Paul Olaiya</h3>
+            <p class="text-sm/6 text-gray-600">Executive Board</p>
+            <ul role="list" class="mt-6 flex justify-center gap-x-6">
+              <li>
+                <a href="#" class="text-gray-400 hover:text-gray-500">
+                  <span class="sr-only">X</span>
+                  <svg class="size-5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                    <path
+                      d="M11.4678 8.77491L17.2961 2H15.915L10.8543 7.88256L6.81232 2H2.15039L8.26263 10.8955L2.15039 18H3.53159L8.87581 11.7878L13.1444 18H17.8063L11.4675 8.77491H11.4678ZM9.57608 10.9738L8.95678 10.0881L4.02925 3.03974H6.15068L10.1273 8.72795L10.7466 9.61374L15.9156 17.0075H13.7942L9.57608 10.9742V10.9738Z" />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-gray-500">
+                  <span class="sr-only">LinkedIn</span>
+                  <svg class="size-5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                    <path fill-rule="evenodd"
+                      d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z"
+                      clip-rule="evenodd" />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <img class="mx-auto h-56 w-56 rounded-full object-fill" src="@/assets/img/executive-board2.jpg" alt="">
+            <h3 class="mt-6 text-base/7 font-semibold tracking-tight text-gray-900">Chibuike Alagboso</h3>
+            <p class="text-sm/6 text-gray-600">Executive Board</p>
+            <ul role="list" class="mt-6 flex justify-center gap-x-6">
+              <li>
+                <a href="#" class="text-gray-400 hover:text-gray-500">
+                  <span class="sr-only">X</span>
+                  <svg class="size-5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                    <path
+                      d="M11.4678 8.77491L17.2961 2H15.915L10.8543 7.88256L6.81232 2H2.15039L8.26263 10.8955L2.15039 18H3.53159L8.87581 11.7878L13.1444 18H17.8063L11.4675 8.77491H11.4678ZM9.57608 10.9738L8.95678 10.0881L4.02925 3.03974H6.15068L10.1273 8.72795L10.7466 9.61374L15.9156 17.0075H13.7942L9.57608 10.9742V10.9738Z" />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-gray-500">
+                  <span class="sr-only">LinkedIn</span>
+                  <svg class="size-5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                    <path fill-rule="evenodd"
+                      d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z"
+                      clip-rule="evenodd" />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <img class="mx-auto h-56 w-56 rounded-full" src="@/assets/img/executive-board3.jpg" alt="">
+            <h3 class="mt-6 text-base/7 font-semibold tracking-tight text-gray-900">Dr. Olumide Ajani</h3>
+            <p class="text-sm/6 text-gray-600">Executive Board</p>
+            <ul role="list" class="mt-6 flex justify-center gap-x-6">
+              <li>
+                <a href="#" class="text-gray-400 hover:text-gray-500">
+                  <span class="sr-only">X</span>
+                  <svg class="size-5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                    <path
+                      d="M11.4678 8.77491L17.2961 2H15.915L10.8543 7.88256L6.81232 2H2.15039L8.26263 10.8955L2.15039 18H3.53159L8.87581 11.7878L13.1444 18H17.8063L11.4675 8.77491H11.4678ZM9.57608 10.9738L8.95678 10.0881L4.02925 3.03974H6.15068L10.1273 8.72795L10.7466 9.61374L15.9156 17.0075H13.7942L9.57608 10.9742V10.9738Z" />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-gray-500">
+                  <span class="sr-only">LinkedIn</span>
+                  <svg class="size-5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                    <path fill-rule="evenodd"
+                      d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z"
+                      clip-rule="evenodd" />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
     </div>
-    <ul role="list" class="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
-      <li>
-        <img  class="mx-auto h-56 w-56 rounded-full" src="@/assets/img/advisory1.jpg" alt="">
-        <h3  class="mt-6 text-base/7 font-semibold tracking-tight text-gray-900">Gabriel Oke</h3>
-        <p  class="text-sm/6 text-gray-600">Advisory board</p>
-        <ul role="list" class="mt-6 flex justify-center gap-x-6">
-          <li>
-            <a href="#" class="text-gray-400 hover:text-gray-500">
-              <span class="sr-only">X</span>
-              <svg class="size-5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
-                <path d="M11.4678 8.77491L17.2961 2H15.915L10.8543 7.88256L6.81232 2H2.15039L8.26263 10.8955L2.15039 18H3.53159L8.87581 11.7878L13.1444 18H17.8063L11.4675 8.77491H11.4678ZM9.57608 10.9738L8.95678 10.0881L4.02925 3.03974H6.15068L10.1273 8.72795L10.7466 9.61374L15.9156 17.0075H13.7942L9.57608 10.9742V10.9738Z" />
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="text-gray-400 hover:text-gray-500">
-              <span class="sr-only">LinkedIn</span>
-              <svg class="size-5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
-                <path fill-rule="evenodd" d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z" clip-rule="evenodd" />
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </li>
-
-      <li>
-        <img  class="mx-auto h-56 w-56 rounded-full object-fill" src="@/assets/img/advisory2.jpg" alt="">
-        <h3  class="mt-6 text-base/7 font-semibold tracking-tight text-gray-900">Emmanuel Anya-Awa</h3>
-        <p  class="text-sm/6 text-gray-600">Advisory board</p>
-        <ul role="list" class="mt-6 flex justify-center gap-x-6">
-          <li>
-            <a href="#" class="text-gray-400 hover:text-gray-500">
-              <span class="sr-only">X</span>
-              <svg class="size-5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
-                <path d="M11.4678 8.77491L17.2961 2H15.915L10.8543 7.88256L6.81232 2H2.15039L8.26263 10.8955L2.15039 18H3.53159L8.87581 11.7878L13.1444 18H17.8063L11.4675 8.77491H11.4678ZM9.57608 10.9738L8.95678 10.0881L4.02925 3.03974H6.15068L10.1273 8.72795L10.7466 9.61374L15.9156 17.0075H13.7942L9.57608 10.9742V10.9738Z" />
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="text-gray-400 hover:text-gray-500">
-              <span class="sr-only">LinkedIn</span>
-              <svg class="size-5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
-                <path fill-rule="evenodd" d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z" clip-rule="evenodd" />
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </li>
-
-      <li>
-        <img  class="mx-auto h-56 w-56 rounded-full object-cover" src="@/assets/img/aisha.jpeg" alt="">
-        <h3  class="mt-6 text-base/7 font-semibold tracking-tight text-gray-900">Aisha Adeola</h3>
-        <p  class="text-sm/6 text-gray-600">Advisory board</p>
-        <ul role="list" class="mt-6 flex justify-center gap-x-6">
-          <li>
-            <a href="#" class="text-gray-400 hover:text-gray-500">
-              <span class="sr-only">X</span>
-              <svg class="size-5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
-                <path d="M11.4678 8.77491L17.2961 2H15.915L10.8543 7.88256L6.81232 2H2.15039L8.26263 10.8955L2.15039 18H3.53159L8.87581 11.7878L13.1444 18H17.8063L11.4675 8.77491H11.4678ZM9.57608 10.9738L8.95678 10.0881L4.02925 3.03974H6.15068L10.1273 8.72795L10.7466 9.61374L15.9156 17.0075H13.7942L9.57608 10.9742V10.9738Z" />
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="text-gray-400 hover:text-gray-500">
-              <span class="sr-only">LinkedIn</span>
-              <svg class="size-5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
-                <path fill-rule="evenodd" d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z" clip-rule="evenodd" />
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </li>
 
 
-      <li>
-        <img  class="mx-auto h-56 w-56 rounded-full" src="@/assets/img/advisory4.png" alt="">
-        <h3  class="mt-6 text-base/7 font-semibold tracking-tight text-gray-900">Odinaka Kingsley Obeta</h3>
-        <p  class="text-sm/6 text-gray-600">Advisory board</p>
-        <ul role="list" class="mt-6 flex justify-center gap-x-6">
-          <li>
-            <a href="#" class="text-gray-400 hover:text-gray-500">
-              <span class="sr-only">X</span>
-              <svg class="size-5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
-                <path d="M11.4678 8.77491L17.2961 2H15.915L10.8543 7.88256L6.81232 2H2.15039L8.26263 10.8955L2.15039 18H3.53159L8.87581 11.7878L13.1444 18H17.8063L11.4675 8.77491H11.4678ZM9.57608 10.9738L8.95678 10.0881L4.02925 3.03974H6.15068L10.1273 8.72795L10.7466 9.61374L15.9156 17.0075H13.7942L9.57608 10.9742V10.9738Z" />
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="text-gray-400 hover:text-gray-500">
-              <span class="sr-only">LinkedIn</span>
-              <svg class="size-5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
-                <path fill-rule="evenodd" d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z" clip-rule="evenodd" />
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </li>
+    <div class="mx-auto max-w-7xl px-6 text-center lg:px-8">
+      <div class="mx-auto max-w-2xl">
+        <h2 class="text-34l text-balance font-semibold tracking-tight text-gray-900 sm:text-3xl">ADVISORY BOARD</h2>
+      </div>
+      <ul role="list"
+        class="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+        <li>
+          <img class="mx-auto h-56 w-56 rounded-full" src="@/assets/img/advisory1.jpg" alt="">
+          <h3 class="mt-6 text-base/7 font-semibold tracking-tight text-gray-900">Gabriel Oke</h3>
+          <p class="text-sm/6 text-gray-600">Advisory board</p>
+          <ul role="list" class="mt-6 flex justify-center gap-x-6">
+            <li>
+              <a href="#" class="text-gray-400 hover:text-gray-500">
+                <span class="sr-only">X</span>
+                <svg class="size-5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                  <path
+                    d="M11.4678 8.77491L17.2961 2H15.915L10.8543 7.88256L6.81232 2H2.15039L8.26263 10.8955L2.15039 18H3.53159L8.87581 11.7878L13.1444 18H17.8063L11.4675 8.77491H11.4678ZM9.57608 10.9738L8.95678 10.0881L4.02925 3.03974H6.15068L10.1273 8.72795L10.7466 9.61374L15.9156 17.0075H13.7942L9.57608 10.9742V10.9738Z" />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="text-gray-400 hover:text-gray-500">
+                <span class="sr-only">LinkedIn</span>
+                <svg class="size-5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                  <path fill-rule="evenodd"
+                    d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z"
+                    clip-rule="evenodd" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          <img class="mx-auto h-56 w-56 rounded-full object-fill" src="@/assets/img/advisory2.jpg" alt="">
+          <h3 class="mt-6 text-base/7 font-semibold tracking-tight text-gray-900">Emmanuel Anya-Awa</h3>
+          <p class="text-sm/6 text-gray-600">Advisory board</p>
+          <ul role="list" class="mt-6 flex justify-center gap-x-6">
+            <li>
+              <a href="#" class="text-gray-400 hover:text-gray-500">
+                <span class="sr-only">X</span>
+                <svg class="size-5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                  <path
+                    d="M11.4678 8.77491L17.2961 2H15.915L10.8543 7.88256L6.81232 2H2.15039L8.26263 10.8955L2.15039 18H3.53159L8.87581 11.7878L13.1444 18H17.8063L11.4675 8.77491H11.4678ZM9.57608 10.9738L8.95678 10.0881L4.02925 3.03974H6.15068L10.1273 8.72795L10.7466 9.61374L15.9156 17.0075H13.7942L9.57608 10.9742V10.9738Z" />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="text-gray-400 hover:text-gray-500">
+                <span class="sr-only">LinkedIn</span>
+                <svg class="size-5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                  <path fill-rule="evenodd"
+                    d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z"
+                    clip-rule="evenodd" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          <img class="mx-auto h-56 w-56 rounded-full object-cover" src="@/assets/img/aisha.jpeg" alt="">
+          <h3 class="mt-6 text-base/7 font-semibold tracking-tight text-gray-900">Aisha Adeola</h3>
+          <p class="text-sm/6 text-gray-600">Advisory board</p>
+          <ul role="list" class="mt-6 flex justify-center gap-x-6">
+            <li>
+              <a href="#" class="text-gray-400 hover:text-gray-500">
+                <span class="sr-only">X</span>
+                <svg class="size-5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                  <path
+                    d="M11.4678 8.77491L17.2961 2H15.915L10.8543 7.88256L6.81232 2H2.15039L8.26263 10.8955L2.15039 18H3.53159L8.87581 11.7878L13.1444 18H17.8063L11.4675 8.77491H11.4678ZM9.57608 10.9738L8.95678 10.0881L4.02925 3.03974H6.15068L10.1273 8.72795L10.7466 9.61374L15.9156 17.0075H13.7942L9.57608 10.9742V10.9738Z" />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="text-gray-400 hover:text-gray-500">
+                <span class="sr-only">LinkedIn</span>
+                <svg class="size-5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                  <path fill-rule="evenodd"
+                    d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z"
+                    clip-rule="evenodd" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </li>
 
 
-      <li>
-        <img  class="mx-auto h-56 w-56 rounded-full" src="@/assets/img/advisory.jpeg" alt="">
-        <h3  class="mt-6 text-base/7 font-semibold tracking-tight text-gray-900">Olaleye Olajuyin</h3>
-        <p  class="text-sm/6 text-gray-600">Advisory board</p>
-        <ul role="list" class="mt-6 flex justify-center gap-x-6">
-          <li>
-            <a href="#" class="text-gray-400 hover:text-gray-500">
-              <span class="sr-only">X</span>
-              <svg class="size-5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
-                <path d="M11.4678 8.77491L17.2961 2H15.915L10.8543 7.88256L6.81232 2H2.15039L8.26263 10.8955L2.15039 18H3.53159L8.87581 11.7878L13.1444 18H17.8063L11.4675 8.77491H11.4678ZM9.57608 10.9738L8.95678 10.0881L4.02925 3.03974H6.15068L10.1273 8.72795L10.7466 9.61374L15.9156 17.0075H13.7942L9.57608 10.9742V10.9738Z" />
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="text-gray-400 hover:text-gray-500">
-              <span class="sr-only">LinkedIn</span>
-              <svg class="size-5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
-                <path fill-rule="evenodd" d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z" clip-rule="evenodd" />
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </li>
-    </ul>
-  </div>
+        <li>
+          <img class="mx-auto h-56 w-56 rounded-full" src="@/assets/img/advisory4.png" alt="">
+          <h3 class="mt-6 text-base/7 font-semibold tracking-tight text-gray-900">Odinaka Kingsley Obeta</h3>
+          <p class="text-sm/6 text-gray-600">Advisory board</p>
+          <ul role="list" class="mt-6 flex justify-center gap-x-6">
+            <li>
+              <a href="#" class="text-gray-400 hover:text-gray-500">
+                <span class="sr-only">X</span>
+                <svg class="size-5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                  <path
+                    d="M11.4678 8.77491L17.2961 2H15.915L10.8543 7.88256L6.81232 2H2.15039L8.26263 10.8955L2.15039 18H3.53159L8.87581 11.7878L13.1444 18H17.8063L11.4675 8.77491H11.4678ZM9.57608 10.9738L8.95678 10.0881L4.02925 3.03974H6.15068L10.1273 8.72795L10.7466 9.61374L15.9156 17.0075H13.7942L9.57608 10.9742V10.9738Z" />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="text-gray-400 hover:text-gray-500">
+                <span class="sr-only">LinkedIn</span>
+                <svg class="size-5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                  <path fill-rule="evenodd"
+                    d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z"
+                    clip-rule="evenodd" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </li>
 
-      <!-- <div class="bg-white">
+
+        <li>
+          <img class="mx-auto h-56 w-56 rounded-full" src="@/assets/img/advisory.jpeg" alt="">
+          <h3 class="mt-6 text-base/7 font-semibold tracking-tight text-gray-900">Olaleye Olajuyin</h3>
+          <p class="text-sm/6 text-gray-600">Advisory board</p>
+          <ul role="list" class="mt-6 flex justify-center gap-x-6">
+            <li>
+              <a href="#" class="text-gray-400 hover:text-gray-500">
+                <span class="sr-only">X</span>
+                <svg class="size-5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                  <path
+                    d="M11.4678 8.77491L17.2961 2H15.915L10.8543 7.88256L6.81232 2H2.15039L8.26263 10.8955L2.15039 18H3.53159L8.87581 11.7878L13.1444 18H17.8063L11.4675 8.77491H11.4678ZM9.57608 10.9738L8.95678 10.0881L4.02925 3.03974H6.15068L10.1273 8.72795L10.7466 9.61374L15.9156 17.0075H13.7942L9.57608 10.9742V10.9738Z" />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="text-gray-400 hover:text-gray-500">
+                <span class="sr-only">LinkedIn</span>
+                <svg class="size-5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                  <path fill-rule="evenodd"
+                    d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z"
+                    clip-rule="evenodd" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <!-- <div class="bg-white">
         <div class="mx-auto max-w-7xl px-6 lg:px-8">
           <div class="mx-auto max-w-2xl lg:mx-0">
             <h2 class="font-bold tracking-tight text-gray-900 text-xl">ADVISORY BOARD</h2>
@@ -419,57 +613,63 @@
           </ul>
         </div>
       </div> -->
-      
-      <div class="bg-white mt-16">
-       <h1  class="text-center text-xl uppercase"> Executive Directors</h1>
-        <!-- <div class="mx-auto max-w-7xl px-6 lg:px-8 border-4"> -->
-          <ul role="list" class="mx-auto mt-10 lg:pl-72 grid max-w-2xl  grid-cols-1 gap-x-8 gap-y-16 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
-              <li  v-for="(item,idx) in executiveDirctors" :key="idx">
-                <img  class="mx-auto h-56 w-56 rounded-full object-center" :src="item.image" alt="">
-                <h3  class="mt-6 text-base/7 text-center font-semibold tracking-tight text-gray-900">{{ item.name ?? 'Nil' }}</h3>
-                <p  class="text-sm/6 text-gray-600 text-center">{{ item?.position ?? 'Nil' }}</p>
-              </li>     
+
+    <div class="bg-white mt-16">
+      <h1 class="text-center text-xl uppercase"> Executive Directors</h1>
+      <!-- <div class="mx-auto max-w-7xl px-6 lg:px-8 border-4"> -->
+      <ul role="list"
+        class="mx-auto mt-10 lg:pl-72 grid max-w-2xl  grid-cols-1 gap-x-8 gap-y-16 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+        <li v-for="(item,idx) in executiveDirctors" :key="idx">
+          <img class="mx-auto h-56 w-56 rounded-full object-center" :src="item.image" alt="">
+          <h3 class="mt-6 text-base/7 text-center font-semibold tracking-tight text-gray-900">{{ item.name ?? 'Nil' }}
+          </h3>
+          <p class="text-sm/6 text-gray-600 text-center">{{ item?.position ?? 'Nil' }}</p>
+        </li>
+      </ul>
+      <!-- </div> -->
+    </div>
+
+
+    <div class="bg-white py-16 sm:py-20">
+      <h1 class="text-center uppercase">TEAM LEADS</h1>
+      <div class="mx-auto max-w-7xl px-6 text-center lg:px-8">
+        <ul role="list"
+          class="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+          <li v-for="(item,idx) in volunteers" :key="idx">
+            <img class="mx-auto h-56 w-56 rounded-full" :src="item.image" alt="">
+            <h3 class="mt-6 text-base/7 font-semibold tracking-tight text-gray-900">{{ item.name ?? 'Nil' }}</h3>
+            <p class="text-sm/6 text-gray-600">{{ item?.position ?? 'Nil' }}</p>
+            <ul role="list" class="mt-6 flex justify-center gap-x-6">
+              <li>
+                <a href="#" class="text-gray-400 hover:text-gray-500">
+                  <span class="sr-only">X</span>
+                  <svg class="size-5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                    <path
+                      d="M11.4678 8.77491L17.2961 2H15.915L10.8543 7.88256L6.81232 2H2.15039L8.26263 10.8955L2.15039 18H3.53159L8.87581 11.7878L13.1444 18H17.8063L11.4675 8.77491H11.4678ZM9.57608 10.9738L8.95678 10.0881L4.02925 3.03974H6.15068L10.1273 8.72795L10.7466 9.61374L15.9156 17.0075H13.7942L9.57608 10.9742V10.9738Z" />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-gray-500">
+                  <span class="sr-only">LinkedIn</span>
+                  <svg class="size-5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                    <path fill-rule="evenodd"
+                      d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z"
+                      clip-rule="evenodd" />
+                  </svg>
+                </a>
+              </li>
             </ul>
-        <!-- </div> -->
-      </div>
-      
-
-      <div class="bg-white py-16 sm:py-20">
-        <h1  class="text-center uppercase">TEAM LEADS</h1>
-          <div class="mx-auto max-w-7xl px-6 text-center lg:px-8">
-          <ul role="list" class="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
-            <li  v-for="(item,idx) in volunteers" :key="idx">
-              <img  class="mx-auto h-56 w-56 rounded-full" :src="item.image" alt="">
-              <h3  class="mt-6 text-base/7 font-semibold tracking-tight text-gray-900">{{ item.name ?? 'Nil' }}</h3>
-              <p  class="text-sm/6 text-gray-600">{{ item?.position ?? 'Nil' }}</p>
-              <ul role="list" class="mt-6 flex justify-center gap-x-6">
-                <li>
-                  <a href="#" class="text-gray-400 hover:text-gray-500">
-                    <span class="sr-only">X</span>
-                    <svg class="size-5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
-                      <path d="M11.4678 8.77491L17.2961 2H15.915L10.8543 7.88256L6.81232 2H2.15039L8.26263 10.8955L2.15039 18H3.53159L8.87581 11.7878L13.1444 18H17.8063L11.4675 8.77491H11.4678ZM9.57608 10.9738L8.95678 10.0881L4.02925 3.03974H6.15068L10.1273 8.72795L10.7466 9.61374L15.9156 17.0075H13.7942L9.57608 10.9742V10.9738Z" />
-                    </svg>
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="text-gray-400 hover:text-gray-500">
-                    <span class="sr-only">LinkedIn</span>
-                    <svg class="size-5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
-                      <path fill-rule="evenodd" d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z" clip-rule="evenodd" />
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-            </li>     
-          </ul>
-          </div>
-        
+          </li>
+        </ul>
       </div>
 
-     <!-- <section>
+    </div>
+
+    <!-- <section>
         <img src="@/assets/img/group-photo.png" alt="" />
      </section> -->
-</main>
+  </main>
 </template>
 
 <script setup lang="ts">
