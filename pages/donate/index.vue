@@ -2,12 +2,12 @@
   <main>
     <div>
       <div class="relative isolate overflow-hidden pt-14">
-        <div class="mx-auto max-w-2xl lg:py-32 lg:mt-24 mt-40">
-          <div class="text-center space-y-3">
-            <h1 class="font-bold tracking-tight text-gray-900 text-5xl">
+        <div class="mx-auto max-w-2xl lg:py-32 lg:mt-10 mt-36">
+          <div class="text-center space-y-5">
+            <h1 class="font-bold tracking-tight text-gray-900 text-5xl sm:text-7xl lg:text-6xl">
               Support MedLabConvo
             </h1>
-            <p class="text-3xl leading-8 text-gray-900 italic px-2 lg:px-0">
+            <p class="text-2xl sm:text-3xl lg:text-4xl text-gray-900 italic font-light animate-fade-in-delay">
               Empower the Future of Medical Laboratory Science
             </p>
           </div>
@@ -15,7 +15,7 @@
       </div>
     </div>
 
-    <div class="flex flex-col space-y-4 max-w-sm w-40 lg:w-full h-40 mx-auto pt-4 mt-8">
+    <div class="flex flex-col space-y-4 max-w-sm w-40 lg:w-full h-40 mx-auto pt-4 mt-4">
       <a href="https://paystack.com/pay/medlabconvodonation" target="_blank"
         class="bg-[#27628C] text-center text-white py-3 px-3 rounded transition-colors hover:bg-[#1a4665]">
         Donate Now
@@ -27,7 +27,7 @@
         <h2 class="text-2xl md:text-4xl text-center font-extrabold text-gray-900">
           Why Donate to MedLabConvo?
         </h2>
-        <p class="text-xl md:text-2xl max-w-[800px] w-full text-gray-900 text-center mt-6">
+        <p class="text-xl text-gray-600 text-center mt-8 max-w-4xl mx-auto leading-relaxed">
           MedLabConvo is more than just a platform; it is a movement dedicated
           to transforming the landscape of medical laboratory science. Through
           education, mentorship, advocacy, and system strengthening, we are
@@ -37,9 +37,9 @@
       </div>
     </div>
 
-    <div class="mt-28 flex justify-center items-center px-4">
+    <div class="mt-20 flex justify-center items-center px-4">
       <div class="max-w-[900px] w-full flex flex-col justify-center items-center">
-        <p class="text-2xl md:text-3xl text-center text-red-700">Choose Your Payment Method</p>
+        <p class="text-3xl text-center text-red-700">Choose Your Payment Method</p>
         <p class="text-center text-lg mt-6">
           You either <span class="text-red-700 uppercase">copy</span> our account details or make a
           <span class="text-red-700 uppercase">transfer</span>
@@ -71,7 +71,7 @@
       </div>
     </div>
 
-    <div class="bg-white container mx-auto mt-28">
+    <div class="bg-white container mx-auto mt-20">
       <div class="mx-auto px-4 sm:px-6 lg:px-4">
         <h2 class="text-2xl font-bold text-gray-900 text-center uppercase">
           Your donation helps us:
@@ -82,10 +82,10 @@
             <div
               class="max-w-md lg:max-w-lg lg:w-[500px] w-[300px] mx-auto bg-white rounded-lg border-2 border-gray-200 shadow-sm hover:shadow-md transition-shadow overflow-hidden p-6">
               <div class="space-y-4">
-                <h1 class="text-xl font-semibold text-gray-500 uppercase tracking-wider">
+                <h1 class="text-xl font-semibold text-gray-900 tracking-wider">
                   ✅ Train and Mentor Future Leaders
                 </h1>
-                <p class="text-xl text-gray-900 tracking-tighter mb-2">
+                <p class="text-xl text-gray-600 mb-12 max-w-4xl mx-auto leading-relaxed">
                   Our Origins Program and professional development initiatives
                   equip young medical laboratory scientists with the skills and
                   opportunities they need to thrive.
@@ -96,10 +96,10 @@
             <div
               class="max-w-md lg:max-w-lg lg:w-[500px] w-[300px] mx-auto bg-white rounded-lg border-2 border-gray-200 shadow-sm hover:shadow-md transition-shadow overflow-hidden p-6">
               <div class="space-y-4">
-                <h1 class="text-xl font-semibold text-gray-500 uppercase tracking-wider">
+                <h1 class="text-xl font-semibold text-gray-900 tracking-wider">
                   ✅ Bridge the Knowledge Gap
                 </h1>
-                <p class="text-xl text-gray-900 tracking-tighter mb-2">
+                <p class="text-xl text-gray-600 mb-12 max-w-4xl mx-auto leading-relaxed">
                   Through our LabCast podcast, blogs, and research resources, we
                   provide critical knowledge that enhances clinical diagnostics
                   and patient care.
@@ -110,10 +110,10 @@
             <div
               class="max-w-md lg:max-w-lg lg:w-[500px] w-[300px] mx-auto bg-white rounded-lg border-2 border-gray-200 shadow-sm hover:shadow-md transition-shadow overflow-hidden p-6">
               <div class="space-y-4">
-                <h1 class="text-xl font-semibold text-gray-500 uppercase tracking-wider">
+                <h1 class="text-xl font-semibold text-gray-900 tracking-wider">
                   ✅ Strengthen Healthcare Systems
                 </h1>
-                <p class="text-xl text-gray-900 tracking-tighter mb-2">
+                <p class="text-xl text-gray-600 mb-12 max-w-4xl mx-auto leading-relaxed">
                   By fostering collaboration and advocating for laboratory
                   medicine, we contribute to a more robust and efficient
                   healthcare system.
@@ -126,10 +126,10 @@
               <div class="space-y-4">
 
 
-                <h1 class="text-xl font-semibold text-gray-500 uppercase tracking-wider">
+                <h1 class="text-xl font-semibold text-gray-900 tracking-wider">
                   ✅ Expand Access to Opportunities
                 </h1>
-                <p class="text-xl text-gray-900 tracking-tighter mb-2">
+                <p class="text-xl text-gray-600 mb-12 max-w-4xl mx-auto leading-relaxed">
                   Our networking and community-building efforts connect medical
                   laboratory scientists worldwide, ensuring that no one is left
                   behind.
@@ -143,13 +143,13 @@
 
     <div class="bg-[#27628C] w-full  flex justify-center items-center py-20 px-4 mt-28">
       <div class="max-w-[900px] w-full flex flex-col justify-center items-center text-white">
-        <h2 class="text-2xl text-center font-bold uppercase">
+        <h2 class="text-3xl text-center font-bold">
           Where Your Donations Go
         </h2>
-        <p class="text-xl md:text-2xl max-w-[800px] w-full text-center mt-6">
+        <p class="text-xl max-w-[800px] w-full text-center mt-6">
           Every contribution, big or small, directly fuels our mission. Your donations will support:
         </p>
-        <ul class="mt-6 text-lg md:text-xl list-disc list-inside space-y-3">
+        <ul class="mt-6 text-xl list-disc list-inside space-y-3 max-w-4xl mx-auto">
           <li>The development of educational content, workshops, and training sessions</li>
           <li>The expansion of our mentorship and internship support programs</li>
           <li>The sustainability of LabCast, Journo, and other knowledge-sharing platforms</li>
@@ -160,18 +160,17 @@
 
 
 
-    <div class="flex justify-center items-center px-4 mt-28">
+    <div class="flex justify-center items-center px-4 mt-20">
       <div class="max-w-[900px] w-full flex flex-col justify-center items-center">
-        <h2
-          class="text-balance text-3xl px-3 lg:px-0 lg:text-4xl text-center font-semibold tracking-tight text-gray-900">
+        <h2 class="text-3xl font-bold text-gray-900 text-center">
           Join Us in Making an Impact
         </h2>
-        <p class="text-xl md:text-2xl max-w-[800px] w-full text-gray-900 text-center mt-6">
+        <p class="text-xl max-w-[800px] w-full text-gray-600 text-center mt-6 leading-relaxed">
           By supporting MedLabConvo, you are investing in a future where medical laboratory scientists are better
           equipped, more connected, and more empowered to drive change in healthcare.
         </p>
         <p
-          class="mt-2 text-balance text-3xl px-3 lg:px-0 lg:text-4xl pt-20 text-center font-semibold tracking-tight text-gray-900">
+          class="text-3xl font-bold text-gray-900 text-center mt-14">
           Donate Today and Be Part of the Change!
         </p>
       </div>
