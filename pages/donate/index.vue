@@ -14,7 +14,6 @@
         </div>
       </div>
     </div>
-
     <div class="flex flex-col space-y-4 max-w-sm w-40 lg:w-full h-40 mx-auto pt-4 mt-4">
       <a href="https://paystack.com/pay/medlabconvodonation" target="_blank"
         class="bg-[#27628C] text-center text-white py-3 px-3 rounded transition-colors hover:bg-[#1a4665]">
@@ -141,7 +140,7 @@
       </div>
     </div>
 
-    <div class="bg-[#27628C] w-full  flex justify-center items-center py-20 px-4 mt-28">
+    <div class="bg-[#27628C] w-full  flex justify-center items-center py-6 px-4 mt-28">
       <div class="max-w-[900px] w-full flex flex-col justify-center items-center text-white">
         <h2 class="text-3xl text-center font-bold">
           Where Your Donations Go
@@ -149,7 +148,7 @@
         <p class="text-xl max-w-[800px] w-full text-center mt-6">
           Every contribution, big or small, directly fuels our mission. Your donations will support:
         </p>
-        <ul class="mt-6 text-xl list-disc list-inside space-y-3 max-w-4xl mx-auto">
+        <ul class="mt-6 text-xl list-disc list-inside space-y-2 max-w-4xl mx-auto">
           <li>The development of educational content, workshops, and training sessions</li>
           <li>The expansion of our mentorship and internship support programs</li>
           <li>The sustainability of LabCast, Journo, and other knowledge-sharing platforms</li>

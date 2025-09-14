@@ -644,6 +644,7 @@ const { programs, loading: fetchingPrograms} = useGetPrograms()
  ])
 
 const { videoUrl } = useYoutubeVideo('rhVkU6HAbn0'); // Example video ID
+console.log(videoUrl.value); // should log "https://www.youtube.com/embed/rhVkU6HAbn0"
 
 const testimonials = ref([
   {
