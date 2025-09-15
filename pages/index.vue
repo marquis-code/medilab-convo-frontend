@@ -42,7 +42,9 @@
     </div>
 
     <!-- Mission Statement Video Section -->
-    <div class="py-20 px-6 lg:px-8 bg-gradient-to-b from-gray-50 to-white">
+     <VideoHero />
+     <!-- <HeroVideo /> -->
+     <!-- <div class="py-20 px-6 lg:px-8 bg-gradient-to-b from-gray-50 to-white">
       <div class="max-w-6xl mx-auto">
         <h2 class="text-3xl  lg:text-5xl font-bold text-center text-gray-900 mb-12 leading-tight">
           <span class="bg-gradient-to-r from-[#27628C] to-blue-600 bg-clip-text text-transparent">
@@ -56,7 +58,7 @@
           professionals in medical laboratory science and in the healthcare system at large.
         </p>
         <div class="relative rounded-3xl overflow-hidden shadow-2xl group">
-          <iframe :src="videoUrl" frameborder="0"
+          <iframe src="/intro-video.mp4" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
             class="w-full h-96 sm:h-[500px] lg:h-[600px] transition-transform duration-300 group-hover:scale-105"></iframe>
@@ -65,7 +67,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <!-- {{ programs }} -->
 

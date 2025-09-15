@@ -65,7 +65,7 @@ export default defineNuxtConfig({
   modules: [
     "@nuxtjs/tailwindcss",
     "@nuxtjs/google-fonts",
-    "@nuxtjs/robots",
+    "@nuxtjs/robots"
   ],
 
   googleFonts: {
