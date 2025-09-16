@@ -36,40 +36,6 @@
       </div>
     </div>
 
-    <div class="mt-20 flex justify-center items-center px-4">
-      <div class="max-w-[900px] w-full flex flex-col justify-center items-center">
-        <p class="text-3xl text-center text-red-700">Choose Your Payment Method</p>
-        <p class="text-center text-lg mt-6">
-          You either <span class="text-red-700 uppercase">copy</span> our account details or make a
-          <span class="text-red-700 uppercase">transfer</span>
-        </p>
-
-        <div class="w-full max-w-[500px] border-2 rounded-2xl px-4 lg:px-6 py-8 mt-16 mx-auto">
-          <p class="text-2xl">Copy Account Details</p>
-          <p class="text-gray-400 text-lg">Use personal banking app</p>
-          <div class="bg-red-400 h-[1px] mt-2 opacity-60"></div>
-          <p class="text-gray-500 text-lg mt-4">Select any account to transfer to</p>
-
-          <div class="flex items-center gap-6 lg:gap-20 mt-10 border-2 lg:p-4 p-2 rounded-2xl">
-            <div class="relative p-6 rounded-2xl w-[280px] min-h-[120px] flex flex-col justify-start"
-              style="background: linear-gradient(235deg, #814285, #7b1fd2);">
-              <img src="@/assets/img/mastercard.jpg" alt="Mastercard logo" class="absolute top-2 right-2 w-10" />
-              <p class="text-lg text-white">MedLabConvo</p>
-              <p class="text-2xl font-extrabold text-white">{{ textToCopy }}</p>
-              <p class="text-lg text-white">UBA</p>
-            </div>
-
-            <div class="flex flex-col justify-center items-center min-h-[120px]">
-              <p class="text-xl text-gray-900 mb-2">Copy</p>
-              <img src="@/assets/img/copy.png" alt="Copy"
-                class="w-10 h-10 cursor-pointer opacity-80 hover:opacity-60 transition" @click="copyText" />
-              <span v-if="copied" class="text-green-500 text-sm mt-2">Copied!</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <div class="bg-white container mx-auto mt-20">
       <div class="mx-auto px-4 sm:px-6 lg:px-4">
         <h2 class="text-2xl font-bold text-gray-900 text-center uppercase">
@@ -85,7 +51,7 @@
                   ✅ Train and Mentor Future Leaders
                 </h1>
                 <p class="text-xl text-gray-600 mb-12 max-w-4xl mx-auto leading-relaxed">
-                  Our Origins Program and professional development initiatives
+                  Our programs and professional development initiatives
                   equip young medical laboratory scientists with the skills and
                   opportunities they need to thrive.
                 </p>
@@ -140,25 +106,6 @@
       </div>
     </div>
 
-    <div class="bg-[#27628C] w-full  flex justify-center items-center py-6 px-4 mt-28">
-      <div class="max-w-[900px] w-full flex flex-col justify-center items-center text-white">
-        <h2 class="text-3xl text-center font-bold">
-          Where Your Donations Go
-        </h2>
-        <p class="text-xl max-w-[800px] w-full text-center mt-6">
-          Every contribution, big or small, directly fuels our mission. Your donations will support:
-        </p>
-        <ul class="mt-6 text-xl list-disc list-inside space-y-2 max-w-4xl mx-auto">
-          <li>The development of educational content, workshops, and training sessions</li>
-          <li>The expansion of our mentorship and internship support programs</li>
-          <li>The sustainability of LabCast, Journo, and other knowledge-sharing platforms</li>
-          <li>The launch of new initiatives aimed at health advocacy and system reform</li>
-        </ul>
-      </div>
-    </div>
-
-
-
     <div class="flex justify-center items-center px-4 mt-20">
       <div class="max-w-[900px] w-full flex flex-col justify-center items-center">
         <h2 class="text-3xl font-bold text-gray-900 text-center">
@@ -175,11 +122,38 @@
       </div>
     </div>
 
-    <div class="flex flex-col space-y-4 max-w-sm w-40 lg:w-full mx-auto pt-4 mt-6 mb-20">
+    <div class="flex flex-col space-y-4  max-w-sm w-40 lg:w-full mx-auto pt-4 mt-6">
       <a href="https://paystack.com/pay/medlabconvodonation" target="_blank"
         class="bg-[#27628C] text-center text-white py-3 px-3 rounded transition-colors hover:bg-[#1a4665]">
         Donate Now
       </a>
+      <p class="text-center text-gray-600">Or</p>
+    </div>
+
+    <div class="flex justify-center items-center px-4 mb-10">
+      <div class="max-w-[900px] w-full flex flex-col justify-center items-center">
+        <div class="w-full max-w-[500px] border-2 rounded-2xl px-4 lg:px-4 py-6 mt-6 mx-auto">
+          <p class="text-2xl text-gray-600">Donate Directly To Our Bank Account</p>
+          <div class="bg-red-400 h-[1px] mt-2 opacity-60"></div>
+          <p class="text-gray-500 text-lg mt-4">Copy Account Details</p>
+
+          <div class="flex items-center gap-6 lg:gap-20 mt-6 border-2 lg:p-4 p-2 rounded-2xl">
+            <div class="bg-[#27628C] relative p-3 rounded-2xl w-[280px] min-h-[120px] flex flex-col justify-start">
+              <img src="@/assets/img/mastercard.jpg" alt="Mastercard logo" class="absolute top-2 right-2 w-10" />
+              <p class="text-lg text-white">MedLabConvo</p>
+              <p class="text-2xl font-extrabold text-white">{{ textToCopy }}</p>
+              <p class="text-lg text-white">UBA</p>
+            </div>
+
+            <div class="flex flex-col justify-center items-center min-h-[120px]">
+              <p class="text-xl text-gray-900 mb-2">Copy</p>
+              <img src="@/assets/img/copy.png" alt="Copy"
+                class="w-10 h-10 cursor-pointer opacity-80 hover:opacity-60 transition" @click="copyText" />
+              <span v-if="copied" class="text-green-500 text-sm mt-2">Copied!</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </main>
 </template>

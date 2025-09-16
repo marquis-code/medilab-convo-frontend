@@ -79,15 +79,15 @@
           <!-- Video Stats/Info -->
           <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
             <div class="text-center p-6 rounded-2xl bg-white/60 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-              <div class="text-3xl font-bold text-[#27628C] mb-2 animate-count-up">500+</div>
+              <div class="text-3xl font-bold text-[#27628C] mb-2 animate-count-up">5000+</div>
               <div class="text-gray-600">Professionals Trained</div>
             </div>
             <div class="text-center p-6 rounded-2xl bg-white/60 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-              <div class="text-3xl font-bold text-[#27628C] mb-2 animate-count-up">50+</div>
-              <div class="text-gray-600">Healthcare Facilities</div>
+              <div class="text-3xl font-bold text-[#27628C] mb-2 animate-count-up">20+</div>
+              <div class="text-gray-600">Programs Organized</div>
             </div>
             <div class="text-center p-6 rounded-2xl bg-white/60 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-              <div class="text-3xl font-bold text-[#27628C] mb-2 animate-count-up">10+</div>
+              <div class="text-3xl font-bold text-[#27628C] mb-2 animate-count-up">6+</div>
               <div class="text-gray-600">Years of Excellence</div>
             </div>
           </div>
