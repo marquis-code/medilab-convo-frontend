@@ -18,13 +18,8 @@
       </div>
     </div>
 
-    <!-- Video Section -->
-    <div class="container mx-auto py-10">
-      <FrameVideo />
-    </div>
-
-    <!-- Latest Episode Section -->
-    <div class="container mx-auto px-4 py-8">
+        <!-- Latest Episode Section -->
+        <div class="container mx-auto px-4 py-8">
       <div class="flex items-center justify-center mb-8">
         <div class="h-px bg-gradient-to-r from-transparent via-[#27628C] to-transparent flex-1"></div>
         <h1 class="text-3xl font-bold text-[#27628C] mx-6 animate-fade-in">Latest Episode</h1>
@@ -131,6 +126,11 @@
         <h3 class="text-xl font-semibold text-gray-900 mb-2">No Latest Episode</h3>
         <p class="text-gray-600">Check back soon for our newest episode!</p>
       </div>
+    </div>
+    
+    <!-- Video Section -->
+    <div class="container mx-auto py-10">
+      <FrameVideo />
     </div>
 
     <!-- All Episodes Section -->

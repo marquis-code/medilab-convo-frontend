@@ -664,6 +664,14 @@ const testimonials = ref([
   {
     name: 'Paul Odeh',
     testimonial: `MedLabConvo fosters collaboration among medical lab scientists worldwide. It’s a great place to connect, learn, and contribute to the advancement of our profession.`
+  },
+  {
+    name: 'Dolapo Moses',
+    testimonial: `MedLabConvo organized an excellent and quintessential masterclass on scholarships, which was totally free. They shared quality and useful information with. I am sincerely challenged and encouraged to keep it up and not to give up. Thank you so much!`
+  },
+  {
+    name: 'Jude Emeka',
+    testimonial: `Honestly, the experience was eye-opening. I'm grateful to the organizers and the presenters for the amazing work they've done, and I look forward to other such programs from MedLabConvo.`
   }
 ])
 </script>

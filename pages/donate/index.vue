@@ -106,6 +106,17 @@
       </div>
     </div>
 
+        <!-- Testimonials Section -->
+        <section class="py-20 bg-gradient-to-br from-gray-50 to-blue-50 mt-20">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-sm font-semibold tracking-wider text-[#27628C] uppercase mb-4">Testimonials From Some of Our Programs</h2>
+          
+
+        </div>
+      </div>
+    </section>
+
     <div class="flex justify-center items-center px-4 mt-20">
       <div class="max-w-[900px] w-full flex flex-col justify-center items-center">
         <h2 class="text-3xl font-bold text-gray-900 text-center">
