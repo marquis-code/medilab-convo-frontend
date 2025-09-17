@@ -28,6 +28,8 @@
     "@vueuse/core": "^13.0.0",
     "aos": "^3.0.0-beta.6",
     "axios": "^1.10.0",
+    "html-to-image": "^1.11.13",
+    "jspdf": "^3.0.2",
     "lucide-vue-next": "^0.483.0",
     "vue-youtube-embed": "^2.2.2",
     "vue3-youtube": "^0.1.9"
