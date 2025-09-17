@@ -4,7 +4,6 @@
       Create Your Celebration Flier and Share Your MedLabConvo Testimonial
     </h3>
 
-    <!-- Form / Flyer Stage -->
     <div v-if="!generatedUrl" class="flex flex-col items-center space-y-6">
       <div
         ref="flyerRef"
@@ -40,7 +39,6 @@
         </div>
       </div>
 
-      <!-- Form -->
       <div class="mt-6 w-full max-w-md bg-white rounded-lg shadow p-6 space-y-5">
         <div>
           <label class="block text-sm font-medium text-gray-700 mb-1">Your Name</label>
@@ -83,7 +81,6 @@
       </div>
     </div>
 
-    <!-- Generated DP Stage -->
     <div v-else class="flex flex-col items-center space-y-4">
       <h3 class="text-lg font-bold text-[#27628C] text-center mb-10">
         Your Celebration Flier is Ready! 🎊🎊
@@ -167,7 +164,6 @@ function checkWordLimit() {
   }
 }
 
-// Validation helpers
 const validateForm = () => {
   const newErrors: { name?: string; testimonial?: string; global?: string } = {};
   if (!authorName.value.trim()) newErrors.name = "Please enter your name.";
@@ -215,22 +211,25 @@ function downloadImage() {
 async function shareImageFile() {
   if (!generatedUrl.value) return;
 
+  const caption = `Celebrate with us! 🎉
+@medlabconvo
+#6thAnniversary #MLC@6 #LetsTalkMedLab`;
+
   try {
     const blob = await (await fetch(generatedUrl.value)).blob();
-    const file = new File([blob], "medlab-testimonial.png", { type: "image/png" });
+    const file = new File([blob], "medlabconvo-testimonial.png", { type: "image/png" });
 
     if (navigator.share && navigator.canShare?.({ files: [file] })) {
+
+      await navigator.clipboard.writeText(caption);
+
       await navigator.share({
         files: [file],
         title: "MedLabConvo 6th Anniversary 🎉",
-        text: "Celebrate with me! Here’s my MedLabConvo 6th Anniversary DP 💙",
+        text: caption,
       });
-    } else if (navigator.share) {
-      await navigator.share({
-        title: "MedLabConvo 6th Anniversary 🎉",
-        text: "Celebrate with me! Here’s my MedLabConvo 6th Anniversary DP 💙",
-        url: generatedUrl.value,
-      });
+
+      alert("✅ Caption copied! Paste it into your post after uploading.");
     } else {
       alert("Sharing not supported on this browser. Please download instead.");
     }
@@ -238,6 +237,7 @@ async function shareImageFile() {
     console.error("Sharing failed:", err);
   }
 }
+
 
 function resetForm() {
   generatedUrl.value = null;
