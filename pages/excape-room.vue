@@ -1,84 +1,85 @@
 <template>
-  <div class="min-h-screen bg-gray-900 text-white font-mono overflow-hidden relative">
+  <div class="min-h-screen bg-gradient-to-br from-slate-900 via-brand-primary to-slate-800 text-white font-mono overflow-hidden relative">
     <!-- Background Effects -->
-    <div class="absolute inset-0 bg-gradient-to-br from-gray-900 via-red-900 to-gray-900 opacity-50"></div>
-    <div v-if="gameState !== 'welcome'" :class="['absolute inset-0 bg-red-500 opacity-10', { 'flicker': isEmergency }]"></div>
+    <div class="absolute inset-0 bg-gradient-to-br from-brand-primary/80 via-brand-secondary/70 to-slate-900/80"></div>
+    <div v-if="gameState !== 'welcome'" :class="['absolute inset-0 bg-red-500/10', { 'flicker': isEmergency }]"></div>
+    
+    <!-- Animated Background Particles -->
+    <div v-if="gameState !== 'welcome'" class="absolute inset-0 overflow-hidden">
+      <div class="particle particle-1"></div>
+      <div class="particle particle-2"></div>
+      <div class="particle particle-3"></div>
+    </div>
     
     <!-- Siren Light -->
-    <div v-if="gameState !== 'welcome'" class="siren absolute top-4 right-4 w-8 h-8 bg-red-500 rounded-full shadow-lg shadow-red-500/50"></div>
+    <div v-if="gameState !== 'welcome'" class="siren fixed top-16 right-2 sm:top-20 sm:right-4 w-6 h-6 sm:w-8 sm:h-8 bg-red-500 rounded-full shadow-lg shadow-red-500/50 z-30"></div>
     
-    <!-- Oxygen Meter -->
-    <div v-if="showOxygenMeter" class="absolute top-4 left-4 bg-black/80 p-4 rounded-lg border border-red-500">
-      <div class="text-xs text-red-400 mb-2">OXYGEN LEVEL</div>
-      <div class="w-32 h-4 bg-gray-800 rounded-full overflow-hidden border">
+  <section class="p-3 space-y-3">
+        <!-- Oxygen Meter -->
+    <div v-if="showOxygenMeter" class="sm:top-4 bg-black/95 p-3 sm:p-4 flex justify-between items-center rounded-lg border-2 border-red-500 z-30 backdrop-blur-md">
+      <div class="text-xs text-red-400 mb-2 font-bold tracking-wider">OXYGEN LEVEL</div>
+      <div class="w-28 sm:w-32 h-3 sm:h-4 bg-gray-800 rounded-full overflow-hidden border border-gray-600">
         <div 
           :class="[
-            'h-full transition-all duration-300',
+            'h-full transition-all duration-500 ease-in-out',
             oxygenLevel > 50 ? 'bg-green-500' : oxygenLevel > 20 ? 'bg-yellow-500' : 'bg-red-500'
           ]"
           :style="{ width: `${oxygenLevel}%` }"
         ></div>
       </div>
-      <div class="text-xs mt-1" :class="oxygenLevel < 20 ? 'text-red-400 animate-pulse' : 'text-green-400'">
+      <div class="text-xs mt-1 font-bold" :class="oxygenLevel < 20 ? 'text-red-400 animate-pulse' : 'text-green-400'">
         {{ oxygenLevel }}%
       </div>
     </div>
 
     <!-- Timer -->
-    <div v-if="showTimer && timeLeft > 0" class="absolute top-4 right-16 bg-black/80 p-4 rounded-lg border border-yellow-500">
-      <div class="text-xs text-yellow-400 mb-2">TIME LEFT</div>
-      <div class="text-2xl font-bold" :class="timeLeft <= 10 ? 'text-red-400 animate-pulse' : 'text-yellow-400'">
+    <div v-if="showTimer && timeLeft > 0" class="sm:top-4 flex justify-between items-center sm:right-4 bg-black/95 p-3 sm:p-4 rounded-lg border-2 border-yellow-500 z-30 backdrop-blur-md shadow-xl min-w-[120px] sm:min-w-[140px]">
+      <div class="text-xs text-yellow-400 mb-2 font-bold tracking-wider text-center">TIME LEFT</div>
+      <div class="text-xl sm:text-2xl font-bold text-center" :class="timeLeft <= 10 ? 'text-red-400 animate-pulse' : 'text-yellow-400'">
         {{ timeLeft }}s
       </div>
     </div>
+  </section>
 
-    <!-- Audio Elements -->
-    <audio ref="alarmAudio" loop>
-      <source src="data:audio/wav;base64,UklGRnoGAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YQoGAACBhYqFbF1fdJivrJBhNjVgodDbq2EcBj+a2/LDciUFLIHO8tiJNwgZaLvt559NEAxQp+PwtmMcBjiR1/LMeSwFJHfH8N2QQAoUXrTp66hVFApGn+DyvmAYAjiRzuXceSMFKIHO6+OMORUaWqzs4pNHFA1JnNjv1GcXA"><option value="UTME Guide">UTME Guide</option>
-<option value="Career Webinars">Career Webinars</option>
-<option value="Student Mentorship">Student Mentorship</option>
-</audio>
-    <audio ref="successAudio">
-      <source src="data:audio/wav;base64,UklGRnoGAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YQoGAACBhYqFbF1fdJivrJBhNjVgodDbq2EcBj+a2/LDciUFLIHO8tiJNwgZaLvt559NEAxQp+PwtmMcBjiR1/LMeSwFJHfH8N2QQAoUXrTp66hVFApGn+DyvmAYAjiRzuXceSMFKIHO6+OMORUaWqzs4pNHFA1JnNjv1GcXAy2Vy/LNeSYDL4DN89qOMXMd5RdTmqzq7LQ2WmKazeXceSMGLYTH8N2QQAoNhYqFbF1fdJivrJBhNjVgodDbq2EcBj+a2/LDciUFLIHO8tiJNwgZaLvt559NEAxQp+PwtmMcBjiR1/LMeSwFJHfH8N2QQAoUXrTp66hVFApGn+DyvmAYAjiRzuXceSMFKIHO6+OMORUaWqzs4pNHFA1JnNjv1GcX" type="audio/wav">
-    </audio>
-    <audio ref="failAudio">
-      <source src="data:audio/wav;base64,UklGRnoGAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YQoGAACBhYqFbF1fdJivrJBhNjVgodDbq2EcBj+a2/LDciUFLIHO8tiJNwgZaLvt559NEAxQp+PwtmMcBjiR1/LMeSwFJHfH8N2QQAoUXrTp66hVFApGn+DyvmAYAjiRzuXceSMFKIHO6+OMORUaWqzs4pNHFA1JnNjv1GcXAy2Vy/LNeSYDL4DN89qOMXMd5RdTmqzq7LQ2WmKazeXceSMGLYTH8N2QQAoUXrTp66hVFApGn+DyvmAYAjiRzuXceSMFKIHO6+OMORUaWqzs4pNHFA1JnNjv1GcXAy2Vy/LNeSY" type="audio/wav">
+    <!-- Background Audio -->
+    <audio ref="backgroundAudio" loop preload="auto" class="hidden">
+      <source src="https://www.soundjay.com/misc/sounds/bell-ringing-05.wav" type="audio/wav">
     </audio>
 
     <!-- Game Container -->
-    <div class="relative z-10 min-h-screen flex items-center justify-center p-4">
+    <div class="relative z-10 min-h-screen flex items-center justify-center p-2 sm:p-4">
       
       <!-- Welcome Screen -->
-      <div v-if="gameState === 'welcome'" class="fade-in text-center max-w-2xl mx-auto">
-        <div class="mb-8">
-          <h1 class="text-4xl md:text-6xl font-black mb-4 bg-gradient-to-r from-red-500 via-yellow-500 to-red-500 bg-clip-text text-transparent animate-pulse">
+      <div v-if="gameState === 'welcome'" class="fade-in text-center max-w-2xl mx-auto px-4">
+        <div class="mb-6 sm:mb-8">
+          <h1 class="text-3xl sm:text-4xl md:text-6xl font-black mb-4 bg-gradient-to-r from-cyan-400 via-blue-400 to-cyan-400 bg-clip-text text-transparent animate-pulse">
             MEDLABCONVO
           </h1>
-          <h2 class="text-2xl md:text-3xl font-bold text-red-400 mb-6">ESCAPE ROOM</h2>
-          <div class="bg-black/80 p-6 rounded-lg border border-red-500 mb-8">
+          <h2 class="text-xl sm:text-2xl md:text-3xl font-bold text-cyan-400 mb-4 sm:mb-6">ESCAPE ROOM</h2>
+          <div class="bg-black/90 p-4 sm:p-6 rounded-lg border border-cyan-500 mb-6 sm:mb-8 backdrop-blur-sm">
             <div class="text-sm md:text-base text-gray-300 leading-relaxed">
-              <p class="mb-4">⚠️ <span class="text-red-400 font-bold">BIOHAZARD DETECTED</span> ⚠️</p>
+              <p class="mb-4">⚠️ <span class="text-cyan-400 font-bold">BIOHAZARD DETECTED</span> ⚠️</p>
               <p class="mb-4">The MedLabConvo research facility is in lockdown. Oxygen levels are critically low.</p>
-              <p class="text-yellow-400">Solve the protocols to escape before you suffocate!</p>
+              <p class="text-yellow-400 font-bold">Solve the protocols to escape before you suffocate!</p>
             </div>
           </div>
         </div>
         
         <button 
           @click="startGame"
-          class="group relative px-8 py-4 text-xl font-bold bg-gradient-to-r from-red-600 to-red-700 hover:from-red-500 hover:to-red-600 rounded-lg border-2 border-red-400 shadow-lg shadow-red-500/30 transition-all duration-300 transform hover:scale-105"
+          class="group relative px-8 py-4 text-lg sm:text-xl font-bold bg-gradient-to-r from-brand-secondary to-blue-600 hover:from-blue-600 hover:to-brand-secondary text-white rounded-lg border-2 border-blue-400 shadow-xl shadow-blue-500/40 transition-all duration-300 transform hover:scale-105 w-full sm:w-auto max-w-sm mx-auto"
         >
-          <span class="relative z-10">BEGIN PROTOCOL</span>
-          <div class="absolute inset-0 bg-gradient-to-r from-red-400 to-red-500 rounded-lg opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
+          <span class="relative z-10 text-white drop-shadow-lg">🚀 BEGIN PROTOCOL</span>
+          <div class="absolute inset-0 bg-gradient-to-r from-blue-400/30 to-blue-500/30 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
         </button>
       </div>
 
       <!-- Game Screen -->
-      <div v-else-if="gameState === 'playing'" class="fade-in w-full max-w-4xl mx-auto">
+      <div v-else-if="gameState === 'playing'" class="fade-in w-full max-w-4xl mx-auto px-2 sm:px-4">
         
         <!-- Room Header -->
-        <div class="text-center mb-8">
-          <h2 class="text-2xl md:text-4xl font-bold text-red-400 mb-2">
+        <div class="text-center mb-4 sm:mb-8">
+          <h2 class="text-xl sm:text-2xl md:text-4xl font-bold text-cyan-400 mb-2">
             {{ currentPuzzle.title }}
           </h2>
           <div class="text-sm md:text-base text-gray-400">
@@ -87,104 +88,91 @@
         </div>
 
         <!-- Room Content -->
-        <div class="bg-black/80 border border-red-500 rounded-lg p-6 md:p-8 shadow-2xl">
+        <div class="bg-black/95 border-2 border-cyan-500 rounded-lg p-4 sm:p-6 md:p-8 shadow-2xl backdrop-blur-md">
           
           <!-- Room Description -->
-          <div v-if="currentPuzzle.description" class="mb-6 p-4 bg-gray-800/50 rounded-lg border-l-4 border-yellow-500">
-            <p class="text-gray-300 leading-relaxed">{{ currentPuzzle.description }}</p>
+          <div v-if="currentPuzzle.description" class="mb-4 sm:mb-6 p-4 bg-gray-800/80 rounded-lg border-l-4 border-yellow-500">
+            <p class="text-gray-200 leading-relaxed text-sm sm:text-base">{{ currentPuzzle.description }}</p>
           </div>
 
           <!-- Question -->
-          <div class="mb-8">
-            <h3 class="text-lg md:text-xl font-bold text-yellow-400 mb-4">
+          <div class="mb-6 sm:mb-8">
+            <h3 class="text-base sm:text-lg md:text-xl font-bold text-yellow-300 mb-4">
               {{ currentPuzzle.question }}
             </h3>
           </div>
 
           <!-- Answer Input -->
-          <div v-if="!showingResult" class="mb-6">
-            <div v-if="currentPuzzle.type === 'select'" class="space-y-3">
+          <div v-if="!showingResult" class="mb-4 sm:mb-6">
+            <div v-if="currentPuzzle.type === 'select'" class="space-y-2 sm:space-y-3">
               <button
                 v-for="option in currentPuzzle.options"
                 :key="option"
-                @click="selectAnswer(option)"
+                @click="selectAndSubmitAnswer(option)"
                 :class="[
-                  'w-full p-4 text-left rounded-lg border-2 transition-all duration-300',
+                  'w-full p-4 text-left rounded-lg border-2 transition-all duration-300 text-sm sm:text-base font-medium',
                   selectedAnswer === option 
-                    ? 'border-yellow-500 bg-yellow-500/20 text-yellow-300' 
-                    : 'border-gray-600 bg-gray-800 hover:border-gray-500 hover:bg-gray-700'
+                    ? 'border-yellow-500 bg-yellow-500/20 text-yellow-100 shadow-lg' 
+                    : 'border-gray-500 bg-gray-800/90 hover:border-blue-400 hover:bg-gray-700/90 text-gray-100 hover:text-white'
                 ]"
+                :disabled="isSubmitting"
               >
-                {{ option }}
+                <span class="block">{{ option }}</span>
               </button>
             </div>
             
-            <div v-else>
+            <div v-else class="space-y-4">
               <input
                 v-model="selectedAnswer"
                 type="text"
                 :placeholder="currentPuzzle.placeholder || 'Enter your answer...'"
-                class="w-full p-4 bg-gray-800 border-2 border-gray-600 rounded-lg text-white placeholder-gray-400 focus:border-yellow-500 focus:outline-none transition-colors duration-300"
+                class="w-full p-4 bg-gray-800/90 border-2 border-gray-500 rounded-lg text-white placeholder-gray-300 focus:border-blue-400 focus:outline-none transition-colors duration-300 text-sm sm:text-base"
                 @keyup.enter="submitAnswer"
                 :disabled="isSubmitting"
               />
+              <button
+                @click="submitAnswer"
+                :disabled="!selectedAnswer || isSubmitting"
+                :class="[
+                  'w-full px-8 py-4 font-bold rounded-lg transition-all duration-300 transform text-sm sm:text-base',
+                  selectedAnswer && !isSubmitting
+                    ? 'bg-gradient-to-r from-green-600 to-green-700 hover:from-green-500 hover:to-green-600 text-white border-2 border-green-400 hover:scale-105 shadow-xl shadow-green-500/40'
+                    : 'bg-gray-600/80 text-gray-300 border-2 border-gray-500 cursor-not-allowed'
+                ]"
+              >
+                <span class="drop-shadow-lg">{{ isSubmitting ? 'PROCESSING...' : 'SUBMIT ANSWER' }}</span>
+              </button>
             </div>
-          </div>
-
-          <!-- Submit Button -->
-          <div v-if="!showingResult" class="text-center">
-            <button
-              @click="submitAnswer"
-              :disabled="!selectedAnswer || isSubmitting"
-              :class="[
-                'px-8 py-3 font-bold rounded-lg transition-all duration-300 transform',
-                selectedAnswer && !isSubmitting
-                  ? 'bg-gradient-to-r from-green-600 to-green-700 hover:from-green-500 hover:to-green-600 text-white border-2 border-green-400 hover:scale-105 shadow-lg shadow-green-500/30'
-                  : 'bg-gray-600 text-gray-400 border-2 border-gray-500 cursor-not-allowed'
-              ]"
-            >
-              {{ isSubmitting ? 'PROCESSING...' : 'SUBMIT ANSWER' }}
-            </button>
           </div>
 
           <!-- Result Display -->
           <div v-if="showingResult" class="text-center">
             <div v-if="lastAnswerCorrect" class="mb-6">
-              <div class="text-6xl mb-4">✅</div>
-              <h3 class="text-2xl font-bold text-green-400 mb-2">CORRECT!</h3>
-              <p class="text-gray-300 mb-4">{{ currentPuzzle.correctAnswer }}</p>
-              <div class="text-green-400">🚪 Door unlocking...</div>
+              <div class="text-4xl sm:text-6xl mb-4 animate-bounce">✅</div>
+              <h3 class="text-xl sm:text-2xl font-bold text-green-400 mb-2">CORRECT!</h3>
+              <p class="text-gray-300 mb-4 text-sm sm:text-base">{{ currentPuzzle.correctAnswer }}</p>
+              <div class="text-green-400 animate-pulse">🚪 Door unlocking...</div>
             </div>
             
             <div v-else class="mb-6">
-              <div class="text-6xl mb-4">❌</div>
-              <h3 class="text-2xl font-bold text-red-400 mb-2">WRONG ANSWER!</h3>
-              <p class="text-red-300 mb-4">{{ currentPuzzle.wrongMessage }}</p>
-              <div class="text-red-400 animate-pulse">⚠️ Oxygen depleting rapidly...</div>
+              <div class="text-4xl sm:text-6xl mb-4 animate-bounce">❌</div>
+              <h3 class="text-xl sm:text-2xl font-bold text-red-400 mb-2">WRONG ANSWER!</h3>
+              <p class="text-red-300 mb-4 text-sm sm:text-base">{{ currentPuzzle.wrongMessage }}</p>
+              <div class="text-red-400 animate-pulse mb-4">⚠️ Oxygen depleting rapidly...</div>
+              <button
+                @click="retryPuzzle"
+                class="px-8 py-4 font-bold bg-gradient-to-r from-red-600 to-red-700 hover:from-red-500 hover:to-red-600 text-white rounded-lg border-2 border-red-400 transition-all duration-300 transform hover:scale-105 shadow-xl shadow-red-500/40 text-sm sm:text-base"
+              >
+                <span class="drop-shadow-lg">🔄 TRY AGAIN</span>
+              </button>
             </div>
-            
-            <button
-              v-if="lastAnswerCorrect"
-              @click="nextPuzzle"
-              class="px-8 py-3 font-bold bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-500 hover:to-blue-600 text-white rounded-lg border-2 border-blue-400 transition-all duration-300 transform hover:scale-105 shadow-lg shadow-blue-500/30"
-            >
-              CONTINUE
-            </button>
-            
-            <button
-              v-else
-              @click="retryPuzzle"
-              class="px-8 py-3 font-bold bg-gradient-to-r from-red-600 to-red-700 hover:from-red-500 hover:to-red-600 text-white rounded-lg border-2 border-red-400 transition-all duration-300 transform hover:scale-105 shadow-lg shadow-red-500/30"
-            >
-              TRY AGAIN
-            </button>
           </div>
         </div>
 
         <!-- Progress Bar -->
-        <div class="mt-8 max-w-md mx-auto">
+        <div class="mt-4 sm:mt-8 max-w-md mx-auto">
           <div class="text-sm text-gray-400 mb-2">Progress</div>
-          <div class="w-full bg-gray-800 rounded-full h-3 border border-gray-600">
+          <div class="w-full bg-gray-800 rounded-full h-2 sm:h-3 border border-gray-600">
             <div 
               class="h-full bg-gradient-to-r from-yellow-500 to-green-500 rounded-full transition-all duration-500"
               :style="{ width: `${(currentPuzzleIndex / puzzles.length) * 100}%` }"
@@ -194,14 +182,14 @@
       </div>
 
       <!-- Victory Screen -->
-      <div v-else-if="gameState === 'victory'" class="fade-in text-center max-w-2xl mx-auto">
-        <div class="mb-8">
-          <div class="text-8xl mb-6 animate-bounce">🎉</div>
-          <h1 class="text-4xl md:text-6xl font-black mb-4 bg-gradient-to-r from-green-400 via-yellow-400 to-green-400 bg-clip-text text-transparent">
+      <div v-else-if="gameState === 'victory'" class="fade-in text-center max-w-2xl mx-auto px-4">
+        <div class="mb-6 sm:mb-8">
+          <div class="text-6xl sm:text-8xl mb-6 animate-bounce">🎉</div>
+          <h1 class="text-3xl sm:text-4xl md:text-6xl font-black mb-4 bg-gradient-to-r from-green-400 via-yellow-400 to-green-400 bg-clip-text text-transparent">
             ESCAPED!
           </h1>
-          <div class="bg-black/80 p-6 rounded-lg border border-green-500 mb-8">
-            <p class="text-lg text-gray-300 leading-relaxed">
+          <div class="bg-black/90 p-4 sm:p-6 rounded-lg border border-green-500 mb-6 sm:mb-8 backdrop-blur-sm">
+            <p class="text-base sm:text-lg text-gray-300 leading-relaxed">
               🎊 Congratulations! You've successfully escaped the MedLabConvo facility!
             </p>
             <p class="text-green-400 mt-4 font-bold">
@@ -212,21 +200,21 @@
         
         <button 
           @click="resetGame"
-          class="px-8 py-4 text-xl font-bold bg-gradient-to-r from-green-600 to-green-700 hover:from-green-500 hover:to-green-600 rounded-lg border-2 border-green-400 shadow-lg shadow-green-500/30 transition-all duration-300 transform hover:scale-105"
+          class="px-8 py-4 text-lg sm:text-xl font-bold bg-gradient-to-r from-green-600 to-green-700 hover:from-green-500 hover:to-green-600 text-white rounded-lg border-2 border-green-400 shadow-xl shadow-green-500/40 transition-all duration-300 transform hover:scale-105 w-full sm:w-auto max-w-sm mx-auto"
         >
-          PLAY AGAIN
+          <span class="drop-shadow-lg">🎮 PLAY AGAIN</span>
         </button>
       </div>
 
       <!-- Game Over Screen -->
-      <div v-else-if="gameState === 'gameOver'" class="fade-in text-center max-w-2xl mx-auto">
-        <div class="mb-8">
-          <div class="text-8xl mb-6">💀</div>
-          <h1 class="text-4xl md:text-6xl font-black mb-4 text-red-500">
+      <div v-else-if="gameState === 'gameOver'" class="fade-in text-center max-w-2xl mx-auto px-4">
+        <div class="mb-6 sm:mb-8">
+          <div class="text-6xl sm:text-8xl mb-6 animate-pulse">💀</div>
+          <h1 class="text-3xl sm:text-4xl md:text-6xl font-black mb-4 text-red-500">
             GAME OVER
           </h1>
-          <div class="bg-black/80 p-6 rounded-lg border border-red-500 mb-8">
-            <p class="text-lg text-gray-300 leading-relaxed mb-4">
+          <div class="bg-black/90 p-4 sm:p-6 rounded-lg border border-red-500 mb-6 sm:mb-8 backdrop-blur-sm">
+            <p class="text-base sm:text-lg text-gray-300 leading-relaxed mb-4">
               ⚰️ Oxygen depleted. Protocol failed.
             </p>
             <p class="text-red-400">
@@ -237,9 +225,9 @@
         
         <button 
           @click="resetGame"
-          class="px-8 py-4 text-xl font-bold bg-gradient-to-r from-red-600 to-red-700 hover:from-red-500 hover:to-red-600 rounded-lg border-2 border-red-400 shadow-lg shadow-red-500/30 transition-all duration-300 transform hover:scale-105"
+          class="px-8 py-4 text-lg sm:text-xl font-bold bg-gradient-to-r from-red-600 to-red-700 hover:from-red-500 hover:to-red-600 text-white rounded-lg border-2 border-red-400 shadow-xl shadow-red-500/40 transition-all duration-300 transform hover:scale-105 w-full sm:w-auto max-w-sm mx-auto"
         >
-          TRY AGAIN
+          <span class="drop-shadow-lg">🔄 TRY AGAIN</span>
         </button>
       </div>
     </div>
@@ -277,28 +265,26 @@ let timerInterval: NodeJS.Timeout | null = null
 let oxygenInterval: NodeJS.Timeout | null = null
 
 // Audio
-const alarmAudio = ref<HTMLAudioElement>()
-const successAudio = ref<HTMLAudioElement>()
-const failAudio = ref<HTMLAudioElement>()
+const backgroundAudio = ref<HTMLAudioElement>()
 
 // Computed
 const showOxygenMeter = computed(() => gameState.value === 'playing')
 const showTimer = computed(() => gameState.value === 'playing' && currentPuzzle.value.timeLimit && !showingResult.value)
 
-// Puzzles Data
+// Updated Puzzles Data with new first question options
 const puzzles = ref<Puzzle[]>([
   {
     title: 'MedLabConvo Origins',
     description: 'A heavy metal door blocks your path. Ancient mechanisms click and whir as biometric scanners activate.',
     question: 'Who founded MedLabConvo?',
-    correctAnswer: 'Gabriel Oke, Odinaka Obeta and Emmanuel Awa',
+    correctAnswer: 'Gabriel Oke, Emmanuel Awa, Obeta Odinaka',
     wrongMessage: 'Door seals shut! Toxic gas fills the chamber!',
     type: 'select',
     options: [
-      'Gabriel Oke, Odinaka Obeta and Emmanuel Awa',
-      'John Smith, Mary Johnson and David Wilson',
-      'Sarah Connor, Kyle Reese and John Connor',
-      'Tony Stark, Bruce Wayne and Clark Kent'
+      'Olamide Esther, Better Ajiboye, Oluwaponmile Sanni',
+      'Emmanuel Awa, Ogunkoya Muyiwa, Obeta Odinaka',
+      'Gabriel Oke, Emmanuel Awa, Obeta Odinaka',
+      'Gabriel Oke, Jimoh Sherifat, Emmanuel Awa'
     ],
     timeLimit: 30
   },
@@ -358,10 +344,15 @@ const startGame = () => {
   isEmergency.value = true
   startTimer()
   startOxygenDepletion()
+  startBackgroundAudio()
 }
 
-const selectAnswer = (answer: string) => {
+// New method for select options - auto submit on selection
+const selectAndSubmitAnswer = async (answer: string) => {
+  if (isSubmitting.value) return
+  
   selectedAnswer.value = answer
+  await submitAnswer()
 }
 
 const submitAnswer = async () => {
@@ -383,10 +374,12 @@ const submitAnswer = async () => {
   
   if (isCorrect) {
     oxygenLevel.value = Math.min(100, oxygenLevel.value + 20)
-    successAudio.value?.play().catch(() => {})
+    // Auto advance to next puzzle after 2 seconds if correct
+    setTimeout(() => {
+      nextPuzzle()
+    }, 2000)
   } else {
     oxygenLevel.value = Math.max(0, oxygenLevel.value - 30)
-    failAudio.value?.play().catch(() => {})
     
     if (oxygenLevel.value <= 0) {
       setTimeout(() => {
@@ -427,6 +420,7 @@ const resetGame = () => {
   isEmergency.value = false
   stopTimer()
   stopOxygenDepletion()
+  stopBackgroundAudio()
 }
 
 const startTimer = () => {
@@ -481,10 +475,25 @@ const stopOxygenDepletion = () => {
   }
 }
 
+const startBackgroundAudio = () => {
+  if (backgroundAudio.value) {
+    backgroundAudio.value.volume = 0.3
+    backgroundAudio.value.play().catch(() => {})
+  }
+}
+
+const stopBackgroundAudio = () => {
+  if (backgroundAudio.value) {
+    backgroundAudio.value.pause()
+    backgroundAudio.value.currentTime = 0
+  }
+}
+
 // Lifecycle
 onUnmounted(() => {
   stopTimer()
   stopOxygenDepletion()
+  stopBackgroundAudio()
 })
 
 // Watch for game state changes
@@ -493,19 +502,44 @@ watch(gameState, (newState) => {
     stopOxygenDepletion()
     oxygenLevel.value = 100
     isEmergency.value = false
+    stopBackgroundAudio()
   } else if (newState === 'gameOver') {
     stopOxygenDepletion()
     isEmergency.value = false
+    stopBackgroundAudio()
   }
 })
 
 definePageMeta({
-    layout: 'empty'
+  layout: 'empty'
 })
 </script>
 
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600;700&display=swap');
+
+:root {
+  --brand-primary: #27628C;
+  --brand-secondary: #1e4a6b;
+}
+
+.bg-brand-primary {
+  background-color: var(--brand-primary);
+}
+
+.bg-brand-secondary {
+  background-color: var(--brand-secondary);
+}
+
+.from-brand-secondary {
+  --tw-gradient-from: var(--brand-secondary);
+  --tw-gradient-to: rgb(30 74 107 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.to-brand-secondary {
+  --tw-gradient-to: var(--brand-secondary);
+}
 
 .flicker {
   animation: flicker 0.5s infinite alternate;
@@ -535,5 +569,57 @@ definePageMeta({
 @keyframes fadeIn {
   0% { opacity: 0; transform: translateY(20px); }
   100% { opacity: 1; transform: translateY(0); }
+}
+
+.particle {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.particle-1 {
+  width: 4px;
+  height: 4px;
+  top: 20%;
+  left: 10%;
+  animation: float 6s infinite ease-in-out;
+}
+
+.particle-2 {
+  width: 6px;
+  height: 6px;
+  top: 60%;
+  right: 15%;
+  animation: float 8s infinite ease-in-out reverse;
+}
+
+.particle-3 {
+  width: 3px;
+  height: 3px;
+  bottom: 30%;
+  left: 70%;
+  animation: float 5s infinite ease-in-out;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px) translateX(0px); }
+  25% { transform: translateY(-20px) translateX(10px); }
+  50% { transform: translateY(-10px) translateX(-5px); }
+  75% { transform: translateY(-30px) translateX(15px); }
+}
+
+/* Mobile responsive improvements */
+@media (max-width: 640px) {
+  .text-3xl { font-size: 1.875rem; }
+  .text-4xl { font-size: 2.25rem; }
+  .text-6xl { font-size: 3rem; }
+  .text-8xl { font-size: 4rem; }
+}
+
+/* Custom backdrop blur for better mobile performance */
+.backdrop-blur-sm {
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
 }
 </style>
