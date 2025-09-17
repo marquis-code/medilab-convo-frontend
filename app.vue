@@ -18,10 +18,10 @@ let intervalId: number;
 onMounted(() => {
   launchConfetti();
 
-  // Runs confetti every 10s (5s on, 5s off)
+  // Runs confetti every 20s (10s on, 10s off)
   intervalId = window.setInterval(() => {
     launchConfetti();
-  }, 10_000);
+  }, 20_000);
 });
 
 onBeforeUnmount(() => {
