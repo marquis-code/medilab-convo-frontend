@@ -24,7 +24,7 @@
         <p class="text-gray-600 mb-6">Join in the celebration!</p>
   
         <NuxtLink
-          to="/celebrating-medlabconupdatedvo@6"
+          to="/celebrating-medlabconvo@6"
           class="inline-block px-6 py-3 bg-[#27628C] text-white font-semibold rounded-lg shadow hover:bg-blue-500 transition"
         >
           Create Your DP
