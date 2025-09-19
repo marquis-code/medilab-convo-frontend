@@ -14,6 +14,23 @@
     <!-- Siren Light -->
     <div v-if="gameState !== 'welcome'" class="siren fixed top-16 right-2 sm:top-20 sm:right-4 w-6 h-6 sm:w-8 sm:h-8 bg-red-500 rounded-full shadow-lg shadow-red-500/50 z-30"></div>
     
+    <!-- Audio Controls -->
+    <!-- <div class="fixed top-4 left-4 z-50 flex items-center gap-2">
+      <button 
+        @click="toggleMute" 
+        :class="[
+          'p-2 rounded-full border-2 transition-all duration-300 backdrop-blur-sm',
+          isMuted ? 'bg-red-500/80 border-red-400 text-white hover:bg-red-600/80' : 'bg-green-500/80 border-green-400 text-white hover:bg-green-600/80'
+        ]"
+        :title="isMuted ? 'Unmute Background Music' : 'Mute Background Music'"
+      >
+        <span class="text-lg">{{ isMuted ? '🔇' : '🎵' }}</span>
+      </button>
+      <div class="text-xs text-gray-400 bg-black/50 px-2 py-1 rounded backdrop-blur-sm">
+        {{ isMuted ? 'Muted' : 'Playing' }}
+      </div>
+    </div> -->
+    
   <section class="p-3 space-y-3">
         <!-- Oxygen Meter -->
     <div v-if="showOxygenMeter" class="sm:top-4 bg-black/95 p-3 sm:p-4 flex justify-between items-center rounded-lg border-2 border-red-500 z-30 backdrop-blur-md">
@@ -42,8 +59,16 @@
   </section>
 
     <!-- Background Audio -->
-    <audio ref="backgroundAudio" loop preload="auto" class="hidden">
-      <source src="https://www.soundjay.com/misc/sounds/bell-ringing-05.wav" type="audio/wav">
+    <audio 
+      ref="backgroundAudio" 
+      loop 
+      preload="auto" 
+      class="hidden"
+      @canplaythrough="handleAudioLoaded"
+      @error="handleAudioError"
+    >
+      <source src="/background-music.mp3" type="audio/mp3">
+      <source src="/background-music2.mp3" type="audio/mp3">
     </audio>
 
     <!-- Game Container -->
@@ -264,8 +289,11 @@ const isEmergency = ref(false)
 let timerInterval: NodeJS.Timeout | null = null
 let oxygenInterval: NodeJS.Timeout | null = null
 
-// Audio
+// Audio State
 const backgroundAudio = ref<HTMLAudioElement>()
+const isMuted = ref(false)
+const audioLoaded = ref(false)
+let userInteracted = ref(false)
 
 // Computed
 const showOxygenMeter = computed(() => gameState.value === 'playing')
@@ -337,20 +365,83 @@ const puzzles = ref<Puzzle[]>([
 
 const currentPuzzle = computed(() => puzzles.value[currentPuzzleIndex.value])
 
-// Methods
-const startGame = () => {
+// Audio Methods
+const initializeAudio = async () => {
+  if (!backgroundAudio.value || !audioLoaded.value) return
+  
+  try {
+    backgroundAudio.value.volume = 0.3
+    backgroundAudio.value.loop = true
+    
+    if (!isMuted.value) {
+      await backgroundAudio.value.play()
+      console.log('Background music started playing')
+    }
+  } catch (error) {
+    console.warn('Could not auto-play audio:', error)
+    // Audio will start when user first interacts
+  }
+}
+
+const handleAudioLoaded = () => {
+  audioLoaded.value = true
+  if (userInteracted.value) {
+    initializeAudio()
+  }
+}
+
+const handleAudioError = (error: Event) => {
+  console.warn('Audio failed to load:', error)
+}
+
+const toggleMute = async () => {
+  if (!backgroundAudio.value || !audioLoaded.value) return
+  
+  userInteracted.value = true
+  isMuted.value = !isMuted.value
+  
+  try {
+    if (isMuted.value) {
+      backgroundAudio.value.pause()
+    } else {
+      backgroundAudio.value.volume = 0.3
+      await backgroundAudio.value.play()
+    }
+  } catch (error) {
+    console.warn('Error toggling audio:', error)
+  }
+}
+
+const forceStartAudio = async () => {
+  if (!backgroundAudio.value || !audioLoaded.value || isMuted.value) return
+  
+  try {
+    userInteracted.value = true
+    backgroundAudio.value.volume = 0.3
+    await backgroundAudio.value.play()
+  } catch (error) {
+    console.warn('Force start audio failed:', error)
+  }
+}
+
+// Game Methods
+const startGame = async () => {
   gameState.value = 'playing'
   oxygenLevel.value = 100
   isEmergency.value = true
   startTimer()
   startOxygenDepletion()
-  startBackgroundAudio()
+  
+  // Ensure audio starts when game begins
+  userInteracted.value = true
+  await forceStartAudio()
 }
 
 // New method for select options - auto submit on selection
 const selectAndSubmitAnswer = async (answer: string) => {
   if (isSubmitting.value) return
   
+  userInteracted.value = true
   selectedAnswer.value = answer
   await submitAnswer()
 }
@@ -358,7 +449,13 @@ const selectAndSubmitAnswer = async (answer: string) => {
 const submitAnswer = async () => {
   if (!selectedAnswer.value || isSubmitting.value) return
   
+  userInteracted.value = true
   isSubmitting.value = true
+  
+  // Ensure audio continues playing after user interaction
+  if (!isMuted.value) {
+    await forceStartAudio()
+  }
   
   // Simulate processing delay
   await new Promise(resolve => setTimeout(resolve, 1000))
@@ -403,10 +500,16 @@ const nextPuzzle = () => {
   startTimer()
 }
 
-const retryPuzzle = () => {
+const retryPuzzle = async () => {
+  userInteracted.value = true
   selectedAnswer.value = ''
   showingResult.value = false
   startTimer()
+  
+  // Ensure audio continues
+  if (!isMuted.value) {
+    await forceStartAudio()
+  }
 }
 
 const resetGame = () => {
@@ -420,7 +523,9 @@ const resetGame = () => {
   isEmergency.value = false
   stopTimer()
   stopOxygenDepletion()
-  stopBackgroundAudio()
+  
+  // Keep background music playing even when resetting
+  // Don't stop the audio, just let it continue
 }
 
 const startTimer = () => {
@@ -475,25 +580,38 @@ const stopOxygenDepletion = () => {
   }
 }
 
-const startBackgroundAudio = () => {
-  if (backgroundAudio.value) {
-    backgroundAudio.value.volume = 0.3
-    backgroundAudio.value.play().catch(() => {})
-  }
-}
-
-const stopBackgroundAudio = () => {
-  if (backgroundAudio.value) {
-    backgroundAudio.value.pause()
-    backgroundAudio.value.currentTime = 0
+// Handle user interaction for audio autoplay
+const handleUserInteraction = async () => {
+  if (!userInteracted.value && audioLoaded.value) {
+    userInteracted.value = true
+    await forceStartAudio()
   }
 }
 
 // Lifecycle
+onMounted(() => {
+  // Add event listeners for user interaction
+  const events = ['click', 'keydown', 'touchstart']
+  events.forEach(event => {
+    document.addEventListener(event, handleUserInteraction, { once: true })
+  })
+  
+  // Try to start audio immediately if possible
+  nextTick(() => {
+    if (audioLoaded.value) {
+      initializeAudio()
+    }
+  })
+})
+
 onUnmounted(() => {
   stopTimer()
   stopOxygenDepletion()
-  stopBackgroundAudio()
+  
+  if (backgroundAudio.value) {
+    backgroundAudio.value.pause()
+    backgroundAudio.value.currentTime = 0
+  }
 })
 
 // Watch for game state changes
@@ -502,11 +620,18 @@ watch(gameState, (newState) => {
     stopOxygenDepletion()
     oxygenLevel.value = 100
     isEmergency.value = false
-    stopBackgroundAudio()
+    // Keep background music playing
   } else if (newState === 'gameOver') {
     stopOxygenDepletion()
     isEmergency.value = false
-    stopBackgroundAudio()
+    // Keep background music playing
+  }
+})
+
+// Watch for audio loaded state
+watch(audioLoaded, (loaded) => {
+  if (loaded && userInteracted.value) {
+    initializeAudio()
   }
 })
 
@@ -622,4 +747,5 @@ definePageMeta({
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
 }
+
 </style>
