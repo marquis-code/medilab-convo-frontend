@@ -12,7 +12,7 @@
         <img src="/6years-bg.png" alt="Background" class="absolute inset-0 w-full h-full object-cover" />
         <img src="/medlabconvo-logo.png" alt="Logo" class="absolute top-0 left-6 w-20" />
 
-        <div class="absolute inset-x-6 top-24 bg-white/60 rounded-lg p-4 text-center">
+        <div class="absolute inset-x-6 top-24 bg-white/60 rounded-lg px-4 py-6 text-center flex items-center justify-center">
           <img
             src="/testimonial.png"
             alt="text"
@@ -33,8 +33,8 @@
             <span v-else class="text-gray-500 text-2xl">+</span>
             <input type="file" accept="image/*" class="hidden" ref="fileInput" @change="onFileChange" />
           </div>
-          <p class="mt-2 font-semibold text-gray-100 bg-[#27628C] px-3 py-1 rounded-lg">
-            {{ authorName || "Your Name" }}
+        <p  class="mt-2 font-semibold text-gray-100 bg-[#27628C] px-3 py-1 rounded-lg max-w-[200px] truncate">
+           {{ authorName || "Your Name" }}
           </p>
         </div>
       </div>
@@ -81,43 +81,53 @@
       </div>
     </div>
 
-    <div v-else class="flex flex-col items-center space-y-4">
-      <h3 class="text-lg font-bold text-[#27628C] text-center mb-10">
-        Your Celebration Flier is Ready! 🎊🎊
-      </h3>
+    <div v-else class="flex flex-col items-center space-y-6">
+  <h3 class="text-lg font-bold text-[#27628C] text-center mb-6">
+    Your Celebration Flier is Ready! 🎊🎊
+  </h3>
 
-      <img :src="generatedUrl" alt="Generated DP" class="rounded-lg shadow-lg max-w-xs" />
+  <img :src="generatedUrl" alt="Generated DP" class="rounded-lg shadow-lg max-w-xs" />
 
-      <div class="flex gap-4 mt-4 flex-wrap justify-center">
-        <button
-          @click="downloadImage"
-          :disabled="isDownloading"
-          class="px-4 py-2 bg-[#27628C] text-white rounded-md hover:bg-blue-400 disabled:opacity-50 disabled:cursor-not-allowed"
-        >
-          <span v-if="isDownloading">⬇️ Downloading...</span>
-          <span v-else>Download Now</span>
-        </button>
+  <!-- Download + Back buttons -->
+  <div class="flex gap-4 mt-4 flex-wrap justify-center">
+    <button
+      @click="downloadImage"
+      :disabled="isDownloading"
+      class="px-4 py-2 bg-[#27628C] text-white rounded-md hover:bg-blue-400 disabled:opacity-50 disabled:cursor-not-allowed"
+    >
+      <span v-if="isDownloading">⬇️ Downloading...</span>
+      <span v-else>Download Now</span>
+    </button>
 
-        <button
-          @click="shareImageFile"
-          class="px-4 py-2 bg-green-600 text-white rounded-md hover:bg-green-700"
-        >
-          📤 Share
-        </button>
+    <button
+      @click="resetForm"
+      class="px-4 py-2 bg-gray-500 text-white rounded-md hover:bg-gray-600"
+    >
+      Go Back
+    </button>
+  </div>
+  <p class="text-xs text-gray-500 text-center px-6">
+    💡 If download doesn’t work, right-click (or long-press on mobile) the generated image and select
+    <b>Save Image</b>.
+  </p>
 
-        <button
-          @click="resetForm"
-          class="px-4 py-2 bg-gray-500 text-white rounded-md hover:bg-gray-600"
-        >
-          Go Back
-        </button>
-      </div>
+  <!-- Share section -->
+  <div class="mt-6 w-full max-w-xs text-center flex flex-col items-center">
+    <h4 class="font-bold text-[#27628C] mb-2">SHARE DIRECTLY TO YOUR SOCIALS</h4>
 
-      <p class="text-xs text-gray-500 text-center px-6">
-        💡 If download doesn’t work, right-click (or long-press on mobile) the generated image and select
-        <b>Save Image</b>.
-      </p>
-    </div>
+    <button
+      @click="shareImageFile"
+      class="px-6 py-2 bg-green-600 text-white rounded-md hover:bg-green-700"
+    >
+      📤 Share
+    </button>
+
+    <p class="text-xs text-gray-500 mt-2">
+      📋 Caption is copied to your clipboard automatically — just paste after sharing.
+    </p>
+  </div>
+</div>
+
   </div>
 </template>
 
