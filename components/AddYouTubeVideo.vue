@@ -6,7 +6,6 @@
       </div>
   
       <div class="relative max-w-6xl mx-auto">
-        <!--Header-->
         <div v-if="title" class="text-center mb-12">
           <h2 class="text-3xl font-bold text-gray-900 mb-4 leading-tight">
             <span class="bg-gradient-to-r from-[#27628C] via-blue-600 to-cyan-500 bg-clip-text text-transparent">
@@ -18,7 +17,7 @@
           </p>
         </div>
   
-        <!--Video Grid-->
+        <!-- Video Grid-->
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div v-for="(videoId, index) in videoIds" :key="index" class="aspect-video w-full">
             <iframe

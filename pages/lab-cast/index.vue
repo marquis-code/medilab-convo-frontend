@@ -130,7 +130,8 @@
     
     <!-- Video Section -->
     <div class="container mx-auto py-10">
-      <FrameVideo />
+      <!-- <FrameVideo /> -->
+      <LabCastVideo/>
     </div>
 
     <!-- All Episodes Section -->
@@ -265,6 +266,8 @@
 
 <script setup lang="ts">
 import { useGetLabCasts } from "@/composables/modules/labcast/useGetLabCasts"
+import LabCastVideo from '~/components/LabCastVideo.vue'
+
 
 const { labcasts, loading } = useGetLabCasts()
 

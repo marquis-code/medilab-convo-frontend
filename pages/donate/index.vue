@@ -106,19 +106,37 @@
       </div>
     </div>
 
-        <!-- Testimonials Section -->
-        <!-- <section class="py-20 bg-gradient-to-br from-gray-50 to-blue-50 mt-20">
-      <div class="max-w-7xl mx-auto px-6 lg:px-8">
-        <div class="text-center mb-16">
-          <h2 class="text-sm font-semibold tracking-wider text-[#27628C] uppercase mb-4">Testimonials From Some of Our Programs</h2>
-        </div>
-      </div>
-    </section> -->
+ 
     <AddYouTubeVideo
-    title="Watch Our Highlights"
+    title="See What Some People Are Saying"
     subtitle="Catch some moments from our programs and activities"
     :video-ids="['qS_vrYnoprk', 'j-PppaKgAC4']"
   />
+  <section class="relative py-10 bg-gradient-to-br from-slate-50 via-blue-50 to-white overflow-hidden">
+    <div class="absolute inset-0 overflow-hidden">
+        <div class="absolute -top-40 -right-40 w-80 h-80 bg-blue-100 rounded-full opacity-30 animate-float"></div>
+        <div class="absolute -bottom-20 -left-20 w-60 h-60 bg-indigo-100 rounded-full opacity-40 animate-float-delayed"></div>
+      </div>
+      <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div v-for="(testimonial, idx) in testimonials" :key="idx" class="group">
+            <div
+              class="bg-white rounded-3xl p-4 shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 h-full">
+              <div class="flex items-center mb-6">
+                <img class="h-12 w-12 rounded-full object-cover" src="@/assets/img/avatar.jpeg" alt="">
+                <div class="ml-4">
+                  <div class="font-bold text-gray-900">{{ testimonial.name }}</div>
+                  <div class="text-sm text-gray-500">MLS Professional</div>
+                </div>
+              </div>
+              <blockquote class="text-gray-700 leading-relaxed">
+                "{{ testimonial.testimonial }}"
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
 
     <div class="flex justify-center items-center px-4 mt-20">
       <div class="max-w-[900px] w-full flex flex-col justify-center items-center">
@@ -176,7 +194,20 @@
 import { ref } from 'vue';
 import AddYouTubeVideo from '@/components/AddYouTubeVideo.vue'
 
-
+const testimonials = ref([
+  {
+    name: 'Raphael Yohanna',
+    testimonial: `The masterclass has tweaked my thoughts and ideas on the scholarship application process and has motivated me to review my application materials and make necessary changes to better suit my research interests for a more compelling application.`
+  },
+  {
+    name: 'Precious Adesola',
+    testimonial: `Over the past few weeks, this comprehensive masterclass has equipped me with effective strategies and invaluable resources to navigate scholarship applications successfully. I am deeply grateful to MedLabConvo for offering this exceptional and free masterclass.`
+  },
+  {
+    name: 'Modupe Laja',
+    testimonial: `The amazing work by MedLabConvo truly inspired me during my years in school and up till now. I love to see the amazing things the team is doing.`
+  }
+])
 const textToCopy = ref('2226584232');
 const copied = ref(false);
 
