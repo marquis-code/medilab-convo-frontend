@@ -2,7 +2,7 @@ import confetti from "canvas-confetti";
 
 export function useConfetti() {
   const launchConfetti = () => {
-    const duration = 5 * 1000; // 5 seconds
+    const duration = 5 * 1000;
     const end = Date.now() + duration;
 
     (function frame() {
