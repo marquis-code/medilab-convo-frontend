@@ -8,33 +8,11 @@
   </main>
 </template>
 
-<script lang="ts" setup>
-import { onMounted, onBeforeUnmount } from "vue";
-import { useConfetti } from "@/composables/UseConfetti";
-
-const { launchConfetti } = useConfetti();
-let intervalId: number;
-
-onMounted(() => {
-  launchConfetti();
-
-  // Runs confetti every 20s (10s on, 10s off)
-  intervalId = window.setInterval(() => {
-    launchConfetti();
-  }, 20_000);
-});
-
-onBeforeUnmount(() => {
-  clearInterval(intervalId);
-});
-</script>
-
 <style>
 body {
-  font-family: 'Roobert PRO', sans-serif;
+    font-family: 'Roobert PRO', sans-serif;
 }
 </style>
-
 
 
 
@@ -53,11 +31,41 @@ body {
   </main>
 </template>
 
+<script lang="ts" setup>
+import { onMounted, onBeforeUnmount } from "vue";
+import { useConfetti } from "@/composables/UseConfetti";
+
+const { launchConfetti } = useConfetti();
+let intervalId: number;
+
+onMounted(() => {
+  launchConfetti();
+
+  intervalId = window.setInterval(() => {
+    launchConfetti();
+  }, 20_000);
+});
+
+onBeforeUnmount(() => {
+  clearInterval(intervalId);
+});
+</script>
+
 <style>
 body {
-    font-family: 'Roobert PRO', sans-serif;
+  font-family: 'Roobert PRO', sans-serif;
 }
 </style> -->
+
+
+
+
+
+
+
+
+
+
 
 
 

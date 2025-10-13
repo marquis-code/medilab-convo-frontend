@@ -616,12 +616,12 @@
         </div>
       </div>
     </div>
-    <AnniversaryPopup />
+    <!-- <AnniversaryPopup /> -->
   </main>
 </template>
 
 <script setup lang="ts">
-import AnniversaryPopup from "@/components/AnniversaryPopup.vue";
+// import AnniversaryPopup from "@/components/AnniversaryPopup.vue";
 import { useYoutubeVideo } from '@/composables/useYoutubeVideo';
 import labcast from '@/assets/img/latest-labcast.jpg'
 const isOpen = ref(false)
