@@ -505,7 +505,7 @@
                 <img class="h-12 w-12 rounded-full object-cover" src="@/assets/img/avatar.jpeg" alt="">
                 <div class="ml-4">
                   <div class="font-bold text-gray-900">{{ testimonial.name }}</div>
-                  <div class="text-sm text-gray-500">MLS Professional</div>
+                  <div class="text-sm text-gray-500">Biomedical Scientist</div>
                 </div>
               </div>
               <blockquote class="text-gray-700 leading-relaxed">

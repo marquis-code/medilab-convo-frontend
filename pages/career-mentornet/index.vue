@@ -25,10 +25,10 @@
       <div class="grid md:grid-cols-3 gap-10 items-start">
         <div class="md:col-span-2 order-2 md:order-1">
           <h2 class="text-2xl md:text-3xl font-bold text-[#27628C] mb-3">
-            Message from the International Community
+            Message from the Interntional Community
           </h2>
           <p class="text-gray-700 leading-relaxed mb-4">
-            The International Community of MedLabConvo welcomes all participants embarking on
+            The Interntional Community of MedLabConvo welcomes all participants embarking on
             the transformative journey of the Career Mentornet Program — designed to support
             Medical Laboratory Science graduates through mentorship, professional development,
             and holistic growth.
@@ -59,7 +59,7 @@
               >
                 👥
               </div>
-              <p><b>Structure:</b> 100 mentors × 100 mentees</p>
+              <p><b>Structure:</b> 100 mentors × 100 mentees (one-on-one)</p>
             </li>
             <li class="flex items-center gap-3">
               <div

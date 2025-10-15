@@ -106,37 +106,122 @@
       </div>
     </div>
 
- 
-    <AddYouTubeVideo
-    title="See What Some People Are Saying"
-    subtitle="Catch some moments from our programs and activities"
-    :video-ids="['qS_vrYnoprk', 'j-PppaKgAC4']"
-  />
-  <section class="relative py-10 bg-gradient-to-br from-slate-50 via-blue-50 to-white overflow-hidden">
-    <div class="absolute inset-0 overflow-hidden">
-        <div class="absolute -top-40 -right-40 w-80 h-80 bg-blue-100 rounded-full opacity-30 animate-float"></div>
-        <div class="absolute -bottom-20 -left-20 w-60 h-60 bg-indigo-100 rounded-full opacity-40 animate-float-delayed"></div>
+
+    <AddYouTubeVideo title="See What Some People Are Saying"
+      subtitle="Catch some moments from our programs and activities" :video-ids="['qS_vrYnoprk', 'j-PppaKgAC4']" />
+      <section class="relative py-10 bg-gradient-to-br from-slate-50 via-blue-50 to-white overflow-hidden">
+  <div class="absolute inset-0 overflow-hidden">
+    <div class="absolute -top-40 -right-40 w-80 h-80 bg-blue-100 rounded-full opacity-30 animate-float"></div>
+    <div class="absolute -bottom-20 -left-20 w-60 h-60 bg-indigo-100 rounded-full opacity-40 animate-float-delayed"></div>
+  </div>
+
+  <div class="max-w-7xl mx-auto px-6 lg:px-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div v-for="(testimonial, idx) in testimonials" :key="idx" class="group">
+        <div
+          class="bg-white rounded-3xl p-4 shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 h-full">
+          <div class="flex items-center mb-6">
+            <img class="h-12 w-12 rounded-full object-cover" src="@/assets/img/avatar.jpeg" alt="">
+            <div class="ml-4">
+              <div class="font-bold text-gray-900">{{ testimonial.name }}</div>
+              <div class="text-sm text-gray-500">{{ testimonial.profession }}</div>
+            </div>
+          </div>
+          <blockquote class="text-gray-700 leading-relaxed">
+            "{{ testimonial.testimonial }}"
+          </blockquote>
+        </div>
       </div>
-      <div class="max-w-7xl mx-auto px-6 lg:px-8">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div v-for="(testimonial, idx) in testimonials" :key="idx" class="group">
-            <div
-              class="bg-white rounded-3xl p-4 shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 h-full">
-              <div class="flex items-center mb-6">
-                <img class="h-12 w-12 rounded-full object-cover" src="@/assets/img/avatar.jpeg" alt="">
-                <div class="ml-4">
-                  <div class="font-bold text-gray-900">{{ testimonial.name }}</div>
-                  <div class="text-sm text-gray-500">MLS Professional</div>
-                </div>
-              </div>
-              <blockquote class="text-gray-700 leading-relaxed">
-                "{{ testimonial.testimonial }}"
-              </blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- <ProgramsCarousel /> -->
+
+
+    <!-- Donation Rewards -->
+    <section class="relative py-16 bg-gradient-to-br from-blue-50 via-white to-slate-50 overflow-hidden">
+      <div class="absolute inset-0 overflow-hidden">
+        <div class="absolute -top-20 -left-20 w-60 h-60 bg-blue-100 rounded-full opacity-30 animate-float"></div>
+        <div
+          class="absolute -bottom-20 -right-20 w-72 h-72 bg-indigo-100 rounded-full opacity-40 animate-float-delayed">
+        </div>
+      </div>
+
+      <div class="relative max-w-6xl mx-auto px-6 lg:px-8">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-8">
+          Donation Appreciation Packages
+        </h2>
+        <p class="text-lg text-gray-700 text-center max-w-3xl mx-auto mb-10 leading-relaxed">
+          Every donation counts! Show your support for MedLabConvo and receive a
+          token of appreciation — our way of saying <span class="font-semibold">thank you</span>
+          for helping us build a stronger community of Biomedical Scientists.
+        </p>
+
+        <!-- Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mb-16 place-items-center">
+          <div class="w-full max-w-sm bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition">
+            <img src="@/assets/img/email-sample.jpg" alt="Personalized Email Sample" class="w-full h-48 object-cover" />
+            <div class="p-4">
+              <h3 class="text-lg font-semibold text-[#27628C] mb-1">
+                Personalized Email
+              </h3>
+              <p class="text-gray-600 text-sm">
+                Every donor receives a heartfelt personalized thank-you email.
+              </p>
+            </div>
+          </div>
+
+          <div class="w-full max-w-sm bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition">
+            <img src="@/assets/img/thankyou-card.jpg" alt="Thank You Card Sample" class="w-full h-48 object-cover" />
+            <div class="p-4">
+              <h3 class="text-lg font-semibold text-[#27628C] mb-1">
+                Thank You Card
+              </h3>
+              <p class="text-gray-600 text-sm">
+                For donations of ₦5,000 and above, receive a personalized
+                thank-you card in addition to your email.
+              </p>
+            </div>
+          </div>
+
+          <div class="w-full max-w-sm bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition">
+            <!-- <img
+          src="@/assets/img/souvenir.jpg"
+          alt="Souvenir Sample"
+          class="w-full h-48 object-cover"
+        /> -->
+            <div class="p-4">
+              <h3 class="text-lg font-semibold text-[#27628C] mb-1">Souvenir</h3>
+              <p class="text-gray-600 text-sm">
+                For donations of ₦50,000 and above, receive an exclusive souvenir
+                along with your card and email.
+              </p>
             </div>
           </div>
         </div>
+
+        <!-- Summary -->
+        <div
+          class="bg-white/80 border border-[#27628C]/20 rounded-2xl shadow-lg p-8 max-w-3xl mx-auto text-center space-y-3">
+          <p class="text-sm font-semibold text-[#27628C] uppercase tracking-wide">
+            You can donate any amount 💙
+          </p>
+          <p class="text-gray-700 leading-relaxed">
+            <span class="font-semibold">₦0+</span>: Personalized appreciation email.
+          </p>
+          <p class="text-gray-700 leading-relaxed">
+            <span class="font-semibold">₦5,000+</span>: Personalized email +
+            thank-you card.
+          </p>
+          <p class="text-gray-700 leading-relaxed">
+            <span class="font-semibold">₦50,000+</span>: Personalized email +
+            thank-you card + MedLabConvo souvenir.
+          </p>
+        </div>
       </div>
-  </section>
+    </section>
+
 
     <div class="flex justify-center items-center px-4 mt-20">
       <div class="max-w-[900px] w-full flex flex-col justify-center items-center">
@@ -147,8 +232,7 @@
           By supporting MedLabConvo, you are investing in a future where medical laboratory scientists are better
           equipped, more connected, and more empowered to drive change in healthcare.
         </p>
-        <p
-          class="text-3xl font-bold text-gray-900 text-center mt-14">
+        <p class="text-3xl font-bold text-gray-900 text-center mt-14">
           Donate Today and Be Part of the Change!
         </p>
       </div>
@@ -194,20 +278,25 @@
 import { ref } from 'vue';
 import AddYouTubeVideo from '@/components/AddYouTubeVideo.vue'
 
+
 const testimonials = ref([
   {
     name: 'Raphael Yohanna',
+    profession: 'Biomedical Scientist',
     testimonial: `The masterclass has tweaked my thoughts and ideas on the scholarship application process and has motivated me to review my application materials and make necessary changes to better suit my research interests for a more compelling application.`
   },
   {
     name: 'Precious Adesola',
+    profession: 'Biomedical Scientist',
     testimonial: `Over the past few weeks, this comprehensive masterclass has equipped me with effective strategies and invaluable resources to navigate scholarship applications successfully. I am deeply grateful to MedLabConvo for offering this exceptional and free masterclass.`
   },
   {
     name: 'Modupe Laja',
+    profession: 'Physiotherapist',
     testimonial: `The amazing work by MedLabConvo truly inspired me during my years in school and up till now. I love to see the amazing things the team is doing.`
   }
 ])
+
 const textToCopy = ref('2226584232');
 const copied = ref(false);
 
