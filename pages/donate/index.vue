@@ -109,34 +109,49 @@
 
     <AddYouTubeVideo title="See What Some People Are Saying"
       subtitle="Catch some moments from our programs and activities" :video-ids="['qS_vrYnoprk', 'j-PppaKgAC4']" />
-      <section class="relative py-10 bg-gradient-to-br from-slate-50 via-blue-50 to-white overflow-hidden">
-  <div class="absolute inset-0 overflow-hidden">
-    <div class="absolute -top-40 -right-40 w-80 h-80 bg-blue-100 rounded-full opacity-30 animate-float"></div>
-    <div class="absolute -bottom-20 -left-20 w-60 h-60 bg-indigo-100 rounded-full opacity-40 animate-float-delayed"></div>
-  </div>
-
-  <div class="max-w-7xl mx-auto px-6 lg:px-8">
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-      <div v-for="(testimonial, idx) in testimonials" :key="idx" class="group">
-        <div
-          class="bg-white rounded-3xl p-4 shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 h-full">
-          <div class="flex items-center mb-6">
-            <img class="h-12 w-12 rounded-full object-cover" src="@/assets/img/avatar.jpeg" alt="">
-            <div class="ml-4">
-              <div class="font-bold text-gray-900">{{ testimonial.name }}</div>
-              <div class="text-sm text-gray-500">{{ testimonial.profession }}</div>
-            </div>
-          </div>
-          <blockquote class="text-gray-700 leading-relaxed">
-            "{{ testimonial.testimonial }}"
-          </blockquote>
+    <section class="relative py-10 bg-gradient-to-br from-slate-50 via-blue-50 to-white overflow-hidden">
+      <div class="absolute inset-0 overflow-hidden">
+        <div class="absolute -top-40 -right-40 w-80 h-80 bg-blue-100 rounded-full opacity-30 animate-float"></div>
+        <div class="absolute -bottom-20 -left-20 w-60 h-60 bg-indigo-100 rounded-full opacity-40 animate-float-delayed">
         </div>
       </div>
-    </div>
-  </div>
-</section>
 
-<ProgramsCarousel />
+      <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div v-for="(testimonial, idx) in testimonials" :key="idx" class="group">
+            <div
+              class="bg-white rounded-3xl p-4 shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 h-full">
+              <div class="flex items-center mb-6">
+                <img class="h-12 w-12 rounded-full object-cover" src="@/assets/img/avatar.jpeg" alt="">
+                <div class="ml-4">
+                  <div class="font-bold text-gray-900">{{ testimonial.name }}</div>
+                  <div class="text-sm text-gray-500">{{ testimonial.profession }}</div>
+                </div>
+              </div>
+              <blockquote class="text-gray-700 leading-relaxed">
+                "{{ testimonial.testimonial }}"
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="relative py-16 lg:px-20 bg-gradient-to-b from-slate-50 via-blue-50 to-white overflow-hidden">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="text-center mb-10">
+          <h2 class="text-2xl lg:text-3xl font-bold text-[#27628C] mb-2">
+            Our Past Programs
+          </h2>
+          <p class="text-gray-600 max-w-2xl mx-auto">
+            Take a look at some of the impactful programs we’ve organized over the years.
+          </p>
+        </div>
+      </div>
+      <ProgramsCarousel />
+      <div class="mt-10"></div>
+      <ProgramsCarousel />
+    </section>
 
 
     <!-- Donation Rewards -->
