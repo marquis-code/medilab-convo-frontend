@@ -136,7 +136,7 @@
   </div>
 </section>
 
-<!-- <ProgramsCarousel /> -->
+<ProgramsCarousel />
 
 
     <!-- Donation Rewards -->
