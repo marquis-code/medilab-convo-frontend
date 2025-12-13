@@ -14,7 +14,6 @@
                             <h3 class="text-lg font-semibold text-[#27628C] mb-2">
                                 {{ flyer.title }}
                             </h3>
-                            <p class="text-sm text-gray-600">{{ flyer.date }}</p>
                         </div>
                     </div>
                 </div>
@@ -48,10 +47,15 @@
 
 <script setup lang="ts">
 import { ref, onMounted, onBeforeUnmount, watch, nextTick } from 'vue'
-import conference from '@/assets/img/conference.jpeg'
-import FACP from '@/assets/img/forging-a-career-path.jpg'
-import FL from '@/assets/img/financial-literacy.jpeg'
-import scholarship from '@/assets/img/scholarship.jpeg'
+import one from '@/assets/img/past-programs/one.jpg'
+import two from '@/assets/img/past-programs/two.jpg'
+import three from '@/assets/img/past-programs/three.jpg'
+import four from '@/assets/img/past-programs/four.jpg'
+import five from '@/assets/img/past-programs/five.jpg'
+import six from '@/assets/img/past-programs/six.jpg'
+import seven from '@/assets/img/past-programs/seven.jpg'
+import eight from '@/assets/img/past-programs/eight.jpg'
+
 
 /* ----- Config ----- */
 const AUTOPLAY = true
@@ -60,10 +64,14 @@ const INTERVAL = 3500
 
 const carousel = ref<HTMLElement | null>(null)
 const flyers = ref([
-    { title: '21st Century Biomedical Science Conference', date: '2025', image: conference },
-    { title: 'Forging a Career Path Series', date: '2025', image: FACP },
-    { title: 'Financial Literacy', date: '2025', image: FL },
-    { title: 'Scholarship Application Masterclass', date: '2025', image: scholarship },
+    { title: 'Outreach', image: one },
+    { title: 'Outreach', image: two },
+    { title: 'Outreach', image: three },
+    { title: 'Outreach', image: four },
+    { title: 'Outreach', image: five },
+    { title: 'Outreach', image: six },
+    { title: 'Outreach', image: seven },
+    { title: 'Outreach', image: eight }
 ])
 
 const activePage = ref(0)
