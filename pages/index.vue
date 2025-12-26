@@ -24,8 +24,11 @@
               MedLabConvo
             </span>
           </h1>
-          <p class="text-2xl sm:text-3xl lg:text-4xl text-blue-100 italic font-light mb-8 animate-fade-in-delay">
+          <!-- <p class="text-2xl sm:text-3xl lg:text-4xl text-blue-100 italic font-light mb-8 animate-fade-in-delay">
             Lead, Build, Inspire
+          </p> -->
+          <p class="text-2xl sm:text-3xl lg:text-4xl text-blue-100 italic font-light mb-8 animate-fade-in-delay">
+            A Platform for Laboratory Science, Health Innovation, and Workforce Development
           </p>
           <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mt-12">
             <a href="#programs"
@@ -43,37 +46,28 @@
 
     <!-- Mission Statement Video Section -->
      <VideoHero />
-     <!-- <HeroVideo /> -->
-     <!-- <div class="py-20 px-6 lg:px-8 bg-gradient-to-b from-gray-50 to-white">
-      <div class="max-w-6xl mx-auto">
-        <h2 class="text-3xl  lg:text-5xl font-bold text-center text-gray-900 mb-12 leading-tight">
-          <span class="bg-gradient-to-r from-[#27628C] to-blue-600 bg-clip-text text-transparent">
-            Transforming Healthcare
-          </span>
-          <br>
-          <span class="text-gray-700">One Lab Professional at a Time</span>
-        </h2>
-        <p class="text-xl text-gray-600 text-center mb-12 max-w-4xl mx-auto leading-relaxed">
-          We are leading change, inspiring action, and building the capacity of future generations of world-class
-          professionals in medical laboratory science and in the healthcare system at large.
-        </p>
-        <div class="relative rounded-3xl overflow-hidden shadow-2xl group">
-          <iframe src="/intro-video.mp4" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-            class="w-full h-96 sm:h-[500px] lg:h-[600px] transition-transform duration-300 group-hover:scale-105"></iframe>
-          <div
-            class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-          </div>
+   <!--Section -->
+   <section id="programs" class="py-10 bg-white">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl  font-bold text-gray-900 mb-4">
+            <span class="bg-gradient-to-r from-[#27628C] to-blue-600 bg-clip-text text-transparent">
+Our Target Audience  </span>
+          </h2>
+          <div class="w-24 h-1 bg-gradient-to-r from-[#27628C] to-blue-600 mx-auto rounded-full"></div>
         </div>
-      </div>
-    </div> -->
+        <p class="text-xl text-gray-600 mb-2 max-w-4xl mx-auto leading-relaxed transform transition-all duration-1000 delay-300">
+          Our work supports students, early career professionals, institutions, and partners navigating the future of laboratory medicine and health technology.
+        </p>
+      </div>      
+    </section>
+
 
     <!-- {{ programs }} -->
 
     <!-- Programs Section -->
     <section id="programs" class="py-20 bg-white">
-      <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="max-w-7xl mx-auto px-2 lg:px-4">
         <div class="text-center mb-16">
           <h2 class="text-3xl  font-bold text-gray-900 mb-4">
             <span class="bg-gradient-to-r from-[#27628C] to-blue-600 bg-clip-text text-transparent">
