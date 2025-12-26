@@ -27,7 +27,7 @@
           <!-- <p class="text-2xl sm:text-3xl lg:text-4xl text-blue-100 italic font-light mb-8 animate-fade-in-delay">
             Lead, Build, Inspire
           </p> -->
-          <p class="text-2xl sm:text-3xl lg:text-4xl text-blue-100 italic font-light mb-8 animate-fade-in-delay">
+          <p class="text-2xl sm:text-2xl lg:text-2xl text-blue-100 italic font-light mb-8 animate-fade-in-delay">
             A Platform for Laboratory Science, Health Innovation, and Workforce Development
           </p>
           <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mt-12">
