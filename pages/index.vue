@@ -42,7 +42,7 @@
           </div>
           <div class="text-center mt-12">
 
-            <p class="flex justify-center gap-3 text-2xl sm:text-3xl lg:text-4xl
+            <p class="flex justify-center gap-3 text-2xl
            text-blue-100 italic font-light">
               <span class="animate-fade-word [animation-delay:0s]">
                 Lead
