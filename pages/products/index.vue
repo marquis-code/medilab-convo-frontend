@@ -11,7 +11,7 @@
             <div class="mx-auto max-w-7xl px-6 lg:px-8 flex justify-center items-center flex-col pt-16">
               <div class="mx-auto max-w-2xl lg:mx-0 flex justify-center items-center flex-col">
                 <h2  class="text-4xl font-bold tracking-tight uppercase text-white sm:text-6xl">Products</h2>
-                <p  class="mt-6 text-lg leading-8 text-white text-center">Welcome to the MedLabConvo Products page, where we offer a diverse range of high-quality items designed to support your journey in medical laboratory science and beyond. Whether you're looking to enhance your knowledge, gear up for the lab, or show off your professional pride, we have something for everyone. </p>
+                <p  class="mt-6 text-lg leading-8 text-white text-center">We develop and curate digital resources, toolkits, guides, and learning materials that support evidence based practice, career progression, and innovation adoption within healthcare systems.</p>
               </div>
             </div>
           </div>

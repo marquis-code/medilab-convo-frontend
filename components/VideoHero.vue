@@ -26,6 +26,11 @@
             We are leading change, inspiring action, and building the capacity of future generations of world-class
             professionals in medical laboratory science and in the healthcare system at large.
           </p>
+          <p class="text-xl text-gray-600 mb-12 max-w-4xl mx-auto leading-relaxed transform transition-all duration-1000 delay-300"
+             :class="{ 'translate-y-0 opacity-100': headerVisible, 'translate-y-10 opacity-0': !headerVisible }">
+             We design and deliver digital programs, content products, advocacy programs and professional development services
+             that strengthen technical capacity, leadership, and innovation readiness across the healthcare workforce. Our work supports students, early career professionals, institutions, and partners navigating the future of laboratory medicine and health technology.
+          </p>
         </div>
 
         <!-- Full Width Video Section -->

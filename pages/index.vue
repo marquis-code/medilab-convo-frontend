@@ -82,6 +82,10 @@
           </h2>
           <div class="w-24 h-1 bg-gradient-to-r from-[#27628C] to-blue-600 mx-auto rounded-full"></div>
         </div>
+        <p class="text-xl text-gray-600 mb-12 max-w-4xl mx-auto leading-relaxed transform transition-all duration-1000 delay-300">
+             We design structured digital programs that support career development, leadership training, and workforce readiness in medical laboratory science and allied health fields. Our programs combine expert led learning, practical insights, and applied professional skills.
+
+          </p>
 
         <div v-if="loading" class="flex justify-center items-center py-20">
           <div class="animate-spin rounded-full h-12 w-12 border-b-2 border-[#27628C]"></div>
@@ -492,8 +496,9 @@
         <div class="text-center mb-16">
           <h2 class="text-sm font-semibold tracking-wider text-[#27628C] uppercase mb-4">Testimonials</h2>
           <p class="text-3xl  font-bold text-gray-900 mb-4">
-            We have impacted thousands of <span
-              class="bg-gradient-to-r from-[#27628C] to-blue-600 bg-clip-text text-transparent">amazing people</span>
+            MedLabConvo has supported thousands of laboratory professionals and healthcare learners through digital engagement, education, mentorship, and community driven learning.
+            <!-- We have impacted thousands of <span -->
+              <!-- class="bg-gradient-to-r from-[#27628C] to-blue-600 bg-clip-text text-transparent">amazing people</span> -->
           </p>
         </div>
 
@@ -557,6 +562,9 @@
             <img class="h-12 w-auto object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
               src="@/assets/img/partner6.jpeg" alt="Partner 6">
           </div>
+          <p class="text-xl text-gray-900 mb-8 mt-6">
+            We collaborate with academic institutions, professional bodies, non profits, health organisations, and innovation partners to deliver impactful digital programs, content, and workforce development initiatives.
+          </p>
           <a href="mailto:admin@medlabconvo.com?subject=Partnership%20Enquiry"
             class="inline-flex items-center bg-[#27628C] text-white mt-16 px-8 py-4 rounded-full font-bold text-lg hover:bg-opacity-30 hover:text-[#27628C] transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
             aria-label="Email us to partner">
@@ -575,6 +583,8 @@
     <div class="bg-gray-100 py-10">
       <div class="max-w-4xl mx-auto text-center">
         <h2 class="text-2xl font-bold text-[#27628C] pb-6">STAY IN THE KNOW</h2>
+        <p class="text-xl text-gray-900 mb-8">
+          Subscribe to our newsletter for insights, programs, and opportunities in laboratory science and healthcare innovation.          </p>
         <a href="https://forms.gle/pg4UR6XQvZRLqK2NA" class="mt-4 bg-[#27628C] text-white px-6 py-3 rounded-lg"
           aria-label="Subscribe to our newsletter">
           Subscribe to our newsletter

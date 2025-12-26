@@ -12,7 +12,7 @@
             LabCast
           </h2>
           <p class="mt-6 text-lg leading-8 text-center text-gray-100 animate-slide-up-delay">
-            LabCast is the podcast dedicated to exploring the dynamic world of medical laboratory science...
+            Conversations with laboratory scientists, public health experts, health innovators, and policy leaders shaping the future of healthcare.
           </p>
         </div>
       </div>

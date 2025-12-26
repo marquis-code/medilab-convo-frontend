@@ -23,10 +23,7 @@
             Journo
           </h2>
           <p class="mt-6 text-lg leading-8 text-center text-gray-100 animate-fade-in-up animation-delay-200">
-            Journo is the go-to platform for insightful stories, expert perspectives, and in-depth analysis on all things related to medical
-            laboratory science and healthcare. Whether you're a student, a professional, or just passionate about
-            healthcare, Journo delivers content that informs, educates, and sparks conversation within the medical
-            community.
+            Insight driven articles, opinion pieces, and explainers on medical laboratory science, digital health, research, careers, and global health systems.
           </p>
         </div>
       </div>

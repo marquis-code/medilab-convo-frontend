@@ -23,7 +23,8 @@
                 <div class="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center">
                   <div class="w-full max-w-xl lg:shrink-0 xl:max-w-2xl">
                     <h1  class="text-4xl font-bold text-gray-900 sm:text-5xl">
-                      We are transforming how medical laboratory and other healthcare students and professionals are connecting and networking across boundaries and barriers
+                      We operate a global digital community connecting laboratory professionals, researchers, innovators, and health leaders. Our platform enables peer learning, mentorship, collaboration, and cross border exchange.
+                      <!-- We are transforming how medical laboratory and other healthcare students and professionals are connecting and networking across boundaries and barriers -->
                       <!-- We are transforming how medical laboratory science students and professionals are connecting and networking accross the continent -->
                     </h1>
                     <!-- <p class="relative mt-6 text-lg leading-8 text-gray-600 sm:max-w-md lg:max-w-none">Cupidatat minim id magna ipsum sint dolor qui. Sunt sit in quis cupidatat mollit aute velit. Et labore commodo nulla aliqua proident mollit ullamco exercitation tempor. Sint aliqua anim nulla sunt mollit id pariatur in voluptate cillum. Eu voluptate tempor esse minim amet fugiat veniam occaecat aliqua.</p> -->
