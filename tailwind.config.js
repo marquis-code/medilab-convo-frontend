@@ -37,7 +37,19 @@ module.exports = {
           900: "#1a1a1a",
           925: "#0d0d0d",
         },
-      }
+      },
+      keyframes: {
+        fadeWord: {
+          '0%': { opacity: '0' },
+          '10%': { opacity: '1' },
+          '30%': { opacity: '1' },
+          '40%': { opacity: '0' },
+          '100%': { opacity: '0' },
+        },
+      },
+      animation: {
+        'fade-word': 'fadeWord 6s infinite',
+      },
     },
   },
   variants: {

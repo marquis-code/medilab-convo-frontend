@@ -40,26 +40,45 @@
               Learn More
             </a>
           </div>
+          <div class="text-center mt-12">
+
+            <p class="flex justify-center gap-3 text-2xl sm:text-3xl lg:text-4xl
+           text-blue-100 italic font-light">
+              <span class="animate-fade-word [animation-delay:0s]">
+                Lead
+              </span>
+
+              <span class="animate-fade-word [animation-delay:2s]">
+                Build
+              </span>
+
+              <span class="animate-fade-word [animation-delay:4s]">
+                Inspire
+              </span>
+            </p>
+          </div>
         </div>
       </div>
     </div>
 
     <!-- Mission Statement Video Section -->
-     <VideoHero />
-   <!--Section -->
-   <section id="programs" class="py-10 bg-white">
+    <VideoHero />
+    <!--Target Audience Section -->
+    <section id="programs" class="py-10 bg-white">
       <div class="max-w-7xl mx-auto px-6 lg:px-8">
         <div class="text-center mb-16">
           <h2 class="text-3xl  font-bold text-gray-900 mb-4">
             <span class="bg-gradient-to-r from-[#27628C] to-blue-600 bg-clip-text text-transparent">
-Our Target Audience  </span>
+              Our Target Audience </span>
           </h2>
           <div class="w-24 h-1 bg-gradient-to-r from-[#27628C] to-blue-600 mx-auto rounded-full"></div>
         </div>
-        <p class="text-xl text-gray-600 mb-2 max-w-4xl mx-auto leading-relaxed transform transition-all duration-1000 delay-300">
-          Our work supports students, early career professionals, institutions, and partners navigating the future of laboratory medicine and health technology.
+        <p
+          class="text-xl text-gray-600 mb-2 max-w-4xl mx-auto leading-relaxed transform transition-all duration-1000 delay-300">
+          Our work supports students, early career professionals, institutions, and partners navigating the future of
+          laboratory medicine and health technology.
         </p>
-      </div>      
+      </div>
     </section>
 
 
@@ -76,10 +95,13 @@ Our Target Audience  </span>
           </h2>
           <div class="w-24 h-1 bg-gradient-to-r from-[#27628C] to-blue-600 mx-auto rounded-full"></div>
         </div>
-        <p class="text-xl text-gray-600 mb-12 max-w-4xl mx-auto leading-relaxed transform transition-all duration-1000 delay-300">
-             We design structured digital programs that support career development, leadership training, and workforce readiness in medical laboratory science and allied health fields. Our programs combine expert led learning, practical insights, and applied professional skills.
+        <p
+          class="text-xl text-gray-600 mb-12 max-w-4xl mx-auto leading-relaxed transform transition-all duration-1000 delay-300">
+          We design structured digital programs that support career development, leadership training, and workforce
+          readiness in medical laboratory science and allied health fields. Our programs combine expert led learning,
+          practical insights, and applied professional skills.
 
-          </p>
+        </p>
 
         <div v-if="loading" class="flex justify-center items-center py-20">
           <div class="animate-spin rounded-full h-12 w-12 border-b-2 border-[#27628C]"></div>
@@ -490,9 +512,10 @@ Our Target Audience  </span>
         <div class="text-center mb-16">
           <h2 class="text-sm font-semibold tracking-wider text-[#27628C] uppercase mb-4">Testimonials</h2>
           <p class="text-3xl  font-bold text-gray-900 mb-4">
-            MedLabConvo has supported thousands of laboratory professionals and healthcare learners through digital engagement, education, mentorship, and community driven learning.
+            MedLabConvo has supported thousands of laboratory professionals and healthcare learners through digital
+            engagement, education, mentorship, and community driven learning.
             <!-- We have impacted thousands of <span -->
-              <!-- class="bg-gradient-to-r from-[#27628C] to-blue-600 bg-clip-text text-transparent">amazing people</span> -->
+            <!-- class="bg-gradient-to-r from-[#27628C] to-blue-600 bg-clip-text text-transparent">amazing people</span> -->
           </p>
         </div>
 
@@ -556,11 +579,12 @@ Our Target Audience  </span>
             <img class="h-12 w-auto object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
               src="@/assets/img/partner6.jpeg" alt="Partner 6">
           </div>
-          <p class="text-xl text-gray-900 mb-8 mt-6">
-            We collaborate with academic institutions, professional bodies, non profits, health organisations, and innovation partners to deliver impactful digital programs, content, and workforce development initiatives.
+          <p class="text-xl text-gray-900 mb-2 mt-16">
+            We collaborate with academic institutions, professional bodies, non profits, health organisations, and
+            innovation partners to deliver impactful digital programs, content, and workforce development initiatives.
           </p>
           <a href="mailto:admin@medlabconvo.com?subject=Partnership%20Enquiry"
-            class="inline-flex items-center bg-[#27628C] text-white mt-16 px-8 py-4 rounded-full font-bold text-lg hover:bg-opacity-30 hover:text-[#27628C] transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+            class="inline-flex items-center bg-[#27628C] text-white mt-6 px-8 py-4 rounded-full font-bold text-lg hover:bg-opacity-30 hover:text-[#27628C] transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
             aria-label="Email us to partner">
             Partner With Us
             <span class="ml-2 flex items-center justify-center w-6 h-6 bg-white rounded-full">
@@ -578,7 +602,8 @@ Our Target Audience  </span>
       <div class="max-w-4xl mx-auto text-center">
         <h2 class="text-2xl font-bold text-[#27628C] pb-6">STAY IN THE KNOW</h2>
         <p class="text-xl text-gray-900 mb-8">
-          Subscribe to our newsletter for insights, programs, and opportunities in laboratory science and healthcare innovation.          </p>
+          Subscribe to our newsletter for insights, programs, and opportunities in laboratory science and healthcare
+          innovation. </p>
         <a href="https://forms.gle/pg4UR6XQvZRLqK2NA" class="mt-4 bg-[#27628C] text-white px-6 py-3 rounded-lg"
           aria-label="Subscribe to our newsletter">
           Subscribe to our newsletter
@@ -637,9 +662,9 @@ import { useGetLabCasts } from "@/composables/modules/labcast/useGetLabCasts"
 
 const { labcasts, loading: loadingLabcasts } = useGetLabCasts()
 const { publications, loading: loadingPublications } = useGetPublications()
-const { programs, loading: fetchingPrograms} = useGetPrograms()
- const journosList = ref([
- {
+const { programs, loading: fetchingPrograms } = useGetPrograms()
+const journosList = ref([
+  {
     title: 'FORGING A CAREER PATH 4.0',
     image: convo,
     desc: `The FACP program aims to expand the career horizons of young professionals and students in medical laboratory science by showcasing diverse opportunities beyond traditional clinical roles. In response to the evollving healthcare landscape. the program highlights various career paths within and outside the medical laboratory field, encouraging participants to explore their potential.`,
@@ -648,7 +673,7 @@ const { programs, loading: fetchingPrograms} = useGetPrograms()
     status: 'latest',
     registerUrl: '#'
   },
- ])
+])
 
 const { videoUrl } = useYoutubeVideo('rhVkU6HAbn0'); // Example video ID
 console.log(videoUrl.value); // should log "https://www.youtube.com/embed/rhVkU6HAbn0"
@@ -682,6 +707,31 @@ const testimonials = ref([
 </script>
 
 <style scoped>
+@keyframes fadeOnly {
+  0% {
+    opacity: 0;
+    filter: blur(4px);
+  }
+
+  10% {
+    opacity: 1;
+    filter: blur(0);
+  }
+
+  30% {
+    opacity: 1;
+  }
+
+  40% {
+    opacity: 0;
+    filter: blur(4px);
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
 .youtube-video {
   max-width: 800px;
   margin: 0 auto;
