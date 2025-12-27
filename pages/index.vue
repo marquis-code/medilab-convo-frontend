@@ -41,22 +41,24 @@
             </a>
           </div>
           <div class="text-center mt-12">
+  <p
+    class="relative inline-block h-[1.2em] 
+           text-2xl text-blue-100 italic font-light"
+  >
+    <span class="word inset-0 animate-fade-word [animation-delay:0.3s]">
+      Lead
+    </span>
 
-            <p class="flex justify-center gap-3 text-2xl
-           text-blue-100 italic font-light">
-              <span class="animate-fade-word [animation-delay:0s]">
-                Lead
-              </span>
+    <span class="word inset-0 animate-fade-word [animation-delay:2.3s]">
+      Build
+    </span>
 
-              <span class="animate-fade-word [animation-delay:2s]">
-                Build
-              </span>
+    <span class="word inset-0 animate-fade-word [animation-delay:4.3s]">
+      Inspire
+    </span>
+  </p>
+</div>
 
-              <span class="animate-fade-word [animation-delay:4s]">
-                Inspire
-              </span>
-            </p>
-          </div>
         </div>
       </div>
     </div>
@@ -707,29 +709,12 @@ const testimonials = ref([
 </script>
 
 <style scoped>
-@keyframes fadeOnly {
-  0% {
-    opacity: 0;
-    filter: blur(4px);
-  }
-
-  10% {
-    opacity: 1;
-    filter: blur(0);
-  }
-
-  30% {
-    opacity: 1;
-  }
-
-  40% {
-    opacity: 0;
-    filter: blur(4px);
-  }
-
-  100% {
-    opacity: 0;
-  }
+.word {
+  position: absolute;
+  inset: 0;
+  opacity: 0;    
+  animation-fill-mode: both;
+  text-align: center;
 }
 
 .youtube-video {

@@ -40,15 +40,16 @@ module.exports = {
       },
       keyframes: {
         fadeWord: {
-          '0%': { opacity: '0' },
-          '10%': { opacity: '1' },
-          '30%': { opacity: '1' },
-          '40%': { opacity: '0' },
+          '0%':   { opacity: '0', filter: 'blur(6px)' },
+          '20%':  { opacity: '0' },
+          '30%':  { opacity: '1', filter: 'blur(0)' },
+          '45%':  { opacity: '1' },
+          '55%':  { opacity: '0', filter: 'blur(6px)' },
           '100%': { opacity: '0' },
         },
       },
       animation: {
-        'fade-word': 'fadeWord 6s infinite',
+        'fade-word': 'fadeWord 8s infinite',
       },
     },
   },
