@@ -48,7 +48,7 @@
   <VideoHero />
 
   <!-- 2. NEW SECTION: Transforming Healthcare (Add after Mission Statement Video Section) -->
-  <!-- <section id="about" class="py-24 bg-gradient-to-br from-white via-blue-50/30 to-white">
+  <section id="about" class="py-24 bg-gradient-to-br from-white via-blue-50/30 to-white">
     <div class="max-w-7xl mx-auto px-6 lg:px-8">
       <div class="text-center mb-16">
         <h2 class="text-4xl font-bold text-gray-900 mb-6">
@@ -70,7 +70,7 @@
         </p>
       </div>
     </div>
-  </section> -->
+  </section>
 
   <!-- 3. NEW SECTION: What We Do (Replace the current Target Audience section) -->
   <section id="what-we-do" class="py-24 bg-white">

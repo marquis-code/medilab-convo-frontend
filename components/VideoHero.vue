@@ -8,8 +8,31 @@
 
     <div class="relative py-20 px-6 lg:px-8">
       <div class="max-w-6xl mx-auto">
+          <section id="about" class="py-24 bg-gradient-to-br from-white via-blue-50/30 to-white">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold text-gray-900 mb-6">
+          <span class="bg-gradient-to-r from-[#27628C] to-blue-600 bg-clip-text text-transparent">
+            Transforming Healthcare
+          </span>
+        </h2>
+        <p class="text-2xl font-light text-gray-700 mb-4">
+          Through Digital Services for Laboratory Professionals
+        </p>
+        <div class="w-24 h-1 bg-gradient-to-r from-[#27628C] to-blue-600 mx-auto rounded-full"></div>
+      </div>
+      <div class="max-w-4xl mx-auto">
+        <p class="text-lg text-gray-600 leading-relaxed mb-6">
+          MedLabConvo is a digital service organisation advancing medical laboratory science and healthcare through knowledge platforms, professional tools, data-driven programs, and innovation-focused services.
+        </p>
+        <p class="text-lg text-gray-600 leading-relaxed">
+          We design and deliver digital programs, content products, advocacy programs and professional development services that strengthen technical capacity, leadership, and innovation readiness across the healthcare workforce.
+        </p>
+      </div>
+    </div>
+  </section>
         <!-- Header -->
-        <div class="text-center mb-16" ref="headerRef">
+        <!-- <div class="text-center mb-16" ref="headerRef">
           <h2 class="text-4xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight transform transition-all duration-1000"
               :class="{ 'translate-y-0 opacity-100': headerVisible, 'translate-y-10 opacity-0': !headerVisible }">
             <span class="bg-gradient-to-r from-[#27628C] via-blue-600 to-cyan-500 bg-clip-text text-transparent">
@@ -31,7 +54,7 @@
              We design and deliver digital programs, content products, advocacy programs and professional development services
              that strengthen technical capacity, leadership, and innovation readiness across the healthcare workforce.
           </p>
-        </div>
+        </div> -->
 
         <!-- Full Width Video Section -->
         <div class="relative w-full" ref="videoRef">
