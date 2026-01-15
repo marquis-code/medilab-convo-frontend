@@ -1,4 +1,4 @@
-<!-- <template>
+<template>
     <div class="overflow-hidden bg-white mt-20">
         <div class="relative mx-auto max-w-7xl px-6 py-16 lg:px-8">
             <div class="absolute bottom-0 left-3/4 top-0 hidden w-screen bg-[#27628C] lg:block"></div>
@@ -22,8 +22,8 @@
                     <div class="relative mx-auto max-w-prose text-base lg:max-w-none">
                         <figure>
                             <img class="w-full rounded-lg object-cover shadow-lg lg:aspect-auto"
-                                src="@/assets/img/updates1.jpeg"
-                                alt="Whitney leaning against a railing on a downtown street" width="1184" height="1376">
+                                src="@/assets/img/origins2026.jpg"
+                                alt="origins 2026" width="1184" height="1376">
                         </figure>
                     </div>
                 </div>
@@ -80,7 +80,14 @@
         </section>
 
        <div class="flex justify-center items-center my-10 p-3 lg:p-0">
-        <a href="https://forms.gle/gnmMNvg4VZo66EdF7" class="text-white text-center bg-[#27628C] rounded-lg w-full px-6 py-3.5 max-w-lg">Register</a>
+        <a 
+  href="https://forms.gle/5xBM7GdA65nQeMzU9"
+  target="_blank"
+  rel="noopener noreferrer"
+  class="text-white text-center bg-[#27628C] rounded-lg w-full px-6 py-3.5 max-w-lg"
+>
+  Register
+</a>
        </div>
     </div>
 
@@ -269,7 +276,7 @@ function openModal(speaker: any) {
 function closeModal() {
   isModalVisible.value = false;
 }
-</script> -->
+</script>
 
 
 <!-- BIOMEDICAL CONFERENCE -->
@@ -599,17 +606,15 @@ function closeModal() {
 
 
 
-<template>
+<!-- <template>
   <div class="overflow-hidden bg-white mt-20">
  <div class="relative mx-auto max-w-7xl px-6 py-16 lg:px-8">
-<!-- Background elements -->
 <div class="absolute bottom-0 left-3/4 top-0 hidden w-screen bg-[#27628C] lg:block"></div>
       
       <div class="absolute top-10 right-10 opacity-20 animate-pulse hidden lg:block">
         <DnaHelix />
       </div>
       
-      <!-- Animated dots pattern -->
       <div class="absolute left-0 top-20 -ml-20 hidden lg:block">
         <svg width="404" height="384" fill="none" viewBox="0 0 404 384" aria-hidden="true" class="animate-float">
           <defs>
@@ -758,8 +763,6 @@ function closeModal() {
 
 <script setup lang="ts">
 
-// const route = useRoute();
-// const id = route.params.id;
 
 import speaker1 from '@/assets/img/nancy-facp4.jpg'
 import speaker2 from '@/assets/img/oyeniyi-facp4.jpg'
@@ -887,7 +890,6 @@ function closeModal() {
 </script>
 
 <style>
-/* Custom animations */
 @keyframes float {
   0% {
     transform: translateY(0px);
@@ -965,4 +967,4 @@ function closeModal() {
 .delay-500 {
   animation-delay: 0.5s;
 }
-</style>
+</style> -->

@@ -34,13 +34,13 @@
             Learn More
           </a>
         </div>
-        <div class="text-center mt-12">
+        <!-- <div class="text-center mt-12">
           <p class="relative inline-block h-[1.2em] text-2xl text-blue-100 italic font-light">
             <span class="word inset-0 animate-fade-word [animation-delay:0.3s]">Lead</span>
             <span class="word inset-0 animate-fade-word [animation-delay:2.3s]">Build</span>
             <span class="word inset-0 animate-fade-word [animation-delay:4.3s]">Inspire</span>
           </p>
-        </div>
+        </div> -->
       </div>
     </div>
   </div>
