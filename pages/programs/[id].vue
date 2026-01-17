@@ -119,7 +119,7 @@ const schedules = ref([
   {
     image: speaker1,
     "date_and_time": "Friday, 30th January, 2026, 8 pm - 9 pm",
-"topic": "The Degree Delusion: Why Your Degree is Not Enough and How To Win Before You Graduate,
+"topic": "The Degree Delusion: Why Your Degree is Not Enough and How To Win Before You Graduate",
     "speaker": "Oluwamuyiwa Ogunkoya",
     "bio": `
  Oluwamuyiwa Ogunkoya is a Medical Laboratory Scientist with
