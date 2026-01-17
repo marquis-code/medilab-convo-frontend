@@ -118,8 +118,8 @@ import img4 from '@/assets/img/origins.jpeg'
 const schedules = ref([
   {
     image: speaker1,
-    "date_and_time": "Friday, 30th January, 2026, 8 pm - 9 pm",
-    "topic": "The Degree Delusion: Why Your Degree is Not Enough and How To Win Before You Graduate",
+    "date_and_time": "Friday, 30th January, 2026, 8 pm - 9 pm || Friday, 13th February, 2026, 8 pm - 9 pm",
+"topic": "The Degree Delusion: Why Your Degree is Not Enough and How To Win Before You Graduate || From Then to Now: The Changing Face of MLS in Nigeria",
     "speaker": "Oluwamuyiwa Ogunkoya",
     "bio": `
  Oluwamuyiwa Ogunkoya is a Medical Laboratory Scientist with
@@ -272,7 +272,7 @@ recipient from the International AIDS Society (IAS).
   },
   {
     image: speaker8,
-    "date_and_time": "Sunday, 15th February, 2026",
+    "date_and_time": "Sunday, 15th February, 2026, 8 pm - 6pm",
     "topic": "Scholarship and Fellowship Opportunities for Undergraduates",
     "speaker": "Ridwan Agboola",
     "bio": `
