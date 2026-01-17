@@ -1,116 +1,107 @@
 <template>
-    <div class="overflow-hidden bg-white mt-20">
-        <div class="relative mx-auto max-w-7xl px-6 py-16 lg:px-8">
-            <div class="absolute bottom-0 left-3/4 top-0 hidden w-screen bg-[#27628C] lg:block"></div>
-            <div class="mx-auto max-w-prose text-base lg:grid lg:max-w-none lg:grid-cols-2 lg:gap-8">
-                <div>
-                    <h3 class="mt-2 text-3xl/8 font-bold tracking-tight  sm:text-4xl text-[#27628C] uppercase text-center lg:text-start">Origins</h3>
-                </div>
-            </div>
-            <div class="mt-8 lg:grid lg:grid-cols-2 lg:gap-8">
-                <div class="relative lg:col-start-2 lg:row-start-1">
-                    <svg class="absolute right-0 top-0 -mr-20 -mt-20 hidden lg:block" width="404" height="384"
-                        fill="#ffffff" viewBox="0 0 404 384" aria-hidden="true">
-                        <defs>
-                            <pattern id="de316486-4a29-4312-bdfc-fbce2132a2c1" x="0" y="0" width="20" height="20"
-                                patternUnits="userSpaceOnUse">
-                                <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="#ffffff" />
-                            </pattern>
-                        </defs>
-                        <rect width="404" height="384" fill="url(#de316486-4a29-4312-bdfc-fbce2132a2c1)" />
-                    </svg>
-                    <div class="relative mx-auto max-w-prose text-base lg:max-w-none">
-                        <figure>
-                            <img class="w-full rounded-lg object-cover shadow-lg lg:aspect-auto"
-                                src="@/assets/img/origins2026.jpg"
-                                alt="origins 2026" width="1184" height="1376">
-                        </figure>
-                    </div>
-                </div>
-                <div class="mt-8 lg:mt-0">
-                    <div class="mx-auto text-base/7 text-gray-500">
-                        <p class="text-lg/7">ORIGINS is a program specifically designed for undergraduates,
-                            aimed at equipping them with the essential knowledge, skills, mindset, and network
-                            opportunities they need to excel academically and grow into top-tier professionals. By
-                            focusing on the foundational years of a student’s academic journey, ORIGINS provides the
-                            tools and support necessary to help participants develop the right attitudes and cultivate a
-                            strong professional identity early on.</p>
-                        <p class="mt-5">Through a combination of workshops, mentorship, and networking events, the
-                            program empowers students to navigate the challenges of their academic life with confidence,
-                            while building a network of peers and industry experts that will support their future career
-                            goals. ORIGINS not only helps students excel in the classroom but also prepares them to
-                            transition smoothly into their professional lives as standout leaders in their chosen
-                            fields.</p>
-                        <p class="mt-5">Join us as we turn obstacles into stepping stones, unlocking a future of
-                            excellence in medical laboratory science.</p>
-                    </div>
-                </div>
-            </div>
+  <div class="overflow-hidden bg-white mt-20">
+    <div class="relative mx-auto max-w-7xl px-6 py-16 lg:px-8">
+      <div class="absolute bottom-0 left-3/4 top-0 hidden w-screen bg-[#27628C] lg:block"></div>
+      <div class="mx-auto max-w-prose text-base lg:grid lg:max-w-none lg:grid-cols-2 lg:gap-8">
+        <div>
+          <h3
+            class="mt-2 text-3xl/8 font-bold tracking-tight  sm:text-4xl text-[#27628C] uppercase text-center lg:text-start">
+            Origins</h3>
         </div>
-        <h1 class="text-center text-[#27628C] uppercase">Speakers</h1>
-        <section class="grid lg:grid-cols-3 gap-6 mx-auto max-w-7xl pb-6 p-3 lg:p-0">
-            <article  @click="openModal(item)"  v-for="item in schedules" class="flex bg-white border-[0.5px] border-gray-10 rounded-lg transition hover:shadow-xl">
-
-                <div class="sm:basis-56 border-[0.5px] border-gray-50 rounded-lg">
-                    <img alt=""
-                        :src="item.image"
-                        class="aspect-square h-full w-32 object-cover" />
-                </div>
-
-                <div class="w-full flex-col justify-between">
-                    <div class="border-s border-gray-900/10 p-4 sm:border-l-transparent sm:p-6">
-                        <a href="#">
-                            <h3 class="font-bold uppercase text-gray-900">
-                               {{ item.topic }}
-                            </h3>
-                        </a>
-
-                        <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-700">
-                            {{ item.speaker }}
-                        </p>
-
-                        <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-700">
-                            {{ item.date_and_time }}
-                        </p>
-
-                        <p class="text-xs font-bold pt-5">CLICK TO SEE SPEAKER'S PROFILE</p>
-                    </div>
-                </div>
-            </article>
-        </section>
-
-       <div class="flex justify-center items-center my-10 p-3 lg:p-0">
-        <a 
-  href="https://forms.gle/5xBM7GdA65nQeMzU9"
-  target="_blank"
-  rel="noopener noreferrer"
-  class="text-white text-center bg-[#27628C] rounded-lg w-full px-6 py-3.5 max-w-lg"
->
-  Register
-</a>
-       </div>
+      </div>
+      <div class="mt-8 lg:grid lg:grid-cols-2 lg:gap-8">
+        <div class="relative lg:col-start-2 lg:row-start-1">
+          <svg class="absolute right-0 top-0 -mr-20 -mt-20 hidden lg:block" width="404" height="384" fill="#ffffff"
+            viewBox="0 0 404 384" aria-hidden="true">
+            <defs>
+              <pattern id="de316486-4a29-4312-bdfc-fbce2132a2c1" x="0" y="0" width="20" height="20"
+                patternUnits="userSpaceOnUse">
+                <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="#ffffff" />
+              </pattern>
+            </defs>
+            <rect width="404" height="384" fill="url(#de316486-4a29-4312-bdfc-fbce2132a2c1)" />
+          </svg>
+          <div class="relative mx-auto max-w-prose text-base lg:max-w-none">
+            <figure>
+              <img class="w-full rounded-lg object-cover shadow-lg lg:aspect-auto" src="@/assets/img/origins2026.jpg"
+                alt="origins 2026" width="1184" height="1376">
+            </figure>
+          </div>
+        </div>
+        <div class="mt-8 lg:mt-0">
+          <div class="mx-auto text-base/7 text-gray-500">
+            <p class="text-lg/7">ORIGINS is a program specifically designed for undergraduates,
+              aimed at equipping them with the essential knowledge, skills, mindset, and network
+              opportunities they need to excel academically and grow into top-tier professionals. By
+              focusing on the foundational years of a student’s academic journey, ORIGINS provides the
+              tools and support necessary to help participants develop the right attitudes and cultivate a
+              strong professional identity early on.</p>
+            <p class="mt-5">Through a combination of workshops, mentorship, and networking events, the
+              program empowers students to navigate the challenges of their academic life with confidence,
+              while building a network of peers and industry experts that will support their future career
+              goals. ORIGINS not only helps students excel in the classroom but also prepares them to
+              transition smoothly into their professional lives as standout leaders in their chosen
+              fields.</p>
+            <p class="mt-5">Join us as we turn obstacles into stepping stones, unlocking a future of
+              excellence in medical laboratory science.</p>
+          </div>
+        </div>
+      </div>
     </div>
+    <h1 class="text-center text-[#27628C] uppercase font-bold">Speakers</h1>
+    <section class="grid lg:grid-cols-3 gap-6 mx-auto max-w-7xl pb-6 p-3 lg:p-0 mt-10">
+      <article @click="openModal(item)" v-for="item in schedules"
+        class="flex bg-white border-[0.5px] border-gray-10 rounded-lg transition hover:shadow-xl">
 
-    <SpeakerModal
-      v-if="selectedSpeaker"
-      :speaker="selectedSpeaker"
-      :is-visible="isModalVisible"
-      @close="closeModal"
-    />
+        <div class="sm:basis-56 border-[0.5px] border-gray-50 rounded-lg">
+          <img alt="" :src="item.image" class="aspect-square h-full w-32 object-cover" />
+        </div>
+
+        <div class="w-full flex-col justify-between">
+          <div class="border-s border-gray-900/10 p-4 sm:border-l-transparent sm:p-6">
+            <a href="#">
+              <h3 class="font-bold uppercase text-gray-900">
+                {{ item.topic }}
+              </h3>
+            </a>
+
+            <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-700">
+              {{ item.speaker }}
+            </p>
+
+            <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-700">
+              {{ item.date_and_time }}
+            </p>
+
+            <p class="text-xs font-bold pt-5">CLICK TO SEE SPEAKER'S PROFILE</p>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <div class="flex justify-center items-center my-10 p-3 lg:p-0">
+      <a href="https://forms.gle/5xBM7GdA65nQeMzU9" target="_blank" rel="noopener noreferrer"
+        class="text-white text-center bg-[#27628C] rounded-lg w-full px-6 py-3.5 max-w-lg">
+        Register
+      </a>
+    </div>
+  </div>
+
+  <SpeakerModal v-if="selectedSpeaker" :speaker="selectedSpeaker" :is-visible="isModalVisible" @close="closeModal" />
 
 </template>
 
 
 
 <script setup lang="ts">
-import speaker1 from '@/assets/img/speaker1.jpeg'
-import speaker2 from '@/assets/img/speaker2.jpeg'
-import speaker3 from '@/assets/img/speaker3.jpeg'
-import speaker4 from '@/assets/img/speaker4.jpeg'
-import speaker5 from '@/assets/img/speaker5.jpeg'
-import speaker6 from '@/assets/img/speaker6.jpeg'
-import speaker7 from '@/assets/img/speaker7.jpeg'
-import speaker8 from '@/assets/img/speaker8.jpeg'
+import speaker1 from '@/assets/img/oluwamuyiwa-ogunkoya.jpg'
+import speaker2 from '@/assets/img/wahzi-godsave.jpg'
+import speaker3 from '@/assets/img/victor-odunsi.jpg'
+import speaker4 from '@/assets/img/williams-owoeye.jpg'
+import speaker5 from '@/assets/img/damilola-aruwaji.jpg'
+import speaker6 from '@/assets/img/glory-ayobami.jpg'
+import speaker7 from '@/assets/img/emmanuel-elebesunu.jpg'
+import speaker8 from '@/assets/img/ridwan-agboola.jpg'
 import img4 from '@/assets/img/origins.jpeg'
 // const schedules = ref([
 //     {image: speaker3, "date_and_time": "Friday, 31st January, 2025, 8 pm - 9 pm", "topic": "The Identity of the Medical Laboratory Scientist", "speaker": "Friday Odum"},
@@ -125,108 +116,86 @@ import img4 from '@/assets/img/origins.jpeg'
 
 
 const schedules = ref([
-    {
-        image: speaker3,
-        "date_and_time": "Friday, 31st January, 2025, 8 pm - 9 pm",
-        "topic": "To Thyself be True - Developing an Identity as a Medical Laboratory Scientist",
-        "speaker": "Friday Odum",
-        "bio":  `
-           ODUM, Acho Friday Is a Biomedical Scientist with over seven years working experience, He holds an MPH (Field Epidemiology) degree from the university of Ibadan, he had his undergraduate study from the university of Calabar where he obtained his BMLS in 2017.
- 
-           He is a registered Biomedical Scientist with the United Kingdom Health and Care Professional Council, He is a Licientiate member of the Institute of Biomedical Science UK, also an associate member of the Medical Laboratory Science Council of Nigeria.
+  {
+    image: speaker1,
+    "date_and_time": "Friday, 30th January, 2026, 8 pm - 9 pm",
+    "topic": "The Degree Delusion: Why Your Degree is Not Enough and How To Win Before You Graduate",
+    "speaker": "Oluwamuyiwa Ogunkoya",
+    "bio": `
+ Oluwamuyiwa Ogunkoya is a Medical Laboratory Scientist with
+strong interests in Molecular Diagnostics, Infectious Diseases, and the Human Microbiome. He currently
+works as a Research Assistant on multiple internationally funded projects under the Centre for
+Neurological Sciences Research &amp; Training, College of Medicine, University of Lagos.
 
-           As a result of his commitment to excellence and drive for quality in Medical Laboratory practice in Nigeria, He was awarded the medical laboratory scientist of the year 2021. He has trained many Laboratory Scientists on Equipment use, maintenance, calibration, troubleshooting and Laboratory Quality Management System (QMS). He has also facilated several trainings including the ISN Quality Assurance Summit themed "Demystifying ISO15189".
+Oluwamuyiwa is the Executive Director of MedLabConvo, a youth-led organisation committed to leading
+change, inspiring action, and nurturing the next generation of world-class professionals in the
+biomedical science field and beyond. He is also the founder of BloodLines, a tech-enabled, community-
+powered initiative addressing the critical challenge of low voluntary blood donation rates in Nigeria.
 
-           He is currently a Specialist Biomedical Scientist with NHS Forth Valley.
+He is a proven leader with a strong track record of impact and multiple awards to show for it.
+
+Passionate about health, education, and leadership, Oluwamuyiwa is constantly learning, innovating,
+speaking, and acting on critical issues that border on these domains. In his spare time, he enjoys playing
+chess — just for the fun of it, but also to sharpen his strategic thinking.
         `
-    },
-    {
-        image: speaker2,
-        "date_and_time": "Saturday, 1st February, 2025, 8 pm - 9 pm",
-        "topic": "Building and Optimizing Professional Networks for the Present and Future",
-        "speaker": "Ridwan Agboola",
-        "bio": `
-        Ridwan Agboola is a final-year Medical Laboratory Science student at the University of Ibadan, specializing in Clinical Biochemistry. He is an eStudent member of the Institute of Biomedical Science (IBMS) where he participates in the IBMS mentorship scheme. He is also an International Lab Student member of the American Society for Clinical Pathology (ASCP).
+  },
+  {
+    image: speaker2,
+    "date_and_time": "Saturday, 31st January, 2026, 8 pm - 9 pm",
+    "topic": "The ABC of Research Writing",
+    "speaker": "Wahzi Godsave",
+    "bio": `
+  Wazhi Godsave Binlak is a Biomedical Scientist and early-career
+researcher with interests in infectious disease epidemiology, Antimicrobial Resistance (AMR), and
+evidence-based implementation research. His professional experience spans laboratory medicine, public
+health, and molecular epidemiology, with growing expertise in systematic reviews and meta-analysis,
+scientific writing, and research communication. He is a published researcher, passionate about making
+scientific evidence accessible and actionable, particularly in low- and middle-income countries (LMICs),
+to strengthen health systems and support data-driven decision-making.
 
-        With strong interests in cancer research, metabolic diseases, immunology, and molecular biology, Ridwan is committed to advancing medical science and addressing critical global health issues. As a volunteer with the Smilebuilders Initiative and the United Nations Volunteers program, he actively contributes to initiatives focused on tackling health challenges and supporting the achievement of the Sustainable Development Goals (SDGs).
+He currently serves as a Communications Officer at the Systematic Reviews Network (SRN), where he
+helps drive the Network’s internal and external communications. Beyond this role, he serves as the
+Programs and Research Team Lead for the Antimicrobial Resistance (AMR) Club at the University of Jos,
+overseeing the planning and execution of advocacy campaigns, research projects, and public health
+initiatives that promote responsible antimicrobial use. He is deeply committed to advancing AMR
+awareness and strengthening community health interventions, combining laboratory-based expertise
+with practical field engagement.
 
-        In his free time, he loves playing football and exploring opportunities.
+In 2023, Godsave served as the Director of Research for NIMELSSA National, overseeing the training and
+writing of manuscripts for publication. That same year, he became a fellow of the Oaths for
+Sustainability Network (OFSN), an initiative dedicated to planetary health and climate change research
+based in Phoenix, Arizona. He is also an alumnus of the Aspire Leaders Program founded at Harvard. In
+2024, he won the Helix Biogen undergraduate research grant for his project on the epidemiology and
+comparative diagnostic performance of Hepatitis C virus in Jos. In 2025, he presented his abstract at the
+first Next Gen Biomedical Science Conference in Oyo State.
 
+His work reflects a clear vision to bridge evidence gaps and empower early-career researchers to
+generate and apply high-quality, context-specific evidence that informs policy and practice across Africa
+and beyond.        `
+  },
+  {
+    image: speaker3,
+    "date_and_time": "Sunday, 1st February, 2026, 8 pm - 9 pm",
+    "topic": "The Digital Scientist: AI Prompt Engineering for Students",
+    "speaker": "Victor Odunsi",
+    "bio": `
+ Victor Odunsi is an AI Software Engineer with a background in
+medical laboratory science and a strong focus on building production-ready, end-to-end AI systems. He
+
+works across machine learning, backend engineering, and cloud deployment to turn complex data and
+models into reliable software products. Victor is passionate about applying AI to real-world problems in
+healthcare, education, and research, and he is particularly interested in ethical, practical, and scalable
+uses of artificial intelligence. He enjoys teaching, knowledge-sharing, and helping professionals
+understand how modern technology can enhance their work without replacing critical human judgment.
         `
-    },
-    {
-        image: speaker4,
-        "date_and_time": "Sunday, 2nd February, 2024, 8 pm - 9 pm",
-        "topic": "Mastering Time Management: A Guide to Productivity",
-        "speaker": "Glory Ogunbodede",
-        "bio": `
-        Glory Ayobami Ogunbodede is the co-founder of Impact Training Room (ITR), the assistant executive director of Medlabconvo, a content writing specialist, and a 5th-year student in medical laboratory science.
-
-        Glory has led and executed impact-driven projects in various African communities. She has been recognised for her efforts as an agent of change, including the 2023 ACHIEVER OF THE YEAR award from the Nigeria Medical Laboratory Science Student Association (NIMELSSA NATIONAL) and the 2023 Top 100 Changemakers on the Plateau Award.
-
-        She is a YLead 2020 Fellow of the Ikapture Initiative, a Millennium Campus 22 Fellow, a Bridge Program '22 Fellow of the Afara Initiative, a YLP '22 Fellow of Leap Africa, and a Serial Volunteer who has worked with both local and international organisations.
-        `
-    },
-    {
-        image: speaker1,
-        "date_and_time": "Friday, 7th February, 2025, 8 pm - 9 pm",
-        "topic": "Tapping into Research as an Undergraduate",
-        "speaker": "Emmanuel Elebesunu",
-        "bio": `
-        Emmanuel Elebesunu is a Medical Laboratory Scientist with a passion for research in infectious disease epidemiology, surveillance, and response. As an Early Career Researcher, he has actively contributed to scientific discourse through his research works, including 22 research publications, 2 book chapters, and several citations on topics spanning the areas of public health, infectious diseases, and antimicrobial resistance..
-
-        He is currently a Medical Journalist with the Society for Disease Prevention (SFDP), where he promotes awareness on prevalent infectious diseases in Africa and beyond. He also functions as a Project Assistant for public health research and advocacy in the Africa and Middle Eastern Region (AfMe).
-
-        His research works have been presented in scientific conferences, including the International Festival of Public Health (IFPH) hosted by the University of Manchester, the 2021 Scientific Conference of the African Society for Laboratory Medicine (ASLM), and the 5th HIV Research for Prevention (HIVR4P) Conference in South America. He is also a Journalism Fellowship Award recipient from the International AIDS Society (IAS). In addition, he is a Molecular Laboratory Trainee in AMR Genotypic/Phenotypic Characterisation, funded by the Society for Applied Microbiology (SFAM)..
-        `
-    },
-    {
-        image: speaker5,
-        "date_and_time": "Saturday, 8th February, 2025, 8 pm - 9 pm",
-        "topic": "Beyond the Buzz; Capitalizing on Mentor-Mentee Relationships as an Undergraduate ",
-        "speaker": "Odinaka Obeta",
-        "bio": `
-        Odinaka is an award-winning Biomedical Scientist and Public Health Practitioner with interests in Malaria & Climate Change Programming, Health Communications, and Policy & Advocacy in Global Health. He is Founder of Impact Training Room (ITR), a youth-led and youth-focused organisation committed to raising Africa's finest generation of young leaders.
-
-        As an International public speaker, Odinaka has reached out to over 20,000+ youths across various countries through his virtual and physical engagements.
-
-        Odinaka is also the executive Director of Block Malaria Africa Initiative, dedicated to helping vulnerable communities build resilience against malaria through medical outreaches, training, policy development, and advocacy.
-
-        He serves as the West Africa Lead at the African Leaders Malaria Alliance (ALMA) Youth Advisory Council, under the leadership of H.E President Umaro Sissoco Embalo of Guinea Bissau, and a member of the RBM Digital Youth Workstream on Malaria, advocating for #ZeroMalaria across Africa.
-
-
-        Odinaka has received multiple ambassadorial awards, including the Ambassador of Medical Laboratory Sciences in Nigeria and was recognized as one of 60 Nigerian health workers celebrated as #HealthHeroes by Nigerian Health Watch in 2020 for their contributions to strengthening Nigeria's health care system.
-
-        In 2022, Odinaka became the first African recipient of the 25Under25 Global Legacy Award by Common Purpose UK and in 2023 he emerged as a Top Finalist for the Raising Star in Global Health Award held during the COP28 in the Expo City in Dubai
-        `
-    },
-    {
-        image: speaker6,
-        "date_and_time": "Sunday, 9th February, 2024, 8 pm - 9 pm",
-        "topic": "Navigating the Gold Mine of Scholarships and Fellowships as an Undergraduate",
-        "speaker": "Kamsi Muoka",
-        "bio": `
-        Olivia Kamsi Muoka is a first-class graduate of Medical Laboratory Science from the University of Calabar, where she earned recognition as the university's Best Graduating Student in 2023. During her undergraduate studies, she demonstrated a profound dedication to research, investigating lung function and biomarkers of oxidative DNA damage and inflammation in woodworkers exposed to wood dust. This pivotal work sparked her passion for exploring the intricate relationship between the immune system and cancer.
-
-        After earning her degree, Kamsi completed a one-year internship as a Medical Laboratory Scientist at the University of Calabar Teaching Hospital, where she gained hands-on experience in conducting diagnostic and monitoring laboratory tests. She then served as a Clinical Research Assistant at Lakeshore Cancer Center in Lagos, Nigeria, where she contributed to advancing innovative cancer treatment strategies.
-
-        Currently, Kamsi is pursuing an MPhil in Medical Science at the Cancer Research UK Cambridge Institute (CRUK CI) at the University of Cambridge. Her academic journey is marked by numerous prestigious scholarships, including the Mastercard AfOx Scholarship at the University of Oxford, the Mastercard Cambridge Scholarship, and the Gates Cambridge Scholarship, which currently funds her MPhil. Additionally, she was among the 14 finalists for the highly competitive 2024 Rhodes Scholarship for West Africa.
-
-
-        Beyond her academic and research pursuits, Kamsi is passionate about mentorship and empowering others. Through her podcast, "Let's Talk with KamKam," she shares practical study tips and personal experiences, inspiring students to excel in their academic endeavours and bridge learning gaps.
-
-
-        In her free time, Kamsi enjoys listening to music and cherishing moments with her family.
-        `
-    },
-    {
-        image: speaker7,
-        "date_and_time": "Saturday, 15th February, 2025",
-        "topic": "⁠Building your future through Volunteering",
-        "speaker": "Williams Owoeye",
-        "bio": 
-        `
-        Williams Owoeye is a Biomedical Laboratory Science graduate of the University of Ibadan with a rich background in marketing, communications, and social impact. With over five years of professional and volunteering experience, Williams has consistently demonstrated his commitment to community development and meaningful engagement. With a strong belief that effective communication can solve all world problems.
+  },
+  {
+    image: speaker4,
+    "date_and_time": "Friday, 6th February, 2026, 8 pm - 9 pm",
+    "topic": "Mastering Productivity as a Student - Time Management",
+    "speaker": "Williams Owoeye",
+    "bio": `
+     Williams Owoeye is a Biomedical Laboratory Science graduate of the University of Ibadan with a rich background in marketing, communications, and social impact. With over five years of professional and volunteering experience, Williams has consistently demonstrated his commitment to community development and meaningful engagement. With a strong belief that effective communication can solve all world problems.
 
         He is a College of Medicine Provost Award winner owing to his exemplary devotion to improving his community. This is a testament of his engagement in extracurricular activities as early as his freshman year. As the Public Relations Officer for Friends of Damien Foundation, he has actively driven awareness campaigns targeting tuberculosis and leprosy, contributing to the organization’s growth and impact. His work as Director of Programs as well as Director of Media and Publicity for the Asido Campus Network reflects his dedication to mental health advocacy, organizing events to reduce stigma and foster open dialogue about mental health.
 
@@ -236,33 +205,100 @@ const schedules = ref([
 
         With expertise in marketing, content creation, and public relations, Williams has spearheaded impactful campaigns and mentored aspiring leaders, empowering them to address complex challenges. Passionate about community advancement, he remains focused on leveraging his communication skills to inspire positive change and drive social progress especially in the digital space.
         `
-    },
-    {
-        image: speaker8,
-        "date_and_time": "Sunday, 16th February, 2025",
-        "topic": "⁠Young and Strong; Becoming a Social Impact Leader",
-        "speaker": "Fatima Ibrahim",
-        "bio": `
-        Fatimah Ibrahim Opeyemi is a dedicated Medical Laboratory Scientist with a passion for improving quality health, promoting sustainable development goals, and impacting public health. Her academic journey began at Kwara State University, Malete, where she pursued a degree in Medical Laboratory Science.
+  },
+  {
+    image: speaker5,
+    "date_and_time": "Saturday, 7th February, 2026, 8 pm - 9 pm",
+    "topic": "Essential soft skills for Undergraduates: Emotional Intelligence",
+    "speaker": "Damilola Aruwaji",
+    "bio": `
+        MLS Aruwaji Oluwdamilola Precious, also known as DammyK, is a
+Medical Laboratory Scientist and a College of Medicine, University of Lagos graduate with a proven
+record of academic excellence, student leadership, and medical education advocacy.
 
-        During her undergraduate studies, she demonstrated exceptional commitment to public health safety. Her research project, titled "Appraisal of the Microbiological Quality of Domestic Water in Malete Community," identified potential microorganisms that could lead to disease outbreaks. She secured a $200 grant from the Center for Undergraduate Research at Kwara State University Malete in 2017. The findings of her project prompted her to treat the contaminated water, ensuring its safety for public consumption.
+At the University of Lagos, she earned multiple academic and leadership milestones, including making
+history as the first two-time Senate President of NIMELSSA UNILAG, where she led policy initiatives,
+student advocacy, and large-scale coordination within a highly demanding medical academic
+environment.
 
+She is the creator of Tales of an MLS Student, an educational content platform that simplifies laboratory
+medicine and student life for medical and health science students, strengthening understanding,
+confidence, and academic identity.
 
-        Her humanitarian endeavors continued with her participation in various health education and awareness campaigns at the grassroots level. Her outstanding performance earned her a certification in community development. On June 15, 2019, she founded the Fatimah Ibrahim Opeyemi Foundation (FIO Foundation), focusing on sustainable development goals 1, 2, and 3. The foundation was registered and endorsed by the Corporate Affairs Commission of the Federal Republic of Nigeria on February 22, 2021.
+MLS Damilola is also the Convener of the Scholar Nexus Webinar Series, which over the past two years
+has impacted 200+ medical students and over 2,000 medical and health professionals through
+mentorship and evidence-based strategies for academic and personal excellence.
 
-
-        Fatimah held various leadership positions, including Vice President and Acting President of the Nigerian Medical Laboratory Science Students Association (NIMELSSA). During her tenure, she bridged the communication gap between students, departmental management, and school management, which resulted in the accreditation of the program. She also implemented academic support initiatives, including tutoring services for struggling students.
-
-
-        After graduation, she was inducted into the Medical Laboratory Science Profession by the Medical Laboratory Science Council of Nigeria (MLSCN). She completed her one-year internship program at the National Hospital Abuja and later served at the National Defense College Medical Centre Abuja during her National Youth Service. She was recognized as an ambassador by the Young Medical Laboratory Scientists of Nigeria (National) and currently works with ASK Medical and Diagnostics Maitama, Abuja. Fatimah is also pursuing a master’s degree in Public Health at Ahmadu Bello University, Zaria.
+A sports medalist and excellence awardee, she leverages her platforms, speaking engagements, digital
+education, and thought leadership to deliver practical, evidence-based insights on thriving in medical
+school, leadership with purpose, and redefining excellence in medical training.
         `
-    }
+  },
+  {
+    image: speaker6,
+    "date_and_time": "Sunday, 8th February, 2026, 8 pm - 9 pm",
+    "topic": "Building your Future through Volunteering",
+    "speaker": "Glory Ogunbodede",
+    "bio": `
+       Glory Ayobami Ogunbodede is the co-founder of Impact Training Room (ITR), a content writing specialist, and medical laboratory scientist.
+
+        Glory has led and executed impact-driven projects in various African communities. She has been recognised for her efforts as an agent of change, including the 2023 ACHIEVER OF THE YEAR award from the Nigeria Medical Laboratory Science Student Association (NIMELSSA NATIONAL) and the 2023 Top 100 Changemakers on the Plateau Award.
+
+        She is a YLead 2020 Fellow of the Ikapture Initiative, a Millennium Campus 22 Fellow, a Bridge Program '22 Fellow of the Afara Initiative, a YLP '22 Fellow of Leap Africa, and a Serial Volunteer who has worked with both local and international organisations.
+        `
+  },
+  {
+    image: speaker7,
+    "date_and_time": "Saturday, 14th February, 2026, 8 pm - 9 pm",
+    "topic": "⁠Building a Professional Network as an Undergraduate",
+    "speaker": "Emmanuel Elebesunu",
+    "bio":
+      `
+       Emmanuel Elebesunu is a Medical Laboratory Scientist with a
+passion for research in public health, infectious disease epidemiology, and health systems
+strengthening. As an early career researcher, he has actively contributed to scientific discourse through
+research and evidence synthesis, including over 25 publications, 2 book chapters, and several citations.
+
+He is currently a Research &amp; Communications Associate at Bloom Public Health, and also works as a
+Program Manager at the Society for Disease Prevention (SFDP), where he coordinates public health
+research and advocacy projects in West Africa and beyond.
+
+His research works have been presented in scientific conferences, including the International Festival of
+Public Health (IFPH) hosted by the University of Manchester, the 5th HIV Research for Prevention
+(HIVR4P) Conference in South America, and the 2nd ECOWAS Lassa Fever Conference in Abidjan, Cote
+d&#39;Ivoire, all attended through fully funded travel bursaries. He is also a Journalism Fellowship Award
+recipient from the International AIDS Society (IAS).
+        `
+  },
+  {
+    image: speaker8,
+    "date_and_time": "Sunday, 15th February, 2026",
+    "topic": "Scholarship and Fellowship Opportunities for Undergraduates",
+    "speaker": "Ridwan Agboola",
+    "bio": `
+ Ridwan Ayomide Agboola is a first-class graduate of Medical
+Laboratory Science from the prestigious University of Ibadan.
+He was actively involved in student leadership, academic mentorship, and community health
+outreaches, where he supported both peer learning and public health initiatives. As a dedicated
+volunteer, he has the single goal of making an impact in mind. He has volunteered with the United
+Nations Research Institute for Social Development, UNV Regional Office for East and Southern Africa,
+Asido Campus Network, Muslim Students&#39; Society of Nigeria, Trinity Foundation and currently serves as
+the Director of Media and Publicity for Smilebuilders Initiative – an NGO that focuses on non-
+communicable diseases prevention in Africa. Through these, he earned the College of Medicine,
+University of Ibadan Provost award for excellent participation in community life.
+He is a recipient of several scholarship awards including Zeribe Nwosu Scholarship, American Society for
+Clinical Pathology Foundation Laboratory Student Scholarship, IDU New York Scholarship and the
+Federal Government of Nigeria Grant. He is open to continuous professional development and recently
+he completed the Aspire Leaders Program co-organized by Harvard University. Ridwan actively pursues
+opportunities and ensures others are equally well informed.
+In his spare time, he plays football, see movies and appreciates nature.  `
+  }
 ]);
 
 // const selectedSpeaker = ref({})
 
 const handleSelectedSpeaker = (data: any) => {
-    selectedSpeaker.value = data
+  selectedSpeaker.value = data
 }
 
 const isModalVisible = ref(false);
@@ -280,7 +316,7 @@ function closeModal() {
 
 
 <!-- BIOMEDICAL CONFERENCE -->
- <!-- <template>
+<!-- <template>
      <div class="overflow-hidden bg-white mt-20">
     <div class="relative mx-auto max-w-7xl px-6 py-16 lg:px-8">
       Background elements
