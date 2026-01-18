@@ -120,14 +120,14 @@ const handleCheckboxChange = (fieldId: string, option: string, checked: boolean)
 </script>
 
 <template>
-  <div class="w-full max-w-3xl mx-auto">
+  <div class="w-full max-w-4xl mx-auto">
     <form @submit.prevent="handleSubmit" class="space-y-6">
       <!-- Email field (optional) -->
       <div>
         <label for="submitter-email" class="block text-sm font-medium text-gray-700 mb-2">
           Your Email (Optional)
         </label>
-        <UiAnimatedInput
+      <UiAnimatedInput
           id="submitter-email"
           label="Email"
           v-model="submitterEmail"
@@ -146,16 +146,6 @@ const handleCheckboxChange = (fieldId: string, option: string, checked: boolean)
           {{ field.label }}
           <span v-if="field.required" class="text-red-500">*</span>
         </label>
-        <UiAnimatedInput
-          v-if="field.type !== FormFieldType.TEXTAREA"
-          :id="field.id"
-          v-model="formData[field.id]"
-          :type="field.type.toLowerCase()"
-          :label="field.label"
-          :placeholder="field.placeholder"
-          :required="field.required"
-          :class="{ 'border-red-500': errors[field.id] }"
-        />
 
         <p v-if="field.description" class="text-sm text-gray-600">
           {{ field.description }}
@@ -167,8 +157,7 @@ const handleCheckboxChange = (fieldId: string, option: string, checked: boolean)
           :id="field.id"
           v-model="formData[field.id]"
           type="text"
-          label=""
-          :placeholder="field.placeholder"
+          :label="field.label"
           :required="field.required"
           :class="{ 'border-red-500': errors[field.id] }"
         />
@@ -179,8 +168,7 @@ const handleCheckboxChange = (fieldId: string, option: string, checked: boolean)
           :id="field.id"
           v-model="formData[field.id]"
           type="email"
-          label="Email"
-          :placeholder="field.placeholder"
+          :label="field.label"
           :required="field.required"
           :class="{ 'border-red-500': errors[field.id] }"
         />
@@ -191,8 +179,7 @@ const handleCheckboxChange = (fieldId: string, option: string, checked: boolean)
           :id="field.id"
           v-model="formData[field.id]"
           type="tel"
-          label="Phone"
-          :placeholder="field.placeholder"
+          :label="field.label"
           :required="field.required"
           :class="{ 'border-red-500': errors[field.id] }"
         />
@@ -203,9 +190,9 @@ const handleCheckboxChange = (fieldId: string, option: string, checked: boolean)
           :id="field.id"
           v-model="formData[field.id]"
           type="url"
-          label="URL"
-          :placeholder="field.placeholder"
+          :label="field.label"
           :required="field.required"
+          class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
           :class="{ 'border-red-500': errors[field.id] }"
         />
 
@@ -214,8 +201,8 @@ const handleCheckboxChange = (fieldId: string, option: string, checked: boolean)
           v-else-if="field.type === FormFieldType.NUMBER"
           :id="field.id"
           v-model.number="formData[field.id]"
-          label="Number"
-          :placeholder="field.placeholder"
+          type="number"
+          :label="field.label"
           :required="field.required"
           :class="{ 'border-red-500': errors[field.id] }"
         />
@@ -225,8 +212,7 @@ const handleCheckboxChange = (fieldId: string, option: string, checked: boolean)
           v-else-if="field.type === FormFieldType.DATE"
           :id="field.id"
           v-model="formData[field.id]"
-          label="Date"
-          :placeholder="field.placeholder"
+          :label="field.label"
           type="date"
           :required="field.required"
           :class="{ 'border-red-500': errors[field.id] }"
@@ -237,15 +223,26 @@ const handleCheckboxChange = (fieldId: string, option: string, checked: boolean)
           v-else-if="field.type === FormFieldType.TEXTAREA"
           :id="field.id"
           v-model="formData[field.id]"
-          :label="field.placeholder"
-          :placeholder="field.placeholder"
+          :label="field.label"
           :required="field.required"
           :rows="4"
+          :cols="6"
           :class="{ 'border-red-500': errors[field.id] }"
         />
 
         <!-- Select Dropdown -->
-        <select
+        <UiSelectInput
+            v-else-if="field.type === FormFieldType.SELECT"
+            v-model="formData[field.id]"
+            :label="field.label"
+            :options="field.options"
+            :placeholder="field.placeholder || 'Select an option'"
+            :disabled="field.disabled"
+            :hasError="!!errors[field.id]"
+            :errorMessage="errors[field.id]"
+            :showError="true"
+          />
+        <!-- <select
           v-else-if="field.type === FormFieldType.SELECT"
           :id="field.id"
           v-model="formData[field.id]"
@@ -257,7 +254,7 @@ const handleCheckboxChange = (fieldId: string, option: string, checked: boolean)
           <option v-for="option in field.options" :key="option" :value="option">
             {{ option }}
           </option>
-        </select>
+        </select> -->
 
         <!-- Radio Buttons -->
         <div v-else-if="field.type === FormFieldType.RADIO" class="space-y-2">
@@ -285,7 +282,7 @@ const handleCheckboxChange = (fieldId: string, option: string, checked: boolean)
               type="checkbox"
               :value="option"
               @change="(e) => handleCheckboxChange(field.id, option, (e.target as HTMLInputElement).checked)"
-              class="custom-checkbox"
+              class="custom-input"
             />
             <label :for="`${field.id}-${option}`" class="ml-3 text-sm text-gray-700">
               {{ option }}
@@ -303,7 +300,7 @@ const handleCheckboxChange = (fieldId: string, option: string, checked: boolean)
       <div class="pt-6">
         <button
           type="submit"
-          class="w-full px-6 py-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-colors"
+          class="w-full px-6 py-3.5 bg-black text-white font-medium rounded-lg hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 transition-colors"
         >
           Submit Form
         </button>

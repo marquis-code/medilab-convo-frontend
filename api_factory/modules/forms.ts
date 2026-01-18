@@ -112,4 +112,12 @@ export const forms_api = {
     const url = `/forms/${formId}/restore`
     return GATEWAY_ENDPOINT.patch(url)
   },
+  $_get_form_by_token: async (token: string) => {
+    const url = `/forms/public/${token}`
+    return GATEWAY_ENDPOINT.get(url)
+  },
+  $_submit_form_by_token: async (token: string, submissionData: SubmitFormData) => {
+    const url = `/forms/submit/${token}`
+    return GATEWAY_ENDPOINT.post(url, submissionData)
+  },
 }
