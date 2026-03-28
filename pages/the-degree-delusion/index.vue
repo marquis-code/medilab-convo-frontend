@@ -40,7 +40,7 @@
                 <!-- Book Image -->
                 <div class="flex-shrink-0 flex justify-center lg:justify-end">
                     <div class="relative">
-                        <div class="absolute inset-0 translate-x-4 translate-y-4 bg-[#27628C]/15 rounded-2xl blur-xl">
+                        <div class="absolute inset-0 translate-x-4 translate-y-4 bg-[#27628C]/60 rounded-2xl blur-xl">
                         </div>
                         <div
                             class="relative w-90 sm:w-72 lg:w-90 aspect-[3/4] rounded-2xl shadow-2xl overflow-hidden border border-white/60">
@@ -367,7 +367,7 @@ const panelists = [
 
 const testimonials = [
     {
-        quote: 'The Degree Delusion is an engaging and relevant contribution to discussions on education and personal growth. Its message is both timely and necessary, and I believe earlier exposure to its insights would significantly influence a lot of people\'s academic and professional journey.',
+        quote: 'The Degree Delusion is the most incredible and perfect book I have ever read about the university. It contains all that needs to be understood about the degree and the university as a whole.',
         name: 'Rispha Juma',
         role: 'Final year student',
     },
@@ -379,7 +379,7 @@ const testimonials = [
     {
         quote: 'The Degree Delusion is a well-researched, conversational, and deeply relevant guide for undergraduates and early-career professionals navigating the gap between formal education and real-world readiness. If I had access to this book as an undergraduate, I firmly believe it would have shaped my choices for the better.',
         name: 'Chubiyojo Agada',
-        role: 'Director, The GRIT Community',
+        role: 'Director, The G.R.I.T Community',
     },
     {
         quote: 'This book breaks down a lot of concepts and will go a long way for every young adult trying to get into school and navigate their student life — it says a lot on strategy, value creation and clarity.',
