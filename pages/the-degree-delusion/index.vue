@@ -117,7 +117,7 @@
                 <div class="grid sm:grid-cols-3 gap-4 mb-10">
                     <div class="bg-white/10 backdrop-blur rounded-xl p-6 border border-white/15">
                         <p class="text-white/60 text-xs uppercase tracking-widest mb-2">Date</p>
-                        <p class="text-white font-bold text-xl">April 15, 2026</p>
+                        <p class="text-white font-bold text-xl">March 31, 2026</p>
                     </div>
                     <div class="bg-white/10 backdrop-blur rounded-xl p-6 border border-white/15">
                         <p class="text-white/60 text-xs uppercase tracking-widest mb-2">Time</p>
