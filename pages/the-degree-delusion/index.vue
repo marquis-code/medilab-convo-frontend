@@ -59,7 +59,7 @@
                     <h2 class="text-3xl lg:text-4xl font-extrabold text-gray-900 mb-4"
                         style="font-family:'Georgia',serif;">Inside the Book</h2>
                     <p class="text-gray-500 max-w-2xl mx-auto text-lg">
-                        Whether you're a seasoned lab manager or a recent graduate, this book provides actionable
+                        Whether you're a seasoned professional or a recent graduate, this book provides actionable
                         insights to navigate the evolving landscape of higher education and career-building.
                     </p>
                 </div>
@@ -111,7 +111,7 @@
                     Join the Virtual Book Launch</h2>
                 <p class="text-white/75 text-lg mb-12 max-w-2xl mx-auto">
                     Be part of our exclusive live event featuring a keynote address, a Q&A with the author, and special
-                    guest panels from leading industry experts.
+                    guest panels.
                 </p>
 
                 <div class="grid sm:grid-cols-3 gap-4 mb-10">
@@ -121,7 +121,7 @@
                     </div>
                     <div class="bg-white/10 backdrop-blur rounded-xl p-6 border border-white/15">
                         <p class="text-white/60 text-xs uppercase tracking-widest mb-2">Time</p>
-                        <p class="text-white font-bold text-xl">6:00 PM</p>
+                        <p class="text-white font-bold text-xl">7:00 PM</p>
                     </div>
                     <div class="bg-white/10 backdrop-blur rounded-xl p-6 border border-white/15">
                         <p class="text-white/60 text-xs uppercase tracking-widest mb-2">Location</p>
@@ -129,7 +129,7 @@
                     </div>
                 </div>
 
-                <a href="#"
+                <a href="https://us06web.zoom.us/meeting/register/r72aBfBPSOG6n3d75L5PFQ"
                     class="inline-flex items-center justify-center gap-2 bg-white text-[#27628C] hover:bg-gray-50 font-bold px-10 py-3.5 rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl hover:-translate-y-0.5">
                     Register for Event
                 </a>
@@ -262,7 +262,7 @@
             <div class="max-w-4xl mx-auto text-center">
                 <h2 class="text-3xl lg:text-4xl font-extrabold text-gray-900 mb-4" style="font-family:'Georgia',serif;">
                     Secure Your Copy Today</h2>
-                <p class="text-gray-500 mb-3 text-lg">Available in Hardcover, Paperback, and Digital formats.</p>
+                <p class="text-gray-500 mb-3 text-lg">Available now in digital format, with hardcover and paperback editions to follow.</p>
                 <p class="text-gray-400 text-sm mb-12">Available on Selar for pre-order now.</p>
 
                 <div class="flex flex-wrap justify-center gap-12 mb-12">
@@ -329,15 +329,10 @@ const panelists = [
     { image: panelist1, name: 'Adedoyin Aronimo' },
     { image: panelist2, name: 'Ahmed Adeagbo' },
     { image: panelist3, name: 'Rispha Juma' },
-    { image: panelist4, name: 'Odinaka Obeta' },
+    { image: panelist4, name: 'Odinaka Kingsley Obeta' },
 ]
 
 const testimonials = [
-    {
-        quote: 'The Degree Delusion is the most incredible and perfect book I have ever read about the university. It contains all that needs to be understood about the degree and the university as a whole.',
-        name: 'Rispha Juma',
-        role: 'Final year student',
-    },
     {
         quote: 'The Degree Delusion is an engaging and relevant contribution to discussions on education and personal growth. Its message is both timely and necessary, and I believe earlier exposure to its insights would significantly influence a lot of people\'s academic and professional journey.',
         name: 'Rispha Juma',
@@ -349,14 +344,14 @@ const testimonials = [
         role: 'Final year student',
     },
     {
-        quote: 'A well-researched, conversational, and deeply relevant guide for undergraduates and early-career professionals navigating the gap between formal education and real-world readiness. If I had access to this book as an undergraduate, I firmly believe it would have shaped my choices for the better.',
+        quote: 'The Degree Delusion is a well-researched, conversational, and deeply relevant guide for undergraduates and early-career professionals navigating the gap between formal education and real-world readiness. If I had access to this book as an undergraduate, I firmly believe it would have shaped my choices for the better.',
         name: 'Chubiyojo Agada',
         role: 'Director, The GRIT Community',
     },
     {
         quote: 'This book breaks down a lot of concepts and will go a long way for every young adult trying to get into school and navigate their student life — it says a lot on strategy, value creation and clarity.',
-        name: 'Modupe Laja',
-        role: 'Reader',
+        name: 'Modupe Oyinyechukwu Laja',
+        role: 'Co-founder, Her Physio Movement',
     },
     {
         quote: 'It\'s a great book, and I\'ll surely be getting it for my cousins just starting university.',
@@ -364,18 +359,8 @@ const testimonials = [
         role: 'Rhodes Scholar',
     },
     {
-        quote: 'It is very practical. People can pick up actionable items from it, not just theoretical ideas, and the fact that it is grounded in other people\'s lived reality makes it a banger.',
-        name: 'Ahmed Adeagbo',
-        role: 'Rhodes Scholar',
-    },
-    {
         quote: 'The ideas Oluwamuyiwa has captured in this book are so profound. These ideas are the untold truths about education in many parts of the developing world.',
-        name: 'Odinaka Obeta',
-        role: 'Chevening Scholar',
-    },
-    {
-        quote: 'The Degree Delusion is a disruptor. It is written for a time such as this.',
-        name: 'Odinaka Obeta',
+        name: 'Odinaka Kingsley Obeta',
         role: 'Chevening Scholar',
     },
     {
