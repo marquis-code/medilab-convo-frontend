@@ -19,6 +19,10 @@
                         The Degree<br />
                         <span class="text-[#27628C]">Delusion</span>
                     </h1>
+                    <p class="text-gray-500 text-base lg:text-lg italic mb-6 max-w-xl mx-auto lg:mx-0"
+                        style="font-family: 'Georgia', serif;">
+                        Why Your Degree is Not Enough and How You Can Win Before You Graduate
+                    </p>
                     <p class="text-gray-600 text-lg leading-relaxed max-w-xl mx-auto lg:mx-0 mb-8">
                         A practical, honest, and urgent guide for African undergraduates who want to win <em>before</em>
                         they graduate, not after. Challenge comforting lies, restore your agency, and use your
@@ -39,15 +43,8 @@
 
                 <!-- Book Image -->
                 <div class="flex-shrink-0 flex justify-center lg:justify-end">
-                    <div class="relative">
-                        <div class="absolute inset-0 translate-x-4 translate-y-4 bg-[#27628C]/60 rounded-2xl blur-xl">
-                        </div>
-                        <div
-                            class="relative w-90 sm:w-72 lg:w-90 aspect-[3/4] rounded-2xl shadow-2xl overflow-hidden border border-white/60">
-                            <img src="@/assets/img/book-cover.jpeg" alt="The Degree Delusion book cover"
-                                class="w-full h-full object-cover object-center" />
-                        </div>
-                    </div>
+                    <img src="@/assets/img/book-cover.jpeg" alt="The Degree Delusion book cover"
+                        class="w-96 object-contain drop-shadow-2xl" />
                 </div>
             </div>
         </section>
@@ -59,8 +56,9 @@
                     <h2 class="text-3xl lg:text-4xl font-extrabold text-gray-900 mb-4"
                         style="font-family:'Georgia',serif;">Inside the Book</h2>
                     <p class="text-gray-500 max-w-2xl mx-auto text-lg">
-                        Whether you're a seasoned professional or a recent graduate, this book provides actionable
-                        insights to navigate the evolving landscape of higher education and career-building.
+                        To every undergraduate, recent graduate or young professional navigating uncertainty,
+                        expectations, and ambition, this book provides actionable insights to navigate the evolving
+                        landscape of higher education and career building.
                     </p>
                 </div>
 
