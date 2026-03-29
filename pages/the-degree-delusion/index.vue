@@ -44,7 +44,7 @@
                 <!-- Book Image -->
                 <div class="flex-shrink-0 flex justify-center lg:justify-end">
                     <img src="@/assets/img/book-cover.jpeg" alt="The Degree Delusion book cover"
-                        class="w-96 object-contain drop-shadow-2xl" />
+                        class="w-[32rem] object-contain drop-shadow-2xl" />
                 </div>
             </div>
         </section>
@@ -385,7 +385,7 @@ const testimonials = [
         role: 'Co-founder, Her Physio Movement',
     },
     {
-        quote: 'It\'s a great book, and I\'ll surely be getting it for my cousins just starting university.',
+        quote: 'It\'s a great book... People can pick up actionable items from it, not just theoretical ideas, and the fact that it is grounded in other people\'s lived reality makes it a banger.',
         name: 'Ahmed Adeagbo',
         role: 'Rhodes Scholar',
     },
