@@ -12,8 +12,7 @@
             <div class="relative max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-14">
                 <div class="flex-1 text-center lg:text-left">
                     <span
-                        class="inline-block mb-4 text-xs font-semibold uppercase tracking-widest text-[#27628C] bg-[#27628C]/10 px-4 py-1.5 rounded-full">Available
-                        for Pre-Order</span>
+                        class="inline-block mb-4 text-xs font-semibold uppercase tracking-widest text-[#27628C] bg-[#27628C]/10 px-4 py-1.5 rounded-full">Available Now for Order</span>
                     <h1 class="font-extrabold text-5xl lg:text-6xl leading-tight text-gray-900 mb-6"
                         style="font-family: 'Georgia', serif;">
                         The Degree<br />
@@ -32,7 +31,7 @@
                         <a href="https://selar.com/p/72447137r3?affiliate=v6494e7245" target="_blank"
                             rel="noopener noreferrer"
                             class="inline-flex items-center justify-center gap-2 bg-[#27628C] hover:bg-[#1e4f73] text-white font-semibold px-8 py-3.5 rounded-lg transition-all duration-200 shadow-lg shadow-[#27628C]/30 hover:shadow-xl hover:shadow-[#27628C]/40 hover:-translate-y-0.5">
-                            Pre-Order Now
+                            Order Now
                         </a>
                         <a href="#overview"
                             class="inline-flex items-center justify-center gap-2 border-2 border-[#27628C] text-[#27628C] hover:bg-[#27628C] hover:text-white font-semibold px-8 py-3.5 rounded-lg transition-all duration-200">
@@ -294,7 +293,7 @@
                 <h2 class="text-3xl lg:text-4xl font-extrabold text-gray-900 mb-4" style="font-family:'Georgia',serif;">
                     Secure Your Copy Today</h2>
                 <p class="text-gray-500 mb-3 text-lg">Available now in digital format, with hardcover and paperback editions to follow.</p>
-                <p class="text-gray-400 text-sm mb-12">Available on Selar for pre-order now.</p>
+                <p class="text-gray-400 text-sm mb-12">Available on Selar for order now.</p>
 
                 <div class="flex flex-wrap justify-center gap-12 mb-12">
                     <div v-for="retailer in retailers" :key="retailer.name" class="flex flex-col items-center gap-1">
@@ -305,7 +304,7 @@
 
                 <a href="https://selar.com/p/72447137r3?affiliate=v6494e7245" target="_blank" rel="noopener noreferrer"
                     class="inline-flex items-center justify-center gap-2 bg-[#27628C] hover:bg-[#1e4f73] text-white font-bold px-12 py-4 rounded-xl transition-all duration-200 shadow-xl shadow-[#27628C]/30 hover:shadow-2xl hover:shadow-[#27628C]/40 hover:-translate-y-0.5 text-lg">
-                    Pre-Order Now →
+                    Order Now
                 </a>
 
                 <p class="text-gray-400 text-xs mt-6">
