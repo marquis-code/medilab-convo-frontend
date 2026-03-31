@@ -401,7 +401,7 @@ const testimonials = [
 ]
 
 const retailers = [
-    { name: 'Selar', subtitle: 'Primary / Pre-order' },
+    { name: 'Selar', subtitle: 'Digital format' },
     // { name: 'Amazon', subtitle: 'Hardcover & Kindle' },
     // { name: 'Barnes & Noble', subtitle: 'Paperback & Nook' },
     // { name: 'Bookshop.org', subtitle: 'Support local bookshops' },
