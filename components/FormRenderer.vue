@@ -119,192 +119,231 @@ const handleCheckboxChange = (fieldId: string, option: string, checked: boolean)
 }
 </script>
 
-<template>
-  <div class="w-full max-w-4xl mx-auto">
-    <form @submit.prevent="handleSubmit" class="space-y-6">
-      <!-- Email field (optional) -->
-      <div>
-        <label for="submitter-email" class="block text-sm font-medium text-gray-700 mb-2">
-          Your Email (Optional)
+<<template>
+  <div class="w-full">
+    <form @submit.prevent="handleSubmit" class="space-y-10">
+      <!-- Email field (Optional) -->
+      <div class="space-y-3">
+        <label for="submitter-email" class="text-sm font-bold text-gray-900">
+          Contact information <span class="text-gray-400 font-medium ml-1">(Optional)</span>
         </label>
-      <UiAnimatedInput
-          id="submitter-email"
-          label="Email"
-          v-model="submitterEmail"
-          type="email"
-        />
-        <p class="mt-1 text-xs text-gray-500">
-          Provide your email if you'd like to receive a copy of your submission
-        </p>
-      </div>
-
-      <div class="border-t border-gray-200 pt-6"></div>
-
-      <!-- Form fields -->
-      <div v-for="field in form.fields" :key="field.id" :id="`field-${field.id}`" class="space-y-2">
-        <label :for="field.id" class="block text-sm font-medium text-gray-700">
-          {{ field.label }}
-          <span v-if="field.required" class="text-red-500">*</span>
-        </label>
-
-        <p v-if="field.description" class="text-sm text-gray-600">
-          {{ field.description }}
-        </p>
-
-        <!-- Text Input -->
-        <UiAnimatedInput
-          v-if="field.type === FormFieldType.TEXT"
-          :id="field.id"
-          v-model="formData[field.id]"
-          type="text"
-          :label="field.label"
-          :required="field.required"
-          :class="{ 'border-red-500': errors[field.id] }"
-        />
-
-        <!-- Email Input -->
-        <UiAnimatedInput
-          v-else-if="field.type === FormFieldType.EMAIL"
-          :id="field.id"
-          v-model="formData[field.id]"
-          type="email"
-          :label="field.label"
-          :required="field.required"
-          :class="{ 'border-red-500': errors[field.id] }"
-        />
-
-        <!-- Phone Input -->
-        <UiAnimatedInput
-          v-else-if="field.type === FormFieldType.PHONE"
-          :id="field.id"
-          v-model="formData[field.id]"
-          type="tel"
-          :label="field.label"
-          :required="field.required"
-          :class="{ 'border-red-500': errors[field.id] }"
-        />
-
-        <!-- URL Input -->
-        <UiAnimatedInput
-          v-else-if="field.type === FormFieldType.URL"
-          :id="field.id"
-          v-model="formData[field.id]"
-          type="url"
-          :label="field.label"
-          :required="field.required"
-          class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-          :class="{ 'border-red-500': errors[field.id] }"
-        />
-
-        <!-- Number Input -->
-        <UiAnimatedInput
-          v-else-if="field.type === FormFieldType.NUMBER"
-          :id="field.id"
-          v-model.number="formData[field.id]"
-          type="number"
-          :label="field.label"
-          :required="field.required"
-          :class="{ 'border-red-500': errors[field.id] }"
-        />
-
-        <!-- Date Input -->
-        <UiAnimatedInput
-          v-else-if="field.type === FormFieldType.DATE"
-          :id="field.id"
-          v-model="formData[field.id]"
-          :label="field.label"
-          type="date"
-          :required="field.required"
-          :class="{ 'border-red-500': errors[field.id] }"
-        />
-
-        <!-- Textarea -->
-        <UiAnimatedInput
-          v-else-if="field.type === FormFieldType.TEXTAREA"
-          :id="field.id"
-          v-model="formData[field.id]"
-          :label="field.label"
-          :required="field.required"
-          :rows="4"
-          :cols="6"
-          :class="{ 'border-red-500': errors[field.id] }"
-        />
-
-        <!-- Select Dropdown -->
-        <UiSelectInput
-            v-else-if="field.type === FormFieldType.SELECT"
-            v-model="formData[field.id]"
-            :label="field.label"
-            :options="field.options"
-            :placeholder="field.placeholder || 'Select an option'"
-            :disabled="field.disabled"
-            :hasError="!!errors[field.id]"
-            :errorMessage="errors[field.id]"
-            :showError="true"
+        
+        <div class="relative">
+          <div class="absolute inset-y-0 left-4 flex items-center pointer-events-none text-gray-400">
+            <Icon name="heroicons:envelope" class="w-5 h-5" />
+          </div>
+          <input
+            id="submitter-email"
+            v-model="submitterEmail"
+            type="email"
+            placeholder="your-email@example.com"
+            class="w-full pl-12 pr-4 py-3.5 bg-white border border-gray-200 rounded-xl text-sm font-medium outline-none focus:border-[#27628C] focus:ring-4 focus:ring-[#27628C]/5 transition-all placeholder:text-gray-300"
           />
-        <!-- <select
-          v-else-if="field.type === FormFieldType.SELECT"
-          :id="field.id"
-          v-model="formData[field.id]"
-          :required="field.required"
-          class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-          :class="{ 'border-red-500': errors[field.id] }"
-        >
-          <option value="">{{ field.placeholder || 'Select an option' }}</option>
-          <option v-for="option in field.options" :key="option" :value="option">
-            {{ option }}
-          </option>
-        </select> -->
-
-        <!-- Radio Buttons -->
-        <div v-else-if="field.type === FormFieldType.RADIO" class="space-y-2">
-          <div v-for="option in field.options" :key="option" class="flex items-center">
-            <input
-              :id="`${field.id}-${option}`"
-              v-model="formData[field.id]"
-              type="radio"
-              :value="option"
-              :name="field.id"
-              :required="field.required"
-              class="w-4 h-4 text-blue-600 focus:ring-blue-500"
-            />
-            <label :for="`${field.id}-${option}`" class="ml-3 text-sm text-gray-700">
-              {{ option }}
-            </label>
-          </div>
         </div>
-
-        <!-- Checkboxes -->
-        <div v-else-if="field.type === FormFieldType.CHECKBOX" class="space-y-2">
-          <div v-for="option in field.options" :key="option" class="flex items-center">
-            <input
-              :id="`${field.id}-${option}`"
-              type="checkbox"
-              :value="option"
-              @change="(e) => handleCheckboxChange(field.id, option, (e.target as HTMLInputElement).checked)"
-              class="custom-input"
-            />
-            <label :for="`${field.id}-${option}`" class="ml-3 text-sm text-gray-700">
-              {{ option }}
-            </label>
-          </div>
-        </div>
-
-        <!-- Error message -->
-        <p v-if="errors[field.id]" class="text-sm text-red-600">
-          {{ errors[field.id] }}
+        <p class="text-xs text-gray-400 font-medium px-1">
+          Provide your email to receive a copy of your submission
         </p>
       </div>
 
-      <!-- Submit button -->
-      <div class="pt-6">
+      <div class="border-t border-gray-100"></div>
+
+      <!-- Dynamic Form fields -->
+      <div class="space-y-10">
+        <div v-for="field in form.fields" :key="field.id" :id="`field-${field.id}`" class="space-y-3 animate-fade-in">
+          <!-- Field Label & Description -->
+          <div class="space-y-1">
+            <label :for="field.id" class="text-sm font-bold text-gray-900 flex items-center gap-1.5">
+              {{ field.label }}
+              <span v-if="field.required" class="text-red-500">*</span>
+            </label>
+            <p v-if="field.description" class="text-sm text-gray-500 leading-relaxed max-w-2xl">
+              {{ field.description }}
+            </p>
+          </div>
+
+          <!-- Input Types Rendering -->
+          <div class="relative">
+            <!-- Text/Email/Phone/Number Input -->
+            <div v-if="[FormFieldType.TEXT, FormFieldType.EMAIL, FormFieldType.PHONE, FormFieldType.NUMBER, FormFieldType.URL].includes(field.type)" class="relative">
+              <input
+                :id="field.id"
+                v-model="formData[field.id]"
+                :type="field.type === FormFieldType.PHONE ? 'tel' : field.type.toLowerCase()"
+                :placeholder="field.placeholder || `Enter ${field.label.toLowerCase()}...`"
+                class="w-full px-4 py-3.5 bg-white border border-gray-200 rounded-xl text-sm font-medium outline-none focus:border-[#27628C] focus:ring-4 focus:ring-[#27628C]/5 transition-all placeholder:text-gray-300"
+                :class="{ '!border-red-200 !bg-red-50/30': errors[field.id] }"
+              />
+            </div>
+
+            <!-- Date Input -->
+            <div v-else-if="field.type === FormFieldType.DATE" class="relative">
+              <input
+                :id="field.id"
+                v-model="formData[field.id]"
+                type="date"
+                class="w-full px-4 py-3.5 bg-white border border-gray-200 rounded-xl text-sm font-medium outline-none focus:border-[#27628C] focus:ring-4 focus:ring-[#27628C]/5 transition-all shadow-sm"
+                :class="{ '!border-red-200 !bg-red-50/30': errors[field.id] }"
+              />
+            </div>
+
+            <!-- Textarea -->
+            <div v-else-if="field.type === FormFieldType.TEXTAREA" class="relative">
+              <textarea
+                :id="field.id"
+                v-model="formData[field.id]"
+                :placeholder="field.placeholder || 'Type your message here...'"
+                rows="5"
+                class="w-full px-4 py-4 bg-white border border-gray-200 rounded-2xl text-sm font-medium outline-none focus:border-[#27628C] focus:ring-4 focus:ring-[#27628C]/5 transition-all placeholder:text-gray-300 resize-none"
+                :class="{ '!border-red-200 !bg-red-50/30': errors[field.id] }"
+              ></textarea>
+            </div>
+
+            <!-- Select Input -->
+            <div v-else-if="field.type === FormFieldType.SELECT" class="relative">
+              <UiSelectInput
+                v-model="formData[field.id]"
+                :label="field.label"
+                :options="field.options"
+                :placeholder="field.placeholder || 'Select an option'"
+                :hasError="!!errors[field.id]"
+                class="!mb-0"
+              />
+            </div>
+
+            <!-- Radio Buttons (Minimalist) -->
+            <div v-else-if="field.type === FormFieldType.RADIO" class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <label 
+                v-for="option in field.options" 
+                :key="option"
+                :class="[
+                  'group relative flex items-center p-4 rounded-xl border transition-all cursor-pointer',
+                  formData[field.id] === option 
+                    ? 'border-[#27628C] bg-blue-50/30' 
+                    : 'border-gray-100 bg-white hover:border-gray-200'
+                ]"
+              >
+                <input
+                  type="radio"
+                  v-model="formData[field.id]"
+                  :value="option"
+                  class="sr-only"
+                />
+                <div :class="[
+                  'w-4 h-4 rounded-full border mr-3 flex items-center justify-center transition-all',
+                  formData[field.id] === option ? 'border-[#27628C] bg-[#27628C]' : 'border-gray-300 bg-white'
+                ]">
+                  <div v-if="formData[field.id] === option" class="w-1 h-1 rounded-full bg-white"></div>
+                </div>
+                <span :class="['text-sm font-medium', formData[field.id] === option ? 'text-[#27628C]' : 'text-gray-600']">
+                  {{ option }}
+                </span>
+              </label>
+            </div>
+
+            <!-- Checkboxes (Minimalist) -->
+            <div v-else-if="field.type === FormFieldType.CHECKBOX" class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <label 
+                v-for="option in field.options" 
+                :key="option"
+                :class="[
+                  'group relative flex items-center p-4 rounded-xl border transition-all cursor-pointer',
+                  (formData[field.id] || []).includes(option)
+                    ? 'border-[#27628C] bg-blue-50/30' 
+                    : 'border-gray-100 bg-white hover:border-gray-200'
+                ]"
+              >
+                <input
+                  type="checkbox"
+                  :value="option"
+                  :checked="(formData[field.id] || []).includes(option)"
+                  @change="(e) => handleCheckboxChange(field.id, option, (e.target as HTMLInputElement).checked)"
+                  class="sr-only"
+                />
+                <div :class="[
+                  'w-4 h-4 rounded border mr-3 flex items-center justify-center transition-all',
+                  (formData[field.id] || []).includes(option) ? 'border-[#27628C] bg-[#27628C]' : 'border-gray-300 bg-white'
+                ]">
+                  <Icon v-if="(formData[field.id] || []).includes(option)" name="heroicons:check" class="w-3 h-3 text-white" />
+                </div>
+                <span :class="['text-sm font-medium', (formData[field.id] || []).includes(option) ? 'text-[#27628C]' : 'text-gray-600']">
+                  {{ option }}
+                </span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Error Messaging -->
+          <Transition name="slide-fade">
+            <div v-if="errors[field.id]" class="flex items-center gap-1.5 mt-1.5 px-1 text-red-500">
+              <Icon name="heroicons:exclamation-circle" class="w-4 h-4 flex-shrink-0" />
+              <span class="text-xs font-bold">{{ errors[field.id] }}</span>
+            </div>
+          </Transition>
+        </div>
+      </div>
+
+      <!-- Submit Section -->
+      <div class="pt-8 border-t border-gray-100">
         <button
           type="submit"
-          class="w-full px-6 py-3.5 bg-black text-white font-medium rounded-lg hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 transition-colors"
+          class="w-full flex items-center justify-center bg-[#27628C] text-white rounded-xl py-4 font-bold text-sm hover:bg-[#1e4d6f] transition-all"
         >
-          Submit Form
+          Submit registration
+          <Icon name="heroicons:paper-airplane" class="w-4 h-4 ml-2" />
         </button>
+        <p class="text-center mt-4 text-xs text-gray-400 font-medium">
+          By submitting, you agree to our terms and data processing policy
+        </p>
       </div>
     </form>
   </div>
 </template>
+
+<style scoped>
+.slide-fade-enter-active {
+  transition: all 0.3s ease-out;
+}
+.slide-fade-leave-active {
+  transition: all 0.2s cubic-bezier(1, 0.5, 0.8, 1);
+}
+.slide-fade-enter-from,
+.slide-fade-leave-to {
+  transform: translateY(-5px);
+  opacity: 0;
+}
+
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in { animation: fade-in 0.4s ease-out forwards; }
+</style>
+
+<style scoped>
+.slide-fade-enter-active {
+  transition: all 0.3s ease-out;
+}
+.slide-fade-leave-active {
+  transition: all 0.2s cubic-bezier(1, 0.5, 0.8, 1);
+}
+.slide-fade-enter-from,
+.slide-fade-leave-to {
+  transform: translateY(-10px);
+  opacity: 0;
+}
+
+@keyframes scale-up {
+  from { transform: scale(0.5); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-4px); }
+  75% { transform: translateX(4px); }
+}
+
+.animate-scale-up { animation: scale-up 0.2s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
+.animate-shake { animation: shake 0.3s ease-in-out; }
+</style>

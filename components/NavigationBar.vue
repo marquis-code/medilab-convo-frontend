@@ -1,72 +1,92 @@
 <template>
-    <header class="absolute inset-x-0 top-0 z-50 bg-black text-white">
-        <nav class="flex items-center justify-between px-6 lg:p-6 lg:px-8" aria-label="Global">
-          <div class="flex lg:flex-1">
-            <NuxtLink to="/" class="-m-1.5 p-1.5">
-              <span class="sr-only">Your Company</span>
-              <img class="h-16 w-auto" src="@/assets/img/medlab-logo.jpeg" alt="">
-            </NuxtLink>
-          </div>
-          <div class="flex lg:hidden">
-            <button @click="isOpen = true" type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-400">
-              <span class="sr-only">Open main menu</span>
-              <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-              </svg>
-            </button>
-          </div>
-          <div class="hidden lg:flex lg:gap-x-12">
-            <NuxtLink to="/journo" class="text-sm font-semibold leading-6 text-white">Journo</NuxtLink>
-            <NuxtLink to="/lab-cast" class="text-sm font-semibold leading-6 text-white">LabCast</NuxtLink>
-            <NuxtLink to="/programs" class="text-sm font-semibold leading-6 text-white">Programs</NuxtLink>
-            <NuxtLink to="/community" class="text-sm font-semibold leading-6 text-white">Community</NuxtLink>
-            <NuxtLink to="/products" class="text-sm font-semibold leading-6 text-white">Products</NuxtLink>
-            <!-- <NuxtLink to="/teams" class="text-sm font-semibold leading-6 text-white">About</NuxtLink> -->
-            <NuxtLink to="/resources" class="text-sm font-semibold leading-6 text-white">Resources</NuxtLink>
-          </div>
-          <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-            <NuxtLink to="/teams" href="#" class="text-sm font-semibold leading-6 text-white">About <span aria-hidden="true">&rarr;</span></NuxtLink>
-          </div>
-        </nav>
-        <!-- Mobile menu, show/hide based on menu open state. -->
-        <div v-if="isOpen" class="lg:hidden" role="dialog" aria-modal="true">
-          <!-- Background backdrop, show/hide based on slide-over state. -->
-          <div class="fixed inset-0 z-50"></div>
-          <div class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-black px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-white/10">
-            <div class="flex items-center justify-between">
-              <a href="#" class="-m-1.5 p-1.5">
-                <span class="sr-only">Your Company</span>
-                <img class="h-10 w-auto" src="@/assets/img/medlab-logo.jpeg" alt="">
-              </a>
-              <button @click="isOpen = false" type="button" class="-m-2.5 rounded-md p-2.5 text-gray-400">
-                <span class="sr-only">Close menu</span>
-                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                </svg>
-              </button>
+  <header class="sticky top-0 z-50 w-full bg-black transition-all duration-300" :class="{ 'border-b border-white/10 shadow-lg': isScrolled }">
+    <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
+      <div class="flex lg:flex-1">
+        <NuxtLink to="/" class="-m-1.5 p-1.5 transition-transform hover:scale-105">
+          <span class="sr-only">MedLabConvo</span>
+          <img class="h-12 w-auto object-contain rounded-md shadow-sm" src="@/assets/img/medlab-logo.jpeg" alt="MedLabConvo Logo" />
+        </NuxtLink>
+      </div>
+      <div class="flex lg:hidden">
+        <button @click="isOpen = true" type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-300 hover:text-white transition-colors">
+          <span class="sr-only">Open main menu</span>
+          <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </svg>
+        </button>
+      </div>
+      <div class="hidden lg:flex lg:gap-x-8">
+        <NuxtLink v-for="item in navigation" :key="item.name" :to="item.href" class="text-sm font-medium leading-6 text-gray-300 hover:text-white transition-colors duration-200 relative group">
+          {{ item.name }}
+          <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
+        </NuxtLink>
+      </div>
+      <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+         <NuxtLink to="/teams" class="text-sm font-semibold leading-6 text-white bg-blue-600/80 hover:bg-blue-500 border border-blue-500/50 backdrop-blur-sm px-5 py-2 rounded-full transition-all duration-300 hover:shadow-[0_0_15px_rgba(59,130,246,0.6)]">
+          About Us <span aria-hidden="true" class="inline-block transition-transform group-hover:translate-x-1 ml-1">&rarr;</span>
+        </NuxtLink>
+      </div>
+    </nav>
+    <!-- Mobile menu -->
+    <div v-if="isOpen" class="lg:hidden" role="dialog" aria-modal="true">
+      <div class="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm transition-opacity" @click="isOpen = false"></div>
+      <div class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-gray-900/95 backdrop-blur-xl px-6 py-6 sm:max-w-sm border-l border-white/10 shadow-2xl transition-transform duration-300 transform" :class="isOpen ? 'translate-x-0' : 'translate-x-full'">
+        <div class="flex items-center justify-between">
+          <NuxtLink to="/" class="-m-1.5 p-1.5">
+            <span class="sr-only">MedLabConvo</span>
+            <img class="h-10 w-auto rounded-md shadow-sm" src="@/assets/img/medlab-logo.jpeg" alt="MedLabConvo Logo" />
+          </NuxtLink>
+          <button @click="isOpen = false" type="button" class="-m-2.5 rounded-md p-2.5 text-gray-400 hover:text-white transition-colors">
+            <span class="sr-only">Close menu</span>
+            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+        <div class="mt-6 flow-root">
+          <div class="-my-6 divide-y divide-gray-700/50">
+            <div class="space-y-2 py-6">
+              <NuxtLink v-for="item in navigation" :key="item.name" @click="isOpen = false" :to="item.href" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-300 hover:bg-gray-800 hover:text-white transition-colors">
+                {{ item.name }}
+              </NuxtLink>
             </div>
-            <div class="mt-6 flow-root">
-              <div class="-my-6 divide-y divide-gray-500/25">
-                <div class="space-y-2 py-6">
-                  <NuxtLink @click="isOpen = false" to="/" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-800">Home</NuxtLink>
-                  <NuxtLink @click="isOpen = false" to="/journo" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-800">Journo</NuxtLink>
-                  <NuxtLink @click="isOpen = false" to="/lab-cast" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-800">LabCast</NuxtLink>
-                  <NuxtLink @click="isOpen = false" to="/programs" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-800">Programs</NuxtLink>
-                  <NuxtLink @click="isOpen = false" to="/community" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-800">Community</NuxtLink>
-                  <NuxtLink @click="isOpen = false" to="/products" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-800">Products</NuxtLink>
-                  <!-- <NuxtLink @click="isOpen = false" to="/teams" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-800">About</NuxtLink> -->
-                  <NuxtLink @click="isOpen = false" to="/resources" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-800">Resources</NuxtLink>
-                </div>
-                <div class="py-6">
-                  <NuxtLink @click="isOpen = false" to="/teams" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-white hover:bg-gray-800">About</NuxtLink>
-                </div>
-              </div>
+            <div class="py-6">
+              <NuxtLink @click="isOpen = false" to="/teams" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-white bg-blue-600/20 hover:bg-blue-600/40 border border-blue-500/30 transition-colors text-center">
+                About Us
+              </NuxtLink>
             </div>
           </div>
         </div>
-      </header>
+      </div>
+    </div>
+  </header>
 </template>
 
 <script setup lang="ts">
+import { ref, onMounted, onUnmounted } from 'vue'
+
 const isOpen = ref(false)
+const isScrolled = ref(false)
+
+const navigation = [
+  { name: 'Journo', href: '/journo' },
+  { name: 'LabCast', href: '/lab-cast' },
+  { name: 'Convo Stack', href: '/convostack' },
+  { name: 'Programs', href: '/programs' },
+  { name: 'Community', href: '/community' },
+  { name: 'Products', href: '/products' },
+  { name: 'Resources', href: '/resources' },
+]
+
+const handleScroll = () => {
+  isScrolled.value = window.scrollY > 20
+}
+
+onMounted(() => {
+  window.addEventListener('scroll', handleScroll)
+})
+
+onUnmounted(() => {
+  window.removeEventListener('scroll', handleScroll)
+})
 </script>

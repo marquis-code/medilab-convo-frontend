@@ -6,7 +6,7 @@
     "url": "https://github.com/marquis-code/medilab-convo-frontend"
   },
   "scripts": {
-    "dev": "nuxt dev",
+    "dev": "nuxt dev --port 3002",
     "build": "nuxt build",
     "start": "node .output/server/index.mjs",
     "generate": "nuxt generate",
@@ -21,6 +21,7 @@
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
+    "@headlessui/vue": "^1.7.23",
     "@nuxtjs/google-fonts": "^3.2.0",
     "@nuxtjs/pwa": "^3.3.5",
     "@nuxtjs/robots": "^5.2.8",

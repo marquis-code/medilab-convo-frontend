@@ -18,6 +18,8 @@ export type LabCast = {
   tags?: string[]
   duration?: number
   transcriptUrl?: string
+  youtubeUrl?: string
+  position?: number
   notes?: string
   isActive?: boolean
   createdAt?: string
@@ -40,6 +42,8 @@ export type CreateLabCastData = {
   tags?: string[]
   duration?: number
   transcriptUrl?: string
+  youtubeUrl?: string
+  position?: number
   notes?: string
   isActive?: boolean
 }

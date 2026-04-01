@@ -7,7 +7,7 @@
       </select>
     </div>
     <div>
-      <div class="border-b-[0.2px] border-gray-50">
+      <div class="border-b-[0.2px] ">
         <div class="flex justify-between items-start border-b border-gray-100 pb-10 px-7">
           <img src="@/assets/icons/dashboard/android-badge.svg" alt="" />
           <div class="space-y-4">

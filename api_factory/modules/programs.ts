@@ -30,13 +30,16 @@ export type Program = {
   outcomes?: string[]
   keyResponsibilities?: string[]
   image?: string
+  images?: string[]
   highlights?: Highlight[]
   status?: ProgramStatus
   registrationToken?: string
   formFields: FormField[]
   formTitle?: string
   formInstructions?: string
+  externalFormLink?: string
   applicationsCount?: number
+  form?: any
   createdAt?: string
   updatedAt?: string
 }
@@ -54,6 +57,8 @@ export type CreateProgramData = {
   formFields: FormField[]
   formTitle?: string
   formInstructions?: string
+  externalFormLink?: string
+  formId?: string
 }
 
 export type UpdateProgramData = Partial<CreateProgramData>

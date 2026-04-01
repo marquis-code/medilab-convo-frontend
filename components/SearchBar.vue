@@ -1,7 +1,7 @@
 <template>
     <div class="px-2 lg:px-0">
       <div class="w-full max-w-7xl border border-gray-100 mx-auto rounded-lg p-2 bg-gray-50">
-        <div class="bg-white shadow rounded-lg border border-gray-50 p-4 flex items-center">
+        <div class="bg-white shadow rounded-lg border  p-4 flex items-center">
           <div class="flex flex-col w-full relative">
             <label class="text-gray-600 text-sm font-semibold flex items-center gap-x-2">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#417505" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">

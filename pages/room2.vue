@@ -248,7 +248,7 @@
                   <div class="flex items-center gap-4">
                     <div :class="[
                       'w-6 h-6 rounded-full border-2 flex items-center justify-center transition-all duration-300',
-                      selectedAnswer === option ? 'border-cyan-400 bg-cyan-400' : 'border-gray-500'
+                      selectedAnswer === option ? 'border-cyan-400 bg-cyan-400' : '0'
                     ]">
                       <div v-if="selectedAnswer === option" class="w-3 h-3 bg-white rounded-full animate-scale-in"></div>
                     </div>
@@ -285,7 +285,7 @@
                   'group relative overflow-hidden px-10 py-4 rounded-2xl font-bold text-xl transition-all duration-300 transform',
                   selectedAnswer && !isSubmitting
                     ? 'bg-gradient-to-r from-green-500 to-emerald-600 text-white border-2 border-green-400 hover:scale-105 hover:shadow-lg hover:shadow-green-500/30'
-                    : 'bg-gray-600 text-gray-400 border-2 border-gray-500 cursor-not-allowed'
+                    : 'bg-gray-600 text-gray-400 border-2 0 cursor-not-allowed'
                 ]"
               >
                 <span class="relative z-10">

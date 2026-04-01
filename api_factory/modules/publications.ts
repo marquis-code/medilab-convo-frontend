@@ -19,6 +19,7 @@ export type Publication = {
   reviewedBy?: string
   reviewedAt?: string
   rejectionReason?: string
+  images?: string[]
   publishedAt?: string
   createdAt?: string
   updatedAt?: string

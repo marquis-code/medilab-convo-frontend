@@ -56,52 +56,73 @@
       </div>
 
       <!-- Latest Publication Content -->
-      <div v-else-if="latestPublication" class="relative bg-[#27628C] lg:mt-10 pt-0 animate-fade-in-up">
-        <div class="relative mx-auto max-w-7xl py-16 sm:py-24 px-6 lg:px-8">
-          <div class="flex flex-col lg:flex-row items-center gap-8 lg:gap-16">
-            <!-- Image -->
-            <div class="w-full lg:w-1/2">
-              <div class="relative group overflow-hidden rounded-lg">
-                <img 
-                  :src="latestPublication.images[0]" 
-                  :alt="latestPublication.title"
-                  class="w-full h-64 sm:h-80 object-cover transition-transform duration-500 group-hover:scale-105"
-                >
-                <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+      <div v-else-if="latestPublication" class="group relative bg-white rounded-[2.5rem] shadow-2xl overflow-hidden border border-gray-100 transition-all duration-500 hover:shadow-blue-900/10 active:scale-[0.99] animate-fade-in-up">
+        <div class="flex flex-col lg:flex-row min-h-[450px]">
+            <div class="lg:w-[45%] relative bg-gray-50 flex items-center justify-center p-6 sm:p-12">
+              <img 
+                v-if="latestPublication.images && latestPublication.images.length"
+                :src="latestPublication.images[0]" 
+                :alt="latestPublication.title"
+                class="w-full h-full max-h-[500px] object-contain drop-shadow-2xl transition-transform duration-700 group-hover:scale-105"
+              >
+              <div v-else class="w-24 h-24 bg-gray-100 rounded-full flex items-center justify-center">
+                <span class="text-4xl">📄</span>
+              </div>
+            <div class="absolute inset-0 bg-gradient-to-r from-transparent via-transparent to-white/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+            
+            <div class="absolute top-8 left-8">
+              <div class="bg-gray-900/90 backdrop-blur-md text-white px-5 py-2 rounded-2xl text-xs font-bold tracking-widest shadow-xl">
+                LATEST • {{ latestPublication.year }}
               </div>
             </div>
-            
-            <!-- Content -->
-            <div class="w-full lg:w-1/2 text-center lg:text-left">
-              <h3 class="text-2xl sm:text-3xl lg:text-4xl font-semibold tracking-tight text-white mb-4 sm:mb-6">
+          </div>
+          
+          <!-- Content Side -->
+          <div class="flex-1 p-10 lg:p-16 flex flex-col justify-between space-y-8 bg-white text-left">
+            <div class="space-y-6">
+              <div class="flex items-center gap-4 text-[#27628C] font-bold text-sm uppercase tracking-widest">
+                <span class="flex items-center gap-2">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                  </svg>
+                  {{ formatDate(latestPublication.createdAt) }}
+                </span>
+                <span class="w-1.5 h-1.5 bg-gray-300 rounded-full"></span>
+                <span class="flex items-center gap-2">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+                  </svg>
+                  {{ latestPublication.authors }}
+                </span>
+              </div>
+
+              <h3 class="text-3xl lg:text-5xl font-black text-gray-900 leading-[1.1] group-hover:text-[#27628C] transition-colors duration-300">
                 {{ latestPublication.title }}
               </h3>
-              <p class="text-base sm:text-lg text-white/90 mb-6 leading-relaxed">
-                {{ truncateText(latestPublication.abstract, 200) }}
+              
+              <p class="text-gray-600 text-lg leading-relaxed max-w-2xl line-clamp-4">
+                {{ truncateText(latestPublication.abstract || '', 250) }}
               </p>
-              <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 mb-6">
-                <div class="flex items-center gap-2 text-white/80">
-                  <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
-                    <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd" />
-                  </svg>
-                  <span class="text-sm">{{ latestPublication.authors }}</span>
+              
+              <div class="flex flex-wrap items-center gap-4 pt-4">
+                <div class="flex items-center gap-2 bg-blue-50 text-[#27628C] px-4 py-2 rounded-xl text-sm font-bold">
+                  <span class="w-2 h-2 bg-[#27628C] rounded-full"></span>
+                  {{ latestPublication.journal }}
                 </div>
-                <div class="flex items-center gap-2 text-white/80">
-                  <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
-                    <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd" />
-                  </svg>
-                  <span class="text-sm">{{ latestPublication.year }}</span>
+                <div class="flex items-center gap-2 bg-indigo-50 text-indigo-600 px-4 py-2 rounded-xl text-sm font-bold">
+                  {{ latestPublication.category }}
                 </div>
               </div>
+            </div>
+
+            <div class="pt-8 border-t border-gray-100">
               <NuxtLink 
                 :to="latestPublication.link || latestPublication.pubLink"
                 target="_blank"
-                class="inline-flex items-center gap-2 rounded-md bg-white/10 px-4 py-3 text-sm font-semibold text-white shadow-sm hover:bg-white/20 transition-all duration-300 hover:scale-105 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+                class="group relative inline-flex items-center justify-center bg-gray-900 hover:bg-gray-800 text-white px-8 py-4 rounded-2xl font-black uppercase tracking-widest text-sm shadow-xl hover:shadow-2xl transition-all duration-300 overflow-hidden"
               >
-                Read Full Article
-                <svg class="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                </svg>
+                <span class="relative z-10">Read Full Article</span>
+                <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000"></div>
               </NuxtLink>
             </div>
           </div>
@@ -149,51 +170,69 @@
           </div>
         </div>
 
-        <!-- Publications Grid -->
         <div v-else-if="otherPublications.length > 0" 
-             class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
+             class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
           <article 
             v-for="(publication, index) in otherPublications" 
-            :key="publication._id"
-            class="group cursor-pointer animate-fade-in-up"
+            :key="publication.id"
+            class="group relative flex flex-col bg-white rounded-3xl overflow-hidden transition-all duration-500 hover:-translate-y-3 animate-fade-in-up"
             :style="{ animationDelay: `${index * 100}ms` }"
           >
-            <NuxtLink :to="publication.link || publication.pubLink" target="_blank" class="block">
-              <div class="relative overflow-hidden rounded-2xl bg-gray-100 transition-all duration-300 group-hover:shadow-xl">
+            <NuxtLink :to="publication.link || publication.pubLink" target="_blank" class="flex flex-col h-full">
+              <!-- Thumbnail -->
+              <div class="relative bg-slate-50 overflow-hidden aspect-square border-b border-slate-50">
                 <img 
+                  v-if="publication.images && publication.images.length"
                   :src="publication.images[0]" 
                   :alt="publication.title"
-                  class="aspect-video w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  class="absolute inset-0 w-full h-full object-contain p-4 drop-shadow-md transition-transform duration-700 group-hover:scale-105"
                 >
-                <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                <div class="absolute top-4 left-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <span class="inline-flex items-center rounded-full bg-white/90 px-3 py-1 text-xs font-medium text-gray-900">
+
+                <!-- Category Badge -->
+                <div class="absolute top-4 left-4">
+                  <div class="bg-white/90 backdrop-blur-md text-slate-900 px-3 py-1 rounded-lg text-[10px] font-black uppercase tracking-widest shadow-sm border border-slate-100">
                     {{ publication.category }}
-                  </span>
+                  </div>
                 </div>
-                <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
               </div>
               
-              <div class="mt-6">
-                <div class="flex items-center gap-2 text-sm text-gray-500 mb-3">
-                  <span>{{ publication.journal }}</span>
-                  <span>•</span>
-                  <span>{{ publication.year }}</span>
+              <!-- Card Content -->
+              <div class="p-6 flex-1 flex flex-col justify-between border-x border-b border-slate-100 rounded-b-3xl">
+                <div class="space-y-4">
+                  <div class="flex items-center justify-between text-[10px] font-black text-slate-400 uppercase tracking-widest">
+                    <span class="flex items-center gap-1.5">
+                       <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                      </svg>
+                      {{ publication.year }}
+                    </span>
+                    <span class="flex items-center gap-1.5 max-w-[150px] truncate">
+                      <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                      </svg>
+                      {{ publication.journal }}
+                    </span>
+                  </div>
+                  
+                  <h3 class="text-lg font-black text-slate-900 group-hover:text-[#27628C] transition-colors leading-tight line-clamp-2">
+                    {{ publication.title }}
+                  </h3>
+                  
+                  <p class="text-slate-500 text-sm leading-relaxed line-clamp-3">
+                    {{ publication.abstract || '' }}
+                  </p>
                 </div>
-                
-                <h3 class="text-lg font-semibold text-gray-900 group-hover:text-[#27628C] transition-colors duration-300 leading-tight">
-                  {{ publication.title }}
-                </h3>
-                
-                <p class="mt-3 text-sm text-gray-600 leading-relaxed line-clamp-3">
-                  {{ publication.abstract }}
-                </p>
-                
-                <div class="mt-6 flex items-center gap-3">
-                  <img src="@/assets/icons/avatar.svg" alt="" class="h-8 w-8 rounded-full bg-gray-100">
-                  <div>
-                    <p class="text-sm font-medium text-gray-900">{{ publication.authors }}</p>
-                    <p class="text-xs text-gray-500">{{ formatDate(publication.createdAt) }}</p>
+
+                <!-- Footer -->
+                <div class="flex items-center gap-3 pt-6 mt-6 border-t border-slate-50">
+                  <div class="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center text-[#27628C]">
+                     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+                    </svg>
+                  </div>
+                  <div class="flex-1 min-w-0">
+                    <p class="text-[10px] font-black text-slate-900 truncate uppercase tracking-widest">{{ publication.authors }}</p>
+                    <p class="text-[9px] font-bold text-slate-400">{{ formatDate(publication.createdAt || '') }}</p>
                   </div>
                 </div>
               </div>
@@ -219,7 +258,7 @@
       <div class="mx-auto max-w-7xl px-6 lg:px-8">
         <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-2">
           <div class="max-w-xl lg:max-w-lg">
-            <h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-center lg:text-left text-white sm:text-4xl animate-fade-in-up">
+            <h2 class="text-2xl sm:text-4xl font-bold tracking-tight text-center lg:text-left text-white animate-fade-in-up">
               Be the first. Get Journo in your mail.
             </h2>
             <p class="mt-4 text-lg leading-8 text-center lg:text-left text-gray-200 animate-fade-in-up animation-delay-200">
@@ -262,17 +301,18 @@ const publishedPublications = computed(() => {
 // Get latest publication (most recent)
 const latestPublication = computed(() => {
   if (publishedPublications.value.length === 0) return null
-  return publishedPublications.value.reduce((latest, current) => {
-    const latestDate = new Date(latest.createdAt)
-    const currentDate = new Date(current.createdAt)
-    return currentDate > latestDate ? current : latest
-  })
+  return [...publishedPublications.value].sort((a, b) => {
+    const aDate = new Date(a.createdAt || 0).getTime()
+    const bDate = new Date(b.createdAt || 0).getTime()
+    return bDate - aDate
+  })[0]
 })
 
 // Get other publications excluding the latest
 const otherPublications = computed(() => {
   if (!latestPublication.value) return publishedPublications.value
-  return publishedPublications.value.filter(pub => pub._id !== latestPublication.value._id)
+  const latestId = latestPublication.value.id || (latestPublication.value as any)._id
+  return publishedPublications.value.filter(pub => (pub.id || (pub as any)._id) !== latestId)
 })
 
 // Utility functions
@@ -281,7 +321,8 @@ const truncateText = (text: string, maxLength: number): string => {
   return text.substring(0, maxLength) + '...'
 }
 
-const formatDate = (dateString: string): string => {
+const formatDate = (dateString: string | undefined): string => {
+  if (!dateString) return 'N/A'
   return new Date(dateString).toLocaleDateString('en-US', {
     year: 'numeric',
     month: 'short',
@@ -319,5 +360,6 @@ const formatDate = (dateString: string): string => {
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
+  line-clamp: 3;
 }
 </style>

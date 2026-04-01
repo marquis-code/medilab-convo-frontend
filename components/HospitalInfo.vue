@@ -5,7 +5,7 @@
         <button @click="router.back()" class="text-2xl">←</button>
         <div class="flex-grow text-center text-2xl font-bold">
           <div class="flex justify-center items-center">
-            <img class="h-8 w-auto" src="@/assets/img/logo.png" alt="" />
+            <img class="h-8 w-auto" src="@/assets/img/medlab-logo.jpeg" alt="" />
           </div>
         </div>
       </div>

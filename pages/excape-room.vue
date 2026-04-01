@@ -138,7 +138,7 @@
                   'w-full p-4 text-left rounded-lg border-2 transition-all duration-300 text-sm sm:text-base font-medium',
                   selectedAnswer === option 
                     ? 'border-yellow-500 bg-yellow-500/20 text-yellow-100 shadow-lg' 
-                    : 'border-gray-500 bg-gray-800/90 hover:border-blue-400 hover:bg-gray-700/90 text-gray-100 hover:text-white'
+                    : '0 bg-gray-800/90 hover:border-blue-400 hover:bg-gray-700/90 text-gray-100 hover:text-white'
                 ]"
                 :disabled="isSubmitting"
               >
@@ -151,7 +151,7 @@
                 v-model="selectedAnswer"
                 type="text"
                 :placeholder="currentPuzzle.placeholder || 'Enter your answer...'"
-                class="w-full p-4 bg-gray-800/90 border-2 border-gray-500 rounded-lg text-white placeholder-gray-300 focus:border-blue-400 focus:outline-none transition-colors duration-300 text-sm sm:text-base"
+                class="w-full p-4 bg-gray-800/90 border-2 0 rounded-lg text-white placeholder-gray-300 focus:border-blue-400 focus:outline-none transition-colors duration-300 text-sm sm:text-base"
                 @keyup.enter="submitAnswer"
                 :disabled="isSubmitting"
               />
@@ -162,7 +162,7 @@
                   'w-full px-8 py-4 font-bold rounded-lg transition-all duration-300 transform text-sm sm:text-base',
                   selectedAnswer && !isSubmitting
                     ? 'bg-gradient-to-r from-green-600 to-green-700 hover:from-green-500 hover:to-green-600 text-white border-2 border-green-400 hover:scale-105 shadow-xl shadow-green-500/40'
-                    : 'bg-gray-600/80 text-gray-300 border-2 border-gray-500 cursor-not-allowed'
+                    : 'bg-gray-600/80 text-gray-300 border-2 0 cursor-not-allowed'
                 ]"
               >
                 <span class="drop-shadow-lg">{{ isSubmitting ? 'PROCESSING...' : 'SUBMIT ANSWER' }}</span>

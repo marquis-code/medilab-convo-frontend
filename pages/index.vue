@@ -72,87 +72,80 @@
     </div>
   </section> -->
 
-  <!-- 3. NEW SECTION: What We Do (Replace the current Target Audience section) -->
+  <!-- 3. NEW SECTION: What We Do (Professional Refresh) -->
   <section id="what-we-do" class="py-24 bg-white">
     <div class="max-w-7xl mx-auto px-6 lg:px-8">
       <div class="text-center mb-16">
-        <h2 class="text-4xl font-bold text-gray-900 mb-4">
-          <span class="bg-gradient-to-r from-[#27628C] to-blue-600 bg-clip-text text-transparent">
-            What We Do
-          </span>
-        </h2>
-        <div class="w-24 h-1 bg-gradient-to-r from-[#27628C] to-blue-600 mx-auto rounded-full"></div>
+        <h2 class="text-xs font-black uppercase tracking-[0.4em] text-[#27628C] mb-4">Core Services</h2>
+        <h3 class="text-4xl font-bold text-gray-900 mb-6">Advancing Healthcare through Innovation</h3>
+        <div class="w-16 h-1.5 bg-[#27628C] mx-auto rounded-full"></div>
       </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+ 
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10">
         <!-- Service 1 -->
-        <div class="group relative bg-gradient-to-br from-white to-blue-50/50 rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
-          <div class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-[#27628C]/10 to-blue-600/10 rounded-full blur-3xl group-hover:scale-150 transition-transform duration-500"></div>
+        <div class="group relative bg-white rounded-2xl p-10 border border-slate-100 shadow-sm hover:shadow-md transition-all duration-300">
           <div class="relative">
-            <div class="flex items-center justify-center w-14 h-14 mb-6 rounded-2xl bg-gradient-to-br from-[#27628C] to-blue-600 shadow-lg group-hover:scale-110 transition-transform duration-300">
-              <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div class="flex items-center justify-center w-12 h-12 mb-8 rounded-xl bg-slate-50 border border-slate-100 text-[#27628C] group-hover:bg-[#27628C] group-hover:text-white transition-all duration-300">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
               </svg>
             </div>
-            <h3 class="text-2xl font-bold text-gray-900 mb-4 group-hover:text-[#27628C] transition-colors">
+            <h3 class="text-2xl font-bold text-gray-900 mb-4 tracking-tight">
               Digital Programs and Capacity Building
             </h3>
-            <p class="text-gray-600 leading-relaxed">
-              We design structured digital programs that support career development, leadership training, and workforce readiness in medical laboratory science and allied health fields. Our programs combine expert-led learning, practical insights, and applied professional skills.
+            <p class="text-slate-500 leading-relaxed font-medium">
+              We design structured digital programs that support career development, leadership training, and workforce readiness in medical laboratory science and allied health fields.
             </p>
           </div>
         </div>
-
+ 
         <!-- Service 2 -->
-        <div class="group relative bg-gradient-to-br from-white to-blue-50/50 rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
-          <div class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-[#27628C]/10 to-blue-600/10 rounded-full blur-3xl group-hover:scale-150 transition-transform duration-500"></div>
+        <div class="group relative bg-white rounded-2xl p-10 border border-slate-100 shadow-sm hover:shadow-md transition-all duration-300">
           <div class="relative">
-            <div class="flex items-center justify-center w-14 h-14 mb-6 rounded-2xl bg-gradient-to-br from-[#27628C] to-blue-600 shadow-lg group-hover:scale-110 transition-transform duration-300">
-              <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div class="flex items-center justify-center w-12 h-12 mb-8 rounded-xl bg-slate-50 border border-slate-100 text-[#27628C] group-hover:bg-[#27628C] group-hover:text-white transition-all duration-300">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"></path>
               </svg>
             </div>
-            <h3 class="text-2xl font-bold text-gray-900 mb-4 group-hover:text-[#27628C] transition-colors">
+            <h3 class="text-2xl font-bold text-gray-900 mb-4 tracking-tight">
               Media and Knowledge Platforms
             </h3>
-            <p class="text-gray-600 leading-relaxed">
-              Through LabCast and Journo, we produce high-quality digital content including expert conversations, industry analysis, research commentary, and professional insights. These platforms translate complex scientific and health system issues into accessible, actionable knowledge.
+            <p class="text-slate-500 leading-relaxed font-medium">
+              Through LabCast and Journo, we produce high-quality digital content including expert conversations, industry analysis, research commentary, and professional insights.
             </p>
           </div>
         </div>
-
+ 
         <!-- Service 3 -->
-        <div class="group relative bg-gradient-to-br from-white to-blue-50/50 rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
-          <div class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-[#27628C]/10 to-blue-600/10 rounded-full blur-3xl group-hover:scale-150 transition-transform duration-500"></div>
+        <div class="group relative bg-white rounded-2xl p-10 border border-slate-100 shadow-sm hover:shadow-md transition-all duration-300">
           <div class="relative">
-            <div class="flex items-center justify-center w-14 h-14 mb-6 rounded-2xl bg-gradient-to-br from-[#27628C] to-blue-600 shadow-lg group-hover:scale-110 transition-transform duration-300">
-              <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div class="flex items-center justify-center w-12 h-12 mb-8 rounded-xl bg-slate-50 border border-slate-100 text-[#27628C] group-hover:bg-[#27628C] group-hover:text-white transition-all duration-300">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
               </svg>
             </div>
-            <h3 class="text-2xl font-bold text-gray-900 mb-4 group-hover:text-[#27628C] transition-colors">
+            <h3 class="text-2xl font-bold text-gray-900 mb-4 tracking-tight">
               Community and Professional Networks
             </h3>
-            <p class="text-gray-600 leading-relaxed">
-              We operate a global digital community connecting laboratory professionals, researchers, innovators, and health leaders. Our platform enables peer learning, mentorship, collaboration, and cross-border exchange.
+            <p class="text-slate-500 leading-relaxed font-medium">
+              We operate a global digital community connecting laboratory professionals, researchers, innovators, and health leaders for peer learning and cross-border exchange.
             </p>
           </div>
         </div>
-
+ 
         <!-- Service 4 -->
-        <div class="group relative bg-gradient-to-br from-white to-blue-50/50 rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
-          <div class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-[#27628C]/10 to-blue-600/10 rounded-full blur-3xl group-hover:scale-150 transition-transform duration-500"></div>
+        <div class="group relative bg-white rounded-2xl p-10 border border-slate-100 shadow-sm hover:shadow-md transition-all duration-300">
           <div class="relative">
-            <div class="flex items-center justify-center w-14 h-14 mb-6 rounded-2xl bg-gradient-to-br from-[#27628C] to-blue-600 shadow-lg group-hover:scale-110 transition-transform duration-300">
-              <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div class="flex items-center justify-center w-12 h-12 mb-8 rounded-xl bg-slate-50 border border-slate-100 text-[#27628C] group-hover:bg-[#27628C] group-hover:text-white transition-all duration-300">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
               </svg>
             </div>
-            <h3 class="text-2xl font-bold text-gray-900 mb-4 group-hover:text-[#27628C] transition-colors">
+            <h3 class="text-2xl font-bold text-gray-900 mb-4 tracking-tight">
               Products and Resources
             </h3>
-            <p class="text-gray-600 leading-relaxed">
-              We develop and curate digital resources, toolkits, guides, and learning materials that support evidence-based practice, career progression, and innovation adoption within healthcare systems.
+            <p class="text-slate-500 leading-relaxed font-medium">
+              We develop and curate digital resources, toolkits, guides, and learning materials that support evidence-based practice and career progression.
             </p>
           </div>
         </div>
@@ -160,243 +153,193 @@
     </div>
   </section>
 
-  <!-- 4. UPDATED Target Audience Section (New simplified version) -->
-  <section class="py-20 bg-gradient-to-br from-gray-50 to-blue-50">
+
+  <!-- 4. UPDATED Target Audience Section (Professional Style) -->
+  <section class="py-20 bg-slate-50 border-y border-slate-100">
     <div class="max-w-7xl mx-auto px-6 lg:px-8">
-      <div class="text-center mb-12">
-        <h2 class="text-3xl font-bold text-gray-900 mb-4">
-          <span class="bg-gradient-to-r from-[#27628C] to-blue-600 bg-clip-text text-transparent">
-            Who We Serve
-          </span>
-        </h2>
-        <div class="w-24 h-1 bg-gradient-to-r from-[#27628C] to-blue-600 mx-auto rounded-full"></div>
+      <div class="text-center mb-10">
+        <h2 class="text-3xl font-bold text-gray-900 mb-4 tracking-tight">Who We Serve</h2>
+        <div class="w-12 h-1.5 bg-[#27628C] mx-auto rounded-full"></div>
       </div>
-      <p class="text-xl text-gray-600 max-w-4xl mx-auto text-center leading-relaxed">
+      <p class="text-xl text-slate-500 max-w-4xl mx-auto text-center leading-relaxed font-medium">
         Our work supports students, early career professionals, institutions, and partners navigating the future of laboratory medicine and health technology.
       </p>
     </div>
   </section>
 
-  <!-- 5. NEW SECTION: Featured Platforms (Add before Programs Section) -->
+
+  <!-- 5. NEW SECTION: Featured Platforms (Clean Table/Grid Hybrid) -->
   <section class="py-24 bg-white">
     <div class="max-w-7xl mx-auto px-6 lg:px-8">
       <div class="text-center mb-16">
-        <h2 class="text-4xl font-bold text-gray-900 mb-4">
-          <span class="bg-gradient-to-r from-[#27628C] to-blue-600 bg-clip-text text-transparent">
-            Featured Platforms
-          </span>
-        </h2>
-        <div class="w-24 h-1 bg-gradient-to-r from-[#27628C] to-blue-600 mx-auto rounded-full"></div>
+        <h2 class="text-xs font-black uppercase tracking-[0.4em] text-[#27628C] mb-4">Our Platforms</h2>
+        <h3 class="text-4xl font-bold text-gray-900 mb-6">Expert Insights at Your Fingertips</h3>
+        <div class="w-16 h-1.5 bg-[#27628C] mx-auto rounded-full"></div>
       </div>
-
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+ 
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
         <!-- LabCast Platform -->
-        <div class="group relative bg-gradient-to-br from-[#27628C] to-blue-700 rounded-3xl overflow-hidden shadow-2xl hover:shadow-3xl transition-all duration-500 transform hover:-translate-y-2">
-          <div class="absolute inset-0 bg-gradient-to-br from-black/20 to-transparent"></div>
-          <div class="relative p-10">
-            <div class="flex items-center mb-6">
-              <div class="flex items-center justify-center w-16 h-16 rounded-2xl bg-white/20 backdrop-blur-sm mr-4">
-                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <div class="group relative bg-[#27628C] rounded-2xl overflow-hidden shadow-md transition-all duration-300">
+          <div class="relative p-12">
+            <div class="flex items-center mb-8">
+              <div class="flex items-center justify-center w-14 h-14 rounded-xl bg-white/10 border border-white/20 backdrop-blur-sm mr-5">
+                <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"></path>
                 </svg>
               </div>
-              <h3 class="text-3xl font-bold text-white">LabCast</h3>
+              <h3 class="text-3xl font-bold text-white tracking-tight">LabCast</h3>
             </div>
-            <p class="text-blue-100 text-lg leading-relaxed mb-8">
+            <p class="text-blue-50 text-lg leading-relaxed mb-10 font-medium opcaity-90">
               Conversations with laboratory scientists, public health experts, health innovators, and policy leaders shaping the future of healthcare.
             </p>
-            <a href="https://open.spotify.com/show/04S2XZGd6gczoCXStIrh8e" class="inline-flex items-center bg-white text-[#27628C] px-6 py-3 rounded-full font-semibold hover:bg-blue-50 transition-all duration-300 shadow-lg group-hover:shadow-xl transform group-hover:translate-x-2">
+            <a href="https://open.spotify.com/show/04S2XZGd6gczoCXStIrh8e" class="inline-flex items-center bg-white text-[#27628C] px-8 py-4 rounded-xl font-bold uppercase tracking-widest text-xs hover:bg-blue-50 transition-all duration-300">
               Listen Now
-              <svg class="w-5 h-5 ml-2 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg class="w-4 h-4 ml-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
               </svg>
             </a>
           </div>
-          <div class="absolute bottom-0 right-0 w-64 h-64 bg-white/5 rounded-full blur-3xl transform translate-x-1/2 translate-y-1/2"></div>
         </div>
-
+ 
         <!-- Journo Platform -->
-        <div class="group relative bg-gradient-to-br from-orange-500 to-red-600 rounded-3xl overflow-hidden shadow-2xl hover:shadow-3xl transition-all duration-500 transform hover:-translate-y-2">
-          <div class="absolute inset-0 bg-gradient-to-br from-black/20 to-transparent"></div>
-          <div class="relative p-10">
-            <div class="flex items-center mb-6">
-              <div class="flex items-center justify-center w-16 h-16 rounded-2xl bg-white/20 backdrop-blur-sm mr-4">
-                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <div class="group relative bg-orange-600 rounded-2xl overflow-hidden shadow-md transition-all duration-300">
+          <div class="relative p-12">
+            <div class="flex items-center mb-8">
+              <div class="flex items-center justify-center w-14 h-14 rounded-xl bg-white/10 border border-white/20 backdrop-blur-sm mr-5">
+                <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path>
                 </svg>
               </div>
-              <h3 class="text-3xl font-bold text-white">Journo</h3>
+              <h3 class="text-3xl font-bold text-white tracking-tight">Journo</h3>
             </div>
-            <p class="text-orange-100 text-lg leading-relaxed mb-8">
-              Insight-driven articles, opinion pieces, and explainers on medical laboratory science, digital health, research, careers, and global health systems.
+            <p class="text-orange-50 text-lg leading-relaxed mb-10 font-medium opacity-90">
+              Insight-driven articles, opinion pieces, and explainers on medical laboratory science, careers, and global health systems.
             </p>
-            <a href="https://mlcjourno.substack.com/" class="inline-flex items-center bg-white text-orange-600 px-6 py-3 rounded-full font-semibold hover:bg-orange-50 transition-all duration-300 shadow-lg group-hover:shadow-xl transform group-hover:translate-x-2">
+            <a href="https://mlcjourno.substack.com/" class="inline-flex items-center bg-white text-orange-600 px-8 py-4 rounded-xl font-bold uppercase tracking-widest text-xs hover:bg-orange-50 transition-all duration-300">
               Read Articles
-              <svg class="w-5 h-5 ml-2 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg class="w-4 h-4 ml-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
               </svg>
             </a>
           </div>
-          <div class="absolute bottom-0 right-0 w-64 h-64 bg-white/5 rounded-full blur-3xl transform translate-x-1/2 translate-y-1/2"></div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- 6. NEW SECTION: Impact Stats (Add before Testimonials) -->
-  <section class="py-24 bg-gradient-to-br from-[#27628C] to-blue-700 relative overflow-hidden">
-    <div class="absolute inset-0 bg-grid-white/[0.05] bg-[size:20px_20px]"></div>
-    <div class="absolute inset-0 bg-gradient-to-t from-[#27628C] to-transparent"></div>
+
+  <!-- 6. NEW SECTION: Impact Stats (Professional Dark Mode) -->
+  <section class="py-24 bg-[#0a192f] relative overflow-hidden">
+    <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#27628C_1px,transparent_1px)] [background-size:20px_20px]"></div>
     
     <div class="relative max-w-7xl mx-auto px-6 lg:px-8">
-      <div class="text-center mb-16">
-        <h2 class="text-4xl font-bold text-white mb-6">
-          Transforming Professional Growth at Scale
-        </h2>
-        <div class="w-24 h-1 bg-white/40 mx-auto rounded-full"></div>
-        <p class="mt-6 text-xl text-blue-100 max-w-3xl mx-auto leading-relaxed">
-          MedLabConvo has supported thousands of laboratory professionals and healthcare learners through digital engagement, education, mentorship, and community-driven learning.
-        </p>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-16">
-        <div class="text-center group">
-          <div class="bg-white/10 backdrop-blur-sm rounded-3xl p-8 hover:bg-white/20 transition-all duration-300 transform hover:-translate-y-2">
-            <div class="text-5xl font-bold text-white mb-2 group-hover:scale-110 transition-transform">5000+</div>
-            <div class="text-blue-100 font-semibold">Community Members</div>
-          </div>
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div>
+          <h2 class="text-4xl font-bold text-white mb-8 tracking-tight leading-tight">
+            Transforming Professional <br/> Growth at Scale
+          </h2>
+          <p class="text-xl text-slate-400 leading-relaxed max-w-xl font-medium">
+            MedLabConvo has supported thousands of laboratory professionals through digital engagement, education, and community-driven learning.
+          </p>
         </div>
-        <div class="text-center group">
-          <div class="bg-white/10 backdrop-blur-sm rounded-3xl p-8 hover:bg-white/20 transition-all duration-300 transform hover:-translate-y-2">
-            <div class="text-5xl font-bold text-white mb-2 group-hover:scale-110 transition-transform">50+</div>
-            <div class="text-blue-100 font-semibold">Digital Programs</div>
+ 
+        <div class="grid grid-cols-2 gap-6">
+          <div class="bg-white/5 border border-white/10 rounded-2xl p-8 hover:bg-white/10 transition-colors">
+            <div class="text-4xl font-black text-white mb-2">5000+</div>
+            <div class="text-slate-500 text-xs font-black uppercase tracking-widest">Members</div>
           </div>
-        </div>
-        <div class="text-center group">
-          <div class="bg-white/10 backdrop-blur-sm rounded-3xl p-8 hover:bg-white/20 transition-all duration-300 transform hover:-translate-y-2">
-            <div class="text-5xl font-bold text-white mb-2 group-hover:scale-110 transition-transform">100+</div>
-            <div class="text-blue-100 font-semibold">Podcast Episodes</div>
+          <div class="bg-white/5 border border-white/10 rounded-2xl p-8 hover:bg-white/10 transition-colors">
+            <div class="text-4xl font-black text-white mb-2">50+</div>
+            <div class="text-slate-500 text-xs font-black uppercase tracking-widest">Programs</div>
           </div>
-        </div>
-        <div class="text-center group">
-          <div class="bg-white/10 backdrop-blur-sm rounded-3xl p-8 hover:bg-white/20 transition-all duration-300 transform hover:-translate-y-2">
-            <div class="text-5xl font-bold text-white mb-2 group-hover:scale-110 transition-transform">30+</div>
-            <div class="text-blue-100 font-semibold">Countries Reached</div>
+          <div class="bg-white/5 border border-white/10 rounded-2xl p-8 hover:bg-white/10 transition-colors">
+            <div class="text-4xl font-black text-white mb-2">100+</div>
+            <div class="text-slate-500 text-xs font-black uppercase tracking-widest">Episodes</div>
           </div>
-        </div>
-      </div>
-
-      <div class="mt-12 text-center">
-        <p class="text-lg text-blue-100 max-w-3xl mx-auto">
-          Our impact spans career clarity, skills development, leadership confidence, and exposure to emerging opportunities in healthcare and health technology.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- 7. UPDATED Testimonials Section Header -->
-  <section class="py-20 bg-gradient-to-br from-gray-50 to-blue-50">
-    <div class="max-w-7xl mx-auto px-6 lg:px-8">
-      <div class="text-center mb-16">
-        <h2 class="text-sm font-semibold tracking-wider text-[#27628C] uppercase mb-4">What Our Community Says</h2>
-        <p class="text-3xl font-bold text-gray-900 mb-6">
-          Real Impact, Real Stories
-        </p>
-        <div class="w-24 h-1 bg-gradient-to-r from-[#27628C] to-blue-600 mx-auto rounded-full"></div>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <div v-for="(testimonial, idx) in testimonials" :key="idx" class="group">
-          <div class="bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 h-full border border-gray-100">
-            <div class="flex items-center mb-6">
-              <div class="h-14 w-14 rounded-full bg-gradient-to-br from-[#27628C] to-blue-600 flex items-center justify-center text-white font-bold text-xl">
-                {{ testimonial.name.charAt(0) }}
-              </div>
-              <div class="ml-4">
-                <div class="font-bold text-gray-900">{{ testimonial.name }}</div>
-                <div class="text-sm text-gray-500">Biomedical Scientist</div>
-              </div>
-            </div>
-            <div class="mb-4">
-              <svg class="w-8 h-8 text-[#27628C]/20" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
-              </svg>
-            </div>
-            <blockquote class="text-gray-700 leading-relaxed italic">
-              {{ testimonial.testimonial }}
-            </blockquote>
+          <div class="bg-white/5 border border-white/10 rounded-2xl p-8 hover:bg-white/10 transition-colors">
+            <div class="text-4xl font-black text-white mb-2">30+</div>
+            <div class="text-slate-500 text-xs font-black uppercase tracking-widest">Countries</div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- 8. UPDATED Partnership Section -->
+
+  <!-- 7. UPDATED Testimonials Section (Professional Layout) -->
   <section class="py-24 bg-white">
     <div class="max-w-7xl mx-auto px-6 lg:px-8">
       <div class="text-center mb-16">
-        <h2 class="text-3xl font-bold text-gray-900 mb-6">Partner With Us</h2>
-        <div class="w-24 h-1 bg-gradient-to-r from-[#27628C] to-blue-600 mx-auto rounded-full mb-8"></div>
-        <p class="text-xl text-gray-600 max-w-4xl mx-auto mb-12">
-          We collaborate with academic institutions, professional bodies, non-profits, health organisations, and innovation partners to deliver impactful digital programs, content, and workforce development initiatives.
+        <h2 class="text-xs font-black uppercase tracking-[0.4em] text-[#27628C] mb-4">Testimonials</h2>
+        <h3 class="text-4xl font-bold text-gray-900 mb-6">Real Impact, Real Stories</h3>
+        <div class="w-16 h-1.5 bg-[#27628C] mx-auto rounded-full"></div>
+      </div>
+ 
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div v-for="(testimonial, idx) in testimonials" :key="idx" class="bg-slate-50 rounded-2xl p-10 border border-slate-100 transition-all duration-300">
+          <div class="flex items-center mb-8">
+            <div class="h-12 w-12 rounded-xl bg-[#27628C] flex items-center justify-center text-white font-black">
+              {{ testimonial.name.charAt(0) }}
+            </div>
+            <div class="ml-4">
+              <div class="font-bold text-gray-900 tracking-tight">{{ testimonial.name }}</div>
+              <div class="text-[10px] font-black uppercase tracking-widest text-[#27628C]/60">Biomedical Scientist</div>
+            </div>
+          </div>
+          <p class="text-slate-600 leading-relaxed font-medium italic opacity-80">
+            "{{ testimonial.testimonial }}"
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- 8. UPDATED Partnership Section (Standard Grid) -->
+  <section class="py-24 bg-slate-50 border-t border-slate-100">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl font-bold text-gray-900 mb-6 tracking-tight">Partner With Us</h2>
+        <div class="w-12 h-1.5 bg-[#27628C] mx-auto rounded-full mb-10"></div>
+        <p class="text-xl text-slate-500 max-w-4xl mx-auto mb-16 font-medium leading-relaxed">
+          We collaborate with academic institutions and partners to deliver impactful digital programs and workforce development initiatives.
         </p>
       </div>
-
-      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 items-center mb-16">
-        <div class="flex items-center justify-center p-4 bg-gray-50 rounded-2xl hover:bg-white hover:shadow-lg transition-all duration-300 group">
-          <img class="h-12 w-auto object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300" src="@/assets/img/partner1.jpeg" alt="Partner 1">
-        </div>
-        <div class="flex items-center justify-center p-4 bg-gray-50 rounded-2xl hover:bg-white hover:shadow-lg transition-all duration-300 group">
-          <img class="h-12 w-auto object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300" src="@/assets/img/partner2.jpeg" alt="Partner 2">
-        </div>
-        <div class="flex items-center justify-center p-4 bg-gray-50 rounded-2xl hover:bg-white hover:shadow-lg transition-all duration-300 group">
-          <img class="h-12 w-auto object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300" src="@/assets/img/partner3.jpeg" alt="Partner 3">
-        </div>
-        <div class="flex items-center justify-center p-4 bg-gray-50 rounded-2xl hover:bg-white hover:shadow-lg transition-all duration-300 group">
-          <img class="h-12 w-auto object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300" src="@/assets/img/partner4.jpeg" alt="Partner 4">
-        </div>
-        <div class="flex items-center justify-center p-4 bg-gray-50 rounded-2xl hover:bg-white hover:shadow-lg transition-all duration-300 group">
-          <img class="h-12 w-auto object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300" src="@/assets/img/partner5.jpeg" alt="Partner 5">
-        </div>
-        <div class="flex items-center justify-center p-4 bg-gray-50 rounded-2xl hover:bg-white hover:shadow-lg transition-all duration-300 group">
-          <img class="h-12 w-auto object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300" src="@/assets/img/partner6.jpeg" alt="Partner 6">
+ 
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 items-center mb-16">
+        <div v-for="i in [partner1, partner2, partner3, partner4, partner5, partner6]" :key="i" class="flex items-center justify-center p-6 bg-white border border-slate-100 rounded-xl transition-all duration-300">
+           <img class="h-10 w-auto object-contain grayscale opacity-50" :src="i" :alt="`Partner ${i}`">
         </div>
       </div>
-
+ 
       <div class="text-center">
-        <a href="mailto:admin@medlabconvo.com?subject=Partnership%20Enquiry" class="inline-flex items-center bg-gradient-to-r from-[#27628C] to-blue-600 text-white px-10 py-4 rounded-full font-bold text-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 group">
+        <a href="mailto:admin@medlabconvo.com" class="inline-flex items-center bg-[#27628C] text-white px-10 py-4 rounded-xl font-black uppercase tracking-widest text-xs hover:bg-[#1e4d6f] transition-all">
           Partner With MedLabConvo
-          <span class="ml-3 flex items-center justify-center w-8 h-8 bg-white/20 rounded-full group-hover:bg-white/30 transition-colors">
-            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
-            </svg>
-          </span>
+          <svg class="w-4 h-4 ml-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+          </svg>
         </a>
       </div>
     </div>
   </section>
 
-  <!-- 9. UPDATED Donation CTA Section -->
-  <section class="py-24 bg-primary relative overflow-hidden">
-    <div class="absolute inset-0 bg-grid-white/[0.05] bg-[size:30px_30px]"></div>
-    <div class="absolute top-0 left-0 w-96 h-96 bg-blue-400/20 rounded-full blur-3xl"></div>
-    <div class="absolute bottom-0 right-0 w-96 h-96 bg-purple-400/20 rounded-full blur-3xl"></div>
-    
+
+  <!-- 9. UPDATED Donation CTA (Professional Bordered) -->
+  <section class="py-24 bg-[#0a192f] border-t border-white/5 relative overflow-hidden">
     <div class="relative max-w-4xl mx-auto text-center px-6 lg:px-8">
-      <h2 class="text-4xl font-bold text-white mb-6">
-        Support Our Work
-      </h2>
-      <p class="text-xl text-blue-100 mb-10 leading-relaxed">
-        Help us sustain and expand our digital services for healthcare professionals. Your support enables us to continue delivering impactful programs, content, and community-driven learning experiences.
+      <h2 class="text-4xl font-bold text-white mb-6 tracking-tight uppercase">Support Our Work</h2>
+      <p class="text-xl text-slate-400 mb-12 leading-relaxed font-medium">
+        Help us sustain and expand our digital services for healthcare professionals.
       </p>
-      <router-link to="/donate" class="inline-flex items-center bg-white text-[#27628C] px-10 py-5 rounded-full font-bold text-lg hover:bg-blue-50 transition-all duration-300 shadow-2xl hover:shadow-3xl transform hover:-translate-y-2 group">
+      <router-link to="/donate" class="inline-flex items-center bg-white text-[#27628C] px-10 py-5 rounded-xl font-black uppercase tracking-widest text-xs hover:bg-blue-50 transition-all duration-300">
         Donate Now
-        <svg class="w-6 h-6 ml-3 transition-transform duration-300 group-hover:scale-110" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <svg class="w-4 h-4 ml-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
         </svg>
       </router-link>
     </div>
   </section>
+
 
   <!-- 10. UPDATED Newsletter Section -->
   <div class="bg-gradient-to-br from-gray-50 to-blue-50 py-20">
@@ -471,6 +414,15 @@ import { useGetPrograms } from "@/composables/modules/programs/useGetPrograms"
 import latestJourno from '@/assets/img/journals-dust.jpg'
 import { useGetPublications } from "@/composables/modules/publications/useGetPublications"
 import { useGetLabCasts } from "@/composables/modules/labcast/useGetLabCasts"
+
+import partner1 from '@/assets/img/partner1.jpeg'
+import partner2 from '@/assets/img/partner2.jpeg'
+import partner3 from '@/assets/img/partner3.jpeg'
+import partner4 from '@/assets/img/partner4.jpeg'
+import partner5 from '@/assets/img/partner5.jpeg'
+import partner6 from '@/assets/img/partner6.jpeg'
+
+
 
 const { labcasts, loading: loadingLabcasts } = useGetLabCasts()
 const { publications, loading: loadingPublications } = useGetPublications()

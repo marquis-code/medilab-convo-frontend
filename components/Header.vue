@@ -9,7 +9,7 @@
       <div class="flex lg:flex-1">
         <a href="#" class="-m-1.5 p-1.5">
           <span class="sr-only">Your Company</span>
-          <img class="h-8 w-auto" src="@/assets/img/logo.png" alt="" />
+          <img class="h-8 w-auto" src="@/assets/img/medlab-logo.jpeg" alt="" />
         </a>
       </div>
       <div class="flex lg:hidden">
@@ -44,6 +44,9 @@
         <NuxtLink to="/blogs" class="text-sm font-semibold leading-6 text-gray-900"
           >First Aid Tips</NuxtLink
         >
+        <NuxtLink to="/organogram" class="text-sm font-semibold leading-6 text-gray-900"
+          >Our Structure</NuxtLink
+        >
         <a href="#hotlines" class="text-sm font-semibold leading-6 text-gray-900"
           >Hot Lines</a
         >
@@ -66,7 +69,7 @@
             <span class="sr-only">Your Company</span>
             <img
               class="h-8 w-auto"
-              src="@/assets/img/logo.png"
+              src="@/assets/img/medlab-logo.jpeg"
               alt=""
             />
           </a>
@@ -105,6 +108,11 @@
                 to="/blogs" @click.native="close"
                 class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >First Aid Tips</NuxtLink
+              >
+              <NuxtLink
+                to="/organogram" @click.native="close"
+                class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                >Our Structure</NuxtLink
               >
               <a
                 href="#hotlines" @click.native="close"

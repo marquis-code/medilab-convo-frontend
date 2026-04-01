@@ -35,6 +35,7 @@ export interface Form {
   redirectUrl?: string
   submissionsCount: number
   programId?: string
+  bannerImage?: string
   programTitle?: string
   isStandalone: boolean
   accessToken: string

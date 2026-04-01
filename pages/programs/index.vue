@@ -129,119 +129,112 @@
         <!-- Programs Grid -->
         <div 
           v-else 
-          class="grid lg:grid-cols-2 gap-8 mt-10"
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12"
         >
           <div 
             v-for="(program, idx) in programs" 
-            :key="program._id"
-            :class="[
-              'group relative bg-white rounded-2xl shadow-lg overflow-hidden transition-all duration-500 hover:shadow-2xl hover:scale-105 animate-fade-in-up',
-              program.status === 'active' ? 'ring-4 ring-purple-500 ring-opacity-50' : ''
-            ]"
-            :style="{ animationDelay: `${idx * 200}ms` }"
+            :key="program.id"
+            class="group relative flex flex-col bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1 animate-fade-in-up"
+            :style="{ animationDelay: `${idx * 100}ms` }"
           >
-            <!-- Status Badge -->
-            <div 
-              v-if="program.status === 'active'"
-              class="absolute top-4 right-4 z-10 bg-gradient-to-r from-purple-500 to-pink-500 text-white px-4 py-2 rounded-full text-sm font-semibold shadow-lg animate-bounce"
-            >
-              🔥 Active
-            </div>
-
-            <!-- Image Section -->
-            <div class="relative overflow-hidden">
+            <!-- Image Container: Aspect 3/4 for Posters -->
+            <div class="relative bg-slate-50 overflow-hidden aspect-[3/4] border-b border-slate-50">
               <img 
-                :src="program.image || program.images?.[0] || '/placeholder-program.jpg'" 
+                :src="program.image || (program.images && program.images[0]) || '/placeholder-program.jpg'" 
                 :alt="program.title"
-                class="w-full h-64 object-cover transition-transform duration-700 group-hover:scale-110"
+                class="w-full h-full object-contain p-2 transition-transform duration-700 group-hover:scale-105"
               />
-              <div class="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               
-              <!-- Category Badge -->
-              <div class="absolute top-4 left-4 bg-white/90 backdrop-blur-sm text-gray-800 px-3 py-1 rounded-full text-sm font-medium">
-                {{ program.category }}
+              <!-- Badges -->
+              <div class="absolute top-4 left-4 flex flex-col gap-2">
+                <span class="bg-white/90 backdrop-blur-md text-slate-900 px-3 py-1 rounded-lg text-[10px] font-black uppercase tracking-widest shadow-sm border border-slate-100">
+                  {{ program.category }}
+                </span>
+                <span 
+                  v-if="program.status === 'active'"
+                  class="bg-emerald-500 text-white px-3 py-1 rounded-lg text-[10px] font-black uppercase tracking-widest shadow-md flex items-center gap-1.5"
+                >
+                  <span class="w-1.5 h-1.5 bg-white rounded-full animate-pulse"></span>
+                  Active
+                </span>
+              </div>
+
+              <!-- Featured Badge (Only first one) -->
+              <div v-if="idx === 0" class="absolute top-4 right-4">
+                <span class="bg-amber-400 text-amber-950 px-3 py-1 rounded-lg text-[10px] font-black uppercase tracking-widest shadow-sm">
+                  Featured
+                </span>
               </div>
             </div>
             
             <!-- Content -->
-            <div class="p-8 space-y-6">
-              <!-- Title -->
-              <h3 class="text-2xl font-bold text-gray-900 group-hover:text-purple-600 transition-colors duration-300">
-                {{ program.title }}
-              </h3>
+            <div class="p-6 flex-1 flex flex-col justify-between">
+              <div class="space-y-4">
+                <div class="flex items-center gap-2 text-slate-400 font-bold text-[10px] uppercase tracking-widest">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  </svg>
+                  {{ program.duration || 'Flexible' }}
+                </div>
 
-              <!-- Duration -->
-              <div class="flex items-center text-gray-600">
-                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                </svg>
-                <span class="font-medium">{{ program.duration }}</span>
-              </div>
+                <h3 class="text-xl font-black text-slate-900 leading-tight group-hover:text-[#27628C] transition-colors">
+                  {{ program.title }}
+                </h3>
+                
+                <p class="text-slate-600 text-sm leading-relaxed line-clamp-3">
+                  {{ program.description }}
+                </p>
 
-              <!-- Description -->
-              <p class="text-gray-700 leading-relaxed line-clamp-4">
-                {{ program.description }}
-              </p>
-
-              <!-- Focus Areas -->
-              <div v-if="program.focusAreas && program.focusAreas.length > 0" class="space-y-3">
-                <h4 class="text-sm font-semibold text-gray-900 uppercase tracking-wide">Focus Areas</h4>
-                <div class="flex flex-wrap gap-2">
+                <!-- Focus Areas -->
+                <div v-if="program.focusAreas?.length" class="flex flex-wrap gap-1.5 pt-2">
                   <span 
-                    v-for="area in program.focusAreas.slice(0, 3)" 
+                    v-for="area in program.focusAreas.slice(0, 2)" 
                     :key="area"
-                    class="bg-gradient-to-r from-purple-100 to-pink-100 text-purple-800 px-3 py-1 rounded-full text-sm font-medium"
+                    class="bg-slate-50 text-slate-500 px-2.5 py-1 rounded-md text-[10px] font-bold border border-slate-100"
                   >
                     {{ area }}
                   </span>
-                  <span 
-                    v-if="program.focusAreas.length > 3"
-                    class="bg-gray-100 text-gray-600 px-3 py-1 rounded-full text-sm"
-                  >
-                    +{{ program.focusAreas.length - 3 }} more
-                  </span>
                 </div>
-              </div>
-
-              <!-- Outcomes Preview -->
-              <div v-if="program.outcomes && program.outcomes.length > 0" class="space-y-3">
-                <h4 class="text-sm font-semibold text-gray-900 uppercase tracking-wide">Key Outcomes</h4>
-                <ul class="space-y-2">
-                  <li 
-                    v-for="outcome in program.outcomes.slice(0, 2)" 
-                    :key="outcome"
-                    class="flex items-start text-gray-700 text-sm"
-                  >
-                    <svg class="w-4 h-4 text-green-500 mt-0.5 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                      <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                    </svg>
-                    {{ outcome }}
-                  </li>
-                </ul>
               </div>
                 
               <!-- Action Buttons -->
-              <div class="flex flex-col sm:flex-row gap-4 pt-6">
+              <div class="flex flex-col gap-3 pt-6 mt-6 border-t border-slate-50">
                 <button 
                   @click="navigateToProgram(program)"
-                  class="flex-1 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white font-semibold py-3 px-6 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
+                  class="w-full inline-flex items-center justify-center bg-slate-900 text-white font-black text-xs uppercase tracking-widest py-4 px-6 rounded-xl hover:bg-slate-800 transition-all active:scale-[0.98]"
                 >
-                  Learn More
+                  Program Details
                 </button>
-                <button 
-                  v-if="program.status === 'active'"
-                  @click="applyToProgram(program)"
-                  class="flex-1 bg-white border-2 border-purple-600 text-purple-600 hover:bg-purple-600 hover:text-white font-semibold py-3 px-6 rounded-xl transition-all duration-300 transform hover:scale-105"
-                >
-                  Apply Now
-                </button>
+                
+                <!-- Dynamic Apply Button -->
+                <template v-if="program.status === 'active' && (program.externalFormLink || program.formFields?.length)">
+                  <a 
+                    v-if="program.externalFormLink"
+                    :href="program.externalFormLink"
+                    target="_blank"
+                    class="w-full inline-flex items-center justify-center bg-blue-600 text-white font-black text-xs uppercase tracking-widest py-4 px-6 rounded-xl hover:bg-blue-700 transition-all shadow-lg shadow-blue-200 active:scale-[0.98]"
+                  >
+                    Apply Now
+                    <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                    </svg>
+                  </a>
+                  <button 
+                    v-else
+                    @click="applyToProgram(program)"
+                    class="w-full inline-flex items-center justify-center bg-blue-600 text-white font-black text-xs uppercase tracking-widest py-4 px-6 rounded-xl hover:bg-blue-700 transition-all shadow-lg shadow-blue-200 active:scale-[0.98]"
+                  >
+                    Apply Now
+                    <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                    </svg>
+                  </button>
+                </template>
               </div>
             </div>
-
-            <!-- Hover Effect Overlay -->
-            <div class="absolute inset-0 bg-gradient-to-r from-purple-500/10 to-pink-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
           </div>
         </div>
+
       </div>
     </div>
   </main>
@@ -251,30 +244,32 @@
 import { useGetPrograms } from "@/composables/modules/programs/useGetPrograms"
 
 interface Program {
+  id?: string
   _id: string
   title: string
-  slug: string
+  slug?: string
   category: string
   description: string
-  duration: string
-  focusAreas: string[]
-  images: string[]
-  outcomes: string[]
-  keyResponsibilities: string[]
-  image: string
-  highlights: Array<{
+  duration?: string
+  focusAreas?: string[]
+  images?: string[]
+  outcomes?: string[]
+  keyResponsibilities?: string[]
+  image?: string
+  highlights?: Array<{
     title: string
     description: string
-    _id: string
+    _id?: string
   }>
-  status: 'active' | 'draft' | 'archived'
-  registrationToken: string
-  formFields: any[]
-  formTitle: string
-  formInstructions: string
-  applicationsCount: number
-  createdAt: string
-  updatedAt: string
+  status?: 'active' | 'draft' | 'archived' | 'inactive'
+  registrationToken?: string
+  formFields?: any[]
+  formTitle?: string
+  formInstructions?: string
+  externalFormLink?: string
+  applicationsCount?: number
+  createdAt?: string
+  updatedAt?: string
 }
 
 const { programs, loading } = useGetPrograms()
@@ -282,11 +277,11 @@ const router = useRouter()
 
 // Navigation methods
 const navigateToProgram = (program: Program) => {
-  router.push(`/programs/${program.slug}`)
+  router.push(`/programs/${program._id}`)
 }
 
 const applyToProgram = (program: Program) => {
-  router.push(`/programs/${program.slug}/apply`)
+  router.push(`/programs/${program._id}/apply`)
 }
 
 // SEO Meta
@@ -337,11 +332,13 @@ useHead({
 
 /* Text clamp utility */
 .line-clamp-4 {
-  display: -webkit-box;
+  line-clamp: 4;
   -webkit-line-clamp: 4;
+  display: -webkit-box;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
+
 
 /* Gradient text */
 .bg-clip-text {
