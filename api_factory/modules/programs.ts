@@ -19,6 +19,12 @@ export type Highlight = {
   description: string
 }
 
+export type Speaker = {
+  name?: string
+  bio?: string
+  image?: string
+}
+
 export type Program = {
   id?: string
   title: string
@@ -40,6 +46,7 @@ export type Program = {
   externalFormLink?: string
   applicationsCount?: number
   form?: any
+  speakers?: Speaker[]
   createdAt?: string
   updatedAt?: string
 }
@@ -59,6 +66,7 @@ export type CreateProgramData = {
   formInstructions?: string
   externalFormLink?: string
   formId?: string
+  speakers?: Speaker[]
 }
 
 export type UpdateProgramData = Partial<CreateProgramData>

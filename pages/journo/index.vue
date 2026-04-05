@@ -246,9 +246,17 @@ const formatDate = (dateString: string | undefined): string => {
 
 // SEO
 useHead({
-  title: 'Journo - MedLabConvo',
+  title: 'Journo | Advanced Perspectives in Laboratory Science | MedLabConvo',
   meta: [
-    { name: 'description', content: 'Explore premium articles and research in medical laboratory science.' }
+    { name: 'description', content: 'Insight-driven articles, clinical perspectives, and innovation explainers at the intersection of laboratory science and global health.' },
+    { property: 'og:title', content: 'Journo - The Medical Laboratory Journal' },
+    { property: 'og:description', content: 'Explore premium articles and research in medical laboratory science by global experts.' },
+    { property: 'og:image', content: '/images/medlabconvo-og-image.jpg' },
+    { property: 'og:url', content: 'https://medlabconvo.com/journo' },
+    { property: 'og:type', content: 'website' },
+    { name: 'twitter:card', content: 'summary_large_image' },
+    { name: 'twitter:title', content: 'Journo | MedLabConvo' },
+    { name: 'twitter:description', content: 'Insight-driven articles at the intersection of laboratory science and global health.' }
   ]
 })
 </script>

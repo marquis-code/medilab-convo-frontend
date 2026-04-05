@@ -1,169 +1,195 @@
 <template>
-  <main class="min-h-screen bg-gray-50 py-12 md:py-20">
-    <div class="mx-auto max-w-4xl px-6 lg:px-8">
-      <!-- Back Link -->
-      <NuxtLink 
-        :to="`/programs/${route.params.id}`" 
-        class="inline-flex items-center text-sm font-medium text-gray-900 hover:text-[#27628C] mb-8 transition-colors"
-      >
-        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
-        </svg>
-        Back to Program Details
-      </NuxtLink>
+  <main class="min-h-screen bg-[#F8FAFC]">
+    <!-- Application Hero Section -->
+    <section class="bg-gray-900 pt-32 pb-48 relative overflow-hidden">
+      <!-- Abstract Decors -->
+      <div class="absolute top-0 right-0 w-[600px] h-[600px] bg-[#27628C]/10 rounded-full blur-[120px]"></div>
+      <div class="absolute bottom-0 left-0 w-[400px] h-[400px] bg-[#DE6129]/5 rounded-full blur-[100px]"></div>
 
-      <div class="bg-white rounded-3xl shadow-xl border border-gray-100 overflow-hidden">
-        <!-- Progress Header -->
-        <div class="bg-[#27628C] p-8 text-white">
-          <h1 class="text-2xl font-black uppercase mb-4">{{ program?.formTitle || 'Registration Form' }}</h1>
-          <p class="text-blue-100 leading-relaxed text-sm lg:text-base">
-            {{ program?.formInstructions || 'Please fill in the details below to complete your registration.' }}
-          </p>
+      <div class="container mx-auto px-6 lg:px-12 relative z-10">
+        <div class="max-w-4xl mx-auto space-y-8">
+          <NuxtLink 
+            :to="`/programs/${route.params.id}`" 
+            class="inline-flex items-center gap-3 text-white/60 hover:text-white font-black text-xs uppercase tracking-widest transition-all group"
+          >
+            <Icon name="heroicons:arrow-left" class="w-4 h-4 group-hover:-translate-x-1 transition-transform" />
+            Back to program
+          </NuxtLink>
+
+          <div class="space-y-4">
+             <div class="inline-flex items-center gap-3 px-4 py-1.5 bg-white/5 border border-white/10 rounded-full backdrop-blur-md">
+                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                <span class="text-[10px] font-black text-white uppercase tracking-widest">Enrolment Portal</span>
+             </div>
+             <h1 class="text-4xl md:text-5xl font-black text-white tracking-tight leading-tight">
+               {{ program?.title || 'Program Registration' }}
+             </h1>
+          </div>
         </div>
+      </div>
+    </section>
 
-        <div class="p-8 lg:p-12">
-          <!-- Loading State -->
-          <div v-if="loadingProgram" class="flex flex-col items-center justify-center py-20">
-            <div class="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-[#27628C] mb-4"></div>
-            <p class="text-gray-900 font-medium">Loading form context...</p>
+    <!-- Form Container -->
+    <div class="container mx-auto px-6 lg:px-8 -mt-32 pb-32 relative z-20">
+      <div class="mx-auto max-w-4xl">
+        <div class="bg-white/80 backdrop-blur-2xl rounded-[3rem] shadow-2xl shadow-gray-900/10 border border-white overflow-hidden animate-in fade-in slide-in-from-bottom-10 duration-1000">
+          
+          <!-- Banner Image if available -->
+          <div v-if="program?.image" class="h-64 w-full overflow-hidden border-b border-gray-100 group">
+             <img :src="program.image" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" :alt="program.title" />
           </div>
 
-          <!-- Success State -->
-          <div v-else-if="success" class="text-center py-16 animate-fade-in">
-            <div class="mx-auto w-24 h-24 bg-green-100 rounded-full flex items-center justify-center mb-8">
-              <svg class="w-12 h-12 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path>
-              </svg>
+          <div class="p-10 lg:p-16">
+            <!-- Loading State -->
+            <div v-if="loadingProgram" class="flex flex-col items-center justify-center py-20">
+               <div class="relative w-16 h-16">
+                  <div class="absolute inset-0 border-4 border-[#27628C]/10 rounded-full"></div>
+                  <div class="absolute inset-0 border-4 border-[#27628C] rounded-full border-t-transparent animate-spin"></div>
+              </div>
+              <p class="mt-8 text-sm font-black text-[#27628C] uppercase tracking-widest">Initialising Portal...</p>
             </div>
-            <h2 class="text-2xl font-black text-gray-900 mb-4">Registration Successful!</h2>
-            <p class="text-lg text-gray-600 mb-10 max-w-md mx-auto">
-              Your application for <span class="font-bold text-[#27628C]">{{ program?.title }}</span> has been submitted successfully. 
-              We'll reach out to you via email soon.
-            </p>
-            <NuxtLink 
-              to="/programs" 
-              class="inline-flex items-center justify-center bg-[#27628C] text-white font-bold py-4 px-10 rounded-2xl shadow-xl hover:shadow-2xl transition-all"
-            >
-              Explore Other Programs
-            </NuxtLink>
-            
-            <div v-if="hasWhatsappLink" class="mt-8 p-6 bg-blue-50 rounded-2xl border border-blue-100">
-              <p class="text-sm font-bold text-[#27628C] mb-3 uppercase tracking-wider">Final Step: Join Our Community</p>
-              <a 
-                href="https://chat.whatsapp.com/GnxsIILq4TbFTQ3W8WxbWQ?mode=gi_t" 
-                target="_blank"
-                class="inline-flex items-center text-green-600 font-bold hover:underline"
-              >
-                Join Official WhatsApp Group
-                <svg class="w-5 h-5 ml-2" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.385-4.438 9.881-9.882 9.881" />
-                </svg>
-              </a>
-            </div>
-          </div>
 
-          <!-- Form Rendering -->
-          <form v-else @submit.prevent="handleSubmit" class="space-y-8 animate-slide-up">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-6">
-              <div 
-                v-for="field in program?.formFields" 
-                :key="field.id"
-                :class="field.type === 'textarea' || field.id === 'expectations' ? 'md:col-span-2' : ''"
-                class="space-y-2"
-              >
-                <label :for="field.id" class="block text-sm font-bold text-gray-700 uppercase tracking-wide">
-                  {{ field.label }}
-                  <span v-if="field.required" class="text-red-500">*</span>
-                </label>
+            <!-- Success State -->
+            <div v-else-if="success" class="text-center py-12 space-y-10 animate-in fade-in zoom-in duration-700">
+              <div class="relative inline-block">
+                 <div class="absolute inset-0 bg-emerald-500/20 blur-2xl rounded-full scale-150"></div>
+                 <div class="relative w-24 h-24 bg-emerald-500 text-white rounded-[2.5rem] flex items-center justify-center border-4 border-white shadow-xl">
+                    <Icon name="heroicons:sparkles" class="w-12 h-12" />
+                 </div>
+              </div>
+              
+              <div class="space-y-4 max-w-md mx-auto">
+                <h2 class="text-3xl font-black text-gray-900 tracking-tight">Experience Unlocked!</h2>
+                <p class="text-gray-500 font-medium leading-relaxed">
+                  Your application for <span class="text-[#27628C] font-black">{{ program?.title }}</span> has been submitted. 
+                  Check your inbox for the welcome pack.
+                </p>
+              </div>
 
-                <!-- Help Text -->
-                <p v-if="field.description" class="text-sm text-gray-900 mb-2">{{ field.description }}</p>
-
-                <!-- Input Switching -->
-                <template v-if="field.type === 'textarea'">
-                  <textarea
-                    v-model="formData[field.id]"
-                    :id="field.id"
-                    :placeholder="field.placeholder"
-                    :required="field.required"
-                    rows="4"
-                    class="block w-full rounded-xl border-gray-200 shadow-sm focus:border-[#27628C] focus:ring-[#27628C] transition-colors p-4"
-                  ></textarea>
-                </template>
-
-                <template v-else-if="field.type === 'select'">
-                  <select
-                    v-model="formData[field.id]"
-                    :id="field.id"
-                    :required="field.required"
-                    class="block w-full h-14 rounded-xl border-gray-200 shadow-sm focus:border-[#27628C] focus:ring-[#27628C] transition-colors px-4"
-                  >
-                    <option value="" disabled>-- Select Option --</option>
-                    <option v-for="opt in field.options" :key="opt" :value="opt">{{ opt }}</option>
-                  </select>
-                </template>
-
-                <template v-else-if="field.type === 'radio'">
-                  <div class="flex flex-wrap gap-4 mt-2">
-                    <label 
-                      v-for="opt in field.options" 
-                      :key="opt"
-                      class="flex items-center px-4 py-3 bg-gray-50 rounded-xl border-2 border-transparent cursor-pointer transition-all hover:bg-gray-100"
-                      :class="formData[field.id] === opt ? 'border-[#27628C] bg-blue-50 ring-1 ring-[#27628C]' : ''"
-                    >
-                      <input
-                        type="radio"
-                        v-model="formData[field.id]"
-                        :name="field.id"
-                        :value="opt"
-                        :required="field.required"
-                        class="hidden"
-                      />
-                      <span class="text-sm font-bold" :class="formData[field.id] === opt ? 'text-[#27628C]' : 'text-gray-600'">
-                        {{ opt }}
-                      </span>
-                    </label>
-                  </div>
-                </template>
-
-                <template v-else>
-                  <input
-                    :type="field.type === 'email' ? 'email' : 'text'"
-                    v-model="formData[field.id]"
-                    :id="field.id"
-                    :placeholder="field.placeholder"
-                    :required="field.required"
-                    class="block w-full h-14 rounded-xl border-gray-200 shadow-sm focus:border-[#27628C] focus:ring-[#27628C] transition-colors px-4"
-                  />
-                </template>
+              <div class="flex flex-col sm:flex-row items-center justify-center gap-6 pt-6">
+                <NuxtLink 
+                  to="/programs" 
+                  class="h-14 px-10 bg-gray-900 text-white rounded-2xl font-black text-sm hover:scale-105 active:scale-95 transition-all flex items-center gap-3"
+                >
+                  <Icon name="heroicons:magnifying-glass" class="w-5 h-5" />
+                  Explore Directory
+                </NuxtLink>
+                
+                <a 
+                  v-if="hasWhatsappLink"
+                  href="https://chat.whatsapp.com/GnxsIILq4TbFTQ3W8WxbWQ" 
+                  target="_blank"
+                  class="h-14 px-10 bg-[#25D366] text-white rounded-2xl font-black text-sm hover:scale-105 active:scale-95 transition-all flex items-center gap-3"
+                >
+                  <Icon name="bi:whatsapp" class="w-5 h-5" />
+                  Join Commmunity
+                </a>
               </div>
             </div>
 
-            <!-- Error Feedback -->
-            <div v-if="submitError" class="p-4 bg-red-50 rounded-xl border border-red-100 animate-pulse">
-              <p class="text-sm text-red-600 font-bold flex items-center">
-                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                </svg>
-                Submission Failed: {{ submitError }}
-              </p>
-            </div>
+            <!-- Form Body -->
+            <div v-else class="space-y-12">
+               <div class="space-y-2">
+                  <h3 class="text-xs font-black text-[#DE6129] uppercase tracking-[0.4em]">Section 01</h3>
+                  <h2 class="text-2xl font-black text-gray-900 tracking-tight">{{ program?.formTitle || 'Registration Form' }}</h2>
+                  <p class="text-gray-500 font-medium text-sm leading-relaxed">{{ program?.formInstructions || 'Please provide your details below' }}</p>
+               </div>
 
-            <!-- Submit Button -->
-            <div class="pt-8 border-t border-gray-100">
-              <button
-                type="submit"
-                :disabled="submitting"
-                class="w-full inline-flex items-center justify-center bg-[#27628C] text-white font-bold py-5 px-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all disabled:opacity-50 disabled:cursor-not-allowed transform hover:scale-[1.01] active:scale-[0.99]"
-              >
-                <div v-if="submitting" class="animate-spin rounded-full h-5 w-5 border-t-2 border-white mr-3"></div>
-                {{ submitting ? 'Processing Application...' : 'Submit Final Application' }}
-              </button>
-              <p class="mt-4 text-center text-sm text-gray-400">
-                By submitting this form, you agree to receive communications regarding the program and related updates.
-              </p>
+               <form @submit.prevent="handleSubmit" class="space-y-10">
+                 <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                   <div 
+                     v-for="field in program?.formFields" 
+                     :key="field.id"
+                     :class="field.type === 'textarea' || field.id === 'expectations' ? 'md:col-span-2' : ''"
+                     class="group space-y-4"
+                   >
+                     <label :for="field.id" class="flex items-center justify-between">
+                       <span class="text-xs font-black text-gray-900 uppercase tracking-widest group-focus-within:text-[#27628C] transition-colors">
+                         {{ field.label }}
+                       </span>
+                       <span v-if="field.required" class="text-[10px] font-black text-[#DE6129] uppercase">Required</span>
+                     </label>
+
+                     <!-- Dynamic Input Types -->
+                     <!-- Textarea -->
+                     <textarea
+                       v-if="field.type === 'textarea'"
+                       v-model="formData[field.id]"
+                       :id="field.id"
+                       :placeholder="field.placeholder"
+                       :required="field.required"
+                       rows="4"
+                       class="w-full bg-gray-50 border-2 border-gray-100 rounded-2xl p-6 text-sm font-bold text-gray-900 focus:bg-white focus:border-[#27628C] focus:ring-0 transition-all outline-none"
+                     ></textarea>
+
+                     <!-- Select -->
+                     <select
+                       v-else-if="field.type === 'select'"
+                       v-model="formData[field.id]"
+                       :id="field.id"
+                       :required="field.required"
+                       class="h-16 w-full bg-gray-50 border-2 border-gray-100 rounded-2xl px-6 text-sm font-bold text-gray-900 focus:bg-white focus:border-[#27628C] focus:ring-0 transition-all outline-none appearance-none"
+                     >
+                       <option value="" disabled>Choose an option</option>
+                       <option v-for="opt in field.options" :key="opt" :value="opt">{{ opt }}</option>
+                     </select>
+
+                     <!-- Radio Grid -->
+                     <div v-else-if="field.type === 'radio'" class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <label 
+                          v-for="opt in field.options" 
+                          :key="opt"
+                          class="relative flex items-center p-5 bg-gray-50 border-2 border-gray-100 rounded-2xl cursor-pointer transition-all hover:bg-gray-100 group/opt"
+                          :class="formData[field.id] === opt ? 'border-[#27628C] bg-white ring-4 ring-[#27628C]/5' : ''"
+                        >
+                          <input type="radio" v-model="formData[field.id]" :value="opt" :required="field.required" class="sr-only" />
+                          <div class="flex items-center gap-4">
+                             <div class="w-5 h-5 rounded-full border-2 border-gray-300 flex items-center justify-center" :class="formData[field.id] === opt ? 'border-[#27628C]' : ''">
+                                <div v-if="formData[field.id] === opt" class="w-2.5 h-2.5 bg-[#27628C] rounded-full scale-100 transition-transform"></div>
+                             </div>
+                             <span class="text-sm font-black text-gray-900">{{ opt }}</span>
+                          </div>
+                        </label>
+                     </div>
+
+                     <!-- Standard Input -->
+                     <input
+                       v-else
+                       :type="field.type === 'email' ? 'email' : 'text'"
+                       v-model="formData[field.id]"
+                       :id="field.id"
+                       :placeholder="field.placeholder"
+                       :required="field.required"
+                       class="h-16 w-full bg-gray-50 border-2 border-gray-100 rounded-2xl px-6 text-sm font-bold text-gray-900 focus:bg-white focus:border-[#27628C] focus:ring-0 transition-all outline-none"
+                     />
+                     
+                     <p v-if="field.description" class="text-[10px] text-gray-400 font-bold italic">{{ field.description }}</p>
+                   </div>
+                 </div>
+
+                 <!-- Error Feedback -->
+                 <div v-if="submitError" class="p-6 bg-rose-50 border border-rose-100 rounded-2xl flex items-center gap-4">
+                    <Icon name="heroicons:exclamation-triangle" class="w-6 h-6 text-rose-500" />
+                    <p class="text-sm font-bold text-rose-600">Failed to submit: {{ submitError }}</p>
+                 </div>
+
+                 <!-- Footer -->
+                 <div class="pt-12 border-t border-gray-100 flex flex-col items-center gap-6">
+                   <button
+                     type="submit"
+                     :disabled="submitting"
+                     class="w-full h-16 bg-[#27628C] text-white rounded-[1.2rem] font-bold text-sm tracking-widest uppercase hover:scale-[1.02] active:scale-[0.98] transition-all flex items-center justify-center space-x-3 shadow-2xl shadow-blue-900/20 disabled:opacity-50"
+                   >
+                     <div v-if="submitting" class="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin"></div>
+                     <span>{{ submitting ? 'Finalising Enrolment...' : 'Register Now' }}</span>
+                   </button>
+                   <p class="text-[10px] text-gray-400 font-bold uppercase tracking-widest text-center leading-relaxed">
+                     By registering, you agree to our terms of clinical engagement<br />and professional code of conduct.
+                   </p>
+                 </div>
+               </form>
             </div>
-          </form>
+          </div>
         </div>
       </div>
     </div>
@@ -195,8 +221,9 @@ onMounted(async () => {
 })
 
 const hasWhatsappLink = computed(() => {
-  return program.value?.slug === 'biomedical-science-conference-2026' || 
-         program.value?.formFields?.some(f => f.description?.includes('chat.whatsapp.com'))
+  if (!program.value) return false
+  return program.value.slug === 'biomedical-science-conference-2026' || 
+         program.value.formFields?.some(f => f.description?.includes('chat.whatsapp.com'))
 })
 
 const handleSubmit = async () => {
@@ -207,7 +234,7 @@ const handleSubmit = async () => {
 
   // Format responses for backend
   const responses = Object.keys(formData.value).map(key => {
-    const field = program.value.formFields.find(f => f.id === key)
+    const field = program.value?.formFields?.find(f => f.id === key)
     return {
       fieldId: key,
       fieldLabel: field?.label || key,
@@ -216,7 +243,7 @@ const handleSubmit = async () => {
   })
 
   // Get email for backend tracking
-  const emailField = program.value.formFields.find(f => f.type === 'email')
+  const emailField = program.value.formFields?.find(f => f.type === 'email')
   const email = emailField ? formData.value[emailField.id] : ''
 
   const payload = {

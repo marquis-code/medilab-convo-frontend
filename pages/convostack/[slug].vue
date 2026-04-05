@@ -288,6 +288,8 @@ import { convostack_api } from '@/api_factory/modules/convostack'
 import { useCustomToast } from '@/composables/core/useCustomToast'
 import shareModal from '@/components/ShareModal.vue'
 import CommentProfileModal from '@/components/CommentProfileModal.vue'
+import { generateUtmUrl } from '@/utils/utm'
+import { useHead } from '#imports'
 
 const { showToast } = useCustomToast()
 const route = useRoute()
@@ -338,6 +340,23 @@ onMounted(async () => {
     const res = await convostack_api.$_get_publication_by_slug(slug)
     publication.value = res.data
     localLikeCount.value = publication.value?.likesCount || 0
+
+    // Set SEO Meta Tags
+    useHead({
+      title: `${publication.value.title} | MedLabConvo ConvoStack`,
+      meta: [
+        { name: 'description', content: publication.value.excerpt },
+        { property: 'og:title', content: publication.value.title },
+        { property: 'og:description', content: publication.value.excerpt },
+        { property: 'og:image', content: publication.value.coverImage || '/images/medlabconvo-og-image.jpg' },
+        { property: 'og:url', content: window.location.href },
+        { property: 'og:type', content: 'article' },
+        { name: 'twitter:card', content: 'summary_large_image' },
+        { name: 'twitter:title', content: publication.value.title },
+        { name: 'twitter:description', content: publication.value.excerpt },
+        { name: 'twitter:image', content: publication.value.coverImage || '/images/medlabconvo-twitter-image.jpg' }
+      ]
+    })
 
     if (publication.value?._id) {
       const commentsRes = await convostack_api.$_get_comments(publication.value._id)
@@ -424,7 +443,8 @@ const onProfileSaved = (profile: any) => {
 const cancelReply = () => { replyTo.value = null }
 
 const sharePublication = async () => {
-  shareUrl.value = window.location.href
+  const baseUrl = window.location.origin + window.location.pathname
+  shareUrl.value = generateUtmUrl(baseUrl, publication.value?.title || 'convostack')
   if (navigator.share) {
     try {
       await navigator.share({ 

@@ -18,28 +18,28 @@ export default defineNuxtConfig({
 
   app: {
     head: {
-      title: "MedLabConvo - We are leading change, inspiring action, and building the capacity of future generations of world-class professionals in medical laboratory science and in the healthcare system at large.",
+      title: "MedLabConvo | Advancing Medical Laboratory Science & Healthcare",
       htmlAttrs: { lang: "en" },
       meta: [
         { charset: "utf-8" },
         { name: "viewport", content: "width=device-width, initial-scale=1" },
-        { name: "description", content: "We are leading change, inspiring action, and building the capacity of future generations of world-class professionals in medical laboratory science and in the healthcare system at large. " },
+        { name: "description", content: "MedLabConvo is building the capacity of global professionals in medical laboratory science to transform healthcare. Explore our programs, journals, and community." },
         { name: "format-detection", content: "telephone=no" },
-        { name: "keywords", content: "We are leading change, inspiring action, and building the capacity of future generations of world-class professionals in medical laboratory science and in the healthcare system at large. Transforming Healthcare One Lab Professional at a Time" },
+        { name: "keywords", content: "medical laboratory science, healthcare innovation, lab professional development, medical lab programs, MedLabConvo" },
         { name: "robots", content: "index, follow" },
 
         // Open Graph Meta Tags
-        { property: "og:title", content:  "MedLabConvo - We are leading change, inspiring action, and building the capacity of future generations of world-class professionals in medical laboratory science and in the healthcare system at large." },
-        { property: "og:description", content:  "MedLabConvo - We are leading change, inspiring action, and building the capacity of future generations of world-class professionals in medical laboratory science and in the healthcare system at large." },
+        { property: "og:title", content:  "MedLabConvo | Leading Change in Health Science" },
+        { property: "og:description", content:  "Transforming healthcare through knowledge platforms and professional tools for medical laboratory scientists." },
         { property: "og:image", content: "/images/medlabconvo-og-image.jpg" },
         { property: "og:url", content: "https://www.medlabconvo.com" },
         { property: "og:type", content: "website" },
-        { property: "og:site_name", content: "medlabconvo" },
+        { property: "og:site_name", content: "MedLabConvo" },
       
         // Twitter Cards
         { name: "twitter:card", content: "summary_large_image" },
-        { name: "twitter:title", content:  "MedLabConvo - We are leading change, inspiring action, and building the capacity of future generations of world-class professionals in medical laboratory science and in the healthcare system at large." },
-        { name: "twitter:description", content:  "MedLabConvo - We are leading change, inspiring action, and building the capacity of future generations of world-class professionals in medical laboratory science and in the healthcare system at large." },
+        { name: "twitter:title", content:  "MedLabConvo | Healthcare Evolution" },
+        { name: "twitter:description", content:  "Join the global community of laboratory professionals shaping the future of healthcare." },
         { name: "twitter:image", content: "/images/medlabconvo-twitter-image.jpg" },
         { name: "twitter:site", content: "@medlabconvo" },
       ],

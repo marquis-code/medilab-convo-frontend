@@ -386,6 +386,24 @@
 
 
 <script setup lang="ts">
+import { useHead } from '#imports'
+
+// Set SEO Meta Tags
+useHead({
+  title: 'MedLabConvo | Leading Change in Medical Laboratory Science & Healthcare',
+  meta: [
+    { name: 'description', content: 'MedLabConvo is a digital service organisation advancing medical laboratory science and healthcare through knowledge platforms, professional tools, and workforce development.' },
+    { property: 'og:title', content: 'MedLabConvo - Transforming Healthcare One Lab Professional at a Time' },
+    { property: 'og:description', content: 'Advancing medical laboratory science through digital programs, community networks, and expert-led publications like LabCast and Journo.' },
+    { property: 'og:image', content: '/images/medlabconvo-og-image.jpg' },
+    { property: 'og:url', content: 'https://medlabconvo.com' },
+    { property: 'og:type', content: 'website' },
+    { name: 'twitter:card', content: 'summary_large_image' },
+    { name: 'twitter:title', content: 'MedLabConvo | Advancing Healthcare Innovation' },
+    { name: 'twitter:description', content: 'Join the global community of laboratory professionals and health leaders shaping the future of healthcare.' },
+    { name: 'twitter:image', content: '/images/medlabconvo-twitter-image.jpg' }
+  ]
+})
 // import AnniversaryPopup from "@/components/AnniversaryPopup.vue";
 import { useYoutubeVideo } from '@/composables/useYoutubeVideo';
 import labcast from '@/assets/img/latest-labcast.jpg'
