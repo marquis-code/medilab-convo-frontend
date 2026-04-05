@@ -1,80 +1,101 @@
 <template>
-    <div v-if="isVisible" class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50" @click.self="closeModal">
-      <div
-        class="relative max-w-lg w-full bg-white rounded-lg shadow-lg transform transition-transform duration-300 m-3"
-        :class="{ 'scale-100 opacity-100': isVisible, 'scale-90 opacity-0': !isVisible }"
-      >
+  <Transition
+    enter-active-class="transition duration-300 ease-out"
+    enter-from-class="opacity-0 scale-95"
+    enter-to-class="opacity-100 scale-100"
+    leave-active-class="transition duration-200 ease-in"
+    leave-from-class="opacity-100 scale-100"
+    leave-to-class="opacity-0 scale-95"
+  >
+    <div v-if="isVisible" class="fixed inset-0 z-[100] flex items-center justify-center p-6" @click.self="closeModal">
+      <!-- Backdrop -->
+      <div class="fixed inset-0 bg-slate-900/60 backdrop-blur-md" @click="closeModal"></div>
+
+      <!-- Modal Content -->
+      <div class="relative w-full max-w-2xl bg-white rounded-[3rem] shadow-2xl overflow-hidden border border-white/20 animate-in zoom-in-95 duration-300">
+        <!-- Close Button -->
         <button
           @click="closeModal"
-          class="absolute top-3 right-3 text-gray-600 hover:text-gray-900"
-          aria-label="Close"
+          class="absolute top-8 right-8 z-10 w-12 h-12 flex items-center justify-center bg-slate-100 hover:bg-slate-200 text-slate-500 hover:text-slate-900 rounded-full transition-all active:scale-95"
         >
-        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="15" y1="9" x2="9" y2="15"></line><line x1="9" y1="9" x2="15" y2="15"></line></svg>
+          <Icon name="heroicons:x-mark" class="w-6 h-6" />
         </button>
-        <div class="p-6">
-          <img :src="speaker.image" alt="Speaker Image" class="w-32 h-32 mx-auto rounded-full object-cover shadow-md" />
+
+        <div class="flex flex-col md:flex-row h-full max-h-[85vh]">
+          <!-- Left Side: Avatar -->
+          <div class="md:w-1/3 bg-slate-50 flex flex-col items-center justify-start pt-16 px-8 border-r border-slate-100">
+            <div class="relative w-40 h-40 group">
+              <div class="absolute inset-0 bg-[#27628C] rounded-full blur-2xl opacity-10 group-hover:opacity-20 transition-opacity"></div>
+              <img 
+                :src="speaker.image || '/images/speaker-placeholder.jpg'" 
+                class="relative w-full h-full object-cover rounded-full border-4 border-white shadow-2xl"
+              />
+            </div>
+            
+            <div class="mt-8 text-center">
+              <h3 class="text-xs font-black text-[#27628C] uppercase tracking-[0.3em] mb-2">Faculty Expert</h3>
+              <div class="w-10 h-1 bg-[#DE6129] mx-auto rounded-full"></div>
+            </div>
           </div>
-          <div class="p-6 h-96 overflow-y-auto">
-          <h2 class="mt-4 text-xl font-bold text-gray-800">{{ speaker.name }}</h2>
-          <p class="mt-2 text-gray-600 leading-loose">{{ speaker.bio }}</p>
+
+          <!-- Right Side: Content -->
+          <div class="md:w-2/3 p-10 md:p-16 overflow-y-auto custom-scrollbar">
+            <h2 class="text-3xl md:text-4xl font-black text-gray-900 tracking-tight leading-tight mb-8">
+              {{ speaker.name }}
+            </h2>
+            
+            <div class="prose prose-slate prose-sm text-gray-600 leading-relaxed font-bold">
+              <p v-for="(paragraph, idx) in formattedBio" :key="idx" class="mb-6">
+                {{ paragraph }}
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </template>
-  
-  <script lang="ts" setup>
-  import { ref, defineProps, watch } from 'vue';
-  
-  // Props to accept speaker data and modal visibility
-  defineProps({
-    speaker: {
-      type: Object,
-      required: true,
-    },
-    isVisible: {
-      type: Boolean,
-      required: true,
-    },
-  });
-  
-  const emit = defineEmits(['close']);
-  
-  function closeModal() {
-    emit('close');
-  }
-  </script>
-  
-  <style scoped>
-  /* Animation keyframes */
-  @keyframes modalShow {
-    0% {
-      transform: scale(0.9);
-      opacity: 0;
-    }
-    100% {
-      transform: scale(1);
-      opacity: 1;
-    }
-  }
-  
-  @keyframes modalHide {
-    0% {
-      transform: scale(1);
-      opacity: 1;
-    }
-    100% {
-      transform: scale(0.9);
-      opacity: 0;
-    }
-  }
-  
-  /* Animation classes */
-  .animate-show {
-    animation: modalShow 0.3s ease-out forwards;
-  }
-  
-  .animate-hide {
-    animation: modalHide 0.3s ease-in forwards;
-  }
-  </style>
+  </Transition>
+</template>
+
+<script lang="ts" setup>
+import { computed } from 'vue'
+import Icon from './Icon.vue'
+
+const props = defineProps({
+  speaker: {
+    type: Object,
+    required: true,
+  },
+  isVisible: {
+    type: Boolean,
+    required: true,
+  },
+})
+
+const emit = defineEmits(['close'])
+
+const formattedBio = computed(() => {
+  if (!props.speaker?.bio) return []
+  return props.speaker.bio.split('\n').filter((p: string) => p.trim() !== '')
+})
+
+function closeModal() {
+  emit('close')
+}
+</script>
+
+<style scoped>
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #e2e8f0;
+  border-radius: 10px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #cbd5e1;
+}
+</style>
   

@@ -93,9 +93,9 @@
               <!-- Floating Pill -->
               <div class="absolute -bottom-6 -right-6 md:-right-10 bg-white/10 backdrop-blur-3xl border border-white/20 p-6 rounded-[2rem] shadow-2xl animate-float max-w-[240px]">
                 <div class="flex items-center gap-4 mb-3">
-                  <div class="w-10 h-10 rounded-full bg-[#DE6129] flex items-center justify-center shadow-lg shadow-orange-500/30">
+                  <!-- <div class="w-10 h-10 rounded-full bg-[#DE6129] flex items-center justify-center shadow-lg shadow-orange-500/30">
                     <Icon name="heroicons:academic-cap" class="w-5 h-5 text-white" />
-                  </div>
+                  </div> -->
                   <p class="text-xs font-black text-gray-900 uppercase">Interactive learning</p>
                 </div>
                 <p class="text-[10px] text-gray-500 font-bold leading-relaxed">Certified curriculum designed by clinical diagnostic experts.</p>
@@ -119,37 +119,41 @@
             <h2 class="text-4xl md:text-5xl font-black text-gray-900 tracking-tight">Scientific Experts</h2>
           </div>
 
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 text-center">
             <div 
               v-for="(speaker, i) in program.speakers" 
               :key="i"
-              class="group relative bg-white/40 backdrop-blur-3xl p-10 rounded-[3rem] border border-white/40 shadow-2xl shadow-slate-200/40 hover:-translate-y-2 transition-all duration-500"
+              class="group relative bg-white border border-slate-100 p-10 rounded-[3rem] shadow-sm hover:shadow-2xl hover:shadow-slate-200/50 hover:-translate-y-2 transition-all duration-500 cursor-pointer"
+              @click="openSpeakerModal(speaker)"
             >
-              <div class="flex flex-col items-center text-center space-y-8">
+              <div class="flex flex-col items-center space-y-6">
                 <!-- Avatar -->
                 <div class="relative w-32 h-32">
-                  <div class="absolute inset-0 bg-gradient-to-tr from-[#27628C] to-[#DE6129] rounded-full blur-md opacity-20 group-hover:opacity-40 transition-opacity"></div>
+                  <div class="absolute inset-0 bg-gradient-to-tr from-[#27628C] to-[#DE6129] rounded-full blur-xl opacity-0 group-hover:opacity-20 transition-opacity"></div>
                   <img 
                     :src="speaker.image || '/images/speaker-placeholder.jpg'" 
-                    class="relative w-full h-full object-cover rounded-full border-4 border-white shadow-xl"
+                    class="relative w-full h-full object-cover rounded-full border-4 border-white shadow-xl group-hover:scale-105 transition-transform duration-500"
                   />
-                  <div class="absolute -bottom-2 -right-2 w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-lg">
-                    <Icon name="heroicons:academic-cap" class="w-5 h-5 text-[#27628C]" />
-                  </div>
                 </div>
 
                 <!-- Info -->
                 <div class="space-y-4">
                   <h4 class="text-xl font-black text-gray-900 tracking-tight">{{ speaker.name }}</h4>
-                  <div class="w-12 h-1 bg-[#DE6129]/20 mx-auto rounded-full group-hover:w-20 transition-all duration-500"></div>
-                  <p class="text-sm font-medium text-gray-500 leading-relaxed line-clamp-4 group-hover:line-clamp-none transition-all duration-700">
+                  <div class="w-10 h-1 bg-[#DE6129]/20 mx-auto rounded-full group-hover:w-16 transition-all duration-500"></div>
+                  <p class="text-sm font-medium text-gray-500 leading-relaxed line-clamp-3">
                     {{ speaker.bio }}
                   </p>
+                  
+                  <button class="text-[10px] font-black uppercase tracking-widest text-[#27628C] hover:text-[#DE6129] transition-colors pt-2">
+                    Read Biography
+                  </button>
                 </div>
               </div>
 
-              <!-- Decorative Quote -->
-              <Icon name="heroicons:chat-bubble-left-right" class="absolute top-8 right-10 w-8 h-8 text-slate-100 group-hover:text-[#27628C]/5 transition-colors pointer-events-none" />
+              <!-- Decorative Decor -->
+              <div class="absolute top-8 right-10 opacity-0 group-hover:opacity-100 transition-opacity text-[#DE6129]">
+                 <Icon name="heroicons:plus-circle" class="w-5 h-5" />
+              </div>
             </div>
           </div>
         </section>
@@ -167,9 +171,9 @@
               :key="i"
               class="group relative bg-white p-10 rounded-[2.5rem] border border-slate-200/50 hover:border-[#27628C]/30 transition-all duration-500 hover:-translate-y-2"
             >
-              <div class="w-14 h-14 bg-slate-50 rounded-2xl flex items-center justify-center text-slate-400 group-hover:bg-[#27628C]/5 group-hover:text-[#27628C] mb-8 transition-colors">
+              <!-- <div class="w-14 h-14 bg-slate-50 rounded-2xl flex items-center justify-center text-slate-400 group-hover:bg-[#27628C]/5 group-hover:text-[#27628C] mb-8 transition-colors">
                 <Icon :name="i % 2 === 0 ? 'heroicons:command-line' : 'heroicons:device-phone-mobile'" class="w-7 h-7" />
-              </div>
+              </div> -->
               <h4 class="text-lg font-black text-gray-900 mb-4 tracking-tight leading-tight">{{ highlight.title }}</h4>
               <p class="text-sm text-gray-500 leading-relaxed font-medium">{{ highlight.description }}</p>
               
@@ -275,7 +279,7 @@
                   Enrol Today
                 </a>
                 <button @click="shareProgram" class="h-16 px-12 bg-white/5 text-white border border-white/10 rounded-[1.2rem] font-bold text-sm hover:bg-white/10 active:scale-95 transition-all flex items-center justify-center group">
-                  <Icon name="heroicons:paper-airplane" class="w-5 h-5 mr-3 -rotate-45 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+                  <!-- <Icon name="heroicons:paper-airplane" class="w-5 h-5 mr-3 -rotate-45 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" /> -->
                   Invite a Colleague
                 </button>
              </div>
@@ -283,11 +287,20 @@
       </section>
 
     </div>
+
+    <!-- Speaker Modal -->
+    <SpeakerModal
+      v-if="activeSpeaker"
+      :speaker="activeSpeaker"
+      :is-visible="isSpeakerModalVisible"
+      @close="closeSpeakerModal"
+    />
   </main>
 </template>
 
 <script setup lang="ts">
-import { computed, onMounted } from 'vue'
+import { computed, onMounted, ref } from 'vue'
+import SpeakerModal from '@/components/SpeakerModal.vue'
 import { useGetProgram } from '@/composables/modules/programs/useGetProgram'
 import { useRoute } from 'vue-router'
 import { useCustomToast } from '@/composables/core/useCustomToast'
@@ -333,6 +346,18 @@ useHead({
     { name: 'twitter:card', content: 'summary_large_image' }
   ]
 })
+
+const activeSpeaker = ref<any>(null)
+const isSpeakerModalVisible = ref(false)
+
+const openSpeakerModal = (speaker: any) => {
+  activeSpeaker.value = speaker
+  isSpeakerModalVisible.value = true
+}
+
+const closeSpeakerModal = () => {
+  isSpeakerModalVisible.value = false
+}
 
 const shareProgram = async () => {
   const { generateUtmUrl } = await import('@/utils/utm')
