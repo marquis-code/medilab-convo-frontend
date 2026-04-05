@@ -24,10 +24,10 @@
               MedLabConvo
             </span>
           </h1>
-          <!-- <p class="text-2xl sm:text-3xl lg:text-4xl text-blue-100 italic font-light mb-8 animate-fade-in-delay">
+          <!-- <p class="text-2xl sm:text-2xl lg:text-4xl text-blue-100  font-light mb-8 animate-fade-in-delay">
             Lead, Build, Inspire
           </p> -->
-          <p class="text-2xl sm:text-2xl lg:text-2xl text-blue-100 italic font-light mb-8 animate-fade-in-delay">
+          <p class="text-2xl sm:text-2xl lg:text-2xl text-blue-100  font-light mb-8 animate-fade-in-delay">
             A Platform for Laboratory Science, Health Innovation, and Workforce Development
           </p>
           <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mt-12">
@@ -43,7 +43,7 @@
           <div class="text-center mt-12">
   <p
     class="relative inline-block h-[1.2em] 
-           text-2xl text-blue-100 italic font-light"
+           text-2xl text-blue-100  font-light"
   >
     <span class="word inset-0 animate-fade-word [animation-delay:0.3s]">
       Lead
@@ -69,7 +69,7 @@
     <section id="programs" class="py-10 bg-white">
       <div class="max-w-7xl mx-auto px-6 lg:px-8">
         <div class="text-center mb-16">
-          <h2 class="text-3xl  font-bold text-gray-900 mb-4">
+          <h2 class="text-2xl  font-bold text-gray-900 mb-4">
             <span class="bg-gradient-to-r from-[#27628C] to-blue-600 bg-clip-text text-transparent">
               Our Target Audience </span>
           </h2>
@@ -90,7 +90,7 @@
     <section id="programs" class="py-20 bg-white">
       <div class="max-w-7xl mx-auto px-2 lg:px-4">
         <div class="text-center mb-16">
-          <h2 class="text-3xl  font-bold text-gray-900 mb-4">
+          <h2 class="text-2xl  font-bold text-gray-900 mb-4">
             <span class="bg-gradient-to-r from-[#27628C] to-blue-600 bg-clip-text text-transparent">
               Upcoming Programs
             </span>
@@ -264,7 +264,7 @@
     <section class="py-20 bg-gradient-to-br from-gray-50 to-blue-50">
       <div class="max-w-7xl mx-auto px-6 lg:px-8">
         <div class="text-center mb-16">
-          <h2 class="text-3xl  font-bold text-gray-900 mb-4">
+          <h2 class="text-2xl  font-bold text-gray-900 mb-4">
             <span class="bg-gradient-to-r from-[#27628C] to-blue-600 bg-clip-text text-transparent">
               Latest on LabCast
             </span>
@@ -380,7 +380,7 @@
     <section class="py-20 bg-white">
       <div class="max-w-7xl mx-auto px-6 lg:px-8">
         <div class="text-center mb-16">
-          <h2 class="text-3xl  font-bold text-gray-900 mb-4">
+          <h2 class="text-2xl  font-bold text-gray-900 mb-4">
             <span class="bg-gradient-to-r from-[#27628C] to-blue-600 bg-clip-text text-transparent">
               Latest on Journo
             </span>
@@ -513,7 +513,7 @@
       <div class="max-w-7xl mx-auto px-6 lg:px-8">
         <div class="text-center mb-16">
           <h2 class="text-sm font-semibold tracking-wider text-[#27628C] uppercase mb-4">Testimonials</h2>
-          <p class="text-3xl  font-bold text-gray-900 mb-4">
+          <p class="text-2xl  font-bold text-gray-900 mb-4">
             MedLabConvo has supported thousands of laboratory professionals and healthcare learners through digital
             engagement, education, mentorship, and community driven learning.
             <!-- We have impacted thousands of <span -->
@@ -529,7 +529,7 @@
                 <img class="h-12 w-12 rounded-full object-cover" src="@/assets/img/avatar.jpeg" alt="">
                 <div class="ml-4">
                   <div class="font-bold text-gray-900">{{ testimonial.name }}</div>
-                  <div class="text-sm text-gray-500">Biomedical Scientist</div>
+                  <div class="text-sm text-gray-900">Biomedical Scientist</div>
                 </div>
               </div>
               <blockquote class="text-gray-700 leading-relaxed">
@@ -544,7 +544,7 @@
     <!-- Donation CTA -->
     <section class="py-20 bg-gradient-to-r from-[#27628C] to-blue-600">
       <div class="max-w-4xl mx-auto text-center px-6 lg:px-8">
-        <h2 class="text-3xl  font-bold text-white mb-6">
+        <h2 class="text-2xl  font-bold text-white mb-6">
           Help Us Continue Our Mission
         </h2>
         <p class="text-xl text-blue-100 mb-8">
@@ -613,25 +613,25 @@
         <div class="mt-8 text-gray-800">
           <p class="font-semibold">Let's Talk Med Lab</p>
           <div class="flex justify-center space-x-4 mt-4">
-            <a href="https://x.com/medlabconvo" class="text-gray-500 hover:text-black" aria-label="X">
+            <a href="https://x.com/medlabconvo" class="text-gray-900 hover:text-black" aria-label="X">
               <img src="@/assets/img/logo1.png" class="fab fa-x-twitter h60 w-6" />
             </a>
-            <a href="https://www.instagram.com/medlabconvo/" class="text-gray-500 hover:text-pink-500"
+            <a href="https://www.instagram.com/medlabconvo/" class="text-gray-900 hover:text-pink-500"
               aria-label="Instagram">
               <img src="@/assets/img/logo4.svg" class="fab fa-instagram h-6 w-6" />
             </a>
-            <a href="https://web.facebook.com/medlabconvo?_rdc=1&_rdr" class="text-gray-500 hover:text-blue-600"
+            <a href="https://web.facebook.com/medlabconvo?_rdc=1&_rdr" class="text-gray-900 hover:text-blue-600"
               aria-label="Facebook">
               <img src="@/assets/img/logo3.svg" class="fab fa-facebook h-6 w-6" />
             </a>
-            <a href="https://www.linkedin.com/company/medlabconvo/" class="text-gray-500 hover:text-blue-500"
+            <a href="https://www.linkedin.com/company/medlabconvo/" class="text-gray-900 hover:text-blue-500"
               aria-label="LinkedIn">
               <img src="@/assets/img/logo5.svg" class="fab fa-linkedin h-6 w-6" />
             </a>
-            <a href="https://mlcjourno.substack.com/" class="text-gray-500 hover:text-orange-400" aria-label="Substack">
+            <a href="https://mlcjourno.substack.com/" class="text-gray-900 hover:text-orange-400" aria-label="Substack">
               <img src="@/assets/img/substack.png" class="fab fa-medium h-6 w-6" />
             </a>
-            <a href="https://open.spotify.com/show/04S2XZGd6gczoCXStIrh8e" class="text-gray-500 hover:text-green-500"
+            <a href="https://open.spotify.com/show/04S2XZGd6gczoCXStIrh8e" class="text-gray-900 hover:text-green-500"
               aria-label="Spotify">
               <img src="@/assets/img/logo2.png" class="fab fa-spotify h-6 w-6" />
             </a>

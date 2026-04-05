@@ -4,7 +4,7 @@
       <!-- Back Link -->
       <NuxtLink 
         :to="`/programs/${route.params.id}`" 
-        class="inline-flex items-center text-sm font-medium text-gray-500 hover:text-[#27628C] mb-8 transition-colors"
+        class="inline-flex items-center text-sm font-medium text-gray-900 hover:text-[#27628C] mb-8 transition-colors"
       >
         <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
@@ -15,7 +15,7 @@
       <div class="bg-white rounded-3xl shadow-xl border border-gray-100 overflow-hidden">
         <!-- Progress Header -->
         <div class="bg-[#27628C] p-8 text-white">
-          <h1 class="text-3xl font-black uppercase mb-4">{{ program?.formTitle || 'Registration Form' }}</h1>
+          <h1 class="text-2xl font-black uppercase mb-4">{{ program?.formTitle || 'Registration Form' }}</h1>
           <p class="text-blue-100 leading-relaxed text-sm lg:text-base">
             {{ program?.formInstructions || 'Please fill in the details below to complete your registration.' }}
           </p>
@@ -25,7 +25,7 @@
           <!-- Loading State -->
           <div v-if="loadingProgram" class="flex flex-col items-center justify-center py-20">
             <div class="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-[#27628C] mb-4"></div>
-            <p class="text-gray-500 font-medium">Loading form context...</p>
+            <p class="text-gray-900 font-medium">Loading form context...</p>
           </div>
 
           <!-- Success State -->
@@ -35,7 +35,7 @@
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path>
               </svg>
             </div>
-            <h2 class="text-3xl font-black text-gray-900 mb-4">Registration Successful!</h2>
+            <h2 class="text-2xl font-black text-gray-900 mb-4">Registration Successful!</h2>
             <p class="text-lg text-gray-600 mb-10 max-w-md mx-auto">
               Your application for <span class="font-bold text-[#27628C]">{{ program?.title }}</span> has been submitted successfully. 
               We'll reach out to you via email soon.
@@ -77,7 +77,7 @@
                 </label>
 
                 <!-- Help Text -->
-                <p v-if="field.description" class="text-xs text-gray-500 mb-2">{{ field.description }}</p>
+                <p v-if="field.description" class="text-sm text-gray-900 mb-2">{{ field.description }}</p>
 
                 <!-- Input Switching -->
                 <template v-if="field.type === 'textarea'">
@@ -159,7 +159,7 @@
                 <div v-if="submitting" class="animate-spin rounded-full h-5 w-5 border-t-2 border-white mr-3"></div>
                 {{ submitting ? 'Processing Application...' : 'Submit Final Application' }}
               </button>
-              <p class="mt-4 text-center text-xs text-gray-400">
+              <p class="mt-4 text-center text-sm text-gray-400">
                 By submitting this form, you agree to receive communications regarding the program and related updates.
               </p>
             </div>

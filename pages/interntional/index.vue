@@ -52,7 +52,7 @@
       <div class="mx-auto max-w-7xl px-6 lg:px-8 flex justify-center items-center w-full flex-col pt-16">
         <div class="mx-auto max-w-2xl lg:mx-0 flex justify-center items-center w-full flex-col">
           <h2
-            class="text-4xl font-bold text-center text-uppercase tracking-tight text-white uppercase sm:text-6xl mt-20">
+            class="text-4xl font-bold text-center tracking-tight text-white sm:text-6xl mt-20">
             Interntional
           </h2>
           <p class="mt-3 text-lg leading-8 text-white text-center">
@@ -170,7 +170,7 @@
     <div class="bg-white container mx-auto pt-20">
 
       <div class="mx-auto lg:max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
-        <h2 class="text-2xl font-bold text-gray-900 text-center uppercase">
+        <h2 class="text-2xl font-bold text-gray-900 text-center">
           Cadres of Change
         </h2>
 
@@ -183,10 +183,10 @@
               </div>
 
               <div class="space-y-4">
-                <h1 class="text-xs font-semibold text-gray-500 uppercase tracking-wider">
+                <h1 class="text-sm font-semibold text-gray-900">
                   Personal
                 </h1>
-                <h2 class="text-xl font-bold text-gray-900 uppercase tracking-tighter mb-2">
+                <h2 class="text-xl font-bold text-gray-900 tracking-tight mb-2">
                   Growth & Development
                 </h2>
 
@@ -206,10 +206,10 @@
               </div>
 
               <div class="space-y-4">
-                <h1 class="text-xs font-semibold text-gray-500 uppercase tracking-wider">
+                <h1 class="text-sm font-semibold text-gray-900">
                   Professional
                 </h1>
-                <h2 class="text-xl font-bold text-gray-900 uppercase tracking-tighter mb-2">
+                <h2 class="text-xl font-bold text-gray-900 tracking-tight mb-2">
                   Career Advancement & Opportunities
                 </h2>
 
@@ -231,10 +231,10 @@
               </div>
 
               <div class="space-y-4">
-                <h1 class="text-xs font-semibold text-gray-500 uppercase tracking-wider">
+                <h1 class="text-sm font-semibold text-gray-900">
                   Relational
                 </h1>
-                <h2 class="text-xl font-bold text-gray-900 uppercase tracking-tighter mb-2">
+                <h2 class="text-xl font-bold text-gray-900 tracking-tight mb-2">
                   Building Strong Connections
                 </h2>
 
@@ -252,10 +252,10 @@
               </div>
 
               <div class="space-y-4">
-                <h1 class="text-xs font-semibold text-gray-500 uppercase tracking-wider">
+                <h1 class="text-sm font-semibold text-gray-900">
                   Domestic
                 </h1>
-                <h2 class="text-xl font-bold text-gray-900 uppercase tracking-tighter mb-2">
+                <h2 class="text-xl font-bold text-gray-900 tracking-tight mb-2">
                   Local Impact & Influence
                 </h2>
 
@@ -274,10 +274,10 @@
               </div>
 
               <div class="space-y-4">
-                <h1 class="text-xs font-semibold text-gray-500 uppercase tracking-wider">
+                <h1 class="text-sm font-semibold text-gray-900">
                   Systemic
                 </h1>
-                <h2 class="text-xl font-bold text-gray-900 uppercase tracking-tighter mb-2">
+                <h2 class="text-xl font-bold text-gray-900 tracking-tight mb-2">
                   Broad Professional Influence
                 </h2>
 
@@ -303,7 +303,7 @@
 
     <div class="bg-white container mx-auto pt-20">
       <div class="mx-auto lg:max-w-2xl px-4 sm:px-6 lg:px-8">
-        <h2 class="text-2xl font-bold text-gray-900 text-center uppercase">
+        <h2 class="text-2xl font-bold text-gray-900 text-center">
           Our Programs
         </h2>
       </div>
@@ -321,7 +321,7 @@
 
             <div v-if="item.registerURL === '#'"
               class="absolute inset-0 bg-black/70 flex items-center justify-center text-white text-xl font-bold">
-              COMING SOON...
+              Coming Soon...
             </div>
           </div>
 
@@ -351,7 +351,7 @@
 
 
       <div class="flex flex-col space-y-4 max-w-md mx-auto pt-4 mt-10 px-4">
-        <p class="text-2xl font-bold text-[#27628C] text-center uppercase">
+        <p class="text-2xl font-bold text-[#27628C] text-center">
           Join Us Today!
         </p>
         <a href="#" target="_blank" class="">
@@ -364,8 +364,8 @@
     </div>
 
     <div class="bg-white py-16 sm:py-20">
-      <h2 class="text-2xl font-bold text-gray-900 text-center uppercase">
-        TEAM LEADS
+      <h2 class="text-2xl font-bold text-gray-900 text-center">
+        Team Leads
       </h2>
       <div class="mx-auto max-w-7xl px-6 text-center lg:px-8">
         <ul role="list"

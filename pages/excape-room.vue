@@ -26,7 +26,7 @@
       >
         <span class="text-lg">{{ isMuted ? '🔇' : '🎵' }}</span>
       </button>
-      <div class="text-xs text-gray-400 bg-black/50 px-2 py-1 rounded backdrop-blur-sm">
+      <div class="text-sm text-gray-400 bg-black/50 px-2 py-1 rounded backdrop-blur-sm">
         {{ isMuted ? 'Muted' : 'Playing' }}
       </div>
     </div> -->
@@ -34,7 +34,7 @@
   <section class="p-3 space-y-3">
         <!-- Oxygen Meter -->
     <div v-if="showOxygenMeter" class="sm:top-4 bg-black/95 p-3 sm:p-4 flex justify-between items-center rounded-lg border-2 border-red-500 z-30 backdrop-blur-md">
-      <div class="text-xs text-red-400 mb-2 font-bold tracking-wider">OXYGEN LEVEL</div>
+      <div class="text-sm text-red-400 mb-2 font-bold tracking-wider">OXYGEN LEVEL</div>
       <div class="w-28 sm:w-32 h-3 sm:h-4 bg-gray-800 rounded-full overflow-hidden border border-gray-600">
         <div 
           :class="[
@@ -44,14 +44,14 @@
           :style="{ width: `${oxygenLevel}%` }"
         ></div>
       </div>
-      <div class="text-xs mt-1 font-bold" :class="oxygenLevel < 20 ? 'text-red-400 animate-pulse' : 'text-green-400'">
+      <div class="text-sm mt-1 font-bold" :class="oxygenLevel < 20 ? 'text-red-400 animate-pulse' : 'text-green-400'">
         {{ oxygenLevel }}%
       </div>
     </div>
 
     <!-- Timer -->
     <div v-if="showTimer && timeLeft > 0" class="sm:top-4 flex justify-between items-center sm:right-4 bg-black/95 p-3 sm:p-4 rounded-lg border-2 border-yellow-500 z-30 backdrop-blur-md shadow-xl min-w-[120px] sm:min-w-[140px]">
-      <div class="text-xs text-yellow-400 mb-2 font-bold tracking-wider text-center">TIME LEFT</div>
+      <div class="text-sm text-yellow-400 mb-2 font-bold tracking-wider text-center">TIME LEFT</div>
       <div class="text-xl sm:text-2xl font-bold text-center" :class="timeLeft <= 10 ? 'text-red-400 animate-pulse' : 'text-yellow-400'">
         {{ timeLeft }}s
       </div>
@@ -77,10 +77,10 @@
       <!-- Welcome Screen -->
       <div v-if="gameState === 'welcome'" class="fade-in text-center max-w-2xl mx-auto px-4">
         <div class="mb-6 sm:mb-8">
-          <h1 class="text-3xl sm:text-4xl md:text-6xl font-black mb-4 bg-gradient-to-r from-cyan-400 via-blue-400 to-cyan-400 bg-clip-text text-transparent animate-pulse">
+          <h1 class="text-2xl sm:text-4xl md:text-6xl font-black mb-4 bg-gradient-to-r from-cyan-400 via-blue-400 to-cyan-400 bg-clip-text text-transparent animate-pulse">
             MEDLABCONVO
           </h1>
-          <h2 class="text-xl sm:text-2xl md:text-3xl font-bold text-cyan-400 mb-4 sm:mb-6">ESCAPE ROOM</h2>
+          <h2 class="text-xl sm:text-2xl md:text-2xl font-bold text-cyan-400 mb-4 sm:mb-6">ESCAPE ROOM</h2>
           <div class="bg-black/90 p-4 sm:p-6 rounded-lg border border-cyan-500 mb-6 sm:mb-8 backdrop-blur-sm">
             <div class="text-sm md:text-base text-gray-300 leading-relaxed">
               <p class="mb-4">⚠️ <span class="text-cyan-400 font-bold">BIOHAZARD DETECTED</span> ⚠️</p>
@@ -210,7 +210,7 @@
       <div v-else-if="gameState === 'victory'" class="fade-in text-center max-w-2xl mx-auto px-4">
         <div class="mb-6 sm:mb-8">
           <div class="text-6xl sm:text-8xl mb-6 animate-bounce">🎉</div>
-          <h1 class="text-3xl sm:text-4xl md:text-6xl font-black mb-4 bg-gradient-to-r from-green-400 via-yellow-400 to-green-400 bg-clip-text text-transparent">
+          <h1 class="text-2xl sm:text-4xl md:text-6xl font-black mb-4 bg-gradient-to-r from-green-400 via-yellow-400 to-green-400 bg-clip-text text-transparent">
             ESCAPED!
           </h1>
           <div class="bg-black/90 p-4 sm:p-6 rounded-lg border border-green-500 mb-6 sm:mb-8 backdrop-blur-sm">
@@ -235,7 +235,7 @@
       <div v-else-if="gameState === 'gameOver'" class="fade-in text-center max-w-2xl mx-auto px-4">
         <div class="mb-6 sm:mb-8">
           <div class="text-6xl sm:text-8xl mb-6 animate-pulse">💀</div>
-          <h1 class="text-3xl sm:text-4xl md:text-6xl font-black mb-4 text-red-500">
+          <h1 class="text-2xl sm:text-4xl md:text-6xl font-black mb-4 text-red-500">
             GAME OVER
           </h1>
           <div class="bg-black/90 p-4 sm:p-6 rounded-lg border border-red-500 mb-6 sm:mb-8 backdrop-blur-sm">
@@ -736,7 +736,7 @@ definePageMeta({
 
 /* Mobile responsive improvements */
 @media (max-width: 640px) {
-  .text-3xl { font-size: 1.875rem; }
+  .text-2xl { font-size: 1.875rem; }
   .text-4xl { font-size: 2.25rem; }
   .text-6xl { font-size: 3rem; }
   .text-8xl { font-size: 4rem; }

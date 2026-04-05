@@ -133,7 +133,7 @@ const handleCheckboxChange = (fieldId: string, option: string, checked: boolean)
           v-model="submitterEmail"
           type="email"
         />
-        <p class="mt-1 text-xs text-gray-500">
+        <p class="mt-1 text-sm text-gray-900">
           Provide your email if you'd like to receive a copy of your submission
         </p>
       </div>

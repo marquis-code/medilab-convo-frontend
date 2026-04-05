@@ -21,7 +21,7 @@
       <div class="absolute -bottom-40 -left-40 w-96 h-96 bg-purple-600/30 rounded-full blur-[120px]"></div>
 
       <div class="relative max-w-7xl mx-auto px-6 text-center">
-        <span class="inline-block px-4 py-1.5 mb-6 text-xs font-bold tracking-[0.2em] text-indigo-400 uppercase bg-indigo-500/10 rounded-full border border-indigo-500/20">Team Hierarchy</span>
+        <span class="inline-block px-4 py-1.5 mb-6 text-sm font-bold tracking-[0.2em] text-indigo-400 uppercase bg-indigo-500/10 rounded-full border border-indigo-500/20">Team Hierarchy</span>
         <h1 class="text-4xl md:text-7xl font-extrabold text-white mb-8 tracking-tighter leading-tight lg:px-20">
           Our Organizational Structure
         </h1>
@@ -48,7 +48,7 @@
         <section class="flex flex-col items-center">
           <div class="flex flex-col items-center w-full relative">
              <div class="w-0.5 h-12 bg-gradient-to-t from-indigo-500/30 to-transparent mb-4"></div>
-             <h2 class="text-xs font-black tracking-[0.4em] text-indigo-600 uppercase bg-slate-100/50 px-6 py-2 rounded-full border border-slate-200 z-10">Executive Leadership</h2>
+             <h2 class="text-sm font-black tracking-[0.4em] text-indigo-600 uppercase bg-slate-100/50 px-6 py-2 rounded-full border border-slate-200 z-10">Executive Leadership</h2>
           </div>
           <div class="flex flex-wrap justify-center gap-12 relative w-full pt-12">
             <div v-for="member in executiveDirectors" :key="member.id" class="organogram-node group">
@@ -61,7 +61,7 @@
         <section v-if="executiveBoard.length" class="flex flex-col items-center relative gap-12">
             <div class="flex flex-col items-center w-full relative">
                <div class="w-0.5 h-20 bg-gradient-to-b from-indigo-100 to-indigo-500/20 mb-4"></div>
-               <h2 class="text-xs font-black tracking-[0.4em] text-indigo-600 uppercase bg-slate-100/50 px-6 py-2 rounded-full border border-slate-200 z-10">Executive Board</h2>
+               <h2 class="text-sm font-black tracking-[0.4em] text-indigo-600 uppercase bg-slate-100/50 px-6 py-2 rounded-full border border-slate-200 z-10">Executive Board</h2>
             </div>
             
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 w-full max-w-6xl px-4 relative">
@@ -75,7 +75,7 @@
         <section v-if="advisoryBoard.length" class="flex flex-col items-center gap-12">
             <div class="flex flex-col items-center w-full relative">
                <div class="w-0.5 h-20 bg-gradient-to-b from-indigo-100 to-indigo-500/20 mb-4"></div>
-               <h2 class="text-xs font-black tracking-[0.4em] text-indigo-600 uppercase bg-slate-100/50 px-6 py-2 rounded-full border border-slate-200 z-10">Advisory Board</h2>
+               <h2 class="text-sm font-black tracking-[0.4em] text-indigo-600 uppercase bg-slate-100/50 px-6 py-2 rounded-full border border-slate-200 z-10">Advisory Board</h2>
             </div>
             <div class="flex flex-wrap justify-center gap-8 w-full max-w-5xl px-4">
                <div v-for="member in advisoryBoard" :key="member.id" class="organogram-node opacity-90 scale-95 hover:scale-100 transition-all duration-500">
@@ -88,7 +88,7 @@
         <section v-if="volunteers.length" class="flex flex-col items-center gap-12 pb-20">
             <div class="flex flex-col items-center w-full relative">
                <div class="w-0.5 h-20 bg-gradient-to-b from-indigo-100 to-indigo-500/20 mb-4"></div>
-               <h2 class="text-xs font-black tracking-[0.4em] text-indigo-600 uppercase bg-slate-100/50 px-6 py-2 rounded-full border border-slate-200 z-10">Team Leads & Staff</h2>
+               <h2 class="text-sm font-black tracking-[0.4em] text-indigo-600 uppercase bg-slate-100/50 px-6 py-2 rounded-full border border-slate-200 z-10">Team Leads & Staff</h2>
             </div>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 w-full px-4">
                <div v-for="member in volunteers" :key="member.id" class="organogram-node">

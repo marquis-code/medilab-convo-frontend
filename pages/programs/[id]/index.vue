@@ -20,7 +20,7 @@
       <div class="mx-auto max-w-5xl px-6 lg:px-8">
         
         <!-- Breadcrumbs / Back -->
-        <NuxtLink to="/programs" class="inline-flex items-center gap-2 text-gray-500 hover:text-[#27628C] transition-colors mb-12 group">
+        <NuxtLink to="/programs" class="inline-flex items-center gap-2 text-gray-900 hover:text-[#27628C] transition-colors mb-12 group">
           <Icon name="heroicons:arrow-left" class="w-4 h-4 group-hover:-translate-x-1 transition-transform" />
           <span class="text-sm font-medium">Back to directory</span>
         </NuxtLink>
@@ -48,7 +48,7 @@
               </span>
             </div>
 
-            <h1 class="text-3xl md:text-5xl font-black text-gray-900 tracking-tight leading-tight">
+            <h1 class="text-2xl md:text-5xl font-black text-gray-900 tracking-tight leading-tight">
               {{ program.title }}
             </h1>
 
@@ -124,7 +124,7 @@
           <div v-if="program.outcomes?.length" class="space-y-12 border-t border-gray-100 pt-16 animate-fade-in">
             <div class="space-y-2">
               <h3 class="text-sm font-black text-[#27628C] uppercase tracking-[0.3em]">The Impact</h3>
-              <h2 class="text-3xl font-black text-gray-900 tracking-tight">Program Outcomes</h2>
+              <h2 class="text-2xl font-black text-gray-900 tracking-tight">Program Outcomes</h2>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -133,7 +133,7 @@
                 :key="outcome" 
                 class="flex items-start gap-5 p-6 rounded-3xl border border-gray-100 hover:border-gray-200 transition-colors"
               >
-                <div class="w-8 h-8 rounded-full bg-emerald-50 text-emerald-600 flex items-center justify-center font-bold text-xs flex-shrink-0">
+                <div class="w-8 h-8 rounded-full bg-emerald-50 text-emerald-600 flex items-center justify-center font-bold text-sm flex-shrink-0">
                   {{ i + 1 }}
                 </div>
                 <p class="text-sm font-bold text-gray-600 leading-relaxed">{{ outcome }}</p>
@@ -145,7 +145,7 @@
           <div v-if="program.highlights?.length" class="space-y-12 border-t border-gray-100 pt-16 animate-fade-in">
             <div class="space-y-2 text-center md:text-left">
               <h3 class="text-sm font-black text-indigo-500 uppercase tracking-[0.3em]">Deep Dive</h3>
-              <h2 class="text-3xl font-black text-gray-900 tracking-tight">Program highlights</h2>
+              <h2 class="text-2xl font-black text-gray-900 tracking-tight">Program highlights</h2>
             </div>
             
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -158,7 +158,7 @@
                   <Icon name="heroicons:light-bulb" class="w-6 h-6" />
                 </div>
                 <h4 class="text-base font-black text-gray-900 mb-3 tracking-tight">{{ highlight.title }}</h4>
-                <p class="text-sm text-gray-500 leading-relaxed font-medium">{{ highlight.description }}</p>
+                <p class="text-sm text-gray-900 leading-relaxed font-medium">{{ highlight.description }}</p>
               </div>
             </div>
           </div>

@@ -8,13 +8,13 @@
           allowfullscreen
           class="w-full h-40 object-cover rounded-lg"
         ></iframe>
-        <div class="absolute top-2 right-2 bg-red-500 text-white text-xs font-bold py-1 px-2 rounded">
+        <div class="absolute top-2 right-2 bg-red-500 text-white text-sm font-bold py-1 px-2 rounded">
           {{ video.duration }}
         </div>
       </div>
       <div class="mt-4 space-y-3 lg:space-y-0">
         <h3 class="text-red-600 font-semibold text-sm lg:text-base">{{ video.title }}</h3>
-        <p class="text-gray-500 text-sm lg:text-base">{{ video.description }}</p>
+        <p class="text-gray-900 text-sm lg:text-base">{{ video.description }}</p>
       </div>
     </div>
   </template>

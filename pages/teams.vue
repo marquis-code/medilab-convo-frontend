@@ -1,187 +1,54 @@
+<template>
+  <div class="min-h-screen bg-white">
+    <!-- Static Header / Hero for Teams -->
+    <div class="bg-[#27628C] py-24 md:py-40 px-6 lg:px-8 relative overflow-hidden">
+       <!-- Subtle Background Accents -->
+       <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:20px_20px]"></div>
+       <div class="absolute -right-20 -top-20 w-96 h-96 bg-white/10 blur-[100px] rounded-full"></div>
+
+       <div class="mx-auto max-w-7xl relative z-10">
+          <div class="max-w-2xl">
+             <h1 class="text-4xl md:text-8xl font-bold text-white leading-tight tracking-tighter  mb-8 animate-in fade-in slide-in-from-bottom-10 duration-1000">
+                Our <span class="text-blue-200">Collective</span> Intelligence
+             </h1>
+             <p class="text-lg md:text-xl text-blue-50 font-medium leading-relaxed max-w-lg mb-12 animate-in fade-in slide-in-from-bottom-10 duration-1000 delay-200">
+                Behind every diagnostic insight is a team of visionaries. Meet the leadership driving clinical excellence and innovation at MedLabConvo.
+             </p>
+             <div class="h-2 w-24 bg-white/30 rounded-full animate-in fade-in slide-in-from-left-10 duration-1000 delay-500"></div>
+          </div>
+       </div>
+    </div>
+
+    <!-- Leadership Component -->
+    <LeadershipSection />
+
+    <!-- Newsletter / Substack Call to Action -->
+    <section class="py-24 bg-gray-50 border-t border-gray-100">
+       <div class="max-w-7xl mx-auto px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-12">
+          <div class="max-w-xl">
+             <h2 class="text-3xl font-bold text-gray-900 tracking-tighter ">Join the Conversation</h2>
+             <p class="text-gray-500 mt-4 font-medium leading-relaxed">Stay updated with our latest initiatives, research pulses, and community events directly in your inbox.</p>
+          </div>
+          <NuxtLink to="/convostack" class="px-12 py-5 bg-[#27628C] text-white rounded-2xl font-bold text-[11px] tracking-normal hover:bg-black transition-all shadow-xl active:scale-95">
+             Explore the Substack
+          </NuxtLink>
+       </div>
+    </section>
+  </div>
+</template>
+
 <script setup lang="ts">
-import { computed, onMounted } from 'vue'
-import { useGetTeamMembers } from '@/composables/modules/teams/useGetTeamMembers'
-import MemberCard from '@/components/MemberCard.vue'
+import LeadershipSection from '@/components/LeadershipSection.vue'
+import { useHead } from '#imports'
 
-const { loading, teamMembers, getTeamMembers } = useGetTeamMembers()
-
-onMounted(() => {
-  getTeamMembers()
-})
-
-// Hierarchical logic based on titles or position
-// We'll group them into distinct tiers for the organogram
-const executiveLeadership = computed(() => {
-  return teamMembers.value.filter(t => t.title?.toLowerCase().includes('director') || t.title?.toLowerCase().includes('chairman')).sort((a, b) => (a.position || 0) - (b.position || 0))
-})
-
-const boards = computed(() => {
-  return teamMembers.value.filter(t => (t.title?.toLowerCase().includes('board') || t.title?.toLowerCase().includes('executive')) && !t.title?.toLowerCase().includes('director')).sort((a, b) => (a.position || 0) - (b.position || 0))
-})
-
-const operatingLeads = computed(() => {
-  return teamMembers.value.filter(t => t.title?.toLowerCase().includes('lead') || t.title?.toLowerCase().includes('head')).sort((a, b) => (a.position || 0) - (b.position || 0))
-})
-
-const teamMembersList = computed(() => {
-  return teamMembers.value.filter(t => 
-    !t.title?.toLowerCase().includes('director') && 
-    !t.title?.toLowerCase().includes('board') && 
-    !t.title?.toLowerCase().includes('lead') &&
-    !t.title?.toLowerCase().includes('head')
-  ).sort((a, b) => (a.position || 0) - (b.position || 0))
+useHead({
+  title: 'Leadership & Team | MedLabConvo',
+  meta: [
+    { name: 'description', content: 'Meet the visionary leadership team behind MedLabConvo, driving innovation in medical laboratory science.' }
+  ]
 })
 </script>
 
-<template>
-  <main class="min-h-screen bg-slate-50/50 pb-32">
-    <!-- Breadcrumb/Header Area -->
-    <div class="bg-white border-b border-slate-100 pt-32 pb-12">
-      <div class="max-w-7xl mx-auto px-6">
-        <div class="flex flex-col items-center text-center space-y-4">
-          <span class="text-[10px] font-black uppercase tracking-[0.4em] text-blue-600">Organizational Structure</span>
-          <h1 class="text-4xl md:text-6xl font-black text-slate-900 tracking-tight">Our <span class="text-blue-600">Leadership</span></h1>
-          <p class="text-slate-500 max-w-2xl text-lg">A collaborative framework of professionals and visionaries driving excellence in medical laboratory science.</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Organogram Section -->
-    <div class="max-w-7xl mx-auto px-6 pt-20">
-      
-      <!-- Loading State -->
-      <div v-if="loading" class="flex flex-col items-center py-40 space-y-4">
-        <div class="w-12 h-12 border-4 border-blue-600/20 border-t-blue-600 rounded-full animate-spin"></div>
-        <p class="text-slate-400 font-bold text-xs uppercase tracking-widest">Building Structure...</p>
-      </div>
-
-      <!-- Tree Visualization -->
-      <div v-else-if="teamMembers.length > 0" class="organogram-tree relative">
-        
-        <!-- Tier 1: Executive Leadership -->
-        <div v-if="executiveLeadership.length" class="tier-section">
-          <div class="tier-label">Executive Leadership</div>
-          <div class="flex flex-wrap justify-center gap-12 pt-10 relative">
-            <div v-for="member in executiveLeadership" :key="member.id" class="relative z-10 animate-fade-in-up">
-              <MemberCard :member="member" is-large />
-            </div>
-            <!-- Horizontal connector for desktop -->
-            <div v-if="executiveLeadership.length > 1" class="hidden lg:block absolute top-[140px] left-[15%] right-[15%] h-0.5 bg-slate-200"></div>
-          </div>
-          <!-- Vertical connector to next tier -->
-          <div class="hidden lg:block h-20 w-0.5 bg-slate-200 mx-auto my-4"></div>
-        </div>
-
-        <!-- Tier 2: The Boards -->
-        <div v-if="boards.length" class="tier-section">
-          <div class="tier-label">Executive & Advisory Boards</div>
-          <div class="flex flex-wrap justify-center gap-8 pt-10 relative">
-            <div v-for="member in boards" :key="member.id" class="relative z-10 animate-fade-in-up">
-              <MemberCard :member="member" />
-            </div>
-            <div v-if="boards.length > 1" class="hidden lg:block absolute top-[100px] left-[10%] right-[10%] h-0.5 bg-slate-200"></div>
-          </div>
-          <div class="hidden lg:block h-20 w-0.5 bg-slate-200 mx-auto my-4"></div>
-        </div>
-
-        <!-- Tier 3: Operating Leads -->
-        <div v-if="operatingLeads.length" class="tier-section">
-          <div class="tier-label">Operating Leads & Department Heads</div>
-          <div class="flex flex-wrap justify-center gap-6 pt-10 relative">
-            <div v-for="member in operatingLeads" :key="member.id" class="relative z-10 animate-fade-in-up">
-              <MemberCard :member="member" is-compact />
-            </div>
-            <div v-if="operatingLeads.length > 1" class="hidden lg:block absolute top-[80px] left-[5%] right-[5%] h-0.5 bg-slate-100"></div>
-          </div>
-          <div class="hidden lg:block h-16 w-0.5 bg-slate-100 mx-auto my-4"></div>
-        </div>
-
-        <!-- Tier 4: General Team -->
-        <div v-if="teamMembersList.length" class="tier-section">
-          <div class="tier-label">Project Teams & Members</div>
-          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 pt-10">
-            <div v-for="member in teamMembersList" :key="member.id" class="flex justify-center animate-fade-in-up">
-              <MemberCard :member="member" is-compact />
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-      <!-- Empty State -->
-      <div v-else class="text-center py-40 space-y-6">
-        <div class="w-20 h-20 bg-slate-100 rounded-full flex items-center justify-center mx-auto text-3xl">👥</div>
-        <h3 class="text-xl font-black text-slate-900 uppercase tracking-tight">Expanding Our Horizon</h3>
-        <p class="text-slate-500 max-w-sm mx-auto font-medium">We are currently populating our organizational structure with the professionals driving our mission forward.</p>
-      </div>
-
-    </div>
-  </main>
-</template>
-
 <style scoped>
-.tier-section {
-  @apply flex flex-col items-center mb-20 relative;
-}
-
-.tier-label {
-  @apply px-6 py-2 bg-white border border-slate-100 shadow-sm rounded-full text-[10px] font-black uppercase tracking-[0.3em] text-slate-400 z-20;
-}
-
-/* Base Animations */
-.animate-fade-in-up {
-  animation: fadeInUp 0.8s cubic-bezier(0.22, 1, 0.36, 1) backwards;
-}
-
-@keyframes fadeInUp {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-/* Subtle connecting line from label to cards */
-.tier-section::after {
-  content: '';
-  @apply hidden lg:block absolute top-[36px] left-1/2 -translate-x-1/2 w-0.5 h-10 bg-slate-200 z-0;
-}
-
-.tier-section:last-child::after {
-  @apply hidden;
-}
-</style>
-
-
-<style scoped>
-.animate-fade-in { animation: fadeIn 1s ease-out forwards; }
-.animate-slide-up { animation: slideUp 1s cubic-bezier(0.22, 1, 0.36, 1) forwards; }
-.animate-slide-up-delay { animation: slideUp 1s cubic-bezier(0.22, 1, 0.36, 1) 0.3s forwards; opacity: 0; }
-.animate-fade-in-up { animation: fadeInUp 0.8s cubic-bezier(0.22, 1, 0.36, 1) backwards; }
-
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
-@keyframes slideUp {
-  from { opacity: 0; transform: translateY(40px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes fadeInUp {
-  from { opacity: 0; transform: translateY(30px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-/* Create dashed lines between tiers for desktop */
-@media (min-width: 1024px) {
-  /* section::after {
-    content: '';
-    position: absolute;
-    bottom: -60px;
-    left: 50%;
-    width: 2px;
-    height: 40px;
-    background: repeating-linear-gradient(to bottom, #27628C, #27628C 4px, transparent 4px, transparent 8px);
-    opacity: 0.2;
-  } */
-}
+/* Any specific page styling can go here if needed */
 </style>

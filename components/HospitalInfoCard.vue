@@ -3,7 +3,7 @@
     <div class="flex items-center bg-white shadow-lg rounded-lg p-4 py-6">
       <div class="flex-grow space-y-4">
         <h2 class="text-red-500 text-lg font-medium max-w-xs">Lagos University Teaching Hospital (LUTH)</h2>
-        <p class="text-gray-500 text-sm">112, Ishaga Rd, Idi-araba, Lagos</p>
+        <p class="text-gray-900 text-sm">112, Ishaga Rd, Idi-araba, Lagos</p>
       </div>
       <div class="flex-none">
         <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">

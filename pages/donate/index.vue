@@ -7,7 +7,7 @@
             <h1 class="font-bold tracking-tight text-gray-900 text-5xl sm:text-7xl lg:text-6xl">
               Support MedLabConvo
             </h1>
-            <p class="text-2xl sm:text-3xl lg:text-4xl text-gray-900 italic font-light animate-fade-in-delay">
+            <p class="text-2xl sm:text-2xl lg:text-4xl text-gray-900  font-light animate-fade-in-delay">
               Empower the Future of Medical Laboratory Science
             </p>
           </div>
@@ -124,7 +124,7 @@
             <img class="h-12 w-12 rounded-full object-cover" src="@/assets/img/avatar.jpeg" alt="">
             <div class="ml-4">
               <div class="font-bold text-gray-900">{{ testimonial.name }}</div>
-              <div class="text-sm text-gray-500">{{ testimonial.profession }}</div>
+              <div class="text-sm text-gray-900">{{ testimonial.profession }}</div>
             </div>
           </div>
           <blockquote class="text-gray-700 leading-relaxed">
@@ -149,7 +149,7 @@
       </div>
 
       <div class="relative max-w-6xl mx-auto px-6 lg:px-8">
-        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-8">
+        <h2 class="text-2xl md:text-4xl font-bold text-gray-900 text-center mb-8">
           Donation Appreciation Packages
         </h2>
         <p class="text-lg text-gray-700 text-center max-w-3xl mx-auto mb-10 leading-relaxed">
@@ -225,14 +225,14 @@
 
     <div class="flex justify-center items-center px-4 mt-20">
       <div class="max-w-[900px] w-full flex flex-col justify-center items-center">
-        <h2 class="text-3xl font-bold text-gray-900 text-center">
+        <h2 class="text-2xl font-bold text-gray-900 text-center">
           Join Us in Making an Impact
         </h2>
         <p class="text-xl max-w-[800px] w-full text-gray-600 text-center mt-6 leading-relaxed">
           By supporting MedLabConvo, you are investing in a future where medical laboratory scientists are better
           equipped, more connected, and more empowered to drive change in healthcare.
         </p>
-        <p class="text-3xl font-bold text-gray-900 text-center mt-14">
+        <p class="text-2xl font-bold text-gray-900 text-center mt-14">
           Donate Today and Be Part of the Change!
         </p>
       </div>
@@ -251,7 +251,7 @@
         <div class="w-full max-w-[500px] border-2 rounded-2xl px-4 lg:px-4 py-6 mt-6 mx-auto">
           <p class="text-2xl text-gray-600">Donate Directly To Our Bank Account</p>
           <div class="bg-red-400 h-[1px] mt-2 opacity-60"></div>
-          <p class="text-gray-500 text-lg mt-4">Copy Account Details</p>
+          <p class="text-gray-900 text-lg mt-4">Copy Account Details</p>
 
           <div class="flex items-center gap-6 lg:gap-20 mt-6 border-2 lg:p-4 p-2 rounded-2xl">
             <div class="bg-[#27628C] relative p-3 rounded-2xl w-[280px] min-h-[120px] flex flex-col justify-start">

@@ -21,7 +21,7 @@
     <div class="py-24 bg-white sm:py-32">
       <div class="mx-auto max-w-7xl px-6 lg:px-8">
         <div class="mx-auto max-w-2xl text-center mb-16">
-          <h2 class="text-3xl font-black text-gray-900 sm:text-4xl uppercase tracking-widest">Our Five Dimensions</h2>
+          <h2 class="text-2xl font-black text-gray-900 sm:text-4xl uppercase tracking-widest">Our Five Dimensions</h2>
 
           <div class="mt-4 h-1 w-20 bg-[#27628C] mx-auto"></div>
         </div>
@@ -128,13 +128,13 @@
     <!-- Core Values Section -->
     <div class="py-24 bg-white sm:py-32">
       <div class="mx-auto max-w-7xl px-6 lg:px-8 text-center">
-        <h2 class="text-3xl font-black text-gray-900 mb-16 uppercase tracking-widest">Core Values</h2>
+        <h2 class="text-2xl font-black text-gray-900 mb-16 uppercase tracking-widest">Core Values</h2>
         
         <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
           <div v-for="(value, index) in coreValues" :key="index" class="p-8 border border-gray-100 rounded-3xl bg-gray-50/50 hover:bg-white hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
             <div class="w-12 h-12 bg-[#27628C] text-white rounded-xl flex items-center justify-center mx-auto mb-6 font-bold text-xl">{{ index + 1 }}</div>
             <h3 class="text-lg font-bold text-gray-900 mb-3">{{ value.title }}</h3>
-            <p class="text-gray-500 text-sm leading-relaxed">{{ value.desc }}</p>
+            <p class="text-gray-900 text-sm leading-relaxed">{{ value.desc }}</p>
           </div>
         </div>
       </div>

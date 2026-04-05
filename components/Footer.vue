@@ -1,87 +1,133 @@
 <template>
-  <footer class="bg-black border-t border-white/10 pt-16 sm:pt-24 lg:pt-32" aria-labelledby="footer-heading">
+  <footer class="bg-black border-t border-white/5 pt-16 sm:pt-24 lg:pt-32" aria-labelledby="footer-heading">
     <h2 id="footer-heading" class="sr-only">Footer</h2>
-    <div class="mx-auto max-w-7xl px-6 pb-8 lg:px-8">
-      <div class="xl:grid xl:grid-cols-3 xl:gap-12">
-        <!-- Brand Info -->
-        <div class="space-y-8 xl:col-span-1 xl:border-r border-white/10 pr-8">
-          <NuxtLink to="/" class="inline-block transition-transform hover:scale-105">
-            <img class="h-14 w-auto rounded-md shadow-sm" src="@/assets/img/medlab-logo.jpeg" alt="MedLabConvo Logo" />
+    <div class="mx-auto max-w-7xl px-6 pb-12 lg:px-8">
+      <!-- Main Grid: Flattened to 4 Columns on Desktop -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-16">
+        
+        <!-- Column 1: Brand Identity & Social -->
+        <div class="space-y-10 lg:col-span-1">
+          <NuxtLink to="/" class="inline-block transition-all hover:opacity-80">
+            <img class="h-10 w-auto rounded-lg shadow-2xl" src="@/assets/img/medlab-logo.jpeg" alt="MedLabConvo Logo" />
           </NuxtLink>
-          <p class="text-sm leading-6 text-gray-400">
-            <strong class="text-white font-semibold block mb-2 text-base">Saving Lives, Saving Time.</strong>
-            MedLabConvo is your premier community and platform connecting medical laboratory professionals, fostering innovation, and promoting sustainability in clinical diagnostics.
-          </p>
-          <div class="flex space-x-5">
-            <a v-for="item in social" :key="item.name" :href="item.href" class="text-gray-500 hover:text-blue-500 transition-colors transform hover:-translate-y-1">
-              <span class="sr-only">{{ item.name }}</span>
-              <component :is="item.icon" class="h-6 w-6" aria-hidden="true" />
-            </a>
+          
+          <div class="space-y-6">
+            <p class="text-sm leading-relaxed text-gray-400 max-w-xs font-medium">
+              <span class="text-white font-bold block mb-2 text-base">Saving Lives, Saving Time.</span>
+              MedLabConvo is your premier community and platform connecting medical laboratory professionals globally.
+            </p>
+            
+            <!-- Social Protocol -->
+            <div class="flex items-center gap-4">
+              <a 
+                v-for="item in social" 
+                :key="item.name" 
+                :href="item.href" 
+                class="w-10 h-10 flex items-center justify-center rounded-xl bg-white/[0.03] border border-white/5 text-gray-400 hover:text-white hover:bg-[#27628C] hover:border-[#27628C] transition-all duration-500"
+              >
+                <span class="sr-only">{{ item.name }}</span>
+                <component :is="item.icon" class="h-5 w-5" aria-hidden="true" />
+              </a>
+            </div>
           </div>
         </div>
 
-        <!-- Navigation Links -->
-        <div class="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0 xl:pl-8">
-          <div class="md:grid md:grid-cols-2 md:gap-8">
-            <div>
-              <h3 class="text-sm font-semibold leading-6 text-white tracking-wider uppercase">Platform</h3>
-              <ul role="list" class="mt-6 space-y-4">
-                <li v-for="item in platform" :key="item.name">
-                  <NuxtLink :to="item.href" class="text-sm leading-6 text-gray-400 hover:text-white transition-colors relative group block w-fit">
-                    {{ item.name }}
-                    <span class="absolute -bottom-0.5 left-0 w-0 h-px bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
-                  </NuxtLink>
-                </li>
-              </ul>
-            </div>
-            <div class="mt-10 md:mt-0">
-              <h3 class="text-sm font-semibold leading-6 text-white tracking-wider uppercase">Company</h3>
-              <ul role="list" class="mt-6 space-y-4">
-                <li v-for="item in company" :key="item.name">
-                  <NuxtLink :to="item.href" class="text-sm leading-6 text-gray-400 hover:text-white transition-colors relative group block w-fit">
-                    {{ item.name }}
-                    <span class="absolute -bottom-0.5 left-0 w-0 h-px bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
-                  </NuxtLink>
-                </li>
-              </ul>
-            </div>
+        <!-- Column 2: Platform Links -->
+        <div class="space-y-8">
+          <h3 class="text-[10px] font-bold text-white uppercase tracking-[0.2em]">Platform</h3>
+          <ul role="list" class="space-y-4">
+            <li v-for="item in platform" :key="item.name">
+              <NuxtLink :to="item.href" class="text-sm text-gray-400 hover:text-white transition-all flex items-center group">
+                <span class="w-0 group-hover:w-2 h-0.5 bg-[#27628C] mr-0 group-hover:mr-2 transition-all"></span>
+                {{ item.name }}
+              </NuxtLink>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Company & Legal -->
+        <div class="space-y-12">
+          <div class="space-y-8">
+            <h3 class="text-[10px] font-bold text-white uppercase tracking-[0.2em]">Company</h3>
+            <ul role="list" class="space-y-4">
+              <li v-for="item in company" :key="item.name">
+                <NuxtLink :to="item.href" class="text-sm text-gray-400 hover:text-white transition-all flex items-center group">
+                  <span class="w-0 group-hover:w-2 h-0.5 bg-[#27628C] mr-0 group-hover:mr-2 transition-all"></span>
+                  {{ item.name }}
+                </NuxtLink>
+              </li>
+            </ul>
           </div>
-          <div class="md:grid md:grid-cols-2 md:gap-8">
-            <div>
-              <h3 class="text-sm font-semibold leading-6 text-white tracking-wider uppercase">Legal</h3>
-              <ul role="list" class="mt-6 space-y-4">
-                <li v-for="item in legal" :key="item.name">
-                  <NuxtLink :to="item.href" class="text-sm leading-6 text-gray-400 hover:text-white transition-colors relative group block w-fit">
-                    {{ item.name }}
-                    <span class="absolute -bottom-0.5 left-0 w-0 h-px bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
-                  </NuxtLink>
-                </li>
-              </ul>
-            </div>
-            <div class="mt-10 md:mt-0">
-               <h3 class="text-sm font-semibold leading-6 text-white tracking-wider uppercase">Stay Updated</h3>
-               <p class="mt-4 text-sm text-gray-400">Join our newsletter to get the latest announcements.</p>
-               <form class="mt-4 sm:flex sm:max-w-md">
-                 <label for="email-address" class="sr-only">Email address</label>
-                 <input type="email" name="email-address" id="email-address" autocomplete="email" required class="w-full min-w-0 appearance-none rounded-md border-0 bg-white/5 px-3 py-2 text-base text-white shadow-sm ring-1 ring-inset ring-white/10 placeholder:text-gray-500 focus:ring-2 focus:ring-inset focus:ring-blue-500 sm:w-64 sm:text-sm sm:leading-6 transition-all duration-200" placeholder="Enter your email" />
-                 <div class="mt-4 sm:ml-4 sm:mt-0 sm:flex-shrink-0">
-                   <button type="button" class="flex w-full items-center justify-center rounded-md bg-blue-600 px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500 transition-colors border border-blue-500/50 hover:shadow-[0_0_15px_rgba(59,130,246,0.3)]">Subscribe</button>
-                 </div>
-               </form>
+          
+          <div class="space-y-8">
+            <h3 class="text-[10px] font-bold text-white uppercase tracking-[0.2em]">Insights & Policy</h3>
+            <ul role="list" class="space-y-4">
+              <li v-for="item in legal" :key="item.name">
+                <NuxtLink :to="item.href" class="text-sm text-gray-400 hover:text-white transition-all flex items-center group">
+                  <span class="w-0 group-hover:w-2 h-0.5 bg-[#27628C] mr-0 group-hover:mr-2 transition-all"></span>
+                  {{ item.name }}
+                </NuxtLink>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Column 4: Premium Subscription Card -->
+        <div class="lg:col-span-1">
+          <div class="relative bg-white/[0.02] border border-white/5 rounded-[2.5rem] p-6 shadow-2xl backdrop-blur-sm overflow-hidden group">
+            <!-- Subtle Decor -->
+            <div class="absolute -right-10 -top-10 w-32 h-32 bg-[#27628C]/10 rounded-full blur-3xl group-hover:scale-150 transition-transform duration-1000"></div>
+            
+            <div class="relative z-10 space-y-6">
+              <h3 class="text-xl font-bold text-white tracking-tight ">Stay Insightful</h3>
+              <p class="text-xs font-medium text-gray-400 leading-relaxed">
+                Join the Substack to get professional medical journalism and ecosystem pulses delivered to you.
+              </p>
+              
+              <form @submit.prevent="handleSubscribe" class="space-y-4">
+                <div class="relative">
+                  <input 
+                    v-model="email" 
+                    type="email" 
+                    required 
+                    :disabled="loading"
+                    class="w-full px-5 py-4 bg-white/[0.03] border border-white/10 rounded-2xl text-sm text-white placeholder:text-gray-600 focus:ring-2 focus:ring-[#27628C] focus:border-transparent transition-all outline-none" 
+                    placeholder="mail@institute.com" 
+                  />
+                </div>
+                <button 
+                  type="submit" 
+                  :disabled="loading || !email"
+                  class="w-full py-4 bg-[#27628C] text-white rounded-2xl text-[11px] font-bold tracking-normal hover:bg-white hover:text-black transition-all shadow-xl active:scale-[0.98] disabled:opacity-30 flex items-center justify-center gap-2"
+                >
+                  <span v-if="loading" class="w-3 h-3 border-2 border-white/20 border-t-white rounded-full animate-spin"></span>
+                  {{ loading ? 'Transmitting...' : 'Join the Substack' }}
+                </button>
+              </form>
+              
+              <p class="text-[9px] font-bold text-gray-600 text-center uppercase tracking-widest">
+                Zero spam. Pure professional value.
+              </p>
             </div>
           </div>
         </div>
       </div>
       
-      <!-- Bottom Footer -->
-      <div class="mt-16 border-t border-white/10 pt-8 sm:mt-20 lg:mt-24 flex flex-col md:flex-row justify-between items-center text-xs leading-5 text-gray-500">
-        <p>&copy; {{ new Date().getFullYear() }} MedLabConvo. All rights reserved.</p>
-        <p class="mt-4 md:mt-0 flex items-center gap-1 font-medium text-gray-400">
-          Developed with 
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-4 h-4 text-red-500 animate-pulse mx-1">
+      <!-- Bottom Bar -->
+      <div class="mt-24 border-t border-white/5 pt-12 flex flex-col md:flex-row items-center justify-between gap-8 text-[11px] font-medium text-gray-500 tracking-normal">
+        <div class="flex items-center gap-6">
+          <p>&copy; {{ new Date().getFullYear() }} MedLabConvo. All rights reserved.</p>
+          <span class="hidden md:block w-px h-4 bg-white/10"></span>
+          <p class="hidden md:block text-gray-600">Global Clinical Research & Diagnostics Ecosystem</p>
+        </div>
+        
+        <p class="flex items-center gap-1 group">
+          <!-- Crafted with 
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-3.5 h-3.5 text-red-500/80 animate-pulse mx-0.5">
             <path d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" />
           </svg>
-          by MedLabConvo Tech
+          by  -->
+          <span class="text-white group-hover:text-[#27628C] transition-colors">MedLabConvo Tech</span>
         </p>
       </div>
     </div>
@@ -89,7 +135,16 @@
 </template>
 
 <script setup lang="ts">
-import { h } from 'vue'
+import { h, ref } from 'vue'
+import { useSubscribe } from '@/composables/modules/subscriptions/useSubscribe'
+
+const { subscribe, loading } = useSubscribe()
+const email = ref('')
+
+const handleSubscribe = async () => {
+  const success = await subscribe(email.value)
+  if (success) email.value = ''
+}
 
 const platform = [
   { name: 'Journo', href: '/journo' },
@@ -101,16 +156,16 @@ const platform = [
 ]
 
 const company = [
-  { name: 'About Us', href: '/teams' },
+  { name: 'Leadership', href: '/teams' },
+  { name: 'About Us', href: '/about-us' },
   { name: 'Community', href: '/community' },
-  { name: 'Careers', href: '#' },
-  { name: 'Contact', href: '#' },
+  { name: 'Contact', href: '/contact-us' },
 ]
 
 const legal = [
-  { name: 'Privacy Policy', href: '#' },
-  { name: 'Terms of Service', href: '#' },
-  { name: 'Cookie Policy', href: '#' },
+  { name: 'Privacy Policy', href: '/privacy-policy' },
+  { name: 'Terms of Service', href: '/terms-of-service' },
+  { name: 'Cookie Policy', href: '/cookie-policy' },
 ]
 
 const social = [

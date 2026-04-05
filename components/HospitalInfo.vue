@@ -13,12 +13,12 @@
         <div class="border border-red-500 rounded-lg py-6 p-5 bg-white shadow">
           <span class="bg-red-500 text-white text-sm px-2 py-1 rounded-full px-6">{{ hospital.status }}</span>
           <div class="flex justify-between items-center mt-4">
-            <h1 class="text-lg lg:text-3xl font-semibold">
+            <h1 class="text-lg lg:text-2xl font-semibold">
               {{ hospital.name }}
             </h1>
             <!-- <span class="bg-red-500 text-white text-sm px-2 py-1 rounded-full px-6">{{ hospital.status }}</span> -->
           </div>
-          <div class="mt-2 text-gray-500">{{ hospital.location }}</div>
+          <div class="mt-2 text-gray-900">{{ hospital.location }}</div>
         </div>
         <div class="lg:flex justify-between mt-4 gap-x-6 space-y-6 lg:space-y-0">
           <div class="flex-1 text-center border border-red-500 bg-white shadow rounded-lg py-6 p-5">
@@ -27,7 +27,7 @@
               <h2 class="text-lg font-medium">Estimated Time of Arrival</h2>
               <div class="flex items-center">
                 <span class="text-4xl lg:text-6xl custom-font">44</span>
-                <span class="ml-2 text-sm lg:text-lg text-gray-500">mins</span>
+                <span class="ml-2 text-sm lg:text-lg text-gray-900">mins</span>
               </div>
             </div>
           </div>
@@ -37,7 +37,7 @@
               <h2 class="text-lg font-medium">Distance</h2>
               <div class="flex items-center">
                 <span class="text-4xl lg:text-6xl custom-font">{{ distance.toFixed(2) }}</span>
-                <span class="ml-2 text-sm lg:text-lg text-gray-500">km</span>
+                <span class="ml-2 text-sm lg:text-lg text-gray-900">km</span>
               </div>
             </div>
           </div>

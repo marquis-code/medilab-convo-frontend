@@ -15,13 +15,13 @@
           ></iframe>
           <div class="bg-white relative flex flex-wrap py-6 rounded shadow-md">
             <div class="lg:w-1/2 px-6">
-              <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs">ADDRESS</h2>
+              <h2 class="title-font font-semibold text-gray-900 tracking-widest text-sm">ADDRESS</h2>
               <p class="mt-1">LUTH, Idi-Araba, Lagos, Nigeria</p>
             </div>
             <div class="lg:w-1/2 px-6 mt-4 lg:mt-0">
-              <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs">EMAIL</h2>
+              <h2 class="title-font font-semibold text-gray-900 tracking-widest text-sm">EMAIL</h2>
               <a class="text-indigo-500 leading-relaxed"><a href="mailto:codered@gmail.com">codered@gmail.com</a></a>
-              <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs mt-4">PHONE</h2>
+              <h2 class="title-font font-semibold text-gray-900 tracking-widest text-sm mt-4">PHONE</h2>
               <p class="leading-relaxed">123-456-7890</p>
             </div>
           </div>

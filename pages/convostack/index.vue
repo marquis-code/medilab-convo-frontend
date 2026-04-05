@@ -1,162 +1,178 @@
 <template>
-  <div class="min-h-screen bg-gradient-to-b from-slate-50 to-white">
-
-    <!-- Hero Section -->
-    <section class="relative py-20 px-4 overflow-hidden">
-      <div class="absolute inset-0 bg-gradient-to-br from-indigo-900 via-purple-900 to-slate-900"></div>
-      <div class="absolute inset-0 opacity-20" style="background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iMC4xIj48cGF0aCBkPSJNMzYgMzRoLTJ2LTRoMnYtNGgtNGgtMnYyaC00djJoNHY0aC0ydjRoMnY0aDR2LTJoNHYtMmgtNHYtNGgydi00eiIvPjwvZz48L2c+PC9zdmc+')"></div>
-      <div class="relative max-w-4xl mx-auto text-center">
-        <div class="inline-flex items-center space-x-2 bg-white/10 backdrop-blur-sm px-4 py-1.5 rounded-full mb-6 border border-white/20">
-          <div class="w-2 h-2 rounded-full bg-green-400 animate-pulse"></div>
-          <span class="text-sm font-semibold text-white/80 tracking-wide">CONVO STACK</span>
-        </div>
-        <h1 class="text-4xl md:text-6xl font-extrabold text-white leading-tight mb-6">
-          Insights, Research &<br />
-          <span class="bg-gradient-to-r from-indigo-300 to-purple-300 bg-clip-text text-transparent">Knowledge for the Community</span>
-        </h1>
-        <p class="text-lg text-indigo-200 max-w-2xl mx-auto mb-10 leading-relaxed">
-          Explore curated publications from MedLabConvo — deep dives into biomedical science, diagnostics, and laboratory innovation.
-        </p>
-
-        <!-- Search -->
-        <div class="max-w-xl mx-auto relative">
-          <input
-            v-model="searchQuery"
-            type="text"
-            placeholder="Search publications..."
-            class="w-full px-6 py-4 rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-indigo-400 text-base"
-          />
-          <div class="absolute right-4 top-1/2 -translate-y-1/2">
-            <svg class="w-5 h-5 text-white/50" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Category Filter -->
-    <section class="max-w-6xl mx-auto px-4 -mt-6 relative z-10">
-      <div class="bg-white rounded-2xl shadow-xl border border-slate-100 p-4 flex flex-wrap items-center gap-3">
-        <button
-          @click="activeCategory = ''"
-          :class="[
-            'px-4 py-2 rounded-xl text-sm font-semibold transition-all',
-            activeCategory === '' ? 'bg-indigo-600 text-white shadow-md shadow-indigo-200' : 'text-slate-600 hover:bg-slate-100'
-          ]"
-        >All</button>
-        <button
-          v-for="cat in categories"
-          :key="cat"
-          @click="activeCategory = cat"
-          :class="[
-            'px-4 py-2 rounded-xl text-sm font-semibold transition-all capitalize',
-            activeCategory === cat ? 'bg-indigo-600 text-white shadow-md shadow-indigo-200' : 'text-slate-600 hover:bg-slate-100'
-          ]"
-        >{{ cat }}</button>
-      </div>
-    </section>
-
-    <!-- Publications List (Table View) -->
-    <section class="max-w-6xl mx-auto px-4 py-16">
-      <!-- Loading -->
-      <div v-if="loading" class="flex items-center justify-center py-20">
-        <div class="animate-spin rounded-full h-12 w-12 border-4 border-indigo-200 border-t-indigo-600"></div>
-      </div>
-
-      <!-- Table Header (Desktop) -->
-      <div v-else-if="filteredPublications.length > 0" class="overflow-hidden bg-white/50 backdrop-blur-sm rounded-[2rem] border border-slate-100 shadow-sm">
-        <div class="hidden md:grid grid-cols-[100px_1fr_150px_120px_100px] gap-6 px-10 py-6 border-b border-slate-100 bg-slate-50/50 text-[10px] font-black uppercase tracking-[0.2em] text-slate-400">
-          <div>Preview</div>
-          <div>Article & Description</div>
-          <div>Authors</div>
-          <div>Published</div>
-          <div class="text-right">Action</div>
-        </div>
-
-        <!-- Table Rows -->
-        <div class="divide-y divide-slate-100">
-          <div
-            v-for="pub in filteredPublications"
-            :key="pub._id"
-            class="group relative hover:bg-white transition-all duration-500"
+  <div class="min-h-screen bg-white font-sans text-gray-900 border-t border-gray-100">
+    
+    <!-- Substack-style Navigation Tab -->
+    <nav class="border-b border-gray-100 sticky top-0 z-40 bg-white/80 backdrop-blur-md">
+      <div class="max-w-5xl mx-auto px-6">
+        <div class="flex items-center gap-8 h-14 overflow-x-auto no-scrollbar">
+          <button 
+            @click="activeCategory = ''"
+            :class="[
+              'text-sm font-medium transition-colors whitespace-nowrap border-b-2 h-full px-1',
+              activeCategory === '' ? 'border-[#27628C] text-[#27628C]' : 'border-transparent text-gray-500 hover:text-gray-900'
+            ]"
           >
-            <div class="grid grid-cols-1 md:grid-cols-[100px_1fr_150px_120px_100px] gap-6 px-4 md:px-10 py-8 items-center">
-              
-              <!-- Thumbnail (Full Height/Contain) -->
-              <div class="w-full md:w-20 aspect-square rounded-2xl bg-slate-900 overflow-hidden ring-1 ring-slate-100 shadow-inner flex items-center justify-center group-hover:scale-105 transition-transform duration-500">
-                <img
-                  v-if="pub.coverImage"
-                  :src="pub.coverImage"
-                  :alt="pub.title"
-                  class="w-full h-full object-contain"
-                />
-                <div v-else class="text-indigo-200"><Icon name="heroicons:document-text" class="w-8 h-8" /></div>
-              </div>
+            All Stories
+          </button>
+          <button 
+            v-for="cat in categories" 
+            :key="cat"
+            @click="activeCategory = cat"
+            :class="[
+              'text-sm font-medium transition-colors whitespace-nowrap border-b-2 h-full px-1 capitalize',
+              activeCategory === cat ? 'border-[#27628C] text-[#27628C]' : 'border-transparent text-gray-500 hover:text-gray-900'
+            ]"
+          >
+            {{ cat }}
+          </button>
+        </div>
+      </div>
+    </nav>
 
-              <!-- Content -->
-              <div class="space-y-2">
-                <div class="flex items-center space-x-2">
-                  <span v-if="pub.category" class="text-[9px] font-black uppercase tracking-widest text-indigo-500 bg-indigo-50 px-2 py-0.5 rounded-full">{{ pub.category }}</span>
-                  <span class="text-[9px] font-bold text-slate-300 tracking-wider">{{ pub.readTime || 5 }} min read</span>
-                </div>
-                <h3 class="text-lg md:text-xl font-bold text-slate-900 group-hover:text-indigo-600 transition-colors line-clamp-1">{{ pub.title }}</h3>
-                <p class="text-sm text-slate-500 line-clamp-2 leading-relaxed max-w-2xl">{{ pub.excerpt }}</p>
-              </div>
+    <!-- Main Content Area -->
+    <main class="max-w-5xl mx-auto px-6 py-12 md:py-20">
+      
+      <!-- Loading State -->
+      <div v-if="loading" class="flex flex-col items-center justify-center py-40 gap-6">
+        <div class="w-10 h-10 border-4 border-gray-100 border-t-[#27628C] rounded-full animate-spin"></div>
+        <p class="text-xs font-bold text-gray-400">Syncing with the Stack...</p>
+      </div>
 
-              <!-- Authors -->
-              <div class="flex flex-col">
-                <div class="flex -space-x-2 mb-2">
-                  <template v-if="pub.authors?.length">
-                    <div 
-                      v-for="(author, idx) in pub.authors.slice(0, 2)" 
-                      :key="idx"
-                      class="w-8 h-8 rounded-full bg-gradient-to-br from-indigo-500 to-purple-500 border-2 border-white flex items-center justify-center text-[10px] text-white font-bold"
-                      :title="author"
-                    >
-                      {{ author.charAt(0) }}
-                    </div>
-                  </template>
-                  <div v-else class="w-8 h-8 rounded-full bg-indigo-100 border-2 border-white flex items-center justify-center text-[10px] text-indigo-600 font-bold">
-                    {{ (pub.authorName || 'M').charAt(0) }}
-                  </div>
-                </div>
-                <p class="text-xs font-bold text-slate-700 truncate max-w-[140px]">
-                  {{ pub.authors?.join(', ') || pub.authorName || 'MedLabConvo' }}
-                </p>
-              </div>
-
-              <!-- Date -->
-              <div class="text-xs font-medium text-slate-400">
-                {{ formatDate(pub.publishedAt || pub.createdAt) }}
-              </div>
-
-              <!-- Action -->
-              <div class="text-right">
-                <NuxtLink 
-                  :to="`/convostack/${pub.slug}`"
-                  class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-slate-50 text-slate-400 group-hover:bg-indigo-600 group-hover:text-white transition-all transform group-hover:rotate-45"
-                >
-                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
-                </NuxtLink>
-              </div>
+      <div v-else-if="filteredPublications.length > 0" class="space-y-24">
+        
+        <!-- Featured Publication (Top of the Stack) -->
+        <section v-if="!activeCategory && !searchQuery" class="group relative grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+          <NuxtLink :to="`/convostack/${featuredPublication.slug}`" class="relative aspect-[16/9] md:aspect-[4/3] rounded-2xl overflow-hidden bg-gray-50 border border-gray-100 shadow-sm transition-shadow group-hover:shadow-xl">
+            <img 
+              v-if="featuredPublication.coverImage" 
+              :src="featuredPublication.coverImage" 
+              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+            />
+            <div v-else class="w-full h-full flex items-center justify-center bg-[#27628C]/5 text-[#27628C]">
+               <Icon name="heroicons:document-text" class="w-20 h-20 opacity-20" />
+            </div>
+          </NuxtLink>
+          
+          <div class="space-y-6">
+            <div class="flex items-center gap-3">
+              <span class="text-[10px] font-bold text-[#27628C] bg-[#27628C]/5 px-3 py-1 rounded-full capitalize">{{ featuredPublication.category }}</span>
+              <span class="text-[10px] font-medium text-gray-400">{{ featuredPublication.readTime || 5 }} min read</span>
+            </div>
+            <NuxtLink :to="`/convostack/${featuredPublication.slug}`">
+              <h2 class="text-3xl md:text-5xl font-bold text-gray-900 leading-tight tracking-tighter hover:text-[#27628C] transition-colors">
+                {{ featuredPublication.title }}
+              </h2>
+            </NuxtLink>
+            <p class="text-lg text-gray-500 leading-relaxed line-clamp-3">
+              {{ featuredPublication.excerpt }}
+            </p>
+            <div class="flex items-center gap-4 pt-4">
+               <div class="w-10 h-10 rounded-full bg-gray-100 border border-gray-200 flex items-center justify-center font-bold text-[#27628C]">
+                  {{ (featuredPublication.authorName || 'M').charAt(0) }}
+               </div>
+               <div class="flex flex-col">
+                  <span class="text-sm font-bold text-gray-900">{{ featuredPublication.authorName || 'MedLabConvo' }}</span>
+                  <span class="text-xs text-gray-400">{{ formatDate(featuredPublication.publishedAt || featuredPublication.createdAt) }}</span>
+               </div>
             </div>
           </div>
+        </section>
+
+        <!-- The Main Feed -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-16">
+          
+          <!-- Recent Publications Column -->
+          <section class="md:col-span-2 space-y-16">
+            <div class="flex items-center justify-between border-b border-gray-100 pb-4">
+               <h3 class="text-xs font-bold text-gray-400">{{ activeCategory || 'Latest' }} from the stack</h3>
+               <div class="relative max-w-[200px]">
+                  <input v-model="searchQuery" type="text" placeholder="Search..." class="w-full pl-8 pr-4 py-2 bg-gray-50 border border-gray-100 rounded-full text-xs outline-none focus:border-[#27628C] transition-all" />
+                  <!-- <Icon name="heroicons:magnifying-glass" class="absolute left-3 top-1/2 -translate-y-1/2 w-3 h-3 text-gray-400" /> -->
+               </div>
+            </div>
+
+            <div class="divide-y divide-gray-100">
+              <article 
+                v-for="pub in recentPublications" 
+                :key="pub._id"
+                class="py-10 first:pt-0 group"
+              >
+                <div class="flex flex-col md:flex-row gap-8">
+                  <div class="flex-1 space-y-4">
+                    <div class="flex items-center gap-3">
+                       <span class="text-[10px] font-bold text-[#27628C] capitalize">{{ pub.category }}</span>
+                       <span class="text-[10px] font-medium text-gray-400">{{ formatDate(pub.publishedAt || pub.createdAt) }}</span>
+                    </div>
+                    <NuxtLink :to="`/convostack/${pub.slug}`">
+                      <h4 class="text-xl md:text-2xl font-bold text-gray-900 group-hover:text-[#27628C] transition-colors leading-snug">
+                        {{ pub.title }}
+                      </h4>
+                    </NuxtLink>
+                    <p class="text-sm text-gray-500 line-clamp-3 leading-relaxed">
+                      {{ pub.excerpt }}
+                    </p>
+                    <div class="flex items-center gap-4 pt-4 opacity-70">
+                       <span class="text-[10px] font-bold text-gray-900">{{ pub.authorName || 'MedLabConvo Team' }}</span>
+                       <span class="text-[10px] text-gray-400">{{ pub.readTime || 4 }} min read</span>
+                    </div>
+                  </div>
+                  <NuxtLink :to="`/convostack/${pub.slug}`" class="w-full md:w-40 aspect-[4/3] rounded-xl overflow-hidden bg-gray-50 border border-gray-100 shrink-0 shadow-sm group-hover:shadow-md transition-all">
+                    <img v-if="pub.coverImage" :src="pub.coverImage" class="w-full h-full object-cover transition-transform group-hover:scale-105" />
+                    <div v-else class="w-full h-full flex items-center justify-center text-[#27628C]/20">
+                       <Icon name="heroicons:document" class="w-10 h-10" />
+                    </div>
+                  </NuxtLink>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <!-- Sidebar (Recommendations & Substack Vibes) -->
+          <aside class="space-y-12">
+            <!-- Newsletter Widget -->
+            <div class="bg-[#27628C]/5 p-8 rounded-3xl border border-[#27628C]/10 space-y-6">
+               <h4 class="text-lg font-bold text-gray-900 tracking-tight leading-tight">Subscribe to the <br /> Convo Substack</h4>
+               <p class="text-xs text-gray-500 leading-relaxed font-medium">Join 2,500+ professionals receiving curated diagnostic insights and research pulses.</p>
+               <input 
+                  type="email" 
+                  placeholder="Type your email..." 
+                  class="w-full px-5 py-3 bg-white border border-[#27628C]/20 rounded-xl text-sm outline-none focus:ring-2 focus:ring-[#27628C]/20 transition-all shadow-sm" 
+               />
+               <button class="w-full py-3.5 bg-[#27628C] text-white rounded-xl text-xs font-bold shadow-lg hover:bg-gray-900 transition-all active:scale-95">
+                  Subscribe for free
+               </button>
+            </div>
+
+            <!-- Recommendations -->
+            <div class="space-y-8">
+               <h3 class="text-[10px] font-bold text-gray-400 border-b border-gray-100 pb-3">Recommendations</h3>
+               <div class="space-y-8">
+                  <div v-for="rec in filteredPublications.slice(0, 4)" :key="rec._id" class="flex items-start gap-4 group">
+                     <span class="text-2xl font-bold text-gray-200 mt-1  group-hover:text-[#27628C]/20 transition-colors">0{{ filteredPublications.indexOf(rec) + 1 }}</span>
+                     <div class="space-y-1">
+                        <NuxtLink :to="`/convostack/${rec.slug}`" class="text-sm font-bold text-gray-900 hover:text-[#27628C] transition-colors leading-tight block">
+                           {{ rec.title }}
+                        </NuxtLink>
+                        <span class="text-[10px] font-bold text-[#27628C]/60 capitalize">{{ rec.authorName || 'MedLabConvo' }}</span>
+                     </div>
+                  </div>
+               </div>
+            </div>
+          </aside>
+
         </div>
       </div>
 
-      <!-- Empty -->
-      <div v-else class="text-center py-32 bg-white rounded-[3rem] border border-slate-100 shadow-sm">
-        <div class="w-24 h-24 bg-indigo-50 rounded-3xl mx-auto mb-8 flex items-center justify-center">
-          <Icon name="heroicons:document-magnifying-glass" class="w-12 h-12 text-indigo-300" />
+      <!-- Empty State -->
+      <div v-else class="text-center py-40 animate-in fade-in zoom-in duration-700">
+        <div class="w-20 h-20 bg-gray-50 rounded-full mx-auto mb-8 flex items-center justify-center border border-gray-100">
+           <Icon name="heroicons:magnifying-glass" class="w-8 h-8 text-gray-300" />
         </div>
-        <h3 class="text-2xl font-black text-slate-900 mb-2 uppercase tracking-tight">No publications found</h3>
-        <p class="text-slate-500">We couldn't find any articles matching your criteria.</p>
-        <button v-if="activeCategory || searchQuery" @click="activeCategory = ''; searchQuery = ''" class="mt-8 text-indigo-600 font-bold hover:underline">Clear all filters</button>
+        <h3 class="text-xl font-bold text-gray-900 tracking-tight">Nothing found in the stack</h3>
+        <p class="text-gray-400 mt-2 text-sm">We couldn't find any articles matching your search criteria.</p>
+        <button @click="activeCategory = ''; searchQuery = ''" class="mt-8 text-[#27628C] text-xs font-bold hover:underline">View all stories</button>
       </div>
-    </section>
-
-
-    <!-- Footer -->
-    <FooterComponent />
+    </main>
   </div>
 </template>
 
@@ -165,7 +181,7 @@ import { ref, computed, onMounted } from 'vue'
 import { convostack_api } from '@/api_factory/modules/convostack'
 
 const publications = ref([] as any[])
-const loading = ref(false)
+const loading = ref(true)
 const searchQuery = ref('')
 const activeCategory = ref('')
 
@@ -175,7 +191,7 @@ onMounted(async () => {
     const res = await convostack_api.$_get_publications()
     publications.value = res.data || []
   } catch (e) {
-    console.error('Failed to load publications:', e)
+    console.error('Stack Retrieval Error:', e)
   } finally {
     loading.value = false
   }
@@ -200,13 +216,21 @@ const filteredPublications = computed(() => {
   return list
 })
 
+const featuredPublication = computed(() => filteredPublications.value[0] || {})
+const recentPublications = computed(() => filteredPublications.value.slice(1))
+
 const formatDate = (date: string) => {
   if (!date) return ''
-  return new Date(date).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })
+  return new Date(date).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })
 }
 </script>
 
 <style scoped>
-.line-clamp-2 { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
-.line-clamp-3 { display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
 </style>

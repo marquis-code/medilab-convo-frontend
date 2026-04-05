@@ -1,7 +1,7 @@
 
 <template>
   <div @click="goToHospital" class="border border-blue-300 rounded-lg p-4 bg-blue-50 w-64 flex flex-col items-start m-2 cursor-pointer">
-    <div :class="statusClass" class="text-white text-xs px-2 py-1 rounded-full mb-2">{{ hospital.status }}</div>
+    <div :class="statusClass" class="text-white text-sm px-2 py-1 rounded-full mb-2">{{ hospital.status }}</div>
     <h2 class="text-blue-700 font-semibold mb-1 text-sm">{{ hospital.name }}</h2>
     <p class="text-gray-600 text-sm mb-2">{{ hospital.location }}</p>
     <!-- <p class="text-gray-800 text-sm">Bed spaces: {{ hospital.bedSpaces }}</p> -->

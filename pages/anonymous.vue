@@ -42,7 +42,7 @@
         
         <!-- Loading Text -->
         <div class="text-center mt-8">
-          <h2 class="text-3xl font-bold text-white mb-2 tracking-wider animate-pulse">MEDLABCONVO</h2>
+          <h2 class="text-2xl font-bold text-white mb-2 tracking-wider animate-pulse">MEDLABCONVO</h2>
           <div class="flex justify-center items-center space-x-1">
             <span class="text-white text-lg">Loading</span>
             <span class="loading-dot">.</span>
@@ -142,7 +142,7 @@
           <!-- Form Content with Glass Effect -->
           <div class="bg-white/90 backdrop-blur-md shadow-2xl rounded-b-2xl overflow-hidden transform translate-z-0 border border-white/50">
             <div class="p-8 border-b border-gray-100">
-              <h2 class="text-3xl font-bold bg-gradient-to-r from-blue-700 to-purple-700 bg-clip-text text-transparent mb-6 animate-fadeIn">
+              <h2 class="text-2xl font-bold bg-gradient-to-r from-blue-700 to-purple-700 bg-clip-text text-transparent mb-6 animate-fadeIn">
                 Ask your MLS-Related Questions
               </h2>
               
@@ -158,7 +158,7 @@
                 </p>
                 
                 <div class="bg-blue-50 border-l-4 border-blue-500 p-4 rounded-r-lg animate-fadeIn animation-delay-900">
-                  <p class="text-blue-700 italic font-medium">
+                  <p class="text-blue-700  font-medium">
                     P.S. This is completely anonymous.
                   </p>
                 </div>
@@ -181,7 +181,7 @@
                   />
                   <label 
                     for="name" 
-                    class="absolute text-gray-500 duration-300 transform -translate-y-3 scale-75 top-4 z-10 origin-[0] left-4 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-3 peer-focus:text-blue-600"
+                    class="absolute text-gray-900 duration-300 transform -translate-y-3 scale-75 top-4 z-10 origin-[0] left-4 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-3 peer-focus:text-blue-600"
                   >
                     What do you want us to call you?
                   </label>
@@ -208,7 +208,7 @@
                   ></textarea>
                   <label 
                     for="question" 
-                    class="absolute text-gray-500 duration-300 transform -translate-y-3 scale-75 top-4 z-10 origin-[0] left-4 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-3 peer-focus:text-blue-600"
+                    class="absolute text-gray-900 duration-300 transform -translate-y-3 scale-75 top-4 z-10 origin-[0] left-4 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-3 peer-focus:text-blue-600"
                   >
                     Ask your question
                   </label>
@@ -221,7 +221,7 @@
                 </div>
                 
                 <!-- Character Counter -->
-                <div class="mt-1 text-xs text-right text-gray-500">
+                <div class="mt-1 text-sm text-right text-gray-900">
                   {{ formData.question.length }} / 500 characters
                 </div>
               </div>
@@ -239,14 +239,14 @@
                   ></textarea>
                   <label 
                     for="additional" 
-                    class="absolute text-gray-500 duration-300 transform -translate-y-3 scale-75 top-4 z-10 origin-[0] left-4 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-3 peer-focus:text-blue-600"
+                    class="absolute text-gray-900 duration-300 transform -translate-y-3 scale-75 top-4 z-10 origin-[0] left-4 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-3 peer-focus:text-blue-600"
                   >
                     Any other thing you wish to tell the MedLabConvo Team?
                   </label>
                 </div>
                 
                 <!-- Character Counter -->
-                <div class="mt-1 text-xs text-right text-gray-500">
+                <div class="mt-1 text-sm text-right text-gray-900">
                   {{ formData.additional.length }} / 300 characters
                 </div>
               </div>
@@ -284,7 +284,7 @@
               </div>
             </form>
             
-            <div class="px-8 py-6 text-xs text-gray-500 border-t border-gray-100 bg-gray-50">
+            <div class="px-8 py-6 text-sm text-gray-900 border-t border-gray-100 bg-gray-50">
               <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
                 <p class="flex items-center">
                   <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -305,7 +305,7 @@
                   <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400" viewBox="0 0 24 24" fill="currentColor">
                     <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z" />
                   </svg>
-                  <span class="text-gray-500 font-medium">Powered by MEDLABCONVO</span>
+                  <span class="text-gray-900 font-medium">Powered by MEDLABCONVO</span>
                 </div>
               </div>
             </div>

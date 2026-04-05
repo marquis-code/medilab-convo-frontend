@@ -24,7 +24,7 @@
     <section class="max-w-6xl mx-auto px-6 py-16 border-t border-gray-100">
       <div class="grid md:grid-cols-3 gap-10 items-start">
         <div class="md:col-span-2 order-2 md:order-1">
-          <h2 class="text-2xl md:text-3xl font-bold text-[#27628C] mb-3">
+          <h2 class="text-2xl md:text-2xl font-bold text-[#27628C] mb-3">
             Message from the Interntional Community
           </h2>
           <p class="text-gray-700 leading-relaxed mb-4">
@@ -80,7 +80,7 @@
     <!-- Mission & Objectives -->
     <section class="bg-[#27628C]/5 py-16 px-6">
       <div class="max-w-6xl mx-auto text-center">
-        <h2 class="text-2xl md:text-3xl font-bold text-[#27628C] mb-6">Mission & Objectives</h2>
+        <h2 class="text-2xl md:text-2xl font-bold text-[#27628C] mb-6">Mission & Objectives</h2>
         <p class="text-gray-700 max-w-3xl mx-auto mb-10 leading-relaxed">
           To bridge the gap between academic training and professional excellence through
           mentorship, collaboration, and personalized guidance — fostering growth, leadership,
@@ -103,7 +103,7 @@
     <!-- Program Benefits -->
     <section class="py-16 px-6">
       <div class="max-w-6xl mx-auto text-center">
-        <h2 class="text-2xl md:text-3xl font-bold text-[#27628C] mb-10">Program Benefits</h2>
+        <h2 class="text-2xl md:text-2xl font-bold text-[#27628C] mb-10">Program Benefits</h2>
         <div class="grid md:grid-cols-2 gap-10 text-left">
           <div
             class="bg-white border border-gray-100 shadow-sm rounded-2xl p-8 hover:shadow-md transition"
@@ -132,7 +132,7 @@
     <!-- Program Phases -->
     <section class="bg-[#27628C]/5 py-16 px-6">
       <div class="max-w-6xl mx-auto text-center">
-        <h2 class="text-2xl md:text-3xl font-bold text-[#27628C] mb-10">Program Phases</h2>
+        <h2 class="text-2xl md:text-2xl font-bold text-[#27628C] mb-10">Program Phases</h2>
         <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div
             v-for="(phase, index) in phases"
@@ -156,7 +156,7 @@
 
     <!-- CTA -->
     <section class="text-center py-20 bg-[#27628C] text-white">
-      <h2 class="text-2xl md:text-3xl font-bold mb-4">Join the Career Mentornet Program</h2>
+      <h2 class="text-2xl md:text-2xl font-bold mb-4">Join the Career Mentornet Program</h2>
       <p class="mb-8 text-lg max-w-xl mx-auto">
         Step into your future as a confident, innovative, and well-rounded Medical Laboratory Scientist.
       </p>

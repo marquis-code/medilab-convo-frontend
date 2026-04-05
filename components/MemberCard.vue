@@ -39,7 +39,7 @@
         </h3>
         
         <div class="inline-block px-4 py-1.5 rounded-full bg-blue-50/50 border border-blue-100/50">
-          <p class="text-[#27628C] font-black text-[10px] uppercase tracking-[0.2em]">
+          <p class="text-[#27628C] font-bold text-[10px]">
             {{ member.title }}
           </p>
         </div>
@@ -64,7 +64,7 @@
       </div>
 
       <!-- Badge for Leadership -->
-      <div v-if="isLarge" class="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#27628C] text-white text-[10px] font-black px-6 py-2 rounded-2xl shadow-xl uppercase tracking-widest">
+      <div v-if="isLarge" class="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#27628C] text-white text-[10px] font-bold px-6 py-2 rounded-2xl shadow-xl">
         Key Leadership
       </div>
     </div>

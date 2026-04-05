@@ -5,7 +5,7 @@
       <div class="mx-auto max-w-prose text-base lg:grid lg:max-w-none lg:grid-cols-2 lg:gap-8">
         <div>
           <h3
-            class="mt-2 text-3xl/8 font-bold tracking-tight sm:text-4xl text-[#27628C] uppercase text-center lg:text-start">
+            class="mt-2 text-2xl/8 font-bold tracking-tight sm:text-4xl text-[#27628C] uppercase text-center lg:text-start">
             Scholarship Application Masterclass
           </h3>
         </div>
@@ -30,7 +30,7 @@
           </div> -->
         </div>
         <div class="mt-8 lg:mt-0">
-          <div class="mx-auto text-base/7 text-gray-500">
+          <div class="mx-auto text-base/7 text-gray-900">
             <p class="text-lg/7">
               The Scholarship Application Masterclass ends on 31st March, 2025 and will be converted to a self-paced
               course. To have early access to this self-paced course at a discounted rate, you can pre-order now.
@@ -47,7 +47,7 @@
     <div class="flex justify-center items-center px-4 mt-10 lg:mt-32">
       <div class="max-w-[900px] w-full flex flex-col justify-center items-center">
         <h2
-          class="text-balance text-3xl px-3 lg:px-0 lg:text-4xl text-center font-semibold tracking-tight text-gray-900">
+          class="text-balance text-2xl px-3 lg:px-0 lg:text-4xl text-center font-semibold tracking-tight text-gray-900">
           Win Scholarships with Confidence - Pre-Order Now at 20% Off! </h2>
         <p class="text-lg/7 max-w-[800px] w-full text-gray-900 text-center mt-6">
           Struggling with scholarship applications? Unsure how to craft a compeling personal statement or stand out in
@@ -117,7 +117,7 @@
                 {{ item.position }}
               </p>
 
-              <p class="text-xs font-bold pt-5">CLICK TO SEE FACILITATOR'S PROFILE</p>
+              <p class="text-sm font-bold pt-5">CLICK TO SEE FACILITATOR'S PROFILE</p>
             </div>
           </div>
         </article>

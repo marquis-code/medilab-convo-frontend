@@ -4,7 +4,7 @@
     <div class="">
         <div class="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
           <!-- <h2 class="text-base/7 font-semibold text-indigo-400">Deploy faster</h2> -->
-          <p class="my-2 max-w-lg text-pretty text-2xl font-semibold tracking-tight text-[#27628C] uppercase sm:text-3xl">Recorded Webinars</p>
+          <p class="my-2 max-w-lg text-pretty text-2xl font-semibold tracking-tight text-[#27628C] uppercase sm:text-2xl">Recorded Webinars</p>
           <!-- <div class="mt-10 grid grid-cols-1 gap-4 sm:mt-16 lg:grid-cols-6 lg:grid-rows-2">
             <div class="flex p-px lg:col-span-4">
               <div class="overflow-hidden w-full rounded-lg bg-gray-800 ring-1 ring-white/15 max-lg:rounded-t-[2rem] lg:rounded-tl-[2rem]">

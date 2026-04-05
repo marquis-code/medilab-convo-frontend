@@ -16,7 +16,7 @@
               <div class="lg:pr-4">
                 <div class="lg:max-w-lg">
                   <p class="text-base font-semibold leading-7 text-indigo-600">{{ episode.tagline }}</p>
-                  <h1 class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">{{ episode.title }}</h1>
+                  <h1 class="mt-2 text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl">{{ episode.title }}</h1>
                   <p class="mt-6 text-xl leading-8 text-gray-700">{{ episode.description }}</p>
                 </div>
               </div>

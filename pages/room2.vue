@@ -45,7 +45,7 @@
           
           <!-- Oxygen Meter with 3D Effect -->
           <div class="holo-panel">
-            <div class="text-xs text-cyan-400 mb-2 font-mono tracking-wider">◊ OXYGEN MATRIX ◊</div>
+            <div class="text-sm text-cyan-400 mb-2 font-mono tracking-wider">◊ OXYGEN MATRIX ◊</div>
             <div class="relative">
               <div class="w-48 h-6 bg-gradient-to-r from-gray-900 to-gray-800 rounded-full border-2 border-cyan-500 overflow-hidden shadow-inner">
                 <div 
@@ -62,7 +62,7 @@
                 <!-- Scan Line Effect -->
                 <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent scan-line"></div>
               </div>
-              <div class="text-xs mt-2 font-mono" 
+              <div class="text-sm mt-2 font-mono" 
                    :class="oxygenLevel < 30 ? 'text-red-400 animate-pulse' : 'text-cyan-400'">
                 {{ Math.round(oxygenLevel) }}% REMAINING
               </div>
@@ -71,11 +71,11 @@
 
           <!-- Timer with Holographic Effect -->
           <div v-if="showTimer && timeLeft > 0" class="holo-panel">
-            <div class="text-xs text-amber-400 mb-2 font-mono tracking-wider">◊ TEMPORAL MATRIX ◊</div>
+            <div class="text-sm text-amber-400 mb-2 font-mono tracking-wider">◊ TEMPORAL MATRIX ◊</div>
             <div class="relative">
               <div 
                 :class="[
-                  'text-3xl font-bold font-mono tabular-nums',
+                  'text-2xl font-bold font-mono tabular-nums',
                   timeLeft <= 5 ? 'text-red-400 animate-bounce' : 
                   timeLeft <= 10 ? 'text-orange-400 animate-pulse' : 
                   'text-amber-400'
@@ -83,7 +83,7 @@
               >
                 {{ String(timeLeft).padStart(2, '0') }}
               </div>
-              <div class="text-xs text-gray-400 font-mono">SECONDS</div>
+              <div class="text-sm text-gray-400 font-mono">SECONDS</div>
               <!-- Circular Progress -->
               <svg class="absolute -inset-2 w-16 h-16" style="transform: rotate(-90deg)">
                 <circle cx="32" cy="32" r="28" stroke="currentColor" stroke-width="2" 
@@ -98,7 +98,7 @@
 
           <!-- System Status -->
           <div class="holo-panel">
-            <div class="text-xs text-purple-400 mb-2 font-mono tracking-wider">◊ SYS STATUS ◊</div>
+            <div class="text-sm text-purple-400 mb-2 font-mono tracking-wider">◊ SYS STATUS ◊</div>
             <div class="flex items-center gap-2">
               <div class="w-3 h-3 rounded-full bg-red-500 animate-ping"></div>
               <span class="text-red-400 text-sm font-mono">LOCKDOWN</span>
@@ -179,7 +179,7 @@
           <!-- Room Header with Holographic Effect -->
           <div class="text-center mb-12">
             <div class="relative inline-block">
-              <h2 class="text-3xl sm:text-5xl font-bold mb-4">
+              <h2 class="text-2xl sm:text-5xl font-bold mb-4">
                 <span class="bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
                   {{ currentPuzzle.title }}
                 </span>
@@ -211,7 +211,7 @@
                 <div class="absolute top-4 left-4">
                   <div class="w-2 h-2 bg-purple-400 rounded-full animate-ping"></div>
                 </div>
-                <p class="text-purple-200 leading-relaxed pl-6 italic">
+                <p class="text-purple-200 leading-relaxed pl-6 ">
                   {{ currentPuzzle.description }}
                 </p>
                 <div class="absolute inset-0 bg-gradient-to-r from-purple-500/5 via-transparent to-cyan-500/5 rounded-2xl"></div>

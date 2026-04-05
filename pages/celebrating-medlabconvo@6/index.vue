@@ -18,7 +18,7 @@
             alt="text"
             class="absolute inset-0 w-[180px] -top-6 left-1/2 -translate-x-1/2"
           />
-          <p class="text-[#27628C] md:text-xs text-[0.65rem] whitespace-pre-line mt-6">
+          <p class="text-[#27628C] md:text-sm text-[0.65rem] whitespace-pre-line mt-6">
             {{ testimonial || "Your testimonial goes here..." }}
           </p>
           <img src="/6years.png" alt="6 Years Badge" class="absolute -top-16 -right-4 w-24" />
@@ -30,7 +30,7 @@
             @click="triggerFileUpload"
           >
             <img v-if="authorImage" :src="authorImage" alt="Author" class="w-full h-full object-cover" />
-            <span v-else class="text-gray-500 text-2xl">+</span>
+            <span v-else class="text-gray-900 text-2xl">+</span>
             <input type="file" accept="image/*" class="hidden" ref="fileInput" @change="onFileChange" />
           </div>
         <p  class="mt-2 font-semibold text-gray-100 bg-[#27628C] px-3 py-1 rounded-lg max-w-[200px] truncate">
@@ -48,11 +48,11 @@
             placeholder="Enter your name"
             class="mt-1 w-full border rounded-md p-2 focus:ring-[#27628C] focus:border-[#27628C]"
           />
-          <p v-if="errors.name" class="text-xs text-red-500 mt-1">{{ errors.name }}</p>
+          <p v-if="errors.name" class="text-sm text-red-500 mt-1">{{ errors.name }}</p>
         </div>
 
         <div>
-          <label class="block text-xs font-medium text-gray-700">Testimonial</label>
+          <label class="block text-sm font-medium text-gray-700">Testimonial</label>
           <textarea
             v-model="testimonial"
             rows="4"
@@ -60,8 +60,8 @@
             class="mt-1 w-full border rounded-md p-2 focus:ring-[#27628C] focus:border-[#27628C]"
             @input="checkWordLimit"
           ></textarea>
-          <p class="text-xs text-gray-500 mt-1">{{ wordCount }}/{{ maxWords }} words</p>
-          <p v-if="errors.testimonial" class="text-xs text-red-500 mt-1">{{ errors.testimonial }}</p>
+          <p class="text-sm text-gray-900 mt-1">{{ wordCount }}/{{ maxWords }} words</p>
+          <p v-if="errors.testimonial" class="text-sm text-red-500 mt-1">{{ errors.testimonial }}</p>
         </div>
 
         <p v-if="errors.global" class="text-sm text-red-600 font-medium">
@@ -106,7 +106,7 @@
       Go Back
     </button>
   </div>
-  <p class="text-xs text-gray-500 text-center px-6">
+  <p class="text-sm text-gray-900 text-center px-6">
     💡 If download doesn’t work, right-click (or long-press on mobile) the generated image and select
     <b>Save Image</b>.
   </p>
@@ -122,7 +122,7 @@
       📤 Share
     </button>
 
-    <p class="text-xs text-gray-500 mt-2">
+    <p class="text-sm text-gray-900 mt-2">
       📋 Caption is copied to your clipboard automatically — just paste after sharing.
     </p>
   </div>

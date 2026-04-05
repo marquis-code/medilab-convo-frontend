@@ -140,7 +140,7 @@ const handleCheckboxChange = (fieldId: string, option: string, checked: boolean)
             class="w-full pl-12 pr-4 py-3.5 bg-white border border-gray-200 rounded-xl text-sm font-medium outline-none focus:border-[#27628C] focus:ring-4 focus:ring-[#27628C]/5 transition-all placeholder:text-gray-300"
           />
         </div>
-        <p class="text-xs text-gray-400 font-medium px-1">
+        <p class="text-sm text-gray-400 font-medium px-1">
           Provide your email to receive a copy of your submission
         </p>
       </div>
@@ -156,7 +156,7 @@ const handleCheckboxChange = (fieldId: string, option: string, checked: boolean)
               {{ field.label }}
               <span v-if="field.required" class="text-red-500">*</span>
             </label>
-            <p v-if="field.description" class="text-sm text-gray-500 leading-relaxed max-w-2xl">
+            <p v-if="field.description" class="text-sm text-gray-900 leading-relaxed max-w-2xl">
               {{ field.description }}
             </p>
           </div>
@@ -276,7 +276,7 @@ const handleCheckboxChange = (fieldId: string, option: string, checked: boolean)
           <Transition name="slide-fade">
             <div v-if="errors[field.id]" class="flex items-center gap-1.5 mt-1.5 px-1 text-red-500">
               <Icon name="heroicons:exclamation-circle" class="w-4 h-4 flex-shrink-0" />
-              <span class="text-xs font-bold">{{ errors[field.id] }}</span>
+              <span class="text-sm font-bold">{{ errors[field.id] }}</span>
             </div>
           </Transition>
         </div>
@@ -291,7 +291,7 @@ const handleCheckboxChange = (fieldId: string, option: string, checked: boolean)
           Submit registration
           <Icon name="heroicons:paper-airplane" class="w-4 h-4 ml-2" />
         </button>
-        <p class="text-center mt-4 text-xs text-gray-400 font-medium">
+        <p class="text-center mt-4 text-sm text-gray-400 font-medium">
           By submitting, you agree to our terms and data processing policy
         </p>
       </div>

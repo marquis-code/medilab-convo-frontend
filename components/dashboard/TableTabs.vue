@@ -22,7 +22,7 @@
             :class="[
               tab.current
                 ? 'border-[#0BA9B9] text-black'
-                : 'border-transparent text-gray-500 hover:border-gray-200 hover:text-gray-700',
+                : 'border-transparent text-gray-900 hover:border-gray-200 hover:text-gray-700',
               'flex whitespace-nowrap border-b-2 py-2 px-1 no-underline text-sm font-medium',
             ]"
             :aria-current="tab.current ? 'page' : undefined"
@@ -34,7 +34,7 @@
                 tab.current
                   ? 'bg-[#0BA9B9] text-white'
                   : 'bg-gray-100 text-gray-900',
-                'ml-3 hidden rounded-full py-0.5 px-2.5 text-xs font-medium md:inline-block',
+                'ml-3 hidden rounded-full py-0.5 px-2.5 text-sm font-medium md:inline-block',
               ]"
               >{{ tab.count }}</span
             >

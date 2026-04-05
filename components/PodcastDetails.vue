@@ -67,7 +67,7 @@
       </div>
 
       <!-- Episode Info -->
-      <h1 class="text-2xl md:text-3xl font-bold mb-2">
+      <h1 class="text-2xl md:text-2xl font-bold mb-2">
         A Conversation with Piers Morgan | EP 295
       </h1>
       <p class="text-gray-400 mb-6">Aug 10, 2023</p>

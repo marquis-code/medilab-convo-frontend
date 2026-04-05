@@ -35,8 +35,8 @@
         <div v-if="currentState === 'welcome'" class="flex-1 flex flex-col items-center justify-center text-center max-w-3xl mx-auto">
           <div class="mb-8 transform hover:scale-105 transition-transform">
             <img src="@/assets/img/medlab-logo.jpeg" alt="Kidney illustration" class="mx-auto h-16 rounded-full w-auto mb-4" />
-            <h1 class="text-3xl md:text-4xl font-bold text-teal-800 mb-2">WORLD KIDNEY DAY</h1>
-            <h2 class="text-2xl md:text-3xl font-bold text-teal-700">PERSONALITY QUESTIONS</h2>
+            <h1 class="text-2xl md:text-4xl font-bold text-teal-800 mb-2">WORLD KIDNEY DAY</h1>
+            <h2 class="text-2xl md:text-2xl font-bold text-teal-700">PERSONALITY QUESTIONS</h2>
           </div>
           <div class="bg-white rounded-xl shadow-lg p-6 mb-8 w-full">
             <h3 class="text-xl md:text-2xl font-bold text-gray-800 mb-4">WHAT PART OF THE NEPHRON ARE YOU?</h3>
@@ -62,7 +62,7 @@
         <div v-else-if="currentState === 'quiz'" class="flex-1 flex flex-col">
           <div class="mb-4 flex justify-between items-center">
             <div class="text-sm font-medium text-gray-600">Question {{ currentQuestionIndex + 1 }}/{{ questions.length }}</div>
-            <button @click="confirmLeave" class="text-sm text-gray-500 hover:text-gray-700">Exit Quiz</button>
+            <button @click="confirmLeave" class="text-sm text-gray-900 hover:text-gray-700">Exit Quiz</button>
           </div>
   
           <transition name="slide" mode="out-in">
@@ -85,7 +85,7 @@
                 >
                   <span class="font-bold text-teal-800 mr-2">{{ option.label }})</span>
                   <span>{{ option.text }}</span>
-                  <span class="text-gray-500 hidden ml-1">({{ nephronParts.find(p => p.value === option.value)?.name }})</span>
+                  <span class="text-gray-900 hidden ml-1">({{ nephronParts.find(p => p.value === option.value)?.name }})</span>
                 </button>
               </div>
             </div>
@@ -118,9 +118,9 @@
           <div class="mb-6">
             <div class="flex justify-center items-center mb-4">
               <div class="w-16 h-16 rounded-full bg-teal-100 flex items-center justify-center mr-3">
-                <span class="text-teal-800 font-bold text-3xl">{{ result.letter }}</span>
+                <span class="text-teal-800 font-bold text-2xl">{{ result.letter }}</span>
               </div>
-              <h2 class="text-2xl md:text-3xl font-bold text-teal-800">
+              <h2 class="text-2xl md:text-2xl font-bold text-teal-800">
                 {{ getResultTitle() }}
               </h2>
             </div>

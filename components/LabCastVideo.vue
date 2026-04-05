@@ -12,7 +12,7 @@
     </div>
 
     <div class="flex-1 bg-white p-6 flex flex-col justify-center order-1 lg:order-2">
-      <h1 data-aos="fade-up" class="text-3xl uppercase font-bold text-[#27628C] mb-4">
+      <h1 data-aos="fade-up" class="text-2xl uppercase font-bold text-[#27628C] mb-4">
         Meet the Voices Behind
         <span data-aos="fade-up" class="">LabCast</span>
       </h1>

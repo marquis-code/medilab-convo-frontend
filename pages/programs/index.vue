@@ -1,240 +1,157 @@
 <template>
-  <main>
-    <!-- Hero Section -->
-    <!-- <div class="relative isolate overflow-hidden bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 py-24 sm:py-32">
-      <img 
-        src="@/assets/img/hero-background.jpeg" 
-        alt="" 
-        class="absolute inset-0 -z-10 h-full w-full object-cover opacity-20 mix-blend-overlay"
-      >
+  <main class="min-h-screen bg-white">
+    <!-- Hero Section: Premium Minimalist -->
+    <div class="relative isolate overflow-hidden bg-[#27628C] py-24 sm:py-40">
+      <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:20px_20px]"></div>
       
-      <div class="absolute inset-0 -z-10">
-        <div class="absolute -top-10 -right-10 w-96 h-96 bg-purple-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse"></div>
-        <div class="absolute -bottom-10 -left-10 w-96 h-96 bg-pink-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse delay-1000"></div>
-        <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-blue-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse delay-2000"></div>
-      </div>
-      
-      <div class="mx-auto max-w-7xl px-6 lg:px-8 flex justify-center items-center w-full flex-col pt-16">
-        <div class="mx-auto max-w-4xl lg:mx-0 flex justify-center items-center w-full flex-col">
-          <h1 class="text-5xl font-bold text-center tracking-tight text-white uppercase sm:text-7xl bg-gradient-to-r from-white via-purple-100 to-white bg-clip-text text-transparent animate-fade-in-up">
-            Programs
-          </h1>
-          <p class="mt-6 text-xl leading-8 text-gray-300 text-center max-w-3xl animate-fade-in-up delay-300">
-            At MedLabConvo, we are dedicated to empowering and supporting medical laboratory professionals and students through a range of impactful programs. Whether you are looking to enhance your career, connect with mentors, or develop key skills, our initiatives are designed to guide you every step of the way.
-          </p>
-        </div>
-      </div>
-    </div> -->
-    <div class="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32">
-      <img src="@/assets/img/hero-background.jpeg" alt="" class="absolute inset-0 -z-10 h-full w-full object-cover" />
-      <div class="hidden sm:absolute sm:-top-10 sm:right-1/2 sm:-z-10 sm:mr-10 sm:block sm:transform-gpu sm:blur-3xl"
-        aria-hidden="true">
-        <div class="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-[#ff4694] to-[#776fff] opacity-20" style="
-            clip-path: polygon(
-              74.1% 44.1%,
-              100% 61.6%,
-              97.5% 26.9%,
-              85.5% 0.1%,
-              80.7% 2%,
-              72.5% 32.5%,
-              60.2% 62.4%,
-              52.4% 68.1%,
-              47.5% 58.3%,
-              45.2% 34.5%,
-              27.5% 76.7%,
-              0.1% 64.9%,
-              17.9% 100%,
-              27.6% 76.8%,
-              76.1% 97.7%,
-              74.1% 44.1%
-            );
-          "></div>
-      </div>
-      <div
-        class="absolute -top-52 left-1/2 -z-10 -translate-x-1/2 transform-gpu blur-3xl sm:top-[-28rem] sm:ml-16 sm:translate-x-0 sm:transform-gpu"
-        aria-hidden="true">
-        <div class="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-[#ff4694] to-[#776fff] opacity-20" style="
-            clip-path: polygon(
-              74.1% 44.1%,
-              100% 61.6%,
-              97.5% 26.9%,
-              85.5% 0.1%,
-              80.7% 2%,
-              72.5% 32.5%,
-              60.2% 62.4%,
-              52.4% 68.1%,
-              47.5% 58.3%,
-              45.2% 34.5%,
-              27.5% 76.7%,
-              0.1% 64.9%,
-              17.9% 100%,
-              27.6% 76.8%,
-              76.1% 97.7%,
-              74.1% 44.1%
-            );
-          "></div>
-      </div>
-      <div class="mx-auto max-w-7xl px-6 lg:px-8 flex justify-center items-center pt-16 w-full">
-        <div class="mx-auto max-w-2xl lg:mx-0 flex justify-center items-center w-full flex-col animate-fade-in">
-          <h2 class="text-4xl font-black uppercase text-center tracking-tight text-white sm:text-6xl animate-slide-up">
-            Programs
-          </h2>
-          <p class="mt-6 text-lg leading-8 text-center text-gray-100 animate-slide-up-delay">
-            At MedLabConvo, we are dedicated to empowering and supporting medical laboratory professionals and students through a range of impactful programs. Whether you are looking to enhance your career, connect with mentors, or develop key skills, our initiatives are designed to guide you every step of the way.
-          </p>
-        </div>
+      <div class="relative mx-auto max-w-7xl px-6 lg:px-8 flex flex-col items-center text-center">
+        <h2 class="text-sm font-bold text-blue-200 mb-8 animate-fade-in tracking-normal">
+          Elevating Clinical Excellence
+        </h2>
+        <h1 class="text-5xl md:text-8xl font-bold text-white leading-tight  tracking-tighter animate-fade-in-up">
+          Programs
+        </h1>
+        <p class="mt-8 text-xl md:text-2xl text-blue-50 font-medium max-w-3xl leading-relaxed animate-fade-in-up delay-200">
+          Dedicated initiatives designed to empower medical laboratory professionals and students through mentorship, skill acquisition, and career acceleration.
+        </p>
       </div>
     </div>
-    <!-- Programs Section -->
-    <div class="bg-gray-50 py-16">
-      <div class="container mx-auto px-4">
-        
-        <!-- Loading State -->
-        <div v-if="loading" class="grid lg:grid-cols-2 gap-8 mt-10">
-          <div 
-            v-for="i in 4" 
-            :key="i" 
-            class="bg-white rounded-2xl shadow-lg overflow-hidden animate-pulse"
-          >
-            <div class="h-64 bg-gray-300"></div>
-            <div class="p-8 space-y-4">
-              <div class="h-4 bg-gray-300 rounded w-3/4"></div>
-              <div class="h-4 bg-gray-300 rounded w-1/2"></div>
-              <div class="space-y-2">
-                <div class="h-3 bg-gray-300 rounded"></div>
-                <div class="h-3 bg-gray-300 rounded"></div>
-                <div class="h-3 bg-gray-300 rounded w-5/6"></div>
-              </div>
-              <div class="h-12 bg-gray-300 rounded-lg w-32"></div>
-            </div>
+
+    <!-- Active Programs Section -->
+    <div class="py-32 px-6 bg-white relative -mt-16">
+      <div class="max-w-7xl mx-auto">
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-20 animate-fade-in">
+          <div>
+            <h2 class="text-[10px] font-bold text-[#27628C] tracking-normal mb-4">Opportunities</h2>
+            <h3 class="text-4xl md:text-5xl font-bold text-gray-900  tracking-tight">Current Initiatives</h3>
           </div>
+          <p class="text-gray-400 text-sm font-medium uppercase tracking-widest" v-if="!loading">
+            {{ activePrograms.length }} Active Programs
+          </p>
+        </div>
+
+        <!-- Loading State -->
+        <div v-if="loading" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16">
+           <div v-for="n in 3" :key="n" class="space-y-8 animate-pulse">
+              <div class="aspect-[3/4] bg-gray-50 rounded-[2.5rem]"></div>
+              <div class="h-4 bg-gray-50 rounded w-1/4"></div>
+              <div class="h-8 bg-gray-50 rounded"></div>
+              <div class="h-20 bg-gray-50 rounded"></div>
+           </div>
         </div>
 
         <!-- Empty State -->
-        <div 
-          v-else-if="!loading && (!programs || programs.length === 0)" 
-          class="text-center py-20 animate-fade-in"
-        >
-          <div class="mx-auto w-24 h-24 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center mb-8">
-            <svg class="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path>
-            </svg>
-          </div>
-          <h3 class="text-2xl font-bold text-gray-900 mb-4">No Programs Available</h3>
-          <p class="text-lg text-gray-600 max-w-md mx-auto">
-            We're working on exciting new programs. Check back soon for amazing opportunities to advance your career!
-          </p>
+        <div v-else-if="activePrograms.length === 0" class="text-center py-32 bg-gray-50 rounded-[4rem] border border-dashed border-gray-200">
+           <p class="text-sm font-black text-gray-400 uppercase tracking-[0.3em]">No Active Initiatives at this Moment</p>
+           <p class="mt-4 text-gray-500 font-light translate-y-1">Check back soon for new opportunities.</p>
         </div>
 
         <!-- Programs Grid -->
-        <div 
-          v-else 
-          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12"
-        >
+        <div v-else class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-24">
           <div 
-            v-for="(program, idx) in programs" 
-            :key="program.id"
-            class="group relative flex flex-col bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1 animate-fade-in-up"
-            :style="{ animationDelay: `${idx * 100}ms` }"
+            v-for="(program, index) in activePrograms" 
+            :key="program._id"
+            class="group space-y-8 animate-fade-in-up"
+            :style="{ animationDelay: `${index * 100}ms` }"
           >
-            <!-- Image Container: Aspect 3/4 for Posters -->
-            <div class="relative bg-slate-50 overflow-hidden aspect-[3/4] border-b border-slate-50">
-              <img 
-                :src="program.image || (program.images && program.images[0]) || '/placeholder-program.jpg'" 
+            <!-- Poster Thumbnail -->
+            <div 
+              @click="navigateToProgram(program)"
+              class="relative aspect-[3/4] rounded-[3rem] bg-gray-50 border border-gray-100 overflow-hidden shadow-sm transition-all duration-700 group-hover:shadow-2xl group-hover:border-transparent cursor-pointer"
+            >
+               <img 
+                v-if="program.image || (program.images && program.images[0])"
+                :src="program.image || program.images[0]" 
                 :alt="program.title"
-                class="w-full h-full object-contain p-2 transition-transform duration-700 group-hover:scale-105"
-              />
+                class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
+              >
+              <div v-else class="w-full h-full flex items-center justify-center text-4xl grayscale opacity-20">📊</div>
               
-              <!-- Badges -->
-              <div class="absolute top-4 left-4 flex flex-col gap-2">
-                <span class="bg-white/90 backdrop-blur-md text-slate-900 px-3 py-1 rounded-lg text-[10px] font-black uppercase tracking-widest shadow-sm border border-slate-100">
-                  {{ program.category }}
-                </span>
-                <span 
-                  v-if="program.status === 'active'"
-                  class="bg-emerald-500 text-white px-3 py-1 rounded-lg text-[10px] font-black uppercase tracking-widest shadow-md flex items-center gap-1.5"
-                >
-                  <span class="w-1.5 h-1.5 bg-white rounded-full animate-pulse"></span>
-                  Active
+              <div class="absolute inset-0 bg-gradient-to-t from-gray-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-10">
+                <span class="text-white text-sm font-black uppercase tracking-widest flex items-center gap-2">
+                  View Detail
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
                 </span>
               </div>
 
-              <!-- Featured Badge (Only first one) -->
-              <div v-if="idx === 0" class="absolute top-4 right-4">
-                <span class="bg-amber-400 text-amber-950 px-3 py-1 rounded-lg text-[10px] font-black uppercase tracking-widest shadow-sm">
-                  Featured
+              <div class="absolute top-8 left-8">
+                <span class="bg-white/90 backdrop-blur-md text-gray-900 px-4 py-1.5 rounded-xl text-[9px] font-black uppercase tracking-widest shadow-sm">
+                  {{ program.category }}
                 </span>
               </div>
             </div>
             
-            <!-- Content -->
-            <div class="p-6 flex-1 flex flex-col justify-between">
-              <div class="space-y-4">
-                <div class="flex items-center gap-2 text-slate-400 font-bold text-[10px] uppercase tracking-widest">
-                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                  </svg>
+            <!-- Meta & Content -->
+            <div class="space-y-6 px-4">
+              <div class="flex items-center gap-4 text-[10px] font-black text-gray-300 uppercase tracking-widest">
+                <span class="flex items-center gap-2">
+                  <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
                   {{ program.duration || 'Flexible' }}
-                </div>
-
-                <h3 class="text-xl font-black text-slate-900 leading-tight group-hover:text-[#27628C] transition-colors">
-                  {{ program.title }}
-                </h3>
-                
-                <p class="text-slate-600 text-sm leading-relaxed line-clamp-3">
-                  {{ program.description }}
-                </p>
-
-                <!-- Focus Areas -->
-                <div v-if="program.focusAreas?.length" class="flex flex-wrap gap-1.5 pt-2">
-                  <span 
-                    v-for="area in program.focusAreas.slice(0, 2)" 
-                    :key="area"
-                    class="bg-slate-50 text-slate-500 px-2.5 py-1 rounded-md text-[10px] font-bold border border-slate-100"
-                  >
-                    {{ area }}
-                  </span>
-                </div>
+                </span>
+                <div class="w-1 h-1 rounded-full bg-gray-200"></div>
+                <span>{{ formatDate(program.createdAt) }}</span>
               </div>
-                
-              <!-- Action Buttons -->
-              <div class="flex flex-col gap-3 pt-6 mt-6 border-t border-slate-50">
+              
+              <h3 class="text-2xl font-black text-gray-900 leading-tight group-hover:text-[#27628C] transition-colors uppercase tracking-tight">
+                {{ program.title }}
+              </h3>
+              
+              <p class="text-gray-500 text-sm leading-relaxed line-clamp-3 font-light">
+                {{ program.description }}
+              </p>
+              
+              <!-- CTAs -->
+              <div class="flex items-center gap-3 pt-6 border-t border-gray-50">
                 <button 
                   @click="navigateToProgram(program)"
-                  class="w-full inline-flex items-center justify-center bg-slate-900 text-white font-black text-xs uppercase tracking-widest py-4 px-6 rounded-xl hover:bg-slate-800 transition-all active:scale-[0.98]"
+                  class="flex-1 bg-gray-50 text-gray-900 px-6 py-4 rounded-xl text-[10px] font-black uppercase tracking-widest hover:bg-gray-100 transition-all text-center"
                 >
-                  Program Details
+                  Learn More
                 </button>
-                
-                <!-- Dynamic Apply Button -->
                 <template v-if="program.status === 'active' && (program.externalFormLink || program.formFields?.length)">
-                  <a 
+                   <a 
                     v-if="program.externalFormLink"
                     :href="program.externalFormLink"
                     target="_blank"
-                    class="w-full inline-flex items-center justify-center bg-blue-600 text-white font-black text-xs uppercase tracking-widest py-4 px-6 rounded-xl hover:bg-blue-700 transition-all shadow-lg shadow-blue-200 active:scale-[0.98]"
+                    class="flex-1 bg-gray-900 text-white px-6 py-4 rounded-xl text-[10px] font-black uppercase tracking-widest hover:bg-[#27628C] transition-all text-center shadow-xl hover:shadow-2xl flex items-center justify-center gap-2"
                   >
                     Apply Now
-                    <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
-                    </svg>
+                    <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
                   </a>
                   <button 
                     v-else
                     @click="applyToProgram(program)"
-                    class="w-full inline-flex items-center justify-center bg-blue-600 text-white font-black text-xs uppercase tracking-widest py-4 px-6 rounded-xl hover:bg-blue-700 transition-all shadow-lg shadow-blue-200 active:scale-[0.98]"
+                    class="flex-1 bg-gray-900 text-white px-6 py-4 rounded-xl text-[10px] font-black uppercase tracking-widest hover:bg-[#27628C] transition-all text-center shadow-xl hover:shadow-2xl"
                   >
-                    Apply Now
-                    <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
-                    </svg>
+                    Enroll Now
                   </button>
                 </template>
               </div>
             </div>
           </div>
         </div>
+      </div>
+    </div>
 
+    <!-- CTA Section: Impactful -->
+    <div class="bg-[#27628C] py-32 px-6 relative overflow-hidden">
+      <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:20px_20px]"></div>
+      <div class="max-w-4xl mx-auto text-center space-y-10 relative z-10">
+        <h2 class="text-sm font-bold text-blue-200 tracking-normal animate-fade-in">The Future Of The Lab</h2>
+        <h3 class="text-4xl md:text-7xl font-bold text-white leading-tight  tracking-tighter">
+          Your Career, <span class="text-blue-200 ">Accelerated.</span>
+        </h3>
+        <p class="text-xl text-blue-50 font-medium leading-relaxed">
+          Whether you're a student starting your journey or a veteran professional seeking leadership roles, our programs provide the roadmap to excellence.
+        </p>
+        <div class="pt-10 flex flex-col sm:flex-row items-center justify-center gap-6">
+          <NuxtLink to="/products" class="w-full sm:w-auto bg-white text-[#27628C] px-12 py-5 rounded-2xl text-[11px] font-bold tracking-normal hover:bg-blue-50 transition-all shadow-xl">
+            Explore Shop
+          </NuxtLink>
+          <NuxtLink to="/resources" class="w-full sm:w-auto border border-white/20 text-white px-12 py-5 rounded-2xl text-[11px] font-bold tracking-normal hover:bg-white/5 transition-all">
+            Browse Resources
+          </NuxtLink>
+        </div>
       </div>
     </div>
   </main>
@@ -242,134 +159,54 @@
 
 <script setup lang="ts">
 import { useGetPrograms } from "@/composables/modules/programs/useGetPrograms"
-
-interface Program {
-  id?: string
-  _id: string
-  title: string
-  slug?: string
-  category: string
-  description: string
-  duration?: string
-  focusAreas?: string[]
-  images?: string[]
-  outcomes?: string[]
-  keyResponsibilities?: string[]
-  image?: string
-  highlights?: Array<{
-    title: string
-    description: string
-    _id?: string
-  }>
-  status?: 'active' | 'draft' | 'archived' | 'inactive'
-  registrationToken?: string
-  formFields?: any[]
-  formTitle?: string
-  formInstructions?: string
-  externalFormLink?: string
-  applicationsCount?: number
-  createdAt?: string
-  updatedAt?: string
-}
+import { computed } from 'vue'
+import { useRouter } from 'vue-router'
 
 const { programs, loading } = useGetPrograms()
 const router = useRouter()
 
-// Navigation methods
-const navigateToProgram = (program: Program) => {
+// Filter active programs
+const activePrograms = computed(() => {
+  if (!programs.value) return []
+  return programs.value.filter(p => p.status === 'active')
+})
+
+const navigateToProgram = (program: any) => {
   router.push(`/programs/${program._id}`)
 }
 
-const applyToProgram = (program: Program) => {
+const applyToProgram = (program: any) => {
   router.push(`/programs/${program._id}/apply`)
 }
 
-// SEO Meta
+const formatDate = (dateString: string | undefined): string => {
+  if (!dateString) return 'N/A'
+  return new Date(dateString).toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'short',
+    day: 'numeric'
+  })
+}
+
+// SEO
 useHead({
   title: 'Programs - MedLabConvo',
   meta: [
-    {
-      name: 'description',
-      content: 'Explore our comprehensive programs designed to empower medical laboratory professionals and students. Join us to enhance your career and develop key skills.'
-    }
+    { name: 'description', content: 'Professional programs for medical laboratory professionals.' }
   ]
 })
 </script>
 
 <style scoped>
-/* Custom animations */
 @keyframes fade-in-up {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
 }
-
 @keyframes fade-in {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
-
-.animate-fade-in-up {
-  animation: fade-in-up 0.6s ease-out forwards;
-}
-
-.animate-fade-in {
-  animation: fade-in 0.6s ease-out forwards;
-}
-
-.delay-300 {
-  animation-delay: 300ms;
-}
-
-/* Text clamp utility */
-.line-clamp-4 {
-  line-clamp: 4;
-  -webkit-line-clamp: 4;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
-
-
-/* Gradient text */
-.bg-clip-text {
-  background-clip: text;
-  -webkit-background-clip: text;
-}
-
-.text-transparent {
-  color: transparent;
-}
-
-/* Smooth scrolling */
-html {
-  scroll-behavior: smooth;
-}
-
-/* Custom scrollbar */
-::-webkit-scrollbar {
-  width: 8px;
-}
-
-::-webkit-scrollbar-track {
-  background: #f1f1f1;
-}
-
-::-webkit-scrollbar-thumb {
-  background: linear-gradient(45deg, #8b5cf6, #ec4899);
-  border-radius: 4px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(45deg, #7c3aed, #db2777);
-}
+.animate-fade-in-up { animation: fade-in-up 0.8s ease-out forwards; }
+.animate-fade-in { animation: fade-in 1s ease-out forwards; }
+.delay-200 { animation-delay: 200ms; }
 </style>

@@ -39,7 +39,7 @@
         class="flex-1 flex flex-col items-center justify-center text-center max-w-3xl mx-auto">
         <div class="mb-8">
           <img src="@/assets/img/medlab-logo.jpeg" alt="Logo" class="mx-auto h-16 rounded-full mb-4" />
-          <h1 class="text-3xl md:text-4xl font-bold text-teal-800 mb-2">
+          <h1 class="text-2xl md:text-4xl font-bold text-teal-800 mb-2">
             SICKLE CELL DISEASE QUIZ
           </h1>
         </div>
@@ -61,7 +61,7 @@
           <div class="text-sm font-medium text-gray-600">
             Question {{ currentQuestionIndex + 1 }}/{{ questions.length }}
           </div>
-          <button @click="confirmLeave" class="text-sm text-gray-500 hover:text-gray-700">
+          <button @click="confirmLeave" class="text-sm text-gray-900 hover:text-gray-700">
             Exit Quiz
           </button>
         </div>
@@ -124,7 +124,7 @@
       <div v-else-if="currentState === 'results'"
         class="flex-1 flex flex-col items-center justify-center max-w-3xl mx-auto">
         <div class="bg-white rounded-xl shadow-lg p-6 mb-8 w-full text-center">
-          <h2 class="text-2xl md:text-3xl font-bold text-teal-800 mb-2">
+          <h2 class="text-2xl md:text-2xl font-bold text-teal-800 mb-2">
             Quiz Completed!
           </h2>
           <p class="text-lg font-semibold">So, how well did you do?</p>

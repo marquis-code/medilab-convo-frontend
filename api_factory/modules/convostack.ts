@@ -15,5 +15,8 @@ export const convostack_api = {
   },
   $_toggle_like: (publicationId: string) => {
     return GATEWAY_ENDPOINT.post(`/convostack/${publicationId}/like`)
+  },
+  $_toggle_comment_like: (commentId: string) => {
+    return GATEWAY_ENDPOINT.post(`/convostack/comments/${commentId}/like`)
   }
 }

@@ -5,7 +5,7 @@
             <div class="mx-auto max-w-prose text-base lg:grid lg:max-w-none lg:grid-cols-2 lg:gap-8">
                 <div>
                     <h3
-                        class="mt-2 text-3xl/8 font-bold tracking-tight sm:text-4xl text-[#27628C] uppercase text-center lg:text-start">
+                        class="mt-2 text-2xl/8 font-bold tracking-tight sm:text-4xl text-[#27628C] uppercase text-center lg:text-start">
                         Financial Literacy for Interns and Young Professionals
                     </h3>
                 </div>
@@ -24,7 +24,7 @@
                     </svg>
                 </div>
                 <div class="mt-8 lg:mt-0">
-                    <div class="mx-auto text-base/7 text-gray-500">
+                    <div class="mx-auto text-base/7 text-gray-900">
                         <p class="text-lg/7">
                             As young healthcare professionals, mastering financial literacy is essential for achieving
                             financial stability and security. Whether you're planning for internship expenses,
@@ -76,7 +76,7 @@
                     </div>
                     <div class="flex flex-col justify-between p-4">
                         <p class="font-bold text-gray-800">{{ schedules[0].speaker }}</p>
-                        <p class="text-xs font-semibold text-[#27628C] pt-4">CLICK TO SEE FACILITATOR'S PROFILE</p>
+                        <p class="text-sm font-semibold text-[#27628C] pt-4">CLICK TO SEE FACILITATOR'S PROFILE</p>
                     </div>
                 </article>
             </div>
@@ -101,7 +101,7 @@
                     </div>
                     <div class="flex flex-col justify-between p-4">
                         <p class="font-bold text-gray-800">{{ schedules[1].speaker }}</p>
-                        <p class="text-xs font-semibold text-[#27628C] pt-4">CLICK TO SEE FACILITATOR'S PROFILE</p>
+                        <p class="text-sm font-semibold text-[#27628C] pt-4">CLICK TO SEE FACILITATOR'S PROFILE</p>
                     </div>
                 </article>
             </div>

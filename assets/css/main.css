@@ -2,9 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+html,
 body {
-  font-family: 'RoobertPRO', sans-serif;
-  font-weight: 400;
+  font-family: 'Onest', sans-serif;
+}
+
+* {
+  font-family: 'Onest', sans-serif;
+}
+
+h1 {
+  font-family: 'Onest', sans-serif;
+  font-weight: bold;
 }
 
 /* You can also create utility classes for different weights */
@@ -64,5 +73,5 @@ input[type=number] {
 
 .custom-checkbox:checked::after {
   content: '✓';
-  @apply absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-white text-xs font-black shadow-sm;
+  @apply absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-white text-sm font-black shadow-sm;
 }

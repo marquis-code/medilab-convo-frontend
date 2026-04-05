@@ -1,17 +1,14 @@
 <template>
   <main>
     <!-- Hero Section -->
-    <div class="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32">
-      <img src="@/assets/img/hero-background.jpeg" alt="" class="absolute inset-0 -z-10 h-full w-full object-cover" />
-      <div class="hidden sm:absolute sm:-top-10 sm:right-1/2 sm:-z-10 sm:mr-10 sm:block sm:transform-gpu sm:blur-3xl" aria-hidden="true">
-        <div class="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-[#ff4694] to-[#776fff] opacity-20"></div>
-      </div>
-      <div class="mx-auto max-w-7xl px-6 lg:px-8 flex justify-center items-center pt-16 w-full">
-        <div class="mx-auto max-w-2xl lg:mx-0 flex justify-center items-center w-full flex-col animate-fade-in">
-          <h2 class="text-4xl font-black uppercase text-center tracking-tight text-white sm:text-6xl animate-slide-up">
-            LabCast
-          </h2>
-          <p class="mt-6 text-lg leading-8 text-center text-gray-100 animate-slide-up-delay">
+    <div class="relative isolate overflow-hidden bg-[#27628C] py-24 sm:py-40">
+      <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:20px_20px]"></div>
+      
+      <div class="mx-auto max-w-7xl px-6 lg:px-8 relative z-10 flex flex-col items-center justify-center pt-16 text-center">
+        <div class="max-w-3xl">
+          <h1 class="text-sm font-bold text-blue-200 mb-6 animate-fade-in tracking-normal">Audio & Visual Insights</h1>
+          <h2 class="text-4xl font-bold tracking-tight text-white sm:text-8xl mb-8 animate-fade-in-up ">LabCast</h2>
+          <p class="text-xl leading-8 text-blue-50 font-medium animate-fade-in-up animation-delay-200 max-w-2xl mx-auto">
             Conversations with laboratory scientists, public health experts, health innovators, and policy leaders shaping the future of healthcare.
           </p>
         </div>
@@ -50,8 +47,8 @@
             <div class="absolute inset-0 bg-gradient-to-r from-transparent via-transparent to-white/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
             
             <div class="absolute top-8 left-8">
-              <div class="bg-gray-900/90 backdrop-blur-md text-white px-5 py-2 rounded-2xl text-sm font-bold tracking-widest shadow-xl">
-                SEASON {{ latestEpisode.season }} • EPISODE {{ latestEpisode.episode }}
+              <div class="bg-gray-900/90 backdrop-blur-md text-white px-5 py-2 rounded-2xl text-sm font-bold shadow-xl">
+                Season {{ latestEpisode.season }} • Episode {{ latestEpisode.episode }}
               </div>
             </div>
           </div>
@@ -59,7 +56,7 @@
           <!-- Content Side -->
           <div class="flex-1 p-10 lg:p-16 flex flex-col justify-between space-y-8 bg-white">
             <div class="space-y-6">
-              <div class="flex items-center gap-4 text-[#27628C] font-bold text-sm uppercase tracking-widest">
+              <div class="flex items-center gap-4 text-[#27628C] font-bold text-sm">
                 <span class="flex items-center gap-2">
                   <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
@@ -91,7 +88,7 @@
                     </svg>
                   </div>
                   <div>
-                    <p class="text-xs text-gray-400 font-bold uppercase tracking-wider">Hosted By</p>
+                    <p class="text-sm text-gray-400 font-bold uppercase tracking-wider">Hosted By</p>
                     <p class="text-sm font-bold text-gray-900">{{ latestEpisode.hosts.join(', ') }}</p>
                   </div>
                 </div>
@@ -102,7 +99,7 @@
                     </svg>
                   </div>
                   <div>
-                    <p class="text-xs text-gray-400 font-bold uppercase tracking-wider">Guest Speaker</p>
+                    <p class="text-sm text-gray-400 font-bold">Guest Speaker</p>
                     <p class="text-sm font-bold text-gray-900">{{ latestEpisode.guest }} ({{ latestEpisode.guestTitle }})</p>
                   </div>
                 </div>
@@ -111,7 +108,7 @@
 
             <!-- Action Area -->
             <div class="pt-8 border-t border-gray-100 flex flex-wrap items-center gap-6">
-              <span class="text-sm font-black text-gray-400 uppercase tracking-widest">Listen On</span>
+              <span class="text-sm font-bold text-gray-400">Listen On</span>
               <div class="flex flex-wrap gap-3">
                 <a :href="latestEpisode.spotifyUrl" target="_blank" class="p-3 bg-[#1DB954] text-white rounded-2xl hover:scale-110 active:scale-95 transition-all shadow-lg shadow-[#1DB954]/20">
                   <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.49 17.306c-.215.353-.674.464-1.024.25-2.85-1.742-6.438-2.138-10.665-1.173-.4.092-.804-.16-.897-.562-.092-.4.16-.804.562-.897 4.622-1.057 8.577-.6 11.776 1.353.352.214.464.676.248 1.029zm1.465-3.266c-.27.44-.846.58-1.287.31-3.26-2.003-8.23-2.585-12.086-1.415-.494.15-1.02-.128-1.17-.622-.15-.495.127-1.02.622-1.17 4.407-1.338 9.882-.686 13.62 1.61.442.272.583.847.312 1.287l-.01.011zm.126-3.41c-3.91-2.322-10.366-2.535-14.135-1.39-.6.182-1.24-.153-1.423-.754-.182-.6.153-1.24.754-1.422C8.35 6.075 15.485 6.32 20.02 9c.538.32.71 1.01.39 1.548-.32.535-1.01.71-1.55.39v-.008z"/></svg>
@@ -148,7 +145,7 @@
     <div class="container mx-auto px-6 py-20">
       <div class="flex items-center justify-center mb-16">
         <div class="h-px bg-gray-200 flex-1"></div>
-        <h2 class="text-3xl font-black text-gray-900 mx-8 uppercase tracking-[0.2em]">All Episodes</h2>
+        <h2 class="text-2xl font-bold text-gray-900 mx-8 tracking-tight">All Episodes</h2>
         <div class="h-px bg-gray-200 flex-1"></div>
       </div>
 
@@ -170,7 +167,7 @@
 
             <!-- Progress/Status Badge -->
             <div class="absolute top-4 left-4">
-              <div class="bg-white/90 backdrop-blur-md text-slate-900 px-3 py-1 rounded-lg text-[10px] font-black uppercase tracking-widest shadow-sm border border-slate-100">
+              <div class="bg-white/90 backdrop-blur-md text-slate-900 px-3 py-1 rounded-lg text-[10px] font-bold shadow-sm border border-slate-100">
                 S{{ episode.season }} E{{ episode.episode }}
               </div>
             </div>
@@ -179,7 +176,7 @@
           <!-- Card Content -->
           <div class="p-6 flex-1 flex flex-col justify-between border-x border-b border-slate-100 rounded-b-2xl">
             <div class="space-y-4">
-              <div class="flex items-center justify-between text-[10px] font-black text-slate-400 uppercase tracking-widest">
+              <div class="flex items-center justify-between text-[10px] font-bold text-slate-400">
                 <span class="flex items-center gap-1.5">
                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
@@ -194,7 +191,7 @@
                 </span>
               </div>
               
-              <h3 class="text-lg font-black text-slate-900 group-hover:text-[#27628C] transition-colors leading-tight line-clamp-2">
+              <h3 class="text-lg font-bold text-slate-900 group-hover:text-[#27628C] transition-colors leading-tight line-clamp-2">
                 {{ episode.title }}
               </h3>
               
@@ -205,13 +202,13 @@
 
             <!-- Links -->
             <div class="flex items-center gap-2 pt-6 mt-6 border-t border-slate-50">
-              <a :href="episode.spotifyUrl" target="_blank" class="flex-1 flex items-center justify-center py-2.5 bg-slate-50 text-slate-400 hover:bg-[#1DB954] hover:text-white rounded-xl transition-all active:scale-95 shadow-sm border border-slate-100 uppercase text-[10px] font-black tracking-widest gap-2">
+              <a :href="episode.spotifyUrl" target="_blank" class="flex-1 flex items-center justify-center py-2.5 bg-slate-50 text-slate-400 hover:bg-[#1DB954] hover:text-white rounded-xl transition-all active:scale-95 shadow-sm border border-slate-100 text-[10px] font-bold gap-2">
                  Spotify
               </a>
-              <a :href="episode.appleUrl" target="_blank" class="flex-1 flex items-center justify-center py-2.5 bg-slate-50 text-slate-400 hover:bg-slate-900 hover:text-white rounded-xl transition-all active:scale-95 shadow-sm border border-slate-100 uppercase text-[10px] font-black tracking-widest gap-2">
+              <a :href="episode.appleUrl" target="_blank" class="flex-1 flex items-center justify-center py-2.5 bg-slate-50 text-slate-400 hover:bg-slate-900 hover:text-white rounded-xl transition-all active:scale-95 shadow-sm border border-slate-100 text-[10px] font-bold gap-2">
                  Apple
               </a>
-              <a v-if="episode.youtubeUrl" :href="episode.youtubeUrl" target="_blank" class="flex-1 flex items-center justify-center py-2.5 bg-slate-50 text-slate-400 hover:bg-[#FF0000] hover:text-white rounded-xl transition-all active:scale-95 shadow-sm border border-slate-100 uppercase text-[10px] font-black tracking-widest gap-2">
+              <a v-if="episode.youtubeUrl" :href="episode.youtubeUrl" target="_blank" class="flex-1 flex items-center justify-center py-2.5 bg-slate-50 text-slate-400 hover:bg-[#FF0000] hover:text-white rounded-xl transition-all active:scale-95 shadow-sm border border-slate-100 text-[10px] font-bold gap-2">
                  YouTube
               </a>
             </div>

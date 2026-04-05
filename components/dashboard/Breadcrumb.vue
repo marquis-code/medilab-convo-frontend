@@ -63,7 +63,7 @@ export default {
       return {
         "text-blue-500 hover:text-blue-600":
           index < this.breadcrumbs.length - 1,
-        "text-gray-500": index === this.breadcrumbs.length - 1,
+        "text-gray-900": index === this.breadcrumbs.length - 1,
       };
     },
   },

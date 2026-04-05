@@ -77,15 +77,15 @@
                   {{ generateInitials(person.fname, person.lname) }}
                 </div>
               </td>
-              <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
+              <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-900">
                 <nuxt-link :to="`/dashboard/users/${person.id}`" class="font-medium text-gray-800 no-underline">{{
       person.handle ?? "N/A" }}</nuxt-link>
               </td>
-              <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
+              <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-900">
                 <nuxt-link class="no-underline text-gray-800" :to="`/dashboard/users/${person.id}`">{{ person.fname ??
       "N/A" }}</nuxt-link>
               </td>
-              <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
+              <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-900">
                 <nuxt-link class="no-underline text-gray-800" :to="`/dashboard/users/${person.id}`">{{ person.lname ??
       "N/A" }}</nuxt-link>
               </td>
@@ -96,15 +96,15 @@
                 <span v-if="person.interest_count" class="bg-[#EEF4FF] text-[#6941C6] rounded-full px-3 py-2">{{
       person.interest_count ?? "N/A" }}</span>
               </td>
-              <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
+              <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-900">
                 <nuxt-link class="no-underline text-gray-800" :to="`/dashboard/users/${person.id}`">{{ person.phone ??
       "N/A" }}</nuxt-link>
               </td>
-              <td class="whitespace-nowrap text-center px-3 py-4 text-sm text-gray-500">
+              <td class="whitespace-nowrap text-center px-3 py-4 text-sm text-gray-900">
                 <nuxt-link class="no-underline text-gray-800" :to="`/dashboard/users/${person.id}`">{{ person.email ??
       "N/A" }}</nuxt-link>
               </td>
-              <td class="whitespace-nowrap px-3 text-center py-4 text-sm text-gray-500">
+              <td class="whitespace-nowrap px-3 text-center py-4 text-sm text-gray-900">
                 <nuxt-link class="no-underline text-gray-800" :to="`/dashboard/users/${person.id}`">{{ person.stori ??
       "N/A" }}</nuxt-link>
               </td>
@@ -176,7 +176,7 @@
         </div>
         <div>
           <h1 class="font-semibold text-xl">Remove user</h1>
-          <p class="text-gray-500">
+          <p class="text-gray-900">
             Are you sure you want to remove this user? This action cannot be
             undone.
           </p>

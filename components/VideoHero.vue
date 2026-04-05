@@ -56,12 +56,13 @@
           </p>
         </div> -->
 
-        <!-- Full Width Video Section -->
-        <div class="relative w-full" ref="videoRef">
-          <div class="aspect-video w-full transform transition-all duration-1000"
+        <!-- Compact Video Section -->
+        <div class="relative max-w-4xl mx-auto" ref="videoRef">
+          <div class="group relative aspect-video rounded-[2.5rem] overflow-hidden shadow-2xl border-8 border-white transition-all duration-1000"
                :class="{ 'translate-y-0 opacity-100 scale-100': videoVisible, 'translate-y-10 opacity-0 scale-95': !videoVisible }">
+            
             <iframe 
-              class="w-full h-full rounded-lg shadow-2xl"
+              class="w-full h-full"
               src="https://www.youtube.com/embed/rhVkU6HAbn0?si=PP3LqgBgNf_oVTMa" 
               title="Healthcare Transformation Video" 
               frameborder="0" 
@@ -69,6 +70,14 @@
               referrerpolicy="strict-origin-when-cross-origin" 
               allowfullscreen>
             </iframe>
+
+            <!-- Overlay Decor -->
+            <div class="absolute inset-0 pointer-events-none border border-white/10 rounded-[2rem]"></div>
+          </div>
+          
+          <!-- Subtle Quote / Caption -->
+          <div class="mt-8 text-center animate-pulse">
+             <p class="text-[10px] font-bold text-[#27628C] uppercase tracking-[0.3em]">Watch Our Vision for 2025</p>
           </div>
         </div>
       </div>

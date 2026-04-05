@@ -1,7 +1,7 @@
 <template>
   <section class="shadow border-[0.6px] rounded-lg">
     <div class="flex items-center justify-between px-7 py-4">
-      <h6 class="font-medium text-gray-500">App Store information</h6>
+      <h6 class="font-medium text-gray-900">App Store information</h6>
       <select class="text-sm font-medium outline-none bg-gray-100 rounded-md px-2.5 py-2">
         <option>All Time</option>
       </select>
@@ -12,7 +12,7 @@
           <img src="@/assets/icons/dashboard/android-badge.svg" alt="" />
           <div class="space-y-4">
             <div class="flex items-center space-x-4">
-              <h2 class="font-bold text-3xl">625</h2>
+              <h2 class="font-bold text-2xl">625</h2>
               <img src="@/assets/icons/dashboard/increase.svg" alt="" class="h-10 w-10" />
             </div>
             <p class="text-gray-400">Downloads</p>
@@ -32,7 +32,7 @@
         <img src="@/assets/icons/dashboard/ios-badge.svg" alt="" />
         <div class="space-y-4">
           <div class="flex items-center space-x-4">
-            <h2 class="font-bold text-3xl">902</h2>
+            <h2 class="font-bold text-2xl">902</h2>
             <img src="@/assets/icons/dashboard/decrease.svg" alt="" />
           </div>
           <p class="text-gray-400">Downloads</p>

@@ -1,5 +1,19 @@
 <template>
   <header class="sticky top-0 z-50 w-full bg-black transition-all duration-300" :class="{ 'border-b border-white/10 shadow-lg': isScrolled }">
+    <!-- Subscription Banner -->
+    <div class="bg-[#27628C] py-2 px-4 shadow-inner">
+      <div class="max-w-7xl mx-auto flex items-center justify-center gap-4 text-center">
+        <p class="text-[10px] sm:text-xs font-bold text-white drop-shadow-sm">
+          Stay Ahead — Join the Convo Substack for exclusive insights
+        </p>
+        <button 
+          @click="openSubscriptionModal"
+          class="bg-white text-[#27628C] px-3 py-1 rounded-full text-[9px] font-bold hover:bg-white/90 transition-all active:scale-95 shadow-sm"
+        >
+          Subscribe
+        </button>
+      </div>
+    </div>
     <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
       <div class="flex lg:flex-1">
         <NuxtLink to="/" class="-m-1.5 p-1.5 transition-transform hover:scale-105">
@@ -18,11 +32,11 @@
       <div class="hidden lg:flex lg:gap-x-8">
         <NuxtLink v-for="item in navigation" :key="item.name" :to="item.href" class="text-sm font-medium leading-6 text-gray-300 hover:text-white transition-colors duration-200 relative group">
           {{ item.name }}
-          <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
+          <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#27628C] transition-all duration-300 group-hover:w-full"></span>
         </NuxtLink>
       </div>
       <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-         <NuxtLink to="/teams" class="text-sm font-semibold leading-6 text-white bg-blue-600/80 hover:bg-blue-500 border border-blue-500/50 backdrop-blur-sm px-5 py-2 rounded-full transition-all duration-300 hover:shadow-[0_0_15px_rgba(59,130,246,0.6)]">
+         <NuxtLink to="/teams" class="text-sm font-semibold leading-6 text-white bg-[#27628C] hover:bg-[#1a425f] shadow-lg px-6 py-2.5 rounded-full transition-all duration-300 group">
           About Us <span aria-hidden="true" class="inline-block transition-transform group-hover:translate-x-1 ml-1">&rarr;</span>
         </NuxtLink>
       </div>
@@ -51,7 +65,7 @@
               </NuxtLink>
             </div>
             <div class="py-6">
-              <NuxtLink @click="isOpen = false" to="/teams" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-white bg-blue-600/20 hover:bg-blue-600/40 border border-blue-500/30 transition-colors text-center">
+              <NuxtLink @click="isOpen = false" to="/teams" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-white bg-[#27628C] hover:bg-[#1a425f] transition-colors text-center">
                 About Us
               </NuxtLink>
             </div>
@@ -64,11 +78,14 @@
 
 <script setup lang="ts">
 import { ref, onMounted, onUnmounted } from 'vue'
+import { useSubscriptionModal } from '@/composables/modules/subscriptions/useSubscriptionModal'
 
+const { openSubscriptionModal } = useSubscriptionModal()
 const isOpen = ref(false)
 const isScrolled = ref(false)
 
 const navigation = [
+  { name: 'Teams', href: '/teams' },
   { name: 'Journo', href: '/journo' },
   { name: 'LabCast', href: '/lab-cast' },
   { name: 'Convo Stack', href: '/convostack' },

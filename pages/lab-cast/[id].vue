@@ -10,7 +10,7 @@
           />
         </div>
         <div class="flex flex-col items-start">
-          <h1 class="text-3xl font-bold text-gray-800">{{ podcast.title }}</h1>
+          <h1 class="text-2xl font-bold text-gray-800">{{ podcast.title }}</h1>
           <p class="text-sm text-gray-600 mt-2">{{ podcast.publisher }}</p>
           <p class="mt-4 text-base text-gray-700">{{ podcast.description }}</p>
         </div>

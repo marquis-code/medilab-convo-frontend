@@ -93,7 +93,7 @@ definePageMeta({
     <div class="max-w-3xl mx-auto">
       
       <!-- Navigation -->
-      <NuxtLink to="/programs" class="inline-flex items-center gap-2 text-gray-500 hover:text-[#27628C] transition-colors mb-12 group">
+      <NuxtLink to="/programs" class="inline-flex items-center gap-2 text-gray-900 hover:text-[#27628C] transition-colors mb-12 group">
         <Icon name="heroicons:arrow-left" class="w-4 h-4 group-hover:-translate-x-1 transition-transform" />
         <span class="text-sm font-medium">Back to directory</span>
       </NuxtLink>
@@ -101,7 +101,7 @@ definePageMeta({
       <!-- Loading State -->
       <div v-if="loading" class="flex flex-col items-center justify-center py-20 text-center animate-fade-in">
         <div class="w-12 h-12 border-4 border-gray-100 border-t-[#27628C] rounded-full animate-spin mb-4"></div>
-        <p class="text-sm font-bold text-gray-500">Loading form...</p>
+        <p class="text-sm font-bold text-gray-900">Loading form...</p>
       </div>
 
       <!-- Error State -->
@@ -110,7 +110,7 @@ definePageMeta({
           <Icon name="heroicons:exclamation-circle" class="w-8 h-8" />
         </div>
         <h3 class="text-xl font-black text-gray-900 mb-2">Form unavailable</h3>
-        <p class="text-gray-500 text-sm mb-8">{{ error }}</p>
+        <p class="text-gray-900 text-sm mb-8">{{ error }}</p>
         <button
           @click="router.push('/programs')"
           class="px-8 py-3 bg-gray-900 text-white rounded-xl font-bold text-sm hover:bg-black transition-colors"
@@ -125,7 +125,7 @@ definePageMeta({
           <Icon name="heroicons:check-circle" class="w-10 h-10" />
         </div>
         <h3 class="text-2xl font-black text-gray-900 mb-4">Form submitted successfully</h3>
-        <p class="text-gray-500 text-base mb-10 leading-relaxed">
+        <p class="text-gray-900 text-base mb-10 leading-relaxed">
           {{ form.successMessage || 'Thank you for your response. Your submission has been received.' }}
         </p>
         
@@ -166,7 +166,7 @@ definePageMeta({
           <!-- Form Info -->
           <div class="space-y-4">
             <div class="flex flex-wrap items-center gap-3">
-              <span class="px-3 py-1 text-[10px] font-bold bg-gray-50 text-gray-500 rounded-full border border-gray-100">
+              <span class="px-3 py-1 text-[10px] font-bold bg-gray-50 text-gray-900 rounded-full border border-gray-100">
                 Registration form
               </span>
               <span v-if="form.programTitle" class="px-3 py-1 text-[10px] font-bold bg-blue-50 text-blue-600 rounded-full border border-blue-100">
@@ -174,8 +174,8 @@ definePageMeta({
               </span>
             </div>
             
-            <h1 class="text-3xl md:text-4xl font-black text-gray-900 tracking-tight">{{ form.title }}</h1>
-            <p v-if="form.description" class="text-base text-gray-500 leading-relaxed max-w-2xl">
+            <h1 class="text-2xl md:text-4xl font-black text-gray-900 tracking-tight">{{ form.title }}</h1>
+            <p v-if="form.description" class="text-base text-gray-900 leading-relaxed max-w-2xl">
               {{ form.description }}
             </p>
 
