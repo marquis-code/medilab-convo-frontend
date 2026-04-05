@@ -168,7 +168,7 @@ const router = useRouter()
 // Filter active programs
 const activePrograms = computed(() => {
   if (!programs.value) return []
-  return programs.value.filter(p => p.status === 'active')
+  return programs?.value?.filter(p => p.status === 'active')
 })
 
 const navigateToProgram = (program: any) => {
