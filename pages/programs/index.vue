@@ -50,7 +50,7 @@
         <div v-else class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-24">
           <div 
             v-for="(program, index) in activePrograms" 
-            :key="program._id"
+            :key="program.slug || index"
             class="group space-y-8 animate-fade-in-up"
             :style="{ animationDelay: `${index * 100}ms` }"
           >
@@ -61,7 +61,7 @@
             >
                <img 
                 v-if="program.image || (program.images && program.images[0])"
-                :src="program.image || program.images[0]" 
+                :src="program.image || program.images?.[0]" 
                 :alt="program.title"
                 class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
               >
@@ -172,11 +172,11 @@ const activePrograms = computed(() => {
 })
 
 const navigateToProgram = (program: any) => {
-  router.push(`/programs/${program._id}`)
+  router.push(`/programs/${program.slug}`)
 }
 
 const applyToProgram = (program: any) => {
-  router.push(`/programs/${program._id}/apply`)
+  router.push(`/programs/${program.slug}/apply`)
 }
 
 const formatDate = (dateString: string | undefined): string => {

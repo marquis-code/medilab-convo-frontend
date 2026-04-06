@@ -9,10 +9,10 @@
       <div class="container mx-auto px-6 lg:px-12 relative z-10">
         <div class="max-w-4xl mx-auto space-y-8">
           <NuxtLink 
-            :to="`/programs/${route.params.id}`" 
+            :to="`/programs/${route.params.slug}`" 
             class="inline-flex items-center gap-3 text-white/60 hover:text-white font-black text-xs uppercase tracking-widest transition-all group"
           >
-            <Icon name="heroicons:arrow-left" class="w-4 h-4 group-hover:-translate-x-1 transition-transform" />
+            <Icon name="lucide:arrow-left" class="w-4 h-4 group-hover:-translate-x-1 transition-transform" />
             Back to program
           </NuxtLink>
 
@@ -54,7 +54,7 @@
               <div class="relative inline-block">
                  <div class="absolute inset-0 bg-emerald-500/20 blur-2xl rounded-full scale-150"></div>
                  <div class="relative w-24 h-24 bg-emerald-500 text-white rounded-[2.5rem] flex items-center justify-center border-4 border-white shadow-xl">
-                    <Icon name="heroicons:sparkles" class="w-12 h-12" />
+                    <Icon name="lucide:sparkles" class="w-12 h-12" />
                  </div>
               </div>
               
@@ -71,7 +71,7 @@
                   to="/programs" 
                   class="h-14 px-10 bg-gray-900 text-white rounded-2xl font-black text-sm hover:scale-105 active:scale-95 transition-all flex items-center gap-3"
                 >
-                  <Icon name="heroicons:magnifying-glass" class="w-5 h-5" />
+                  <Icon name="lucide:search" class="w-5 h-5" />
                   Explore Directory
                 </NuxtLink>
                 
@@ -169,7 +169,7 @@
 
                  <!-- Error Feedback -->
                  <div v-if="submitError" class="p-6 bg-rose-50 border border-rose-100 rounded-2xl flex items-center gap-4">
-                    <Icon name="heroicons:exclamation-triangle" class="w-6 h-6 text-rose-500" />
+                    <Icon name="lucide:alert-triangle" class="w-6 h-6 text-rose-500" />
                     <p class="text-sm font-bold text-rose-600">Failed to submit: {{ submitError }}</p>
                  </div>
 
@@ -210,7 +210,7 @@ const formData = ref<Record<string, any>>({})
 
 // Initialize form data on mount
 onMounted(async () => {
-  const idOrSlug = route.params.id as string
+  const idOrSlug = route.params.slug as string
   const data = await getProgram(idOrSlug)
   
   if (data?.formFields) {

@@ -18,7 +18,7 @@
           @click="closeModal"
           class="absolute top-8 right-8 z-10 w-12 h-12 flex items-center justify-center bg-slate-100 hover:bg-slate-200 text-slate-500 hover:text-slate-900 rounded-full transition-all active:scale-95"
         >
-          <Icon name="heroicons:x-mark" class="w-6 h-6" />
+          <Icon name="lucide:x" class="w-6 h-6" />
         </button>
 
         <div class="flex flex-col md:flex-row h-full max-h-[85vh]">

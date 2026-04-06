@@ -12,12 +12,12 @@
     <!-- Error State -->
     <div v-else-if="error" class="flex flex-col items-center justify-center min-h-screen p-8 text-center">
       <div class="w-24 h-24 bg-rose-50 rounded-[2.5rem] flex items-center justify-center mb-8 border border-rose-100">
-        <Icon name="heroicons:exclamation-circle" class="w-12 h-12 text-rose-500" />
+        <Icon name="lucide:alert-circle" class="w-12 h-12 text-rose-500" />
       </div>
       <h2 class="text-3xl font-black text-gray-900 mb-4 tracking-tight leading-tight">Identity not found</h2>
       <p class="text-gray-500 mb-10 max-w-md font-medium leading-relaxed">{{ error }}</p>
       <NuxtLink to="/programs" class="inline-flex items-center gap-3 bg-gray-900 text-white px-10 py-4 rounded-2xl font-bold text-sm hover:scale-105 active:scale-95 transition-all shadow-xl shadow-gray-900/10">
-        <Icon name="heroicons:arrow-path" class="w-4 h-4" />
+        <Icon name="lucide:refresh-cw" class="w-4 h-4" />
         Return to directory
       </NuxtLink>
     </div>
@@ -37,7 +37,7 @@
             <div class="space-y-10 order-2 lg:order-1">
               <div class="space-y-4">
                 <NuxtLink to="/programs" class="inline-flex items-center gap-2 text-[#27628B] font-black text-xs uppercase tracking-widest hover:translate-x-1 transition-transform mb-6">
-                  <Icon name="heroicons:arrow-left" class="w-4 h-4" />
+                  <Icon name="lucide:arrow-left" class="w-4 h-4" />
                   Directory
                 </NuxtLink>
                 
@@ -46,7 +46,7 @@
                     {{ program.category }}
                   </span>
                   <span v-if="program.duration" class="px-4 py-1.5 bg-gray-100 text-gray-900 text-[10px] font-black uppercase tracking-[0.2em] rounded-full flex items-center gap-2 border border-gray-200/50">
-                    <Icon name="heroicons:clock" class="w-4 h-4" />
+                    <Icon name="lucide:clock" class="w-4 h-4" />
                     {{ program.duration }}
                   </span>
                 </div>
@@ -67,11 +67,11 @@
                   class="h-16 px-12 bg-[#27628C] text-white rounded-[1.2rem] font-bold text-sm hover:scale-105 active:scale-95 transition-all flex items-center justify-center space-x-3 shadow-2xl shadow-blue-900/20"
                 >
                   <span>Enrol Now</span>
-                  <Icon name="heroicons:sparkles" class="w-5 h-5" />
+                  <Icon name="lucide:sparkles" class="w-5 h-5" />
                 </a>
                 
                 <button @click="shareProgram" class="h-16 px-10 bg-white text-gray-900 border-2 border-gray-100 rounded-[1.2rem] font-bold text-sm hover:bg-gray-50 active:scale-95 transition-all flex items-center justify-center space-x-3">
-                  <Icon name="heroicons:share" class="w-5 h-5" />
+                  <Icon name="lucide:share-2" class="w-5 h-5" />
                   <span>Share Access</span>
                 </button>
               </div>
@@ -94,7 +94,7 @@
               <div class="absolute -bottom-6 -right-6 md:-right-10 bg-white/10 backdrop-blur-3xl border border-white/20 p-6 rounded-[2rem] shadow-2xl animate-float max-w-[240px]">
                 <div class="flex items-center gap-4 mb-3">
                   <!-- <div class="w-10 h-10 rounded-full bg-[#DE6129] flex items-center justify-center shadow-lg shadow-orange-500/30">
-                    <Icon name="heroicons:academic-cap" class="w-5 h-5 text-white" />
+                    <Icon name="lucide:graduation-cap" class="w-5 h-5 text-white" />
                   </div> -->
                   <p class="text-xs font-black text-gray-900 uppercase">Interactive learning</p>
                 </div>
@@ -152,7 +152,7 @@
 
               <!-- Decorative Decor -->
               <div class="absolute top-8 right-10 opacity-0 group-hover:opacity-100 transition-opacity text-[#DE6129]">
-                 <Icon name="heroicons:plus-circle" class="w-5 h-5" />
+                 <Icon name="lucide:plus-circle" class="w-5 h-5" />
               </div>
             </div>
           </div>
@@ -172,7 +172,7 @@
               class="group relative bg-white p-10 rounded-[2.5rem] border border-slate-200/50 hover:border-[#27628C]/30 transition-all duration-500 hover:-translate-y-2"
             >
               <!-- <div class="w-14 h-14 bg-slate-50 rounded-2xl flex items-center justify-center text-slate-400 group-hover:bg-[#27628C]/5 group-hover:text-[#27628C] mb-8 transition-colors">
-                <Icon :name="i % 2 === 0 ? 'heroicons:command-line' : 'heroicons:device-phone-mobile'" class="w-7 h-7" />
+                <Icon :name="i % 2 === 0 ? 'lucide:terminal' : 'lucide:smartphone'" class="w-7 h-7" />
               </div> -->
               <h4 class="text-lg font-black text-gray-900 mb-4 tracking-tight leading-tight">{{ highlight.title }}</h4>
               <p class="text-sm text-gray-500 leading-relaxed font-medium">{{ highlight.description }}</p>
@@ -223,7 +223,7 @@
 
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                        <div v-for="(outcome, i) in program.outcomes" :key="i" class="space-y-3">
-                          <Icon name="heroicons:check-badge" class="w-6 h-6 text-[#DE6129]" />
+                          <Icon name="lucide:badge-check" class="w-6 h-6 text-[#DE6129]" />
                           <p class="text-sm font-bold text-white leading-relaxed">{{ outcome }}</p>
                        </div>
                     </div>
@@ -279,7 +279,7 @@
                   Enrol Today
                 </a>
                 <button @click="shareProgram" class="h-16 px-12 bg-white/5 text-white border border-white/10 rounded-[1.2rem] font-bold text-sm hover:bg-white/10 active:scale-95 transition-all flex items-center justify-center group">
-                  <!-- <Icon name="heroicons:paper-airplane" class="w-5 h-5 mr-3 -rotate-45 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" /> -->
+                  <!-- <Icon name="lucide:send" class="w-5 h-5 mr-3 -rotate-45 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" /> -->
                   Invite a Colleague
                 </button>
              </div>
@@ -311,7 +311,7 @@ const { showToast } = useCustomToast()
 
 // Fetch program data on mount
 onMounted(() => {
-  const idOrSlug = route.params.id as string
+  const idOrSlug = route.params.slug as string
   getProgram(idOrSlug)
 })
 

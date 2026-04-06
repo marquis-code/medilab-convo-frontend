@@ -40,7 +40,7 @@
                   class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-1000 ease-out" 
                 />
                 <div v-else class="w-full h-full flex items-center justify-center text-gray-200">
-                  <Icon name="heroicons:user" class="w-20 h-20" />
+                  <Icon name="lucide:user" class="w-20 h-20" />
                 </div>
                 
                 <!-- Social Overlay -->
@@ -146,7 +146,7 @@ const getSocialIcon = (type: string) => {
     case 'twitter': return 'mdi:twitter'
     case 'instagram': return 'mdi:instagram'
     case 'facebook': return 'mdi:facebook'
-    default: return 'heroicons:globe-alt'
+    default: return 'lucide:globe'
   }
 }
 </script>

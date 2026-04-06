@@ -130,7 +130,7 @@ const handleCheckboxChange = (fieldId: string, option: string, checked: boolean)
         
         <div class="relative">
           <div class="absolute inset-y-0 left-4 flex items-center pointer-events-none text-gray-400">
-            <Icon name="heroicons:envelope" class="w-5 h-5" />
+            <Icon name="lucide:mail" class="w-5 h-5" />
           </div>
           <input
             id="submitter-email"
@@ -263,7 +263,7 @@ const handleCheckboxChange = (fieldId: string, option: string, checked: boolean)
                   'w-4 h-4 rounded border mr-3 flex items-center justify-center transition-all',
                   (formData[field.id] || []).includes(option) ? 'border-[#27628C] bg-[#27628C]' : 'border-gray-300 bg-white'
                 ]">
-                  <Icon v-if="(formData[field.id] || []).includes(option)" name="heroicons:check" class="w-3 h-3 text-white" />
+                  <Icon v-if="(formData[field.id] || []).includes(option)" name="lucide:check" class="w-3 h-3 text-white" />
                 </div>
                 <span :class="['text-sm font-medium', (formData[field.id] || []).includes(option) ? 'text-[#27628C]' : 'text-gray-600']">
                   {{ option }}
@@ -275,7 +275,7 @@ const handleCheckboxChange = (fieldId: string, option: string, checked: boolean)
           <!-- Error Messaging -->
           <Transition name="slide-fade">
             <div v-if="errors[field.id]" class="flex items-center gap-1.5 mt-1.5 px-1 text-red-500">
-              <Icon name="heroicons:exclamation-circle" class="w-4 h-4 flex-shrink-0" />
+              <Icon name="lucide:alert-circle" class="w-4 h-4 flex-shrink-0" />
               <span class="text-sm font-bold">{{ errors[field.id] }}</span>
             </div>
           </Transition>
@@ -289,7 +289,7 @@ const handleCheckboxChange = (fieldId: string, option: string, checked: boolean)
           class="w-full flex items-center justify-center bg-[#27628C] text-white rounded-xl py-4 font-bold text-sm hover:bg-[#1e4d6f] transition-all"
         >
           Submit registration
-          <Icon name="heroicons:paper-airplane" class="w-4 h-4 ml-2" />
+          <Icon name="lucide:send" class="w-4 h-4 ml-2" />
         </button>
         <p class="text-center mt-4 text-sm text-gray-400 font-medium">
           By submitting, you agree to our terms and data processing policy

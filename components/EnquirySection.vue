@@ -18,7 +18,7 @@
           <div class="space-y-8 pt-8">
              <div class="flex items-start gap-6 group">
                 <!-- <div class="w-12 h-12 bg-white rounded-2xl flex items-center justify-center text-[#27628C] shadow-sm group-hover:bg-[#27628C] group-hover:text-white transition-all duration-500">
-                   <Icon name="heroicons:chat-bubble-left-right" class="w-6 h-6" />
+                   <Icon name="lucide:message-square" class="w-6 h-6" />
                 </div> -->
                 <div>
                    <h4 class="text-sm font-bold text-gray-900 mb-1">Direct Support</h4>
@@ -27,7 +27,7 @@
              </div>
              <div class="flex items-start gap-6 group text-gray-400">
                 <!-- <div class="w-12 h-12 bg-white rounded-2xl flex items-center justify-center shadow-sm group-hover:bg-black group-hover:text-white transition-all duration-500">
-                   <Icon name="heroicons:envelope" class="w-6 h-6" />
+                   <Icon name="lucide:mail" class="w-6 h-6" />
                 </div> -->
                 <div>
                    <h4 class="text-sm font-bold text-gray-900 mb-1">Email Registry</h4>
@@ -49,7 +49,7 @@
              <Transition name="fade">
                <div v-if="success" class="absolute inset-0 bg-white/95 backdrop-blur-md flex flex-col items-center justify-center p-12 text-center z-20">
                   <div class="w-24 h-24 bg-emerald-50 text-emerald-500 rounded-[2.5rem] flex items-center justify-center mb-8 animate-bounce-slow">
-                     <Icon name="heroicons:check-circle" class="w-12 h-12" />
+                     <Icon name="lucide:check-circle" class="w-12 h-12" />
                   </div>
                   <h3 class="text-2xl font-bold text-gray-900 tracking-tighter  mb-4">Transmission Received</h3>
                   <p class="text-gray-500 font-medium mb-10 max-w-xs">Your enquiry has been successfully logged into our governance system. An expert will be in touch shortly.</p>

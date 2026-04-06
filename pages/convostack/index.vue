@@ -49,7 +49,7 @@
               class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
             />
             <div v-else class="w-full h-full flex items-center justify-center bg-[#27628C]/5 text-[#27628C]">
-               <Icon name="heroicons:document-text" class="w-20 h-20 opacity-20" />
+               <Icon name="lucide:file-text" class="w-20 h-20 opacity-20" />
             </div>
           </NuxtLink>
           
@@ -87,7 +87,7 @@
                <h3 class="text-xs font-bold text-gray-400">{{ activeCategory || 'Latest' }} from the stack</h3>
                <div class="relative max-w-[200px]">
                   <input v-model="searchQuery" type="text" placeholder="Search..." class="w-full pl-8 pr-4 py-2 bg-gray-50 border border-gray-100 rounded-full text-xs outline-none focus:border-[#27628C] transition-all" />
-                  <!-- <Icon name="heroicons:magnifying-glass" class="absolute left-3 top-1/2 -translate-y-1/2 w-3 h-3 text-gray-400" /> -->
+                  <!-- <Icon name="lucide:search" class="absolute left-3 top-1/2 -translate-y-1/2 w-3 h-3 text-gray-400" /> -->
                </div>
             </div>
 
@@ -119,7 +119,7 @@
                   <NuxtLink :to="`/convostack/${pub.slug}`" class="w-full md:w-40 aspect-[4/3] rounded-xl overflow-hidden bg-gray-50 border border-gray-100 shrink-0 shadow-sm group-hover:shadow-md transition-all">
                     <img v-if="pub.coverImage" :src="pub.coverImage" class="w-full h-full object-cover transition-transform group-hover:scale-105" />
                     <div v-else class="w-full h-full flex items-center justify-center text-[#27628C]/20">
-                       <Icon name="heroicons:document" class="w-10 h-10" />
+                       <Icon name="lucide:file" class="w-10 h-10" />
                     </div>
                   </NuxtLink>
                 </div>
@@ -166,7 +166,7 @@
       <!-- Empty State -->
       <div v-else class="text-center py-40 animate-in fade-in zoom-in duration-700">
         <div class="w-20 h-20 bg-gray-50 rounded-full mx-auto mb-8 flex items-center justify-center border border-gray-100">
-           <Icon name="heroicons:magnifying-glass" class="w-8 h-8 text-gray-300" />
+           <Icon name="lucide:search" class="w-8 h-8 text-gray-300" />
         </div>
         <h3 class="text-xl font-bold text-gray-900 tracking-tight">Nothing found in the stack</h3>
         <p class="text-gray-400 mt-2 text-sm">We couldn't find any articles matching your search criteria.</p>

@@ -28,8 +28,8 @@
                 toastData.toastType === 'success' ? 'bg-emerald-50 text-emerald-500' : 'bg-red-50 text-red-500'
               ]"
             >
-              <Icon v-if="toastData.toastType === 'success'" name="heroicons:check-circle" class="w-6 h-6" />
-              <Icon v-else name="heroicons:exclamation-circle" class="w-6 h-6" />
+              <Icon v-if="toastData.toastType === 'success'" name="lucide:check-circle-2" class="w-6 h-6" />
+              <Icon v-else name="lucide:alert-circle" class="w-6 h-6" />
             </div>
             <div class="flex-1">
               <h4 class="text-sm font-bold text-gray-900">{{ toastData.title }}</h4>

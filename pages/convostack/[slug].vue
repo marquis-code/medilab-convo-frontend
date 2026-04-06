@@ -22,6 +22,9 @@
           <h1 class="text-4xl md:text-8xl font-bold text-gray-900 leading-[1.05] tracking-tighter mb-10 max-w-5xl">
             {{ publication.title }}
           </h1>
+          <p v-if="publication.subtitle" class="text-xl md:text-4xl text-[#27628C] font-bold leading-tight mb-8 max-w-4xl italic">
+            {{ publication.subtitle }}
+          </p>
           <p class="text-xl md:text-3xl text-gray-500 font-medium leading-relaxed max-w-3xl">
             {{ publication.excerpt }}
           </p>
@@ -91,37 +94,46 @@
 
             <!-- Content Blocks Renderer -->
             <div class="space-y-12 mb-32">
-              <div v-for="(block, index) in (publication.contentBlocks as any[])" :key="index" class="animate-fade-in-up" :style="{ animationDelay: `${(index as number) * 100}ms` }">
+              <!-- Substack High-Fidelity HTML Rendering -->
+              <div v-if="publication.bodyHtml" class="substack-content prose prose-lg sm:prose-xl prose-slate max-w-none 
+                prose-headings:font-bold prose-headings:tracking-tight prose-headings:text-gray-900 
+                prose-p:text-gray-500 prose-p:leading-8 prose-p:font-medium
+                prose-strong:text-gray-900 prose-a:text-[#27628C] prose-a:no-underline hover:prose-a:underline
+                prose-li:text-gray-500 prose-li:font-medium" v-html="publication.bodyHtml"></div>
 
-                <!-- Text Block -->
-                <div v-if="block.type === 'text'" class="prose prose-lg sm:prose-xl prose-slate max-w-none 
-                  prose-headings:font-bold prose-headings:tracking-tight prose-headings:text-gray-900 
-                  prose-p:text-gray-500 prose-p:leading-8 prose-p:font-medium
-                  prose-strong:text-gray-900 prose-a:text-[#27628C] prose-a:no-underline hover:prose-a:underline
-                  prose-li:text-gray-500 prose-li:font-medium" v-html="block.content"></div>
+              <!-- Standard Block-based Rendering Fallback -->
+              <template v-else>
+                <div v-for="(block, index) in (publication.contentBlocks as any[])" :key="index" class="animate-fade-in-up" :style="{ animationDelay: `${(index as number) * 100}ms` }">
+                  <!-- Text Block -->
+                  <div v-if="block.type === 'text'" class="prose prose-lg sm:prose-xl prose-slate max-w-none 
+                    prose-headings:font-bold prose-headings:tracking-tight prose-headings:text-gray-900 
+                    prose-p:text-gray-500 prose-p:leading-8 prose-p:font-medium
+                    prose-strong:text-gray-900 prose-a:text-[#27628C] prose-a:no-underline hover:prose-a:underline
+                    prose-li:text-gray-500 prose-li:font-medium" v-html="block.content"></div>
 
-                <!-- Image Block -->
-                <figure v-if="block.type === 'image'" class="my-16">
-                  <div class="overflow-hidden rounded-[2.5rem] bg-gray-50 border border-gray-100 shadow-sm group">
-                    <img :src="block.content" :alt="block.caption || 'Publication image'" class="w-full h-auto transition-transform duration-700 group-hover:scale-105" />
+                  <!-- Image Block -->
+                  <figure v-if="block.type === 'image'" class="my-16">
+                    <div class="overflow-hidden rounded-[2.5rem] bg-gray-50 border border-gray-100 shadow-sm group">
+                      <img :src="block.content" :alt="block.caption || 'Publication image'" class="w-full h-auto transition-transform duration-700 group-hover:scale-105" />
+                    </div>
+                    <figcaption v-if="block.caption" class="mt-6 text-center text-sm font-bold text-gray-400 capitalize">{{ block.caption }}</figcaption>
+                  </figure>
+
+                  <!-- Quote Block -->
+                  <blockquote v-if="block.type === 'quote'" class="my-16 py-12 px-8 border-y border-gray-100 relative text-center">
+                    <div class="absolute -top-6 left-1/2 -translate-x-1/2 bg-white px-6">
+                      <svg class="w-12 h-12 text-[#27628C]/20" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21L14.017 18C14.017 16.8954 14.9124 16 16.017 16H19.017C19.5693 16 20.017 15.5523 20.017 15V9C20.017 8.44772 19.5693 8 19.017 8H16.017C14.9124 8 14.017 7.10457 14.017 6V3L14.017 3H21.017V15C21.017 18.3137 18.3307 21 15.017 21H14.017ZM3.017 21L3.017 18C3.017 16.8954 3.91243 16 5.017 16H8.017C8.56928 16 9.017 15.5523 9.017 15V9C9.017 8.44772 8.56928 8 8.017 8H5.017C3.91243 8 3.017 7.10457 3.017 6V3L3.017 3H10.017V15C10.017 18.3137 7.33071 21 4.017 21H3.017Z"/></svg>
+                    </div>
+                    <p class="text-2xl md:text-5xl text-gray-900 leading-tight font-medium font-serif">{{ block.content }}</p>
+                    <cite v-if="block.caption" class="block mt-8 text-sm font-bold text-[#27628C] uppercase tracking-normal not-italic">— {{ block.caption }}</cite>
+                  </blockquote>
+
+                  <!-- Divider Block -->
+                  <div v-if="block.type === 'divider'" class="my-20 flex items-center justify-center">
+                    <div class="h-1.5 w-12 bg-[#27628C]/20 rounded-full"></div>
                   </div>
-                  <figcaption v-if="block.caption" class="mt-6 text-center text-sm font-bold text-gray-400 capitalize">{{ block.caption }}</figcaption>
-                </figure>
-
-                <!-- Quote Block -->
-                <blockquote v-if="block.type === 'quote'" class="my-16 py-12 px-8 border-y border-gray-100 relative text-center">
-                  <div class="absolute -top-6 left-1/2 -translate-x-1/2 bg-white px-6">
-                    <svg class="w-12 h-12 text-[#27628C]/20" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21L14.017 18C14.017 16.8954 14.9124 16 16.017 16H19.017C19.5693 16 20.017 15.5523 20.017 15V9C20.017 8.44772 19.5693 8 19.017 8H16.017C14.9124 8 14.017 7.10457 14.017 6V3L14.017 3H21.017V15C21.017 18.3137 18.3307 21 15.017 21H14.017ZM3.017 21L3.017 18C3.017 16.8954 3.91243 16 5.017 16H8.017C8.56928 16 9.017 15.5523 9.017 15V9C9.017 8.44772 8.56928 8 8.017 8H5.017C3.91243 8 3.017 7.10457 3.017 6V3L3.017 3H10.017V15C10.017 18.3137 7.33071 21 4.017 21H3.017Z"/></svg>
-                  </div>
-                  <p class="text-2xl md:text-5xl text-gray-900 leading-tight font-medium font-serif">{{ block.content }}</p>
-                  <cite v-if="block.caption" class="block mt-8 text-sm font-bold text-[#27628C] uppercase tracking-normal not-italic">— {{ block.caption }}</cite>
-                </blockquote>
-
-                <!-- Divider Block -->
-                <div v-if="block.type === 'divider'" class="my-20 flex items-center justify-center">
-                  <div class="h-1.5 w-12 bg-[#27628C]/20 rounded-full"></div>
                 </div>
-              </div>
+              </template>
             </div>
 
             <!-- Discourse Section integrated into footer flow -->
@@ -180,8 +192,9 @@
             <!-- Root Comment Card -->
             <div class="flex gap-5 group">
               <div class="flex flex-col items-center">
-                <div class="w-12 h-12 rounded-[1.5rem] bg-slate-50 flex items-center justify-center text-[#27628C] font-black text-sm flex-shrink-0 z-10 border-2 border-white shadow-md">
-                  {{ (comment.userName || '?').charAt(0).toUpperCase() }}
+                <div class="w-12 h-12 rounded-[1.5rem] bg-slate-50 flex items-center justify-center text-[#27628C] font-black text-sm flex-shrink-0 z-10 border-2 border-white shadow-md overflow-hidden">
+                  <img v-if="comment.photoUrl" :src="comment.photoUrl" class="w-full h-full object-cover" />
+                  <span v-else>{{ (comment.userName || '?').charAt(0).toUpperCase() }}</span>
                 </div>
                 <!-- Continuous Thread Line -->
                 <div v-if="comment.replies?.length || replyTo?._id === comment._id" class="w-[2px] h-full bg-slate-100 my-2 group-hover:bg-[#27628C]/10 transition-colors"></div>
@@ -225,8 +238,9 @@
             <!-- Threaded Replies (Professional Indent) -->
             <div v-if="comment.replies?.length" class="ml-[1.5rem] pl-[1.5rem] border-l-[2px] border-slate-50 flex flex-col gap-8 pt-4">
               <div v-for="reply in comment.replies" :key="reply._id" class="flex gap-4 group/reply">
-                <div class="w-10 h-10 rounded-[1.25rem] bg-white flex items-center justify-center text-[#27628C] font-bold text-xs flex-shrink-0 border border-slate-100 shadow-sm group-hover/reply:border-[#27628C]/30 transition-all">
-                  {{ (reply.userName || '?').charAt(0).toUpperCase() }}
+                <div class="w-10 h-10 rounded-[1.25rem] bg-white flex items-center justify-center text-[#27628C] font-bold text-xs flex-shrink-0 border border-slate-100 shadow-sm group-hover/reply:border-[#27628C]/30 transition-all overflow-hidden">
+                  <img v-if="reply.photoUrl" :src="reply.photoUrl" class="w-full h-full object-cover" />
+                  <span v-else>{{ (reply.userName || '?').charAt(0).toUpperCase() }}</span>
                 </div>
                 <div class="flex-1">
                   <div class="flex items-center gap-3 mb-1.5">

@@ -94,7 +94,7 @@ definePageMeta({
       
       <!-- Navigation -->
       <NuxtLink to="/programs" class="inline-flex items-center gap-2 text-gray-900 hover:text-[#27628C] transition-colors mb-12 group">
-        <Icon name="heroicons:arrow-left" class="w-4 h-4 group-hover:-translate-x-1 transition-transform" />
+        <Icon name="lucide:arrow-left" class="w-4 h-4 group-hover:-translate-x-1 transition-transform" />
         <span class="text-sm font-medium">Back to directory</span>
       </NuxtLink>
 
@@ -107,7 +107,7 @@ definePageMeta({
       <!-- Error State -->
       <div v-else-if="error && !form" class="border border-gray-100 rounded-3xl p-12 text-center animate-fade-in">
         <div class="w-16 h-16 bg-red-50 rounded-2xl flex items-center justify-center text-red-500 mx-auto mb-6">
-          <Icon name="heroicons:exclamation-circle" class="w-8 h-8" />
+          <Icon name="lucide:alert-circle" class="w-8 h-8" />
         </div>
         <h3 class="text-xl font-black text-gray-900 mb-2">Form unavailable</h3>
         <p class="text-gray-900 text-sm mb-8">{{ error }}</p>
@@ -122,7 +122,7 @@ definePageMeta({
       <!-- Success State -->
       <div v-else-if="submitted && form" class="border border-gray-100 rounded-[2.5rem] p-12 text-center animate-fade-in">
         <div class="w-20 h-20 bg-emerald-50 rounded-full flex items-center justify-center text-emerald-600 mx-auto mb-8">
-          <Icon name="heroicons:check-circle" class="w-10 h-10" />
+          <Icon name="lucide:check-circle" class="w-10 h-10" />
         </div>
         <h3 class="text-2xl font-black text-gray-900 mb-4">Form submitted successfully</h3>
         <p class="text-gray-900 text-base mb-10 leading-relaxed">
@@ -180,7 +180,7 @@ definePageMeta({
             </p>
 
             <div v-if="form.instructions" class="flex gap-4 p-5 bg-blue-50/50 rounded-2xl border border-blue-100/50">
-              <Icon name="heroicons:information-circle" class="w-5 h-5 text-blue-500 flex-shrink-0 mt-0.5" />
+              <Icon name="lucide:info" class="w-5 h-5 text-blue-500 flex-shrink-0 mt-0.5" />
               <p class="text-sm font-medium text-blue-700 leading-relaxed">{{ form.instructions }}</p>
             </div>
           </div>
