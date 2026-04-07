@@ -2,7 +2,6 @@
 import type { Form, FormResponse, SubmitFormPayload } from '@/types/form'
 import { useSubmitFormByToken } from '@/composables/modules/forms/useSubmitFormByToken'
 import { useFetchFormByToken } from '@/composables/modules/forms/useFetchFormByToken'
-import { linkify } from '@/utils/linkify'
 
 const route = useRoute()
 const router = useRouter()

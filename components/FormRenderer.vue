@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import type { Form, FormField, FormResponse } from '@/types/form'
 import { FormFieldType } from '@/types/form'
-import { linkify } from '@/utils/linkify'
 
 const props = defineProps<{
   form: Form
@@ -120,7 +119,7 @@ const handleCheckboxChange = (fieldId: string, option: string, checked: boolean)
 }
 </script>
 
-<<template>
+<template>
   <div class="w-full">
     <form @submit.prevent="handleSubmit" class="space-y-10">
       <!-- Email field (Optional) -->

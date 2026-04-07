@@ -3,11 +3,12 @@
  * @param text The text to linkify.
  * @returns The linkified and escaped HTML string.
  */
-export const linkify = (text: string | null | undefined): string => {
-  if (!text) return ''
+export const linkify = (text: any): string => {
+  if (text === null || text === undefined) return ''
+  const str = String(text)
 
   // Escape HTML to prevent XSS
-  const escaped = text
+  const escaped = str
     .replace(/&/g, '&amp;')
     .replace(/</g, '&lt;')
     .replace(/>/g, '&gt;')
