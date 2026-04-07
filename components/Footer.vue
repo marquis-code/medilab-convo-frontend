@@ -149,14 +149,12 @@ const handleSubscribe = async () => {
 const platform = [
   { name: 'Journo', href: '/journo' },
   { name: 'LabCast', href: '/lab-cast' },
-  { name: 'Convo Stack', href: '/convostack' },
   { name: 'Programs', href: '/programs' },
   { name: 'Products', href: '/products' },
   { name: 'Resources', href: '/resources' },
 ]
 
 const company = [
-  { name: 'Leadership', href: '/teams' },
   { name: 'About Us', href: '/about-us' },
   { name: 'Community', href: '/community' },
   { name: 'Contact', href: '/contact-us' },

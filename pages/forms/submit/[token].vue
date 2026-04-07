@@ -2,6 +2,7 @@
 import type { Form, FormResponse, SubmitFormPayload } from '@/types/form'
 import { useSubmitFormByToken } from '@/composables/modules/forms/useSubmitFormByToken'
 import { useFetchFormByToken } from '@/composables/modules/forms/useFetchFormByToken'
+import { linkify } from '@/utils/linkify'
 
 const route = useRoute()
 const router = useRouter()
@@ -125,8 +126,7 @@ definePageMeta({
           <Icon name="lucide:check-circle" class="w-10 h-10" />
         </div>
         <h3 class="text-2xl font-black text-gray-900 mb-4">Form submitted successfully</h3>
-        <p class="text-gray-900 text-base mb-10 leading-relaxed">
-          {{ form.successMessage || 'Thank you for your response. Your submission has been received.' }}
+        <p class="text-gray-900 text-base mb-10 leading-relaxed" v-html="linkify(form.successMessage || 'Thank you for your response. Your submission has been received.')">
         </p>
         
         <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -175,13 +175,12 @@ definePageMeta({
             </div>
             
             <h1 class="text-2xl md:text-4xl font-black text-gray-900 tracking-tight">{{ form.title }}</h1>
-            <p v-if="form.description" class="text-base text-gray-900 leading-relaxed max-w-2xl">
-              {{ form.description }}
+            <p v-if="form.description" class="text-base text-gray-900 leading-relaxed max-w-2xl" v-html="linkify(form.description)">
             </p>
 
             <div v-if="form.instructions" class="flex gap-4 p-5 bg-blue-50/50 rounded-2xl border border-blue-100/50">
               <Icon name="lucide:info" class="w-5 h-5 text-blue-500 flex-shrink-0 mt-0.5" />
-              <p class="text-sm font-medium text-blue-700 leading-relaxed">{{ form.instructions }}</p>
+              <p class="text-sm font-medium text-blue-700 leading-relaxed" v-html="linkify(form.instructions)"></p>
             </div>
           </div>
         </div>

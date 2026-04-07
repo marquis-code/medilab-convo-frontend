@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import type { Form, FormField, FormResponse } from '@/types/form'
 import { FormFieldType } from '@/types/form'
+import { linkify } from '@/utils/linkify'
 
 const props = defineProps<{
   form: Form
@@ -153,11 +154,10 @@ const handleCheckboxChange = (fieldId: string, option: string, checked: boolean)
           <!-- Field Label & Description -->
           <div class="space-y-1">
             <label :for="field.id" class="text-sm font-bold text-gray-900 flex items-center gap-1.5">
-              {{ field.label }}
+              <span v-html="linkify(field.label)"></span>
               <span v-if="field.required" class="text-red-500">*</span>
             </label>
-            <p v-if="field.description" class="text-sm text-gray-900 leading-relaxed max-w-2xl">
-              {{ field.description }}
+            <p v-if="field.description" class="text-sm text-gray-900 leading-relaxed max-w-2xl" v-html="linkify(field.description)">
             </p>
           </div>
 
@@ -234,8 +234,7 @@ const handleCheckboxChange = (fieldId: string, option: string, checked: boolean)
                 ]">
                   <div v-if="formData[field.id] === option" class="w-1 h-1 rounded-full bg-white"></div>
                 </div>
-                <span :class="['text-sm font-medium', formData[field.id] === option ? 'text-[#27628C]' : 'text-gray-600']">
-                  {{ option }}
+                <span :class="['text-sm font-medium', formData[field.id] === option ? 'text-[#27628C]' : 'text-gray-600']" v-html="linkify(option)">
                 </span>
               </label>
             </div>
@@ -265,8 +264,7 @@ const handleCheckboxChange = (fieldId: string, option: string, checked: boolean)
                 ]">
                   <Icon v-if="(formData[field.id] || []).includes(option)" name="lucide:check" class="w-3 h-3 text-white" />
                 </div>
-                <span :class="['text-sm font-medium', (formData[field.id] || []).includes(option) ? 'text-[#27628C]' : 'text-gray-600']">
-                  {{ option }}
+                <span :class="['text-sm font-medium', (formData[field.id] || []).includes(option) ? 'text-[#27628C]' : 'text-gray-600']" v-html="linkify(option)">
                 </span>
               </label>
             </div>

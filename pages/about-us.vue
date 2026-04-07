@@ -134,12 +134,36 @@
         </div>
       </div>
     </div>
+
+    <!-- Leadership Team -->
+    <div class="py-24 bg-white sm:py-32">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8 text-center mb-16">
+        <h2 class="text-3xl font-bold text-gray-900 tracking-tight">Our Leadership</h2>
+        <p class="text-gray-500 mt-4 font-medium leading-relaxed max-w-2xl mx-auto">Meet the visionary team driving clinical excellence and innovation at MedLabConvo.</p>
+        <div class="mt-4 h-1.5 w-20 bg-[#27628C] mx-auto rounded-full"></div>
+      </div>
+      <LeadershipSection />
+    </div>
+
+    <!-- Newsletter CTA -->
+    <section class="py-24 bg-gray-50 border-t border-gray-100">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-12">
+        <div class="max-w-xl">
+          <h2 class="text-3xl font-bold text-gray-900 tracking-tighter">Join the Conversation</h2>
+          <p class="text-gray-500 mt-4 font-medium leading-relaxed">Stay updated with our latest initiatives, research pulses, and community events directly in your inbox.</p>
+        </div>
+        <NuxtLink to="/journo" class="px-12 py-5 bg-[#27628C] text-white rounded-2xl font-bold text-[11px] tracking-normal hover:bg-black transition-all shadow-xl active:scale-95">
+          Explore Journo
+        </NuxtLink>
+      </div>
+    </section>
   </main>
 </template>
 
 <script setup lang="ts">
 import { onMounted, ref } from 'vue'
 import { useGetCms } from '@/composables/modules/cms/useGetCms'
+import LeadershipSection from '@/components/LeadershipSection.vue'
 import { useHead } from '#imports'
 
 const { singleCms, getCmsByKey } = useGetCms()

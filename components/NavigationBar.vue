@@ -36,7 +36,7 @@
         </NuxtLink>
       </div>
       <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-         <NuxtLink to="/teams" class="text-sm font-semibold leading-6 text-white bg-[#27628C] hover:bg-[#1a425f] shadow-lg px-6 py-2.5 rounded-full transition-all duration-300 group">
+         <NuxtLink to="/about-us" class="text-sm font-semibold leading-6 text-white bg-[#27628C] hover:bg-[#1a425f] shadow-lg px-6 py-2.5 rounded-full transition-all duration-300 group">
           About Us <span aria-hidden="true" class="inline-block transition-transform group-hover:translate-x-1 ml-1">&rarr;</span>
         </NuxtLink>
       </div>
@@ -65,7 +65,7 @@
               </NuxtLink>
             </div>
             <div class="py-6">
-              <NuxtLink @click="isOpen = false" to="/teams" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-white bg-[#27628C] hover:bg-[#1a425f] transition-colors text-center">
+              <NuxtLink @click="isOpen = false" to="/about-us" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-white bg-[#27628C] hover:bg-[#1a425f] transition-colors text-center">
                 About Us
               </NuxtLink>
             </div>
@@ -85,10 +85,8 @@ const isOpen = ref(false)
 const isScrolled = ref(false)
 
 const navigation = [
-  { name: 'Teams', href: '/teams' },
   { name: 'Journo', href: '/journo' },
   { name: 'LabCast', href: '/lab-cast' },
-  { name: 'Convo Stack', href: '/convostack' },
   { name: 'Programs', href: '/programs' },
   { name: 'Community', href: '/community' },
   { name: 'Products', href: '/products' },
