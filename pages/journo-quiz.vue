@@ -97,7 +97,7 @@
             
             <template v-if="currentQuestion.isBonus">
                <div class="mt-6 text-xs md:text-base bg-white/10 p-4 rounded-xl border border-white/20 italic font-medium opacity-90">
-                  👉 Defend your answer in the Medilab Convo group chat! We want to hear your thoughts.
+                  👉 Defend your answer in the Medlab Convo group chat! We want to hear your thoughts.
                </div>
             </template>
           </h2>
@@ -319,7 +319,7 @@ const questions = ref([
         label: "B", 
         text: "The government", 
         isCorrect: true, 
-        answerText: "Answer: B — Protect workers.\nIt's a bonus! Every answer counts." 
+        answerText: "It's a bonus! Every answer counts." 
       },
       { label: "C", text: "The institutions", isCorrect: true },
       { label: "D", text: "Everyone shares the blame", isCorrect: true }
