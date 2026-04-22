@@ -1,25 +1,19 @@
 <template>
-    <div class="overflow-hidden bg-white mt-16">
+    <div class="overflow-hidden bg-white">
 
         <!-- HERO SECTION -->
         <section class="relative bg-gradient-to-br from-[#f0f6fb] via-white to-[#e8f2f9] py-20 px-6 overflow-hidden">
-            <!-- Decorative background blobs -->
-            <div class="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-[#27628C]/8 blur-3xl pointer-events-none">
-            </div>
-            <div class="absolute bottom-0 -left-20 w-72 h-72 rounded-full bg-[#27628C]/6 blur-2xl pointer-events-none">
-            </div>
+            <div class="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-[#27628C]/8 blur-3xl pointer-events-none"></div>
+            <div class="absolute bottom-0 -left-20 w-72 h-72 rounded-full bg-[#27628C]/6 blur-2xl pointer-events-none"></div>
 
             <div class="relative max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-14">
                 <div class="flex-1 text-center lg:text-left">
-                    <span
-                        class="inline-block mb-4 text-xs font-semibold uppercase tracking-widest text-[#27628C] bg-[#27628C]/10 px-4 py-1.5 rounded-full">Available Now for Order</span>
-                    <h1 class="font-extrabold text-5xl lg:text-6xl leading-tight text-gray-900 mb-6"
-                        style="font-family: 'Georgia', serif;">
+                    <span class="inline-block mb-4 text-xs font-semibold uppercase tracking-widest text-[#27628C] bg-[#27628C]/10 px-4 py-1.5 rounded-full">Available Now for Order</span>
+                    <h1 class="font-extrabold text-5xl lg:text-6xl leading-tight text-gray-900 mb-6" style="font-family: 'Georgia', serif;">
                         The Degree<br />
                         <span class="text-[#27628C]">Delusion</span>
                     </h1>
-                    <p class="text-gray-500 text-base lg:text-lg italic mb-6 max-w-xl mx-auto lg:mx-0"
-                        style="font-family: 'Georgia', serif;">
+                    <p class="text-gray-500 text-base lg:text-lg italic mb-6 max-w-xl mx-auto lg:mx-0" style="font-family: 'Georgia', serif;">
                         Why Your Degree is Not Enough and How You Can Win Before You Graduate
                     </p>
                     <p class="text-gray-600 text-lg leading-relaxed max-w-xl mx-auto lg:mx-0 mb-8">
@@ -28,8 +22,7 @@
                         university years as the most flexible, resource-rich season of your life.
                     </p>
                     <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                        <a href="https://selar.com/p/72447137r3?affiliate=v6494e7245" target="_blank"
-                            rel="noopener noreferrer"
+                        <a href="https://selar.com/p/72447137r3?affiliate=v6494e7245" target="_blank" rel="noopener noreferrer"
                             class="inline-flex items-center justify-center gap-2 bg-[#27628C] hover:bg-[#1e4f73] text-white font-semibold px-8 py-3.5 rounded-lg transition-all duration-200 shadow-lg shadow-[#27628C]/30 hover:shadow-xl hover:shadow-[#27628C]/40 hover:-translate-y-0.5">
                             Order Now
                         </a>
@@ -40,7 +33,6 @@
                     </div>
                 </div>
 
-                <!-- Book Image -->
                 <div class="flex-shrink-0 flex justify-center lg:justify-end">
                     <img src="@/assets/img/book-cover.png" alt="The Degree Delusion book cover"
                         class="w-[32rem] object-contain drop-shadow-2xl" />
@@ -52,8 +44,7 @@
         <section id="overview" class="py-16 px-6 bg-white">
             <div class="max-w-6xl mx-auto">
                 <div class="text-center mb-14">
-                    <h2 class="text-3xl lg:text-4xl font-extrabold text-gray-900 mb-4"
-                        style="font-family:'Georgia',serif;">Inside the Book</h2>
+                    <h2 class="text-3xl lg:text-4xl font-extrabold text-gray-900 mb-4" style="font-family:'Georgia',serif;">Inside the Book</h2>
                     <p class="text-gray-500 max-w-2xl mx-auto text-lg">
                         To every undergraduate, recent graduate or young professional navigating uncertainty,
                         expectations, and ambition, this book provides actionable insights to navigate the evolving
@@ -61,7 +52,6 @@
                     </p>
                 </div>
 
-                <!-- Overview prose -->
                 <div class="bg-[#f8fbfe] border border-[#27628C]/10 rounded-2xl p-8 lg:p-12 mb-14">
                     <p class="text-gray-700 leading-relaxed text-base lg:text-lg mb-4">
                         Study hard. Get good grades. Earn a degree. And life will open up. For the older generation, it
@@ -79,7 +69,6 @@
                     </p>
                 </div>
 
-                <!-- What you'll learn cards -->
                 <h3 class="text-xl font-bold text-gray-900 mb-8 text-center">Inside, you'll learn how to:</h3>
                 <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
                     <div v-for="(item, i) in insideItems" :key="i"
@@ -94,42 +83,66 @@
             </div>
         </section>
 
-        <!-- VIRTUAL BOOK LAUNCH -->
+        <!-- VIDEOS SECTION -->
         <section class="py-16 px-6 bg-[#27628C] relative overflow-hidden">
-            <div
-                class="absolute top-0 right-0 w-80 h-80 rounded-full bg-white/5 -translate-y-1/2 translate-x-1/2 pointer-events-none">
-            </div>
-            <div
-                class="absolute bottom-0 left-0 w-64 h-64 rounded-full bg-white/5 translate-y-1/2 -translate-x-1/2 pointer-events-none">
-            </div>
+            <div class="absolute top-0 right-0 w-80 h-80 rounded-full bg-white/5 -translate-y-1/2 translate-x-1/2 pointer-events-none"></div>
+            <div class="absolute bottom-0 left-0 w-64 h-64 rounded-full bg-white/5 translate-y-1/2 -translate-x-1/2 pointer-events-none"></div>
 
-            <div class="relative max-w-4xl mx-auto text-center">
-                <h2 class="text-3xl lg:text-4xl font-extrabold text-white mb-4" style="font-family:'Georgia',serif;">
-                    Join the Virtual Book Launch</h2>
-                <p class="text-white/75 text-lg mb-12 max-w-2xl mx-auto">
-                    Be part of our exclusive live event featuring a keynote address, a Q&A with the author, and special
-                    guest panels.
-                </p>
-
-                <div class="grid sm:grid-cols-3 gap-4 mb-10">
-                    <div class="bg-white/10 backdrop-blur rounded-xl p-6 border border-white/15">
-                        <p class="text-white/60 text-xs uppercase tracking-widest mb-2">Date</p>
-                        <p class="text-white font-bold text-xl">March 31, 2026</p>
-                    </div>
-                    <div class="bg-white/10 backdrop-blur rounded-xl p-6 border border-white/15">
-                        <p class="text-white/60 text-xs uppercase tracking-widest mb-2">Time</p>
-                        <p class="text-white font-bold text-xl">7:00 PM WAT</p>
-                    </div>
-                    <div class="bg-white/10 backdrop-blur rounded-xl p-6 border border-white/15">
-                        <p class="text-white/60 text-xs uppercase tracking-widest mb-2">Location</p>
-                        <p class="text-white font-bold text-xl">Live Webinar</p>
-                    </div>
+            <div class="relative max-w-6xl mx-auto">
+                <div class="text-center mb-14">
+                    <h2 class="text-3xl lg:text-4xl font-extrabold text-white mb-4" style="font-family:'Georgia',serif;">
+                        Hear from the Book
+                    </h2>
+                    <p class="text-white/70 text-lg max-w-xl mx-auto">
+                        Get a feel for what's inside — watch the Foreword &amp; Introduction, and hear the story behind the book.
+                    </p>
                 </div>
 
-                <a href="https://us06web.zoom.us/meeting/register/r72aBfBPSOG6n3d75L5PFQ"
-                    class="inline-flex items-center justify-center gap-2 bg-white text-[#27628C] hover:bg-gray-50 font-bold px-10 py-3.5 rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl hover:-translate-y-0.5 disabled">
-                    Register for Event
-                </a>
+                <div class="grid lg:grid-cols-2 gap-8">
+                    <!-- Video 1: Foreword & Introduction -->
+                    <div class="flex flex-col gap-4">
+                        <div
+                            ref="video1Ref"
+                            class="relative aspect-video rounded-[1.5rem] overflow-hidden shadow-2xl border-4 border-white/20 transition-all duration-700"
+                            :class="video1Visible ? 'translate-y-0 opacity-100 scale-100' : 'translate-y-10 opacity-0 scale-95'">
+                            <iframe
+                                class="w-full h-full"
+                                src="https://www.youtube.com/embed/I5nm0cJZUsA"
+                                title="Foreword and Introduction – The Degree Delusion"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin"
+                                allowfullscreen>
+                            </iframe>
+                            <div class="absolute inset-0 pointer-events-none border border-white/10 rounded-[1.5rem]"></div>
+                        </div>
+                        <div class="text-center">
+                            <p class="text-[10px] font-bold text-white/60 uppercase tracking-[0.3em]">Foreword &amp; Introduction</p>
+                        </div>
+                    </div>
+
+                    <!-- Video 2: Story of the Book -->
+                    <div class="flex flex-col gap-4">
+                        <div
+                            ref="video2Ref"
+                            class="relative aspect-video rounded-[1.5rem] overflow-hidden shadow-2xl border-4 border-white/20 transition-all duration-700 delay-150"
+                            :class="video2Visible ? 'translate-y-0 opacity-100 scale-100' : 'translate-y-10 opacity-0 scale-95'">
+                            <iframe
+                                class="w-full h-full"
+                                src="https://www.youtube.com/embed/mSvRnpVH7xE"
+                                title="Story of the Book – The Degree Delusion"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin"
+                                allowfullscreen>
+                            </iframe>
+                            <div class="absolute inset-0 pointer-events-none border border-white/10 rounded-[1.5rem]"></div>
+                        </div>
+                        <div class="text-center">
+                            <p class="text-[10px] font-bold text-white/60 uppercase tracking-[0.3em]">Story of the Book</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -138,30 +151,23 @@
             <div class="max-w-3xl mx-auto text-center">
                 <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-green-50 mb-6">
                     <svg class="w-8 h-8 text-green-500" fill="currentColor" viewBox="0 0 24 24">
-                        <path
-                            d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
                     </svg>
                 </div>
                 <h2 class="text-3xl lg:text-4xl font-extrabold text-gray-900 mb-4" style="font-family:'Georgia',serif;">
-                    Be Part of the Launch
+                    Be Part of the Community
                 </h2>
                 <p class="text-gray-500 text-lg mb-8 max-w-xl mx-auto">
-                    Join our WhatsApp group to get live updates, reminders, and behind-the-scenes moments leading up to
-                    and during the virtual book launch event.
+                    Join our WhatsApp group to stay connected with other readers and get ongoing insights from <em>The Degree Delusion</em>.
                 </p>
-
-          <a      href="https://chat.whatsapp.com/GUttzW3CcMrFrjo20TVyyU?mode=gi_t"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="inline-flex items-center justify-center gap-3 bg-[#27628C] hover:bg-[#1e4f73] text-white
-                font-bold px-10 py-4 rounded-xl transition-all duration-200 shadow-lg shadow-blue-500/30
-                hover:shadow-xl hover:shadow-blue-500/40 hover:-translate-y-0.5 text-base"
-                >
-                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                    <path
-                        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
-                </svg>
-                    Join the Launch Group
+                <a href="https://chat.whatsapp.com/GUttzW3CcMrFrjo20TVyyU?mode=gi_t"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="inline-flex items-center justify-center gap-3 bg-[#27628C] hover:bg-[#1e4f73] text-white font-bold px-10 py-4 rounded-xl transition-all duration-200 shadow-lg shadow-blue-500/30 hover:shadow-xl hover:shadow-blue-500/40 hover:-translate-y-0.5 text-base">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                    </svg>
+                    Join the WhatsApp Group
                 </a>
             </div>
         </section>
@@ -170,21 +176,17 @@
         <section class="py-16 px-6 bg-white">
             <div class="max-w-6xl mx-auto">
                 <div class="text-center mb-14">
-                    <h2 class="text-3xl lg:text-4xl font-extrabold text-gray-900 mb-4"
-                        style="font-family:'Georgia',serif;">
+                    <h2 class="text-3xl lg:text-4xl font-extrabold text-gray-900 mb-4" style="font-family:'Georgia',serif;">
                         Featured Panelists
                     </h2>
                     <p class="text-gray-500 max-w-xl mx-auto">
-                        Meet the thought leaders and industry experts joining us at the virtual book launch.
+                        Meet the thought leaders and industry experts who joined us at the virtual book launch.
                     </p>
                 </div>
                 <div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-                    <div v-for="(panelist, i) in panelists" :key="i"
-                        class="flex flex-col items-center text-center group">
-                        <div
-                            class="w-24 h-24 rounded-full mb-4 overflow-hidden border-4 border-white shadow-lg group-hover:shadow-xl transition-shadow duration-200">
-                            <img :src="panelist.image" :alt="panelist.name"
-                                class="w-full h-full object-cover object-top" />
+                    <div v-for="(panelist, i) in panelists" :key="i" class="flex flex-col items-center text-center group">
+                        <div class="w-24 h-24 rounded-full mb-4 overflow-hidden border-4 border-white shadow-lg group-hover:shadow-xl transition-shadow duration-200">
+                            <img :src="panelist.image" :alt="panelist.name" class="w-full h-full object-cover object-top" />
                         </div>
                         <p class="font-bold text-gray-900">{{ panelist.name }}</p>
                         <p class="text-sm text-gray-500 mt-1">{{ panelist.title }}</p>
@@ -197,28 +199,21 @@
         <section class="py-16 px-6 bg-[#f0f6fb]">
             <div class="max-w-6xl mx-auto">
                 <div class="text-center mb-14">
-                    <h2 class="text-3xl lg:text-4xl font-extrabold text-gray-900 mb-4"
-                        style="font-family:'Georgia',serif;">Praise from Early Readers</h2>
-                    <p class="text-gray-500 max-w-xl mx-auto">See what readers are saying about <em>The Degree
-                            Delusion</em>.</p>
+                    <h2 class="text-3xl lg:text-4xl font-extrabold text-gray-900 mb-4" style="font-family:'Georgia',serif;">Praise from Early Readers</h2>
+                    <p class="text-gray-500 max-w-xl mx-auto">See what readers are saying about <em>The Degree Delusion</em>.</p>
                 </div>
 
                 <div class="columns-1 sm:columns-2 lg:columns-3 gap-6 space-y-6">
                     <div v-for="(t, i) in testimonials" :key="i"
                         class="break-inside-avoid bg-white rounded-2xl p-6 shadow-sm border border-gray-100 hover:shadow-md transition-shadow duration-200">
-                        <!-- Stars -->
                         <div class="flex gap-1 mb-4">
-                            <svg v-for="s in 5" :key="s" class="w-4 h-4 text-amber-400" fill="currentColor"
-                                viewBox="0 0 20 20">
-                                <path
-                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            <svg v-for="s in 5" :key="s" class="w-4 h-4 text-amber-400" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                             </svg>
                         </div>
                         <p class="text-gray-700 leading-relaxed text-sm mb-5 italic">"{{ t.quote }}"</p>
                         <div class="flex items-center gap-3">
-                            <!-- Avatar placeholder -->
-                            <div
-                                class="w-10 h-10 rounded-full bg-[#27628C]/15 flex items-center justify-center flex-shrink-0">
+                            <div class="w-10 h-10 rounded-full bg-[#27628C]/15 flex items-center justify-center flex-shrink-0">
                                 <span class="text-[#27628C] font-bold text-sm">{{ t.name.charAt(0) }}</span>
                             </div>
                             <div>
@@ -236,26 +231,18 @@
             <div class="max-w-6xl mx-auto flex flex-col lg:flex-row gap-14 items-center">
                 <div class="flex-shrink-0">
                     <div class="relative">
-                        <div class="absolute inset-0 translate-x-3 translate-y-3 bg-[#27628C]/15 rounded-2xl blur-lg">
-                        </div>
-                        <div
-                            class="relative w-64 h-72 bg-gray-200 rounded-2xl overflow-hidden shadow-xl flex items-center justify-center">
-                            <div
-                                class="w-full h-full bg-gradient-to-br from-gray-300 to-gray-400 flex flex-col items-center justify-center">
-                                <img src="@/assets/img/oluwamuyiwa-ogunkoya2.jpg" alt=""
-                                    class="absolute inset-0 w-full h-full object-cover">
+                        <div class="absolute inset-0 translate-x-3 translate-y-3 bg-[#27628C]/15 rounded-2xl blur-lg"></div>
+                        <div class="relative w-64 h-72 bg-gray-200 rounded-2xl overflow-hidden shadow-xl flex items-center justify-center">
+                            <div class="w-full h-full bg-gradient-to-br from-gray-300 to-gray-400 flex flex-col items-center justify-center">
+                                <img src="@/assets/img/oluwamuyiwa-ogunkoya2.jpg" alt="" class="absolute inset-0 w-full h-full object-cover">
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Author info -->
                 <div class="flex-1">
-                    <span
-                        class="inline-block mb-3 text-xs font-semibold uppercase tracking-widest text-[#27628C] bg-[#27628C]/10 px-4 py-1.5 rounded-full">Meet
-                        the Author</span>
-                    <h2 class="text-3xl lg:text-4xl font-extrabold text-gray-900 mb-6"
-                        style="font-family:'Georgia',serif;">Oluwamuyiwa Ogunkoya</h2>
+                    <span class="inline-block mb-3 text-xs font-semibold uppercase tracking-widest text-[#27628C] bg-[#27628C]/10 px-4 py-1.5 rounded-full">Meet the Author</span>
+                    <h2 class="text-3xl lg:text-4xl font-extrabold text-gray-900 mb-6" style="font-family:'Georgia',serif;">Oluwamuyiwa Ogunkoya</h2>
                     <div class="space-y-4 text-gray-600 leading-relaxed">
                         <p>
                             Oluwamuyiwa Ogunkoya is an author, thought leader, researcher and innovator deeply committed
@@ -265,15 +252,10 @@
                         </p>
                         <p>
                             A proven leader with multiple awards and a track record of sustainable impact, Oluwamuyiwa
-                            operates by a simple philosophy: <strong class="text-gray-900">leave every place better than
-                                you met it.</strong>
+                            operates by a simple philosophy: <strong class="text-gray-900">leave every place better than you met it.</strong>
                         </p>
                         <p>
-                            He is the Executive Director of <a href="https://medlabconvo.com" target="_blank"
-                                class="text-[#27628C] font-medium hover:underline">MedLabConvo</a>, co-founder of <a
-                                href="https://bloodlinesfoundation.org" target="_blank"
-                                class="text-[#27628C] font-medium hover:underline">BloodLines</a>, and a Research
-                            Scientist on multiple internationally funded projects.
+                            He is the Executive Director of <a href="https://medlabconvo.com" target="_blank" class="text-[#27628C] font-medium hover:underline">MedLabConvo</a>, co-founder of <a href="https://bloodlinesfoundation.org" target="_blank" class="text-[#27628C] font-medium hover:underline">BloodLines</a>, and a Research Scientist on multiple internationally funded projects.
                         </p>
                         <p>
                             He co-engineered foundational efforts that led to the formation of the African Federation of
@@ -287,7 +269,7 @@
             </div>
         </section>
 
-        <!-- PRE-ORDER CTA -->
+        <!-- ORDER CTA -->
         <section class="py-16 px-6 bg-gradient-to-br from-[#f0f6fb] to-white">
             <div class="max-w-4xl mx-auto text-center">
                 <h2 class="text-3xl lg:text-4xl font-extrabold text-gray-900 mb-4" style="font-family:'Georgia',serif;">
@@ -308,28 +290,46 @@
                 </a>
 
                 <p class="text-gray-400 text-xs mt-6">
-                    As an affiliate partner, MedLabConvo earns a small commission from qualifying purchases at no
-                    additional cost to you.
+                    As an affiliate partner, MedLabConvo earns a small commission from qualifying purchases at no additional cost to you.
                 </p>
             </div>
         </section>
-
-        <footer class="bg-gray-900 text-white py-10 px-6">
-            <div class="max-w-6xl mx-auto flex flex-col items-center gap-4">
-                <p class="font-bold text-lg tracking-wide">MedLabConvo</p>
-                <p class="text-gray-500 text-xs">© 2026 MedLabConvo. All rights reserved.</p>
-            </div>
-        </footer>
 
     </div>
 </template>
 
 <script setup>
+import { ref, onMounted, onUnmounted, nextTick } from 'vue'
 
 import panelist1 from '@/assets/img/adedoyin-aronimo.jpg'
 import panelist2 from '@/assets/img/ahmed-adeagbo.jpg'
 import panelist3 from '@/assets/img/rispha-juma.jpg'
 import panelist4 from '@/assets/img/odinaka-kingsley-obeta.jpg'
+
+// Scroll-animation refs for videos
+const video1Ref = ref(null)
+const video2Ref = ref(null)
+const video1Visible = ref(false)
+const video2Visible = ref(false)
+
+let observer
+
+const setupObserver = () => {
+    observer = new IntersectionObserver(
+        (entries) => {
+            entries.forEach((entry) => {
+                if (entry.target === video1Ref.value && entry.isIntersecting) video1Visible.value = true
+                if (entry.target === video2Ref.value && entry.isIntersecting) video2Visible.value = true
+            })
+        },
+        { threshold: 0.1, rootMargin: '50px' }
+    )
+    if (video1Ref.value) observer.observe(video1Ref.value)
+    if (video2Ref.value) observer.observe(video2Ref.value)
+}
+
+onMounted(() => nextTick(setupObserver))
+onUnmounted(() => observer?.disconnect())
 
 const insideItems = [
     {
@@ -353,7 +353,6 @@ const insideItems = [
         icon: `<path stroke-linecap="round" stroke-linejoin="round" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/>`,
     },
 ]
-
 
 const panelists = [
     { image: panelist1, name: 'Adedoyin Aronimo' },
@@ -402,8 +401,5 @@ const testimonials = [
 
 const retailers = [
     { name: 'Selar', subtitle: 'Digital format' },
-    // { name: 'Amazon', subtitle: 'Hardcover & Kindle' },
-    // { name: 'Barnes & Noble', subtitle: 'Paperback & Nook' },
-    // { name: 'Bookshop.org', subtitle: 'Support local bookshops' },
 ]
 </script>
