@@ -14,6 +14,8 @@ const formData = ref<Record<string, any>>({})
 const submitterEmail = ref('')
 const errors = ref<Record<string, string>>({})
 
+const otherValues = ref<Record<string, string>>({})
+
 // Initialize form data
 const initializeFormData = () => {
   props.form.fields.forEach((field) => {
@@ -22,6 +24,7 @@ const initializeFormData = () => {
     } else {
       formData.value[field.id] = ''
     }
+    otherValues.value[field.id] = ''
   })
 }
 
@@ -31,8 +34,16 @@ onMounted(() => {
 
 // Validate field
 const validateField = (field: FormField, value: any): string | null => {
-  if (field.required && !value) {
-    return `${field.label} is required`
+  if (field.required) {
+    if (!value || (field.type === FormFieldType.CHECKBOX && value.length === 0)) {
+      return `${field.label} is required`
+    }
+    if (value === 'Other' && !otherValues.value[field.id]) {
+      return `Please specify your other answer`
+    }
+    if (field.type === FormFieldType.CHECKBOX && Array.isArray(value) && value.includes('Other') && !otherValues.value[field.id]) {
+      return `Please specify your other answer`
+    }
   }
 
   if (field.type === FormFieldType.EMAIL && value) {
@@ -57,7 +68,7 @@ const validateField = (field: FormField, value: any): string | null => {
     }
   }
 
-  if (field.validation && value) {
+  if (field.validation && value && value !== 'Other') {
     try {
       const regex = new RegExp(field.validation)
       if (!regex.test(value)) {
@@ -94,13 +105,24 @@ const handleSubmit = () => {
   }
 
   // Build responses array
-  const responses: FormResponse[] = props.form.fields.map((field) => ({
-    fieldId: field.id,
-    fieldLabel: field.label,
-    value: Array.isArray(formData.value[field.id])
-      ? formData.value[field.id].join(', ')
-      : String(formData.value[field.id] || ''),
-  }))
+  const responses: FormResponse[] = props.form.fields.map((field) => {
+    let value = formData.value[field.id]
+    
+    // Handle "Other" substitution
+    if ((field.type === FormFieldType.RADIO || field.type === FormFieldType.SELECT) && value === 'Other') {
+      value = `Other: ${otherValues.value[field.id]}`
+    } else if (field.type === FormFieldType.CHECKBOX && Array.isArray(value) && value.includes('Other')) {
+      value = value.map(v => v === 'Other' ? `Other: ${otherValues.value[field.id]}` : v)
+    }
+
+    return {
+      fieldId: field.id,
+      fieldLabel: field.label,
+      value: Array.isArray(value)
+        ? value.join(', ')
+        : String(value || ''),
+    }
+  })
 
   emit('submit', responses, submitterEmail.value || undefined)
 }
@@ -198,74 +220,102 @@ const handleCheckboxChange = (fieldId: string, option: string, checked: boolean)
             </div>
 
             <!-- Select Input -->
-            <div v-else-if="field.type === FormFieldType.SELECT" class="relative">
+            <div v-else-if="field.type === FormFieldType.SELECT" class="space-y-3">
               <UiSelectInput
                 v-model="formData[field.id]"
                 :label="field.label"
-                :options="field.options"
+                :options="field.allowOther ? [...(field.options || []), 'Other'] : (field.options || [])"
                 :placeholder="field.placeholder || 'Select an option'"
                 :hasError="!!errors[field.id]"
                 class="!mb-0"
               />
+              <div v-if="formData[field.id] === 'Other'" class="animate-scale-up">
+                <input
+                  v-model="otherValues[field.id]"
+                  type="text"
+                  placeholder="Please specify..."
+                  class="w-full px-4 py-3 bg-blue-50/30 border border-blue-100 rounded-xl text-sm font-medium outline-none focus:border-[#27628C] transition-all"
+                />
+              </div>
             </div>
 
             <!-- Radio Buttons (Minimalist) -->
-            <div v-else-if="field.type === FormFieldType.RADIO" class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-              <label 
-                v-for="option in field.options" 
-                :key="option"
-                :class="[
-                  'group relative flex items-center p-4 rounded-xl border transition-all cursor-pointer',
-                  formData[field.id] === option 
-                    ? 'border-[#27628C] bg-blue-50/30' 
-                    : 'border-gray-100 bg-white hover:border-gray-200'
-                ]"
-              >
+            <div v-else-if="field.type === FormFieldType.RADIO" class="space-y-3">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                <label 
+                  v-for="option in (field.allowOther ? [...(field.options || []), 'Other'] : (field.options || []))" 
+                  :key="option"
+                  :class="[
+                    'group relative flex items-center p-4 rounded-xl border transition-all cursor-pointer',
+                    formData[field.id] === option 
+                      ? 'border-[#27628C] bg-blue-50/30' 
+                      : 'border-gray-100 bg-white hover:border-gray-200'
+                  ]"
+                >
+                  <input
+                    type="radio"
+                    v-model="formData[field.id]"
+                    :value="option"
+                    class="sr-only"
+                  />
+                  <div :class="[
+                    'w-4 h-4 rounded-full border mr-3 flex items-center justify-center transition-all',
+                    formData[field.id] === option ? 'border-[#27628C] bg-[#27628C]' : 'border-gray-300 bg-white'
+                  ]">
+                    <div v-if="formData[field.id] === option" class="w-1 h-1 rounded-full bg-white"></div>
+                  </div>
+                  <span :class="['text-sm font-medium', formData[field.id] === option ? 'text-[#27628C]' : 'text-gray-600']" v-html="linkify(option)">
+                  </span>
+                </label>
+              </div>
+              <div v-if="formData[field.id] === 'Other'" class="animate-scale-up">
                 <input
-                  type="radio"
-                  v-model="formData[field.id]"
-                  :value="option"
-                  class="sr-only"
+                  v-model="otherValues[field.id]"
+                  type="text"
+                  placeholder="Please specify..."
+                  class="w-full px-4 py-3 bg-blue-50/30 border border-blue-100 rounded-xl text-sm font-medium outline-none focus:border-[#27628C] transition-all"
                 />
-                <div :class="[
-                  'w-4 h-4 rounded-full border mr-3 flex items-center justify-center transition-all',
-                  formData[field.id] === option ? 'border-[#27628C] bg-[#27628C]' : 'border-gray-300 bg-white'
-                ]">
-                  <div v-if="formData[field.id] === option" class="w-1 h-1 rounded-full bg-white"></div>
-                </div>
-                <span :class="['text-sm font-medium', formData[field.id] === option ? 'text-[#27628C]' : 'text-gray-600']" v-html="linkify(option)">
-                </span>
-              </label>
+              </div>
             </div>
 
             <!-- Checkboxes (Minimalist) -->
-            <div v-else-if="field.type === FormFieldType.CHECKBOX" class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-              <label 
-                v-for="option in field.options" 
-                :key="option"
-                :class="[
-                  'group relative flex items-center p-4 rounded-xl border transition-all cursor-pointer',
-                  (formData[field.id] || []).includes(option)
-                    ? 'border-[#27628C] bg-blue-50/30' 
-                    : 'border-gray-100 bg-white hover:border-gray-200'
-                ]"
-              >
+            <div v-else-if="field.type === FormFieldType.CHECKBOX" class="space-y-3">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                <label 
+                  v-for="option in (field.allowOther ? [...(field.options || []), 'Other'] : (field.options || []))" 
+                  :key="option"
+                  :class="[
+                    'group relative flex items-center p-4 rounded-xl border transition-all cursor-pointer',
+                    (formData[field.id] || []).includes(option)
+                      ? 'border-[#27628C] bg-blue-50/30' 
+                      : 'border-gray-100 bg-white hover:border-gray-200'
+                  ]"
+                >
+                  <input
+                    type="checkbox"
+                    :value="option"
+                    :checked="(formData[field.id] || []).includes(option)"
+                    @change="(e) => handleCheckboxChange(field.id, option, (e.target as HTMLInputElement).checked)"
+                    class="sr-only"
+                  />
+                  <div :class="[
+                    'w-4 h-4 rounded border mr-3 flex items-center justify-center transition-all',
+                    (formData[field.id] || []).includes(option) ? 'border-[#27628C] bg-[#27628C]' : 'border-gray-300 bg-white'
+                  ]">
+                    <Icon v-if="(formData[field.id] || []).includes(option)" name="lucide:check" class="w-3 h-3 text-white" />
+                  </div>
+                  <span :class="['text-sm font-medium', (formData[field.id] || []).includes(option) ? 'text-[#27628C]' : 'text-gray-600']" v-html="linkify(option)">
+                  </span>
+                </label>
+              </div>
+              <div v-if="(formData[field.id] || []).includes('Other')" class="animate-scale-up">
                 <input
-                  type="checkbox"
-                  :value="option"
-                  :checked="(formData[field.id] || []).includes(option)"
-                  @change="(e) => handleCheckboxChange(field.id, option, (e.target as HTMLInputElement).checked)"
-                  class="sr-only"
+                  v-model="otherValues[field.id]"
+                  type="text"
+                  placeholder="Please specify..."
+                  class="w-full px-4 py-3 bg-blue-50/30 border border-blue-100 rounded-xl text-sm font-medium outline-none focus:border-[#27628C] transition-all"
                 />
-                <div :class="[
-                  'w-4 h-4 rounded border mr-3 flex items-center justify-center transition-all',
-                  (formData[field.id] || []).includes(option) ? 'border-[#27628C] bg-[#27628C]' : 'border-gray-300 bg-white'
-                ]">
-                  <Icon v-if="(formData[field.id] || []).includes(option)" name="lucide:check" class="w-3 h-3 text-white" />
-                </div>
-                <span :class="['text-sm font-medium', (formData[field.id] || []).includes(option) ? 'text-[#27628C]' : 'text-gray-600']" v-html="linkify(option)">
-                </span>
-              </label>
+              </div>
             </div>
           </div>
 

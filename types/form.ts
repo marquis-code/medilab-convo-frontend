@@ -21,6 +21,7 @@ export interface FormField {
   placeholder?: string
   description?: string
   validation?: string
+  allowOther?: boolean
 }
 
 export interface Form {
