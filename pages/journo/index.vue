@@ -15,201 +15,8 @@
       </div>
     </div>
 
-    <!-- Tab Navigation -->
-    <nav class="border-b border-gray-100 sticky top-0 z-40 bg-white/80 backdrop-blur-md">
-      <div class="max-w-7xl mx-auto px-6">
-        <div class="flex items-center gap-8 h-14 overflow-x-auto no-scrollbar">
-          <button 
-            @click="activeTab = 'articles'"
-            :class="[
-              'text-sm font-medium transition-colors whitespace-nowrap border-b-2 h-full px-1',
-              activeTab === 'articles' ? 'border-[#27628C] text-[#27628C]' : 'border-transparent text-gray-500 hover:text-gray-900'
-            ]"
-          >
-            Articles
-          </button>
-          <button 
-            @click="activeTab = 'publications'"
-            :class="[
-              'text-sm font-medium transition-colors whitespace-nowrap border-b-2 h-full px-1',
-              activeTab === 'publications' ? 'border-[#27628C] text-[#27628C]' : 'border-transparent text-gray-500 hover:text-gray-900'
-            ]"
-          >
-            Research Publications
-          </button>
-        </div>
-      </div>
-    </nav>
-
-    <!-- ==================== ARTICLES TAB (ConvoStack) ==================== -->
-    <div v-if="activeTab === 'articles'">
-      <!-- Category Tabs -->
-      <nav class="border-b border-gray-50 bg-white">
-        <div class="max-w-5xl mx-auto px-6">
-          <div class="flex items-center gap-8 h-12 overflow-x-auto no-scrollbar">
-            <button 
-              @click="activeCategory = ''"
-              :class="[
-                'text-xs font-medium transition-colors whitespace-nowrap border-b-2 h-full px-1',
-                activeCategory === '' ? 'border-[#27628C] text-[#27628C]' : 'border-transparent text-gray-400 hover:text-gray-900'
-              ]"
-            >
-              All Stories
-            </button>
-            <button 
-              v-for="cat in articleCategories" 
-              :key="cat"
-              @click="activeCategory = cat"
-              :class="[
-                'text-xs font-medium transition-colors whitespace-nowrap border-b-2 h-full px-1 capitalize',
-                activeCategory === cat ? 'border-[#27628C] text-[#27628C]' : 'border-transparent text-gray-400 hover:text-gray-900'
-              ]"
-            >
-              {{ cat }}
-            </button>
-          </div>
-        </div>
-      </nav>
-
-      <div class="max-w-5xl mx-auto px-6 py-12 md:py-20">
-        <!-- Loading -->
-        <div v-if="articlesLoading" class="flex flex-col items-center justify-center py-40 gap-6">
-          <div class="w-10 h-10 border-4 border-gray-100 border-t-[#27628C] rounded-full animate-spin"></div>
-          <p class="text-xs font-bold text-gray-400">Loading articles...</p>
-        </div>
-
-        <div v-else-if="filteredArticles.length > 0" class="space-y-24">
-          <!-- Featured Article -->
-          <section v-if="!activeCategory && !articleSearch" class="group relative grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-            <NuxtLink :to="`/convostack/${featuredArticle.slug}`" class="relative aspect-[16/9] md:aspect-[4/3] rounded-2xl overflow-hidden bg-gray-50 border border-gray-100 shadow-sm transition-shadow group-hover:shadow-xl">
-              <img 
-                v-if="featuredArticle.coverImage" 
-                :src="featuredArticle.coverImage" 
-                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-              />
-              <div v-else class="w-full h-full flex items-center justify-center bg-[#27628C]/5 text-[#27628C]">
-                 <svg class="w-20 h-20 opacity-20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"/></svg>
-              </div>
-            </NuxtLink>
-            
-            <div class="space-y-6">
-              <div class="flex items-center gap-3">
-                <span class="text-[10px] font-bold text-[#27628C] bg-[#27628C]/5 px-3 py-1 rounded-full capitalize">{{ featuredArticle.category }}</span>
-                <span class="text-[10px] font-medium text-gray-400">{{ featuredArticle.readTime || 5 }} min read</span>
-              </div>
-              <NuxtLink :to="`/convostack/${featuredArticle.slug}`">
-                <h2 class="text-3xl md:text-5xl font-bold text-gray-900 leading-tight tracking-tighter hover:text-[#27628C] transition-colors">
-                  {{ featuredArticle.title }}
-                </h2>
-              </NuxtLink>
-              <p class="text-lg text-gray-500 leading-relaxed line-clamp-3">
-                {{ featuredArticle.excerpt }}
-              </p>
-              <div class="flex items-center gap-4 pt-4">
-                 <div class="w-10 h-10 rounded-full bg-gray-100 border border-gray-200 flex items-center justify-center font-bold text-[#27628C]">
-                   {{ (featuredArticle.authorName || 'M').charAt(0) }}
-                 </div>
-                 <div class="flex flex-col">
-                   <span class="text-sm font-bold text-gray-900">{{ featuredArticle.authorName || 'MedLabConvo' }}</span>
-                   <span class="text-xs text-gray-400">{{ formatDate(featuredArticle.publishedAt || featuredArticle.createdAt) }}</span>
-                 </div>
-              </div>
-            </div>
-          </section>
-
-          <!-- Article Feed -->
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-16">
-            <section class="md:col-span-2 space-y-16">
-              <div class="flex items-center justify-between border-b border-gray-100 pb-4">
-                 <h3 class="text-xs font-bold text-gray-400">{{ activeCategory || 'Latest' }} articles</h3>
-                 <div class="relative max-w-[200px]">
-                   <input v-model="articleSearch" type="text" placeholder="Search..." class="w-full pl-8 pr-4 py-2 bg-gray-50 border border-gray-100 rounded-full text-xs outline-none focus:border-[#27628C] transition-all" />
-                 </div>
-              </div>
-
-              <div class="divide-y divide-gray-100">
-                <article 
-                  v-for="pub in recentArticles" 
-                  :key="pub._id"
-                  class="py-10 first:pt-0 group"
-                >
-                  <div class="flex flex-col md:flex-row gap-8">
-                    <div class="flex-1 space-y-4">
-                      <div class="flex items-center gap-3">
-                         <span class="text-[10px] font-bold text-[#27628C] capitalize">{{ pub.category }}</span>
-                         <span class="text-[10px] font-medium text-gray-400">{{ formatDate(pub.publishedAt || pub.createdAt) }}</span>
-                      </div>
-                      <NuxtLink :to="`/convostack/${pub.slug}`">
-                        <h4 class="text-xl md:text-2xl font-bold text-gray-900 group-hover:text-[#27628C] transition-colors leading-snug">
-                          {{ pub.title }}
-                        </h4>
-                      </NuxtLink>
-                      <p class="text-sm text-gray-500 line-clamp-3 leading-relaxed">
-                        {{ pub.excerpt }}
-                      </p>
-                      <div class="flex items-center gap-4 pt-4 opacity-70">
-                         <span class="text-[10px] font-bold text-gray-900">{{ pub.authorName || 'MedLabConvo Team' }}</span>
-                         <span class="text-[10px] text-gray-400">{{ pub.readTime || 4 }} min read</span>
-                      </div>
-                    </div>
-                    <NuxtLink :to="`/convostack/${pub.slug}`" class="w-full md:w-40 aspect-[4/3] rounded-xl overflow-hidden bg-gray-50 border border-gray-100 shrink-0 shadow-sm group-hover:shadow-md transition-all">
-                      <img v-if="pub.coverImage" :src="pub.coverImage" class="w-full h-full object-cover transition-transform group-hover:scale-105" />
-                      <div v-else class="w-full h-full flex items-center justify-center text-[#27628C]/20">
-                         <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
-                      </div>
-                    </NuxtLink>
-                  </div>
-                </article>
-              </div>
-            </section>
-
-            <!-- Sidebar -->
-            <aside class="space-y-12">
-              <div class="bg-[#27628C]/5 p-8 rounded-3xl border border-[#27628C]/10 space-y-6">
-                 <h4 class="text-lg font-bold text-gray-900 tracking-tight leading-tight">Subscribe to the <br /> MedLabConvo Substack</h4>
-                 <p class="text-xs text-gray-500 leading-relaxed font-medium">Join 2,500+ professionals receiving curated diagnostic insights and research.</p>
-                 <input 
-                    type="email" 
-                    placeholder="Type your email..." 
-                    class="w-full px-5 py-3 bg-white border border-[#27628C]/20 rounded-xl text-sm outline-none focus:ring-2 focus:ring-[#27628C]/20 transition-all shadow-sm" 
-                 />
-                 <button class="w-full py-3.5 bg-[#27628C] text-white rounded-xl text-xs font-bold shadow-lg hover:bg-gray-900 transition-all active:scale-95">
-                    Subscribe for free
-                 </button>
-              </div>
-
-              <div class="space-y-8">
-                 <h3 class="text-[10px] font-bold text-gray-400 border-b border-gray-100 pb-3">Recommendations</h3>
-                 <div class="space-y-8">
-                    <div v-for="(rec, recIdx) in filteredArticles.slice(0, 4)" :key="rec._id" class="flex items-start gap-4 group">
-                       <span class="text-2xl font-bold text-gray-200 mt-1  group-hover:text-[#27628C]/20 transition-colors">0{{ recIdx + 1 }}</span>
-                       <div class="space-y-1">
-                          <NuxtLink :to="`/convostack/${rec.slug}`" class="text-sm font-bold text-gray-900 hover:text-[#27628C] transition-colors leading-tight block">
-                             {{ rec.title }}
-                          </NuxtLink>
-                          <span class="text-[10px] font-bold text-[#27628C]/60 capitalize">{{ rec.authorName || 'MedLabConvo' }}</span>
-                       </div>
-                    </div>
-                 </div>
-              </div>
-            </aside>
-          </div>
-        </div>
-
-        <!-- Empty State -->
-        <div v-else class="text-center py-40 animate-in fade-in zoom-in duration-700">
-          <div class="w-20 h-20 bg-gray-50 rounded-full mx-auto mb-8 flex items-center justify-center border border-gray-100">
-             <svg class="w-8 h-8 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
-          </div>
-          <h3 class="text-xl font-bold text-gray-900 tracking-tight">No articles found</h3>
-          <p class="text-gray-400 mt-2 text-sm">We couldn't find any articles matching your criteria.</p>
-          <button @click="activeCategory = ''; articleSearch = ''" class="mt-8 text-[#27628C] text-xs font-bold hover:underline">View all stories</button>
-        </div>
-      </div>
-    </div>
-
-    <!-- ==================== PUBLICATIONS TAB (Journo) ==================== -->
-    <div v-if="activeTab === 'publications'">
+    <!-- ==================== PUBLICATIONS (Journo) ==================== -->
+    <div>
       <!-- Latest Publication: High Impact Feature -->
       <div class="relative pt-12 pb-32 px-6">
         <div class="max-w-7xl mx-auto">
@@ -219,7 +26,7 @@
           </div>
 
           <!-- Latest Content -->
-          <div v-else-if="latestPublication" class="group relative bg-white rounded-[3rem] shadow-2xl overflow-hidden border border-gray-100 transition-all duration-500 animate-fade-in-up">
+          <div v-else-if="latestPublication" class="group relative bg-white rounded-[3rem] overflow-hidden border border-gray-100 transition-all duration-500 animate-fade-in-up">
             <div class="flex flex-col lg:flex-row min-h-[600px]">
               <!-- Visual Side -->
               <div class="lg:w-1/2 relative bg-gray-50 flex items-center justify-center p-12 overflow-hidden">
@@ -227,12 +34,12 @@
                   v-if="latestPublication.images && latestPublication.images.length"
                   :src="latestPublication.images[0]" 
                   :alt="latestPublication.title"
-                  class="w-full h-full object-contain drop-shadow-2xl transition-transform duration-1000 group-hover:scale-105"
+                  class="w-full h-full object-contain transition-transform duration-1000 group-hover:scale-105"
                 >
                 <div v-else class="w-32 h-32 bg-gray-100 rounded-full flex items-center justify-center text-6xl">📄</div>
                 
                 <div class="absolute top-12 left-12">
-                  <span class="bg-gray-900 text-white px-6 py-2 rounded-full text-[10px] font-black uppercase tracking-widest shadow-xl">
+                  <span class="bg-gray-900 text-white px-6 py-2 rounded-full text-[10px] font-black uppercase tracking-widest">
                     FEATURED PUBLICATION
                   </span>
                 </div>
@@ -275,7 +82,7 @@
                   <NuxtLink 
                     :to="latestPublication.link || latestPublication.pubLink"
                     target="_blank"
-                    class="inline-flex items-center justify-center bg-gray-900 text-white px-12 py-5 rounded-2xl text-sm font-black uppercase tracking-widest shadow-xl hover:bg-gray-800 hover:shadow-2xl transition-all"
+                    class="inline-flex items-center justify-center bg-gray-900 text-white px-12 py-5 rounded-2xl text-sm font-black uppercase tracking-widest hover:bg-gray-800 transition-all"
                   >
                     Read Full Paper
                     <svg class="w-4 h-4 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
@@ -323,7 +130,7 @@
             >
               <NuxtLink :to="publication.link || publication.pubLink" target="_blank" class="block space-y-8 h-full">
                 <!-- Grid Thumbnail -->
-                <div class="relative aspect-square rounded-[2.5rem] bg-gray-50 border border-gray-100 overflow-hidden shadow-sm transition-all duration-700 group-hover:shadow-2xl group-hover:border-transparent">
+                <div class="relative aspect-square rounded-[2.5rem] bg-gray-50 border border-gray-100 overflow-hidden transition-all duration-700 group-hover:border-transparent">
                    <img 
                     v-if="publication.images && publication.images.length"
                     :src="publication.images[0]" 
@@ -333,7 +140,7 @@
                   <div v-else class="w-full h-full flex items-center justify-center text-4xl grayscale opacity-20">📄</div>
                   
                   <div class="absolute top-8 left-8">
-                    <span class="bg-white/90 backdrop-blur-md text-gray-900 px-4 py-1.5 rounded-xl text-[9px] font-bold shadow-sm">
+                    <span class="bg-white/90 backdrop-blur-md text-gray-900 px-4 py-1.5 rounded-xl text-[9px] font-bold">
                       {{ publication.category }}
                     </span>
                   </div>
@@ -383,7 +190,7 @@
                Research, insights, and critical perspectives delivered directly to your inbox. No noise, just science.
              </p>
           </div>
-          <div class="relative overflow-hidden rounded-[3rem] bg-white p-2 shadow-2xl">
+          <div class="relative overflow-hidden rounded-[3rem] bg-white p-2">
              <iframe 
                 src="https://mlcjourno.substack.com/embed" 
                 width="100%" 
@@ -400,65 +207,20 @@
 </template>
 
 <script setup lang="ts">
-import { ref, computed, onMounted } from 'vue'
+import { computed } from 'vue'
 import { useGetPublications } from "@/composables/modules/publications/useGetPublications"
-import { convostack_api } from '@/api_factory/modules/convostack'
-
-// Active tab state
-const activeTab = ref('articles')
-
-// ==================== ARTICLES (ConvoStack) ====================
-const articles = ref([] as any[])
-const articlesLoading = ref(true)
-const articleSearch = ref('')
-const activeCategory = ref('')
-
-onMounted(async () => {
-  // Load ConvoStack articles
-  articlesLoading.value = true
-  try {
-    const res = await convostack_api.$_get_publications()
-    articles.value = res.data || []
-  } catch (e) {
-    console.error('Failed to load articles:', e)
-  } finally {
-    articlesLoading.value = false
-  }
-})
-
-const articleCategories = computed(() => {
-  const cats = [...new Set((articles.value || []).map((p: any) => p.category).filter(Boolean))]
-  return cats
-})
-
-const filteredArticles = computed(() => {
-  let list = articles.value || []
-  if (activeCategory.value) {
-    list = list.filter((p: any) => p.category === activeCategory.value)
-  }
-  if (articleSearch.value) {
-    const q = articleSearch.value.toLowerCase()
-    list = list.filter((p: any) =>
-      p.title?.toLowerCase().includes(q) || p.excerpt?.toLowerCase().includes(q) || p.authorName?.toLowerCase().includes(q)
-    )
-  }
-  return list
-})
-
-const featuredArticle = computed(() => filteredArticles.value[0] || {})
-const recentArticles = computed(() => filteredArticles.value.slice(1))
 
 // ==================== PUBLICATIONS (Journo) ====================
 const { publications, loading: pubLoading } = useGetPublications()
 
 const publishedPublications = computed(() => {
   if (!publications.value) return []
-  return publications.value.filter(pub => pub.status === 'published')
+  return publications.value.filter((pub: any) => pub.status === 'published')
 })
 
 const latestPublication = computed(() => {
   if (publishedPublications.value.length === 0) return null
-  return [...publishedPublications.value].sort((a, b) => {
+  return [...publishedPublications.value].sort((a: any, b: any) => {
     const aDate = new Date(a.createdAt || 0).getTime()
     const bDate = new Date(b.createdAt || 0).getTime()
     return bDate - aDate
@@ -468,7 +230,7 @@ const latestPublication = computed(() => {
 const otherPublications = computed(() => {
   if (!latestPublication.value) return publishedPublications.value
   const latestId = (latestPublication.value as any).id || (latestPublication.value as any)._id
-  return publishedPublications.value.filter(pub => {
+  return publishedPublications.value.filter((pub: any) => {
      const pubId = (pub as any).id || (pub as any)._id
      return pubId !== latestId
   })
