@@ -69,6 +69,24 @@
                   <span>Enrol Now</span>
                   <Icon name="lucide:sparkles" class="w-5 h-5" />
                 </a>
+
+                <NuxtLink 
+                  v-else-if="program.form"
+                  :to="`/forms/submit/${program.form.slug || program.form._id}`"
+                  class="h-16 px-12 bg-[#27628C] text-white rounded-[1.2rem] font-bold text-sm hover:scale-105 active:scale-95 transition-all flex items-center justify-center space-x-3 shadow-2xl shadow-blue-900/20"
+                >
+                  <span>Enrol Now</span>
+                  <Icon name="lucide:sparkles" class="w-5 h-5" />
+                </NuxtLink>
+
+                <NuxtLink 
+                  v-else-if="program.formFields && program.formFields.length > 0"
+                  :to="`/programs/${program.slug}/apply`"
+                  class="h-16 px-12 bg-[#27628C] text-white rounded-[1.2rem] font-bold text-sm hover:scale-105 active:scale-95 transition-all flex items-center justify-center space-x-3 shadow-2xl shadow-blue-900/20"
+                >
+                  <span>Apply Now</span>
+                  <Icon name="lucide:sparkles" class="w-5 h-5" />
+                </NuxtLink>
                 
                 <button @click="shareProgram" class="h-16 px-10 bg-white text-gray-900 border-2 border-gray-100 rounded-[1.2rem] font-bold text-sm hover:bg-gray-50 active:scale-95 transition-all flex items-center justify-center space-x-3">
                   <Icon name="lucide:share-2" class="w-5 h-5" />
@@ -278,6 +296,23 @@
                 >
                   Enrol Today
                 </a>
+
+                <NuxtLink 
+                  v-else-if="program.form"
+                  :to="`/forms/submit/${program.form.slug || program.form._id}`"
+                  class="h-16 px-16 bg-[#27628C] text-white rounded-[1.2rem] font-bold text-sm hover:scale-105 active:scale-95 transition-all flex items-center justify-center shadow-2xl shadow-blue-900/40"
+                >
+                  Enrol Today
+                </NuxtLink>
+
+                <NuxtLink 
+                  v-else-if="program.formFields && program.formFields.length > 0"
+                  :to="`/programs/${program.slug}/apply`"
+                  class="h-16 px-16 bg-[#27628C] text-white rounded-[1.2rem] font-bold text-sm hover:scale-105 active:scale-95 transition-all flex items-center justify-center shadow-2xl shadow-blue-900/40"
+                >
+                  Apply Today
+                </NuxtLink>
+
                 <button @click="shareProgram" class="h-16 px-12 bg-white/5 text-white border border-white/10 rounded-[1.2rem] font-bold text-sm hover:bg-white/10 active:scale-95 transition-all flex items-center justify-center group">
                   <!-- <Icon name="lucide:send" class="w-5 h-5 mr-3 -rotate-45 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" /> -->
                   Invite a Colleague
