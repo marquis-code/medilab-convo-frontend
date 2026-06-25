@@ -6,7 +6,7 @@
         <div class="mx-auto max-w-7xl relative z-10 text-center">
            <div class="max-w-4xl mx-auto">
               <h1 class="text-4xl md:text-8xl font-bold text-white leading-tight tracking-tighter  mb-8 animate-in fade-in slide-in-from-bottom-10 duration-1000">
-                 {{ getSectionContent('hero_title', 'Leading Change, Inspiring Action') }}
+                 {{ getSectionContent('hero_title', 'Leading Change, Building Capacity, Inspiring Action') }}
               </h1>
               <p class="text-lg md:text-xl text-blue-50 font-medium leading-relaxed max-w-2xl mx-auto animate-in fade-in slide-in-from-bottom-10 duration-1000 delay-200">
                  {{ getSectionContent('hero_description', 'MedLabConvo is more than a platform—it’s a movement dedicated to shaping the future of medical laboratory science and healthcare.') }}
@@ -97,7 +97,7 @@
               <h2 class="text-2xl font-bold text-gray-900 ">Mission</h2>
             </div>
             <p class="text-gray-600 text-lg leading-relaxed font-medium">
-              To lead positive change in the mindset, attitude, and identity of stakeholders within medical laboratory science, while contributing to transformation across the broader healthcare system.
+              To lead positive change in the mindset, attitude, and identity of stakeholders within medical laboratory science, while contributing to transformation across the broader healthcare system; build the capacity of future generations of world-class professionals in medical laboratory science and other health professions; and inspire action through purposeful engagement, education, and advocacy.
             </p>
           </div>
 
@@ -191,8 +191,8 @@ const coreValues = [
   { title: 'Empowerment & Capacity', desc: 'Investing in educating and training students and early-career professionals.' },
   { title: 'Advocacy & Awareness', desc: 'Championing the laboratory profession and public health promotion.' },
   { title: 'Collaboration', desc: 'Building partnerships across countries, institutions, and disciplines.' },
-  { title: 'Excellence & Quality', desc: 'Maintaining a standard of world-class professionalism.' },
-  { title: 'Innovation & Tech-Focus', desc: 'Integrating technology in communications and education.' },
+  { title: 'Excellence & Quality', desc: 'Maintaining a standard of world-class professionalism in programming and content.' },
+  { title: 'Innovation & Tech-Focus', desc: 'Integrating technology in communications and education (e.g., Labcast, digital editorial).' },
   { title: 'Community & Mentorship', desc: 'Creating supportive networks that bridge early-career individuals and experienced professionals.' }
 ]
 </script>
