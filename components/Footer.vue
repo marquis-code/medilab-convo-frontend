@@ -151,7 +151,6 @@ const platform = [
   { name: 'LabCast', href: '/lab-cast' },
   { name: 'Programs', href: '/programs' },
   { name: 'Products', href: '/products' },
-  { name: 'Resources', href: '/resources' },
 ]
 
 const company = [

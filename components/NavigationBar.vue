@@ -90,7 +90,6 @@ const navigation = [
   { name: 'Programs', href: '/programs' },
   { name: 'Community', href: '/community' },
   { name: 'Products', href: '/products' },
-  { name: 'Resources', href: '/resources' },
 ]
 
 const handleScroll = () => {
