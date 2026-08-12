@@ -173,7 +173,49 @@
   </section>
 
 
-  <!-- 5. NEW SECTION: Featured Platforms (Clean Table/Grid Hybrid) -->
+  <!-- 5. NEW SECTION: Featured Programs -->
+  <section class="py-24 bg-slate-50 border-t border-slate-100">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-sm font-bold text-[#27628C] mb-4">Our Programs</h2>
+        <h3 class="text-4xl font-bold text-gray-900 mb-6">Transforming Your Career Journey</h3>
+        <div class="w-16 h-1.5 bg-[#27628C] mx-auto rounded-full"></div>
+      </div>
+      
+      <div v-if="fetchingPrograms" class="flex justify-center py-12">
+        <div class="w-12 h-12 rounded-full border-4 border-slate-200 border-t-[#27628C] animate-spin"></div>
+      </div>
+      <div v-else-if="activePrograms?.length" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div v-for="program in activePrograms.slice(0, 3)" :key="program.id || program._id" class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 group flex flex-col">
+          <div class="relative h-60 overflow-hidden">
+            <img :src="program.image || '/placeholder-program.jpg'" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="Program Image">
+            <div class="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent"></div>
+            <div class="absolute bottom-6 left-6 right-6">
+              <span class="inline-block px-3 py-1 bg-[#DE6129] text-white text-[10px] font-black uppercase tracking-widest rounded-full mb-3">{{ program.category || 'Program' }}</span>
+              <h4 class="text-xl font-bold text-white">{{ program.title }}</h4>
+            </div>
+          </div>
+          <div class="p-6 flex flex-col flex-grow">
+            <p class="text-gray-500 text-sm leading-relaxed mb-6 flex-grow line-clamp-3">
+              {{ program.description }}
+            </p>
+            <NuxtLink :to="`/programs/${program.slug}`" class="text-xs font-black uppercase tracking-widest text-[#27628C] group-hover:text-[#DE6129] transition-colors flex items-center gap-2">
+              Learn More
+              <svg class="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+            </NuxtLink>
+          </div>
+        </div>
+      </div>
+      
+      <div class="text-center mt-12" v-if="activePrograms?.length > 3">
+        <NuxtLink to="/programs" class="inline-flex items-center bg-white border-2 border-[#27628C] text-[#27628C] px-8 py-4 rounded-xl font-bold text-sm hover:bg-[#27628C] hover:text-white transition-all">
+          View All Programs
+        </NuxtLink>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. NEW SECTION: Featured Platforms (Clean Table/Grid Hybrid) -->
   <section class="py-24 bg-white">
     <div class="max-w-7xl mx-auto px-6 lg:px-8">
       <div class="text-center mb-16">
@@ -433,6 +475,11 @@ onMounted(() => {
 const { labcasts, loading: loadingLabcasts } = useGetLabCasts()
 const { publications, loading: loadingPublications } = useGetPublications()
 const { programs, loading: fetchingPrograms } = useGetPrograms()
+
+const activePrograms = computed(() => {
+  if (!programs.value) return []
+  return programs?.value?.filter((p: any) => p.status === 'active')
+})
 const journosList = ref([
   {
     title: 'FORGING A CAREER PATH 4.0',

@@ -183,9 +183,9 @@
                      <div v-if="submitting" class="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin"></div>
                      <span>{{ submitting ? 'Finalising Enrolment...' : 'Register Now' }}</span>
                    </button>
-                   <p class="text-[10px] text-gray-400 font-bold uppercase tracking-widest text-center leading-relaxed">
-                     By registering, you agree to our terms of clinical engagement<br />and professional code of conduct.
-                   </p>
+                    <p class="text-[10px] text-gray-400 font-bold uppercase tracking-widest text-center leading-relaxed">
+                      By registering, you confirm that the information provided is accurate and agree to our Terms and Conditions and Privacy Policy.
+                    </p>
                  </div>
                </form>
             </div>

@@ -253,6 +253,33 @@
           </div>
         </section>
 
+        <!-- Program Schedule -->
+        <section v-if="program.keyResponsibilities?.length" class="py-32 bg-slate-50 relative overflow-hidden">
+          <div class="container mx-auto px-6 lg:px-12">
+            <div class="text-center mb-16 space-y-4">
+              <h3 class="text-xs font-black text-[#DE6129] uppercase tracking-[0.4em]">Curriculum Timeline</h3>
+              <h2 class="text-4xl font-black text-gray-900 tracking-tight">Program Schedule</h2>
+            </div>
+            
+            <div class="max-w-4xl mx-auto">
+              <div class="space-y-6">
+                <div 
+                  v-for="(schedule, i) in program.keyResponsibilities" 
+                  :key="i"
+                  class="p-8 bg-white border border-slate-200 rounded-3xl flex flex-col md:flex-row md:items-center gap-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
+                >
+                  <div class="w-14 h-14 shrink-0 rounded-2xl bg-[#27628C]/10 flex items-center justify-center text-[#27628C]">
+                    <Icon name="lucide:calendar" class="w-7 h-7" />
+                  </div>
+                  <div>
+                    <h4 class="text-lg font-bold text-gray-900">{{ schedule }}</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <!-- Media Gallery -->
         <section v-if="program.images?.length > 1" class="py-32 container mx-auto px-6 lg:px-12">
           <div class="text-center mb-20 space-y-4">
@@ -284,7 +311,7 @@
           <div class="container mx-auto px-6 text-center space-y-12 relative z-10">
              <div class="max-w-3xl mx-auto space-y-4">
                 <h2 class="text-4xl md:text-5xl font-black text-white tracking-tight leading-tight">Ready to transform your professional journey?</h2>
-                <p class="text-gray-400 font-medium text-lg">Secure your spot today and join a global community of laboratory professionals.</p>
+                <p class="text-gray-400 font-medium text-lg">Secure your spot today</p>
              </div>
              
              <div class="flex flex-wrap justify-center gap-6">
