@@ -26,7 +26,7 @@
                   type="text" 
                   v-model="form.name" 
                   required 
-                  placeholder="e.g. Dr. Jane Doe" 
+ 
                   class="w-full px-6 py-4 bg-gray-50 border-none rounded-2xl focus:ring-2 focus:ring-[#27628C] text-sm font-bold placeholder:text-gray-300 transition-all"
                 />
               </div>
@@ -38,7 +38,7 @@
                     type="text" 
                     v-model="form.handle" 
                     required 
-                    placeholder="janedoe" 
+ 
                     class="w-full pl-10 pr-6 py-4 bg-gray-50 border-none rounded-2xl focus:ring-2 focus:ring-[#27628C] text-sm font-bold placeholder:text-gray-300 transition-all"
                   />
                 </div>
@@ -49,7 +49,7 @@
                   type="email" 
                   v-model="form.email" 
                   required 
-                  placeholder="jane@organization.com" 
+ 
                   class="w-full px-6 py-4 bg-gray-50 border-none rounded-2xl focus:ring-2 focus:ring-[#27628C] text-sm font-bold placeholder:text-gray-300 transition-all"
                 />
               </div>

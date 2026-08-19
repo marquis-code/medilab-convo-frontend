@@ -150,7 +150,7 @@
               <input
                 v-model="selectedAnswer"
                 type="text"
-                :placeholder="currentPuzzle.placeholder || 'Enter your answer...'"
+
                 class="w-full p-4 bg-gray-800/90 border-2 0 rounded-lg text-white placeholder-gray-300 focus:border-blue-400 focus:outline-none transition-colors duration-300 text-sm sm:text-base"
                 @keyup.enter="submitAnswer"
                 :disabled="isSubmitting"

@@ -29,11 +29,11 @@
             <div class="space-y-4">
               <div>
                 <label class="block text-[10px] font-black text-gray-400 uppercase tracking-widest mb-3 ml-1">Full Name</label>
-                <input v-model="form.name" type="text" required class="w-full px-6 py-4 bg-white border border-gray-100 rounded-2xl text-sm focus:ring-2 focus:ring-[#27628C] focus:border-transparent outline-none transition-all shadow-sm" placeholder="Dr. Jane Doe" />
+                <input v-model="form.name" type="text" required class="w-full px-6 py-4 bg-white border border-gray-100 rounded-2xl text-sm focus:ring-2 focus:ring-[#27628C] focus:border-transparent outline-none transition-all shadow-sm" />
               </div>
               <div>
                 <label class="block text-[10px] font-black text-gray-400 uppercase tracking-widest mb-3 ml-1">Email Address</label>
-                <input v-model="form.email" type="email" required class="w-full px-6 py-4 bg-white border border-gray-100 rounded-2xl text-sm focus:ring-2 focus:ring-[#27628C] focus:border-transparent outline-none transition-all shadow-sm" placeholder="jane@institute.com" />
+                <input v-model="form.email" type="email" required class="w-full px-6 py-4 bg-white border border-gray-100 rounded-2xl text-sm focus:ring-2 focus:ring-[#27628C] focus:border-transparent outline-none transition-all shadow-sm" />
               </div>
               <div>
                 <label class="block text-[10px] font-black text-gray-400 uppercase tracking-widest mb-3 ml-1">Area of Interest</label>

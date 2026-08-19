@@ -92,7 +92,7 @@
                     required 
                     :disabled="loading"
                     class="w-full px-5 py-4 bg-white/[0.03] border border-white/10 rounded-2xl text-sm text-white placeholder:text-gray-600 focus:ring-2 focus:ring-[#27628C] focus:border-transparent transition-all outline-none" 
-                    placeholder="mail@institute.com" 
+ 
                   />
                 </div>
                 <button 

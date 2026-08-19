@@ -152,7 +152,7 @@ const handleCheckboxChange = (fieldId: string, option: string, checked: boolean)
           v-model="formData[field.id]"
           :type="field.type.toLowerCase()"
           :label="field.label"
-          :placeholder="field.placeholder"
+
           :required="field.required"
           :class="{ 'border-red-500': errors[field.id] }"
         />
@@ -168,7 +168,7 @@ const handleCheckboxChange = (fieldId: string, option: string, checked: boolean)
           v-model="formData[field.id]"
           type="text"
           label=""
-          :placeholder="field.placeholder"
+
           :required="field.required"
           :class="{ 'border-red-500': errors[field.id] }"
         />
@@ -180,7 +180,7 @@ const handleCheckboxChange = (fieldId: string, option: string, checked: boolean)
           v-model="formData[field.id]"
           type="email"
           label="Email"
-          :placeholder="field.placeholder"
+
           :required="field.required"
           :class="{ 'border-red-500': errors[field.id] }"
         />
@@ -192,7 +192,7 @@ const handleCheckboxChange = (fieldId: string, option: string, checked: boolean)
           v-model="formData[field.id]"
           type="tel"
           label="Phone"
-          :placeholder="field.placeholder"
+
           :required="field.required"
           :class="{ 'border-red-500': errors[field.id] }"
         />
@@ -204,7 +204,7 @@ const handleCheckboxChange = (fieldId: string, option: string, checked: boolean)
           v-model="formData[field.id]"
           type="url"
           label="URL"
-          :placeholder="field.placeholder"
+
           :required="field.required"
           :class="{ 'border-red-500': errors[field.id] }"
         />
@@ -215,7 +215,7 @@ const handleCheckboxChange = (fieldId: string, option: string, checked: boolean)
           :id="field.id"
           v-model.number="formData[field.id]"
           label="Number"
-          :placeholder="field.placeholder"
+
           :required="field.required"
           :class="{ 'border-red-500': errors[field.id] }"
         />
@@ -226,7 +226,7 @@ const handleCheckboxChange = (fieldId: string, option: string, checked: boolean)
           :id="field.id"
           v-model="formData[field.id]"
           label="Date"
-          :placeholder="field.placeholder"
+
           type="date"
           :required="field.required"
           :class="{ 'border-red-500': errors[field.id] }"
@@ -238,7 +238,7 @@ const handleCheckboxChange = (fieldId: string, option: string, checked: boolean)
           :id="field.id"
           v-model="formData[field.id]"
           :label="field.placeholder"
-          :placeholder="field.placeholder"
+
           :required="field.required"
           :rows="4"
           :class="{ 'border-red-500': errors[field.id] }"
@@ -253,7 +253,7 @@ const handleCheckboxChange = (fieldId: string, option: string, checked: boolean)
           class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
           :class="{ 'border-red-500': errors[field.id] }"
         >
-          <option value="">{{ field.placeholder || 'Select an option' }}</option>
+          <option value=""></option>
           <option v-for="option in field.options" :key="option" :value="option">
             {{ option }}
           </option>

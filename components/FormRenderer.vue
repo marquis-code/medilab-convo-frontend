@@ -158,7 +158,7 @@ const handleCheckboxChange = (fieldId: string, option: string, checked: boolean)
             id="submitter-email"
             v-model="submitterEmail"
             type="email"
-            placeholder="your-email@example.com"
+
             class="w-full pl-12 pr-4 py-3.5 bg-white border border-gray-200 rounded-xl text-sm font-medium outline-none focus:border-[#27628C] focus:ring-4 focus:ring-[#27628C]/5 transition-all placeholder:text-gray-300"
           />
         </div>
@@ -190,7 +190,7 @@ const handleCheckboxChange = (fieldId: string, option: string, checked: boolean)
                 :id="field.id"
                 v-model="formData[field.id]"
                 :type="field.type === FormFieldType.PHONE ? 'tel' : field.type.toLowerCase()"
-                :placeholder="field.placeholder || `Enter ${field.label.toLowerCase()}...`"
+
                 class="w-full px-4 py-3.5 bg-white border border-gray-200 rounded-xl text-sm font-medium outline-none focus:border-[#27628C] focus:ring-4 focus:ring-[#27628C]/5 transition-all placeholder:text-gray-300"
                 :class="{ '!border-red-200 !bg-red-50/30': errors[field.id] }"
               />
@@ -212,7 +212,7 @@ const handleCheckboxChange = (fieldId: string, option: string, checked: boolean)
               <textarea
                 :id="field.id"
                 v-model="formData[field.id]"
-                :placeholder="field.placeholder || 'Type your message here...'"
+
                 rows="5"
                 class="w-full px-4 py-4 bg-white border border-gray-200 rounded-2xl text-sm font-medium outline-none focus:border-[#27628C] focus:ring-4 focus:ring-[#27628C]/5 transition-all placeholder:text-gray-300 resize-none"
                 :class="{ '!border-red-200 !bg-red-50/30': errors[field.id] }"
@@ -225,7 +225,7 @@ const handleCheckboxChange = (fieldId: string, option: string, checked: boolean)
                 v-model="formData[field.id]"
                 :label="field.label"
                 :options="field.allowOther ? [...(field.options || []), 'Other'] : (field.options || [])"
-                :placeholder="field.placeholder || 'Select an option'"
+
                 :hasError="!!errors[field.id]"
                 class="!mb-0"
               />
@@ -233,7 +233,7 @@ const handleCheckboxChange = (fieldId: string, option: string, checked: boolean)
                 <input
                   v-model="otherValues[field.id]"
                   type="text"
-                  placeholder="Please specify..."
+
                   class="w-full px-4 py-3 bg-blue-50/30 border border-blue-100 rounded-xl text-sm font-medium outline-none focus:border-[#27628C] transition-all"
                 />
               </div>
@@ -272,7 +272,7 @@ const handleCheckboxChange = (fieldId: string, option: string, checked: boolean)
                 <input
                   v-model="otherValues[field.id]"
                   type="text"
-                  placeholder="Please specify..."
+
                   class="w-full px-4 py-3 bg-blue-50/30 border border-blue-100 rounded-xl text-sm font-medium outline-none focus:border-[#27628C] transition-all"
                 />
               </div>
@@ -312,7 +312,7 @@ const handleCheckboxChange = (fieldId: string, option: string, checked: boolean)
                 <input
                   v-model="otherValues[field.id]"
                   type="text"
-                  placeholder="Please specify..."
+
                   class="w-full px-4 py-3 bg-blue-50/30 border border-blue-100 rounded-xl text-sm font-medium outline-none focus:border-[#27628C] transition-all"
                 />
               </div>

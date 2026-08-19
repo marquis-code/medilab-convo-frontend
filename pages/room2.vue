@@ -265,7 +265,7 @@
                 <input
                   v-model="selectedAnswer"
                   type="text"
-                  :placeholder="currentPuzzle.placeholder || 'Enter your answer...'"
+
                   class="w-full p-6 bg-gradient-to-r from-gray-800/80 to-gray-900/80 border-2 border-gray-600 rounded-2xl text-xl text-white placeholder-gray-400 focus:border-cyan-500 focus:outline-none transition-all duration-300 backdrop-blur-sm"
                   @keyup.enter="submitAnswer"
                   :disabled="isSubmitting"

@@ -116,7 +116,7 @@
                        v-if="field.type === 'textarea'"
                        v-model="formData[field.id]"
                        :id="field.id"
-                       :placeholder="field.placeholder"
+
                        :required="field.required"
                        rows="4"
                        class="w-full bg-gray-50 border-2 border-gray-100 rounded-2xl p-6 text-sm font-bold text-gray-900 focus:bg-white focus:border-[#27628C] focus:ring-0 transition-all outline-none"
@@ -158,7 +158,7 @@
                        :type="field.type === 'email' ? 'email' : 'text'"
                        v-model="formData[field.id]"
                        :id="field.id"
-                       :placeholder="field.placeholder"
+
                        :required="field.required"
                        class="h-16 w-full bg-gray-50 border-2 border-gray-100 rounded-2xl px-6 text-sm font-bold text-gray-900 focus:bg-white focus:border-[#27628C] focus:ring-0 transition-all outline-none"
                      />

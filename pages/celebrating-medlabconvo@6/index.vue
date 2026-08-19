@@ -45,7 +45,7 @@
           <input
             v-model="authorName"
             type="text"
-            placeholder="Enter your name"
+
             class="mt-1 w-full border rounded-md p-2 focus:ring-[#27628C] focus:border-[#27628C]"
           />
           <p v-if="errors.name" class="text-sm text-red-500 mt-1">{{ errors.name }}</p>
@@ -56,7 +56,7 @@
           <textarea
             v-model="testimonial"
             rows="4"
-            placeholder="Write your testimonial..."
+
             class="mt-1 w-full border rounded-md p-2 focus:ring-[#27628C] focus:border-[#27628C]"
             @input="checkWordLimit"
           ></textarea>

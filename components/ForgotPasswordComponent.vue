@@ -11,7 +11,7 @@
         <div class="relative col-span-6 w-full">
           <label for="Email" class="block text-sm font-medium text-white"> Email </label>
 
-          <input id="Email" v-model="form.email" placeholder="Enter Your Email..." type="email" name="email"
+          <input id="Email" v-model="form.email" type="email" name="email"
             class="mt-1 w-full rounded-md border border-gray-200 bg-white px-3 py-3.5 pl-10 text-sm text-gray-700 shadow-sm outline-none" />
           <img src="@/assets/icons/email.svg" alt="email" class="absolute left-4 top-10" />
         </div>

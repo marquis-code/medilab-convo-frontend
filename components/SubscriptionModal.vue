@@ -34,7 +34,7 @@
                   type="email" 
                   v-model="email" 
                   required 
-                  placeholder="name@organization.com" 
+ 
                   class="w-full px-6 py-4 bg-gray-50 border-none rounded-2xl focus:ring-2 focus:ring-[#27628C] text-sm font-bold placeholder:text-gray-400 transition-all"
                 />
               </div>

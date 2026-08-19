@@ -49,7 +49,7 @@
                         <p class="text-gray-300 uppercase text-sm">Notify me when it's ready</p>
                         <form @submit.prevent="sendToWhatsApp" class="w-full flex items-center">
                             <input type="email" name="email" id="email"  v-model="email"
-              class="w-72 p-2 py-3.5 border-gray-300 focus:outline-none focus:ring-0 focus:border-gray-300 rounded-tl rounded-bl text-sm" placeholder="Email" autocomplete="off">
+              class="w-72 p-2 py-3.5 border-gray-300 focus:outline-none focus:ring-0 focus:border-gray-300 rounded-tl rounded-bl text-sm" autocomplete="off">
                             <button type="submit" class="bg-blue-600 hover:bg-blue-700 py-3.5 px-6 text-gray-100 border border-blue-600 rounded-tr rounded-br text-sm">Subscribe</button>
                         </form>
                         <p v-if="message" class="text-sm mt-4 text-gray-200">{{ message }}</p>

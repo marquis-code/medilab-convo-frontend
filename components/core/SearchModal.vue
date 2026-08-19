@@ -5,7 +5,7 @@
         <input
           type="text"
           v-model="searchQuery"
-          placeholder="Enter route name..."
+
           class="w-full border border-gray-300 p-2 rounded-md"
           autofocus
         />

@@ -157,8 +157,8 @@
             </div>
             <div class="flex-1 bg-white border border-gray-100 rounded-[2.5rem] focus-within:ring-[12px] focus-within:ring-blue-50/50 focus-within:border-[#27628C]/30 transition-all duration-500 overflow-hidden shadow-2xl shadow-blue-900/5">
               <div v-if="!userProfile" class="grid grid-cols-2 gap-0 border-b border-gray-50">
-                <input v-model="commentForm.userName" type="text" placeholder="Full Name" class="w-full px-6 py-4 text-sm font-bold text-gray-900 border-r border-gray-50 focus:outline-none placeholder:text-gray-300 bg-transparent" />
-                <input v-model="commentForm.userEmail" type="email" placeholder="Email (Private)" class="w-full px-6 py-4 text-sm font-bold text-gray-900 focus:outline-none placeholder:text-gray-300 bg-transparent" />
+                <input v-model="commentForm.userName" type="text" class="w-full px-6 py-4 text-sm font-bold text-gray-900 border-r border-gray-50 focus:outline-none placeholder:text-gray-300 bg-transparent" />
+                <input v-model="commentForm.userEmail" type="email" class="w-full px-6 py-4 text-sm font-bold text-gray-900 focus:outline-none placeholder:text-gray-300 bg-transparent" />
               </div>
               <div v-else class="px-6 py-3 bg-gray-50/50 border-b border-gray-50 flex items-center justify-between">
                 <span class="text-[10px] font-bold text-[#27628C] uppercase tracking-normal">Posting as @{{ userProfile.userHandle }}</span>
@@ -167,7 +167,7 @@
               <textarea
                 v-model="commentForm.content"
                 rows="3"
-                placeholder="What's your clinical perspective?"
+
                 class="w-full px-6 py-6 text-base font-medium text-gray-700 border-none focus:outline-none placeholder:text-gray-300 resize-none bg-transparent"
                 @focus="replyTo = null"
               ></textarea>
@@ -224,7 +224,7 @@
             <!-- Inline Reply Area (Integrated Design) -->
             <div v-if="replyTo?._id === comment._id" class="flex gap-5 mt-4 mb-8 ml-16 animate-fade-in-up">
               <div class="flex-1 bg-white border border-[#27628C]/20 rounded-[2rem] focus-within:ring-[8px] focus-within:ring-blue-50 transition-all overflow-hidden shadow-xl">
-                <textarea v-model="commentForm.content" rows="2" placeholder="Contributing to this perspective..." class="w-full px-6 py-4 text-sm font-medium text-gray-700 border-none focus:outline-none placeholder:text-gray-300 bg-transparent resize-none"></textarea>
+                <textarea v-model="commentForm.content" rows="2" class="w-full px-6 py-4 text-sm font-medium text-gray-700 border-none focus:outline-none placeholder:text-gray-300 bg-transparent resize-none"></textarea>
                 <div class="px-6 py-3 flex justify-between items-center border-t border-gray-50 bg-gray-50/30">
                   <span class="text-[9px] font-bold text-gray-400 uppercase">Reply Mode</span>
                   <div class="flex gap-3">

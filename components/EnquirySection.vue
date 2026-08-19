@@ -67,7 +67,7 @@
                       v-model="form.firstName" 
                       type="text" 
                       required 
-                      placeholder="e.g. John"
+
                       class="w-full px-6 py-4 bg-gray-50 border border-gray-100 rounded-2xl text-sm font-medium focus:bg-white focus:border-[#27628C] focus:ring-4 focus:ring-[#27628C]/5 outline-none transition-all placeholder:text-gray-300"
                     />
                   </div>
@@ -77,7 +77,7 @@
                       v-model="form.lastName" 
                       type="text" 
                       required 
-                      placeholder="e.g. Doe"
+
                       class="w-full px-6 py-4 bg-gray-50 border border-gray-100 rounded-2xl text-sm font-medium focus:bg-white focus:border-[#27628C] focus:ring-4 focus:ring-[#27628C]/5 outline-none transition-all placeholder:text-gray-300"
                     />
                   </div>
@@ -89,7 +89,7 @@
                     v-model="form.email" 
                     type="email" 
                     required 
-                    placeholder="john@example.com"
+
                     class="w-full px-6 py-4 bg-gray-50 border border-gray-100 rounded-2xl text-sm font-medium focus:bg-white focus:border-[#27628C] focus:ring-4 focus:ring-[#27628C]/5 outline-none transition-all placeholder:text-gray-300"
                   />
                 </div>
@@ -100,7 +100,7 @@
                     v-model="form.phoneNumber" 
                     type="tel" 
                     required 
-                    placeholder="+234 ... or 080 ..."
+
                     class="w-full px-6 py-4 bg-gray-50 border border-gray-100 rounded-2xl text-sm font-medium focus:bg-white focus:border-[#27628C] focus:ring-4 focus:ring-[#27628C]/5 outline-none transition-all placeholder:text-gray-300"
                   />
                 </div>
@@ -111,7 +111,7 @@
                     v-model="form.message" 
                     required 
                     rows="6"
-                    placeholder="Briefly describe your requirements or questions..."
+
                     class="w-full px-6 py-4 bg-gray-50 border border-gray-100 rounded-[2rem] text-sm font-medium focus:bg-white focus:border-[#27628C] focus:ring-4 focus:ring-[#27628C]/5 outline-none transition-all placeholder:text-gray-300 resize-none"
                   ></textarea>
                 </div>
