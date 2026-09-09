@@ -8,7 +8,7 @@
               Support MedLabConvo
             </h1>
             <p class="text-2xl sm:text-2xl lg:text-4xl text-gray-900  font-light animate-fade-in-delay">
-              Empower the Future of Healthcare Professionals.
+              Empower the Future of Laboratory Medicine.
             </p>
           </div>
         </div>
