@@ -8,7 +8,7 @@
               Support MedLabConvo
             </h1>
             <p class="text-2xl sm:text-2xl lg:text-4xl text-gray-900  font-light animate-fade-in-delay">
-              Empower the Future of Medical Laboratory Science
+              Empower the Future of Healthcare Professionals.
             </p>
           </div>
         </div>
@@ -28,9 +28,9 @@
         </h2>
         <p class="text-xl text-gray-600 text-center mt-8 max-w-4xl mx-auto leading-relaxed">
           MedLabConvo is more than just a platform; it is a movement dedicated
-          to transforming the landscape of medical laboratory science. Through
+          to transforming the landscape of healthcare. Through
           education, mentorship, advocacy, and system strengthening, we are
-          shaping the future of healthcare by empowering laboratory
+          shaping the future of healthcare by empowering healthcare
           professionals at every stage of their careers.
         </p>
       </div>
@@ -52,7 +52,7 @@
                 </h1>
                 <p class="text-xl text-gray-600 mb-12 max-w-4xl mx-auto leading-relaxed">
                   Our programs and professional development initiatives
-                  equip young medical laboratory scientists with the skills and
+                  equip young healthcare professionals with the skills and
                   opportunities they need to thrive.
                 </p>
               </div>
@@ -95,8 +95,8 @@
                   ✅ Expand Access to Opportunities
                 </h1>
                 <p class="text-xl text-gray-600 mb-12 max-w-4xl mx-auto leading-relaxed">
-                  Our networking and community-building efforts connect medical
-                  laboratory scientists worldwide, ensuring that no one is left
+                  Our networking and community-building efforts connect healthcare
+                  professionals worldwide, ensuring that no one is left
                   behind.
                 </p>
               </div>
@@ -155,7 +155,7 @@
         <p class="text-lg text-gray-700 text-center max-w-3xl mx-auto mb-10 leading-relaxed">
           Every donation counts! Show your support for MedLabConvo and receive a
           token of appreciation — our way of saying <span class="font-semibold">thank you</span>
-          for helping us build a stronger community of Biomedical Scientists.
+          for helping us build a stronger community of Healthcare Professionals.
         </p>
 
         <!-- Grid -->
@@ -229,7 +229,7 @@
           Join Us in Making an Impact
         </h2>
         <p class="text-xl max-w-[800px] w-full text-gray-600 text-center mt-6 leading-relaxed">
-          By supporting MedLabConvo, you are investing in a future where medical laboratory scientists are better
+          By supporting MedLabConvo, you are investing in a future where healthcare professionals are better
           equipped, more connected, and more empowered to drive change in healthcare.
         </p>
         <p class="text-2xl font-bold text-gray-900 text-center mt-14">
