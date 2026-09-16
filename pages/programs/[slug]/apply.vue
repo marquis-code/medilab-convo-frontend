@@ -21,7 +21,7 @@
                 <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
                 <span class="text-[10px] font-black text-white uppercase tracking-widest">Enrolment Portal</span>
              </div>
-             <h1 class="text-4xl md:text-5xl font-black text-white tracking-tight leading-tight">
+             <h1 class="text-4xl md:text-4xl font-black text-white tracking-tight leading-tight">
                {{ program?.title || 'Program Registration' }}
              </h1>
           </div>

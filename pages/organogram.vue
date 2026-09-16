@@ -22,7 +22,7 @@
 
       <div class="relative max-w-7xl mx-auto px-6 text-center">
         <span class="inline-block px-4 py-1.5 mb-6 text-sm font-bold tracking-[0.2em] text-indigo-400 uppercase bg-indigo-500/10 rounded-full border border-indigo-500/20">Team Hierarchy</span>
-        <h1 class="text-4xl md:text-7xl font-extrabold text-white mb-8 tracking-tighter leading-tight lg:px-20">
+        <h1 class="text-4xl md:text-5xl font-extrabold text-white mb-8 tracking-tighter leading-tight lg:px-20">
           Our Organizational Structure
         </h1>
         <p class="text-lg md:text-xl text-slate-400 max-w-3xl mx-auto leading-relaxed">

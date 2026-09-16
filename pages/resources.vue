@@ -7,7 +7,7 @@
       <div class="mx-auto max-w-7xl px-6 lg:px-8 relative z-10 flex flex-col items-center justify-center pt-16 text-center">
         <div class="max-w-3xl">
           <h1 class="text-sm font-bold text-blue-200 mb-6 animate-fade-in tracking-normal">Knowledge Hub</h1>
-          <h2 class="text-4xl font-bold tracking-tight text-white sm:text-8xl mb-8 animate-fade-in-up ">Resources</h2>
+          <h2 class="text-4xl font-bold tracking-tight text-white sm:text-6xl mb-8 animate-fade-in-up ">Resources</h2>
           <p class="text-xl leading-8 text-blue-50 font-medium animate-fade-in-up animation-delay-200 max-w-2xl mx-auto">
             A comprehensive collection of research papers, policy briefs, professional toolkits, and educational materials to support medical laboratory excellence.
           </p>
@@ -138,7 +138,7 @@
           <div class="p-12 sm:p-20 flex flex-col md:flex-row items-center justify-between gap-12">
             <div class="max-w-xl text-center md:text-left">
               <h2 class="text-sm font-bold text-blue-400 mb-6">Video Library</h2>
-              <h3 class="text-2xl sm:text-5xl font-bold text-white mb-8">Recorded Webinars</h3>
+              <h3 class="text-2xl sm:text-4xl font-bold text-white mb-8">Recorded Webinars</h3>
               <p class="text-lg text-gray-400 font-light mb-10">
                 We are currently migrating our extensive library of recorded webinars to this new hub. Stay tuned for expert sessions on diagnostics, research methodologies, and career development.
               </p>

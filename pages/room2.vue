@@ -114,7 +114,7 @@
         <div v-if="gameState === 'welcome'" class="text-center space-y-8 animate-fade-in">
           <!-- Logo with 3D Effect -->
           <div class="relative mb-12">
-            <h1 class="text-6xl sm:text-8xl lg:text-9xl font-black mb-6 relative">
+            <h1 class="text-5xl sm:text-6xl lg:text-7xl font-black mb-6 relative">
               <span class="bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500 bg-clip-text text-transparent animate-gradient-x">
                 MEDLAB
               </span>
@@ -179,7 +179,7 @@
           <!-- Room Header with Holographic Effect -->
           <div class="text-center mb-12">
             <div class="relative inline-block">
-              <h2 class="text-2xl sm:text-5xl font-bold mb-4">
+              <h2 class="text-2xl sm:text-4xl font-bold mb-4">
                 <span class="bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
                   {{ currentPuzzle.title }}
                 </span>
@@ -300,7 +300,7 @@
             <!-- Result Display -->
             <div v-if="showingResult" class="text-center space-y-8">
               <div v-if="lastAnswerCorrect" class="space-y-6">
-                <div class="text-8xl animate-bounce">✨</div>
+                <div class="text-6xl animate-bounce">✨</div>
                 <h3 class="text-4xl font-bold text-green-400 animate-pulse">PROTOCOL ACCEPTED</h3>
                 <div class="glass-panel max-w-md mx-auto p-6">
                   <p class="text-gray-300 mb-4">{{ currentPuzzle.correctAnswer }}</p>
@@ -312,7 +312,7 @@
               </div>
               
               <div v-else class="space-y-6">
-                <div class="text-8xl animate-shake">⚠️</div>
+                <div class="text-6xl animate-shake">⚠️</div>
                 <h3 class="text-4xl font-bold text-red-400 animate-pulse">PROTOCOL REJECTED</h3>
                 <div class="glass-panel max-w-md mx-auto p-6 border-red-500/50">
                   <p class="text-red-300 mb-4">{{ currentPuzzle.wrongMessage }}</p>
@@ -344,11 +344,11 @@
         <!-- Victory Screen -->
         <div v-else-if="gameState === 'victory'" class="text-center space-y-8 animate-fade-in">
           <div class="relative">
-            <div class="text-9xl mb-8 animate-float">🌟</div>
+            <div class="text-7xl mb-8 animate-float">🌟</div>
             <div class="absolute inset-0 bg-gradient-to-r from-green-400 to-cyan-400 opacity-20 blur-3xl animate-pulse"></div>
           </div>
           
-          <h1 class="text-6xl sm:text-8xl font-black mb-8">
+          <h1 class="text-5xl sm:text-6xl font-black mb-8">
             <span class="bg-gradient-to-r from-green-400 via-cyan-400 to-blue-500 bg-clip-text text-transparent animate-gradient-x">
               QUANTUM BREACH
             </span>
@@ -383,11 +383,11 @@
         <!-- Game Over Screen -->
         <div v-else-if="gameState === 'gameOver'" class="text-center space-y-8 animate-fade-in">
           <div class="relative">
-            <div class="text-9xl mb-8 animate-shake">💀</div>
+            <div class="text-7xl mb-8 animate-shake">💀</div>
             <div class="absolute inset-0 bg-gradient-to-r from-red-500 to-orange-500 opacity-20 blur-3xl animate-pulse"></div>
           </div>
           
-          <h1 class="text-6xl sm:text-8xl font-black mb-8">
+          <h1 class="text-5xl sm:text-6xl font-black mb-8">
             <span class="bg-gradient-to-r from-red-500 via-orange-500 to-red-600 bg-clip-text text-transparent animate-gradient-x">
               SYSTEM FAILURE
             </span>

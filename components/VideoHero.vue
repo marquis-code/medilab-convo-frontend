@@ -33,7 +33,7 @@
   </section>
         <!-- Header -->
         <!-- <div class="text-center mb-16" ref="headerRef">
-          <h2 class="text-4xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight transform transition-all duration-1000"
+          <h2 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight transform transition-all duration-1000"
               :class="{ 'translate-y-0 opacity-100': headerVisible, 'translate-y-10 opacity-0': !headerVisible }">
             <span class="bg-gradient-to-r from-[#27628C] via-blue-600 to-cyan-500 bg-clip-text text-transparent">
               Transforming Healthcare

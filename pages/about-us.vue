@@ -5,7 +5,7 @@
         <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:20px_20px]"></div>
         <div class="mx-auto max-w-7xl relative z-10 text-center">
            <div class="max-w-4xl mx-auto">
-              <h1 class="text-4xl md:text-8xl font-bold text-white leading-tight tracking-tighter  mb-8 animate-in fade-in slide-in-from-bottom-10 duration-1000">
+              <h1 class="text-4xl md:text-6xl font-bold text-white leading-tight tracking-tighter  mb-8 animate-in fade-in slide-in-from-bottom-10 duration-1000">
                  {{ getSectionContent('hero_title', 'Leading Change, Building Capacity, Inspiring Action') }}
               </h1>
               <p class="text-lg md:text-xl text-blue-50 font-medium leading-relaxed max-w-2xl mx-auto animate-in fade-in slide-in-from-bottom-10 duration-1000 delay-200">

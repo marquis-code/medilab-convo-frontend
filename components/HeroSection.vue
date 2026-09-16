@@ -30,7 +30,7 @@
               </div>
             </div> -->
             <img src="@/assets/img/mobile-application.png" alt="App screenshot" width="2432" height="1542" class="w-[76rem] mt-16 lg:mt-0 lg:hidden">
-            <h1 class="mt-10 max-w-lg text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">Need help locating bed spaces?</h1>
+            <h1 class="mt-10 max-w-lg text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">Need help locating bed spaces?</h1>
             <TypewriterText class="max-w-lg" />
             <div class="mt-10 flex items-center gap-x-6">
               <a href="#search" class="rounded-xl bg-[#CC1100] px-3.5 py-2.5 text-sm  font-semibold text-white shadow-sm hover:bg-[#CC1100] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#CC1100]">FIND A BED-SPACE NOW!</a>

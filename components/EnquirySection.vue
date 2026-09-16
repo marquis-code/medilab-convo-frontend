@@ -8,7 +8,7 @@
           <div class="inline-block px-4 py-1.5 bg-[#27628C]/10 text-[#27628C] text-[10px] font-bold rounded-full">
              Initiate Dialogue
           </div>
-          <h2 class="text-4xl md:text-7xl font-bold text-gray-900 leading-tight tracking-tighter ">
+          <h2 class="text-4xl md:text-5xl font-bold text-gray-900 leading-tight tracking-tighter ">
             Expanding <span class="text-[#27628C]">Healthcare</span> <br /> Through Connection
           </h2>
           <p class="text-lg md:text-xl text-gray-500 font-medium leading-relaxed max-w-lg">

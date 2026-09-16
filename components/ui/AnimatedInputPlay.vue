@@ -248,7 +248,7 @@
                 </button>
               </div>
               
-              <span class="text-5xl font-bold text-gray-300 select-none">:</span>
+              <span class="text-4xl font-bold text-gray-300 select-none">:</span>
               
               <div class="flex flex-col items-center">
                 <button type="button" @click.stop="incMin" class="p-3 hover:bg-gray-100 rounded-xl mb-3 transition-all group">

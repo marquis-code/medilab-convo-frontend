@@ -8,7 +8,7 @@
         <div class="mx-auto max-w-7xl px-6 lg:px-8 relative z-10">
           <div class="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center">
             <div class="w-full max-w-xl lg:shrink-0 xl:max-w-2xl">
-              <h1 class="text-4xl md:text-7xl font-bold text-white leading-tight tracking-tighter  mb-8 animate-in fade-in slide-in-from-bottom-10 duration-1000">
+              <h1 class="text-4xl md:text-5xl font-bold text-white leading-tight tracking-tighter  mb-8 animate-in fade-in slide-in-from-bottom-10 duration-1000">
                 A Global Network <br /> of Excellence
               </h1>
               <p class="text-lg md:text-xl leading-8 text-blue-50 font-medium max-w-xl animate-in fade-in slide-in-from-bottom-10 duration-1000 delay-200">
@@ -53,7 +53,7 @@
                 <span class="w-1.5 h-1.5 rounded-full bg-[#27628C] animate-pulse"></span>
                 Active Community
               </div>
-              <h2 class="text-4xl md:text-5xl font-bold text-gray-900  tracking-tight">Interntional</h2>
+              <h2 class="text-4xl md:text-4xl font-bold text-gray-900  tracking-tight">Interntional</h2>
               <div class="h-1.5 w-20 bg-[#27628C] rounded-full"></div>
               
               <div class="space-y-6 text-gray-600 font-medium leading-relaxed">
@@ -99,7 +99,7 @@
                   <span class="w-1.5 h-1.5 rounded-full bg-blue-300"></span>
                   Opening Soon
                 </div>
-                <h2 class="text-4xl md:text-5xl font-bold text-gray-900  tracking-tight">UniVerse</h2>
+                <h2 class="text-4xl md:text-4xl font-bold text-gray-900  tracking-tight">UniVerse</h2>
                 <div class="h-1.5 w-20 bg-[#27628C] rounded-full"></div>
                 
                 <div class="space-y-6 text-gray-600 font-medium leading-relaxed">

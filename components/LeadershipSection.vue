@@ -3,7 +3,7 @@
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
       <!-- Section Header -->
       <div class="max-w-2xl mb-20 animate-fade-in">
-        <h2 class="text-4xl md:text-7xl font-bold text-gray-900 leading-tight tracking-tighter  mb-8">
+        <h2 class="text-4xl md:text-5xl font-bold text-gray-900 leading-tight tracking-tighter  mb-8">
           The <span class="text-[#27628C]">Architects</span> of Change
         </h2>
         <p class="text-lg md:text-xl text-gray-500 font-medium leading-relaxed max-w-lg">

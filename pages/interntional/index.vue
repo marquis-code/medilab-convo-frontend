@@ -52,7 +52,7 @@
       <div class="mx-auto max-w-7xl px-6 lg:px-8 flex justify-center items-center w-full flex-col pt-16">
         <div class="mx-auto max-w-2xl lg:mx-0 flex justify-center items-center w-full flex-col">
           <h2
-            class="text-4xl font-bold text-center tracking-tight text-white sm:text-6xl mt-20">
+            class="text-4xl font-bold text-center tracking-tight text-white sm:text-5xl mt-20">
             Interntional
           </h2>
           <p class="mt-3 text-lg leading-8 text-white text-center">
@@ -64,7 +64,7 @@
 
     <div class="mt-20 flex justify-center items-center px-4">
       <div class="max-w-[900px] w-full flex flex-col justify-center items-center">
-        <h2 class="text-4xl md:text-6xl text-center font-extrabold text-gray-900">
+        <h2 class="text-4xl md:text-5xl text-center font-extrabold text-gray-900">
           Transform Your Internship Experience, Transform Your Future!
         </h2>
         <div class="overflow-hidden">

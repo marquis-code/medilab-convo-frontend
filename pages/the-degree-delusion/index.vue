@@ -9,7 +9,7 @@
             <div class="relative max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-14">
                 <div class="flex-1 text-center lg:text-left">
                     <span class="inline-block mb-4 text-xs font-semibold uppercase tracking-widest text-[#27628C] bg-[#27628C]/10 px-4 py-1.5 rounded-full">Available Now for Order</span>
-                    <h1 class="font-extrabold text-5xl lg:text-6xl leading-tight text-gray-900 mb-6" style="font-family: 'Georgia', serif;">
+                    <h1 class="font-extrabold text-4xl lg:text-5xl leading-tight text-gray-900 mb-6" style="font-family: 'Georgia', serif;">
                         The Degree<br />
                         <span class="text-[#27628C]">Delusion</span>
                     </h1>

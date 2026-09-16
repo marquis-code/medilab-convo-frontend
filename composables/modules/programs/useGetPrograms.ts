@@ -12,7 +12,7 @@ export const useGetPrograms = () => {
 
     try {
       const response = await programs_api.$_get_programs(params)
-      programs.value = response.data
+      programs.value = Array.isArray(response.data) ? response.data : (response.data?.data || [])
       return response.data
     } catch (err: any) {
       error.value = err.response?.data?.message || 'Failed to fetch programs'

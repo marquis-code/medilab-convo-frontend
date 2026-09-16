@@ -15,7 +15,7 @@
           <div class="inline-block px-4 py-1.5 bg-blue-50 text-[#27628C] text-[10px] font-bold rounded-full mb-4 capitalize">
             {{ section.id?.replace(/_/g, ' ') || 'Insight' }}
           </div>
-          <h2 class="text-3xl md:text-5xl font-bold text-gray-900 leading-tight tracking-tighter ">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 leading-tight tracking-tighter ">
             {{ section.title }}
           </h2>
         </div>

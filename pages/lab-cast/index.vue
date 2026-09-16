@@ -7,7 +7,7 @@
       <div class="mx-auto max-w-7xl px-6 lg:px-8 relative z-10 flex flex-col items-center justify-center pt-16 text-center">
         <div class="max-w-3xl">
           <h1 class="text-sm font-bold text-blue-200 mb-6 animate-fade-in tracking-normal">Audio & Visual Insights</h1>
-          <h2 class="text-4xl font-bold tracking-tight text-white sm:text-8xl mb-8 animate-fade-in-up ">LabCast</h2>
+          <h2 class="text-4xl font-bold tracking-tight text-white sm:text-6xl mb-8 animate-fade-in-up ">LabCast</h2>
           <p class="text-xl leading-8 text-blue-50 font-medium animate-fade-in-up animation-delay-200 max-w-2xl mx-auto">
             Conversations with laboratory scientists, public health experts, health innovators, and policy leaders shaping the future of healthcare.
           </p>
@@ -72,7 +72,7 @@
                 </span>
               </div>
 
-              <h3 class="text-4xl lg:text-5xl font-black text-gray-900 leading-[1.1] group-hover:text-[#27628C] transition-colors duration-300">
+              <h3 class="text-4xl lg:text-4xl font-black text-gray-900 leading-[1.1] group-hover:text-[#27628C] transition-colors duration-300">
                 {{ latestEpisode.title }}
               </h3>
               
@@ -220,7 +220,7 @@
       <!-- Empty State -->
       <div v-else-if="!loading" class="text-center py-16 animate-fade-in">
         <div class="w-32 h-32 mx-auto mb-6 bg-gray-100 rounded-full flex items-center justify-center">
-          <span class="text-6xl">🎙️</span>
+          <span class="text-5xl">🎙️</span>
         </div>
         <h3 class="text-2xl font-semibold text-gray-900 mb-2">No Episodes Available</h3>
         <p class="text-gray-600 text-lg">We're working on bringing you amazing content. Check back soon!</p>

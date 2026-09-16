@@ -4,7 +4,7 @@
       <div class="relative isolate overflow-hidden pt-14">
         <div class="mx-auto max-w-2xl lg:py-32 lg:mt-10 mt-36">
           <div class="text-center space-y-5">
-            <h1 class="font-bold tracking-tight text-gray-900 text-5xl sm:text-7xl lg:text-6xl">
+            <h1 class="font-bold tracking-tight text-gray-900 text-4xl sm:text-5xl lg:text-5xl">
               Support MedLabConvo
             </h1>
             <p class="text-2xl sm:text-2xl lg:text-4xl text-gray-900  font-light animate-fade-in-delay">

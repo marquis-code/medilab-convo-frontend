@@ -51,7 +51,7 @@
                   </span>
                 </div>
 
-                <h1 class="text-4xl md:text-6xl font-black text-gray-900 tracking-tight leading-[1.1]">
+                <h1 class="text-4xl md:text-5xl font-black text-gray-900 tracking-tight leading-[1.1]">
                   {{ program.title }}
                 </h1>
               </div>
@@ -134,7 +134,7 @@
           
           <div class="text-center mb-24 space-y-4">
             <h3 class="text-xs font-black text-[#27628C] uppercase tracking-[0.4em]">Faculty & Mentors</h3>
-            <h2 class="text-4xl md:text-5xl font-black text-gray-900 tracking-tight">Scientific Experts</h2>
+            <h2 class="text-4xl md:text-4xl font-black text-gray-900 tracking-tight">Scientific Experts</h2>
           </div>
 
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 text-center">
@@ -310,7 +310,7 @@
           
           <div class="container mx-auto px-6 text-center space-y-12 relative z-10">
              <div class="max-w-3xl mx-auto space-y-4">
-                <h2 class="text-4xl md:text-5xl font-black text-white tracking-tight leading-tight">Ready to transform your professional journey?</h2>
+                <h2 class="text-4xl md:text-4xl font-black text-white tracking-tight leading-tight">Ready to transform your professional journey?</h2>
                 <p class="text-gray-400 font-medium text-lg">Secure your spot today</p>
              </div>
              

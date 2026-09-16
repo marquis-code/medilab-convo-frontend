@@ -26,7 +26,7 @@
               <span class="block text-gray-600 text-sm">From your location</span>
               <h2 class="text-lg font-medium">Estimated Time of Arrival</h2>
               <div class="flex items-center">
-                <span class="text-4xl lg:text-6xl custom-font">44</span>
+                <span class="text-4xl lg:text-5xl custom-font">44</span>
                 <span class="ml-2 text-sm lg:text-lg text-gray-900">mins</span>
               </div>
             </div>
@@ -36,7 +36,7 @@
               <span class="block text-gray-600 text-sm">From your location</span>
               <h2 class="text-lg font-medium">Distance</h2>
               <div class="flex items-center">
-                <span class="text-4xl lg:text-6xl custom-font">{{ distance.toFixed(2) }}</span>
+                <span class="text-4xl lg:text-5xl custom-font">{{ distance.toFixed(2) }}</span>
                 <span class="ml-2 text-sm lg:text-lg text-gray-900">km</span>
               </div>
             </div>

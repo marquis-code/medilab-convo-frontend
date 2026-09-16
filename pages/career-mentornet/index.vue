@@ -7,7 +7,7 @@
     <section class="relative py-24 px-6 mt-24 text-center">
       <div class="max-w-4xl mx-auto">
         <h1
-          class="text-4xl md:text-6xl font-semibold text-[#27628C] leading-tight mb-4 animate-fade-up"
+          class="text-4xl md:text-5xl font-semibold text-[#27628C] leading-tight mb-4 animate-fade-up"
         >
           Career Mentornet Program
         </h1>

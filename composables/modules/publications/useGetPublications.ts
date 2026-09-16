@@ -12,7 +12,7 @@ export const useGetPublications = () => {
 
     try {
       const response = await publications_api.$_get_publications(params)
-      publications.value = response.data
+      publications.value = Array.isArray(response.data) ? response.data : (response.data?.data || [])
       return response.data
     } catch (err: any) {
       error.value = err.response?.data?.message || 'Failed to fetch publications'

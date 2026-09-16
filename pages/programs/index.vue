@@ -8,7 +8,7 @@
         <h2 class="text-sm font-bold text-blue-200 mb-8 animate-fade-in tracking-normal">
           Elevating Clinical Excellence
         </h2>
-        <h1 class="text-5xl md:text-8xl font-bold text-white leading-tight  tracking-tighter animate-fade-in-up">
+        <h1 class="text-4xl md:text-6xl font-bold text-white leading-tight  tracking-tighter animate-fade-in-up">
           Programs
         </h1>
         <p class="mt-8 text-xl md:text-2xl text-blue-50 font-medium max-w-3xl leading-relaxed animate-fade-in-up delay-200">
@@ -23,7 +23,7 @@
         <div class="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-20 animate-fade-in">
           <div>
             <h2 class="text-[10px] font-bold text-[#27628C] tracking-normal mb-4">Opportunities</h2>
-            <h3 class="text-4xl md:text-5xl font-bold text-gray-900  tracking-tight">Current Initiatives</h3>
+            <h3 class="text-4xl md:text-4xl font-bold text-gray-900  tracking-tight">Current Initiatives</h3>
           </div>
           <p class="text-gray-400 text-sm font-medium uppercase tracking-widest" v-if="!loading">
             {{ activePrograms.length }} Active Programs
@@ -138,7 +138,7 @@
       <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:20px_20px]"></div>
       <div class="max-w-4xl mx-auto text-center space-y-10 relative z-10">
         <h2 class="text-sm font-bold text-blue-200 tracking-normal animate-fade-in">The Future Of The Lab</h2>
-        <h3 class="text-4xl md:text-7xl font-bold text-white leading-tight  tracking-tighter">
+        <h3 class="text-4xl md:text-5xl font-bold text-white leading-tight  tracking-tighter">
           Your Career, <span class="text-blue-200 ">Accelerated.</span>
         </h3>
         <p class="text-xl text-blue-50 font-medium leading-relaxed">

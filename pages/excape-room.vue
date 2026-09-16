@@ -77,7 +77,7 @@
       <!-- Welcome Screen -->
       <div v-if="gameState === 'welcome'" class="fade-in text-center max-w-2xl mx-auto px-4">
         <div class="mb-6 sm:mb-8">
-          <h1 class="text-2xl sm:text-4xl md:text-6xl font-black mb-4 bg-gradient-to-r from-cyan-400 via-blue-400 to-cyan-400 bg-clip-text text-transparent animate-pulse">
+          <h1 class="text-2xl sm:text-4xl md:text-5xl font-black mb-4 bg-gradient-to-r from-cyan-400 via-blue-400 to-cyan-400 bg-clip-text text-transparent animate-pulse">
             MEDLABCONVO
           </h1>
           <h2 class="text-xl sm:text-2xl md:text-2xl font-bold text-cyan-400 mb-4 sm:mb-6">ESCAPE ROOM</h2>
@@ -173,14 +173,14 @@
           <!-- Result Display -->
           <div v-if="showingResult" class="text-center">
             <div v-if="lastAnswerCorrect" class="mb-6">
-              <div class="text-4xl sm:text-6xl mb-4 animate-bounce">✅</div>
+              <div class="text-4xl sm:text-5xl mb-4 animate-bounce">✅</div>
               <h3 class="text-xl sm:text-2xl font-bold text-green-400 mb-2">CORRECT!</h3>
               <p class="text-gray-300 mb-4 text-sm sm:text-base">{{ currentPuzzle.correctAnswer }}</p>
               <div class="text-green-400 animate-pulse">🚪 Door unlocking...</div>
             </div>
             
             <div v-else class="mb-6">
-              <div class="text-4xl sm:text-6xl mb-4 animate-bounce">❌</div>
+              <div class="text-4xl sm:text-5xl mb-4 animate-bounce">❌</div>
               <h3 class="text-xl sm:text-2xl font-bold text-red-400 mb-2">WRONG ANSWER!</h3>
               <p class="text-red-300 mb-4 text-sm sm:text-base">{{ currentPuzzle.wrongMessage }}</p>
               <div class="text-red-400 animate-pulse mb-4">⚠️ Oxygen depleting rapidly...</div>
@@ -209,8 +209,8 @@
       <!-- Victory Screen -->
       <div v-else-if="gameState === 'victory'" class="fade-in text-center max-w-2xl mx-auto px-4">
         <div class="mb-6 sm:mb-8">
-          <div class="text-6xl sm:text-8xl mb-6 animate-bounce">🎉</div>
-          <h1 class="text-2xl sm:text-4xl md:text-6xl font-black mb-4 bg-gradient-to-r from-green-400 via-yellow-400 to-green-400 bg-clip-text text-transparent">
+          <div class="text-5xl sm:text-6xl mb-6 animate-bounce">🎉</div>
+          <h1 class="text-2xl sm:text-4xl md:text-5xl font-black mb-4 bg-gradient-to-r from-green-400 via-yellow-400 to-green-400 bg-clip-text text-transparent">
             ESCAPED!
           </h1>
           <div class="bg-black/90 p-4 sm:p-6 rounded-lg border border-green-500 mb-6 sm:mb-8 backdrop-blur-sm">
@@ -234,8 +234,8 @@
       <!-- Game Over Screen -->
       <div v-else-if="gameState === 'gameOver'" class="fade-in text-center max-w-2xl mx-auto px-4">
         <div class="mb-6 sm:mb-8">
-          <div class="text-6xl sm:text-8xl mb-6 animate-pulse">💀</div>
-          <h1 class="text-2xl sm:text-4xl md:text-6xl font-black mb-4 text-red-500">
+          <div class="text-5xl sm:text-6xl mb-6 animate-pulse">💀</div>
+          <h1 class="text-2xl sm:text-4xl md:text-5xl font-black mb-4 text-red-500">
             GAME OVER
           </h1>
           <div class="bg-black/90 p-4 sm:p-6 rounded-lg border border-red-500 mb-6 sm:mb-8 backdrop-blur-sm">
@@ -738,8 +738,8 @@ definePageMeta({
 @media (max-width: 640px) {
   .text-2xl { font-size: 1.875rem; }
   .text-4xl { font-size: 2.25rem; }
-  .text-6xl { font-size: 3rem; }
-  .text-8xl { font-size: 4rem; }
+  .text-5xl { font-size: 3rem; }
+  .text-6xl { font-size: 4rem; }
 }
 
 /* Custom backdrop blur for better mobile performance */

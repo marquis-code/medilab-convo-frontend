@@ -19,7 +19,7 @@
               {{ publication.readTime || 5 }} min read
             </span>
           </div>
-          <h1 class="text-4xl md:text-8xl font-bold text-gray-900 leading-[1.05] tracking-tighter mb-10 max-w-5xl">
+          <h1 class="text-4xl md:text-6xl font-bold text-gray-900 leading-[1.05] tracking-tighter mb-10 max-w-5xl">
             {{ publication.title }}
           </h1>
           <p v-if="publication.subtitle" class="text-xl md:text-4xl text-[#27628C] font-bold leading-tight mb-8 max-w-4xl italic">
@@ -124,7 +124,7 @@
                     <div class="absolute -top-6 left-1/2 -translate-x-1/2 bg-white px-6">
                       <svg class="w-12 h-12 text-[#27628C]/20" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21L14.017 18C14.017 16.8954 14.9124 16 16.017 16H19.017C19.5693 16 20.017 15.5523 20.017 15V9C20.017 8.44772 19.5693 8 19.017 8H16.017C14.9124 8 14.017 7.10457 14.017 6V3L14.017 3H21.017V15C21.017 18.3137 18.3307 21 15.017 21H14.017ZM3.017 21L3.017 18C3.017 16.8954 3.91243 16 5.017 16H8.017C8.56928 16 9.017 15.5523 9.017 15V9C9.017 8.44772 8.56928 8 8.017 8H5.017C3.91243 8 3.017 7.10457 3.017 6V3L3.017 3H10.017V15C10.017 18.3137 7.33071 21 4.017 21H3.017Z"/></svg>
                     </div>
-                    <p class="text-2xl md:text-5xl text-gray-900 leading-tight font-medium font-serif">{{ block.content }}</p>
+                    <p class="text-2xl md:text-4xl text-gray-900 leading-tight font-medium font-serif">{{ block.content }}</p>
                     <cite v-if="block.caption" class="block mt-8 text-sm font-bold text-[#27628C] uppercase tracking-normal not-italic">— {{ block.caption }}</cite>
                   </blockquote>
 
@@ -142,7 +142,7 @@
       </div>      <!-- Discourse Section -->
       <section class="max-w-3xl mx-auto px-6 py-32 border-t border-gray-100 mt-20">
         <div class="mb-16 text-center lg:text-left">
-          <h2 class="text-3xl md:text-5xl font-bold text-gray-900 tracking-tighter flex items-center justify-center lg:justify-start gap-4">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 tracking-tighter flex items-center justify-center lg:justify-start gap-4">
             Discourse
             <span class="text-xl font-bold text-[#27628C] bg-blue-50 px-4 py-1.5 rounded-full">{{ comments.length }}</span>
           </h2>

@@ -59,7 +59,7 @@
               <span class="text-[10px] font-medium text-gray-400">{{ featuredPublication.readTime || 5 }} min read</span>
             </div>
             <NuxtLink :to="`/convostack/${featuredPublication.slug}`">
-              <h2 class="text-3xl md:text-5xl font-bold text-gray-900 leading-tight tracking-tighter hover:text-[#27628C] transition-colors">
+              <h2 class="text-3xl md:text-4xl font-bold text-gray-900 leading-tight tracking-tighter hover:text-[#27628C] transition-colors">
                 {{ featuredPublication.title }}
               </h2>
             </NuxtLink>

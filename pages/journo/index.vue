@@ -7,7 +7,7 @@
       <div class="mx-auto max-w-7xl px-6 lg:px-8 relative z-10 flex flex-col items-center justify-center pt-16 text-center">
         <div class="max-w-3xl">
           <h1 class="text-sm font-bold text-blue-200 mb-6 animate-fade-in tracking-normal">Research, Articles & Insights</h1>
-          <h2 class="text-4xl font-bold tracking-tight text-white sm:text-8xl mb-8 animate-fade-in-up ">Journo</h2>
+          <h2 class="text-4xl font-bold tracking-tight text-white sm:text-6xl mb-8 animate-fade-in-up ">Journo</h2>
           <p class="text-xl leading-8 text-blue-50 font-medium animate-fade-in-up animation-delay-200 max-w-2xl mx-auto">
             Research publications, clinical perspectives, and curated articles at the intersection of laboratory science and global health.
           </p>
@@ -36,7 +36,7 @@
                   :alt="latestPublication.title"
                   class="w-full h-full object-contain transition-transform duration-1000 group-hover:scale-105"
                 >
-                <div v-else class="w-32 h-32 bg-gray-100 rounded-full flex items-center justify-center text-6xl">📄</div>
+                <div v-else class="w-32 h-32 bg-gray-100 rounded-full flex items-center justify-center text-5xl">📄</div>
                 
                 <div class="absolute top-12 left-12">
                   <span class="bg-gray-900 text-white px-6 py-2 rounded-full text-[10px] font-black uppercase tracking-widest">
@@ -60,7 +60,7 @@
                     </div>
                   </div>
 
-                  <h3 class="text-4xl md:text-5xl font-black text-gray-900 leading-[1.1] uppercase tracking-tight group-hover:text-[#27628C] transition-colors duration-300">
+                  <h3 class="text-4xl md:text-4xl font-black text-gray-900 leading-[1.1] uppercase tracking-tight group-hover:text-[#27628C] transition-colors duration-300">
                     {{ latestPublication.title }}
                   </h3>
                   
@@ -105,7 +105,7 @@
           <div class="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-20">
             <div>
               <h2 class="text-[10px] font-bold text-[#27628C] mb-4">The Archive</h2>
-              <h3 class="text-4xl md:text-5xl font-bold text-gray-900 tracking-tighter">All Publications</h3>
+              <h3 class="text-4xl md:text-4xl font-bold text-gray-900 tracking-tighter">All Publications</h3>
             </div>
             <p class="text-gray-400 text-sm font-medium">
               Showing {{ otherPublications.length }} publications
@@ -183,7 +183,7 @@
         <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
           <div>
              <h2 class="text-sm font-bold text-blue-400 mb-8">Stay Updated</h2>
-             <h3 class="text-4xl md:text-6xl font-bold text-white leading-tight tracking-tighter mb-10">
+             <h3 class="text-4xl md:text-5xl font-bold text-white leading-tight tracking-tighter mb-10">
                Delivered to your<br><span class="text-blue-500">digital doorstep.</span>
              </h3>
              <p class="text-xl text-gray-400 font-light leading-relaxed max-w-lg">
