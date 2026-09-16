@@ -41,8 +41,8 @@
           <img v-if="slide.type === 'image' || slide.type === 'mixed'" :src="slide.mediaUrl" class="absolute inset-0 w-full h-full object-cover opacity-60" />
           
           <!-- Content -->
-          <div v-if="slide.type === 'text' || slide.type === 'mixed'" class="relative z-10 p-4 w-full h-full flex flex-col justify-center max-w-lg mx-auto">
-            <div class="bg-black/50 backdrop-blur-xl rounded-3xl p-8 border border-white/10 shadow-2xl overflow-y-auto max-h-[80%]">
+          <div v-if="slide.type === 'text' || slide.type === 'mixed'" class="relative z-20 p-4 w-full h-full flex flex-col justify-center max-w-lg mx-auto pointer-events-none">
+            <div class="bg-black/50 backdrop-blur-xl rounded-3xl p-8 border border-white/10 shadow-2xl overflow-y-auto max-h-[85%] pointer-events-auto hide-scrollbar">
               <p class="text-white text-xl md:text-2xl leading-relaxed whitespace-pre-wrap font-serif" v-html="parseMarkdown(slide.content || '')"></p>
             </div>
           </div>
@@ -137,3 +137,13 @@ const parseMarkdown = (text: string) => {
   return text.replace(/\*\*(.*?)\*\*/g, '<strong class="font-bold text-[#E5E7EB]">$1</strong>')
 }
 </script>
+
+<style>
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+</style>
