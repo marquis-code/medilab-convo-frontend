@@ -230,6 +230,7 @@ import { useCheckout } from "@/composables/modules/products/useCheckout"
 import { useCustomToast } from "@/composables/core/useCustomToast"
 import EmailPromptModal from "@/components/core/EmailPromptModal.vue"
 import { computed, onMounted, ref } from 'vue'
+import { useRoute, useRouter } from 'vue-router'
 
 const { getProducts, products, loading } = useGetProducts()
 const { initializePaystack, verifyPurchase } = useCheckout()
@@ -239,8 +240,37 @@ const selectedProduct = ref(null)
 const viewMode = ref<'grid' | 'list'>('grid')
 const isEmailPromptOpen = ref(false)
 
+const route = useRoute()
+const router = useRouter()
+
 onMounted(async () => {
   await getProducts()
+  
+  // Handle Paystack callback redirect
+  if (route.query.verify === 'true' && route.query.reference && route.query.productId && route.query.email) {
+    try {
+      await verifyPurchase(
+        route.query.reference as string, 
+        route.query.productId as string, 
+        route.query.email as string
+      )
+      
+      showToast({
+        title: 'Payment Successful',
+        message: `Your payment was verified. We've sent a confirmation email with further details.`,
+        toastType: 'success'
+      })
+      
+      // Clean up the URL
+      router.replace({ path: '/products' })
+    } catch (e) {
+      showToast({
+        title: 'Verification Failed',
+        message: 'Payment completed but verification failed. Please contact support.',
+        toastType: 'error'
+      })
+    }
+  }
 })
 
 const triggerCheckout = (product: any) => {

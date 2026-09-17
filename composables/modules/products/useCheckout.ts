@@ -5,51 +5,44 @@ import { GATEWAY_ENDPOINT } from '@/api_factory/axios.config'
 export const useCheckout = () => {
   const loading = ref(false)
 
-  const initializePaystack = (product: any, email: string, onSuccess: (reference: any) => void, onClose: () => void) => {
-    // We assume Paystack JS is loaded globally in nuxt.config or index.html
-    // e.g. <script src="https://js.paystack.co/v1/inline.js"></script>
-    
-    // In Nuxt, the config would be available via useRuntimeConfig
-    const config = useRuntimeConfig()
-    
-    // If it's free, skip Paystack
+  const initializePaystack = async (product: any, email: string, onSuccess?: (reference: any) => void, onClose?: () => void) => {
+    // If it's free, skip Paystack and return immediate success
     if (!product.price || product.price === 0) {
-      onSuccess({ status: 'success', reference: 'FREE_' + Date.now() })
+      if (onSuccess) onSuccess({ status: 'success', reference: 'FREE_' + Date.now() })
       return
     }
 
     try {
-      const handler = (window as any).PaystackPop.setup({
-        key: config.public.paystackPublicKey || 'pk_test_b8d60efd4c82c2196e8dc776bf77366efba322cb',
+      loading.value = true
+      // Pass the callback URL so Paystack redirects back here with the reference
+      const callbackUrl = `${window.location.origin}${window.location.pathname}?verify=true&productId=${product._id || product.id}&email=${encodeURIComponent(email)}`
+
+      const response = await GATEWAY_ENDPOINT.post('/payments/initialize-product-purchase', {
         email: email,
-        amount: product.price * 100, // Paystack expects amount in kobo
-        currency: 'NGN',
-        ref: 'REF_' + Math.floor(Math.random() * 1000000000 + 1),
-        metadata: {
-          custom_fields: [
-            {
-              display_name: "Product Name",
-              variable_name: "product_name",
-              value: product.name
-            }
-          ]
-        },
-        callback: function (response: any) {
-          onSuccess(response)
-        },
-        onClose: function () {
-          onClose()
-        }
+        amount: product.price,
+        productId: product._id || product.id,
+        callback_url: callbackUrl
       })
-      handler.openIframe()
+
+      const data = response.data?.data || response.data
+      
+      if (data?.authorization_url) {
+        // Redirect to Paystack's hosted checkout page
+        window.location.href = data.authorization_url
+      } else {
+        throw new Error('No authorization URL received from backend')
+      }
     } catch (error) {
       console.error('Paystack initialization failed:', error)
       const { showToast } = useCustomToast()
       showToast({
         title: 'Error',
-        message: 'Unable to initialize payment. Please try again. Ensure Paystack is loaded.',
+        message: 'Unable to initialize payment with the server. Please try again.',
         toastType: 'error'
       })
+      if (onClose) onClose()
+    } finally {
+      loading.value = false
     }
   }
 
