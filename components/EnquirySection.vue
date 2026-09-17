@@ -136,6 +136,9 @@
 import { ref, reactive } from 'vue'
 import Icon from '@/components/Icon.vue'
 import { useCreateEnquiry } from '@/composables/modules/enquires/useCreateEnquiry'
+import { useCustomToast } from '@/composables/core/useCustomToast'
+
+const { showToast } = useCustomToast()
 
 const props = defineProps<{
   prefill?: string
@@ -156,7 +159,11 @@ const handleSubmit = async () => {
     await createEnquiry(form)
   } catch (e) {
     console.error('Enquiry Submission Error:', e)
-    alert('Failed to transmit query. Please check your network protocol.')
+    showToast({
+      title: 'Error',
+      message: 'Failed to transmit query. Please check your network protocol.',
+      toastType: 'error'
+    })
   }
 }
 

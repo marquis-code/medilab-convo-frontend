@@ -229,8 +229,10 @@ import { ref, onMounted, computed } from 'vue'
 import { useRoute } from 'vue-router'
 import { useGetProgram } from '@/composables/modules/programs/useGetProgram'
 import { useSubmitApplication } from '@/composables/modules/programs/useSubmitApplication'
+import { useCustomToast } from '@/composables/core/useCustomToast'
 
 const route = useRoute()
+const { showToast } = useCustomToast()
 const { program, loading: loadingProgram, getProgram } = useGetProgram()
 const { loading: submitting, error: submitError, success, submitApplication } = useSubmitApplication()
 
@@ -256,7 +258,11 @@ const hasWhatsappLink = computed(() => {
 
 const handleSubmit = async () => {
   if (!program.value?.registrationToken) {
-    alert('Critical Error: Program registration token missing.')
+    showToast({
+      title: 'Error',
+      message: 'Critical Error: Program registration token missing.',
+      toastType: 'error'
+    })
     return
   }
 

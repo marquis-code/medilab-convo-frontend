@@ -35,7 +35,10 @@
           <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#27628C] transition-all duration-300 group-hover:w-full"></span>
         </NuxtLink>
       </div>
-      <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+      <div class="hidden lg:flex lg:flex-1 lg:justify-end lg:gap-x-4">
+        <NuxtLink to="/donate" class="text-sm font-semibold leading-6 text-[#27628C] bg-white hover:bg-gray-50 shadow-sm border border-slate-100 px-6 py-2.5 rounded-full transition-all duration-300">
+          Donate
+        </NuxtLink>
          <NuxtLink to="/about-us" class="text-sm font-semibold leading-6 text-white bg-[#27628C] hover:bg-[#1a425f] shadow-sm border border-slate-100 px-6 py-2.5 rounded-full transition-all duration-300 group">
           About Us <span aria-hidden="true" class="inline-block transition-transform group-hover:translate-x-1 ml-1">&rarr;</span>
         </NuxtLink>
@@ -64,7 +67,10 @@
                 {{ item.name }}
               </NuxtLink>
             </div>
-            <div class="py-6">
+            <div class="py-6 flex flex-col gap-3">
+              <NuxtLink @click="isOpen = false" to="/donate" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-[#27628C] bg-white border border-[#27628C] hover:bg-gray-50 transition-colors text-center">
+                Donate
+              </NuxtLink>
               <NuxtLink @click="isOpen = false" to="/about-us" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-white bg-[#27628C] hover:bg-[#1a425f] transition-colors text-center">
                 About Us
               </NuxtLink>

@@ -1,4 +1,6 @@
 import { ref } from 'vue'
+import { useCustomToast } from '@/composables/core/useCustomToast'
+import { GATEWAY_ENDPOINT } from '@/api_factory/axios.config'
 
 export const useCheckout = () => {
   const loading = ref(false)
@@ -42,12 +44,37 @@ export const useCheckout = () => {
       handler.openIframe()
     } catch (error) {
       console.error('Paystack initialization failed:', error)
-      alert('Unable to initialize payment. Please try again. Ensure Paystack is loaded.')
+      const { showToast } = useCustomToast()
+      showToast({
+        title: 'Error',
+        message: 'Unable to initialize payment. Please try again. Ensure Paystack is loaded.',
+        toastType: 'error'
+      })
+    }
+  }
+
+  const verifyPurchase = async (reference: string, productId: string, email: string) => {
+    try {
+      loading.value = true
+      const response = await GATEWAY_ENDPOINT.get(`/payments/verify-product-purchase`, {
+        params: {
+          reference,
+          productId,
+          email
+        }
+      })
+      return response.data
+    } catch (error) {
+      console.error('Purchase verification failed:', error)
+      throw error
+    } finally {
+      loading.value = false
     }
   }
 
   return {
     loading,
-    initializePaystack
+    initializePaystack,
+    verifyPurchase
   }
 }

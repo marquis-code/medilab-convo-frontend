@@ -192,9 +192,10 @@ import {
   Instagram, 
   Linkedin, 
   MessageCircle, 
-  Copy, 
-  Trophy 
 } from 'lucide-vue-next'
+import { useCustomToast } from '@/composables/core/useCustomToast'
+
+const { showToast } = useCustomToast()
 
 definePageMeta({
     layout: 'empty'
@@ -427,7 +428,11 @@ const performShare = (platform: string) => {
         window.open(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareUrl)}`)
     } else if (platform === 'Copy') {
         navigator.clipboard.writeText(shareMsg + '\n' + shareUrl)
-        alert('Copied to clipboard!')
+        showToast({
+          title: 'Success',
+          message: 'Copied to clipboard!',
+          toastType: 'success'
+        })
     }
     showShareModal.value = false
 }

@@ -214,39 +214,76 @@
         </div>
       </div>
     </section>
+
+    <!-- Email Prompt Modal -->
+    <EmailPromptModal 
+      :isOpen="isEmailPromptOpen" 
+      @submit="handleEmailSubmit" 
+      @cancel="isEmailPromptOpen = false" 
+    />
   </main>
 </template>
 
 <script setup lang="ts">
 import { useGetProducts } from "@/composables/modules/products/useGetProducts"
 import { useCheckout } from "@/composables/modules/products/useCheckout"
+import { useCustomToast } from "@/composables/core/useCustomToast"
+import EmailPromptModal from "@/components/core/EmailPromptModal.vue"
 import { computed, onMounted, ref } from 'vue'
 
 const { getProducts, products, loading } = useGetProducts()
-const { initializePaystack } = useCheckout()
+const { initializePaystack, verifyPurchase } = useCheckout()
+const { showToast } = useCustomToast()
 const emailInput = ref('')
 const selectedProduct = ref(null)
 const viewMode = ref<'grid' | 'list'>('grid')
+const isEmailPromptOpen = ref(false)
 
 onMounted(async () => {
   await getProducts()
 })
 
 const triggerCheckout = (product: any) => {
-  const userEmail = prompt("Please enter your email to proceed with the purchase:")
-  if (!userEmail) return
+  selectedProduct.value = product
+  isEmailPromptOpen.value = true
+}
+
+const handleEmailSubmit = (userEmail: string) => {
+  isEmailPromptOpen.value = false
+  
+  if (!selectedProduct.value) return
 
   initializePaystack(
-    product, 
+    selectedProduct.value, 
     userEmail, 
-    (response) => {
-      alert(`Payment successful! Reference: ${response.reference}. You will receive an email shortly.`)
-      if (product.isDigital && product.downloadUrl) {
-        window.location.href = product.downloadUrl
+    async (response) => {
+      try {
+        await verifyPurchase(response.reference, selectedProduct.value._id, userEmail)
+        showToast({
+          title: 'Payment Successful',
+          message: `Your payment was verified. We've sent a confirmation email with further details.`,
+          toastType: 'success'
+        })
+        const product: any = selectedProduct.value
+        if (product.isDigital && product.downloadUrl) {
+          setTimeout(() => {
+            window.location.href = product.downloadUrl
+          }, 3000)
+        }
+      } catch (e) {
+        showToast({
+          title: 'Verification Failed',
+          message: 'Payment completed but verification failed. Please contact support.',
+          toastType: 'error'
+        })
       }
     },
     () => {
-      alert("Payment was not completed. Please try again.")
+      showToast({
+        title: 'Payment Incomplete',
+        message: 'Payment was not completed. Please try again.',
+        toastType: 'error'
+      })
     }
   )
 }

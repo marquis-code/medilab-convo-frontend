@@ -134,6 +134,9 @@
 <script setup lang="ts">
 import { ref, watch } from "vue";
 import * as htmlToImage from "html-to-image";
+import { useCustomToast } from "@/composables/core/useCustomToast";
+
+const { showToast } = useCustomToast();
 
 const flyerRef = ref<HTMLDivElement | null>(null);
 const testimonial = ref<string>("");
@@ -239,9 +242,17 @@ async function shareImageFile() {
         text: caption,
       });
 
-      alert("✅ Caption copied! Paste it into your post after uploading.");
+      showToast({
+        title: 'Success',
+        message: '✅ Caption copied! Paste it into your post after uploading.',
+        toastType: 'success'
+      });
     } else {
-      alert("Sharing not supported on this browser. Please download instead.");
+      showToast({
+        title: 'Error',
+        message: 'Sharing not supported on this browser. Please download instead.',
+        toastType: 'error'
+      });
     }
   } catch (err) {
     console.error("Sharing failed:", err);

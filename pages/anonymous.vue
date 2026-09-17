@@ -375,7 +375,10 @@
 <script setup lang="ts">
   import { ref, reactive, onMounted } from 'vue'
   import { useCreateAnonymous } from '@/composables/auth/anonymous'
+  import { useCustomToast } from '@/composables/core/useCustomToast'
+  
   const { createAnonymous, loading } = useCreateAnonymous()
+  const { showToast } = useCustomToast()
   
   // Page loading state
   const isLoading = ref(true)
@@ -493,7 +496,11 @@
   // Switch account function
   const switchAccount = () => {
     // This would typically open an account selection dialog
-    alert('Account switching functionality would be implemented here')
+    showToast({
+      title: 'Info',
+      message: 'Account switching functionality would be implemented here',
+      toastType: 'info'
+    })
   }
 
   definePageMeta({
