@@ -39,7 +39,7 @@
         class="flex-1 flex flex-col items-center justify-center text-center max-w-3xl mx-auto">
         <div class="mb-8">
           <img src="@/assets/img/medlab-logo.jpeg" alt="Logo" class="mx-auto h-16 rounded-full mb-4" />
-          <h1 class="text-lg md:text-lg font-bold text-teal-800 mb-2">
+          <h1 class="text-4xl md:text-5xl font-bold text-teal-800 mb-2">
             SICKLE CELL DISEASE QUIZ
           </h1>
         </div>
@@ -124,7 +124,7 @@
       <div v-else-if="currentState === 'results'"
         class="flex-1 flex flex-col items-center justify-center max-w-3xl mx-auto">
         <div class="bg-white rounded-xl shadow-sm border border-slate-100 p-6 mb-8 w-full text-center">
-          <h2 class="text-lg md:text-lg font-bold text-teal-800 mb-2">
+          <h2 class="text-4xl md:text-5xl font-bold text-teal-800 mb-2">
             Quiz Completed!
           </h2>
           <p class="text-lg font-semibold">So, how well did you do?</p>

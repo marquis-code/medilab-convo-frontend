@@ -51,7 +51,7 @@
                   </span>
                 </div>
 
-                <h1 class="text-lg md:text-lg font-black text-gray-900 tracking-tight leading-[1.1]">
+                <h1 class="text-4xl md:text-5xl font-black text-gray-900 tracking-tight leading-[1.1]">
                   {{ program.title }}
                 </h1>
               </div>

@@ -35,8 +35,8 @@
         <div v-if="currentState === 'welcome'" class="flex-1 flex flex-col items-center justify-center text-center max-w-3xl mx-auto">
           <div class="mb-8 transform hover:scale-105 transition-transform">
             <img src="@/assets/img/medlab-logo.jpeg" alt="Kidney illustration" class="mx-auto h-16 rounded-full w-auto mb-4" />
-            <h1 class="text-lg md:text-lg font-bold text-teal-800 mb-2">WORLD KIDNEY DAY</h1>
-            <h2 class="text-lg md:text-lg font-bold text-teal-700">PERSONALITY QUESTIONS</h2>
+            <h1 class="text-4xl md:text-5xl font-bold text-teal-800 mb-2">WORLD KIDNEY DAY</h1>
+            <h2 class="text-4xl md:text-5xl font-bold text-teal-700">PERSONALITY QUESTIONS</h2>
           </div>
           <div class="bg-white rounded-xl shadow-sm border border-slate-100 p-6 mb-8 w-full">
             <h3 class="text-xl md:text-lg font-bold text-gray-800 mb-4">WHAT PART OF THE NEPHRON ARE YOU?</h3>
@@ -120,7 +120,7 @@
               <div class="w-16 h-16 rounded-full bg-teal-100 flex items-center justify-center mr-3">
                 <span class="text-teal-800 font-bold text-lg">{{ result.letter }}</span>
               </div>
-              <h2 class="text-lg md:text-lg font-bold text-teal-800">
+              <h2 class="text-4xl md:text-5xl font-bold text-teal-800">
                 {{ getResultTitle() }}
               </h2>
             </div>

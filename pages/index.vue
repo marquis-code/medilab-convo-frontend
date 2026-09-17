@@ -15,7 +15,7 @@
 
     <div class="relative mx-auto max-w-7xl px-6 py-32 sm:py-40 lg:px-8">
       <div class="text-center">
-        <h1 class="text-lg sm:text-xl lg:text-lg font-bold tracking-tight text-white mb-6 animate-fade-in">
+        <h1 class="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight text-white mb-6 animate-fade-in">
           <span class="bg-gradient-to-r from-white to-blue-100 bg-clip-text text-transparent">
             MedLabConvo
           </span>

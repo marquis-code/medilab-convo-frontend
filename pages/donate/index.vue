@@ -23,7 +23,7 @@
 
     <div class="mt-20 lg:mt-6 flex justify-center items-center px-4">
       <div class="max-w-[900px] w-full flex flex-col justify-center items-center">
-        <h2 class="text-lg md:text-lg text-center font-extrabold text-gray-900">
+        <h2 class="text-4xl md:text-5xl text-center font-extrabold text-gray-900">
           Why Donate to MedLabConvo?
         </h2>
         <p class="text-xl text-gray-600 text-center mt-8 max-w-4xl mx-auto leading-relaxed">
@@ -149,7 +149,7 @@
       </div>
 
       <div class="relative max-w-6xl mx-auto px-6 lg:px-8">
-        <h2 class="text-lg md:text-lg font-bold text-gray-900 text-center mb-8">
+        <h2 class="text-4xl md:text-5xl font-bold text-gray-900 text-center mb-8">
           Donation Appreciation Packages
         </h2>
         <p class="text-lg text-gray-700 text-center max-w-3xl mx-auto mb-10 leading-relaxed">

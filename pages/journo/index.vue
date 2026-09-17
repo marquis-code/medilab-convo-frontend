@@ -60,7 +60,7 @@
                     </div>
                   </div>
 
-                  <h3 class="text-lg md:text-lg font-black text-gray-900 leading-[1.1]  tracking-tight group-hover:text-[#27628C] transition-colors duration-300">
+                  <h3 class="text-4xl md:text-5xl font-black text-gray-900 leading-[1.1]  tracking-tight group-hover:text-[#27628C] transition-colors duration-300">
                     {{ latestPublication.title }}
                   </h3>
                   
@@ -105,7 +105,7 @@
           <div class="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-20">
             <div>
               <h2 class="text-[10px] font-bold text-[#27628C] mb-4">The Archive</h2>
-              <h3 class="text-lg md:text-lg font-bold text-gray-900 tracking-normal">All Publications</h3>
+              <h3 class="text-4xl md:text-5xl font-bold text-gray-900 tracking-normal">All Publications</h3>
             </div>
             <p class="text-gray-400 text-sm font-medium">
               Showing {{ otherPublications.length }} publications

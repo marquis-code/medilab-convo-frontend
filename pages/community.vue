@@ -53,7 +53,7 @@
                 <span class="w-1.5 h-1.5 rounded-full bg-[#27628C] animate-pulse"></span>
                 Active Community
               </div>
-              <h2 class="text-lg md:text-lg font-bold text-gray-900  tracking-tight">Interntional</h2>
+              <h2 class="text-4xl md:text-5xl font-bold text-gray-900  tracking-tight">Interntional</h2>
               <div class="h-1.5 w-20 bg-[#27628C] rounded-full"></div>
               
               <div class="space-y-6 text-gray-600 font-medium leading-relaxed">
@@ -99,7 +99,7 @@
                   <span class="w-1.5 h-1.5 rounded-full bg-blue-300"></span>
                   Opening Soon
                 </div>
-                <h2 class="text-lg md:text-lg font-bold text-gray-900  tracking-tight">UniVerse</h2>
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900  tracking-tight">UniVerse</h2>
                 <div class="h-1.5 w-20 bg-[#27628C] rounded-full"></div>
                 
                 <div class="space-y-6 text-gray-600 font-medium leading-relaxed">

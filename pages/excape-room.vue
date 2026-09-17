@@ -80,7 +80,7 @@
           <h1 class="text-lg sm:text-lg md:text-xl font-black mb-4 bg-gradient-to-r from-cyan-400 via-blue-400 to-cyan-400 bg-clip-text text-transparent animate-pulse">
             MEDLABCONVO
           </h1>
-          <h2 class="text-xl sm:text-lg md:text-lg font-bold text-cyan-400 mb-4 sm:mb-6">ESCAPE ROOM</h2>
+          <h2 class="text-xl sm:text-4xl md:text-5xl font-bold text-cyan-400 mb-4 sm:mb-6">ESCAPE ROOM</h2>
           <div class="bg-black/90 p-4 sm:p-6 rounded-lg border border-cyan-500 mb-6 sm:mb-8 backdrop-blur-sm">
             <div class="text-sm md:text-base text-gray-300 leading-relaxed">
               <p class="mb-4">⚠️ <span class="text-cyan-400 font-bold">BIOHAZARD DETECTED</span> ⚠️</p>
@@ -104,7 +104,7 @@
         
         <!-- Room Header -->
         <div class="text-center mb-4 sm:mb-8">
-          <h2 class="text-xl sm:text-lg md:text-lg font-bold text-cyan-400 mb-2">
+          <h2 class="text-xl sm:text-4xl md:text-5xl font-bold text-cyan-400 mb-2">
             {{ currentPuzzle.title }}
           </h2>
           <div class="text-sm md:text-base text-gray-400">

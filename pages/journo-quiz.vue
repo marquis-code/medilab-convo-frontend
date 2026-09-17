@@ -40,7 +40,7 @@
             You've already conquered this quiz. <br/> Your master score was:
           </p>
           <div class="bg-white/20 backdrop-blur-md px-8 py-4 rounded-xl mb-8 border border-white/30">
-            <p class="text-white text-lg md:text-lg font-black">{{ savedScore }}/10</p>
+            <p class="text-white text-4xl md:text-5xl font-black">{{ savedScore }}/10</p>
           </div>
           <button @click="shareOnSocials" class="bg-[#E56A24] text-white font-bold py-3 px-8 rounded-full hover:scale-105 transition-all shadow-sm border border-slate-100 active:scale-95 text-xs md:text-sm tracking-normal border border-white flex items-center justify-center space-x-2">
             <Share2 class="w-4 h-4" />
