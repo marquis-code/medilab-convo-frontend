@@ -1,6 +1,6 @@
 <template>
     <div class="bg-white p-4 shadow rounded text-center">
-      <img :src="member.image" alt="" class="w-full h-40 object-cover rounded"> <!-- Placeholder for team member image -->
+      <img :src="member.image || '/avatar-placeholder.png'" @error="$event.target.src = '/avatar-placeholder.png'" alt="" class="w-full h-40 object-cover rounded"> <!-- Placeholder for team member image -->
       <h3 class="mt-4 font-semibold">{{ member.name }}</h3>
       <p class="text-gray-600">{{ member.role }}</p>
     </div>

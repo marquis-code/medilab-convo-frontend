@@ -21,7 +21,7 @@
           <img class="h-12 w-auto object-contain rounded-md shadow-sm" src="@/assets/img/medlab-logo.jpeg" alt="MedLabConvo Logo" />
         </NuxtLink>
       </div>
-      <div class="flex lg:hidden">
+      <div class="flex xl:hidden">
         <button @click="isOpen = true" type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-300 hover:text-white transition-colors">
           <span class="sr-only">Open main menu</span>
           <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
@@ -29,13 +29,13 @@
           </svg>
         </button>
       </div>
-      <div class="hidden lg:flex lg:gap-x-8">
+      <div class="hidden xl:flex xl:gap-x-8">
         <NuxtLink v-for="item in navigation" :key="item.name" :to="item.href" class="text-sm font-medium leading-6 text-gray-300 hover:text-white transition-colors duration-200 relative group">
           {{ item.name }}
           <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#27628C] transition-all duration-300 group-hover:w-full"></span>
         </NuxtLink>
       </div>
-      <div class="hidden lg:flex lg:flex-1 lg:justify-end lg:gap-x-4">
+      <div class="hidden xl:flex xl:flex-1 xl:justify-end xl:gap-x-4">
         <NuxtLink to="/donate" class="text-sm font-semibold leading-6 text-[#27628C] bg-white hover:bg-gray-50 shadow-sm border border-slate-100 px-6 py-2.5 rounded-full transition-all duration-300">
           Donate
         </NuxtLink>
@@ -45,7 +45,7 @@
       </div>
     </nav>
     <!-- Mobile menu -->
-    <div v-if="isOpen" class="lg:hidden" role="dialog" aria-modal="true">
+    <div v-if="isOpen" class="xl:hidden" role="dialog" aria-modal="true">
       <div class="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm transition-opacity" @click="isOpen = false"></div>
       <div class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-gray-900/95 backdrop-blur-xl px-6 py-6 sm:max-w-sm border-l border-white/10 shadow-sm border border-slate-200 transition-transform duration-300 transform" :class="isOpen ? 'translate-x-0' : 'translate-x-full'">
         <div class="flex items-center justify-between">
