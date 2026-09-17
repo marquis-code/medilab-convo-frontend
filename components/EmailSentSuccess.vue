@@ -4,7 +4,7 @@
     <div class="flex w-full max-w-xl items-center justify-center lg:max-w-2xl">
       <form class="mt-8 w-full space-y-6">
         <div class="space-y-3">
-          <h1 class="text-4xl font-semibold text-white">Email Sent</h1>
+          <h1 class="text-lg font-semibold text-white">Email Sent</h1>
           <p class="max-w-sm text-white">
             We sent you a magic link to reset your password, please go to your email and proceed.
           </p>

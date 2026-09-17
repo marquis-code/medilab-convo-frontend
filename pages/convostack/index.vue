@@ -42,7 +42,7 @@
         
         <!-- Featured Publication (Top of the Stack) -->
         <section v-if="!activeCategory && !searchQuery" class="group relative grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-          <NuxtLink :to="`/convostack/${featuredPublication.slug}`" class="relative aspect-[16/9] md:aspect-[4/3] rounded-2xl overflow-hidden bg-gray-50 border border-gray-100 shadow-sm transition-shadow group-hover:shadow-xl">
+          <NuxtLink :to="`/convostack/${featuredPublication.slug}`" class="relative aspect-[16/9] md:aspect-[4/3] rounded-2xl overflow-hidden bg-gray-50 border border-gray-100 shadow-sm transition-shadow group-hover:shadow-sm border border-slate-200">
             <img 
               v-if="featuredPublication.coverImage" 
               :src="featuredPublication.coverImage" 
@@ -59,7 +59,7 @@
               <span class="text-[10px] font-medium text-gray-400">{{ featuredPublication.readTime || 5 }} min read</span>
             </div>
             <NuxtLink :to="`/convostack/${featuredPublication.slug}`">
-              <h2 class="text-3xl md:text-4xl font-bold text-gray-900 leading-tight tracking-tighter hover:text-[#27628C] transition-colors">
+              <h2 class="text-xl md:text-lg font-bold text-gray-900 leading-tight tracking-normal hover:text-[#27628C] transition-colors">
                 {{ featuredPublication.title }}
               </h2>
             </NuxtLink>
@@ -104,7 +104,7 @@
                        <span class="text-[10px] font-medium text-gray-400">{{ formatDate(pub.publishedAt || pub.createdAt) }}</span>
                     </div>
                     <NuxtLink :to="`/convostack/${pub.slug}`">
-                      <h4 class="text-xl md:text-2xl font-bold text-gray-900 group-hover:text-[#27628C] transition-colors leading-snug">
+                      <h4 class="text-xl md:text-lg font-bold text-gray-900 group-hover:text-[#27628C] transition-colors leading-snug">
                         {{ pub.title }}
                       </h4>
                     </NuxtLink>
@@ -138,7 +138,7 @@
  
                   class="w-full px-5 py-3 bg-white border border-[#27628C]/20 rounded-xl text-sm outline-none focus:ring-2 focus:ring-[#27628C]/20 transition-all shadow-sm" 
                />
-               <button class="w-full py-3.5 bg-[#27628C] text-white rounded-xl text-xs font-bold shadow-lg hover:bg-gray-900 transition-all active:scale-95">
+               <button class="w-full py-3.5 bg-[#27628C] text-white rounded-xl text-xs font-bold shadow-sm border border-slate-100 hover:bg-gray-900 transition-all active:scale-95">
                   Subscribe for free
                </button>
             </div>
@@ -148,7 +148,7 @@
                <h3 class="text-[10px] font-bold text-gray-400 border-b border-gray-100 pb-3">Recommendations</h3>
                <div class="space-y-8">
                   <div v-for="rec in filteredPublications.slice(0, 4)" :key="rec._id" class="flex items-start gap-4 group">
-                     <span class="text-2xl font-bold text-gray-200 mt-1  group-hover:text-[#27628C]/20 transition-colors">0{{ filteredPublications.indexOf(rec) + 1 }}</span>
+                     <span class="text-lg font-bold text-gray-200 mt-1  group-hover:text-[#27628C]/20 transition-colors">0{{ filteredPublications.indexOf(rec) + 1 }}</span>
                      <div class="space-y-1">
                         <NuxtLink :to="`/convostack/${rec.slug}`" class="text-sm font-bold text-gray-900 hover:text-[#27628C] transition-colors leading-tight block">
                            {{ rec.title }}

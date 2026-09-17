@@ -10,7 +10,7 @@
     
     <div 
       :class="[
-        'relative bg-white/80 backdrop-blur-md rounded-[3rem] p-8 border border-white/50 shadow-sm group-hover:shadow-2xl group-hover:-translate-y-4 flex flex-col items-center transition-all duration-500',
+        'relative bg-white/80 backdrop-blur-md rounded-[3rem] p-8 border border-white/50 shadow-sm group-hover:shadow-sm border border-slate-200 group-hover:-translate-y-4 flex flex-col items-center transition-all duration-500',
         isLarge ? 'pt-12 pb-10' : 'pt-10 pb-8'
       ]"
     >
@@ -29,12 +29,12 @@
         </div>
         
         <!-- Status Dot -->
-        <div class="absolute bottom-2 right-2 w-5 h-5 bg-emerald-500 border-4 border-white rounded-full shadow-lg z-10 group-hover:scale-125 transition-transform"></div>
+        <div class="absolute bottom-2 right-2 w-5 h-5 bg-emerald-500 border-4 border-white rounded-full shadow-sm border border-slate-100 z-10 group-hover:scale-125 transition-transform"></div>
       </div>
 
       <!-- Info -->
       <div class="text-center space-y-2 w-full">
-        <h3 :class="['font-black text-gray-900 tracking-tight leading-tight', isLarge ? 'text-2xl' : 'text-lg']">
+        <h3 :class="['font-black text-gray-900 tracking-tight leading-tight', isLarge ? 'text-lg' : 'text-lg']">
           {{ member.name }}
         </h3>
         
@@ -64,7 +64,7 @@
       </div>
 
       <!-- Badge for Leadership -->
-      <div v-if="isLarge" class="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#27628C] text-white text-[10px] font-bold px-6 py-2 rounded-2xl shadow-xl">
+      <div v-if="isLarge" class="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#27628C] text-white text-[10px] font-bold px-6 py-2 rounded-2xl shadow-sm border border-slate-200">
         Key Leadership
       </div>
     </div>

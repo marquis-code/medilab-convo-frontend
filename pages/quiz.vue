@@ -3,7 +3,7 @@
       <!-- Leave confirmation modal -->
       <transition name="fade">
         <div v-if="showLeaveModal" class="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4">
-          <div class="bg-white rounded-xl shadow-2xl p-6 max-w-md w-full transform transition-all">
+          <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-6 max-w-md w-full transform transition-all">
             <h3 class="text-xl font-bold text-gray-800 mb-4">Are you sure you want to leave?</h3>
             <p class="text-gray-600 mb-6">Your progress will be lost if you leave now.</p>
             <div class="flex justify-end space-x-3">
@@ -20,7 +20,7 @@
   
       <!-- Toast notification -->
       <transition name="toast">
-        <div v-if="toast.show" class="fixed top-4 right-4 bg-white rounded-lg shadow-lg p-4 z-40 max-w-xs w-full flex items-center">
+        <div v-if="toast.show" class="fixed top-4 right-4 bg-white rounded-lg shadow-sm border border-slate-100 p-4 z-40 max-w-xs w-full flex items-center">
           <div class="bg-teal-100 p-2 rounded-full mr-3">
             <Icon :name="toast.icon" class="text-teal-600 w-5 h-5" />
           </div>
@@ -35,11 +35,11 @@
         <div v-if="currentState === 'welcome'" class="flex-1 flex flex-col items-center justify-center text-center max-w-3xl mx-auto">
           <div class="mb-8 transform hover:scale-105 transition-transform">
             <img src="@/assets/img/medlab-logo.jpeg" alt="Kidney illustration" class="mx-auto h-16 rounded-full w-auto mb-4" />
-            <h1 class="text-2xl md:text-4xl font-bold text-teal-800 mb-2">WORLD KIDNEY DAY</h1>
-            <h2 class="text-2xl md:text-2xl font-bold text-teal-700">PERSONALITY QUESTIONS</h2>
+            <h1 class="text-lg md:text-lg font-bold text-teal-800 mb-2">WORLD KIDNEY DAY</h1>
+            <h2 class="text-lg md:text-lg font-bold text-teal-700">PERSONALITY QUESTIONS</h2>
           </div>
-          <div class="bg-white rounded-xl shadow-lg p-6 mb-8 w-full">
-            <h3 class="text-xl md:text-2xl font-bold text-gray-800 mb-4">WHAT PART OF THE NEPHRON ARE YOU?</h3>
+          <div class="bg-white rounded-xl shadow-sm border border-slate-100 p-6 mb-8 w-full">
+            <h3 class="text-xl md:text-lg font-bold text-gray-800 mb-4">WHAT PART OF THE NEPHRON ARE YOU?</h3>
             <p class="text-gray-600 mb-6">
               Answer the following 10 questions, keeping track of which letters (A, B, C, etc.) you choose most often. 
               Your most frequent letter will reveal your nephron match at the end!
@@ -49,7 +49,7 @@
             </button>
           </div>
           <div class="grid hidden grid-cols-2 md:grid-cols-4 gap-4 w-full">
-            <div v-for="(part, index) in nephronParts" :key="index" class="bg-white rounded-lg p-4 shadow-md hover:shadow-lg transition-shadow">
+            <div v-for="(part, index) in nephronParts" :key="index" class="bg-white rounded-lg p-4 shadow-md hover:shadow-sm border border-slate-100 transition-shadow">
               <div class="w-12 h-12 rounded-full bg-teal-100 flex items-center justify-center mx-auto mb-2">
                 <span class="text-teal-800 font-bold text-lg">{{ part.letter }}</span>
               </div>
@@ -66,8 +66,8 @@
           </div>
   
           <transition name="slide" mode="out-in">
-            <div :key="currentQuestionIndex" class="bg-white rounded-xl shadow-lg p-6 mb-6 flex-1">
-              <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-4">
+            <div :key="currentQuestionIndex" class="bg-white rounded-xl shadow-sm border border-slate-100 p-6 mb-6 flex-1">
+              <h2 class="text-xl md:text-lg font-bold text-gray-800 mb-4">
                 {{ currentQuestionIndex + 1 }}. {{ currentQuestion.question }}
               </h2>
               
@@ -114,13 +114,13 @@
   
         <!-- Results screen -->
         <div v-else-if="currentState === 'results'" class="flex-1 flex flex-col items-center justify-center max-w-3xl mx-auto">
-        <div class="bg-white rounded-xl shadow-lg p-6 mb-8 w-full text-center">
+        <div class="bg-white rounded-xl shadow-sm border border-slate-100 p-6 mb-8 w-full text-center">
           <div class="mb-6">
             <div class="flex justify-center items-center mb-4">
               <div class="w-16 h-16 rounded-full bg-teal-100 flex items-center justify-center mr-3">
-                <span class="text-teal-800 font-bold text-2xl">{{ result.letter }}</span>
+                <span class="text-teal-800 font-bold text-lg">{{ result.letter }}</span>
               </div>
-              <h2 class="text-2xl md:text-2xl font-bold text-teal-800">
+              <h2 class="text-lg md:text-lg font-bold text-teal-800">
                 {{ getResultTitle() }}
               </h2>
             </div>
@@ -154,7 +154,7 @@
           </div>
         </div>
         
-        <div class="bg-white rounded-xl shadow-lg p-6 w-full">
+        <div class="bg-white rounded-xl shadow-sm border border-slate-100 p-6 w-full">
           <h3 class="font-bold text-gray-800 mb-4">About Your Nephron Part:</h3>
           <div class="flex flex-col md:flex-row">
             <div class="md:w-1/3 mb-4 md:mb-0 md:mr-6">

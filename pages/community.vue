@@ -8,7 +8,7 @@
         <div class="mx-auto max-w-7xl px-6 lg:px-8 relative z-10">
           <div class="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center">
             <div class="w-full max-w-xl lg:shrink-0 xl:max-w-2xl">
-              <h1 class="text-4xl md:text-5xl font-bold text-white leading-tight tracking-tighter  mb-8 animate-in fade-in slide-in-from-bottom-10 duration-1000">
+              <h1 class="text-lg md:text-xl font-bold text-white leading-tight tracking-normal  mb-8 animate-in fade-in slide-in-from-bottom-10 duration-1000">
                 A Global Network <br /> of Excellence
               </h1>
               <p class="text-lg md:text-xl leading-8 text-blue-50 font-medium max-w-xl animate-in fade-in slide-in-from-bottom-10 duration-1000 delay-200">
@@ -18,23 +18,23 @@
             <div class="mt-14 flex justify-end gap-8 sm:-mt-44 sm:justify-start sm:pl-20 lg:mt-0 lg:pl-0">
               <div class="ml-auto w-44 flex-none space-y-8 pt-32 sm:ml-0 sm:pt-80 lg:order-last lg:pt-36 xl:order-none xl:pt-80">
                 <div class="relative group">
-                  <img src="@/assets/img/bonding1.jpg" alt="" class="aspect-[2/3] w-full rounded-[2.5rem] bg-gray-900/5 object-cover shadow-2xl transition-transform duration-700 group-hover:scale-105">
+                  <img src="@/assets/img/bonding1.jpg" alt="" class="aspect-[2/3] w-full rounded-[2.5rem] bg-gray-900/5 object-cover shadow-sm border border-slate-200 transition-transform duration-700 group-hover:scale-105">
                 </div>
               </div>
               <div class="mr-auto w-44 flex-none space-y-8 sm:mr-0 sm:pt-52 lg:pt-36">
                 <div class="relative group">
-                  <img src="@/assets/img/bonding2.jpg" alt="" class="aspect-[2/3] w-full rounded-[2.5rem] bg-gray-900/5 object-cover shadow-2xl transition-transform duration-700 group-hover:scale-105">
+                  <img src="@/assets/img/bonding2.jpg" alt="" class="aspect-[2/3] w-full rounded-[2.5rem] bg-gray-900/5 object-cover shadow-sm border border-slate-200 transition-transform duration-700 group-hover:scale-105">
                 </div>
                 <div class="relative group">
-                  <img src="@/assets/img/bonding3.jpg" alt="" class="aspect-[2/3] w-full rounded-[2.5rem] bg-gray-900/5 object-cover shadow-2xl transition-transform duration-700 group-hover:scale-105">
+                  <img src="@/assets/img/bonding3.jpg" alt="" class="aspect-[2/3] w-full rounded-[2.5rem] bg-gray-900/5 object-cover shadow-sm border border-slate-200 transition-transform duration-700 group-hover:scale-105">
                 </div>
               </div>
               <div class="w-44 flex-none space-y-8 pt-32 sm:pt-0">
                 <div class="relative group">
-                  <img src="@/assets/img/bonding4.jpg" alt="" class="aspect-[2/3] w-full rounded-[2.5rem] bg-gray-900/5 object-cover shadow-2xl transition-transform duration-700 group-hover:scale-105">
+                  <img src="@/assets/img/bonding4.jpg" alt="" class="aspect-[2/3] w-full rounded-[2.5rem] bg-gray-900/5 object-cover shadow-sm border border-slate-200 transition-transform duration-700 group-hover:scale-105">
                 </div>
                 <div class="relative group">
-                  <img src="@/assets/img/bonding5.jpg" alt="" class="aspect-[2/3] w-full rounded-[2.5rem] bg-gray-900/5 object-cover shadow-2xl transition-transform duration-700 group-hover:scale-105">
+                  <img src="@/assets/img/bonding5.jpg" alt="" class="aspect-[2/3] w-full rounded-[2.5rem] bg-gray-900/5 object-cover shadow-sm border border-slate-200 transition-transform duration-700 group-hover:scale-105">
                 </div>
               </div>
             </div>
@@ -53,7 +53,7 @@
                 <span class="w-1.5 h-1.5 rounded-full bg-[#27628C] animate-pulse"></span>
                 Active Community
               </div>
-              <h2 class="text-4xl md:text-4xl font-bold text-gray-900  tracking-tight">Interntional</h2>
+              <h2 class="text-lg md:text-lg font-bold text-gray-900  tracking-tight">Interntional</h2>
               <div class="h-1.5 w-20 bg-[#27628C] rounded-full"></div>
               
               <div class="space-y-6 text-gray-600 font-medium leading-relaxed">
@@ -68,7 +68,7 @@
               <div class="pt-6">
                 <NuxtLink 
                   to="/interntional" 
-                  class="inline-flex items-center gap-3 px-10 py-5 bg-[#27628C] text-white rounded-2xl text-[11px] font-bold hover:bg-gray-900 transition-all shadow-xl shadow-blue-900/20 active:scale-95"
+                  class="inline-flex items-center gap-3 px-10 py-5 bg-[#27628C] text-white rounded-2xl text-[11px] font-bold hover:bg-gray-900 transition-all shadow-sm border border-slate-200 shadow-blue-900/20 active:scale-95"
                 >
                   Learn More About Interntional
                   <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
@@ -79,7 +79,7 @@
             <div class="order-1 lg:order-2">
               <div class="relative group">
                 <div class="absolute -inset-4 bg-[#27628C]/5 rounded-[3.5rem] blur-2xl group-hover:bg-[#27628C]/10 transition-colors"></div>
-                <img src="@/assets/img/community1.png" alt="Interntional Community" class="relative rounded-[3rem] shadow-2xl border border-gray-100 object-cover aspect-video lg:aspect-square" />
+                <img src="@/assets/img/community1.png" alt="Interntional Community" class="relative rounded-[3rem] shadow-sm border border-slate-200 border border-gray-100 object-cover aspect-video lg:aspect-square" />
               </div>
             </div>
           </div>
@@ -91,7 +91,7 @@
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
               <div class="relative group">
                 <div class="absolute -inset-4 bg-[#27628C]/5 rounded-[3.5rem] blur-2xl group-hover:bg-[#27628C]/10 transition-colors"></div>
-                <img src="@/assets/img/community2.png" alt="UniVerse Community" class="relative rounded-[3rem] shadow-2xl border border-gray-100 object-cover aspect-video lg:aspect-square" />
+                <img src="@/assets/img/community2.png" alt="UniVerse Community" class="relative rounded-[3rem] shadow-sm border border-slate-200 border border-gray-100 object-cover aspect-video lg:aspect-square" />
               </div>
 
               <div class="space-y-8">
@@ -99,7 +99,7 @@
                   <span class="w-1.5 h-1.5 rounded-full bg-blue-300"></span>
                   Opening Soon
                 </div>
-                <h2 class="text-4xl md:text-4xl font-bold text-gray-900  tracking-tight">UniVerse</h2>
+                <h2 class="text-lg md:text-lg font-bold text-gray-900  tracking-tight">UniVerse</h2>
                 <div class="h-1.5 w-20 bg-[#27628C] rounded-full"></div>
                 
                 <div class="space-y-6 text-gray-600 font-medium leading-relaxed">

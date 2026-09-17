@@ -50,7 +50,7 @@
               <div class="w-48 h-6 bg-gradient-to-r from-gray-900 to-gray-800 rounded-full border-2 border-cyan-500 overflow-hidden shadow-inner">
                 <div 
                   :class="[
-                    'h-full transition-all duration-500 shadow-lg',
+                    'h-full transition-all duration-500 shadow-sm border border-slate-100',
                     oxygenLevel > 60 ? 'bg-gradient-to-r from-cyan-400 to-green-500 shadow-green-500/50' :
                     oxygenLevel > 30 ? 'bg-gradient-to-r from-yellow-400 to-orange-500 shadow-orange-500/50' :
                     'bg-gradient-to-r from-red-500 to-pink-600 shadow-red-500/50 animate-pulse'
@@ -75,7 +75,7 @@
             <div class="relative">
               <div 
                 :class="[
-                  'text-2xl font-bold font-mono tabular-nums',
+                  'text-lg font-bold font-mono tabular-nums',
                   timeLeft <= 5 ? 'text-red-400 animate-bounce' : 
                   timeLeft <= 10 ? 'text-orange-400 animate-pulse' : 
                   'text-amber-400'
@@ -114,7 +114,7 @@
         <div v-if="gameState === 'welcome'" class="text-center space-y-8 animate-fade-in">
           <!-- Logo with 3D Effect -->
           <div class="relative mb-12">
-            <h1 class="text-5xl sm:text-6xl lg:text-7xl font-black mb-6 relative">
+            <h1 class="text-xl sm:text-lg lg:text-7xl font-black mb-6 relative">
               <span class="bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500 bg-clip-text text-transparent animate-gradient-x">
                 MEDLAB
               </span>
@@ -127,7 +127,7 @@
           </div>
 
           <!-- Subtitle with Typewriter Effect -->
-          <div class="text-2xl sm:text-4xl font-bold text-amber-400 mb-8">
+          <div class="text-lg sm:text-lg font-bold text-amber-400 mb-8">
             <span class="typewriter">QUANTUM ESCAPE PROTOCOL</span>
           </div>
 
@@ -167,7 +167,7 @@
           >
             <div class="absolute inset-0 bg-gradient-to-r from-purple-600 to-cyan-600 rounded-2xl blur-lg opacity-75 group-hover:opacity-100 transition-all duration-300 animate-pulse"></div>
             <div class="relative px-12 py-6 bg-gradient-to-r from-purple-500 to-cyan-500 rounded-2xl border-2 border-white/20 transform transition-all duration-300 group-hover:scale-105 group-active:scale-95">
-              <span class="text-2xl font-bold tracking-wider">INITIATE PROTOCOL</span>
+              <span class="text-lg font-bold tracking-wider">INITIATE PROTOCOL</span>
               <div class="absolute inset-0 bg-gradient-to-r from-white/0 via-white/20 to-white/0 -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
             </div>
           </button>
@@ -179,7 +179,7 @@
           <!-- Room Header with Holographic Effect -->
           <div class="text-center mb-12">
             <div class="relative inline-block">
-              <h2 class="text-2xl sm:text-4xl font-bold mb-4">
+              <h2 class="text-lg sm:text-lg font-bold mb-4">
                 <span class="bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
                   {{ currentPuzzle.title }}
                 </span>
@@ -192,7 +192,7 @@
                 <div v-for="i in puzzles.length" :key="i"
                      :class="[
                        'w-3 h-3 rounded-full transition-all duration-500',
-                       i <= currentPuzzleIndex + 1 ? 'bg-cyan-400 shadow-lg shadow-cyan-400/50' : 'bg-gray-600'
+                       i <= currentPuzzleIndex + 1 ? 'bg-cyan-400 shadow-sm border border-slate-100 shadow-cyan-400/50' : 'bg-gray-600'
                      ]">
                 </div>
               </div>
@@ -222,7 +222,7 @@
             <div class="mb-10">
               <div class="relative">
                 <div class="absolute -left-4 top-0 w-1 h-full bg-gradient-to-b from-cyan-400 to-purple-500 rounded-full"></div>
-                <h3 class="text-xl sm:text-2xl font-bold text-amber-400 leading-relaxed pl-8">
+                <h3 class="text-xl sm:text-lg font-bold text-amber-400 leading-relaxed pl-8">
                   {{ currentPuzzle.question }}
                 </h3>
               </div>
@@ -284,7 +284,7 @@
                 :class="[
                   'group relative overflow-hidden px-10 py-4 rounded-2xl font-bold text-xl transition-all duration-300 transform',
                   selectedAnswer && !isSubmitting
-                    ? 'bg-gradient-to-r from-green-500 to-emerald-600 text-white border-2 border-green-400 hover:scale-105 hover:shadow-lg hover:shadow-green-500/30'
+                    ? 'bg-gradient-to-r from-green-500 to-emerald-600 text-white border-2 border-green-400 hover:scale-105 hover:shadow-sm border border-slate-100 hover:shadow-green-500/30'
                     : 'bg-gray-600 text-gray-400 border-2 0 cursor-not-allowed'
                 ]"
               >
@@ -300,8 +300,8 @@
             <!-- Result Display -->
             <div v-if="showingResult" class="text-center space-y-8">
               <div v-if="lastAnswerCorrect" class="space-y-6">
-                <div class="text-6xl animate-bounce">✨</div>
-                <h3 class="text-4xl font-bold text-green-400 animate-pulse">PROTOCOL ACCEPTED</h3>
+                <div class="text-lg animate-bounce">✨</div>
+                <h3 class="text-lg font-bold text-green-400 animate-pulse">PROTOCOL ACCEPTED</h3>
                 <div class="glass-panel max-w-md mx-auto p-6">
                   <p class="text-gray-300 mb-4">{{ currentPuzzle.correctAnswer }}</p>
                   <div class="text-green-400 flex items-center justify-center gap-2">
@@ -312,8 +312,8 @@
               </div>
               
               <div v-else class="space-y-6">
-                <div class="text-6xl animate-shake">⚠️</div>
-                <h3 class="text-4xl font-bold text-red-400 animate-pulse">PROTOCOL REJECTED</h3>
+                <div class="text-lg animate-shake">⚠️</div>
+                <h3 class="text-lg font-bold text-red-400 animate-pulse">PROTOCOL REJECTED</h3>
                 <div class="glass-panel max-w-md mx-auto p-6 border-red-500/50">
                   <p class="text-red-300 mb-4">{{ currentPuzzle.wrongMessage }}</p>
                   <div class="text-red-400 flex items-center justify-center gap-2 animate-pulse">
@@ -329,8 +329,8 @@
                 :class="[
                   'group relative overflow-hidden px-10 py-4 rounded-2xl font-bold text-xl transition-all duration-300 transform hover:scale-105',
                   lastAnswerCorrect 
-                    ? 'bg-gradient-to-r from-blue-500 to-purple-600 text-white border-2 border-blue-400 hover:shadow-lg hover:shadow-blue-500/30'
-                    : 'bg-gradient-to-r from-red-500 to-orange-600 text-white border-2 border-red-400 hover:shadow-lg hover:shadow-red-500/30'
+                    ? 'bg-gradient-to-r from-blue-500 to-purple-600 text-white border-2 border-blue-400 hover:shadow-sm border border-slate-100 hover:shadow-blue-500/30'
+                    : 'bg-gradient-to-r from-red-500 to-orange-600 text-white border-2 border-red-400 hover:shadow-sm border border-slate-100 hover:shadow-red-500/30'
                 ]"
               >
                 <span class="relative z-10">
@@ -348,7 +348,7 @@
             <div class="absolute inset-0 bg-gradient-to-r from-green-400 to-cyan-400 opacity-20 blur-3xl animate-pulse"></div>
           </div>
           
-          <h1 class="text-5xl sm:text-6xl font-black mb-8">
+          <h1 class="text-xl sm:text-lg font-black mb-8">
             <span class="bg-gradient-to-r from-green-400 via-cyan-400 to-blue-500 bg-clip-text text-transparent animate-gradient-x">
               QUANTUM BREACH
             </span>
@@ -356,7 +356,7 @@
           
           <div class="glass-panel max-w-2xl mx-auto p-8">
             <div class="space-y-4">
-              <p class="text-2xl text-green-400 font-bold">PROTOCOL COMPLETE</p>
+              <p class="text-lg text-green-400 font-bold">PROTOCOL COMPLETE</p>
               <p class="text-gray-300 leading-relaxed">
                 Dimensional barriers shattered. Reality matrices restored. 
                 You've successfully navigated the quantum maze and escaped 
@@ -375,7 +375,7 @@
           >
             <div class="absolute inset-0 bg-gradient-to-r from-green-500 to-cyan-500 rounded-2xl blur-lg opacity-75 group-hover:opacity-100 transition-all duration-300"></div>
             <div class="relative px-12 py-6 bg-gradient-to-r from-green-500 to-cyan-500 rounded-2xl border-2 border-white/20 transform transition-all duration-300 group-hover:scale-105">
-              <span class="text-2xl font-bold">REINITIALIZE PROTOCOL</span>
+              <span class="text-lg font-bold">REINITIALIZE PROTOCOL</span>
             </div>
           </button>
         </div>
@@ -387,7 +387,7 @@
             <div class="absolute inset-0 bg-gradient-to-r from-red-500 to-orange-500 opacity-20 blur-3xl animate-pulse"></div>
           </div>
           
-          <h1 class="text-5xl sm:text-6xl font-black mb-8">
+          <h1 class="text-xl sm:text-lg font-black mb-8">
             <span class="bg-gradient-to-r from-red-500 via-orange-500 to-red-600 bg-clip-text text-transparent animate-gradient-x">
               SYSTEM FAILURE
             </span>
@@ -395,7 +395,7 @@
           
           <div class="glass-panel max-w-2xl mx-auto p-8 border-red-500/50">
             <div class="space-y-4">
-              <p class="text-2xl text-red-400 font-bold">QUANTUM COLLAPSE DETECTED</p>
+              <p class="text-lg text-red-400 font-bold">QUANTUM COLLAPSE DETECTED</p>
               <p class="text-gray-300 leading-relaxed">
                 Molecular cohesion failed. Oxygen matrices depleted. 
                 The facility's quantum fields have consumed your essence.
@@ -413,7 +413,7 @@
           >
             <div class="absolute inset-0 bg-gradient-to-r from-red-500 to-orange-500 rounded-2xl blur-lg opacity-75 group-hover:opacity-100 transition-all duration-300"></div>
             <div class="relative px-12 py-6 bg-gradient-to-r from-red-500 to-orange-500 rounded-2xl border-2 border-white/20 transform transition-all duration-300 group-hover:scale-105">
-              <span class="text-2xl font-bold">QUANTUM RESET</span>
+              <span class="text-lg font-bold">QUANTUM RESET</span>
             </div>
           </button>
         </div>

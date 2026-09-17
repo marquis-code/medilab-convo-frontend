@@ -42,7 +42,7 @@
         
         <!-- Loading Text -->
         <div class="text-center mt-8">
-          <h2 class="text-2xl font-bold text-white mb-2 tracking-wider animate-pulse">MEDLABCONVO</h2>
+          <h2 class="text-lg font-bold text-white mb-2 tracking-wider animate-pulse">MEDLABCONVO</h2>
           <div class="flex justify-center items-center space-x-1">
             <span class="text-white text-lg">Loading</span>
             <span class="loading-dot">.</span>
@@ -109,7 +109,7 @@
       <div class="max-w-3xl mx-auto perspective-1000">
         <div class="transform-style-3d hover:rotate-y-2 transition-transform duration-500 ease-out">
           <!-- Header Banner with 3D Effect -->
-          <div class="relative overflow-hidden rounded-t-2xl shadow-2xl transform translate-z-10">
+          <div class="relative overflow-hidden rounded-t-2xl shadow-sm border border-slate-200 transform translate-z-10">
             <div class="bg-gradient-to-r from-blue-700 via-blue-600 to-blue-800 p-4 relative">
               <!-- Animated Gradient Overlay -->
               <div class="absolute inset-0 bg-gradient-to-r from-transparent via-blue-400 to-transparent opacity-20 animate-shimmer"></div>
@@ -140,9 +140,9 @@
           </div>
 
           <!-- Form Content with Glass Effect -->
-          <div class="bg-white/90 backdrop-blur-md shadow-2xl rounded-b-2xl overflow-hidden transform translate-z-0 border border-white/50">
+          <div class="bg-white/90 backdrop-blur-md shadow-sm border border-slate-200 rounded-b-2xl overflow-hidden transform translate-z-0 border border-white/50">
             <div class="p-8 border-b border-gray-100">
-              <h2 class="text-2xl font-bold bg-gradient-to-r from-blue-700 to-purple-700 bg-clip-text text-transparent mb-6 animate-fadeIn">
+              <h2 class="text-lg font-bold bg-gradient-to-r from-blue-700 to-purple-700 bg-clip-text text-transparent mb-6 animate-fadeIn">
                 Ask your MLS-Related Questions
               </h2>
               
@@ -318,7 +318,7 @@
     <Transition name="modal">
       <div v-if="showSuccessModal" class="fixed inset-0 flex items-center justify-center z-50 px-4 sm:px-0">
         <div class="absolute inset-0 bg-black bg-opacity-50 backdrop-blur-sm" @click="showSuccessModal = false"></div>
-        <div class="bg-white rounded-2xl shadow-2xl p-8 max-w-md w-full relative z-10 transform transition-all">
+        <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-8 max-w-md w-full relative z-10 transform transition-all">
           <!-- Success Animation -->
           <div class="text-center">
             <div class="mx-auto flex items-center justify-center h-20 w-20 rounded-full bg-green-100 mb-6 relative">
@@ -327,7 +327,7 @@
                 <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
               </svg>
             </div>
-            <h3 class="text-2xl font-bold text-gray-900 mb-3">Thank you for your submission!</h3>
+            <h3 class="text-lg font-bold text-gray-900 mb-3">Thank you for your submission!</h3>
             <p class="text-gray-600 mb-6">Your MLS-related question has been received. We appreciate your contribution to Biomedical Science Day.</p>
             <button 
               @click="showSuccessModal = false" 
@@ -346,7 +346,7 @@
     <Transition name="modal">
       <div v-if="showErrorModal" class="fixed inset-0 flex items-center justify-center z-50 px-4 sm:px-0">
         <div class="absolute inset-0 bg-black bg-opacity-50 backdrop-blur-sm" @click="showErrorModal = false"></div>
-        <div class="bg-white rounded-2xl shadow-2xl p-8 max-w-md w-full relative z-10 transform transition-all animate-shake-once">
+        <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-8 max-w-md w-full relative z-10 transform transition-all animate-shake-once">
           <!-- Error Animation -->
           <div class="text-center">
             <div class="mx-auto flex items-center justify-center h-20 w-20 rounded-full bg-red-100 mb-6 relative">
@@ -355,7 +355,7 @@
                 <path class="errormark__x" fill="none" d="M16 16 36 36 M36 16 16 36" />
               </svg>
             </div>
-            <h3 class="text-2xl font-bold text-gray-900 mb-3">Submission Failed</h3>
+            <h3 class="text-lg font-bold text-gray-900 mb-3">Submission Failed</h3>
             <p class="text-gray-600 mb-6">{{ errorMessage }}</p>
             <button 
               @click="showErrorModal = false" 

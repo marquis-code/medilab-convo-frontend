@@ -5,7 +5,7 @@
         <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:20px_20px]"></div>
         <div class="mx-auto max-w-7xl relative z-10">
            <div class="max-w-2xl">
-              <h1 class="text-4xl md:text-5xl font-bold text-white leading-tight tracking-tighter  mb-4 animate-in fade-in slide-in-from-bottom-10 duration-1000">
+              <h1 class="text-lg md:text-xl font-bold text-white leading-tight tracking-normal  mb-4 animate-in fade-in slide-in-from-bottom-10 duration-1000">
                  Privacy Policy
               </h1>
               <p class="text-lg text-blue-100 font-medium leading-relaxed max-w-lg animate-in fade-in slide-in-from-bottom-10 duration-1000 delay-200">
@@ -27,12 +27,12 @@
           <p class="text-sm font-bold text-[#27628C]/60 mb-16 tracking-normal">Last Updated: April 5, 2026</p>
   
           <section class="mb-20">
-            <h2 class="text-3xl font-bold text-gray-900 mb-8">Introduction</h2>
+            <h2 class="text-xl font-bold text-gray-900 mb-8">Introduction</h2>
             <p>At MedLabConvo, we are committed to protecting the privacy and security of our community members, healthcare professionals, and website visitors. This Privacy Policy explains how we collect, use, and safeguard your information when you interact with our platform.</p>
           </section>
   
           <section class="mb-20">
-            <h2 class="text-3xl font-bold text-gray-900 mb-8">Information We Collect</h2>
+            <h2 class="text-xl font-bold text-gray-900 mb-8">Information We Collect</h2>
             <p>We collect information that you provide directly to us when you subscribe to our newsletter, engage with the ConvoStack, or make an enquiry. This may include:</p>
             <ul class="space-y-4">
               <li>Contact details (Name, Email, Social Handles)</li>
@@ -42,7 +42,7 @@
           </section>
   
           <section class="mb-20">
-            <h2 class="text-3xl font-bold text-gray-900 mb-8">How We Use Your Information</h2>
+            <h2 class="text-xl font-bold text-gray-900 mb-8">How We Use Your Information</h2>
             <p>We use the collected data to provide our services, maintain our community metrics, and improve our content delivery. Specifically, we use it for:</p>
             <ul class="space-y-4">
               <li>Delivering the Convo Substack and other editorial content.</li>
@@ -53,12 +53,12 @@
           </section>
   
           <section class="mb-20">
-            <h2 class="text-3xl font-bold text-gray-900 mb-8">Data Security</h2>
+            <h2 class="text-xl font-bold text-gray-900 mb-8">Data Security</h2>
             <p>We implement industry-standard security measures to protect your data. However, please be aware that no transmission over the internet is 100% secure.</p>
           </section>
   
           <section class="mb-20">
-            <h2 class="text-3xl font-bold text-gray-900 mb-8">Contact Us</h2>
+            <h2 class="text-xl font-bold text-gray-900 mb-8">Contact Us</h2>
             <p>If you have any questions about this Privacy Policy, please reach out to us at <a href="mailto:admin@medlabconvo.com">admin@medlabconvo.com</a>.</p>
           </section>
         </div>

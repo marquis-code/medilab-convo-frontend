@@ -3,7 +3,7 @@
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
       <!-- Section Header -->
       <div class="max-w-2xl mb-20 animate-fade-in">
-        <h2 class="text-4xl md:text-5xl font-bold text-gray-900 leading-tight tracking-tighter  mb-8">
+        <h2 class="text-lg md:text-xl font-bold text-gray-900 leading-tight tracking-normal  mb-8">
           The <span class="text-[#27628C]">Architects</span> of Change
         </h2>
         <p class="text-lg md:text-xl text-gray-500 font-medium leading-relaxed max-w-lg">
@@ -50,7 +50,7 @@
                     :key="social.type" 
                     :href="social.url" 
                     target="_blank"
-                    class="w-10 h-10 bg-white/90 backdrop-blur-md flex items-center justify-center rounded-2xl text-gray-900 hover:bg-[#27628C] hover:text-white transition-all border border-white/20 shadow-xl"
+                    class="w-10 h-10 bg-white/90 backdrop-blur-md flex items-center justify-center rounded-2xl text-gray-900 hover:bg-[#27628C] hover:text-white transition-all border border-white/20 shadow-sm border border-slate-200"
                   >
                     <Icon :name="getSocialIcon(social.type)" class="w-5 h-5" />
                   </a>
@@ -59,7 +59,7 @@
 
               <!-- Identity Layer -->
               <div class="flex-1 flex flex-col">
-                <h4 class="text-2xl md:text-3xl font-bold text-gray-900 mb-2 tracking-tighter  group-hover:text-[#27628C] transition-colors">
+                <h4 class="text-lg md:text-xl font-bold text-gray-900 mb-2 tracking-normal  group-hover:text-[#27628C] transition-colors">
                   {{ member.name }}
                 </h4>
                 <p class="text-[10px] font-bold text-gray-400 tracking-wider mb-6">
@@ -98,38 +98,20 @@
 <script setup lang="ts">
 import { ref, onMounted, computed } from 'vue'
 import Icon from '@/components/Icon.vue'
+import { useGetTeamMembers } from '@/composables/modules/teams/useGetTeamMembers'
 
-interface Member {
-  _id: string
-  name: string
-  title: string
-  roleCategory: string
-  image?: string
-  bio: string
-  achievements: string[]
-  profiles: Array<{ type: string; url: string }>
-  position: number
-}
+const { getTeamMembers, teamMembers: members, loading } = useGetTeamMembers()
 
-const members = ref<Member[]>([])
-const loading = ref(true)
-
-const fetchMembers = async () => {
+onMounted(async () => {
   try {
-    // In a real Nuxt 3 environment, we'd use useAsyncData or a similar fetcher
-    // For now, mirroring the standard fetch logic using $fetch for SSR compatibility
-    const res = await $fetch('/teams', {
-      baseURL: 'http://localhost:3000'
-    }) as any
-    members.value = res.sort((a: any, b: any) => (a.position || 0) - (b.position || 0))
+    const data = await getTeamMembers()
+    if (data) {
+      members.value = data.sort((a: any, b: any) => (a.position || 0) - (b.position || 0))
+    }
   } catch (e) {
     console.error('Leadership Fetch Error:', e)
-  } finally {
-    loading.value = false
   }
-}
-
-onMounted(fetchMembers)
+})
 
 const categories = computed(() => {
   const cats = members.value.map(m => m.roleCategory || 'Other Teams')

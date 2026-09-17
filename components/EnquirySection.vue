@@ -8,7 +8,7 @@
           <div class="inline-block px-4 py-1.5 bg-[#27628C]/10 text-[#27628C] text-[10px] font-bold rounded-full">
              Initiate Dialogue
           </div>
-          <h2 class="text-4xl md:text-5xl font-bold text-gray-900 leading-tight tracking-tighter ">
+          <h2 class="text-lg md:text-xl font-bold text-gray-900 leading-tight tracking-normal ">
             Expanding <span class="text-[#27628C]">Healthcare</span> <br /> Through Connection
           </h2>
           <p class="text-lg md:text-xl text-gray-500 font-medium leading-relaxed max-w-lg">
@@ -43,7 +43,7 @@
           <div class="absolute -right-20 -top-20 w-64 h-64 bg-[#27628C]/5 rounded-full blur-3xl"></div>
           <div class="absolute -left-10 -bottom-10 w-40 h-40 bg-blue-500/5 rounded-full blur-2xl"></div>
 
-          <div class="relative bg-white rounded-[3rem] p-8 md:p-12 shadow-2xl border border-gray-100 overflow-hidden">
+          <div class="relative bg-white rounded-[3rem] p-8 md:p-12 shadow-sm border border-slate-200 border border-gray-100 overflow-hidden">
              
              <!-- Success State Overlay -->
              <Transition name="fade">
@@ -51,7 +51,7 @@
                   <div class="w-24 h-24 bg-emerald-50 text-emerald-500 rounded-[2.5rem] flex items-center justify-center mb-8 animate-bounce-slow">
                      <Icon name="lucide:check-circle" class="w-12 h-12" />
                   </div>
-                  <h3 class="text-2xl font-bold text-gray-900 tracking-tighter  mb-4">Transmission Received</h3>
+                  <h3 class="text-lg font-bold text-gray-900 tracking-normal  mb-4">Transmission Received</h3>
                   <p class="text-gray-500 font-medium mb-10 max-w-xs">Your enquiry has been successfully logged into our governance system. An expert will be in touch shortly.</p>
                   <button @click="resetForm" class="px-10 py-4 bg-gray-900 text-white rounded-2xl font-bold text-[10px] tracking-normal hover:bg-black transition-all active:scale-95">
                      Log Another
@@ -119,7 +119,7 @@
                 <button 
                   type="submit" 
                   :disabled="loading"
-                  class="w-full py-5 bg-[#27628C] text-white rounded-2xl font-bold text-[11px] tracking-widest hover:bg-gray-900 transition-all active:scale-[0.98] disabled:opacity-50 flex items-center justify-center gap-3 shadow-[0_20px_40px_rgba(39,98,140,0.2)]"
+                  class="w-full py-5 bg-[#27628C] text-white rounded-2xl font-bold text-[11px] tracking-normal hover:bg-gray-900 transition-all active:scale-[0.98] disabled:opacity-50 flex items-center justify-center gap-3 shadow-[0_20px_40px_rgba(39,98,140,0.2)]"
                 >
                   <div v-if="loading" class="w-4 h-4 border-2 border-white/20 border-t-white rounded-full animate-spin"></div>
                   <span>Transmit Query</span>
@@ -135,6 +135,7 @@
 <script setup lang="ts">
 import { ref, reactive } from 'vue'
 import Icon from '@/components/Icon.vue'
+import { useCreateEnquiry } from '@/composables/modules/enquires/useCreateEnquiry'
 
 const props = defineProps<{
   prefill?: string
@@ -148,23 +149,14 @@ const form = reactive({
   message: props.prefill ? `I am interested in: ${props.prefill}. \n\n` : ''
 })
 
-const loading = ref(false)
-const success = ref(false)
+const { createEnquiry, loading, success, resetState } = useCreateEnquiry()
 
 const handleSubmit = async () => {
-  loading.value = true
   try {
-    const res = await $fetch('/enquiries', {
-      method: 'POST',
-      baseURL: 'http://localhost:3000',
-      body: { ...form }
-    })
-    success.value = true
+    await createEnquiry(form)
   } catch (e) {
     console.error('Enquiry Submission Error:', e)
     alert('Failed to transmit query. Please check your network protocol.')
-  } finally {
-    loading.value = false
   }
 }
 
@@ -176,7 +168,7 @@ const resetForm = () => {
     phoneNumber: '',
     message: ''
   })
-  success.value = false
+  resetState()
 }
 </script>
 

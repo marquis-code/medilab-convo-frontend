@@ -7,7 +7,7 @@
     <div v-if="!generatedUrl" class="flex flex-col items-center space-y-6">
       <div
         ref="flyerRef"
-        class="relative w-[370px] h-[450px] md:w-[400px] md:h-[450px] rounded-xl overflow-hidden shadow-lg px-24"
+        class="relative w-[370px] h-[450px] md:w-[400px] md:h-[450px] rounded-xl overflow-hidden shadow-sm border border-slate-100 px-24"
       >
         <img src="/6years-bg.png" alt="Background" class="absolute inset-0 w-full h-full object-cover" />
         <img src="/medlabconvo-logo.png" alt="Logo" class="absolute top-0 left-6 w-20" />
@@ -30,7 +30,7 @@
             @click="triggerFileUpload"
           >
             <img v-if="authorImage" :src="authorImage" alt="Author" class="w-full h-full object-cover" />
-            <span v-else class="text-gray-900 text-2xl">+</span>
+            <span v-else class="text-gray-900 text-lg">+</span>
             <input type="file" accept="image/*" class="hidden" ref="fileInput" @change="onFileChange" />
           </div>
         <p  class="mt-2 font-semibold text-gray-100 bg-[#27628C] px-3 py-1 rounded-lg max-w-[200px] truncate">
@@ -86,7 +86,7 @@
     Your Celebration Flier is Ready! 🎊🎊
   </h3>
 
-  <img :src="generatedUrl" alt="Generated DP" class="rounded-lg shadow-lg max-w-xs" />
+  <img :src="generatedUrl" alt="Generated DP" class="rounded-lg shadow-sm border border-slate-100 max-w-xs" />
 
   <!-- Download + Back buttons -->
   <div class="flex gap-4 mt-4 flex-wrap justify-center">

@@ -5,7 +5,7 @@
       <div class="mx-auto max-w-prose text-base lg:grid lg:max-w-none lg:grid-cols-2 lg:gap-8">
         <div>
           <h3
-            class="mt-2 text-2xl/8 font-bold tracking-tight sm:text-4xl text-[#27628C] uppercase text-center lg:text-start">
+            class="mt-2 text-lg/8 font-bold tracking-tight sm:text-lg text-[#27628C]  text-center lg:text-start">
             Scholarship Application Masterclass
           </h3>
         </div>
@@ -24,7 +24,7 @@
           </svg>
           <!-- <div class="relative mx-auto max-w-prose text-base lg:max-w-none">
             <figure>
-              <img class="w-full rounded-lg object-cover shadow-lg lg:aspect-auto" src="@/assets/img/scholarship.jpeg"
+              <img class="w-full rounded-lg object-cover shadow-sm border border-slate-100 lg:aspect-auto" src="@/assets/img/scholarship.jpeg"
                 alt="Scholarship Masterclass Flier" width="1184" height="1376" />
             </figure>
           </div> -->
@@ -47,7 +47,7 @@
     <div class="flex justify-center items-center px-4 mt-10 lg:mt-32">
       <div class="max-w-[900px] w-full flex flex-col justify-center items-center">
         <h2
-          class="text-balance text-2xl px-3 lg:px-0 lg:text-4xl text-center font-semibold tracking-tight text-gray-900">
+          class="text-balance text-lg px-3 lg:px-0 lg:text-lg text-center font-semibold tracking-tight text-gray-900">
           Win Scholarships with Confidence - Pre-Order Now at 20% Off! </h2>
         <p class="text-lg/7 max-w-[800px] w-full text-gray-900 text-center mt-6">
           Struggling with scholarship applications? Unsure how to craft a compeling personal statement or stand out in
@@ -73,15 +73,15 @@
 
 
     <div class="flex flex-col justify-center items-center min-h-screen mt-24">
-      <h1 class="text-center text-[#27628C] uppercase text-2xl font-bold">Course Outline</h1>
+      <h1 class="text-center text-[#27628C]  text-lg font-bold">Course Outline</h1>
 
       <div class="overflow-x-auto w-full max-w-[900px]">
         <table class="w-full border-collapse border-8 border-white mt-10 mx-auto">
           <thead>
             <tr class="bg-[#2788b2]">
-              <th class="border-4 border-white text-gray-50 px-2 py-3 text-center text-sm md:text-base uppercase font">
+              <th class="border-4 border-white text-gray-50 px-2 py-3 text-center text-sm md:text-base  font">
                 S/N</th>
-              <th class="border-4 border-white text-gray-50 px-4 py-2 text-left text-sm md:text-base uppercase">Session
+              <th class="border-4 border-white text-gray-50 px-4 py-2 text-left text-sm md:text-base ">Session
                 Topic</th>
             </tr>
           </thead>
@@ -98,10 +98,10 @@
       </div>
     </div>
     <div>
-      <h1 class="text-center text-[#27628C] uppercase font-bold text-2xl mt-20">Facilitators</h1>
+      <h1 class="text-center text-[#27628C]  font-bold text-lg mt-20">Facilitators</h1>
       <section class="grid lg:grid-cols-3 gap-6 mt-10 mx-auto max-w-7xl pb-6 p-3 lg:p-0">
         <article @click="openModal(item)" v-for="item in schedules"
-          class="flex bg-white border-[0.5px] border-gray-10 rounded-lg transition hover:shadow-xl">
+          class="flex bg-white border-[0.5px] border-gray-10 rounded-lg transition hover:shadow-sm border border-slate-200">
 
           <div class="sm:basis-56 border-[0.5px]  rounded-lg">
             <img :src="item.image" :alt="item.speaker" class="aspect-square h-full w-32 object-cover" />

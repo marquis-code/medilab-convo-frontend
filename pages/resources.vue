@@ -7,7 +7,7 @@
       <div class="mx-auto max-w-7xl px-6 lg:px-8 relative z-10 flex flex-col items-center justify-center pt-16 text-center">
         <div class="max-w-3xl">
           <h1 class="text-sm font-bold text-blue-200 mb-6 animate-fade-in tracking-normal">Knowledge Hub</h1>
-          <h2 class="text-4xl font-bold tracking-tight text-white sm:text-6xl mb-8 animate-fade-in-up ">Resources</h2>
+          <h2 class="text-lg font-bold tracking-tight text-white sm:text-lg mb-8 animate-fade-in-up ">Resources</h2>
           <p class="text-xl leading-8 text-blue-50 font-medium animate-fade-in-up animation-delay-200 max-w-2xl mx-auto">
             A comprehensive collection of research papers, policy briefs, professional toolkits, and educational materials to support medical laboratory excellence.
           </p>
@@ -23,7 +23,7 @@
           @click="activeCategory = 'all'"
           :class="[
             'px-8 py-3 rounded-full text-sm font-bold transition-all',
-            activeCategory === 'all' ? 'bg-[#27628C] text-white shadow-lg' : 'bg-gray-50 text-gray-500 hover:bg-gray-100'
+            activeCategory === 'all' ? 'bg-[#27628C] text-white shadow-sm border border-slate-100' : 'bg-gray-50 text-gray-500 hover:bg-gray-100'
           ]"
         >
           All Resources
@@ -34,7 +34,7 @@
           @click="activeCategory = cat"
           :class="[
             'px-8 py-3 rounded-full text-sm font-bold transition-all',
-            activeCategory === cat ? 'bg-[#27628C] text-white shadow-lg' : 'bg-gray-50 text-gray-500 hover:bg-gray-100'
+            activeCategory === cat ? 'bg-[#27628C] text-white shadow-sm border border-slate-100' : 'bg-gray-50 text-gray-500 hover:bg-gray-100'
           ]"
         >
           {{ cat }}
@@ -57,7 +57,7 @@
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
           </svg>
         </div>
-        <h3 class="text-2xl font-bold text-gray-900 mb-2">No resources found</h3>
+        <h3 class="text-lg font-bold text-gray-900 mb-2">No resources found</h3>
         <p class="text-gray-500">We are currently cataloging our latest resources in this category.</p>
       </div>
 
@@ -66,7 +66,7 @@
         <article 
           v-for="(pub, idx) in filteredPublications" 
           :key="pub.id"
-          class="group relative flex flex-col bg-white border border-gray-100 rounded-[2.5rem] overflow-hidden transition-all duration-500 hover:-translate-y-4 hover:shadow-2xl hover:shadow-blue-900/5"
+          class="group relative flex flex-col bg-white border border-gray-100 rounded-[2.5rem] overflow-hidden transition-all duration-500 hover:-translate-y-4 hover:shadow-sm border border-slate-200 hover:shadow-blue-900/5"
           :style="{ animationDelay: `${idx * 100}ms` }"
         >
           <!-- Thumbnail -->
@@ -84,7 +84,7 @@
             </div>
             
             <div class="absolute top-4 left-4">
-              <span class="bg-white/90 backdrop-blur-md px-4 py-1.5 rounded-xl text-[10px] font-black uppercase tracking-widest text-[#27628C] shadow-sm">
+              <span class="bg-white/90 backdrop-blur-md px-4 py-1.5 rounded-xl text-[10px] font-black  tracking-normal text-[#27628C] shadow-sm">
                 {{ pub.category || 'General' }}
               </span>
             </div>
@@ -138,7 +138,7 @@
           <div class="p-12 sm:p-20 flex flex-col md:flex-row items-center justify-between gap-12">
             <div class="max-w-xl text-center md:text-left">
               <h2 class="text-sm font-bold text-blue-400 mb-6">Video Library</h2>
-              <h3 class="text-2xl sm:text-4xl font-bold text-white mb-8">Recorded Webinars</h3>
+              <h3 class="text-lg sm:text-lg font-bold text-white mb-8">Recorded Webinars</h3>
               <p class="text-lg text-gray-400 font-light mb-10">
                 We are currently migrating our extensive library of recorded webinars to this new hub. Stay tuned for expert sessions on diagnostics, research methodologies, and career development.
               </p>
@@ -148,7 +148,7 @@
                 </a>
               </div>
             </div>
-            <div class="relative w-full max-w-sm aspect-video bg-white/5 backdrop-blur-sm border border-white/10 rounded-3xl flex items-center justify-center group overflow-hidden shadow-2xl">
+            <div class="relative w-full max-w-sm aspect-video bg-white/5 backdrop-blur-sm border border-white/10 rounded-3xl flex items-center justify-center group overflow-hidden shadow-sm border border-slate-200">
               <div class="absolute inset-0 bg-gradient-to-tr from-blue-500/10 to-purple-500/10"></div>
               <div class="relative z-10 w-20 h-20 rounded-full bg-white/10 flex items-center justify-center text-white/40 group-hover:scale-110 group-hover:text-white transition-all duration-500">
                 <svg class="w-10 h-10" fill="currentColor" viewBox="0 0 24 24">

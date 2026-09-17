@@ -1,5 +1,6 @@
 import { ref } from 'vue'
 import { useAsyncData } from '#imports'
+import { cms_api } from '@/api_factory/modules/cms'
 
 /**
  * Global composable to fetch dynamic CMS data for any public page.
@@ -16,11 +17,8 @@ export const useCmsData = (pageKey: string) => {
   const { data: pageData, pending, error, refresh } = useAsyncData(
     `cms-content-${pageKey}`,
     async () => {
-      // Direct raw fetch for SSR compatibility
-      const res = await $fetch(fetchUrl, {
-        baseURL: 'http://localhost:3001'
-      }) as any
-      return res?.data || null
+      const res = await cms_api.$_get_cms_by_key(pageKey)
+      return res?.data?.data || res?.data || null
     },
     {
       server: true, // Crucial for SEO, fetches on the server side

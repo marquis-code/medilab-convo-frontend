@@ -2,7 +2,7 @@
   <main class="min-h-screen bg-black flex items-center justify-center overflow-hidden">
     <div v-if="loading" class="text-white">Loading...</div>
     <div v-else-if="!shortRead" class="text-white">Story not found.</div>
-    <div v-else class="relative w-full max-w-md h-[100dvh] sm:h-[85vh] sm:rounded-3xl overflow-hidden bg-gray-900 shadow-2xl">
+    <div v-else class="relative w-full max-w-md h-[100dvh] sm:h-[85vh] sm:rounded-3xl overflow-hidden bg-gray-900 shadow-sm border border-slate-200">
       <!-- Progress Bar -->
       <div class="absolute top-0 left-0 right-0 z-20 flex gap-1 p-2 bg-gradient-to-b from-black/50 to-transparent">
         <div 
@@ -25,9 +25,9 @@
           <img :src="shortRead.coverImageUrl" class="absolute inset-0 w-full h-full object-cover" />
           <div class="absolute inset-0 bg-black/40"></div>
           <div class="absolute bottom-10 left-6 right-6 text-white text-center">
-            <h1 class="text-3xl font-bold mb-4">{{ shortRead.title }}</h1>
+            <h1 class="text-xl font-bold mb-4">{{ shortRead.title }}</h1>
             <p v-if="shortRead.author" class="text-sm opacity-80">By {{ shortRead.author }}</p>
-            <p class="mt-8 text-xs uppercase tracking-widest opacity-60 animate-pulse">Tap right to begin</p>
+            <p class="mt-8 text-xs  tracking-normal opacity-60 animate-pulse">Tap right to begin</p>
           </div>
         </div>
 
@@ -42,8 +42,8 @@
           
           <!-- Content -->
           <div v-if="slide.type === 'text' || slide.type === 'mixed'" class="relative z-20 p-4 w-full h-full flex flex-col justify-center max-w-lg mx-auto pointer-events-none">
-            <div class="bg-black/50 backdrop-blur-xl rounded-3xl p-8 border border-white/10 shadow-2xl overflow-y-auto max-h-[85%] pointer-events-auto hide-scrollbar">
-              <p class="text-white text-xl md:text-2xl leading-relaxed whitespace-pre-wrap font-serif" v-html="parseMarkdown(slide.content || '')"></p>
+            <div class="bg-black/50 backdrop-blur-xl rounded-3xl p-8 border border-white/10 shadow-sm overflow-y-auto max-h-[85%] pointer-events-auto hide-scrollbar">
+              <p class="text-white text-sm md:text-sm leading-snug whitespace-pre-wrap font-serif" v-html="parseMarkdown(slide.content || '')"></p>
             </div>
           </div>
         </div>
@@ -54,7 +54,7 @@
             <div class="w-20 h-20 bg-white rounded-full flex items-center justify-center mx-auto mb-6">
               <svg class="w-10 h-10 text-[#033958]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
             </div>
-            <h2 class="text-2xl font-bold text-white mb-2">Thanks for reading!</h2>
+            <h2 class="text-lg font-bold text-white mb-2">Thanks for reading!</h2>
             <NuxtLink to="/short-reads" class="inline-block mt-6 px-6 py-3 bg-white text-[#033958] rounded-full font-bold hover:scale-105 transition-transform">
               Read more stories
             </NuxtLink>

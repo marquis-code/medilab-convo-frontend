@@ -8,9 +8,9 @@
 
     <!-- Error State -->
     <div v-else-if="error" class="flex flex-col items-center justify-center py-40 px-6 text-center">
-      <h2 class="text-4xl font-bold text-gray-900 tracking-tighter  mb-4">Fractured Space</h2>
+      <h2 class="text-lg font-bold text-gray-900 tracking-normal  mb-4">Fractured Space</h2>
       <p class="text-lg text-gray-500 font-light mb-12 max-w-sm">The digital node you are seeking has either been moved or never existed in this dimension.</p>
-      <NuxtLink to="/" class="bg-gray-900 text-white px-10 py-5 rounded-2xl text-[10px] font-bold hover:bg-[#27628C] transition-all shadow-xl">Back to Ground Zero</NuxtLink>
+      <NuxtLink to="/" class="bg-gray-900 text-white px-10 py-5 rounded-2xl text-[10px] font-bold hover:bg-[#27628C] transition-all shadow-sm border border-slate-200">Back to Ground Zero</NuxtLink>
     </div>
 
     <!-- Dynamic Renderer -->
@@ -21,7 +21,7 @@
 
     <!-- Fallback 404 (Valid slug but empty data) -->
     <div v-else class="flex flex-col items-center justify-center py-40 px-6 text-center">
-       <h2 class="text-4xl font-black text-gray-900 tracking-tighter">Null Resonance</h2>
+       <h2 class="text-lg font-black text-gray-900 tracking-normal">Null Resonance</h2>
        <p class="text-gray-500 mt-4 mb-8">This page exists in name, but contains no structural data yet.</p>
     </div>
   </div>

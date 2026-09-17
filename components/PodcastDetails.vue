@@ -1,7 +1,7 @@
 <template>
   <div class="min-h-screen bg-black text-white p-4 md:p-8">
     <div class="max-w-4xl mx-auto">
-      <h2 class="text-2xl font-bold mb-6">Featured Episode</h2>
+      <h2 class="text-lg font-bold mb-6">Featured Episode</h2>
 
       <div class="relative w-full h-96">
         <iframe
@@ -67,7 +67,7 @@
       </div>
 
       <!-- Episode Info -->
-      <h1 class="text-2xl md:text-2xl font-bold mb-2">
+      <h1 class="text-lg md:text-lg font-bold mb-2">
         A Conversation with Piers Morgan | EP 295
       </h1>
       <p class="text-gray-400 mb-6">Aug 10, 2023</p>

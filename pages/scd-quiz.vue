@@ -3,7 +3,7 @@
     <!-- Leave Confirmation Modal -->
     <transition name="fade">
       <div v-if="showLeaveModal" class="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4">
-        <div class="bg-white rounded-xl shadow-2xl p-6 max-w-md w-full">
+        <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-6 max-w-md w-full">
           <h3 class="text-xl font-bold text-gray-800 mb-4">
             Are you sure you want to leave?
           </h3>
@@ -25,7 +25,7 @@
     <!-- Toast Notification -->
     <transition name="toast">
       <div v-if="toast.show"
-        class="fixed top-4 right-4 bg-white rounded-lg shadow-lg p-4 z-40 max-w-xs w-full flex items-center">
+        class="fixed top-4 right-4 bg-white rounded-lg shadow-sm border border-slate-100 p-4 z-40 max-w-xs w-full flex items-center">
         <div class="bg-teal-100 p-2 rounded-full mr-3">
           <Icon :name="toast.icon" class="text-teal-600 w-5 h-5" />
         </div>
@@ -39,12 +39,12 @@
         class="flex-1 flex flex-col items-center justify-center text-center max-w-3xl mx-auto">
         <div class="mb-8">
           <img src="@/assets/img/medlab-logo.jpeg" alt="Logo" class="mx-auto h-16 rounded-full mb-4" />
-          <h1 class="text-2xl md:text-4xl font-bold text-teal-800 mb-2">
+          <h1 class="text-lg md:text-lg font-bold text-teal-800 mb-2">
             SICKLE CELL DISEASE QUIZ
           </h1>
         </div>
-        <div class="bg-white rounded-xl shadow-lg p-6 mb-8 w-full">
-          <h3 class="text-xl md:text-2xl font-bold text-gray-800 mb-4">
+        <div class="bg-white rounded-xl shadow-sm border border-slate-100 p-6 mb-8 w-full">
+          <h3 class="text-xl md:text-lg font-bold text-gray-800 mb-4">
             How well do you know sickle cell disease?
           </h3>
           <p class="text-gray-600 mb-6">Let's find out!</p>
@@ -67,8 +67,8 @@
         </div>
 
         <transition name="slide" mode="out-in">
-          <div :key="currentQuestionIndex" class="bg-white rounded-xl shadow-lg p-6 mb-6 flex-1">
-            <h2 class="text-xl md:text-2xl font-bold text-gray-800 mb-4">
+          <div :key="currentQuestionIndex" class="bg-white rounded-xl shadow-sm border border-slate-100 p-6 mb-6 flex-1">
+            <h2 class="text-xl md:text-lg font-bold text-gray-800 mb-4">
               {{ currentQuestionIndex + 1 }}. {{ currentQuestion.question }}
             </h2>
 
@@ -123,8 +123,8 @@
       <!-- Result Screen -->
       <div v-else-if="currentState === 'results'"
         class="flex-1 flex flex-col items-center justify-center max-w-3xl mx-auto">
-        <div class="bg-white rounded-xl shadow-lg p-6 mb-8 w-full text-center">
-          <h2 class="text-2xl md:text-2xl font-bold text-teal-800 mb-2">
+        <div class="bg-white rounded-xl shadow-sm border border-slate-100 p-6 mb-8 w-full text-center">
+          <h2 class="text-lg md:text-lg font-bold text-teal-800 mb-2">
             Quiz Completed!
           </h2>
           <p class="text-lg font-semibold">So, how well did you do?</p>

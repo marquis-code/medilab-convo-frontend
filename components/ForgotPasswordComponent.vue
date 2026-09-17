@@ -4,7 +4,7 @@
     <div class="flex w-full max-w-xl items-center justify-center lg:max-w-2xl">
       <form class="mt-8 w-full space-y-6" @submit.prevent="handleForgotPassword">
         <div class="space-y-3">
-          <h1 class="text-2xl md:text-4xl font-semibold text-white">Forgot Password</h1>
+          <h1 class="text-lg md:text-lg font-semibold text-white">Forgot Password</h1>
           <p class="max-w-sm text-sm md:text-base text-white">No worries, we will send to your email password-reset
             information.</p>
         </div>

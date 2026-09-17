@@ -5,7 +5,7 @@
         <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:20px_20px]"></div>
         <div class="mx-auto max-w-7xl relative z-10">
            <div class="max-w-2xl">
-              <h1 class="text-4xl md:text-5xl font-bold text-white leading-tight tracking-tighter  mb-4 animate-in fade-in slide-in-from-bottom-10 duration-1000">
+              <h1 class="text-lg md:text-xl font-bold text-white leading-tight tracking-normal  mb-4 animate-in fade-in slide-in-from-bottom-10 duration-1000">
                  Cookie Policy
               </h1>
               <p class="text-lg text-blue-100 font-medium leading-relaxed max-w-lg animate-in fade-in slide-in-from-bottom-10 duration-1000 delay-200">
@@ -27,12 +27,12 @@
           <p class="text-sm font-bold text-[#27628C]/60 mb-16 tracking-normal">Last Updated: April 5, 2026</p>
   
           <section class="mb-20">
-            <h2 class="text-3xl font-bold text-gray-900 mb-8">What Are Cookies?</h2>
+            <h2 class="text-xl font-bold text-gray-900 mb-8">What Are Cookies?</h2>
             <p>Cookies are small text files that are stored on your device when you visit websites. They are used to make websites work more efficiently and to provide information to the website owners.</p>
           </section>
   
           <section class="mb-20">
-            <h2 class="text-3xl font-bold text-gray-900 mb-8">How We Use Cookies</h2>
+            <h2 class="text-xl font-bold text-gray-900 mb-8">How We Use Cookies</h2>
             <p>MedLabConvo uses cookies to improve your experience on our platform. We use them for:</p>
             <ul class="space-y-4">
               <li><strong>Essential Cookies:</strong> These are required for the website to function correctly, including your authentication and session state.</li>
@@ -42,17 +42,17 @@
           </section>
   
           <section class="mb-20">
-            <h2 class="text-3xl font-bold text-gray-900 mb-8">Your Choices</h2>
+            <h2 class="text-xl font-bold text-gray-900 mb-8">Your Choices</h2>
             <p>Most browsers allow you to manage or disable cookies through their settings. Please note that disabling essential cookies may impact your ability to use certain features on our platform.</p>
           </section>
   
           <section class="mb-20">
-            <h2 class="text-3xl font-bold text-gray-900 mb-8">Updates to This Policy</h2>
+            <h2 class="text-xl font-bold text-gray-900 mb-8">Updates to This Policy</h2>
             <p>We may update this policy periodically to reflect changes in our practices or legal requirements.</p>
           </section>
   
           <section class="mb-20">
-            <h2 class="text-3xl font-bold text-gray-900 mb-8">Contact Us</h2>
+            <h2 class="text-xl font-bold text-gray-900 mb-8">Contact Us</h2>
             <p>If you have any questions about this Cookie Policy, please reach out to us at <a href="mailto:admin@medlabconvo.com">admin@medlabconvo.com</a>.</p>
           </section>
         </div>

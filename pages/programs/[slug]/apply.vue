@@ -10,7 +10,7 @@
         <div class="max-w-4xl mx-auto space-y-8">
           <NuxtLink 
             :to="`/programs/${route.params.slug}`" 
-            class="inline-flex items-center gap-3 text-white/60 hover:text-white font-black text-xs uppercase tracking-widest transition-all group"
+            class="inline-flex items-center gap-3 text-white/60 hover:text-white font-black text-xs  tracking-normal transition-all group"
           >
             <Icon name="lucide:arrow-left" class="w-4 h-4 group-hover:-translate-x-1 transition-transform" />
             Back to program
@@ -19,9 +19,9 @@
           <div class="space-y-4">
              <div class="inline-flex items-center gap-3 px-4 py-1.5 bg-white/5 border border-white/10 rounded-full backdrop-blur-md">
                 <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-                <span class="text-[10px] font-black text-white uppercase tracking-widest">Enrolment Portal</span>
+                <span class="text-[10px] font-black text-white  tracking-normal">Enrolment Portal</span>
              </div>
-             <h1 class="text-4xl md:text-4xl font-black text-white tracking-tight leading-tight">
+             <h1 class="text-lg md:text-xl font-black text-white tracking-tight leading-tight">
                {{ program?.title || 'Program Registration' }}
              </h1>
           </div>
@@ -32,11 +32,11 @@
     <!-- Form Container -->
     <div class="container mx-auto px-6 lg:px-8 -mt-32 pb-32 relative z-20">
       <div class="mx-auto max-w-4xl">
-        <div class="bg-white/80 backdrop-blur-2xl rounded-[3rem] shadow-2xl shadow-gray-900/10 border border-white overflow-hidden animate-in fade-in slide-in-from-bottom-10 duration-1000">
+        <div class="bg-white/80 backdrop-blur-2xl rounded-[3rem] shadow-sm border border-slate-200 shadow-gray-900/10 border border-white overflow-hidden animate-in fade-in slide-in-from-bottom-10 duration-1000">
           
           <!-- Banner Image if available -->
-          <div v-if="program?.image" class="h-64 w-full overflow-hidden border-b border-gray-100 group">
-             <img :src="program.image" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" :alt="program.title" />
+          <div v-if="program?.image || program?.images?.[0]" class="h-64 w-full overflow-hidden border-b border-gray-100 group bg-slate-50">
+             <img :src="program?.image || program?.images?.[0]" @error="(e) => e.target.style.display = 'none'" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" :alt="program?.title" />
           </div>
 
           <div class="p-10 lg:p-16">
@@ -46,20 +46,20 @@
                   <div class="absolute inset-0 border-4 border-[#27628C]/10 rounded-full"></div>
                   <div class="absolute inset-0 border-4 border-[#27628C] rounded-full border-t-transparent animate-spin"></div>
               </div>
-              <p class="mt-8 text-sm font-black text-[#27628C] uppercase tracking-widest">Initialising Portal...</p>
+              <p class="mt-8 text-sm font-black text-[#27628C]  tracking-normal">Initialising Portal...</p>
             </div>
 
             <!-- Success State -->
             <div v-else-if="success" class="text-center py-12 space-y-10 animate-in fade-in zoom-in duration-700">
               <div class="relative inline-block">
                  <div class="absolute inset-0 bg-emerald-500/20 blur-2xl rounded-full scale-150"></div>
-                 <div class="relative w-24 h-24 bg-emerald-500 text-white rounded-[2.5rem] flex items-center justify-center border-4 border-white shadow-xl">
+                 <div class="relative w-24 h-24 bg-emerald-500 text-white rounded-[2.5rem] flex items-center justify-center border-4 border-white shadow-sm border border-slate-200">
                     <Icon name="lucide:sparkles" class="w-12 h-12" />
                  </div>
               </div>
               
               <div class="space-y-4 max-w-md mx-auto">
-                <h2 class="text-3xl font-black text-gray-900 tracking-tight">Experience Unlocked!</h2>
+                <h2 class="text-xl font-black text-gray-900 tracking-tight">Experience Unlocked!</h2>
                 <p class="text-gray-500 font-medium leading-relaxed">
                   Your application for <span class="text-[#27628C] font-black">{{ program?.title }}</span> has been submitted. 
                   Check your inbox for the welcome pack.
@@ -88,10 +88,10 @@
             </div>
 
             <!-- Form Body -->
-            <div v-else class="space-y-12">
+            <div v-else-if="program?.status === 'active'" class="space-y-12">
                <div class="space-y-2">
-                  <h3 class="text-xs font-black text-[#DE6129] uppercase tracking-[0.4em]">Section 01</h3>
-                  <h2 class="text-2xl font-black text-gray-900 tracking-tight">{{ program?.formTitle || 'Registration Form' }}</h2>
+                  <h3 class="text-xs font-black text-[#DE6129]  tracking-normal">Section 01</h3>
+                  <h2 class="text-lg font-black text-gray-900 tracking-tight">{{ program?.formTitle || 'Registration Form' }}</h2>
                   <p class="text-gray-500 font-medium text-sm leading-relaxed">{{ program?.formInstructions || 'Please provide your details below' }}</p>
                </div>
 
@@ -104,10 +104,10 @@
                      class="group space-y-4"
                    >
                      <label :for="field.id" class="flex items-center justify-between">
-                       <span class="text-xs font-black text-gray-900 uppercase tracking-widest group-focus-within:text-[#27628C] transition-colors">
+                       <span class="text-xs font-black text-gray-900  tracking-normal group-focus-within:text-[#27628C] transition-colors">
                          {{ field.label }}
                        </span>
-                       <span v-if="field.required" class="text-[10px] font-black text-[#DE6129] uppercase">Required</span>
+                       <span v-if="field.required" class="text-[10px] font-black text-[#DE6129] ">Required</span>
                      </label>
 
                      <!-- Dynamic Input Types -->
@@ -178,16 +178,44 @@
                    <button
                      type="submit"
                      :disabled="submitting"
-                     class="w-full h-16 bg-[#27628C] text-white rounded-[1.2rem] font-bold text-sm tracking-widest uppercase hover:scale-[1.02] active:scale-[0.98] transition-all flex items-center justify-center space-x-3 shadow-2xl shadow-blue-900/20 disabled:opacity-50"
+                     class="w-full h-16 bg-[#27628C] text-white rounded-[1.2rem] font-bold text-sm tracking-normal  hover:scale-[1.02] active:scale-[0.98] transition-all flex items-center justify-center space-x-3 shadow-sm border border-slate-200 shadow-blue-900/20 disabled:opacity-50"
                    >
                      <div v-if="submitting" class="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin"></div>
                      <span>{{ submitting ? 'Finalising Enrolment...' : 'Register Now' }}</span>
                    </button>
-                    <p class="text-[10px] text-gray-400 font-bold uppercase tracking-widest text-center leading-relaxed">
+                    <p class="text-[10px] text-gray-400 font-bold  tracking-normal text-center leading-relaxed">
                       By registering, you confirm that the information provided is accurate and agree to our Terms and Conditions and Privacy Policy.
                     </p>
                  </div>
                </form>
+            </div>
+
+            <!-- Closed / Paused State -->
+            <div v-else class="text-center py-16 space-y-10 animate-in fade-in zoom-in duration-700">
+              <div class="relative inline-block">
+                 <div class="absolute inset-0 bg-rose-500/10 blur-2xl rounded-full scale-150"></div>
+                 <div class="relative w-24 h-24 bg-rose-50 text-rose-500 rounded-[2.5rem] flex items-center justify-center border-4 border-white shadow-sm border border-slate-200">
+                    <Icon name="lucide:lock" class="w-10 h-10" />
+                 </div>
+              </div>
+              
+              <div class="space-y-4 max-w-md mx-auto">
+                <h2 class="text-xl font-black text-gray-900 tracking-tight">Registration Closed</h2>
+                <p class="text-gray-500 font-medium leading-relaxed">
+                  The application window for <span class="text-[#27628C] font-black">{{ program?.title }}</span> has elapsed or the program is currently paused. 
+                  Stay tuned for future cohorts!
+                </p>
+              </div>
+
+              <div class="flex flex-col sm:flex-row items-center justify-center gap-6 pt-6">
+                <NuxtLink 
+                  to="/programs" 
+                  class="h-14 px-10 bg-gray-900 text-white rounded-2xl font-black text-sm hover:scale-105 active:scale-95 transition-all flex items-center gap-3 shadow-sm border border-slate-200 shadow-gray-900/10"
+                >
+                  <Icon name="lucide:arrow-left" class="w-5 h-5" />
+                  Explore Other Programs
+                </NuxtLink>
+              </div>
             </div>
           </div>
         </div>
@@ -243,8 +271,18 @@ const handleSubmit = async () => {
   })
 
   // Get email for backend tracking
-  const emailField = program.value.formFields?.find(f => f.type === 'email')
-  const email = emailField ? formData.value[emailField.id] : ''
+  let emailField = program.value.formFields?.find(f => f.type === 'email')
+  if (!emailField) {
+    emailField = program.value.formFields?.find(f => f.label?.toLowerCase().includes('email'))
+  }
+  let email = emailField ? formData.value[emailField.id] : ''
+
+  // Fallback: search all values for an email string
+  if (!email) {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+    const possibleEmail = Object.values(formData.value).find(val => typeof val === 'string' && emailRegex.test(val.trim()))
+    if (possibleEmail) email = possibleEmail.trim()
+  }
 
   const payload = {
     applicantEmail: email,

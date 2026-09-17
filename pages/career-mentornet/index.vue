@@ -7,7 +7,7 @@
     <section class="relative py-24 px-6 mt-24 text-center">
       <div class="max-w-4xl mx-auto">
         <h1
-          class="text-4xl md:text-5xl font-semibold text-[#27628C] leading-tight mb-4 animate-fade-up"
+          class="text-lg md:text-xl font-semibold text-[#27628C] leading-tight mb-4 animate-fade-up"
         >
           Career Mentornet Program
         </h1>
@@ -24,7 +24,7 @@
     <section class="max-w-6xl mx-auto px-6 py-16 border-t border-gray-100">
       <div class="grid md:grid-cols-3 gap-10 items-start">
         <div class="md:col-span-2 order-2 md:order-1">
-          <h2 class="text-2xl md:text-2xl font-bold text-[#27628C] mb-3">
+          <h2 class="text-lg md:text-lg font-bold text-[#27628C] mb-3">
             Message from the Interntional Community
           </h2>
           <p class="text-gray-700 leading-relaxed mb-4">
@@ -41,7 +41,7 @@
 
         <!-- Card -->
         <div
-          class="relative order-1 md:order-2 bg-gradient-to-br from-[#27628C]/90 to-[#27628C] text-white rounded-2xl p-6 shadow-xl animate-bounce-soft"
+          class="relative order-1 md:order-2 bg-gradient-to-br from-[#27628C]/90 to-[#27628C] text-white rounded-2xl p-6 shadow-sm border border-slate-200 animate-bounce-soft"
         >
           <h3 class="font-semibold text-lg mb-4 text-center">Program Structure</h3>
           <ul class="space-y-4 text-sm">
@@ -80,7 +80,7 @@
     <!-- Mission & Objectives -->
     <section class="bg-[#27628C]/5 py-16 px-6">
       <div class="max-w-6xl mx-auto text-center">
-        <h2 class="text-2xl md:text-2xl font-bold text-[#27628C] mb-6">Mission & Objectives</h2>
+        <h2 class="text-lg md:text-lg font-bold text-[#27628C] mb-6">Mission & Objectives</h2>
         <p class="text-gray-700 max-w-3xl mx-auto mb-10 leading-relaxed">
           To bridge the gap between academic training and professional excellence through
           mentorship, collaboration, and personalized guidance — fostering growth, leadership,
@@ -103,12 +103,12 @@
     <!-- Program Benefits -->
     <section class="py-16 px-6">
       <div class="max-w-6xl mx-auto text-center">
-        <h2 class="text-2xl md:text-2xl font-bold text-[#27628C] mb-10">Program Benefits</h2>
+        <h2 class="text-lg md:text-lg font-bold text-[#27628C] mb-10">Program Benefits</h2>
         <div class="grid md:grid-cols-2 gap-10 text-left">
           <div
             class="bg-white border border-gray-100 shadow-sm rounded-2xl p-8 hover:shadow-md transition"
           >
-            <h3 class="text-xl md:text-2xl font-semibold text-[#27628C] mb-4">For Mentors</h3>
+            <h3 class="text-xl md:text-lg font-semibold text-[#27628C] mb-4">For Mentors</h3>
             <ul class="space-y-2 text-gray-700">
               <li>Leave a professional legacy and shape future leaders.</li>
               <li>Refine leadership, communication, and coaching skills.</li>
@@ -118,7 +118,7 @@
           <div
             class="bg-white border border-gray-100 shadow-sm rounded-2xl p-8 hover:shadow-md transition"
           >
-            <h3 class="text-xl md:text-2xl font-semibold text-[#27628C] mb-4">For Mentees</h3>
+            <h3 class="text-xl md:text-lg font-semibold text-[#27628C] mb-4">For Mentees</h3>
             <ul class="space-y-2 text-gray-700">
               <li>Receive personalized guidance from experienced professionals.</li>
               <li>Accelerate your growth and expand your professional reach.</li>
@@ -132,7 +132,7 @@
     <!-- Program Phases -->
     <section class="bg-[#27628C]/5 py-16 px-6">
       <div class="max-w-6xl mx-auto text-center">
-        <h2 class="text-2xl md:text-2xl font-bold text-[#27628C] mb-10">Program Phases</h2>
+        <h2 class="text-lg md:text-lg font-bold text-[#27628C] mb-10">Program Phases</h2>
         <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div
             v-for="(phase, index) in phases"
@@ -156,7 +156,7 @@
 
     <!-- CTA -->
     <section class="text-center py-20 bg-[#27628C] text-white">
-      <h2 class="text-2xl md:text-2xl font-bold mb-4">Join the Career Mentornet Program</h2>
+      <h2 class="text-lg md:text-lg font-bold mb-4">Join the Career Mentornet Program</h2>
       <p class="mb-8 text-lg max-w-xl mx-auto">
         Step into your future as a confident, innovative, and well-rounded Medical Laboratory Scientist.
       </p>

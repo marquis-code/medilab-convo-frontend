@@ -15,19 +15,19 @@
 
     <div class="relative mx-auto max-w-7xl px-6 py-32 sm:py-40 lg:px-8">
       <div class="text-center">
-        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white mb-6 animate-fade-in">
+        <h1 class="text-lg sm:text-xl lg:text-lg font-bold tracking-tight text-white mb-6 animate-fade-in">
           <span class="bg-gradient-to-r from-white to-blue-100 bg-clip-text text-transparent">
             MedLabConvo
           </span>
         </h1>
-        <p class="text-2xl sm:text-2xl lg:text-2xl text-blue-100 font-light mb-4 animate-fade-in-delay">
+        <p class="text-lg sm:text-lg lg:text-lg text-blue-100 font-light mb-4 animate-fade-in-delay">
           A Platform for Laboratory Science, Health Innovation,
         </p>
-        <p class="text-2xl sm:text-2xl lg:text-2xl text-blue-100 font-light mb-8 animate-fade-in-delay">
+        <p class="text-lg sm:text-lg lg:text-lg text-blue-100 font-light mb-8 animate-fade-in-delay">
           and Workforce Development
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mt-12">
-          <a href="#what-we-do" class="bg-white text-[#27628C] px-8 py-4 rounded-full font-semibold hover:bg-blue-50 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+          <a href="#what-we-do" class="bg-white text-[#27628C] px-8 py-4 rounded-full font-semibold hover:bg-blue-50 transition-all duration-300 shadow-sm border border-slate-100 hover:shadow-sm border border-slate-200 transform hover:-translate-y-1">
             Explore Our Services
           </a>
           <a href="#about" class="border-2 border-white text-white px-8 py-4 rounded-full font-semibold hover:bg-white hover:text-[#27628C] transition-all duration-300">
@@ -43,7 +43,7 @@
             <p class="text-blue-100 text-sm font-medium  leading-relaxed text-center px-4">
               "{{ testimonial.testimonial.length > 120 ? testimonial.testimonial.substring(0, 117) + '...' : testimonial.testimonial }}"
             </p>
-            <p class="text-[10px] font-bold text-white mt-2 uppercase tracking-widest">— {{ testimonial.name }}</p>
+            <p class="text-[10px] font-bold text-white mt-2  tracking-normal">— {{ testimonial.name }}</p>
           </div>
         </div>
       </div>
@@ -56,12 +56,12 @@
   <!-- <section id="about" class="py-24 bg-gradient-to-br from-white via-blue-50/30 to-white">
     <div class="max-w-7xl mx-auto px-6 lg:px-8">
       <div class="text-center mb-16">
-        <h2 class="text-4xl font-bold text-gray-900 mb-6">
+        <h2 class="text-lg font-bold text-gray-900 mb-6">
           <span class="bg-gradient-to-r from-[#27628C] to-blue-600 bg-clip-text text-transparent">
             Transforming Healthcare
           </span>
         </h2>
-        <p class="text-2xl font-light text-gray-700 mb-4">
+        <p class="text-lg font-light text-gray-700 mb-4">
           Through Digital Services for Laboratory Professionals
         </p>
         <div class="w-24 h-1 bg-gradient-to-r from-[#27628C] to-blue-600 mx-auto rounded-full"></div>
@@ -82,7 +82,7 @@
     <div class="max-w-7xl mx-auto px-6 lg:px-8">
       <div class="text-center mb-16">
         <h2 class="text-sm font-bold text-[#27628C] mb-4">Core Services</h2>
-        <h3 class="text-4xl font-bold text-gray-900 mb-6">Advancing Healthcare through Innovation</h3>
+        <h3 class="text-lg font-bold text-gray-900 mb-6">Advancing Healthcare through Innovation</h3>
         <div class="w-16 h-1.5 bg-[#27628C] mx-auto rounded-full"></div>
       </div>
  
@@ -95,7 +95,7 @@
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
               </svg>
             </div>
-            <h3 class="text-2xl font-bold text-gray-900 mb-4 tracking-tight">
+            <h3 class="text-lg font-bold text-gray-900 mb-4 tracking-tight">
               Digital Programs and Capacity Building
             </h3>
             <p class="text-slate-500 leading-relaxed font-medium">
@@ -112,7 +112,7 @@
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"></path>
               </svg>
             </div>
-            <h3 class="text-2xl font-bold text-gray-900 mb-4 tracking-tight">
+            <h3 class="text-lg font-bold text-gray-900 mb-4 tracking-tight">
               Media and Knowledge Platforms
             </h3>
             <p class="text-slate-500 leading-relaxed font-medium">
@@ -129,7 +129,7 @@
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
               </svg>
             </div>
-            <h3 class="text-2xl font-bold text-gray-900 mb-4 tracking-tight">
+            <h3 class="text-lg font-bold text-gray-900 mb-4 tracking-tight">
               Community and Professional Networks
             </h3>
             <p class="text-slate-500 leading-relaxed font-medium">
@@ -146,7 +146,7 @@
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
               </svg>
             </div>
-            <h3 class="text-2xl font-bold text-gray-900 mb-4 tracking-tight">
+            <h3 class="text-lg font-bold text-gray-900 mb-4 tracking-tight">
               Products and Resources
             </h3>
             <p class="text-slate-500 leading-relaxed font-medium">
@@ -163,7 +163,7 @@
   <section class="py-20 bg-slate-50 border-y border-slate-100">
     <div class="max-w-7xl mx-auto px-6 lg:px-8">
       <div class="text-center mb-10">
-        <h2 class="text-2xl font-bold text-gray-900 mb-4 tracking-tight">Who We Serve</h2>
+        <h2 class="text-lg font-bold text-gray-900 mb-4 tracking-tight">Who We Serve</h2>
         <div class="w-12 h-1.5 bg-[#27628C] mx-auto rounded-full"></div>
       </div>
       <p class="text-xl text-slate-500 max-w-4xl mx-auto text-center leading-relaxed font-medium">
@@ -178,7 +178,7 @@
     <div class="max-w-7xl mx-auto px-6 lg:px-8">
       <div class="text-center mb-16">
         <h2 class="text-sm font-bold text-[#27628C] mb-4">Our Programs</h2>
-        <h3 class="text-4xl font-bold text-gray-900 mb-6">Transforming Your Career Journey</h3>
+        <h3 class="text-lg font-bold text-gray-900 mb-6">Transforming Your Career Journey</h3>
         <div class="w-16 h-1.5 bg-[#27628C] mx-auto rounded-full"></div>
       </div>
       
@@ -186,12 +186,12 @@
         <div class="w-12 h-12 rounded-full border-4 border-slate-200 border-t-[#27628C] animate-spin"></div>
       </div>
       <div v-else-if="activePrograms?.length" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <div v-for="program in activePrograms.slice(0, 3)" :key="program.id || program._id" class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 group flex flex-col">
+        <div v-for="program in activePrograms.slice(0, 3)" :key="program.id || program._id" class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-sm border border-slate-200 transition-all duration-300 border border-slate-100 group flex flex-col">
           <div class="relative h-60 overflow-hidden">
             <img :src="program.image || '/placeholder-program.jpg'" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="Program Image">
             <div class="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent"></div>
             <div class="absolute bottom-6 left-6 right-6">
-              <span class="inline-block px-3 py-1 bg-[#DE6129] text-white text-[10px] font-black uppercase tracking-widest rounded-full mb-3">{{ program.category || 'Program' }}</span>
+              <span class="inline-block px-3 py-1 bg-[#DE6129] text-white text-[10px] font-black  tracking-normal rounded-full mb-3">{{ program.category || 'Program' }}</span>
               <h4 class="text-xl font-bold text-white">{{ program.title }}</h4>
             </div>
           </div>
@@ -199,7 +199,7 @@
             <p class="text-gray-500 text-sm leading-relaxed mb-6 flex-grow line-clamp-3">
               {{ program.description }}
             </p>
-            <NuxtLink :to="`/programs/${program.slug}`" class="text-xs font-black uppercase tracking-widest text-[#27628C] group-hover:text-[#DE6129] transition-colors flex items-center gap-2">
+            <NuxtLink :to="`/programs/${program.slug}`" class="text-xs font-black  tracking-normal text-[#27628C] group-hover:text-[#DE6129] transition-colors flex items-center gap-2">
               Learn More
               <svg class="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
             </NuxtLink>
@@ -220,13 +220,13 @@
     <div class="max-w-7xl mx-auto px-6 lg:px-8">
       <div class="text-center mb-16">
         <h2 class="text-sm font-bold text-[#27628C] mb-4">Our Platforms</h2>
-        <h3 class="text-4xl font-bold text-gray-900 mb-6">Expert Insights at Your Fingertips</h3>
+        <h3 class="text-lg font-bold text-gray-900 mb-6">Expert Insights at Your Fingertips</h3>
         <div class="w-16 h-1.5 bg-[#27628C] mx-auto rounded-full"></div>
       </div>
  
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
         <!-- LabCast Platform -->
-        <div class="group relative bg-[#27628C] rounded-[2.5rem] overflow-hidden shadow-2xl transition-all duration-500 hover:scale-[1.02]">
+        <div class="group relative bg-[#27628C] rounded-[2.5rem] overflow-hidden shadow-sm border border-slate-200 transition-all duration-500 hover:scale-[1.02]">
           <div class="absolute -right-10 -top-10 w-40 h-40 bg-white/10 rounded-full blur-3xl group-hover:scale-150 transition-transform duration-1000"></div>
           <div class="relative p-12 lg:p-16">
             <div class="flex items-center mb-10">
@@ -235,12 +235,12 @@
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"></path>
                 </svg>
               </div>
-              <h3 class="text-3xl font-bold text-white tracking-tight ">LabCast</h3>
+              <h3 class="text-xl font-bold text-white tracking-tight ">LabCast</h3>
             </div>
             <p class="text-blue-50 text-xl leading-relaxed mb-12 font-medium opacity-90">
               Conversations with laboratory scientists, public health experts, and health innovators shaping the future of healthcare.
             </p>
-            <NuxtLink to="/lab-cast" class="inline-flex items-center bg-white text-[#27628C] px-10 py-5 rounded-2xl font-bold text-xs hover:bg-black hover:text-white transition-all shadow-xl active:scale-95 group">
+            <NuxtLink to="/lab-cast" class="inline-flex items-center bg-white text-[#27628C] px-10 py-5 rounded-2xl font-bold text-xs hover:bg-black hover:text-white transition-all shadow-sm border border-slate-200 active:scale-95 group">
               Listen & Explore
               <svg class="w-4 h-4 ml-3 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
@@ -250,7 +250,7 @@
         </div>
  
         <!-- Journo Platform -->
-        <div class="group relative bg-[#13110F] rounded-[2.5rem] overflow-hidden shadow-2xl transition-all duration-500 hover:scale-[1.02]">
+        <div class="group relative bg-[#13110F] rounded-[2.5rem] overflow-hidden shadow-sm border border-slate-200 transition-all duration-500 hover:scale-[1.02]">
           <div class="absolute -right-10 -top-10 w-40 h-40 bg-[#27628C]/20 rounded-full blur-3xl group-hover:scale-150 transition-transform duration-1000"></div>
           <div class="relative p-12 lg:p-16">
             <div class="flex items-center mb-10">
@@ -259,12 +259,12 @@
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path>
                 </svg>
               </div>
-              <h3 class="text-3xl font-bold text-white tracking-tight ">Journo</h3>
+              <h3 class="text-xl font-bold text-white tracking-tight ">Journo</h3>
             </div>
             <p class="text-gray-400 text-xl leading-relaxed mb-12 font-medium">
               Insight-driven articles, opinion pieces, and explainers on medical laboratory science, careers, and global health systems.
             </p>
-            <NuxtLink to="/journo" class="inline-flex items-center bg-[#27628C] text-white px-10 py-5 rounded-2xl font-bold text-xs hover:bg-white hover:text-black transition-all shadow-xl active:scale-95 group">
+            <NuxtLink to="/journo" class="inline-flex items-center bg-[#27628C] text-white px-10 py-5 rounded-2xl font-bold text-xs hover:bg-white hover:text-black transition-all shadow-sm border border-slate-200 active:scale-95 group">
               Read Journalism
               <svg class="w-4 h-4 ml-3 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
@@ -284,7 +284,7 @@
     <div class="relative max-w-7xl mx-auto px-6 lg:px-8">
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
         <div>
-          <h2 class="text-4xl font-bold text-white mb-8 tracking-tight leading-tight">
+          <h2 class="text-lg font-bold text-white mb-8 tracking-tight leading-tight">
             Transforming Professional <br/> Growth at Scale
           </h2>
           <p class="text-xl text-slate-400 leading-relaxed max-w-xl font-medium">
@@ -294,19 +294,19 @@
  
         <div class="grid grid-cols-2 gap-6">
           <div class="bg-white/5 border border-white/10 rounded-2xl p-8 hover:bg-white/10 transition-colors">
-            <div class="text-4xl font-bold text-white mb-2">5000+</div>
+            <div class="text-lg font-bold text-white mb-2">5000+</div>
             <div class="text-slate-500 text-sm font-bold">Members</div>
           </div>
           <div class="bg-white/5 border border-white/10 rounded-2xl p-8 hover:bg-white/10 transition-colors">
-            <div class="text-4xl font-bold text-white mb-2">50+</div>
+            <div class="text-lg font-bold text-white mb-2">50+</div>
             <div class="text-slate-500 text-sm font-bold">Programs</div>
           </div>
           <div class="bg-white/5 border border-white/10 rounded-2xl p-8 hover:bg-white/10 transition-colors">
-            <div class="text-4xl font-bold text-white mb-2">100+</div>
+            <div class="text-lg font-bold text-white mb-2">100+</div>
             <div class="text-slate-500 text-sm font-bold">Episodes</div>
           </div>
           <div class="bg-white/5 border border-white/10 rounded-2xl p-8 hover:bg-white/10 transition-colors">
-            <div class="text-4xl font-bold text-white mb-2">30+</div>
+            <div class="text-lg font-bold text-white mb-2">30+</div>
             <div class="text-slate-500 text-sm font-bold">Countries</div>
           </div>
         </div>
@@ -322,7 +322,7 @@
   <section class="py-24 bg-slate-50 border-t border-slate-100">
     <div class="max-w-7xl mx-auto px-6 lg:px-8">
       <div class="text-center mb-16">
-        <h2 class="text-2xl font-bold text-gray-900 mb-6 tracking-tight">Partner With Us</h2>
+        <h2 class="text-lg font-bold text-gray-900 mb-6 tracking-tight">Partner With Us</h2>
         <div class="w-12 h-1.5 bg-[#27628C] mx-auto rounded-full mb-10"></div>
         <p class="text-xl text-slate-500 max-w-4xl mx-auto mb-16 font-medium leading-relaxed">
           We collaborate with academic institutions and partners to deliver impactful digital programs and workforce development initiatives.
@@ -350,7 +350,7 @@
   <!-- 9. UPDATED Donation CTA (Professional Bordered) -->
   <section class="py-24 bg-[#0a192f] border-t border-white/5 relative overflow-hidden">
     <div class="relative max-w-4xl mx-auto text-center px-6 lg:px-8">
-      <h2 class="text-4xl font-bold text-white mb-6 tracking-tight">Support Our Work</h2>
+      <h2 class="text-lg font-bold text-white mb-6 tracking-tight">Support Our Work</h2>
       <p class="text-xl text-slate-400 mb-12 leading-relaxed font-medium">
         Help us sustain and expand our digital services for healthcare professionals.
       </p>
@@ -367,11 +367,11 @@
   <!-- 10. UPDATED Newsletter Section -->
   <div class="bg-gradient-to-br from-gray-50 to-blue-50 py-20">
     <div class="max-w-4xl mx-auto text-center px-6 lg:px-8">
-      <h2 class="text-2xl font-bold text-[#27628C] mb-6">Stay Informed</h2>
+      <h2 class="text-lg font-bold text-[#27628C] mb-6">Stay Informed</h2>
       <p class="text-xl text-gray-700 mb-10 leading-relaxed">
         Subscribe to our newsletter for insights, programs, and opportunities in laboratory science and healthcare innovation.
       </p>
-      <NuxtLink to="/subscribe" class="inline-flex items-center bg-gradient-to-r from-[#27628C] to-blue-600 text-white px-10 py-5 rounded-full font-bold text-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 group">
+      <NuxtLink to="/subscribe" class="inline-flex items-center bg-gradient-to-r from-[#27628C] to-blue-600 text-white px-10 py-5 rounded-full font-bold text-lg hover:shadow-sm border border-slate-200 transition-all duration-300 transform hover:-translate-y-1 group">
         Subscribe for Updates
         <svg class="w-5 h-5 ml-3 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
@@ -382,32 +382,32 @@
         <p class="font-semibold text-gray-800 text-lg mb-6">Let's Talk Medical Laboratory Science</p>
         <div class="flex justify-center space-x-5">
           <a href="https://x.com/medlabconvo" class="group" aria-label="X (Twitter)">
-            <div class="w-12 h-12 rounded-full bg-white shadow-lg flex items-center justify-center group-hover:bg-gray-900 group-hover:scale-110 transition-all duration-300">
+            <div class="w-12 h-12 rounded-full bg-white shadow-sm border border-slate-100 flex items-center justify-center group-hover:bg-gray-900 group-hover:scale-110 transition-all duration-300">
               <img src="@/assets/img/logo1.png" class="h-6 w-6 group-hover:brightness-0 group-hover:invert transition-all" alt="X"/>
             </div>
           </a>
           <a href="https://www.instagram.com/medlabconvo/" class="group" aria-label="Instagram">
-            <div class="w-12 h-12 rounded-full bg-white shadow-lg flex items-center justify-center group-hover:bg-gradient-to-br group-hover:from-purple-600 group-hover:to-pink-600 group-hover:scale-110 transition-all duration-300">
+            <div class="w-12 h-12 rounded-full bg-white shadow-sm border border-slate-100 flex items-center justify-center group-hover:bg-gradient-to-br group-hover:from-purple-600 group-hover:to-pink-600 group-hover:scale-110 transition-all duration-300">
               <img src="@/assets/img/logo4.svg" class="h-6 w-6 group-hover:brightness-0 group-hover:invert transition-all" alt="Instagram"/>
             </div>
           </a>
           <a href="https://web.facebook.com/medlabconvo" class="group" aria-label="Facebook">
-            <div class="w-12 h-12 rounded-full bg-white shadow-lg flex items-center justify-center group-hover:bg-blue-600 group-hover:scale-110 transition-all duration-300">
+            <div class="w-12 h-12 rounded-full bg-white shadow-sm border border-slate-100 flex items-center justify-center group-hover:bg-blue-600 group-hover:scale-110 transition-all duration-300">
               <img src="@/assets/img/logo3.svg" class="h-6 w-6 group-hover:brightness-0 group-hover:invert transition-all" alt="Facebook"/>
             </div>
           </a>
           <a href="https://www.linkedin.com/company/medlabconvo/" class="group" aria-label="LinkedIn">
-            <div class="w-12 h-12 rounded-full bg-white shadow-lg flex items-center justify-center group-hover:bg-blue-700 group-hover:scale-110 transition-all duration-300">
+            <div class="w-12 h-12 rounded-full bg-white shadow-sm border border-slate-100 flex items-center justify-center group-hover:bg-blue-700 group-hover:scale-110 transition-all duration-300">
               <img src="@/assets/img/logo5.svg" class="h-6 w-6 group-hover:brightness-0 group-hover:invert transition-all" alt="LinkedIn"/>
             </div>
           </a>
           <a href="https://mlcjourno.substack.com/" class="group" aria-label="Substack">
-            <div class="w-12 h-12 rounded-full bg-white shadow-lg flex items-center justify-center group-hover:bg-orange-500 group-hover:scale-110 transition-all duration-300">
+            <div class="w-12 h-12 rounded-full bg-white shadow-sm border border-slate-100 flex items-center justify-center group-hover:bg-orange-500 group-hover:scale-110 transition-all duration-300">
               <img src="@/assets/img/substack.png" class="h-6 w-6 group-hover:brightness-0 group-hover:invert transition-all" alt="Substack"/>
             </div>
           </a>
           <a href="https://open.spotify.com/show/04S2XZGd6gczoCXStIrh8e" class="group" aria-label="Spotify">
-            <div class="w-12 h-12 rounded-full bg-white shadow-lg flex items-center justify-center group-hover:bg-green-500 group-hover:scale-110 transition-all duration-300">
+            <div class="w-12 h-12 rounded-full bg-white shadow-sm border border-slate-100 flex items-center justify-center group-hover:bg-green-500 group-hover:scale-110 transition-all duration-300">
               <img src="@/assets/img/logo2.png" class="h-6 w-6 group-hover:brightness-0 group-hover:invert transition-all" alt="Spotify"/>
             </div>
           </a>

@@ -1,6 +1,6 @@
 <template>
     <div class="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">
-        <h1 class="text-center text-teal-700 text-2xl font-bold py-10">HOSTS</h1>
+        <h1 class="text-center text-teal-700 text-lg font-bold py-10">HOSTS</h1>
 
       <div class="relative w-full h-auto mx-auto max-w-7xl">
         <div class="relative">
@@ -16,7 +16,7 @@
               <div class="lg:pr-4">
                 <div class="lg:max-w-lg">
                   <p class="text-base font-semibold leading-7 text-indigo-600">{{ episode.tagline }}</p>
-                  <h1 class="mt-2 text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl">{{ episode.title }}</h1>
+                  <h1 class="mt-2 text-lg font-bold tracking-tight text-gray-900 sm:text-lg">{{ episode.title }}</h1>
                   <p class="mt-6 text-xl leading-8 text-gray-700">{{ episode.description }}</p>
                 </div>
               </div>
@@ -25,7 +25,7 @@
     
             <div class="lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
               <img
-                class="max-w-none rounded-xl h-96 w-full object-cover bg-gray-900 shadow-xl ring-1 ring-gray-400/10"
+                class="max-w-none rounded-xl h-96 w-full object-cover bg-gray-900 shadow-sm border border-slate-200 ring-1 ring-gray-400/10"
                 :src="episode.image"
                 :alt="episode.title"
               />

@@ -4,7 +4,7 @@
             <div class="relative" @mouseenter="isPaused = true" @mouseleave="isPaused = false">
                 <div ref="carousel" class="flex gap-6 overflow-x-hidden scroll-smooth snap-x snap-mandatory pb-2">
                     <div v-for="(flyer, idx) in flyers" :key="idx"
-                        class="carousel-card flex-shrink-0 snap-start bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-500 overflow-hidden"
+                        class="carousel-card flex-shrink-0 snap-start bg-white rounded-2xl shadow-md hover:shadow-sm border border-slate-200 transition-all duration-500 overflow-hidden"
                         role="group">
                         <div class="card-image-wrapper">
                             <img :src="flyer.image" :alt="flyer.title" class="w-full h-full object-cover block"

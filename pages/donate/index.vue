@@ -4,10 +4,10 @@
       <div class="relative isolate overflow-hidden pt-14">
         <div class="mx-auto max-w-2xl lg:py-32 lg:mt-10 mt-36">
           <div class="text-center space-y-5">
-            <h1 class="font-bold tracking-tight text-gray-900 text-4xl sm:text-5xl lg:text-5xl">
+            <h1 class="font-bold tracking-tight text-gray-900 text-lg sm:text-xl lg:text-xl">
               Support MedLabConvo
             </h1>
-            <p class="text-2xl sm:text-2xl lg:text-4xl text-gray-900  font-light animate-fade-in-delay">
+            <p class="text-lg sm:text-lg lg:text-lg text-gray-900  font-light animate-fade-in-delay">
               Empower the Future of Laboratory Medicine.
             </p>
           </div>
@@ -23,7 +23,7 @@
 
     <div class="mt-20 lg:mt-6 flex justify-center items-center px-4">
       <div class="max-w-[900px] w-full flex flex-col justify-center items-center">
-        <h2 class="text-2xl md:text-4xl text-center font-extrabold text-gray-900">
+        <h2 class="text-lg md:text-lg text-center font-extrabold text-gray-900">
           Why Donate to MedLabConvo?
         </h2>
         <p class="text-xl text-gray-600 text-center mt-8 max-w-4xl mx-auto leading-relaxed">
@@ -38,7 +38,7 @@
 
     <div class="bg-white container mx-auto mt-20">
       <div class="mx-auto px-4 sm:px-6 lg:px-4">
-        <h2 class="text-2xl font-bold text-gray-900 text-center uppercase">
+        <h2 class="text-lg font-bold text-gray-900 text-center ">
           Your donation helps us:
         </h2>
 
@@ -119,7 +119,7 @@
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
       <div v-for="(testimonial, idx) in testimonials" :key="idx" class="group">
         <div
-          class="bg-white rounded-3xl p-4 shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 h-full">
+          class="bg-white rounded-3xl p-4 shadow-sm border border-slate-200 hover:shadow-sm border border-slate-200 transition-all duration-500 transform hover:-translate-y-2 h-full">
           <div class="flex items-center mb-6">
             <img class="h-12 w-12 rounded-full object-cover" src="@/assets/img/avatar.jpeg" alt="">
             <div class="ml-4">
@@ -149,7 +149,7 @@
       </div>
 
       <div class="relative max-w-6xl mx-auto px-6 lg:px-8">
-        <h2 class="text-2xl md:text-4xl font-bold text-gray-900 text-center mb-8">
+        <h2 class="text-lg md:text-lg font-bold text-gray-900 text-center mb-8">
           Donation Appreciation Packages
         </h2>
         <p class="text-lg text-gray-700 text-center max-w-3xl mx-auto mb-10 leading-relaxed">
@@ -160,7 +160,7 @@
 
         <!-- Grid -->
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mb-16 place-items-center">
-          <div class="w-full max-w-sm bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition">
+          <div class="w-full max-w-sm bg-white rounded-xl shadow-md overflow-hidden hover:shadow-sm border border-slate-100 transition">
             <img src="@/assets/img/email-sample.jpg" alt="Personalized Email Sample" class="w-full h-48 object-cover" />
             <div class="p-4">
               <h3 class="text-lg font-semibold text-[#27628C] mb-1">
@@ -172,7 +172,7 @@
             </div>
           </div>
 
-          <div class="w-full max-w-sm bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition">
+          <div class="w-full max-w-sm bg-white rounded-xl shadow-md overflow-hidden hover:shadow-sm border border-slate-100 transition">
             <img src="@/assets/img/thankyou-card.jpg" alt="Thank You Card Sample" class="w-full h-48 object-cover" />
             <div class="p-4">
               <h3 class="text-lg font-semibold text-[#27628C] mb-1">
@@ -185,7 +185,7 @@
             </div>
           </div>
 
-          <div class="w-full max-w-sm bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition">
+          <div class="w-full max-w-sm bg-white rounded-xl shadow-md overflow-hidden hover:shadow-sm border border-slate-100 transition">
             <!-- <img
           src="@/assets/img/souvenir.jpg"
           alt="Souvenir Sample"
@@ -203,8 +203,8 @@
 
         <!-- Summary -->
         <div
-          class="bg-white/80 border border-[#27628C]/20 rounded-2xl shadow-lg p-8 max-w-3xl mx-auto text-center space-y-3">
-          <p class="text-sm font-semibold text-[#27628C] uppercase tracking-wide">
+          class="bg-white/80 border border-[#27628C]/20 rounded-2xl shadow-sm border border-slate-100 p-8 max-w-3xl mx-auto text-center space-y-3">
+          <p class="text-sm font-semibold text-[#27628C]  tracking-wide">
             You can donate any amount 💙
           </p>
           <p class="text-gray-700 leading-relaxed">
@@ -225,14 +225,14 @@
 
     <div class="flex justify-center items-center px-4 mt-20">
       <div class="max-w-[900px] w-full flex flex-col justify-center items-center">
-        <h2 class="text-2xl font-bold text-gray-900 text-center">
+        <h2 class="text-lg font-bold text-gray-900 text-center">
           Join Us in Making an Impact
         </h2>
         <p class="text-xl max-w-[800px] w-full text-gray-600 text-center mt-6 leading-relaxed">
           By supporting MedLabConvo, you are investing in a future where healthcare professionals are better
           equipped, more connected, and more empowered to drive change in healthcare.
         </p>
-        <p class="text-2xl font-bold text-gray-900 text-center mt-14">
+        <p class="text-lg font-bold text-gray-900 text-center mt-14">
           Donate Today and Be Part of the Change!
         </p>
       </div>
@@ -249,7 +249,7 @@
     <div class="flex justify-center items-center px-4 mb-10">
       <div class="max-w-[900px] w-full flex flex-col justify-center items-center">
         <div class="w-full max-w-[500px] border-2 rounded-2xl px-4 lg:px-4 py-6 mt-6 mx-auto">
-          <p class="text-2xl text-gray-600">Donate Directly To Our Bank Account</p>
+          <p class="text-lg text-gray-600">Donate Directly To Our Bank Account</p>
           <div class="bg-red-400 h-[1px] mt-2 opacity-60"></div>
           <p class="text-gray-900 text-lg mt-4">Copy Account Details</p>
 
@@ -257,7 +257,7 @@
             <div class="bg-[#27628C] relative p-3 rounded-2xl w-[280px] min-h-[120px] flex flex-col justify-start">
               <img src="@/assets/img/mastercard.jpg" alt="Mastercard logo" class="absolute top-2 right-2 w-10" />
               <p class="text-lg text-white">MedLabConvo</p>
-              <p class="text-2xl font-extrabold text-white">{{ textToCopy }}</p>
+              <p class="text-lg font-extrabold text-white">{{ textToCopy }}</p>
               <p class="text-lg text-white">UBA</p>
             </div>
 

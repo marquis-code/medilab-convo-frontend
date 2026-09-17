@@ -12,7 +12,7 @@
           <img src="@/assets/icons/dashboard/android-badge.svg" alt="" />
           <div class="space-y-4">
             <div class="flex items-center space-x-4">
-              <h2 class="font-bold text-2xl">625</h2>
+              <h2 class="font-bold text-lg">625</h2>
               <img src="@/assets/icons/dashboard/increase.svg" alt="" class="h-10 w-10" />
             </div>
             <p class="text-gray-400">Downloads</p>
@@ -32,7 +32,7 @@
         <img src="@/assets/icons/dashboard/ios-badge.svg" alt="" />
         <div class="space-y-4">
           <div class="flex items-center space-x-4">
-            <h2 class="font-bold text-2xl">902</h2>
+            <h2 class="font-bold text-lg">902</h2>
             <img src="@/assets/icons/dashboard/decrease.svg" alt="" />
           </div>
           <p class="text-gray-400">Downloads</p>

@@ -1,6 +1,6 @@
 <!-- components/HospitalInfoCard.vue -->
 <template>
-    <div class="flex items-center bg-white shadow-lg rounded-lg p-4 py-6">
+    <div class="flex items-center bg-white shadow-sm border border-slate-100 rounded-lg p-4 py-6">
       <div class="flex-grow space-y-4">
         <h2 class="text-red-500 text-lg font-medium max-w-xs">Lagos University Teaching Hospital (LUTH)</h2>
         <p class="text-gray-900 text-sm">112, Ishaga Rd, Idi-araba, Lagos</p>

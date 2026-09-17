@@ -52,7 +52,7 @@
       <div class="mx-auto max-w-7xl px-6 lg:px-8 flex justify-center items-center w-full flex-col pt-16">
         <div class="mx-auto max-w-2xl lg:mx-0 flex justify-center items-center w-full flex-col">
           <h2
-            class="text-4xl font-bold text-center tracking-tight text-white sm:text-5xl mt-20">
+            class="text-lg font-bold text-center tracking-tight text-white sm:text-xl mt-20">
             Interntional
           </h2>
           <p class="mt-3 text-lg leading-8 text-white text-center">
@@ -64,7 +64,7 @@
 
     <div class="mt-20 flex justify-center items-center px-4">
       <div class="max-w-[900px] w-full flex flex-col justify-center items-center">
-        <h2 class="text-4xl md:text-5xl text-center font-extrabold text-gray-900">
+        <h2 class="text-lg md:text-xl text-center font-extrabold text-gray-900">
           Transform Your Internship Experience, Transform Your Future!
         </h2>
         <div class="overflow-hidden">
@@ -75,19 +75,19 @@
                <div class="w-44 flex-none space-y-8 pt-32 sm:pt-0">
                 <div class="relative">
                     <img src="@/assets/img/lab-coats3.jpg" alt=""
-                      class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg">
+                      class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-sm border border-slate-100">
                     <div class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10">
                     </div>
                   </div>
                   <div class="relative">
                     <img src="@/assets/img/lab-coats9.jpg" alt=""
-                      class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg">
+                      class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-sm border border-slate-100">
                     <div class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10">
                     </div>
                   </div>
                   <div class="relative">
                     <img src="@/assets/img/lab-coats2.jpg" alt=""
-                      class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg">
+                      class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-sm border border-slate-100">
                     <div class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10">
                     </div>
                   </div>
@@ -96,13 +96,13 @@
                 <div class="mr-auto w-44 flex-none space-y-8 sm:mr-0 sm:pt-52 lg:pt-36 hidden sm:block lg:block">
                   <div class="relative">
                     <img src="@/assets/img/lab-coats5.jpg" alt=""
-                      class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg">
+                      class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-sm border border-slate-100">
                     <div class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10">
                     </div>
                   </div>
                   <div class="relative">
                     <img src="@/assets/img/lab-coats7.jpg" alt=""
-                      class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg">
+                      class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-sm border border-slate-100">
                     <div class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10">
                     </div>
                   </div>
@@ -111,13 +111,13 @@
                 <div class="mr-auto w-44 flex-none space-y-8 sm:mr-0 sm:pt-52 lg:pt-36 hidden sm:hidden lg:block">
                   <div class="relative">
                     <img src="@/assets/img/lab-coats6.jpg" alt=""
-                      class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg">
+                      class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-sm border border-slate-100">
                     <div class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10">
                     </div>
                   </div>
                   <div class="relative">
                     <img src="@/assets/img/lab-coats8.jpg" alt=""
-                      class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg">
+                      class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-sm border border-slate-100">
                     <div class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10">
                     </div>
                   </div>
@@ -126,25 +126,25 @@
                 <div class="w-44 flex-none space-y-8 pt-32 sm:pt-0">
                   <div class="relative">
                     <img src="@/assets/img/lab-coats1.jpg" alt=""
-                      class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg">
+                      class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-sm border border-slate-100">
                     <div class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10">
                     </div>
                   </div>
                   <div class="relative">
                     <img src="@/assets/img/lab-coats4.jpg" alt=""
-                      class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg">
+                      class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-sm border border-slate-100">
                     <div class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10">
                     </div>
                   </div>
                   <div class="relative">
                     <img src="@/assets/img/lab-coats10.jpg" alt=""
-                      class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg">
+                      class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-sm border border-slate-100">
                     <div class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10">
                     </div>
                   </div>
                   <!-- <div class="relative">
                     <img src="@/assets/img/lab-coats8.jpg" alt=""
-                      class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg">
+                      class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-sm border border-slate-100">
                     <div class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10">
                     </div>
                   </div> -->
@@ -155,10 +155,10 @@
           </div>
         </div>
 
-        <p class="text-xl md:text-2xl max-w-[800px] w-full font-bold text-gray-900 text-center mt-">
+        <p class="text-xl md:text-lg max-w-[800px] w-full font-bold text-gray-900 text-center mt-">
           Don't let your internship be just another year. Make it the stepping stone to a thriving career!
         </p>
-        <p class="text-xl md:text-2xl max-w-[800px] w-full font-bold text-gray-900 text-center mt-4">
+        <p class="text-xl md:text-lg max-w-[800px] w-full font-bold text-gray-900 text-center mt-4">
           If you are a medical laboratory science intern looking to navigate your internship with confidence, skill, and
           purpose, Interntional, a dedicated community by MedLabConvo, is here to help you turn this crucial year into a
           transformative journey.
@@ -170,7 +170,7 @@
     <div class="bg-white container mx-auto pt-20">
 
       <div class="mx-auto lg:max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
-        <h2 class="text-2xl font-bold text-gray-900 text-center">
+        <h2 class="text-lg font-bold text-gray-900 text-center">
           Cadres of Change
         </h2>
 
@@ -303,13 +303,13 @@
 
     <div class="bg-white container mx-auto pt-20">
       <div class="mx-auto lg:max-w-2xl px-4 sm:px-6 lg:px-8">
-        <h2 class="text-2xl font-bold text-gray-900 text-center">
+        <h2 class="text-lg font-bold text-gray-900 text-center">
           Our Programs
         </h2>
       </div>
       <div class="container mx-auto px-4 grid lg:grid-cols-2 gap-6 mt-10 pb-10">
         <div v-for="(item, idx) in programsList" :key="idx"
-          class="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow overflow-hidden mb-6 flex flex-col h-full"
+          class="bg-white rounded-lg shadow-md hover:shadow-sm border border-slate-100 transition-shadow overflow-hidden mb-6 flex flex-col h-full"
           :class="{
             'border-4 border-[#27628C]': item.status === 'latest',
             'border-4 border-gray-300': item.status === 'old',
@@ -326,7 +326,7 @@
           </div>
 
           <div class="p-6 md:p-8 space-y-6 flex flex-col flex-grow">
-            <!-- <h2 class="text-2xl font-bold text-gray-800 mb-4">
+            <!-- <h2 class="text-lg font-bold text-gray-800 mb-4">
         {{ item.title }}
       </h2> -->
 
@@ -351,7 +351,7 @@
 
 
       <div class="flex flex-col space-y-4 max-w-md mx-auto pt-4 mt-10 px-4">
-        <p class="text-2xl font-bold text-[#27628C] text-center">
+        <p class="text-lg font-bold text-[#27628C] text-center">
           Join Us Today!
         </p>
         <a href="#" target="_blank" class="">
@@ -364,7 +364,7 @@
     </div>
 
     <div class="bg-white py-16 sm:py-20">
-      <h2 class="text-2xl font-bold text-gray-900 text-center">
+      <h2 class="text-lg font-bold text-gray-900 text-center">
         Team Leads
       </h2>
       <div class="mx-auto max-w-7xl px-6 text-center lg:px-8">

@@ -12,7 +12,7 @@
       <div class="fixed inset-0 bg-slate-900/60 backdrop-blur-md" @click="closeModal"></div>
 
       <!-- Modal Content -->
-      <div class="relative w-full max-w-2xl bg-white rounded-[3rem] shadow-2xl overflow-hidden border border-white/20 animate-in zoom-in-95 duration-300">
+      <div class="relative w-full max-w-2xl bg-white rounded-[3rem] shadow-sm border border-slate-200 overflow-hidden border border-white/20 animate-in zoom-in-95 duration-300">
         <!-- Close Button -->
         <button
           @click="closeModal"
@@ -28,19 +28,19 @@
               <div class="absolute inset-0 bg-[#27628C] rounded-full blur-2xl opacity-10 group-hover:opacity-20 transition-opacity"></div>
               <img 
                 :src="speaker.image || '/images/speaker-placeholder.jpg'" 
-                class="relative w-full h-full object-cover rounded-full border-4 border-white shadow-2xl"
+                class="relative w-full h-full object-cover rounded-full border-4 border-white shadow-sm border border-slate-200"
               />
             </div>
             
             <div class="mt-8 text-center">
-              <h3 class="text-xs font-black text-[#27628C] uppercase tracking-[0.3em] mb-2">Faculty Expert</h3>
+              <h3 class="text-xs font-black text-[#27628C]  tracking-normal mb-2">Faculty Expert</h3>
               <div class="w-10 h-1 bg-[#DE6129] mx-auto rounded-full"></div>
             </div>
           </div>
 
           <!-- Right Side: Content -->
           <div class="md:w-2/3 p-10 md:p-16 overflow-y-auto custom-scrollbar">
-            <h2 class="text-3xl md:text-4xl font-black text-gray-900 tracking-tight leading-tight mb-8">
+            <h2 class="text-xl md:text-lg font-black text-gray-900 tracking-tight leading-tight mb-8">
               {{ speaker.name }}
             </h2>
             

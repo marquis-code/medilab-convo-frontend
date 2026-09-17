@@ -2,7 +2,7 @@
   <div class="flex flex-col lg:flex-row w-full h-auto">
     <div class="flex-1 bg-gray-800 rounded-lg m-3 lg:m-0 order-2 lg:order-1">
       <div class="aspect-video w-full">
-        <iframe class="w-full h-full rounded-lg shadow-2xl"
+        <iframe class="w-full h-full rounded-lg shadow-sm border border-slate-200"
           src="https://www.youtube.com/embed/Yymui21-DOo?loop=1&playlist=Yymui21-DOo&autoplay=1&mute=1&rel=0"
           title="Looping YouTube Video" frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -12,7 +12,7 @@
     </div>
 
     <div class="flex-1 bg-white p-6 flex flex-col justify-center order-1 lg:order-2">
-      <h1 data-aos="fade-up" class="text-2xl uppercase font-bold text-[#27628C] mb-4">
+      <h1 data-aos="fade-up" class="text-lg  font-bold text-[#27628C] mb-4">
         Meet the Voices Behind
         <span data-aos="fade-up" class="">LabCast</span>
       </h1>

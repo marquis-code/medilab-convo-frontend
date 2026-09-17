@@ -7,7 +7,7 @@
       <div class="mx-auto max-w-7xl px-6 lg:px-8 relative z-10 flex flex-col items-center justify-center pt-16 text-center">
         <div class="max-w-3xl">
           <h1 class="text-sm font-bold text-blue-200 mb-6 animate-fade-in tracking-normal">Audio & Visual Insights</h1>
-          <h2 class="text-4xl font-bold tracking-tight text-white sm:text-6xl mb-8 animate-fade-in-up ">LabCast</h2>
+          <h2 class="text-lg font-bold tracking-tight text-white sm:text-lg mb-8 animate-fade-in-up ">LabCast</h2>
           <p class="text-xl leading-8 text-blue-50 font-medium animate-fade-in-up animation-delay-200 max-w-2xl mx-auto">
             Conversations with laboratory scientists, public health experts, health innovators, and policy leaders shaping the future of healthcare.
           </p>
@@ -19,11 +19,11 @@
     <div class="container mx-auto px-6 py-16">
       <div class="flex items-center gap-6 mb-12">
         <div class="w-2 h-12 bg-gradient-to-b from-[#27628C] to-blue-400 rounded-full"></div>
-        <h1 class="text-4xl font-extrabold text-gray-900 tracking-tight">Latest Episode</h1>
+        <h1 class="text-lg font-extrabold text-gray-900 tracking-tight">Latest Episode</h1>
       </div>
 
       <!-- Loading State -->
-      <div v-if="loading" class="bg-white rounded-3xl shadow-xl p-8 animate-pulse">
+      <div v-if="loading" class="bg-white rounded-3xl shadow-sm border border-slate-200 p-8 animate-pulse">
         <div class="flex flex-col lg:flex-row gap-8">
           <div class="w-full lg:w-96 h-64 bg-gray-200 rounded-2xl"></div>
           <div class="flex-1 space-y-4">
@@ -34,20 +34,20 @@
         </div>
       </div>
 
-      <div v-else-if="latestEpisode" class="group relative bg-white rounded-[2.5rem] shadow-2xl overflow-hidden border border-gray-100 transition-all duration-500 hover:shadow-blue-900/10 active:scale-[0.99] animate-fade-in">
+      <div v-else-if="latestEpisode" class="group relative bg-white rounded-[2.5rem] shadow-sm border border-slate-200 overflow-hidden border border-gray-100 transition-all duration-500 hover:shadow-blue-900/10 active:scale-[0.99] animate-fade-in">
         <div class="flex flex-col lg:flex-row min-h-[450px]">
           <!-- Thumbnail Side -->
           <div class="lg:w-[45%] relative bg-gray-50 flex items-center justify-center p-6">
             <img 
               :src="latestEpisode.thumbnailUrl || latestEpisode.image" 
               :alt="latestEpisode.title" 
-              class="w-full h-full max-h-[600px] object-contain drop-shadow-2xl transition-transform duration-700 group-hover:scale-105" 
+              class="w-full h-full max-h-[600px] object-contain drop-shadow-sm border border-slate-200 transition-transform duration-700 group-hover:scale-105" 
             />
 
             <div class="absolute inset-0 bg-gradient-to-r from-transparent via-transparent to-white/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
             
             <div class="absolute top-8 left-8">
-              <div class="bg-gray-900/90 backdrop-blur-md text-white px-5 py-2 rounded-2xl text-sm font-bold shadow-xl">
+              <div class="bg-gray-900/90 backdrop-blur-md text-white px-5 py-2 rounded-2xl text-sm font-bold shadow-sm border border-slate-200">
                 Season {{ latestEpisode.season }} • Episode {{ latestEpisode.episode }}
               </div>
             </div>
@@ -72,7 +72,7 @@
                 </span>
               </div>
 
-              <h3 class="text-4xl lg:text-4xl font-black text-gray-900 leading-[1.1] group-hover:text-[#27628C] transition-colors duration-300">
+              <h3 class="text-lg lg:text-lg font-black text-gray-900 leading-[1.1] group-hover:text-[#27628C] transition-colors duration-300">
                 {{ latestEpisode.title }}
               </h3>
               
@@ -88,7 +88,7 @@
                     </svg>
                   </div>
                   <div>
-                    <p class="text-sm text-gray-400 font-bold uppercase tracking-wider">Hosted By</p>
+                    <p class="text-sm text-gray-400 font-bold  tracking-wider">Hosted By</p>
                     <p class="text-sm font-bold text-gray-900">{{ latestEpisode.hosts.join(', ') }}</p>
                   </div>
                 </div>
@@ -110,13 +110,13 @@
             <div class="pt-8 border-t border-gray-100 flex flex-wrap items-center gap-6">
               <span class="text-sm font-bold text-gray-400">Listen On</span>
               <div class="flex flex-wrap gap-3">
-                <a :href="latestEpisode.spotifyUrl" target="_blank" class="p-3 bg-[#1DB954] text-white rounded-2xl hover:scale-110 active:scale-95 transition-all shadow-lg shadow-[#1DB954]/20">
+                <a :href="latestEpisode.spotifyUrl" target="_blank" class="p-3 bg-[#1DB954] text-white rounded-2xl hover:scale-110 active:scale-95 transition-all shadow-sm border border-slate-100 shadow-[#1DB954]/20">
                   <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.49 17.306c-.215.353-.674.464-1.024.25-2.85-1.742-6.438-2.138-10.665-1.173-.4.092-.804-.16-.897-.562-.092-.4.16-.804.562-.897 4.622-1.057 8.577-.6 11.776 1.353.352.214.464.676.248 1.029zm1.465-3.266c-.27.44-.846.58-1.287.31-3.26-2.003-8.23-2.585-12.086-1.415-.494.15-1.02-.128-1.17-.622-.15-.495.127-1.02.622-1.17 4.407-1.338 9.882-.686 13.62 1.61.442.272.583.847.312 1.287l-.01.011zm.126-3.41c-3.91-2.322-10.366-2.535-14.135-1.39-.6.182-1.24-.153-1.423-.754-.182-.6.153-1.24.754-1.422C8.35 6.075 15.485 6.32 20.02 9c.538.32.71 1.01.39 1.548-.32.535-1.01.71-1.55.39v-.008z"/></svg>
                 </a>
-                <a :href="latestEpisode.appleUrl" target="_blank" class="p-3 bg-gray-900 text-white rounded-2xl hover:scale-110 active:scale-95 transition-all shadow-lg shadow-gray-900/20">
+                <a :href="latestEpisode.appleUrl" target="_blank" class="p-3 bg-gray-900 text-white rounded-2xl hover:scale-110 active:scale-95 transition-all shadow-sm border border-slate-100 shadow-gray-900/20">
                   <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor"><path d="M12.152 6.896c-.548 0-1.411-.516-2.438-.516-1.357 0-2.7 1.02-2.7 2.454 0 2.317 2.055 5.568 3.91 5.568 1.118 0 1.39-.532 2.464-.532 1.073 0 1.436.532 2.438.532 1.511 0 3.324-3.01 3.324-4.513 0-.084-.012-.172-.042-.257-.04-.112-.112-.224-.265-.33-.637-.487-1.454-.828-1.454-2.126 0-1.203.95-2.004 1.76-2.454a8 8 0 00-1.118-2.61c-.604-.888-1.233-1.748-2.162-1.748-.992 0-1.26.6-2.43.6s-1.438-.6-2.47-.6c-1.02 0-1.872.827-2.61 1.916a9.9 9.9 0 00-2.02 5.37c0 3.097 2.127 7.02 4.14 7.02 1.022 0 1.258-.6 2.428-.6 1.17 0 1.455.6 2.417.6 1.76 0 3.65-3.32 3.65-4.887 0-.022 0-.053-.002-.072-.34-.954-1.26-1.543-1.26-2.712z"/></svg>
                 </a>
-                <a :href="latestEpisode.youtubeUrl || defaultYoutubeUrl" target="_blank" class="p-3 bg-[#FF0000] text-white rounded-2xl hover:scale-110 active:scale-95 transition-all shadow-lg shadow-[#FF0000]/20">
+                <a :href="latestEpisode.youtubeUrl || defaultYoutubeUrl" target="_blank" class="p-3 bg-[#FF0000] text-white rounded-2xl hover:scale-110 active:scale-95 transition-all shadow-sm border border-slate-100 shadow-[#FF0000]/20">
                   <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
                 </a>
               </div>
@@ -125,9 +125,9 @@
         </div>
       </div>
       
-      <div v-else-if="!loading" class="bg-white rounded-2xl shadow-lg p-12 text-center animate-fade-in">
+      <div v-else-if="!loading" class="bg-white rounded-2xl shadow-sm border border-slate-100 p-12 text-center animate-fade-in">
         <div class="w-24 h-24 mx-auto mb-6 bg-gray-100 rounded-full flex items-center justify-center">
-          <span class="text-4xl">🎙️</span>
+          <span class="text-lg">🎙️</span>
         </div>
         <h3 class="text-xl font-semibold text-gray-900 mb-2">No Latest Episode</h3>
         <p class="text-gray-600">Check back soon for our newest episode!</p>
@@ -145,7 +145,7 @@
     <div class="container mx-auto px-6 py-20">
       <div class="flex items-center justify-center mb-16">
         <div class="h-px bg-gray-200 flex-1"></div>
-        <h2 class="text-2xl font-bold text-gray-900 mx-8 tracking-tight">All Episodes</h2>
+        <h2 class="text-lg font-bold text-gray-900 mx-8 tracking-tight">All Episodes</h2>
         <div class="h-px bg-gray-200 flex-1"></div>
       </div>
 
@@ -220,9 +220,9 @@
       <!-- Empty State -->
       <div v-else-if="!loading" class="text-center py-16 animate-fade-in">
         <div class="w-32 h-32 mx-auto mb-6 bg-gray-100 rounded-full flex items-center justify-center">
-          <span class="text-5xl">🎙️</span>
+          <span class="text-xl">🎙️</span>
         </div>
-        <h3 class="text-2xl font-semibold text-gray-900 mb-2">No Episodes Available</h3>
+        <h3 class="text-lg font-semibold text-gray-900 mb-2">No Episodes Available</h3>
         <p class="text-gray-600 text-lg">We're working on bringing you amazing content. Check back soon!</p>
       </div>
     </div>

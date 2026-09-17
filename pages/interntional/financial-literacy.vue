@@ -5,7 +5,7 @@
             <div class="mx-auto max-w-prose text-base lg:grid lg:max-w-none lg:grid-cols-2 lg:gap-8">
                 <div>
                     <h3
-                        class="mt-2 text-2xl/8 font-bold tracking-tight sm:text-4xl text-[#27628C] uppercase text-center lg:text-start">
+                        class="mt-2 text-lg/8 font-bold tracking-tight sm:text-lg text-[#27628C]  text-center lg:text-start">
                         Financial Literacy for Interns and Young Professionals
                     </h3>
                 </div>
@@ -57,8 +57,8 @@
 
             <!-- Session 1 -->
             <div class="space-y-6">
-                <h2 class="text-[#27628C] text-xl font-bold uppercase">Session 1</h2>
-                <img class="w-full rounded-lg object-cover shadow-lg" src="@/assets/img/financial-literacy.jpeg"
+                <h2 class="text-[#27628C] text-xl font-bold ">Session 1</h2>
+                <img class="w-full rounded-lg object-cover shadow-sm border border-slate-100" src="@/assets/img/financial-literacy.jpeg"
                     alt="Financial Literacy Flier" />
 
                 <div class="bg-white border p-4 rounded-lg shadow-sm">
@@ -70,7 +70,7 @@
                 </div>
 
                 <article @click="openModal(schedules[0])"
-                    class="flex cursor-pointer bg-white border rounded-lg transition hover:shadow-lg">
+                    class="flex cursor-pointer bg-white border rounded-lg transition hover:shadow-sm border border-slate-100">
                     <div class="w-32 h-32 border-r rounded-l-lg overflow-hidden">
                         <img :src="schedules[0].image" alt="Ogochukwu Okolocha" class="object-cover w-full h-full" />
                     </div>
@@ -83,8 +83,8 @@
 
             <!-- Session 2 -->
             <div class="space-y-6">
-                <h2 class="text-[#27628C] text-xl font-bold uppercase">Session 2</h2>
-                <img class="w-full rounded-lg object-cover shadow-lg" src="@/assets/img/financial-literacy2.jpeg"
+                <h2 class="text-[#27628C] text-xl font-bold ">Session 2</h2>
+                <img class="w-full rounded-lg object-cover shadow-sm border border-slate-100" src="@/assets/img/financial-literacy2.jpeg"
                     alt="Financial Literacy 2 Flier" />
 
                 <div class="bg-white border p-4 rounded-lg shadow-sm">
@@ -95,7 +95,7 @@
                 </div>
 
                 <article @click="openModal(schedules[1])"
-                    class="flex cursor-pointer bg-white border rounded-lg transition hover:shadow-lg">
+                    class="flex cursor-pointer bg-white border rounded-lg transition hover:shadow-sm border border-slate-100">
                     <div class="w-32 h-32 border-r rounded-l-lg overflow-hidden">
                         <img :src="schedules[1].image" alt="Bala Francis" class="object-cover w-full h-full" />
                     </div>

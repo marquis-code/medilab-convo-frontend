@@ -2,7 +2,7 @@
     <section class="relative py-16 lg:px-20 bg-gradient-to-b from-slate-50 via-blue-50 to-white overflow-hidden">
         <div class="max-w-7xl mx-auto px-6 lg:px-8">
             <div class="text-center mb-10">
-                <h2 class="text-2xl lg:text-2xl font-bold text-[#27628C] mb-2">
+                <h2 class="text-lg lg:text-lg font-bold text-[#27628C] mb-2">
                     Our Past Programs
                 </h2>
                 <p class="text-gray-600 max-w-2xl mx-auto">
@@ -12,7 +12,7 @@
             <div class="relative" @mouseenter="isPaused = true" @mouseleave="isPaused = false">
                 <div ref="carousel" class="flex gap-6 overflow-x-hidden scroll-smooth snap-x snap-mandatory pb-2">
                     <div v-for="(flyer, idx) in flyers" :key="idx"
-                        class="carousel-card flex-shrink-0 snap-start bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-500 overflow-hidden"
+                        class="carousel-card flex-shrink-0 snap-start bg-white rounded-2xl shadow-md hover:shadow-sm border border-slate-200 transition-all duration-500 overflow-hidden"
                         role="group">
                         <div class="card-image-wrapper">
                             <img :src="flyer.image" :alt="flyer.title" class="w-full h-full object-cover block"

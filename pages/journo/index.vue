@@ -7,7 +7,7 @@
       <div class="mx-auto max-w-7xl px-6 lg:px-8 relative z-10 flex flex-col items-center justify-center pt-16 text-center">
         <div class="max-w-3xl">
           <h1 class="text-sm font-bold text-blue-200 mb-6 animate-fade-in tracking-normal">Research, Articles & Insights</h1>
-          <h2 class="text-4xl font-bold tracking-tight text-white sm:text-6xl mb-8 animate-fade-in-up ">Journo</h2>
+          <h2 class="text-lg font-bold tracking-tight text-white sm:text-lg mb-8 animate-fade-in-up ">Journo</h2>
           <p class="text-xl leading-8 text-blue-50 font-medium animate-fade-in-up animation-delay-200 max-w-2xl mx-auto">
             Research publications, clinical perspectives, and curated articles at the intersection of laboratory science and global health.
           </p>
@@ -36,10 +36,10 @@
                   :alt="latestPublication.title"
                   class="w-full h-full object-contain transition-transform duration-1000 group-hover:scale-105"
                 >
-                <div v-else class="w-32 h-32 bg-gray-100 rounded-full flex items-center justify-center text-5xl">📄</div>
+                <div v-else class="w-32 h-32 bg-gray-100 rounded-full flex items-center justify-center text-xl">📄</div>
                 
                 <div class="absolute top-12 left-12">
-                  <span class="bg-gray-900 text-white px-6 py-2 rounded-full text-[10px] font-black uppercase tracking-widest">
+                  <span class="bg-gray-900 text-white px-6 py-2 rounded-full text-[10px] font-black  tracking-normal">
                     FEATURED PUBLICATION
                   </span>
                 </div>
@@ -50,17 +50,17 @@
                 <div class="space-y-12">
                   <div class="flex items-center gap-6">
                     <div class="flex flex-col">
-                      <span class="text-[10px] font-black text-gray-300 uppercase tracking-widest mb-1">Published</span>
+                      <span class="text-[10px] font-black text-gray-300  tracking-normal mb-1">Published</span>
                       <span class="text-sm font-bold text-gray-900">{{ formatDate(latestPublication.createdAt) }}</span>
                     </div>
                     <div class="h-8 w-px bg-gray-100"></div>
                     <div class="flex flex-col">
-                      <span class="text-[10px] font-black text-gray-300 uppercase tracking-widest mb-1">Author</span>
+                      <span class="text-[10px] font-black text-gray-300  tracking-normal mb-1">Author</span>
                       <span class="text-sm font-bold text-gray-900">{{ latestPublication.authors }}</span>
                     </div>
                   </div>
 
-                  <h3 class="text-4xl md:text-4xl font-black text-gray-900 leading-[1.1] uppercase tracking-tight group-hover:text-[#27628C] transition-colors duration-300">
+                  <h3 class="text-lg md:text-lg font-black text-gray-900 leading-[1.1]  tracking-tight group-hover:text-[#27628C] transition-colors duration-300">
                     {{ latestPublication.title }}
                   </h3>
                   
@@ -69,10 +69,10 @@
                   </p>
                   
                   <div class="flex flex-wrap items-center gap-3">
-                    <span class="bg-blue-50 text-[#27628C] px-4 py-1.5 rounded-xl text-[10px] font-black uppercase tracking-widest border border-blue-100">
+                    <span class="bg-blue-50 text-[#27628C] px-4 py-1.5 rounded-xl text-[10px] font-black  tracking-normal border border-blue-100">
                       {{ latestPublication.journal }}
                     </span>
-                    <span class="bg-gray-50 text-gray-400 px-4 py-1.5 rounded-xl text-[10px] font-black uppercase tracking-widest border border-gray-100">
+                    <span class="bg-gray-50 text-gray-400 px-4 py-1.5 rounded-xl text-[10px] font-black  tracking-normal border border-gray-100">
                       {{ latestPublication.category }}
                     </span>
                   </div>
@@ -82,7 +82,7 @@
                   <NuxtLink 
                     :to="latestPublication.link || latestPublication.pubLink"
                     target="_blank"
-                    class="inline-flex items-center justify-center bg-gray-900 text-white px-12 py-5 rounded-2xl text-sm font-black uppercase tracking-widest hover:bg-gray-800 transition-all"
+                    class="inline-flex items-center justify-center bg-gray-900 text-white px-12 py-5 rounded-2xl text-sm font-black  tracking-normal hover:bg-gray-800 transition-all"
                   >
                     Read Full Paper
                     <svg class="w-4 h-4 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
@@ -94,7 +94,7 @@
 
           <!-- No Data State -->
           <div v-else-if="!pubLoading" class="text-center py-32 bg-gray-50 rounded-[3rem] border border-dashed border-gray-200">
-             <p class="text-sm font-black text-gray-400 uppercase tracking-[0.3em]">No publications found</p>
+             <p class="text-sm font-black text-gray-400  tracking-normal">No publications found</p>
           </div>
         </div>
       </div>
@@ -105,7 +105,7 @@
           <div class="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-20">
             <div>
               <h2 class="text-[10px] font-bold text-[#27628C] mb-4">The Archive</h2>
-              <h3 class="text-4xl md:text-4xl font-bold text-gray-900 tracking-tighter">All Publications</h3>
+              <h3 class="text-lg md:text-lg font-bold text-gray-900 tracking-normal">All Publications</h3>
             </div>
             <p class="text-gray-400 text-sm font-medium">
               Showing {{ otherPublications.length }} publications
@@ -137,7 +137,7 @@
                     :alt="publication.title"
                     class="w-full h-full object-contain p-8 transition-transform duration-700 group-hover:scale-110"
                   >
-                  <div v-else class="w-full h-full flex items-center justify-center text-4xl grayscale opacity-20">📄</div>
+                  <div v-else class="w-full h-full flex items-center justify-center text-lg grayscale opacity-20">📄</div>
                   
                   <div class="absolute top-8 left-8">
                     <span class="bg-white/90 backdrop-blur-md text-gray-900 px-4 py-1.5 rounded-xl text-[9px] font-bold">
@@ -154,7 +154,7 @@
                     <span class="truncate max-w-[150px]">{{ publication.journal }}</span>
                   </div>
                   
-                  <h3 class="text-2xl font-bold text-gray-900 leading-tight group-hover:text-[#27628C] transition-colors tracking-tight">
+                  <h3 class="text-lg font-bold text-gray-900 leading-tight group-hover:text-[#27628C] transition-colors tracking-tight">
                     {{ publication.title }}
                   </h3>
                   
@@ -183,7 +183,7 @@
         <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
           <div>
              <h2 class="text-sm font-bold text-blue-400 mb-8">Stay Updated</h2>
-             <h3 class="text-4xl md:text-5xl font-bold text-white leading-tight tracking-tighter mb-10">
+             <h3 class="text-lg md:text-xl font-bold text-white leading-tight tracking-normal mb-10">
                Delivered to your<br><span class="text-blue-500">digital doorstep.</span>
              </h3>
              <p class="text-xl text-gray-400 font-light leading-relaxed max-w-lg">

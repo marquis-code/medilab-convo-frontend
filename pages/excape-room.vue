@@ -12,7 +12,7 @@
     </div>
     
     <!-- Siren Light -->
-    <div v-if="gameState !== 'welcome'" class="siren fixed top-16 right-2 sm:top-20 sm:right-4 w-6 h-6 sm:w-8 sm:h-8 bg-red-500 rounded-full shadow-lg shadow-red-500/50 z-30"></div>
+    <div v-if="gameState !== 'welcome'" class="siren fixed top-16 right-2 sm:top-20 sm:right-4 w-6 h-6 sm:w-8 sm:h-8 bg-red-500 rounded-full shadow-sm border border-slate-100 shadow-red-500/50 z-30"></div>
     
     <!-- Audio Controls -->
     <!-- <div class="fixed top-4 left-4 z-50 flex items-center gap-2">
@@ -50,9 +50,9 @@
     </div>
 
     <!-- Timer -->
-    <div v-if="showTimer && timeLeft > 0" class="sm:top-4 flex justify-between items-center sm:right-4 bg-black/95 p-3 sm:p-4 rounded-lg border-2 border-yellow-500 z-30 backdrop-blur-md shadow-xl min-w-[120px] sm:min-w-[140px]">
+    <div v-if="showTimer && timeLeft > 0" class="sm:top-4 flex justify-between items-center sm:right-4 bg-black/95 p-3 sm:p-4 rounded-lg border-2 border-yellow-500 z-30 backdrop-blur-md shadow-sm border border-slate-200 min-w-[120px] sm:min-w-[140px]">
       <div class="text-sm text-yellow-400 mb-2 font-bold tracking-wider text-center">TIME LEFT</div>
-      <div class="text-xl sm:text-2xl font-bold text-center" :class="timeLeft <= 10 ? 'text-red-400 animate-pulse' : 'text-yellow-400'">
+      <div class="text-xl sm:text-lg font-bold text-center" :class="timeLeft <= 10 ? 'text-red-400 animate-pulse' : 'text-yellow-400'">
         {{ timeLeft }}s
       </div>
     </div>
@@ -77,10 +77,10 @@
       <!-- Welcome Screen -->
       <div v-if="gameState === 'welcome'" class="fade-in text-center max-w-2xl mx-auto px-4">
         <div class="mb-6 sm:mb-8">
-          <h1 class="text-2xl sm:text-4xl md:text-5xl font-black mb-4 bg-gradient-to-r from-cyan-400 via-blue-400 to-cyan-400 bg-clip-text text-transparent animate-pulse">
+          <h1 class="text-lg sm:text-lg md:text-xl font-black mb-4 bg-gradient-to-r from-cyan-400 via-blue-400 to-cyan-400 bg-clip-text text-transparent animate-pulse">
             MEDLABCONVO
           </h1>
-          <h2 class="text-xl sm:text-2xl md:text-2xl font-bold text-cyan-400 mb-4 sm:mb-6">ESCAPE ROOM</h2>
+          <h2 class="text-xl sm:text-lg md:text-lg font-bold text-cyan-400 mb-4 sm:mb-6">ESCAPE ROOM</h2>
           <div class="bg-black/90 p-4 sm:p-6 rounded-lg border border-cyan-500 mb-6 sm:mb-8 backdrop-blur-sm">
             <div class="text-sm md:text-base text-gray-300 leading-relaxed">
               <p class="mb-4">⚠️ <span class="text-cyan-400 font-bold">BIOHAZARD DETECTED</span> ⚠️</p>
@@ -92,9 +92,9 @@
         
         <button 
           @click="startGame"
-          class="group relative px-8 py-4 text-lg sm:text-xl font-bold bg-gradient-to-r from-brand-secondary to-blue-600 hover:from-blue-600 hover:to-brand-secondary text-white rounded-lg border-2 border-blue-400 shadow-xl shadow-blue-500/40 transition-all duration-300 transform hover:scale-105 w-full sm:w-auto max-w-sm mx-auto"
+          class="group relative px-8 py-4 text-lg sm:text-xl font-bold bg-gradient-to-r from-brand-secondary to-blue-600 hover:from-blue-600 hover:to-brand-secondary text-white rounded-lg border-2 border-blue-400 shadow-sm border border-slate-200 shadow-blue-500/40 transition-all duration-300 transform hover:scale-105 w-full sm:w-auto max-w-sm mx-auto"
         >
-          <span class="relative z-10 text-white drop-shadow-lg">🚀 BEGIN PROTOCOL</span>
+          <span class="relative z-10 text-white drop-shadow-sm border border-slate-100">🚀 BEGIN PROTOCOL</span>
           <div class="absolute inset-0 bg-gradient-to-r from-blue-400/30 to-blue-500/30 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
         </button>
       </div>
@@ -104,7 +104,7 @@
         
         <!-- Room Header -->
         <div class="text-center mb-4 sm:mb-8">
-          <h2 class="text-xl sm:text-2xl md:text-4xl font-bold text-cyan-400 mb-2">
+          <h2 class="text-xl sm:text-lg md:text-lg font-bold text-cyan-400 mb-2">
             {{ currentPuzzle.title }}
           </h2>
           <div class="text-sm md:text-base text-gray-400">
@@ -113,7 +113,7 @@
         </div>
 
         <!-- Room Content -->
-        <div class="bg-black/95 border-2 border-cyan-500 rounded-lg p-4 sm:p-6 md:p-8 shadow-2xl backdrop-blur-md">
+        <div class="bg-black/95 border-2 border-cyan-500 rounded-lg p-4 sm:p-6 md:p-8 shadow-sm border border-slate-200 backdrop-blur-md">
           
           <!-- Room Description -->
           <div v-if="currentPuzzle.description" class="mb-4 sm:mb-6 p-4 bg-gray-800/80 rounded-lg border-l-4 border-yellow-500">
@@ -137,7 +137,7 @@
                 :class="[
                   'w-full p-4 text-left rounded-lg border-2 transition-all duration-300 text-sm sm:text-base font-medium',
                   selectedAnswer === option 
-                    ? 'border-yellow-500 bg-yellow-500/20 text-yellow-100 shadow-lg' 
+                    ? 'border-yellow-500 bg-yellow-500/20 text-yellow-100 shadow-sm border border-slate-100' 
                     : '0 bg-gray-800/90 hover:border-blue-400 hover:bg-gray-700/90 text-gray-100 hover:text-white'
                 ]"
                 :disabled="isSubmitting"
@@ -161,11 +161,11 @@
                 :class="[
                   'w-full px-8 py-4 font-bold rounded-lg transition-all duration-300 transform text-sm sm:text-base',
                   selectedAnswer && !isSubmitting
-                    ? 'bg-gradient-to-r from-green-600 to-green-700 hover:from-green-500 hover:to-green-600 text-white border-2 border-green-400 hover:scale-105 shadow-xl shadow-green-500/40'
+                    ? 'bg-gradient-to-r from-green-600 to-green-700 hover:from-green-500 hover:to-green-600 text-white border-2 border-green-400 hover:scale-105 shadow-sm border border-slate-200 shadow-green-500/40'
                     : 'bg-gray-600/80 text-gray-300 border-2 0 cursor-not-allowed'
                 ]"
               >
-                <span class="drop-shadow-lg">{{ isSubmitting ? 'PROCESSING...' : 'SUBMIT ANSWER' }}</span>
+                <span class="drop-shadow-sm border border-slate-100">{{ isSubmitting ? 'PROCESSING...' : 'SUBMIT ANSWER' }}</span>
               </button>
             </div>
           </div>
@@ -173,22 +173,22 @@
           <!-- Result Display -->
           <div v-if="showingResult" class="text-center">
             <div v-if="lastAnswerCorrect" class="mb-6">
-              <div class="text-4xl sm:text-5xl mb-4 animate-bounce">✅</div>
-              <h3 class="text-xl sm:text-2xl font-bold text-green-400 mb-2">CORRECT!</h3>
+              <div class="text-lg sm:text-xl mb-4 animate-bounce">✅</div>
+              <h3 class="text-xl sm:text-lg font-bold text-green-400 mb-2">CORRECT!</h3>
               <p class="text-gray-300 mb-4 text-sm sm:text-base">{{ currentPuzzle.correctAnswer }}</p>
               <div class="text-green-400 animate-pulse">🚪 Door unlocking...</div>
             </div>
             
             <div v-else class="mb-6">
-              <div class="text-4xl sm:text-5xl mb-4 animate-bounce">❌</div>
-              <h3 class="text-xl sm:text-2xl font-bold text-red-400 mb-2">WRONG ANSWER!</h3>
+              <div class="text-lg sm:text-xl mb-4 animate-bounce">❌</div>
+              <h3 class="text-xl sm:text-lg font-bold text-red-400 mb-2">WRONG ANSWER!</h3>
               <p class="text-red-300 mb-4 text-sm sm:text-base">{{ currentPuzzle.wrongMessage }}</p>
               <div class="text-red-400 animate-pulse mb-4">⚠️ Oxygen depleting rapidly...</div>
               <button
                 @click="retryPuzzle"
-                class="px-8 py-4 font-bold bg-gradient-to-r from-red-600 to-red-700 hover:from-red-500 hover:to-red-600 text-white rounded-lg border-2 border-red-400 transition-all duration-300 transform hover:scale-105 shadow-xl shadow-red-500/40 text-sm sm:text-base"
+                class="px-8 py-4 font-bold bg-gradient-to-r from-red-600 to-red-700 hover:from-red-500 hover:to-red-600 text-white rounded-lg border-2 border-red-400 transition-all duration-300 transform hover:scale-105 shadow-sm border border-slate-200 shadow-red-500/40 text-sm sm:text-base"
               >
-                <span class="drop-shadow-lg">🔄 TRY AGAIN</span>
+                <span class="drop-shadow-sm border border-slate-100">🔄 TRY AGAIN</span>
               </button>
             </div>
           </div>
@@ -209,8 +209,8 @@
       <!-- Victory Screen -->
       <div v-else-if="gameState === 'victory'" class="fade-in text-center max-w-2xl mx-auto px-4">
         <div class="mb-6 sm:mb-8">
-          <div class="text-5xl sm:text-6xl mb-6 animate-bounce">🎉</div>
-          <h1 class="text-2xl sm:text-4xl md:text-5xl font-black mb-4 bg-gradient-to-r from-green-400 via-yellow-400 to-green-400 bg-clip-text text-transparent">
+          <div class="text-xl sm:text-lg mb-6 animate-bounce">🎉</div>
+          <h1 class="text-lg sm:text-lg md:text-xl font-black mb-4 bg-gradient-to-r from-green-400 via-yellow-400 to-green-400 bg-clip-text text-transparent">
             ESCAPED!
           </h1>
           <div class="bg-black/90 p-4 sm:p-6 rounded-lg border border-green-500 mb-6 sm:mb-8 backdrop-blur-sm">
@@ -225,17 +225,17 @@
         
         <button 
           @click="resetGame"
-          class="px-8 py-4 text-lg sm:text-xl font-bold bg-gradient-to-r from-green-600 to-green-700 hover:from-green-500 hover:to-green-600 text-white rounded-lg border-2 border-green-400 shadow-xl shadow-green-500/40 transition-all duration-300 transform hover:scale-105 w-full sm:w-auto max-w-sm mx-auto"
+          class="px-8 py-4 text-lg sm:text-xl font-bold bg-gradient-to-r from-green-600 to-green-700 hover:from-green-500 hover:to-green-600 text-white rounded-lg border-2 border-green-400 shadow-sm border border-slate-200 shadow-green-500/40 transition-all duration-300 transform hover:scale-105 w-full sm:w-auto max-w-sm mx-auto"
         >
-          <span class="drop-shadow-lg">🎮 PLAY AGAIN</span>
+          <span class="drop-shadow-sm border border-slate-100">🎮 PLAY AGAIN</span>
         </button>
       </div>
 
       <!-- Game Over Screen -->
       <div v-else-if="gameState === 'gameOver'" class="fade-in text-center max-w-2xl mx-auto px-4">
         <div class="mb-6 sm:mb-8">
-          <div class="text-5xl sm:text-6xl mb-6 animate-pulse">💀</div>
-          <h1 class="text-2xl sm:text-4xl md:text-5xl font-black mb-4 text-red-500">
+          <div class="text-xl sm:text-lg mb-6 animate-pulse">💀</div>
+          <h1 class="text-lg sm:text-lg md:text-xl font-black mb-4 text-red-500">
             GAME OVER
           </h1>
           <div class="bg-black/90 p-4 sm:p-6 rounded-lg border border-red-500 mb-6 sm:mb-8 backdrop-blur-sm">
@@ -250,9 +250,9 @@
         
         <button 
           @click="resetGame"
-          class="px-8 py-4 text-lg sm:text-xl font-bold bg-gradient-to-r from-red-600 to-red-700 hover:from-red-500 hover:to-red-600 text-white rounded-lg border-2 border-red-400 shadow-xl shadow-red-500/40 transition-all duration-300 transform hover:scale-105 w-full sm:w-auto max-w-sm mx-auto"
+          class="px-8 py-4 text-lg sm:text-xl font-bold bg-gradient-to-r from-red-600 to-red-700 hover:from-red-500 hover:to-red-600 text-white rounded-lg border-2 border-red-400 shadow-sm border border-slate-200 shadow-red-500/40 transition-all duration-300 transform hover:scale-105 w-full sm:w-auto max-w-sm mx-auto"
         >
-          <span class="drop-shadow-lg">🔄 TRY AGAIN</span>
+          <span class="drop-shadow-sm border border-slate-100">🔄 TRY AGAIN</span>
         </button>
       </div>
     </div>
@@ -736,10 +736,10 @@ definePageMeta({
 
 /* Mobile responsive improvements */
 @media (max-width: 640px) {
-  .text-2xl { font-size: 1.875rem; }
-  .text-4xl { font-size: 2.25rem; }
-  .text-5xl { font-size: 3rem; }
-  .text-6xl { font-size: 4rem; }
+  .text-lg { font-size: 1.875rem; }
+  .text-lg { font-size: 2.25rem; }
+  .text-xl { font-size: 3rem; }
+  .text-lg { font-size: 4rem; }
 }
 
 /* Custom backdrop blur for better mobile performance */

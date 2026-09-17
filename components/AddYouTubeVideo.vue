@@ -7,7 +7,7 @@
   
       <div class="relative max-w-6xl mx-auto">
         <div v-if="title" class="text-center mb-12">
-          <h2 class="text-2xl font-bold text-gray-900 mb-4 leading-tight">
+          <h2 class="text-lg font-bold text-gray-900 mb-4 leading-tight">
             <span class="bg-gradient-to-r from-[#27628C] via-blue-600 to-cyan-500 bg-clip-text text-transparent">
               {{ title }}
             </span>
@@ -21,7 +21,7 @@
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div v-for="(videoId, index) in videoIds" :key="index" class="aspect-video w-full">
             <iframe
-              class="w-full h-full rounded-lg shadow-2xl"
+              class="w-full h-full rounded-lg shadow-sm border border-slate-200"
               :src="`https://www.youtube.com/embed/${videoId}`"
               title="YouTube video player"
               frameborder="0"

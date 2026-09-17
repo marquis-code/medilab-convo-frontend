@@ -18,11 +18,11 @@
       <!-- Top Logo area -->
       <div class="w-full flex justify-center pt-6 md:pt-8 pb-4 md:pb-6 text-center">
         <div class="border-[2px] md:border-[3px] border-white p-1 md:p-1.5 px-3 md:px-5 relative flex flex-col items-center justify-center">
-          <div class="flex items-baseline space-x-1 font-black text-white tracking-widest leading-none">
-            <span class="text-xl md:text-2xl">Medlab</span>
+          <div class="flex items-baseline space-x-1 font-black text-white tracking-normal leading-none">
+            <span class="text-xl md:text-lg">Medlab</span>
           </div>
           <div class="w-full h-[1px] md:h-[2px] bg-white mt-0.5 mb-0.5"></div>
-          <div class="flex justify-between w-full text-white font-black text-[0.5rem] md:text-[0.6rem] tracking-[0.3em] uppercase">
+          <div class="flex justify-between w-full text-white font-black text-[0.5rem] md:text-[0.6rem] tracking-normal ">
             <span>C</span><span>O</span><span>N</span><span>V</span><span>O</span>
           </div>
           <!-- Tiny speech bubble triangle -->
@@ -33,28 +33,28 @@
       <!-- Welcome / Already Taken Screen -->
       <div v-if="currentState === 'welcome'" class="flex-1 flex flex-col items-center justify-center text-center max-w-md w-full py-4 px-2">
         <template v-if="hasTakenQuiz">
-          <h1 class="text-white text-xl md:text-3xl font-extrabold mb-4 leading-tight">
+          <h1 class="text-white text-xl md:text-xl font-extrabold mb-4 leading-tight">
             Challenge completed
           </h1>
           <p class="text-white text-sm md:text-lg font-medium mb-6 opacity-90">
             You've already conquered this quiz. <br/> Your master score was:
           </p>
           <div class="bg-white/20 backdrop-blur-md px-8 py-4 rounded-xl mb-8 border border-white/30">
-            <p class="text-white text-4xl md:text-4xl font-black">{{ savedScore }}/10</p>
+            <p class="text-white text-lg md:text-lg font-black">{{ savedScore }}/10</p>
           </div>
-          <button @click="shareOnSocials" class="bg-[#E56A24] text-white font-bold py-3 px-8 rounded-full hover:scale-105 transition-all shadow-lg active:scale-95 text-xs md:text-sm tracking-widest border border-white flex items-center justify-center space-x-2">
+          <button @click="shareOnSocials" class="bg-[#E56A24] text-white font-bold py-3 px-8 rounded-full hover:scale-105 transition-all shadow-sm border border-slate-100 active:scale-95 text-xs md:text-sm tracking-normal border border-white flex items-center justify-center space-x-2">
             <Share2 class="w-4 h-4" />
             <span>Share your legacy</span>
           </button>
         </template>
         <template v-else>
-          <h1 class="text-white text-2xl md:text-3xl lg:text-4xl font-black mb-4 leading-[1.1] drop-shadow-lg">
+          <h1 class="text-white text-lg md:text-xl lg:text-lg font-black mb-4 leading-[1.1] drop-shadow-sm border border-slate-100">
             How much do you <br/> really know?
           </h1>
           <p class="text-white text-sm md:text-lg font-bold tracking-wide mb-8 opacity-80 italic">
             "You can't tell... until you take the quiz!"
           </p>
-          <button @click="startQuiz" class="bg-white text-[#356a8e] font-black py-3 px-10 rounded-lg hover:bg-gray-100 transition-all shadow-xl active:scale-95 text-sm md:text-lg tracking-tight">
+          <button @click="startQuiz" class="bg-white text-[#356a8e] font-black py-3 px-10 rounded-lg hover:bg-gray-100 transition-all shadow-sm border border-slate-200 active:scale-95 text-sm md:text-lg tracking-tight">
             Start Challenge
           </button>
         </template>
@@ -64,8 +64,8 @@
       <div v-else-if="currentState === 'quiz_question'" class="flex-1 flex flex-col items-center justify-start w-full max-w-xl py-2 overflow-y-auto mt-2 text-white">
         
         <div class="border-[2px] border-white rounded-lg p-4 md:p-6 w-full mb-6 text-white relative bg-white/5 backdrop-blur-sm">
-          <p class="font-bold text-xs md:text-sm mb-1.5 opacity-80 tracking-widest">{{ currentQuestion.topic }}</p>
-          <h2 class="text-base md:text-xl lg:text-2xl font-bold leading-tight">
+          <p class="font-bold text-xs md:text-sm mb-1.5 opacity-80 tracking-normal">{{ currentQuestion.topic }}</p>
+          <h2 class="text-base md:text-xl lg:text-lg font-bold leading-tight">
             {{ currentQuestion.question }}
           </h2>
         </div>
@@ -91,7 +91,7 @@
       <!-- Answer Screen -->
       <div v-else-if="currentState === 'quiz_answer'" class="flex-1 flex flex-col items-center justify-center w-full max-w-xl px-4 text-center animate-fade-in py-4 text-white">
         <div class="w-full text-white">
-          <h2 class="text-base md:text-xl lg:text-2xl font-black mb-8 leading-relaxed tracking-tight whitespace-pre-line">
+          <h2 class="text-base md:text-xl lg:text-lg font-black mb-8 leading-relaxed tracking-tight whitespace-pre-line">
             <span v-if="currentQuestion.isBonus" class="block text-sm md:text-lg text-orange-200 mb-2 font-bold opacity-90 animate-pulse">Bonus point!</span>
             {{ currentQuestion.options.find(o => o.isCorrect)?.answerText || "Brilliant work!" }}
             
@@ -102,7 +102,7 @@
             </template>
           </h2>
           
-          <button @click="nextQuestion" class="mt-4 bg-[#205278] text-white font-bold py-2.5 px-10 rounded-full hover:scale-105 transition-all shadow-md active:scale-95 text-xs md:text-sm tracking-widest border border-white">
+          <button @click="nextQuestion" class="mt-4 bg-[#205278] text-white font-bold py-2.5 px-10 rounded-full hover:scale-105 transition-all shadow-md active:scale-95 text-xs md:text-sm tracking-normal border border-white">
             {{ currentQuestionIndex === questions.length - 1 ? 'Final Score' : 'Next Challenge' }}
           </button>
         </div>
@@ -110,11 +110,11 @@
 
       <!-- Results Screen -->
       <div v-else-if="currentState === 'results'" class="flex-1 flex flex-col items-center justify-center text-center max-w-md w-full px-4 py-4">
-          <div class="bg-white/10 backdrop-blur-xl border border-white/20 p-6 md:p-8 rounded-[1.5rem] shadow-xl w-full">
-            <h1 class="text-white text-2xl md:text-3xl font-black mb-4 italic tracking-tighter">Mission complete!</h1>
+          <div class="bg-white/10 backdrop-blur-xl border border-white/20 p-6 md:p-8 rounded-[1.5rem] shadow-sm border border-slate-200 w-full">
+            <h1 class="text-white text-lg md:text-xl font-black mb-4 italic tracking-normal">Mission complete!</h1>
             
             <div class="relative inline-block mb-6 md:mb-8">
-                <div class="relative bg-white text-[#356a8e] px-8 py-2.5 rounded-full text-3xl md:text-4xl font-black shadow-lg border-2 border-[#205278]">
+                <div class="relative bg-white text-[#356a8e] px-8 py-2.5 rounded-full text-xl md:text-lg font-black shadow-sm border border-slate-100 border-2 border-[#205278]">
                     {{ score }} / 10
                 </div>
             </div>
@@ -151,33 +151,33 @@
 
     <!-- Social Share Overlay -->
     <div v-if="showShareModal" class="fixed inset-0 z-[100] flex items-center justify-center p-6 bg-black/90 backdrop-blur-md animate-fade-in">
-        <div class="bg-white rounded-[1.5rem] p-6 max-w-xs w-full text-center shadow-xl">
+        <div class="bg-white rounded-[1.5rem] p-6 max-w-xs w-full text-center shadow-sm border border-slate-200">
             <div class="w-16 h-16 md:w-20 md:h-20 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-6">
                 <Trophy class="w-8 h-8 md:w-10 md:h-10 text-[#E56A24]" />
             </div>
-            <h3 class="text-[#205278] text-lg font-black mb-1 uppercase tracking-tight">Share Glory</h3>
+            <h3 class="text-[#205278] text-lg font-black mb-1  tracking-tight">Share Glory</h3>
             <p class="text-gray-500 mb-6 font-bold text-[0.7rem] leading-snug">Challenge your friends <br/> and see who's best!</p>
             
             <div class="grid grid-cols-2 gap-3 mb-6">
                 <button @click="performShare('X')" class="flex flex-col items-center p-3 rounded-xl bg-gray-50 hover:bg-blue-50">
                     <Twitter class="text-black w-6 h-6 mb-1" />
-                    <span class="font-black text-[0.55rem] uppercase">X</span>
+                    <span class="font-black text-[0.55rem] ">X</span>
                 </button>
                 <button @click="performShare('WhatsApp')" class="flex flex-col items-center p-3 rounded-xl bg-gray-50 hover:bg-green-50">
                     <MessageCircle class="text-[#25D366] w-6 h-6 mb-1" />
-                    <span class="font-black text-[0.55rem] uppercase">WhatsApp</span>
+                    <span class="font-black text-[0.55rem] ">WhatsApp</span>
                 </button>
                 <button @click="performShare('Facebook')" class="flex flex-col items-center p-3 rounded-xl bg-gray-50 hover:bg-blue-50">
                     <Facebook class="text-[#1877F2] w-6 h-6 mb-1" />
-                    <span class="font-black text-[0.55rem] uppercase">Facebook</span>
+                    <span class="font-black text-[0.55rem] ">Facebook</span>
                 </button>
                 <button @click="performShare('Copy')" class="flex flex-col items-center p-3 rounded-xl bg-gray-50 hover:bg-orange-50">
                     <Copy class="text-[#E56A24] w-6 h-6 mb-1" />
-                    <span class="font-black text-[0.55rem] uppercase">Link</span>
+                    <span class="font-black text-[0.55rem] ">Link</span>
                 </button>
             </div>
             
-            <button @click="showShareModal = false" class="text-gray-400 font-black uppercase tracking-widest text-[0.6rem] hover:text-red-500">Close</button>
+            <button @click="showShareModal = false" class="text-gray-400 font-black  tracking-normal text-[0.6rem] hover:text-red-500">Close</button>
         </div>
     </div>
   </div>

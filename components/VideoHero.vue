@@ -11,12 +11,12 @@
           <section id="about" class="py-24 bg-gradient-to-br from-white via-blue-50/30 to-white">
     <div class="max-w-7xl mx-auto px-6 lg:px-8">
       <div class="text-center mb-16">
-        <h2 class="text-4xl font-bold text-gray-900 mb-6">
+        <h2 class="text-lg font-bold text-gray-900 mb-6">
           <span class="bg-gradient-to-r from-[#27628C] to-blue-600 bg-clip-text text-transparent">
             Transforming Healthcare
           </span>
         </h2>
-        <p class="text-2xl font-light text-gray-700 mb-4">
+        <p class="text-lg font-light text-gray-700 mb-4">
           Through Digital Services for Laboratory Professionals
         </p>
         <div class="w-24 h-1 bg-gradient-to-r from-[#27628C] to-blue-600 mx-auto rounded-full"></div>
@@ -33,7 +33,7 @@
   </section>
         <!-- Header -->
         <!-- <div class="text-center mb-16" ref="headerRef">
-          <h2 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight transform transition-all duration-1000"
+          <h2 class="text-lg lg:text-xl font-bold text-gray-900 mb-6 leading-tight transform transition-all duration-1000"
               :class="{ 'translate-y-0 opacity-100': headerVisible, 'translate-y-10 opacity-0': !headerVisible }">
             <span class="bg-gradient-to-r from-[#27628C] via-blue-600 to-cyan-500 bg-clip-text text-transparent">
               Transforming Healthcare
@@ -58,7 +58,7 @@
 
         <!-- Compact Video Section -->
         <div class="relative max-w-4xl mx-auto" ref="videoRef">
-          <div class="group relative aspect-video rounded-[2.5rem] overflow-hidden shadow-2xl border-8 border-white transition-all duration-1000"
+          <div class="group relative aspect-video rounded-[2.5rem] overflow-hidden shadow-sm border border-slate-200 border-8 border-white transition-all duration-1000"
                :class="{ 'translate-y-0 opacity-100 scale-100': videoVisible, 'translate-y-10 opacity-0 scale-95': !videoVisible }">
             
             <iframe 
@@ -77,7 +77,7 @@
           
           <!-- Subtle Quote / Caption -->
           <div class="mt-8 text-center animate-pulse">
-             <p class="text-[10px] font-bold text-[#27628C] uppercase tracking-[0.3em]">Watch Our Vision for 2025</p>
+             <p class="text-[10px] font-bold text-[#27628C]  tracking-normal">Watch Our Vision for 2025</p>
           </div>
         </div>
       </div>

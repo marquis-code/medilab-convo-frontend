@@ -1,5 +1,5 @@
 <template>
-  <header class="sticky top-0 z-50 w-full bg-black transition-all duration-300" :class="{ 'border-b border-white/10 shadow-lg': isScrolled }">
+  <header class="sticky top-0 z-50 w-full bg-black transition-all duration-300" :class="{ 'border-b border-white/10 shadow-sm border border-slate-100': isScrolled }">
     <!-- Subscription Banner -->
     <div class="bg-[#27628C] py-2 px-4 shadow-inner">
       <div class="max-w-7xl mx-auto flex items-center justify-center gap-4 text-center">
@@ -36,7 +36,7 @@
         </NuxtLink>
       </div>
       <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-         <NuxtLink to="/about-us" class="text-sm font-semibold leading-6 text-white bg-[#27628C] hover:bg-[#1a425f] shadow-lg px-6 py-2.5 rounded-full transition-all duration-300 group">
+         <NuxtLink to="/about-us" class="text-sm font-semibold leading-6 text-white bg-[#27628C] hover:bg-[#1a425f] shadow-sm border border-slate-100 px-6 py-2.5 rounded-full transition-all duration-300 group">
           About Us <span aria-hidden="true" class="inline-block transition-transform group-hover:translate-x-1 ml-1">&rarr;</span>
         </NuxtLink>
       </div>
@@ -44,7 +44,7 @@
     <!-- Mobile menu -->
     <div v-if="isOpen" class="lg:hidden" role="dialog" aria-modal="true">
       <div class="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm transition-opacity" @click="isOpen = false"></div>
-      <div class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-gray-900/95 backdrop-blur-xl px-6 py-6 sm:max-w-sm border-l border-white/10 shadow-2xl transition-transform duration-300 transform" :class="isOpen ? 'translate-x-0' : 'translate-x-full'">
+      <div class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-gray-900/95 backdrop-blur-xl px-6 py-6 sm:max-w-sm border-l border-white/10 shadow-sm border border-slate-200 transition-transform duration-300 transform" :class="isOpen ? 'translate-x-0' : 'translate-x-full'">
         <div class="flex items-center justify-between">
           <NuxtLink to="/" class="-m-1.5 p-1.5">
             <span class="sr-only">MedLabConvo</span>

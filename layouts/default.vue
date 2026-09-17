@@ -18,7 +18,7 @@
         <div v-if="visible" class="fixed bottom-10 left-1/2 -translate-x-1/2 z-[100] w-full max-w-sm px-6">
           <div 
             :class="[
-              'p-5 rounded-2xl border shadow-2xl flex items-center gap-4 backdrop-blur-xl',
+              'p-5 rounded-2xl border shadow-sm border border-slate-200 flex items-center gap-4 backdrop-blur-xl',
               toastData.toastType === 'success' ? 'bg-white/90 border-emerald-100' : 'bg-white/90 border-red-100'
             ]"
           >

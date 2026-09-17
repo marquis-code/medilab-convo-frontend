@@ -3,7 +3,7 @@
     <transition name="fade">
         <div v-if="state.isVisible"
             class="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-md flex justify-center items-center z-50">
-            <div class="bg-white rounded-lg shadow-lg max-w-lg w-full mx-4 p-6">
+            <div class="bg-white rounded-lg shadow-sm border border-slate-100 max-w-lg w-full mx-4 p-6">
                 <div class="text-lg">{{ state.message }}</div>
                 <div class="mt-4 flex justify-end space-x-2">
                     <button @click="state.isVisible = false"

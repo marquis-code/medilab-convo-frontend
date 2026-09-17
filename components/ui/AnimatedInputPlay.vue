@@ -95,7 +95,7 @@
         @click="closeDatePicker"
       >
         <div 
-          class="bg-white rounded-3xl shadow-2xl w-full max-w-md overflow-hidden transform"
+          class="bg-white rounded-3xl shadow-sm border border-slate-200 w-full max-w-md overflow-hidden transform"
           @click.stop
         >
           <div class="bg-gradient-to-br from-[#033958] to-[#055a8c] p-6 text-white">
@@ -203,7 +203,7 @@
         @click="closeTimePicker"
       >
         <div 
-          class="bg-white rounded-3xl shadow-2xl w-full max-w-sm overflow-hidden transform"
+          class="bg-white rounded-3xl shadow-sm border border-slate-200 w-full max-w-sm overflow-hidden transform"
           @click.stop
         >
           <div class="bg-gradient-to-br from-[#033958] to-[#055a8c] p-6 text-white">
@@ -219,7 +219,7 @@
                 </svg>
               </button>
             </div>
-            <p class="text-white/80 text-2xl font-mono">
+            <p class="text-white/80 text-lg font-mono">
               {{ selectedHour }}:{{ selectedMinute }} {{ selectedPeriod }}
             </p>
           </div>
@@ -239,7 +239,7 @@
                   @focus="$event.target.select()" 
                   @click.stop 
                   maxlength="2"
-                  class="w-20 text-center text-4xl font-bold border-2 border-gray-200 focus:border-[#033958] rounded-2xl py-4 focus:outline-none focus:ring-4 focus:ring-[#033958]/20 transition-all bg-gray-50"
+                  class="w-20 text-center text-lg font-bold border-2 border-gray-200 focus:border-[#033958] rounded-2xl py-4 focus:outline-none focus:ring-4 focus:ring-[#033958]/20 transition-all bg-gray-50"
                 />
                 <button type="button" @click.stop="decHour" class="p-3 hover:bg-gray-100 rounded-xl mt-3 transition-all group">
                   <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24" class="group-hover:scale-110 transition-transform">
@@ -248,7 +248,7 @@
                 </button>
               </div>
               
-              <span class="text-4xl font-bold text-gray-300 select-none">:</span>
+              <span class="text-lg font-bold text-gray-300 select-none">:</span>
               
               <div class="flex flex-col items-center">
                 <button type="button" @click.stop="incMin" class="p-3 hover:bg-gray-100 rounded-xl mb-3 transition-all group">
@@ -263,7 +263,7 @@
                   @focus="$event.target.select()" 
                   @click.stop 
                   maxlength="2"
-                  class="w-20 text-center text-4xl font-bold border-2 border-gray-200 focus:border-[#033958] rounded-2xl py-4 focus:outline-none focus:ring-4 focus:ring-[#033958]/20 transition-all bg-gray-50"
+                  class="w-20 text-center text-lg font-bold border-2 border-gray-200 focus:border-[#033958] rounded-2xl py-4 focus:outline-none focus:ring-4 focus:ring-[#033958]/20 transition-all bg-gray-50"
                 />
                 <button type="button" @click.stop="decMin" class="p-3 hover:bg-gray-100 rounded-xl mt-3 transition-all group">
                   <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24" class="group-hover:scale-110 transition-transform">
@@ -280,7 +280,7 @@
                 :class="[
                   'flex-1 px-6 py-4 text-lg font-bold rounded-2xl transition-all transform',
                   selectedPeriod === 'AM' 
-                    ? 'bg-[#033958] text-white shadow-lg scale-105' 
+                    ? 'bg-[#033958] text-white shadow-sm border border-slate-100 scale-105' 
                     : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
                 ]"
               >
@@ -292,7 +292,7 @@
                 :class="[
                   'flex-1 px-6 py-4 text-lg font-bold rounded-2xl transition-all transform',
                   selectedPeriod === 'PM' 
-                    ? 'bg-[#033958] text-white shadow-lg scale-105' 
+                    ? 'bg-[#033958] text-white shadow-sm border border-slate-100 scale-105' 
                     : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
                 ]"
               >
@@ -320,7 +320,7 @@
               <button 
                 type="button" 
                 @click.stop="confirmTimeValue"
-                class="px-6 py-2.5 text-sm text-white bg-[#033958] hover:bg-[#022f42] rounded-xl font-bold shadow-lg hover:shadow-xl transition-all"
+                class="px-6 py-2.5 text-sm text-white bg-[#033958] hover:bg-[#022f42] rounded-xl font-bold shadow-sm border border-slate-100 hover:shadow-sm border border-slate-200 transition-all"
               >
                 Confirm
               </button>
@@ -338,12 +338,12 @@
         @click="closeDateTimePicker"
       >
         <div 
-          class="bg-white rounded-3xl shadow-2xl w-full max-w-4xl my-8 overflow-hidden transform"
+          class="bg-white rounded-3xl shadow-sm border border-slate-200 w-full max-w-4xl my-8 overflow-hidden transform"
           @click.stop
         >
           <div class="bg-gradient-to-br from-[#033958] to-[#055a8c] p-6 text-white">
             <div class="flex items-center justify-between mb-2">
-              <h3 class="text-2xl font-bold">Select Date & Time</h3>
+              <h3 class="text-lg font-bold">Select Date & Time</h3>
               <button 
                 type="button" 
                 @click.stop="closeDateTimePicker"
@@ -422,7 +422,7 @@
                     @focus="$event.target.select()" 
                     @click.stop 
                     maxlength="2"
-                    class="w-16 text-center text-2xl font-bold border-2 border-gray-200 focus:border-[#033958] rounded-xl py-3 focus:outline-none bg-gray-50"
+                    class="w-16 text-center text-lg font-bold border-2 border-gray-200 focus:border-[#033958] rounded-xl py-3 focus:outline-none bg-gray-50"
                   />
                   <button type="button" @click.stop="decHour" class="p-2 hover:bg-gray-100 rounded-lg mt-2">
                     <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
@@ -430,7 +430,7 @@
                     </svg>
                   </button>
                 </div>
-                <span class="text-4xl font-bold text-gray-300">:</span>
+                <span class="text-lg font-bold text-gray-300">:</span>
                 <div class="flex flex-col items-center">
                   <button type="button" @click.stop="incMin" class="p-2 hover:bg-gray-100 rounded-lg mb-2">
                     <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
@@ -444,7 +444,7 @@
                     @focus="$event.target.select()" 
                     @click.stop 
                     maxlength="2"
-                    class="w-16 text-center text-2xl font-bold border-2 border-gray-200 focus:border-[#033958] rounded-xl py-3 focus:outline-none bg-gray-50"
+                    class="w-16 text-center text-lg font-bold border-2 border-gray-200 focus:border-[#033958] rounded-xl py-3 focus:outline-none bg-gray-50"
                   />
                   <button type="button" @click.stop="decMin" class="p-2 hover:bg-gray-100 rounded-lg mt-2">
                     <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
@@ -458,14 +458,14 @@
                 <button 
                   type="button" 
                   @click.stop="setPeriod('AM')"
-                  :class="['flex-1 px-4 py-3 text-base font-bold rounded-xl transition-all', selectedPeriod === 'AM' ? 'bg-[#033958] text-white shadow-lg' : 'bg-gray-100 text-gray-600 hover:bg-gray-200']"
+                  :class="['flex-1 px-4 py-3 text-base font-bold rounded-xl transition-all', selectedPeriod === 'AM' ? 'bg-[#033958] text-white shadow-sm border border-slate-100' : 'bg-gray-100 text-gray-600 hover:bg-gray-200']"
                 >
                   AM
                 </button>
                 <button 
                   type="button" 
                   @click.stop="setPeriod('PM')"
-                  :class="['flex-1 px-4 py-3 text-base font-bold rounded-xl transition-all', selectedPeriod === 'PM' ? 'bg-[#033958] text-white shadow-lg' : 'bg-gray-100 text-gray-600 hover:bg-gray-200']"
+                  :class="['flex-1 px-4 py-3 text-base font-bold rounded-xl transition-all', selectedPeriod === 'PM' ? 'bg-[#033958] text-white shadow-sm border border-slate-100' : 'bg-gray-100 text-gray-600 hover:bg-gray-200']"
                 >
                   PM
                 </button>
@@ -492,7 +492,7 @@
               <button 
                 type="button" 
                 @click.stop="confirmDTValue"
-                class="px-6 py-2.5 text-sm text-white bg-[#033958] hover:bg-[#022f42] rounded-xl font-bold shadow-lg transition-all"
+                class="px-6 py-2.5 text-sm text-white bg-[#033958] hover:bg-[#022f42] rounded-xl font-bold shadow-sm border border-slate-100 transition-all"
               >
                 Confirm
               </button>
@@ -663,7 +663,7 @@ function getDayClass(day: CalendarDay) {
     'aspect-square p-2 text-sm font-semibold rounded-xl transition-all relative',
     day.isCurrentMonth ? 'hover:bg-gray-100 hover:scale-105 cursor-pointer' : 'text-gray-300 opacity-40 cursor-not-allowed',
     day.isToday && !day.isSelected ? 'bg-blue-50 text-[#033958] ring-2 ring-[#033958] ring-inset font-bold' : '',
-    day.isSelected ? 'bg-[#033958] text-white shadow-lg scale-105' : ''
+    day.isSelected ? 'bg-[#033958] text-white shadow-sm border border-slate-100 scale-105' : ''
   ]
 }
 

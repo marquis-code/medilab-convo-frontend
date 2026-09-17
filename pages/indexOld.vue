@@ -19,20 +19,20 @@
 
       <div class="relative mx-auto max-w-7xl px-6 py-32 sm:py-40 lg:px-8">
         <div class="text-center">
-          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white mb-6 animate-fade-in">
+          <h1 class="text-lg sm:text-xl lg:text-lg font-bold tracking-tight text-white mb-6 animate-fade-in">
             <span class="bg-gradient-to-r from-white to-blue-100 bg-clip-text text-transparent">
               MedLabConvo
             </span>
           </h1>
-          <!-- <p class="text-2xl sm:text-2xl lg:text-4xl text-blue-100  font-light mb-8 animate-fade-in-delay">
+          <!-- <p class="text-lg sm:text-lg lg:text-lg text-blue-100  font-light mb-8 animate-fade-in-delay">
             Lead, Build, Inspire
           </p> -->
-          <p class="text-2xl sm:text-2xl lg:text-2xl text-blue-100  font-light mb-8 animate-fade-in-delay">
+          <p class="text-lg sm:text-lg lg:text-lg text-blue-100  font-light mb-8 animate-fade-in-delay">
             A Platform for Laboratory Science, Health Innovation, and Workforce Development
           </p>
           <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mt-12">
             <a href="#programs"
-              class="bg-white text-[#27628C] px-8 py-4 rounded-full font-semibold hover:bg-blue-50 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+              class="bg-white text-[#27628C] px-8 py-4 rounded-full font-semibold hover:bg-blue-50 transition-all duration-300 shadow-sm border border-slate-100 hover:shadow-sm border border-slate-200 transform hover:-translate-y-1">
               Explore Programs
             </a>
             <a href="#about"
@@ -43,7 +43,7 @@
           <div class="text-center mt-12">
   <p
     class="relative inline-block h-[1.2em] 
-           text-2xl text-blue-100  font-light"
+           text-lg text-blue-100  font-light"
   >
     <span class="word inset-0 animate-fade-word [animation-delay:0.3s]">
       Lead
@@ -69,7 +69,7 @@
     <section id="programs" class="py-10 bg-white">
       <div class="max-w-7xl mx-auto px-6 lg:px-8">
         <div class="text-center mb-16">
-          <h2 class="text-2xl  font-bold text-gray-900 mb-4">
+          <h2 class="text-lg  font-bold text-gray-900 mb-4">
             <span class="bg-gradient-to-r from-[#27628C] to-blue-600 bg-clip-text text-transparent">
               Our Target Audience </span>
           </h2>
@@ -90,7 +90,7 @@
     <section id="programs" class="py-20 bg-white">
       <div class="max-w-7xl mx-auto px-2 lg:px-4">
         <div class="text-center mb-16">
-          <h2 class="text-2xl  font-bold text-gray-900 mb-4">
+          <h2 class="text-lg  font-bold text-gray-900 mb-4">
             <span class="bg-gradient-to-r from-[#27628C] to-blue-600 bg-clip-text text-transparent">
               Upcoming Programs
             </span>
@@ -111,7 +111,7 @@
 
         <div v-if="programs.length > 0" v-for="(program, idx) in programs" :key="idx" class="group">
           <div v-if="program._id === '6868f7da037e8926971c5802'"
-            class="bg-white rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
+            class="bg-white rounded-3xl shadow-sm border border-slate-200 overflow-hidden hover:shadow-sm border border-slate-200 transition-all duration-500 transform hover:-translate-y-2">
             <div class="md:flex">
               <div class="md:w-1/2 relative overflow-hidden">
                 <img :src="program.image || '/api/placeholder/600/400'" alt=""
@@ -126,7 +126,7 @@
               </div>
               <div class="md:w-1/2 p-8 flex flex-col justify-center">
                 <h3
-                  class="text-2xl font-bold text-gray-900 mb-4 group-hover:text-[#27628C] transition-colors duration-300">
+                  class="text-lg font-bold text-gray-900 mb-4 group-hover:text-[#27628C] transition-colors duration-300">
                   {{ program?.title || 'Program Title' }}
                 </h3>
                 <p class="text-gray-600 mb-6 leading-relaxed">
@@ -134,7 +134,7 @@
                 </p>
                 <div class="flex flex-wrap gap-3">
                   <a :href="'/programs/' + program.slug"
-                    class="inline-flex items-center bg-gradient-to-r from-[#27628C] to-blue-600 text-white px-8 py-3 rounded-full font-semibold hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
+                    class="inline-flex items-center bg-gradient-to-r from-[#27628C] to-blue-600 text-white px-8 py-3 rounded-full font-semibold hover:shadow-sm border border-slate-100 transition-all duration-300 transform hover:-translate-y-1">
                     Learn More
                     <svg class="w-5 h-5 ml-2 transition-transform duration-300 group-hover:translate-x-1" fill="none"
                       stroke="currentColor" viewBox="0 0 24 24">
@@ -150,7 +150,7 @@
 
 
         <!-- <div v-for="(program, idx) in programs" :key="idx" v-if="programs?.length > 0" class="group">
-  <div class="bg-white rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
+  <div class="bg-white rounded-3xl shadow-sm border border-slate-200 overflow-hidden hover:shadow-sm border border-slate-200 transition-all duration-500 transform hover:-translate-y-2">
     <div class="relative overflow-hidden">
       <img :src="program.image || '/api/placeholder/600/400'" alt="" class="w-full h-80 sm:h-96 object-cover group-hover:scale-110 transition-transform duration-700">
       <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
@@ -159,7 +159,7 @@
       </div>
     </div>
     <div class="p-8">
-      <h3 class="text-2xl font-bold text-gray-900 mb-4 group-hover:text-[#27628C] transition-colors duration-300">
+      <h3 class="text-lg font-bold text-gray-900 mb-4 group-hover:text-[#27628C] transition-colors duration-300">
         {{ program?.title || 'Program Title' }}
       </h3>
       <p class="text-gray-600 mb-6 leading-relaxed">
@@ -168,7 +168,7 @@
       <div class="flex flex-wrap gap-3">
         <a
           :href="'/programs/' + program.slug"
-          class="inline-flex items-center bg-gradient-to-r from-[#27628C] to-blue-600 text-white px-8 py-3 rounded-full font-semibold hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1"
+          class="inline-flex items-center bg-gradient-to-r from-[#27628C] to-blue-600 text-white px-8 py-3 rounded-full font-semibold hover:shadow-sm border border-slate-100 transition-all duration-300 transform hover:-translate-y-1"
         >
           Learn More
           <svg class="w-5 h-5 ml-2 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -183,7 +183,7 @@
 
         <!-- <div v-else-if="programs.length > 0" class="grid gap-8 md:gap-12 md:grid-cols-2 lg:grid-cols-3">
       <div v-for="(program, idx) in programs.filter(ep => ep._id === 6868f7da037e8926971c57f4)" :key="idx" class="group">
-        <div class="bg-white rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
+        <div class="bg-white rounded-3xl shadow-sm border border-slate-200 overflow-hidden hover:shadow-sm border border-slate-200 transition-all duration-500 transform hover:-translate-y-2">
           <div class="relative overflow-hidden">
             <img :src="program.image || '/api/placeholder/600/400'" alt="" class="w-full h-80 sm:h-96 object-cover group-hover:scale-110 transition-transform duration-700">
             <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
@@ -192,7 +192,7 @@
             </div>
           </div>
           <div class="p-8">
-            <h3 class="text-2xl font-bold text-gray-900 mb-4 group-hover:text-[#27628C] transition-colors duration-300">
+            <h3 class="text-lg font-bold text-gray-900 mb-4 group-hover:text-[#27628C] transition-colors duration-300">
               {{ program?.title || 'Program Title' }}
             </h3>
             <p class="text-gray-600 mb-6 leading-relaxed">
@@ -201,7 +201,7 @@
             <div class="flex flex-wrap gap-3">
               <a
                 :href="'/programs/' + program.slug"
-                class="inline-flex items-center bg-gradient-to-r from-[#27628C] to-blue-600 text-white px-8 py-3 rounded-full font-semibold hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1"
+                class="inline-flex items-center bg-gradient-to-r from-[#27628C] to-blue-600 text-white px-8 py-3 rounded-full font-semibold hover:shadow-sm border border-slate-100 transition-all duration-300 transform hover:-translate-y-1"
               >
                 Learn More
                 <svg class="w-5 h-5 ml-2 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -217,7 +217,7 @@
 
         <!-- <div v-else-if="programs.length > 0" class="grid gap-8 md:gap-12">
         <div v-for="(program, idx) in programs" :key="idx" class="group">
-          <div class="bg-white rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
+          <div class="bg-white rounded-3xl shadow-sm border border-slate-200 overflow-hidden hover:shadow-sm border border-slate-200 transition-all duration-500 transform hover:-translate-y-2">
             <div class="relative overflow-hidden">
               <img :src="program.image" alt="" class="w-full h-80 sm:h-96 object-cover group-hover:scale-110 transition-transform duration-700">
               <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
@@ -226,7 +226,7 @@
               </div>
             </div>
             <div class="p-8">
-              <h3 class="text-2xl font-bold text-gray-900 mb-4 group-hover:text-[#27628C] transition-colors duration-300">
+              <h3 class="text-lg font-bold text-gray-900 mb-4 group-hover:text-[#27628C] transition-colors duration-300">
                 {{ program?.title || 'Program Title' }}
               </h3>
               <p class="text-gray-600 mb-6 leading-relaxed">
@@ -234,7 +234,7 @@
               </p>
               <NuxtLink 
                 :to="'/programs/forging-a-career-path'" 
-                class="inline-flex items-center bg-gradient-to-r from-[#27628C] to-blue-600 text-white px-8 py-3 rounded-full font-semibold hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1"
+                class="inline-flex items-center bg-gradient-to-r from-[#27628C] to-blue-600 text-white px-8 py-3 rounded-full font-semibold hover:shadow-sm border border-slate-100 transition-all duration-300 transform hover:-translate-y-1"
               >
                 Learn More
                 <svg class="w-5 h-5 ml-2 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -264,7 +264,7 @@
     <section class="py-20 bg-gradient-to-br from-gray-50 to-blue-50">
       <div class="max-w-7xl mx-auto px-6 lg:px-8">
         <div class="text-center mb-16">
-          <h2 class="text-2xl  font-bold text-gray-900 mb-4">
+          <h2 class="text-lg  font-bold text-gray-900 mb-4">
             <span class="bg-gradient-to-r from-[#27628C] to-blue-600 bg-clip-text text-transparent">
               Latest on LabCast
             </span>
@@ -280,7 +280,7 @@
         <div v-else-if="labcasts?.length > 0" class="grid gap-8 md:gap-12">
           <div v-for="(episode, idx) in labcasts.filter(ep => ep.position === 1)" :key="idx" class="group">
             <div
-              class="bg-white rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
+              class="bg-white rounded-3xl shadow-sm border border-slate-200 overflow-hidden hover:shadow-sm border border-slate-200 transition-all duration-500 transform hover:-translate-y-2">
               <div class="md:flex">
                 <div class="md:w-1/2 relative overflow-hidden">
                   <img :src="episode.image || episode.thumbnailUrl || '/api/placeholder/600/400'" alt=""
@@ -291,7 +291,7 @@
                 </div>
                 <div class="md:w-1/2 p-8 flex flex-col justify-center">
                   <h3
-                    class="text-2xl font-bold text-gray-900 mb-4 group-hover:text-[#27628C] transition-colors duration-300">
+                    class="text-lg font-bold text-gray-900 mb-4 group-hover:text-[#27628C] transition-colors duration-300">
                     {{ episode?.title || 'Episode Title' }}
                   </h3>
                   <p class="text-gray-600 mb-6 leading-relaxed line-clamp-4">
@@ -323,14 +323,14 @@
 
         <!-- <div v-else-if="labcasts?.length > 0" class="grid gap-8 md:gap-12">
         <div v-for="(episode, idx) in labcasts.slice(0, 3)" :key="idx" class="group">
-          <div class="bg-white rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
+          <div class="bg-white rounded-3xl shadow-sm border border-slate-200 overflow-hidden hover:shadow-sm border border-slate-200 transition-all duration-500 transform hover:-translate-y-2">
             <div class="md:flex">
               <div class="md:w-1/2 relative overflow-hidden">
                 <img :src="episode.image || '/api/placeholder/600/400'" alt="" class="w-full h-64 md:h-full object-cover group-hover:scale-110 transition-transform duration-700">
                 <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </div>
               <div class="md:w-1/2 p-8 flex flex-col justify-center">
-                <h3 class="text-2xl font-bold text-gray-900 mb-4 group-hover:text-[#27628C] transition-colors duration-300">
+                <h3 class="text-lg font-bold text-gray-900 mb-4 group-hover:text-[#27628C] transition-colors duration-300">
                   {{ episode?.title || 'Episode Title' }}
                 </h3>
                 <p class="text-gray-600 mb-6 leading-relaxed line-clamp-4">
@@ -380,7 +380,7 @@
     <section class="py-20 bg-white">
       <div class="max-w-7xl mx-auto px-6 lg:px-8">
         <div class="text-center mb-16">
-          <h2 class="text-2xl  font-bold text-gray-900 mb-4">
+          <h2 class="text-lg  font-bold text-gray-900 mb-4">
             <span class="bg-gradient-to-r from-[#27628C] to-blue-600 bg-clip-text text-transparent">
               Latest on Journo
             </span>
@@ -396,7 +396,7 @@
         <div v-else-if="publications?.length > 0" class="grid gap-8 md:gap-12">
           <div v-for="(publication, idx) in publications.filter(pub => pub.position === 1)" :key="idx" class="group">
             <div
-              class="bg-white rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
+              class="bg-white rounded-3xl shadow-sm border border-slate-200 overflow-hidden hover:shadow-sm border border-slate-200 transition-all duration-500 transform hover:-translate-y-2">
               <div class="md:flex">
                 <div class="md:w-1/2 relative overflow-hidden">
                   <img :src="publication.images?.[0] || '/api/placeholder/800/500'" alt=""
@@ -411,14 +411,14 @@
                 </div>
                 <div class="md:w-1/2 p-8 flex flex-col justify-center">
                   <h3
-                    class="text-2xl font-bold text-gray-900 mb-4 group-hover:text-[#27628C] transition-colors duration-300">
+                    class="text-lg font-bold text-gray-900 mb-4 group-hover:text-[#27628C] transition-colors duration-300">
                     {{ publication?.title || 'Publication Title' }}
                   </h3>
                   <p class="text-gray-600 mb-6 leading-relaxed line-clamp-4">
                     {{ publication?.abstract || 'Publication description' }}
                   </p>
                   <a :href="publication.link || publication.pubLink || 'https://mlcjourno.substack.com/'"
-                    class="inline-flex items-center justify-center bg-gradient-to-r from-[#27628C] to-blue-600 text-white px-8 py-3 rounded-full font-semibold hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
+                    class="inline-flex items-center justify-center bg-gradient-to-r from-[#27628C] to-blue-600 text-white px-8 py-3 rounded-full font-semibold hover:shadow-sm border border-slate-100 transition-all duration-300 transform hover:-translate-y-1">
                     Read More
                     <svg class="w-5 h-5 ml-2 transition-transform duration-300 group-hover:translate-x-1" fill="none"
                       stroke="currentColor" viewBox="0 0 24 24">
@@ -434,7 +434,7 @@
 
         <!-- <div v-else-if="publications?.length > 0" class="grid gap-8 md:gap-12">
         <div v-for="(publication, idx) in publications.slice(0, 3)" :key="idx" class="group">
-          <div class="bg-white rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
+          <div class="bg-white rounded-3xl shadow-sm border border-slate-200 overflow-hidden hover:shadow-sm border border-slate-200 transition-all duration-500 transform hover:-translate-y-2">
             <div class="relative overflow-hidden">
               <img :src="publication.image || publication.featured_image || '/api/placeholder/800/500'" alt="" class="w-full h-80 sm:h-96 object-cover group-hover:scale-110 transition-transform duration-700">
               <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
@@ -443,7 +443,7 @@
               </div>
             </div>
             <div class="p-8">
-              <h3 class="text-2xl font-bold text-gray-900 mb-4 group-hover:text-[#27628C] transition-colors duration-300">
+              <h3 class="text-lg font-bold text-gray-900 mb-4 group-hover:text-[#27628C] transition-colors duration-300">
                 {{ publication?.title || 'Publication Title' }}
               </h3>
               <p class="text-gray-600 mb-6 leading-relaxed line-clamp-4">
@@ -451,7 +451,7 @@
               </p>
               <a 
                 :href="publication.url || 'https://mlcjourno.substack.com/'" 
-                class="inline-flex items-center bg-gradient-to-r from-[#27628C] to-blue-600 text-white px-8 py-3 rounded-full font-semibold hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1"
+                class="inline-flex items-center bg-gradient-to-r from-[#27628C] to-blue-600 text-white px-8 py-3 rounded-full font-semibold hover:shadow-sm border border-slate-100 transition-all duration-300 transform hover:-translate-y-1"
               >
                 Read More
                 <svg class="w-5 h-5 ml-2 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -465,7 +465,7 @@
 
         <!-- <div v-else-if="publications?.length > 0" class="grid gap-8 md:gap-12">
         <div v-for="(publication, idx) in publications.filter(pub => pub.position === 1)" :key="idx" class="group">
-          <div class="bg-white rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
+          <div class="bg-white rounded-3xl shadow-sm border border-slate-200 overflow-hidden hover:shadow-sm border border-slate-200 transition-all duration-500 transform hover:-translate-y-2">
             <div class="relative overflow-hidden">
               <img :src="publication.images?.[0] || '/api/placeholder/800/500'" alt="" class="w-full h-80 sm:h-96 object-cover group-hover:scale-110 transition-transform duration-700">
               <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
@@ -474,7 +474,7 @@
               </div>
             </div>
             <div class="p-8">
-              <h3 class="text-2xl font-bold text-gray-900 mb-4 group-hover:text-[#27628C] transition-colors duration-300">
+              <h3 class="text-lg font-bold text-gray-900 mb-4 group-hover:text-[#27628C] transition-colors duration-300">
                 {{ publication?.title || 'Publication Title' }}
               </h3>
               <p class="text-gray-600 mb-6 leading-relaxed line-clamp-4">
@@ -482,7 +482,7 @@
               </p>
               <a 
                 :href="publication.link || publication.pubLink || 'https://mlcjourno.substack.com/'" 
-                class="inline-flex items-center bg-gradient-to-r from-[#27628C] to-blue-600 text-white px-8 py-3 rounded-full font-semibold hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1"
+                class="inline-flex items-center bg-gradient-to-r from-[#27628C] to-blue-600 text-white px-8 py-3 rounded-full font-semibold hover:shadow-sm border border-slate-100 transition-all duration-300 transform hover:-translate-y-1"
               >
                 Read More
                 <svg class="w-5 h-5 ml-2 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -512,8 +512,8 @@
     <section class="py-20 bg-gradient-to-br from-gray-50 to-blue-50">
       <div class="max-w-7xl mx-auto px-6 lg:px-8">
         <div class="text-center mb-16">
-          <h2 class="text-sm font-semibold tracking-wider text-[#27628C] uppercase mb-4">Testimonials</h2>
-          <p class="text-2xl  font-bold text-gray-900 mb-4">
+          <h2 class="text-sm font-semibold tracking-wider text-[#27628C]  mb-4">Testimonials</h2>
+          <p class="text-lg  font-bold text-gray-900 mb-4">
             MedLabConvo has supported thousands of laboratory professionals and healthcare learners through digital
             engagement, education, mentorship, and community driven learning.
             <!-- We have impacted thousands of <span -->
@@ -524,7 +524,7 @@
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <div v-for="(testimonial, idx) in testimonials" :key="idx" class="group">
             <div
-              class="bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 h-full">
+              class="bg-white rounded-3xl p-8 shadow-sm border border-slate-200 hover:shadow-sm border border-slate-200 transition-all duration-500 transform hover:-translate-y-2 h-full">
               <div class="flex items-center mb-6">
                 <img class="h-12 w-12 rounded-full object-cover" src="@/assets/img/avatar.jpeg" alt="">
                 <div class="ml-4">
@@ -544,14 +544,14 @@
     <!-- Donation CTA -->
     <section class="py-20 bg-gradient-to-r from-[#27628C] to-blue-600">
       <div class="max-w-4xl mx-auto text-center px-6 lg:px-8">
-        <h2 class="text-2xl  font-bold text-white mb-6">
+        <h2 class="text-lg  font-bold text-white mb-6">
           Help Us Continue Our Mission
         </h2>
         <p class="text-xl text-blue-100 mb-8">
           Ensure we don't stop doing what we do. Make a donation to support our cause.
         </p>
         <router-link to="/donate"
-          class="inline-flex items-center bg-white text-[#27628C] px-8 py-4 rounded-full font-bold text-lg hover:bg-blue-50 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+          class="inline-flex items-center bg-white text-[#27628C] px-8 py-4 rounded-full font-bold text-lg hover:bg-blue-50 transition-all duration-300 shadow-sm border border-slate-100 hover:shadow-sm border border-slate-200 transform hover:-translate-y-1">
           Donate Now
           <svg class="w-6 h-6 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -566,7 +566,7 @@
     <section class="py-20 bg-white">
       <div class="max-w-7xl mx-auto px-6 lg:px-8">
         <div class="text-center mb-16">
-          <h2 class="text-2xl font-bold text-gray-900 mb-8">Our Partnerships</h2>
+          <h2 class="text-lg font-bold text-gray-900 mb-8">Our Partnerships</h2>
           <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 items-center">
             <img class="h-12 w-auto object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
               src="@/assets/img/partner1.jpeg" alt="Partner 1">
@@ -586,7 +586,7 @@
             innovation partners to deliver impactful digital programs, content, and workforce development initiatives.
           </p>
           <a href="mailto:admin@medlabconvo.com?subject=Partnership%20Enquiry"
-            class="inline-flex items-center bg-[#27628C] text-white mt-6 px-8 py-4 rounded-full font-bold text-lg hover:bg-opacity-30 hover:text-[#27628C] transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+            class="inline-flex items-center bg-[#27628C] text-white mt-6 px-8 py-4 rounded-full font-bold text-lg hover:bg-opacity-30 hover:text-[#27628C] transition-all duration-300 shadow-sm border border-slate-100 hover:shadow-sm border border-slate-200 transform hover:-translate-y-1"
             aria-label="Email us to partner">
             Partner With Us
             <span class="ml-2 flex items-center justify-center w-6 h-6 bg-white rounded-full">
@@ -602,7 +602,7 @@
 
     <div class="bg-gray-100 py-10">
       <div class="max-w-4xl mx-auto text-center">
-        <h2 class="text-2xl font-bold text-[#27628C] pb-6">STAY IN THE KNOW</h2>
+        <h2 class="text-lg font-bold text-[#27628C] pb-6">STAY IN THE KNOW</h2>
         <p class="text-xl text-gray-900 mb-8">
           Subscribe to our newsletter for insights, programs, and opportunities in laboratory science and healthcare
           innovation. </p>

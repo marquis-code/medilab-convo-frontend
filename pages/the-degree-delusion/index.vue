@@ -8,8 +8,8 @@
 
             <div class="relative max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-14">
                 <div class="flex-1 text-center lg:text-left">
-                    <span class="inline-block mb-4 text-xs font-semibold uppercase tracking-widest text-[#27628C] bg-[#27628C]/10 px-4 py-1.5 rounded-full">Available Now for Order</span>
-                    <h1 class="font-extrabold text-4xl lg:text-5xl leading-tight text-gray-900 mb-6" style="font-family: 'Georgia', serif;">
+                    <span class="inline-block mb-4 text-xs font-semibold  tracking-normal text-[#27628C] bg-[#27628C]/10 px-4 py-1.5 rounded-full">Available Now for Order</span>
+                    <h1 class="font-extrabold text-lg lg:text-xl leading-tight text-gray-900 mb-6" style="font-family: 'Georgia', serif;">
                         The Degree<br />
                         <span class="text-[#27628C]">Delusion</span>
                     </h1>
@@ -23,7 +23,7 @@
                     </p>
                     <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                         <a href="https://selar.com/p/72447137r3?affiliate=v6494e7245" target="_blank" rel="noopener noreferrer"
-                            class="inline-flex items-center justify-center gap-2 bg-[#27628C] hover:bg-[#1e4f73] text-white font-semibold px-8 py-3.5 rounded-lg transition-all duration-200 shadow-lg shadow-[#27628C]/30 hover:shadow-xl hover:shadow-[#27628C]/40 hover:-translate-y-0.5">
+                            class="inline-flex items-center justify-center gap-2 bg-[#27628C] hover:bg-[#1e4f73] text-white font-semibold px-8 py-3.5 rounded-lg transition-all duration-200 shadow-sm border border-slate-100 shadow-[#27628C]/30 hover:shadow-sm border border-slate-200 hover:shadow-[#27628C]/40 hover:-translate-y-0.5">
                             Order Now
                         </a>
                         <a href="#overview"
@@ -35,7 +35,7 @@
 
                 <div class="flex-shrink-0 flex justify-center lg:justify-end">
                     <img src="@/assets/img/book-cover.png" alt="The Degree Delusion book cover"
-                        class="w-[32rem] object-contain drop-shadow-2xl" />
+                        class="w-[32rem] object-contain drop-shadow-sm border border-slate-200" />
                 </div>
             </div>
         </section>
@@ -44,7 +44,7 @@
         <section id="overview" class="py-16 px-6 bg-white">
             <div class="max-w-6xl mx-auto">
                 <div class="text-center mb-14">
-                    <h2 class="text-3xl lg:text-4xl font-extrabold text-gray-900 mb-4" style="font-family:'Georgia',serif;">Inside the Book</h2>
+                    <h2 class="text-xl lg:text-lg font-extrabold text-gray-900 mb-4" style="font-family:'Georgia',serif;">Inside the Book</h2>
                     <p class="text-gray-500 max-w-2xl mx-auto text-lg">
                         To every undergraduate, recent graduate or young professional navigating uncertainty,
                         expectations, and ambition, this book provides actionable insights to navigate the evolving
@@ -90,7 +90,7 @@
 
             <div class="relative max-w-6xl mx-auto">
                 <div class="text-center mb-14">
-                    <h2 class="text-3xl lg:text-4xl font-extrabold text-white mb-4" style="font-family:'Georgia',serif;">
+                    <h2 class="text-xl lg:text-lg font-extrabold text-white mb-4" style="font-family:'Georgia',serif;">
                         Hear from the Author
                     </h2>
                     <p class="text-white/70 text-lg max-w-xl mx-auto">
@@ -103,7 +103,7 @@
                     <div class="flex flex-col gap-4">
                         <div
                             ref="video1Ref"
-                            class="relative aspect-video rounded-[1.5rem] overflow-hidden shadow-2xl border-4 border-white/20 transition-all duration-700"
+                            class="relative aspect-video rounded-[1.5rem] overflow-hidden shadow-sm border border-slate-200 border-4 border-white/20 transition-all duration-700"
                             :class="video1Visible ? 'translate-y-0 opacity-100 scale-100' : 'translate-y-10 opacity-0 scale-95'">
                             <iframe
                                 class="w-full h-full"
@@ -117,7 +117,7 @@
                             <div class="absolute inset-0 pointer-events-none border border-white/10 rounded-[1.5rem]"></div>
                         </div>
                         <div class="text-center">
-                            <p class="text-[10px] font-bold text-white/60 uppercase tracking-[0.3em]">Foreword &amp; Introduction</p>
+                            <p class="text-[10px] font-bold text-white/60  tracking-normal">Foreword &amp; Introduction</p>
                         </div>
                     </div>
 
@@ -125,7 +125,7 @@
                     <div class="flex flex-col gap-4">
                         <div
                             ref="video2Ref"
-                            class="relative aspect-video rounded-[1.5rem] overflow-hidden shadow-2xl border-4 border-white/20 transition-all duration-700 delay-150"
+                            class="relative aspect-video rounded-[1.5rem] overflow-hidden shadow-sm border border-slate-200 border-4 border-white/20 transition-all duration-700 delay-150"
                             :class="video2Visible ? 'translate-y-0 opacity-100 scale-100' : 'translate-y-10 opacity-0 scale-95'">
                             <iframe
                                 class="w-full h-full"
@@ -139,7 +139,7 @@
                             <div class="absolute inset-0 pointer-events-none border border-white/10 rounded-[1.5rem]"></div>
                         </div>
                         <div class="text-center">
-                            <p class="text-[10px] font-bold text-white/60 uppercase tracking-[0.3em]">Story of the Book</p>
+                            <p class="text-[10px] font-bold text-white/60  tracking-normal">Story of the Book</p>
                         </div>
                     </div>
                 </div>
@@ -150,7 +150,7 @@
         <section class="py-16 px-6 bg-[#f0f6fb]">
             <div class="max-w-6xl mx-auto">
                 <div class="text-center mb-14">
-                    <h2 class="text-3xl lg:text-4xl font-extrabold text-gray-900 mb-4" style="font-family:'Georgia',serif;">Praise from Early Readers</h2>
+                    <h2 class="text-xl lg:text-lg font-extrabold text-gray-900 mb-4" style="font-family:'Georgia',serif;">Praise from Early Readers</h2>
                     <p class="text-gray-500 max-w-xl mx-auto">See what readers are saying about <em>The Degree Delusion</em>.</p>
                 </div>
 
@@ -183,7 +183,7 @@
                 <div class="flex-shrink-0">
                     <div class="relative">
                         <div class="absolute inset-0 translate-x-3 translate-y-3 bg-[#27628C]/15 rounded-2xl blur-lg"></div>
-                        <div class="relative w-64 h-72 bg-gray-200 rounded-2xl overflow-hidden shadow-xl flex items-center justify-center">
+                        <div class="relative w-64 h-72 bg-gray-200 rounded-2xl overflow-hidden shadow-sm border border-slate-200 flex items-center justify-center">
                             <div class="w-full h-full bg-gradient-to-br from-gray-300 to-gray-400 flex flex-col items-center justify-center">
                                 <img src="@/assets/img/oluwamuyiwa-ogunkoya2.jpg" alt="" class="absolute inset-0 w-full h-full object-cover">
                             </div>
@@ -192,8 +192,8 @@
                 </div>
 
                 <div class="flex-1">
-                    <span class="inline-block mb-3 text-xs font-semibold uppercase tracking-widest text-[#27628C] bg-[#27628C]/10 px-4 py-1.5 rounded-full">Meet the Author</span>
-                    <h2 class="text-3xl lg:text-4xl font-extrabold text-gray-900 mb-6" style="font-family:'Georgia',serif;">Oluwamuyiwa Ogunkoya</h2>
+                    <span class="inline-block mb-3 text-xs font-semibold  tracking-normal text-[#27628C] bg-[#27628C]/10 px-4 py-1.5 rounded-full">Meet the Author</span>
+                    <h2 class="text-xl lg:text-lg font-extrabold text-gray-900 mb-6" style="font-family:'Georgia',serif;">Oluwamuyiwa Ogunkoya</h2>
                     <div class="space-y-4 text-gray-600 leading-relaxed">
                         <p>
                             Oluwamuyiwa Ogunkoya is an author, thought leader, researcher and innovator deeply committed
@@ -223,7 +223,7 @@
         <!-- ORDER CTA -->
         <section class="py-16 px-6 bg-gradient-to-br from-[#f0f6fb] to-white">
             <div class="max-w-4xl mx-auto text-center">
-                <h2 class="text-3xl lg:text-4xl font-extrabold text-gray-900 mb-4" style="font-family:'Georgia',serif;">
+                <h2 class="text-xl lg:text-lg font-extrabold text-gray-900 mb-4" style="font-family:'Georgia',serif;">
                     Secure Your Copy Today</h2>
                 <p class="text-gray-500 mb-3 text-lg">Available now in digital format, with hardcover and paperback editions to follow.</p>
                 <p class="text-gray-400 text-sm mb-12">Available on Selar for order now.</p>
@@ -236,7 +236,7 @@
                 </div>
 
                 <a href="https://selar.com/p/72447137r3?affiliate=v6494e7245" target="_blank" rel="noopener noreferrer"
-                    class="inline-flex items-center justify-center gap-2 bg-[#27628C] hover:bg-[#1e4f73] text-white font-bold px-12 py-4 rounded-xl transition-all duration-200 shadow-xl shadow-[#27628C]/30 hover:shadow-2xl hover:shadow-[#27628C]/40 hover:-translate-y-0.5 text-lg">
+                    class="inline-flex items-center justify-center gap-2 bg-[#27628C] hover:bg-[#1e4f73] text-white font-bold px-12 py-4 rounded-xl transition-all duration-200 shadow-sm border border-slate-200 shadow-[#27628C]/30 hover:shadow-sm border border-slate-200 hover:shadow-[#27628C]/40 hover:-translate-y-0.5 text-lg">
                     Order Now
                 </a>
 

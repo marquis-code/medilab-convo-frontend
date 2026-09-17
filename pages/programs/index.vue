@@ -8,10 +8,10 @@
         <h2 class="text-sm font-bold text-blue-200 mb-8 animate-fade-in tracking-normal">
           Elevating Clinical Excellence
         </h2>
-        <h1 class="text-4xl md:text-6xl font-bold text-white leading-tight  tracking-tighter animate-fade-in-up">
+        <h1 class="text-lg md:text-lg font-bold text-white leading-tight  tracking-normal animate-fade-in-up">
           Programs
         </h1>
-        <p class="mt-8 text-xl md:text-2xl text-blue-50 font-medium max-w-3xl leading-relaxed animate-fade-in-up delay-200">
+        <p class="mt-8 text-xl md:text-lg text-blue-50 font-medium max-w-3xl leading-relaxed animate-fade-in-up delay-200">
           Dedicated initiatives designed to empower medical laboratory professionals and students through mentorship, skill acquisition, and career acceleration.
         </p>
       </div>
@@ -23,9 +23,9 @@
         <div class="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-20 animate-fade-in">
           <div>
             <h2 class="text-[10px] font-bold text-[#27628C] tracking-normal mb-4">Opportunities</h2>
-            <h3 class="text-4xl md:text-4xl font-bold text-gray-900  tracking-tight">Current Initiatives</h3>
+            <h3 class="text-lg md:text-lg font-bold text-gray-900  tracking-tight">Current Initiatives</h3>
           </div>
-          <p class="text-gray-400 text-sm font-medium uppercase tracking-widest" v-if="!loading">
+          <p class="text-gray-400 text-sm font-medium  tracking-normal" v-if="!loading">
             {{ activePrograms.length }} Active Programs
           </p>
         </div>
@@ -42,7 +42,7 @@
 
         <!-- Empty State -->
         <div v-else-if="activePrograms.length === 0" class="text-center py-32 bg-gray-50 rounded-[4rem] border border-dashed border-gray-200">
-           <p class="text-sm font-black text-gray-400 uppercase tracking-[0.3em]">No Active Initiatives at this Moment</p>
+           <p class="text-sm font-black text-gray-400  tracking-normal">No Active Initiatives at this Moment</p>
            <p class="mt-4 text-gray-500 font-light translate-y-1">Check back soon for new opportunities.</p>
         </div>
 
@@ -57,7 +57,7 @@
             <!-- Poster Thumbnail -->
             <div 
               @click="navigateToProgram(program)"
-              class="relative aspect-[3/4] rounded-[3rem] bg-gray-50 border border-gray-100 overflow-hidden shadow-sm transition-all duration-700 group-hover:shadow-2xl group-hover:border-transparent cursor-pointer"
+              class="relative aspect-[3/4] rounded-[3rem] bg-gray-50 border border-gray-100 overflow-hidden shadow-sm transition-all duration-700 group-hover:shadow-sm border border-slate-200 group-hover:border-transparent cursor-pointer"
             >
                <img 
                 v-if="program.image || (program.images && program.images[0])"
@@ -65,17 +65,17 @@
                 :alt="program.title"
                 class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
               >
-              <div v-else class="w-full h-full flex items-center justify-center text-4xl grayscale opacity-20">📊</div>
+              <div v-else class="w-full h-full flex items-center justify-center text-lg grayscale opacity-20">📊</div>
               
               <div class="absolute inset-0 bg-gradient-to-t from-gray-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-10">
-                <span class="text-white text-sm font-black uppercase tracking-widest flex items-center gap-2">
+                <span class="text-white text-sm font-black  tracking-normal flex items-center gap-2">
                   View Detail
                   <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
                 </span>
               </div>
 
               <div class="absolute top-8 left-8">
-                <span class="bg-white/90 backdrop-blur-md text-gray-900 px-4 py-1.5 rounded-xl text-[9px] font-black uppercase tracking-widest shadow-sm">
+                <span class="bg-white/90 backdrop-blur-md text-gray-900 px-4 py-1.5 rounded-xl text-[9px] font-black  tracking-normal shadow-sm">
                   {{ program.category }}
                 </span>
               </div>
@@ -83,7 +83,7 @@
             
             <!-- Meta & Content -->
             <div class="space-y-6 px-4">
-              <div class="flex items-center gap-4 text-[10px] font-black text-gray-300 uppercase tracking-widest">
+              <div class="flex items-center gap-4 text-[10px] font-black text-gray-300  tracking-normal">
                 <span class="flex items-center gap-2">
                   <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
                   {{ program.duration || 'Flexible' }}
@@ -92,7 +92,7 @@
                 <span>{{ formatDate(program.createdAt) }}</span>
               </div>
               
-              <h3 class="text-2xl font-black text-gray-900 leading-tight group-hover:text-[#27628C] transition-colors uppercase tracking-tight">
+              <h3 class="text-lg font-black text-gray-900 leading-tight group-hover:text-[#27628C] transition-colors  tracking-tight">
                 {{ program.title }}
               </h3>
               
@@ -104,7 +104,7 @@
               <div class="flex items-center gap-3 pt-6 border-t border-gray-50">
                 <button 
                   @click="navigateToProgram(program)"
-                  class="flex-1 bg-gray-50 text-gray-900 px-6 py-4 rounded-xl text-[10px] font-black uppercase tracking-widest hover:bg-gray-100 transition-all text-center"
+                  class="flex-1 bg-gray-50 text-gray-900 px-6 py-4 rounded-xl text-[10px] font-black  tracking-normal hover:bg-gray-100 transition-all text-center"
                 >
                   Learn More
                 </button>
@@ -113,7 +113,7 @@
                     v-if="program.externalFormLink"
                     :href="program.externalFormLink"
                     target="_blank"
-                    class="flex-1 bg-gray-900 text-white px-6 py-4 rounded-xl text-[10px] font-black uppercase tracking-widest hover:bg-[#27628C] transition-all text-center shadow-xl hover:shadow-2xl flex items-center justify-center gap-2"
+                    class="flex-1 bg-gray-900 text-white px-6 py-4 rounded-xl text-[10px] font-black  tracking-normal hover:bg-[#27628C] transition-all text-center shadow-sm border border-slate-200 hover:shadow-sm border border-slate-200 flex items-center justify-center gap-2"
                   >
                     Apply Now
                     <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
@@ -121,7 +121,7 @@
                   <button 
                     v-else
                     @click="applyToProgram(program)"
-                    class="flex-1 bg-gray-900 text-white px-6 py-4 rounded-xl text-[10px] font-black uppercase tracking-widest hover:bg-[#27628C] transition-all text-center shadow-xl hover:shadow-2xl"
+                    class="flex-1 bg-gray-900 text-white px-6 py-4 rounded-xl text-[10px] font-black  tracking-normal hover:bg-[#27628C] transition-all text-center shadow-sm border border-slate-200 hover:shadow-sm border border-slate-200"
                   >
                     Enroll Now
                   </button>
@@ -138,14 +138,14 @@
       <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:20px_20px]"></div>
       <div class="max-w-4xl mx-auto text-center space-y-10 relative z-10">
         <h2 class="text-sm font-bold text-blue-200 tracking-normal animate-fade-in">The Future Of The Lab</h2>
-        <h3 class="text-4xl md:text-5xl font-bold text-white leading-tight  tracking-tighter">
+        <h3 class="text-lg md:text-xl font-bold text-white leading-tight  tracking-normal">
           Your Career, <span class="text-blue-200 ">Accelerated.</span>
         </h3>
         <p class="text-xl text-blue-50 font-medium leading-relaxed">
           Whether you're a student starting your journey or a veteran professional seeking leadership roles, our programs provide the roadmap to excellence.
         </p>
         <div class="pt-10 flex flex-col sm:flex-row items-center justify-center gap-6">
-          <NuxtLink to="/products" class="w-full sm:w-auto bg-white text-[#27628C] px-12 py-5 rounded-2xl text-[11px] font-bold tracking-normal hover:bg-blue-50 transition-all shadow-xl">
+          <NuxtLink to="/products" class="w-full sm:w-auto bg-white text-[#27628C] px-12 py-5 rounded-2xl text-[11px] font-bold tracking-normal hover:bg-blue-50 transition-all shadow-sm border border-slate-200">
             Explore Shop
           </NuxtLink>
           <NuxtLink to="/resources" class="w-full sm:w-auto border border-white/20 text-white px-12 py-5 rounded-2xl text-[11px] font-bold tracking-normal hover:bg-white/5 transition-all">

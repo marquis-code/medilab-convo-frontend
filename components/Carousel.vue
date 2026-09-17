@@ -9,7 +9,7 @@
           :key="index"
           class="w-1/5 flex justify-center p-2"
         >
-          <div class="bg-white rounded shadow-lg p-4 w-72">
+          <div class="bg-white rounded shadow-sm border border-slate-100 p-4 w-72">
             <img :src="episode.image" alt="Episode image" class="w-full h-96 object-cover rounded" />
             <h3 class="text-center mt-4">{{ episode.title }}</h3>
             <button class="bg-teal-600 w-full text-white font-medium rounded-md px-8 py-3 mt-6 hover:bg-teal-700">

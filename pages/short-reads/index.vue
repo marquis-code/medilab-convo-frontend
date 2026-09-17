@@ -2,7 +2,7 @@
   <main class="min-h-screen bg-[#F8FAFC] py-12">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-12">
-        <h1 class="text-4xl font-bold text-gray-900 mb-4">Short Reads</h1>
+        <h1 class="text-lg font-bold text-gray-900 mb-4">Short Reads</h1>
         <p class="text-xl text-gray-600">Quick, engaging stories designed for a fast read.</p>
       </div>
 
@@ -20,7 +20,7 @@
           v-for="read in publishedReads" 
           :key="read._id" 
           :to="`/short-reads/${read.slug}`"
-          class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
+          class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-sm border border-slate-200 transition-all duration-300 transform hover:-translate-y-1"
         >
           <div class="aspect-[4/5] overflow-hidden relative">
             <img 
@@ -30,7 +30,7 @@
             />
             <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
             <div class="absolute bottom-0 left-0 right-0 p-6">
-              <h2 class="text-2xl font-bold text-white mb-2 leading-tight">{{ read.title }}</h2>
+              <h2 class="text-lg font-bold text-white mb-2 leading-tight">{{ read.title }}</h2>
               <p v-if="read.author" class="text-white/80 text-sm font-medium">By {{ read.author }}</p>
             </div>
           </div>

@@ -9,13 +9,13 @@
       leave-to-class="opacity-0"
     >
       <div v-if="isOpen" class="fixed inset-0 z-[150] flex items-center justify-center bg-gray-900/60 backdrop-blur-sm p-4 sm:p-6" @click="close">
-        <div @click.stop class="relative bg-white w-full max-w-md rounded-[2rem] shadow-2xl overflow-hidden animate-fade-in-up">
+        <div @click.stop class="relative bg-white w-full max-w-md rounded-[2rem] shadow-sm border border-slate-200 overflow-hidden animate-fade-in-up">
           <div class="p-8 sm:p-10">
             <div class="mb-8 text-center">
               <div class="w-16 h-16 bg-blue-50 rounded-2xl flex items-center justify-center mx-auto mb-4 text-[#27628C]">
                 <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
               </div>
-              <h3 class="text-2xl font-black text-gray-900 tracking-tight">Create your profile</h3>
+              <h3 class="text-lg font-black text-gray-900 tracking-tight">Create your profile</h3>
               <p class="text-gray-500 font-medium mt-2">Introduce yourself to join the discourse.</p>
             </div>
 
@@ -56,7 +56,7 @@
 
               <button 
                 type="submit" 
-                class="w-full py-4 bg-gray-900 text-white rounded-2xl text-sm font-black hover:bg-[#27628C] transition-all shadow-xl hover:shadow-2xl active:scale-95 mt-4"
+                class="w-full py-4 bg-gray-900 text-white rounded-2xl text-sm font-black hover:bg-[#27628C] transition-all shadow-sm border border-slate-200 hover:shadow-sm border border-slate-200 active:scale-95 mt-4"
               >
                 Join Conversation
               </button>

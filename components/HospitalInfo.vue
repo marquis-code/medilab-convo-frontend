@@ -2,8 +2,8 @@
   <div class="lg:p-4 flex flex-col justify-center h-full">
     <div class="p-6 lg:p-10 flex flex-col justify-between h-full bg-white space-y-10 lg:space-y-0">
       <div class="flex items-center">
-        <button @click="router.back()" class="text-2xl">←</button>
-        <div class="flex-grow text-center text-2xl font-bold">
+        <button @click="router.back()" class="text-lg">←</button>
+        <div class="flex-grow text-center text-lg font-bold">
           <div class="flex justify-center items-center">
             <img class="h-8 w-auto" src="@/assets/img/medlab-logo.jpeg" alt="" />
           </div>
@@ -13,7 +13,7 @@
         <div class="border border-red-500 rounded-lg py-6 p-5 bg-white shadow">
           <span class="bg-red-500 text-white text-sm px-2 py-1 rounded-full px-6">{{ hospital.status }}</span>
           <div class="flex justify-between items-center mt-4">
-            <h1 class="text-lg lg:text-2xl font-semibold">
+            <h1 class="text-lg lg:text-lg font-semibold">
               {{ hospital.name }}
             </h1>
             <!-- <span class="bg-red-500 text-white text-sm px-2 py-1 rounded-full px-6">{{ hospital.status }}</span> -->
@@ -26,7 +26,7 @@
               <span class="block text-gray-600 text-sm">From your location</span>
               <h2 class="text-lg font-medium">Estimated Time of Arrival</h2>
               <div class="flex items-center">
-                <span class="text-4xl lg:text-5xl custom-font">44</span>
+                <span class="text-lg lg:text-xl custom-font">44</span>
                 <span class="ml-2 text-sm lg:text-lg text-gray-900">mins</span>
               </div>
             </div>
@@ -36,13 +36,13 @@
               <span class="block text-gray-600 text-sm">From your location</span>
               <h2 class="text-lg font-medium">Distance</h2>
               <div class="flex items-center">
-                <span class="text-4xl lg:text-5xl custom-font">{{ distance.toFixed(2) }}</span>
+                <span class="text-lg lg:text-xl custom-font">{{ distance.toFixed(2) }}</span>
                 <span class="ml-2 text-sm lg:text-lg text-gray-900">km</span>
               </div>
             </div>
           </div>
           <div class="border border-red-500 rounded-lg py-6 p-5 bg-white shadow">
-            <button class="text-2xl flex justify-center items-center">
+            <button class="text-lg flex justify-center items-center">
               <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_308_179)">
                   <path

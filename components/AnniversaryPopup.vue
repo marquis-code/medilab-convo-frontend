@@ -3,7 +3,7 @@
       v-if="show"
       class="fixed inset-0 z-[99999] flex items-center justify-center bg-black/50"
     >
-      <div class="bg-white rounded-2xl shadow-xl p-8 max-w-md text-center relative">
+      <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-8 max-w-md text-center relative">
         <button
           @click="close"
           class="absolute top-3 right-3 text-gray-900 hover:text-gray-700"
@@ -11,7 +11,7 @@
           ✖
         </button>
   
-        <h2 class="text-2xl font-bold text-[#27628C] mb-4">
+        <h2 class="text-lg font-bold text-[#27628C] mb-4">
           MedLabConvo is 6 🎉
         </h2>
   

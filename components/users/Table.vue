@@ -118,7 +118,7 @@
                   </svg>
                 </button>
                 <div v-if="openDropdownIndex === index"
-                  class="absolute mt-1.5 w-32 bg-gray-600 -left-10 rounded-lg shadow-xl z-10">
+                  class="absolute mt-1.5 w-32 bg-gray-600 -left-10 rounded-lg shadow-sm border border-slate-200 z-10">
                   <div>
                     <a href="#" @click.prevent="toggleDropdown(index)"
                       class="flex items-center p-3 text-sm text-gray-600 capitalize transition-colors duration-300 transform dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">
