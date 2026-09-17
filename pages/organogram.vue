@@ -43,65 +43,28 @@
       </div>
 
       <div v-else class="space-y-32 py-10">
-        
-        <!-- Tier 1: Peak (Executive Directors) -->
-        <section class="flex flex-col items-center">
-          <div class="flex flex-col items-center w-full relative">
-             <div class="w-0.5 h-12 bg-gradient-to-t from-indigo-500/30 to-transparent mb-4"></div>
-             <h2 class="text-sm font-black tracking-normal text-indigo-600  bg-slate-100/50 px-6 py-2 rounded-full border border-slate-200 z-10">Executive Leadership</h2>
-          </div>
-          <div class="flex flex-wrap justify-center gap-12 relative w-full pt-12">
-            <div v-for="member in executiveDirectors" :key="member.id" class="organogram-node group">
-              <MemberCard :member="member" is-large />
-            </div>
-          </div>
-        </section>
-
-        <!-- Tier 2: Governance (Executive Board) -->
-        <section v-if="executiveBoard.length" class="flex flex-col items-center relative gap-12">
+        <!-- Dynamic Categories based on Backend Order -->
+        <section v-for="(category, index) in activeCategories" :key="category.name" class="flex flex-col items-center relative gap-12" :class="{'pb-20': index === activeCategories.length - 1}">
             <div class="flex flex-col items-center w-full relative">
-               <div class="w-0.5 h-20 bg-gradient-to-b from-indigo-100 to-indigo-500/20 mb-4"></div>
-               <h2 class="text-sm font-black tracking-normal text-indigo-600  bg-slate-100/50 px-6 py-2 rounded-full border border-slate-200 z-10">Executive Board</h2>
+               <div v-if="index === 0" class="w-0.5 h-12 bg-gradient-to-t from-indigo-500/30 to-transparent mb-4"></div>
+               <div v-else class="w-0.5 h-20 bg-gradient-to-b from-indigo-100 to-indigo-500/20 mb-4"></div>
+               <h2 class="text-sm font-black tracking-normal text-indigo-600  bg-slate-100/50 px-6 py-2 rounded-full border border-slate-200 z-10">{{ category.name }}</h2>
             </div>
             
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 w-full max-w-6xl px-4 relative">
-              <div v-for="member in executiveBoard" :key="member.id" class="organogram-node flex justify-center">
-                <MemberCard :member="member" />
+            <div class="flex flex-wrap justify-center gap-10 w-full max-w-6xl px-4 relative pt-4">
+              <div v-for="member in category.members" :key="member.id" class="organogram-node group" :class="[
+                index === 0 ? 'w-full md:w-auto' : 'flex justify-center',
+                index > 1 ? 'opacity-90 scale-95 hover:scale-100 transition-all duration-500' : ''
+              ]">
+                <MemberCard :member="member" :is-large="index === 0" :is-compact="index > 1" />
               </div>
             </div>
         </section>
-
-        <!-- Tier 3: Advisory -->
-        <section v-if="advisoryBoard.length" class="flex flex-col items-center gap-12">
-            <div class="flex flex-col items-center w-full relative">
-               <div class="w-0.5 h-20 bg-gradient-to-b from-indigo-100 to-indigo-500/20 mb-4"></div>
-               <h2 class="text-sm font-black tracking-normal text-indigo-600  bg-slate-100/50 px-6 py-2 rounded-full border border-slate-200 z-10">Advisory Board</h2>
-            </div>
-            <div class="flex flex-wrap justify-center gap-8 w-full max-w-5xl px-4">
-               <div v-for="member in advisoryBoard" :key="member.id" class="organogram-node opacity-90 scale-95 hover:scale-100 transition-all duration-500">
-                <MemberCard :member="member" is-compact />
-              </div>
-            </div>
-        </section>
-
-        <!-- Tier 4: Operations (Team Leads) -->
-        <section v-if="volunteers.length" class="flex flex-col items-center gap-12 pb-20">
-            <div class="flex flex-col items-center w-full relative">
-               <div class="w-0.5 h-20 bg-gradient-to-b from-indigo-100 to-indigo-500/20 mb-4"></div>
-               <h2 class="text-sm font-black tracking-normal text-indigo-600  bg-slate-100/50 px-6 py-2 rounded-full border border-slate-200 z-10">Team Leads & Staff</h2>
-            </div>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 w-full px-4">
-               <div v-for="member in volunteers" :key="member.id" class="organogram-node">
-                <MemberCard :member="member" is-compact />
-              </div>
-            </div>
-        </section>
-
       </div>
     </div>
 
     <!-- Content Placeholder for Empty State -->
-    <div v-if="!loading && teamMembers.length === 0" class="text-center py-40">
+    <div v-if="!loading && activeCategories.length === 0" class="text-center py-40">
         <p class="text-slate-400">No team members found. Check your database settings.</p>
     </div>
 
@@ -110,30 +73,38 @@
 </template>
 
 <script setup lang="ts">
-import { computed, onMounted } from 'vue'
+import { computed, onMounted, ref } from 'vue'
 import { useGetTeamMembers } from '@/composables/modules/teams/useGetTeamMembers'
+import { teams_api } from '@/api_factory/modules/teams'
 
 const { loading, teamMembers, getTeamMembers } = useGetTeamMembers()
+const categories = ref<any[]>([])
 
-onMounted(() => {
-  getTeamMembers()
+const fetchCategories = async () => {
+  try {
+    const res = await teams_api.$_get_categories()
+    categories.value = res.data
+  } catch (error) {
+    console.error('Failed to fetch categories:', error)
+  }
+}
+
+onMounted(async () => {
+  await Promise.all([
+    getTeamMembers(),
+    fetchCategories()
+  ])
 })
 
-// Hierarchical logic based on titles
-const executiveDirectors = computed(() => {
-  return teamMembers.value.filter(t => t.title?.toLowerCase().includes('director')).sort((a, b) => (a.position || 0) - (b.position || 0))
-})
-
-const executiveBoard = computed(() => {
-  return teamMembers.value.filter(t => t.title?.toLowerCase().includes('board') && !t.title?.toLowerCase().includes('advisory')).sort((a, b) => (a.position || 0) - (b.position || 0))
-})
-
-const advisoryBoard = computed(() => {
-  return teamMembers.value.filter(t => t.title?.toLowerCase().includes('advisory')).sort((a, b) => (a.position || 0) - (b.position || 0))
-})
-
-const volunteers = computed(() => {
-  return teamMembers.value.filter(t => !t.title?.toLowerCase().includes('director') && !t.title?.toLowerCase().includes('board')).sort((a, b) => (a.position || 0) - (b.position || 0))
+const activeCategories = computed(() => {
+  if (categories.value.length === 0) return []
+  
+  return categories.value.map(cat => {
+    return {
+      name: cat.name,
+      members: teamMembers.value.filter(m => m.roleCategory === cat.name).sort((a, b) => (a.position || 0) - (b.position || 0))
+    }
+  }).filter(cat => cat.members.length > 0)
 })
 </script>
 
@@ -151,3 +122,4 @@ const volunteers = computed(() => {
 /* Staggered load */
 .organogram-node:nth-child(n) { animation-delay: calc(var(--n, 0) * 0.1s); }
 </style>
+

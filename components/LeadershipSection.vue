@@ -18,16 +18,16 @@
       </div>
 
       <div v-else class="space-y-32">
-        <div v-for="category in categories" :key="category" class="space-y-12 animate-fade-in-up">
+        <div v-for="category in activeCategories" :key="category.name" class="space-y-12 animate-fade-in-up">
           <div class="flex items-center gap-4">
              <div class="h-px flex-1 bg-gray-100"></div>
-             <h3 class="text-[11px] font-bold text-gray-400 capitalize">{{ category }}</h3>
+             <h3 class="text-[11px] font-bold text-gray-400 capitalize">{{ category.name }}</h3>
              <div class="h-px flex-1 bg-gray-100"></div>
           </div>
 
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 lg:gap-16">
             <div 
-              v-for="member in getMembersByCategory(category)" 
+              v-for="member in category.members" 
               :key="member._id"
               class="group relative flex flex-col h-full bg-white transition-all duration-700"
             >
@@ -88,7 +88,7 @@
       </div>
 
       <!-- Empty State -->
-      <div v-if="!loading && members.length === 0" class="py-40 text-center">
+      <div v-if="!loading && activeCategories.length === 0" class="py-40 text-center">
          <p class="text-[11px] font-bold text-gray-300">The Board is currently in Recess.</p>
       </div>
     </div>
@@ -99,8 +99,10 @@
 import { ref, onMounted, computed } from 'vue'
 import Icon from '@/components/Icon.vue'
 import { useGetTeamMembers } from '@/composables/modules/teams/useGetTeamMembers'
+import { teams_api } from '@/api_factory/modules/teams'
 
 const { getTeamMembers, teamMembers: members, loading } = useGetTeamMembers()
+const backendCategories = ref<any[]>([])
 
 onMounted(async () => {
   try {
@@ -111,16 +113,39 @@ onMounted(async () => {
   } catch (e) {
     console.error('Leadership Fetch Error:', e)
   }
+
+  try {
+    const res = await teams_api.$_get_categories()
+    backendCategories.value = res.data
+  } catch (e) {
+    console.error('Failed to fetch categories:', e)
+  }
 })
 
-const categories = computed(() => {
-  const cats = members.value.map(m => m.roleCategory || 'Other Teams')
-  return [...new Set(cats)]
-})
+const activeCategories = computed(() => {
+  // First, group by the backend categories if available to maintain correct order
+  const categoriesMap = new Map()
+  
+  if (backendCategories.value.length > 0) {
+    backendCategories.value.forEach(cat => {
+      categoriesMap.set(cat.name, [])
+    })
+  }
 
-const getMembersByCategory = (cat: string) => {
-  return members.value.filter(m => (m.roleCategory || 'Other Teams') === cat)
-}
+  // Populate categories
+  members.value.forEach(member => {
+    const cat = member.roleCategory || 'Other Teams'
+    if (!categoriesMap.has(cat)) {
+      categoriesMap.set(cat, [])
+    }
+    categoriesMap.get(cat).push(member)
+  })
+
+  // Format and filter empty categories
+  return Array.from(categoriesMap.entries())
+    .map(([name, membersList]) => ({ name, members: membersList }))
+    .filter(cat => cat.members.length > 0)
+})
 
 const getSocialIcon = (type: string) => {
   switch (type) {
@@ -157,3 +182,4 @@ const getSocialIcon = (type: string) => {
   }
 }
 </style>
+

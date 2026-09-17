@@ -16,16 +16,24 @@ export type Publication = {
   doiLink?: string
 }
 
+export type TeamCategory = {
+  _id?: string
+  name: string
+  position: number
+}
+
 export type TeamMember = {
   id?: string
   image?: string
   name: string
+  roleCategory?: string
   initials: string
   title: string
   position: number
   profiles: Profile[]
   bio: string
   methods?: string[]
+  achievements?: string[]
   publications?: Publication[]
   createdAt?: string
   updatedAt?: string
@@ -34,12 +42,14 @@ export type TeamMember = {
 export type CreateTeamMemberData = {
   image?: string
   name: string
+  roleCategory?: string
   initials: string
   title: string
   position: number
   profiles: Profile[]
   bio: string
   methods?: string[]
+  achievements?: string[]
   publications?: Publication[]
 }
 
@@ -47,6 +57,11 @@ export type UpdateTeamMemberData = Partial<CreateTeamMemberData>
 
 // API Factory
 export const teams_api = {
+  $_get_categories: async () => {
+    const url = `/teams/categories`
+    return GATEWAY_ENDPOINT.get(url)
+  },
+
   $_create_team_member: async (memberData: CreateTeamMemberData) => {
     const url = `/teams`
     return GATEWAY_ENDPOINT.post(url, memberData)
